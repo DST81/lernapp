@@ -12,11 +12,11 @@ st.title("📘 Interaktive LernApp")
 st.sidebar.image("helfer.png", caption="Hallo Simone, ich bin dein Lernassistent", use_container_width=True)
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
+    "BIO": "mc_bio.json",
+    "WR": "mc_wr.json",
     "Deep Learning": "mc_questions_with_explanations.json",
     "NLP": "mc_NLP.json",
-    "UNIX": "mc_unix_for_poets.json",
-    "BIO": "mc_bio.json",
-    "WR": "mc_wr.json"
+    "UNIX": "mc_unix_for_poets.json"
 }
 
 
