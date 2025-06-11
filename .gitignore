@@ -37,4 +37,9 @@ Thumbs.db
 #Private Daten
 Deep_Learning_Kurs_Aufgabenblatt_Multiple_Choice.pdf
 Deep_Learning_Kurs_Aufgabenblatt_Multiple_Choice_Verbesserung.pdf
-mc_LernApp/
+mc_App-ML/
+
+spielstand.json
+spielstand_DL.json
+spielstand_Deep Learning.json
+spielstand_NLP.json
