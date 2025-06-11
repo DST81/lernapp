@@ -9,13 +9,14 @@ st.title("📘 Interaktive LernApp")
 
 
 # -------------------- Fachauswahl --------------------
+st.sidebar.image("helfer.png", caption="Hallo Simone, ich bin dein Lernassistent", use_column_width=True)
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
     "Deep Learning": "mc_questions_with_explanations.json",
     "NLP": "mc_NLP.json",
     "UNIX": "mc_unix_for_poets.json"
 }
-st.sidebar.image("helfer.png", caption="Ich bin ein Lernassistent", use_column_width=True)
+
 
 ausgewähltes_fach = st.sidebar.selectbox("Wähle ein Fach:", list(verfügbare_fächer.keys()))
 
