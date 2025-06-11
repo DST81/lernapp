@@ -1,0 +1,585 @@
+[
+  {
+    "question": "Wann wurde das erste Antibiotikum Penicillin entdeckt?",
+    "options": [
+      "1895",
+      "1928",
+      "1945",
+      "1960"
+    ],
+    "correct_index": 1,
+    "explanation": "Alexander Fleming entdeckte 1928 zufällig das Penicillin, das erste Antibiotikum."
+  },
+  {
+    "question": "Wie wirken Antibiotika hauptsächlich gegen Bakterien?",
+    "options": [
+      "Sie töten Viren ab",
+      "Sie blockieren die Zellwandbildung der Bakterien",
+      "Sie erhöhen die Vermehrung der Bakterien",
+      "Sie zerstören die menschlichen Zellen"
+    ],
+    "correct_index": 1,
+    "explanation": "Viele Antibiotika hemmen die Zellwandbildung, was für Bakterien tödlich ist."
+  },
+  {
+    "question": "Was versteht man unter Antibiotikaresistenz?",
+    "options": [
+      "Wenn Antibiotika immer besser wirken",
+      "Wenn Bakterien unempfindlich gegenüber Antibiotika werden",
+      "Wenn Viren gegen Antibiotika resistent werden",
+      "Wenn Antibiotika giftig für Menschen werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Antibiotikaresistenz bedeutet, dass Bakterien nicht mehr auf Antibiotika reagieren."
+  },
+  {
+    "question": "Welcher Mechanismus ist ein Grund für Antibiotikaresistenz?",
+    "options": [
+      "Mutationen in den Bakterien",
+      "Vermehrung von Viren",
+      "Verlust der Bakterienzellwand",
+      "Absterben der Pilze"
+    ],
+    "correct_index": 0,
+    "explanation": "Mutationen können dazu führen, dass Bakterien resistent gegen Antibiotika werden."
+  },
+  {
+    "question": "Wie können resistente Bakterien übertragen werden?",
+    "options": [
+      "Nur durch Insektenstiche",
+      "Durch direkten Kontakt, Tröpfcheninfektion oder kontaminierte Oberflächen",
+      "Nur durch kontaminierte Lebensmittel",
+      "Nur durch Wasser"
+    ],
+    "correct_index": 1,
+    "explanation": "Resistente Bakterien können auf vielen Wegen übertragen werden, z.B. über Kontakt und Tröpfchen."
+  },
+  {
+    "question": "Welche der folgenden Krankheiten wird durch Bakterien verursacht?",
+    "options": [
+      "Grippe",
+      "Malaria",
+      "Tuberkulose",
+      "Masern"
+    ],
+    "correct_index": 2,
+    "explanation": "Tuberkulose ist eine bakterielle Infektionskrankheit."
+  },
+  {
+    "question": "Welche Krankheit wird durch Viren verursacht?",
+    "options": [
+      "Cholera",
+      "Masern",
+      "Tetanus",
+      "Borreliose"
+    ],
+    "correct_index": 1,
+    "explanation": "Masern ist eine virale Erkrankung."
+  },
+  {
+    "question": "Was ist ein typisches Symptom der Grippe?",
+    "options": [
+      "Hoher Blutdruck",
+      "Fieber, Husten, Muskelkater",
+      "Hautausschlag",
+      "Starke Bauchschmerzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Grippe zeigt sich meist durch Fieber, Husten und Gliederschmerzen."
+  },
+  {
+    "question": "Wie wird die Grippe hauptsächlich übertragen?",
+    "options": [
+      "Durch kontaminierte Lebensmittel",
+      "Durch Tröpfcheninfektion beim Husten oder Niesen",
+      "Durch Zeckenstiche",
+      "Durch direkten Hautkontakt"
+    ],
+    "correct_index": 1,
+    "explanation": "Grippeviren verbreiten sich vor allem durch Tröpfchen in der Luft."
+  },
+  {
+    "question": "Welche Zellen vermehrt das Grippevirus im Körper?",
+    "options": [
+      "Blutzellen",
+      "Lungenzellen",
+      "Hautzellen",
+      "Nervenzellen"
+    ],
+    "correct_index": 1,
+    "explanation": "Grippeviren infizieren vor allem die Zellen der Atemwege und Lunge."
+  },
+  {
+    "question": "Was ist die Übertragungsquelle für Malaria?",
+    "options": [
+      "Zecken",
+      "Stechmücken der Gattung Anopheles",
+      "Direkter Kontakt mit Kranken",
+      "Kontaminiertes Wasser"
+    ],
+    "correct_index": 1,
+    "explanation": "Malaria wird durch den Stich der Anopheles-Mücke übertragen."
+  },
+  {
+    "question": "Wie vermehrt sich der Malaria-Erreger im Körper?",
+    "options": [
+      "In den roten Blutkörperchen",
+      "Im Magen",
+      "Im Gehirn",
+      "In den Knochen"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Malaria-Erreger vermehrt sich in den roten Blutkörperchen."
+  },
+  {
+    "question": "Welches Symptom gehört typisch zu Malaria?",
+    "options": [
+      "Plötzliche Fieberschübe und Schüttelfrost",
+      "Hautausschlag",
+      "Laufende Nase",
+      "Gelbsucht"
+    ],
+    "correct_index": 0,
+    "explanation": "Malaria zeigt sich häufig durch Fieberschübe mit Schüttelfrost."
+  },
+  {
+    "question": "Welche Krankheit kann durch Zecken übertragen werden?",
+    "options": [
+      "Borreliose",
+      "Grippe",
+      "Malaria",
+      "Masern"
+    ],
+    "correct_index": 0,
+    "explanation": "Borreliose wird durch Zecken übertragen."
+  },
+  {
+    "question": "Wie erkennt man eine Zecke auf der Haut?",
+    "options": [
+      "Sie ist groß wie ein Apfel",
+      "Sie ist klein, rundlich und oft dunkelbraun oder schwarz",
+      "Sie hat Flügel",
+      "Sie ist durchsichtig"
+    ],
+    "correct_index": 1,
+    "explanation": "Zecken sind kleine, dunkle, runde Parasiten ohne Flügel."
+  },
+  {
+    "question": "Was ist ein Hexenring bei Pilzen?",
+    "options": [
+      "Eine Art Pilz mit Giftwirkung",
+      "Ein kreisförmiges Wachstum von Pilzen im Gras",
+      "Ein Pilz, der nur nachts wächst",
+      "Eine Krankheit bei Pflanzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Hexenring ist ein ringförmiges Wachstum von Pilzen auf Wiesen."
+  },
+  {
+    "question": "Welche der folgenden Pilze können giftig sein?",
+    "options": [
+      "Champignons aus dem Supermarkt",
+      "Fliegenpilz",
+      "Brotpilze",
+      "Schimmelpilze auf Lebensmitteln"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Fliegenpilz ist ein bekannter giftiger Pilz."
+  },
+  {
+    "question": "Welche Krankheit wird NICHT durch Viren verursacht?",
+    "options": [
+      "Masern",
+      "Tuberkulose",
+      "Grippe",
+      "Hepatitis"
+    ],
+    "correct_index": 1,
+    "explanation": "Tuberkulose wird durch Bakterien verursacht, nicht durch Viren."
+  },
+  {
+    "question": "Welche Aussage trifft auf Antibiotika zu?",
+    "options": [
+      "Sie wirken gegen Viren",
+      "Sie wirken nur gegen Bakterien",
+      "Sie helfen bei Pilzinfektionen",
+      "Sie sind ein Impfstoff"
+    ],
+    "correct_index": 1,
+    "explanation": "Antibiotika wirken nur gegen Bakterien, nicht gegen Viren oder Pilze."
+  },
+  {
+    "question": "Wie kann man die Entstehung von Antibiotikaresistenzen vermeiden?",
+    "options": [
+      "Antibiotika nur bei Bedarf und vollständig einnehmen",
+      "Antibiotika vorbeugend jeden Tag nehmen",
+      "Antibiotika bei viralen Infekten einnehmen",
+      "Antibiotika teilen und aufbewahren"
+    ],
+    "correct_index": 0,
+    "explanation": "Die korrekte und gezielte Einnahme verhindert Resistenzbildung."
+  },
+  {
+    "question": "Welche Bakterien verursachen typischerweise Tuberkulose?",
+    "options": [
+      "Mycobacterium tuberculosis",
+      "Escherichia coli",
+      "Staphylococcus aureus",
+      "Salmonella enterica"
+    ],
+    "correct_index": 0,
+    "explanation": "Mycobacterium tuberculosis ist der Erreger der Tuberkulose."
+  },
+  {
+    "question": "Was versteht man unter einer Viruserkrankung?",
+    "options": [
+      "Eine Krankheit durch Bakterien",
+      "Eine Krankheit durch Pilze",
+      "Eine Krankheit durch Viren",
+      "Eine allergische Reaktion"
+    ],
+    "correct_index": 2,
+    "explanation": "Viruserkrankungen werden durch Viren verursacht."
+  },
+  {
+    "question": "Welche der folgenden Viren verursacht Masern?",
+    "options": [
+      "Paramyxovirus",
+      "Influenza-Virus",
+      "Rhinovirus",
+      "Herpesvirus"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Masernvirus gehört zur Familie der Paramyxoviren."
+  },
+  {
+    "question": "Was sind typische Symptome von Masern?",
+    "options": [
+      "Hautausschlag, Fieber und Husten",
+      "Bauchschmerzen und Erbrechen",
+      "Nasenbluten und Schwindel",
+      "Muskelschmerzen und Krämpfe"
+    ],
+    "correct_index": 0,
+    "explanation": "Masern verursachen Fieber, Husten und einen charakteristischen Hautausschlag."
+  },
+  {
+    "question": "Wie kann man sich gegen Masern schützen?",
+    "options": [
+      "Durch Antibiotika",
+      "Durch Impfung",
+      "Durch Desinfektion von Oberflächen",
+      "Durch spezielle Diät"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Masern-Impfung schützt effektiv vor der Krankheit."
+  },
+  {
+    "question": "Welche Krankheit wird durch das Bakterium Salmonella verursacht?",
+    "options": [
+      "Cholera",
+      "Salmonellose",
+      "Grippe",
+      "Hepatitis"
+    ],
+    "correct_index": 1,
+    "explanation": "Salmonella-Bakterien verursachen Salmonellose, eine Lebensmittelvergiftung."
+  },
+  {
+    "question": "Wie wird Salmonellose meist übertragen?",
+    "options": [
+      "Durch Tröpfcheninfektion",
+      "Durch verunreinigte Lebensmittel",
+      "Durch Zeckenstiche",
+      "Durch Wasser"
+    ],
+    "correct_index": 1,
+    "explanation": "Salmonellose wird häufig durch kontaminierte Lebensmittel übertragen."
+  },
+  {
+    "question": "Was ist ein typisches Symptom einer bakteriellen Infektion?",
+    "options": [
+      "Fieber und Eiterbildung",
+      "Laufende Nase",
+      "Hautausschlag ohne Fieber",
+      "Plötzliche Taubheit"
+    ],
+    "correct_index": 0,
+    "explanation": "Bakterielle Infektionen führen oft zu Fieber und Eiter."
+  },
+  {
+    "question": "Wie unterscheidet sich ein Virus von einer Bakterie?",
+    "options": [
+      "Viren sind lebendig, Bakterien nicht",
+      "Viren sind kleiner und brauchen einen Wirt zur Vermehrung",
+      "Bakterien sind kleiner als Viren",
+      "Bakterien können sich nicht vermehren"
+    ],
+    "correct_index": 1,
+    "explanation": "Viren sind sehr klein und benötigen eine Wirtszelle zur Vermehrung."
+  },
+  {
+    "question": "Welche der folgenden Krankheiten ist viral?",
+    "options": [
+      "Tuberkulose",
+      "Grippe",
+      "Cholera",
+      "Tetanus"
+    ],
+    "correct_index": 1,
+    "explanation": "Grippe wird durch das Influenzavirus verursacht."
+  },
+  {
+    "question": "Wie wird Malaria behandelt?",
+    "options": [
+      "Mit Antibiotika",
+      "Mit Antimalariamitteln",
+      "Mit antiviralen Medikamenten",
+      "Mit Impfungen"
+    ],
+    "correct_index": 1,
+    "explanation": "Malaria wird mit speziellen Antimalaria-Medikamenten behandelt."
+  },
+  {
+    "question": "Was passiert, wenn eine Zecke einen Menschen sticht?",
+    "options": [
+      "Sie hinterlässt ein Gift, das sofort tötet",
+      "Sie kann Krankheitserreger übertragen",
+      "Sie hinterlässt keine Spuren",
+      "Sie ernährt sich vom Blut und fällt sofort ab"
+    ],
+    "correct_index": 1,
+    "explanation": "Zecken können Krankheiten wie Borreliose übertragen."
+  },
+  {
+    "question": "Wie kann man Zeckenstiche verhindern?",
+    "options": [
+      "Kurze Kleidung tragen und Insektenschutzmittel benutzen",
+      "Viel Wasser trinken",
+      "Sich täglich duschen",
+      "Sonnencreme verwenden"
+    ],
+    "correct_index": 0,
+    "explanation": "Kurze Kleidung und Insektenschutzmittel reduzieren das Risiko von Zeckenstichen."
+  },
+  {
+    "question": "Was ist eine typische Krankheit, die durch Pilze verursacht wird?",
+    "options": [
+      "Grippe",
+      "Ringelflechte",
+      "Tuberkulose",
+      "Malaria"
+    ],
+    "correct_index": 1,
+    "explanation": "Ringelflechte ist eine häufige Pilzinfektion der Haut."
+  },
+  {
+    "question": "Wie verbreiten sich Pilze im Boden?",
+    "options": [
+      "Durch Sporen",
+      "Durch Tröpfcheninfektion",
+      "Durch Bakterien",
+      "Durch Tiere"
+    ],
+    "correct_index": 0,
+    "explanation": "Pilze verbreiten sich hauptsächlich durch Sporen."
+  },
+  {
+    "question": "Was ist ein Hexenring?",
+    "options": [
+      "Ein Pilz mit giftigen Eigenschaften",
+      "Ein rundes Pilzwachstum, das oft in Rasenflächen erscheint",
+      "Ein Pilz, der nur im Herbst wächst",
+      "Eine Krankheit, die Pilze befallen kann"
+    ],
+    "correct_index": 1,
+    "explanation": "Hexenringe sind kreisförmige Pilzwachstumszonen."
+  },
+  {
+    "question": "Welche der folgenden Aussagen zu Viren ist richtig?",
+    "options": [
+      "Viren können sich selbständig vermehren",
+      "Viren benötigen Wirtszellen zur Vermehrung",
+      "Viren sind größer als Bakterien",
+      "Viren haben eine Zellwand"
+    ],
+    "correct_index": 1,
+    "explanation": "Viren sind auf Wirtszellen angewiesen, um sich zu vermehren."
+  },
+  {
+    "question": "Welche Maßnahme hilft NICHT gegen Antibiotikaresistenz?",
+    "options": [
+      "Antibiotika nur bei Bedarf und richtig einnehmen",
+      "Antibiotika bei viralen Infektionen verwenden",
+      "Abschließen einer Impfung",
+      "Arzt konsultieren vor Einnahme"
+    ],
+    "correct_index": 1,
+    "explanation": "Antibiotika helfen nicht bei viralen Infektionen und sollten hier nicht eingesetzt werden."
+  },
+  {
+    "question": "Was versteht man unter Tröpfcheninfektion?",
+    "options": [
+      "Übertragung von Krankheitserregern über kleine Flüssigkeitströpfchen in der Luft",
+      "Übertragung durch Wasser",
+      "Übertragung durch Nahrung",
+      "Übertragung durch Insekten"
+    ],
+    "correct_index": 0,
+    "explanation": "Tröpfcheninfektion passiert, wenn kleine Speichel- oder Schleimtröpfchen Krankheitserreger übertragen."
+  },
+  {
+    "question": "Wie wird Borreliose behandelt?",
+    "options": [
+      "Mit Antibiotika",
+      "Mit antiviralen Medikamenten",
+      "Mit Impfstoffen",
+      "Gar nicht"
+    ],
+    "correct_index": 0,
+    "explanation": "Borreliose wird in der Regel mit Antibiotika behandelt."
+  },
+  {
+    "question": "Welche Pilzform ist ein wichtiger Bestandteil der Lebensmittelherstellung (z. B. bei Brot)?",
+    "options": [
+      "Schimmelpilz",
+      "Brot- oder Hefepilz",
+      "Giftpilz",
+      "Speisepilz"
+    ],
+    "correct_index": 1,
+    "explanation": "Hefepilze werden bei der Brotherstellung eingesetzt."
+  },
+  {
+    "question": "Welche Krankheit gehört zu den bakteriellen Infektionen?",
+    "options": [
+      "Grippe",
+      "Cholera",
+      "Masern",
+      "Windpocken"
+    ],
+    "correct_index": 1,
+    "explanation": "Cholera wird durch Bakterien verursacht."
+  },
+  {
+    "question": "Welche Krankheit wird von der Anopheles-Mücke übertragen?",
+    "options": [
+      "Borreliose",
+      "Malaria",
+      "Grippe",
+      "Tuberkulose"
+    ],
+    "correct_index": 1,
+    "explanation": "Malaria wird durch den Stich der Anopheles-Mücke übertragen."
+  },
+  {
+    "question": "Was passiert, wenn Antibiotika zu oft und falsch verwendet werden?",
+    "options": [
+      "Sie werden wirksamer",
+      "Bakterien entwickeln Resistenzen",
+      "Viren sterben ab",
+      "Pilze vermehren sich"
+    ],
+    "correct_index": 1,
+    "explanation": "Falsche Anwendung fördert die Entstehung resistenter Bakterien."
+  },
+  {
+    "question": "Welche der folgenden Krankheiten wird NICHT von Zecken übertragen?",
+    "options": [
+      "Borreliose",
+      "FSME (Frühsommer-Meningoenzephalitis)",
+      "Malaria",
+      "Keine der genannten"
+    ],
+    "correct_index": 2,
+    "explanation": "Malaria wird von Stechmücken, nicht von Zecken übertragen."
+  },
+  {
+    "question": "Was sind Pilze biologisch gesehen?",
+    "options": [
+      "Pflanzen",
+      "Tiere",
+      "Eigenständiges Reich, weder Pflanzen noch Tiere",
+      "Bakterien"
+    ],
+    "correct_index": 2,
+    "explanation": "Pilze bilden ein eigenes Reich, das weder Pflanzen noch Tiere sind."
+  },
+  {
+    "question": "Was versteht man unter einer Infektionskrankheit?",
+    "options": [
+      "Krankheit durch Erreger wie Bakterien, Viren oder Pilze",
+      "Krankheit durch genetische Faktoren",
+      "Krankheit durch Verletzungen",
+      "Krankheit durch Umweltgifte"
+    ],
+    "correct_index": 0,
+    "explanation": "Infektionskrankheiten werden durch Mikroorganismen verursacht."
+  },
+  {
+    "question": "Welcher Erreger ist verantwortlich für die Grippe (Influenza)?",
+    "options": [
+      "Influenza-Virus",
+      "Coronavirus",
+      "Rhinovirus",
+      "Adenovirus"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Grippe wird durch Influenza-Viren verursacht."
+  },
+  {
+    "question": "Wie kann man sich vor Virusinfektionen schützen?",
+    "options": [
+      "Händewaschen und Impfung",
+      "Antibiotika einnehmen",
+      "Immer Maske tragen",
+      "Kein Kontakt zu Menschen"
+    ],
+    "correct_index": 0,
+    "explanation": "Händewaschen und Impfungen sind wichtige Schutzmaßnahmen."
+  },
+  {
+    "question": "Welche Krankheit kann durch das Coronavirus verursacht werden?",
+    "options": [
+      "COVID-19",
+      "Masern",
+      "Tuberkulose",
+      "Cholera"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Coronavirus verursacht COVID-19."
+  },
+  {
+    "question": "Was ist eine Impfung?",
+    "options": [
+      "Eine Behandlung mit Antibiotika",
+      "Eine aktive Immunisierung gegen Krankheitserreger",
+      "Eine Art von Medikament",
+      "Eine Art von Diagnose"
+    ],
+    "correct_index": 1,
+    "explanation": "Impfungen aktivieren das Immunsystem gegen bestimmte Erreger."
+  },
+  {
+    "question": "Was ist das Hauptziel von Antibiotika?",
+    "options": [
+      "Viren zu zerstören",
+      "Bakterien abzutöten oder ihr Wachstum zu hemmen",
+      "Pilze zu zerstören",
+      "Das Immunsystem zu stärken"
+    ],
+    "correct_index": 1,
+    "explanation": "Antibiotika wirken gezielt gegen Bakterien."
+  },
+  {
+    "question": "Welche der folgenden Krankheiten wird durch Bakterien verursacht?",
+    "options": [
+      "Tetanus",
+      "Masern",
+      "HIV/AIDS",
+      "Grippe"
+    ],
+    "correct_index": 0,
+    "explanation": "Tetanus ist eine bakterielle Erkrankung."
+  }
+]
