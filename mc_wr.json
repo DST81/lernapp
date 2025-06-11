@@ -1,0 +1,543 @@
+[
+  {
+    "question": "Welche Form des Zusammenlebens ist in der Schweiz nicht offiziell geregelt?",
+    "options": ["Ehe", "Konkubinat", "Eingetragene Partnerschaft", "Adoption"],
+    "correct_index": 1,
+    "explanation": "Das Konkubinat ist rechtlich nicht speziell geregelt, im Gegensatz zur Ehe oder eingetragenen Partnerschaft."
+  },
+  {
+    "question": "Welche Voraussetzung ist nötig, um von einem Konkubinat zu sprechen?",
+    "options": [
+      "Gemeinsames Kind",
+      "Gemeinsamer Haushalt und partnerschaftliches Zusammenleben",
+      "Offizielle Registrierung beim Zivilstandsamt",
+      "Gemeinsames Vermögen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Konkubinat setzt ein gemeinsames, eheähnliches Zusammenleben voraus, ist aber nicht registriert."
+  },
+  {
+    "question": "Welcher rechtliche Schutz besteht bei einem Konkubinat?",
+    "options": [
+      "Gleiche Rechte wie bei der Ehe",
+      "Keine automatischen Erb- oder Unterhaltsansprüche",
+      "Pflicht zur gemeinsamen Steuererklärung",
+      "Automatisches Adoptionsrecht"
+    ],
+    "correct_index": 1,
+    "explanation": "Konkubinatspartner haben keinen automatischen Anspruch auf Erbe oder Unterhalt."
+  },
+  {
+    "question": "Welche Massnahme kann Nachteile im Konkubinat reduzieren?",
+    "options": [
+      "Abschluss eines Partnerschaftsvertrags",
+      "Gemeinsame Eheschliessung",
+      "Adoption des Partners",
+      "Eintragung beim Einwohneramt"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Partnerschaftsvertrag kann wichtige Regelungen treffen und Unsicherheiten im Konkubinat vermindern."
+  },
+  {
+    "question": "Welche rechtliche Wirkung hat die Ehe auf den Familiennamen?",
+    "options": [
+      "Beide Partner müssen einen neuen Doppelnamen annehmen",
+      "Der Name ändert sich nicht automatisch",
+      "Ein gemeinsamer Familienname wird im Zivilstandsregister festgelegt",
+      "Der Mann übernimmt immer den Namen der Frau"
+    ],
+    "correct_index": 2,
+    "explanation": "Ehepaare bestimmen bei der Eheschliessung einen gemeinsamen Familiennamen oder behalten ihre eigenen."
+  },
+  {
+    "question": "Welche Form des Zusammenlebens ist in der Schweiz nicht offiziell geregelt?",
+    "options": ["Ehe", "Konkubinat", "Eingetragene Partnerschaft", "Adoption"],
+    "correct_index": 1,
+    "explanation": "Das Konkubinat ist rechtlich nicht speziell geregelt, im Gegensatz zur Ehe oder eingetragenen Partnerschaft."
+  },
+  {
+    "question": "Welche Voraussetzung ist nötig, um von einem Konkubinat zu sprechen?",
+    "options": [
+      "Gemeinsames Kind",
+      "Gemeinsamer Haushalt und partnerschaftliches Zusammenleben",
+      "Offizielle Registrierung beim Zivilstandsamt",
+      "Gemeinsames Vermögen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Konkubinat setzt ein gemeinsames, eheähnliches Zusammenleben voraus, ist aber nicht registriert."
+  },
+  {
+    "question": "Welcher rechtliche Schutz besteht bei einem Konkubinat?",
+    "options": [
+      "Gleiche Rechte wie bei der Ehe",
+      "Keine automatischen Erb- oder Unterhaltsansprüche",
+      "Pflicht zur gemeinsamen Steuererklärung",
+      "Automatisches Adoptionsrecht"
+    ],
+    "correct_index": 1,
+    "explanation": "Konkubinatspartner haben keinen automatischen Anspruch auf Erbe oder Unterhalt."
+  },
+  {
+    "question": "Welche Massnahme kann Nachteile im Konkubinat reduzieren?",
+    "options": [
+      "Abschluss eines Partnerschaftsvertrags",
+      "Gemeinsame Eheschliessung",
+      "Adoption des Partners",
+      "Eintragung beim Einwohneramt"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Partnerschaftsvertrag kann wichtige Regelungen treffen und Unsicherheiten im Konkubinat vermindern."
+  },
+  {
+    "question": "Welche rechtliche Wirkung hat die Ehe auf den Familiennamen?",
+    "options": [
+      "Beide Partner müssen einen neuen Doppelnamen annehmen",
+      "Der Name ändert sich nicht automatisch",
+      "Ein gemeinsamer Familienname wird im Zivilstandsregister festgelegt",
+      "Der Mann übernimmt immer den Namen der Frau"
+    ],
+    "correct_index": 2,
+    "explanation": "Ehepaare bestimmen bei der Eheschliessung einen gemeinsamen Familiennamen oder behalten ihre eigenen."
+  },
+  {
+    "question": "Was ist keine Voraussetzung für eine Eheschliessung in der Schweiz?",
+    "options": [
+      "Volljährigkeit",
+      "Urteilsfähigkeit",
+      "Gemeinsames Einkommen",
+      "Keine Verwandtschaft in gerader Linie"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein gemeinsames Einkommen ist keine Voraussetzung zur Eheschliessung."
+  },
+  {
+    "question": "Wer führt das Verfahren zur Eheschliessung durch?",
+    "options": [
+      "Das Familiengericht",
+      "Das Gemeindeamt",
+      "Das Zivilstandsamt",
+      "Die Polizei"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Eheschliessung wird durch das Zivilstandsamt vorbereitet und durchgeführt."
+  },
+  {
+    "question": "Was ist eine rechtliche Wirkung der Ehe?",
+    "options": [
+      "Unabhängigkeit bei der Steuererklärung",
+      "Verpflichtung zur gegenseitigen Unterstützung",
+      "Automatische Adoption von Kindern des Ehepartners",
+      "Trennung des Vermögens"
+    ],
+    "correct_index": 1,
+    "explanation": "Ehepartner sind zur gegenseitigen Unterstützung verpflichtet."
+  },
+  {
+    "question": "Welche Aussage zur ehelichen Wohnung ist korrekt?",
+    "options": [
+      "Nur der Mann bestimmt die Wohnung",
+      "Beide Ehegatten entscheiden gemeinsam",
+      "Der Kanton entscheidet",
+      "Die Frau darf alleine kündigen"
+    ],
+    "correct_index": 1,
+    "explanation": "Beide Ehegatten entscheiden gemeinsam über die eheliche Wohnung."
+  },
+  {
+    "question": "Was bedeutet Errungenschaftsbeteiligung?",
+    "options": [
+      "Alle Güter gehören beiden Partnern",
+      "Jeder behält sein Einkommen für sich",
+      "Vermögen wird in Eigengut und Errungenschaft unterteilt",
+      "Nur Immobilien werden geteilt"
+    ],
+    "correct_index": 2,
+    "explanation": "Bei Errungenschaftsbeteiligung wird zwischen Eigengut und gemeinsam erworbenem Vermögen unterschieden."
+  },
+  {
+    "question": "Welcher Güterstand gilt ohne spezielle Vereinbarung in der Schweiz?",
+    "options": [
+      "Gütergemeinschaft",
+      "Errungenschaftsbeteiligung",
+      "Gütertrennung",
+      "Gesamtgut"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Errungenschaftsbeteiligung ist der ordentliche Güterstand."
+  },
+  {
+    "question": "Was ist ein Merkmal der Gütergemeinschaft?",
+    "options": [
+      "Alles gehört einem Ehepartner",
+      "Alles wird gemeinsam verwaltet",
+      "Es gibt nur Eigengut",
+      "Der Staat bestimmt die Aufteilung"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei der Gütergemeinschaft wird das gesamte Vermögen gemeinsam verwaltet."
+  },
+  {
+    "question": "Wann endet ein Güterstand?",
+    "options": [
+      "Nach 5 Jahren Ehe",
+      "Bei Tod, Scheidung oder Wechsel des Güterstands",
+      "Wenn beide Partner berufstätig sind",
+      "Durch Geburt eines Kindes"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Güterstand endet durch Scheidung, Tod oder einen vertraglich vereinbarten Wechsel."
+  },
+  {
+    "question": "Was passiert bei einer Scheidung mit der Errungenschaft?",
+    "options": [
+      "Sie geht an den Staat",
+      "Sie wird hälftig geteilt",
+      "Sie bleibt beim Hauptverdiener",
+      "Sie wird versteigert"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Errungenschaft wird in der Regel zu gleichen Teilen aufgeteilt."
+  },
+  {
+    "question": "Was ist eine gerichtliche Trennung?",
+    "options": [
+      "Eine Vorstufe zur Ehe",
+      "Ein vorübergehendes Zusammenleben",
+      "Eine Ehepause mit rechtlichen Regelungen",
+      "Eine Kündigung des Konkubinats"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine gerichtliche Trennung regelt das Getrenntleben ohne Scheidung."
+  },
+  {
+    "question": "Was gehört nicht zu den Folgen einer Scheidung?",
+    "options": [
+      "Unterhaltsregelungen",
+      "Vermögensaufteilung",
+      "Ehegatten bleiben rechtlich verbunden",
+      "Sorgerechtsregelung für Kinder"
+    ],
+    "correct_index": 2,
+    "explanation": "Nach der Scheidung sind Ehegatten nicht mehr rechtlich verbunden."
+  },
+  {
+    "question": "Was bedeutet 'Nachlass' im Erbrecht?",
+    "options": [
+      "Das Testament",
+      "Das Vermögen des Verstorbenen",
+      "Die Bestattungsurkunde",
+      "Die Schulden des Erben"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Nachlass ist das gesamte Vermögen (inkl. Schulden), das beim Tod einer Person hinterlassen wird."
+  },
+  {
+    "question": "Was ist eine Parentel im Erbrecht?",
+    "options": [
+      "Ein Testamentstyp",
+      "Ein Güterstand",
+      "Eine Erbenordnung nach Verwandtschaft",
+      "Ein Erbvertrag"
+    ],
+    "correct_index": 2,
+    "explanation": "Parentelen sind Verwandtschaftsordnungen, die bestimmen, wer zuerst erbt."
+  },
+  {
+    "question": "Wer erbt, wenn keine gesetzlichen Erben vorhanden sind?",
+    "options": [
+      "Die Nachbarn",
+      "Die Gemeinde",
+      "Der Staat",
+      "Der Arbeitgeber"
+    ],
+    "correct_index": 2,
+    "explanation": "Gibt es keine gesetzlichen oder eingesetzten Erben, fällt der Nachlass an den Staat."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Testament und Erbvertrag?",
+    "options": [
+      "Testament ist nur mündlich gültig",
+      "Erbvertrag muss von beiden Seiten unterzeichnet werden",
+      "Testament ist eine notarielle Vereinbarung",
+      "Erbvertrag ist keine rechtliche Form"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Erbvertrag ist eine zweiseitige Vereinbarung und muss notariell beurkundet werden."
+  },
+  {
+    "question": "Was versteht man unter der frei verfügbaren Quote?",
+    "options": [
+      "Den Pflichtteil",
+      "Den Teil, den man frei vererben darf",
+      "Das gesamte Vermögen",
+      "Das Guthaben auf dem Sparkonto"
+    ],
+    "correct_index": 1,
+    "explanation": "Die frei verfügbare Quote ist jener Teil des Nachlasses, über den man frei verfügen kann."
+  },
+  {
+    "question": "Was bedeutet 'Eigengut' im Ehegüterrecht?",
+    "options": [
+      "Vermögen, das beide Partner gemeinsam besitzen",
+      "Vermögen, das ein Ehepartner vor der Ehe besessen hat",
+      "Das Einkommen während der Ehe",
+      "Immobilien, die während der Ehe gekauft wurden"
+    ],
+    "correct_index": 1,
+    "explanation": "Zum Eigengut gehören Vermögenswerte, die vor der Ehe vorhanden waren oder durch Erbschaft/Schenkung erhalten wurden."
+  },
+  {
+    "question": "Was zählt zur Errungenschaft in der Ehe?",
+    "options": [
+      "Erbschaften", 
+      "Vermögen vor der Ehe", 
+      "Lohn während der Ehe", 
+      "Schenkungen"
+    ],
+    "correct_index": 2,
+    "explanation": "Zur Errungenschaft zählen alle während der Ehe erworbenen Einkünfte wie Löhne."
+  },
+  {
+    "question": "Wie kann man Nachteile eines Konkubinats reduzieren?",
+    "options": [
+      "Mit einem Ehevertrag", 
+      "Durch Gütergemeinschaft", 
+      "Durch einen schriftlichen Konkubinatsvertrag", 
+      "Durch Scheidung"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Konkubinatsvertrag regelt wichtige Fragen (z.B. Finanzen, Kinder, Wohnung) und schützt vor Nachteilen."
+  },
+  {
+    "question": "Was gehört **nicht** zu den Voraussetzungen einer Eheschliessung?",
+    "options": [
+      "Volljährigkeit", 
+      "Urteilsfähigkeit", 
+      "Gleiches Einkommen", 
+      "Keine Verwandtschaft in gerader Linie"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein gleiches Einkommen ist keine Voraussetzung für die Ehe."
+  },
+  {
+    "question": "Wie kann der Güterstand der Gütertrennung entstehen?",
+    "options": [
+      "Automatisch bei der Eheschliessung", 
+      "Durch Vereinbarung in einem Ehevertrag", 
+      "Durch mündliche Absprache", 
+      "Nur bei gleichgeschlechtlichen Paaren"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Gütertrennung muss durch einen notariellen Ehevertrag vereinbart werden."
+  },
+  {
+    "question": "Was passiert bei einer Scheidung mit dem gemeinsamen Vermögen?",
+    "options": [
+      "Alles geht an den besserverdienenden Partner", 
+      "Es wird nach den Regeln des Güterstandes aufgeteilt", 
+      "Der Staat entscheidet darüber", 
+      "Es wird automatisch halbiert"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Aufteilung richtet sich nach dem vereinbarten oder gesetzlichen Güterstand."
+  },
+  {
+    "question": "Wer erstellt ein öffentliches Testament?",
+    "options": [
+      "Ein Notar", 
+      "Die Gemeinde", 
+      "Der Erbe", 
+      "Das Betreibungsamt"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein öffentliches Testament wird in Anwesenheit eines Notars und zweier Zeugen verfasst."
+  },
+  {
+    "question": "Welche Aussage zum Ehegüterrecht ist falsch?",
+    "options": [
+      "Die Errungenschaft wird bei Scheidung geteilt.", 
+      "Eigengut gehört immer beiden Partnern.", 
+      "Die Gütergemeinschaft hat ein gemeinsames Gesamtgut.", 
+      "Ein Ehevertrag kann den Güterstand ändern."
+    ],
+    "correct_index": 1,
+    "explanation": "Eigengut gehört nur dem betreffenden Ehepartner, nicht beiden."
+  },
+  {
+    "question": "Welche Form der Erbfolge kann durch ein Testament beeinflusst werden?",
+    "options": [
+      "Gesetzliche Erbfolge", 
+      "Pflichtteil", 
+      "Gewillkürte Erbfolge", 
+      "Parentelregelung"
+    ],
+    "correct_index": 2,
+    "explanation": "Durch ein Testament kann die gewillkürte Erbfolge bestimmt werden – unter Berücksichtigung der Pflichtteile."
+  },
+  {
+    "question": "Was passiert bei einer gerichtlichen Trennung?",
+    "options": [
+      "Die Ehe wird vollständig aufgelöst.", 
+      "Die Ehepartner leben getrennt, das Eheband bleibt bestehen.", 
+      "Die Partner dürfen keine Verträge mehr abschliessen.", 
+      "Beide Partner werden enterbt."
+    ],
+    "correct_index": 1,
+    "explanation": "Bei der gerichtlichen Trennung leben die Ehepartner getrennt, sind aber weiterhin verheiratet."
+  },
+  {
+    "question": "Wer erhält den Pflichtteil im Erbrecht?",
+    "options": [
+      "Jeder Bekannte des Erblassers", 
+      "Nur Ehepartner", 
+      "Nur Kinder", 
+      "Ehegatte, Nachkommen und in gewissen Fällen Eltern"
+    ],
+    "correct_index": 3,
+    "explanation": "Diese Gruppen haben einen gesetzlichen Anspruch auf einen Pflichtteil."
+  },
+  {
+    "question": "Wie hoch ist der Pflichtteil eines Kindes in der Schweiz?",
+    "options": [
+      "1/4", 
+      "1/2", 
+      "3/4", 
+      "Er beträgt immer 100 %"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Pflichtteil eines Kindes beträgt gemäss Schweizer Recht 50 % seines gesetzlichen Erbteils."
+  },
+  {
+    "question": "Was ist ein Nachteil der Ehe gegenüber dem Konkubinat?",
+    "options": [
+      "Höhere Steuern für Ehepaare (Heiratsstrafe)", 
+      "Keine gegenseitige Vertretung", 
+      "Keine rechtlichen Wirkungen", 
+      "Unklare Erbregelung"
+    ],
+    "correct_index": 0,
+    "explanation": "Verheiratete Paare können durch die gemeinsame Besteuerung benachteiligt werden."
+  },
+  {
+    "question": "Wann spricht man von einer Erbteilung?",
+    "options": [
+      "Wenn ein Testament geschrieben wird", 
+      "Wenn der Nachlass auf die Erben verteilt wird", 
+      "Wenn niemand erbt", 
+      "Wenn eine Ehe geschieden wird"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Erbteilung ist die Verteilung des Nachlasses auf die Erben."
+  },
+  {
+    "question": "Welche Aussage zur gesetzlichen Erbfolge ist korrekt?",
+    "options": [
+      "Der Ehepartner erbt immer 100 %", 
+      "Kinder erben nie", 
+      "Enkelkinder erben nur, wenn das Kind des Erblassers tot ist", 
+      "Nur der Staat erbt"
+    ],
+    "correct_index": 2,
+    "explanation": "Nachkommen der ersten Parentel (z. B. Enkel) erben stellvertretend für ihre verstorbenen Elternteile."
+  },
+  {
+    "question": "Wann kann ein Testament angefochten werden?",
+    "options": [
+      "Wenn es mündlich erstellt wurde", 
+      "Wenn es formungültig oder offensichtlich ungerecht ist", 
+      "Wenn es vom Nachbarn stammt", 
+      "Wenn der Staat nicht berücksichtigt wurde"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Testament kann bei Formfehlern oder offensichtlicher Ungerechtigkeit angefochten werden."
+  },
+  {
+    "question": "Was ist ein Vorteil des Konkubinats gegenüber der Ehe?",
+    "options": [
+      "Automatisches Erbrecht", 
+      "Geringere gesetzliche Verpflichtungen", 
+      "Bessere Scheidungsmöglichkeiten", 
+      "Bessere Rentenansprüche"
+    ],
+    "correct_index": 1,
+    "explanation": "Konkubinatspartner sind rechtlich unabhängiger und weniger stark verpflichtet."
+  },
+  {
+    "question": "Welche Institution regelt Eheschliessung und Familienstand?",
+    "options": [
+      "Zivilstandsamt", 
+      "Gericht", 
+      "Einwohnermeldeamt", 
+      "Betreibungsamt"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Zivilstandsamt ist für Eheschliessungen und Einträge zum Familienstand zuständig."
+  },
+  {
+    "question": "Was bedeutet güterrechtliche Auseinandersetzung?",
+    "options": [
+      "Scheidung", 
+      "Aufteilung des gemeinsamen Vermögens nach Trennung oder Tod", 
+      "Erstellung eines Ehevertrags", 
+      "Kündigung der Ehe"
+    ],
+    "correct_index": 1,
+    "explanation": "Die güterrechtliche Auseinandersetzung regelt die Aufteilung des ehelichen Vermögens bei Scheidung oder Tod."
+  },
+  {
+    "question": "Wie kann man einen Erbvertrag abschliessen?",
+    "options": [
+      "Nur mündlich", 
+      "Nur durch einseitige Erklärung", 
+      "Gemeinsam mit Zustimmung aller beteiligten Parteien", 
+      "Durch Online-Eintrag"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Erbvertrag ist eine gemeinsame Vereinbarung, die die Zustimmung aller Parteien erfordert."
+  },
+  {
+    "question": "Was versteht man unter der frei verfügbaren Quote?",
+    "options": [
+      "Teil des Erbes, über den der Erblasser frei verfügen kann", 
+      "Pflichtteil für Kinder", 
+      "Staatlicher Anteil", 
+      "Teil für Wohltätigkeitsorganisationen"
+    ],
+    "correct_index": 0,
+    "explanation": "Über die frei verfügbare Quote kann der Erblasser unabhängig von Pflichtteilen bestimmen."
+  },
+  {
+    "question": "Was passiert mit dem Güterstand bei einer Scheidung?",
+    "options": [
+      "Er bleibt bestehen", 
+      "Er endet automatisch", 
+      "Er muss vor Gericht beantragt werden", 
+      "Er geht auf die Kinder über"
+    ],
+    "correct_index": 1,
+    "explanation": "Mit der Scheidung endet der eheliche Güterstand, z. B. die Errungenschaftsbeteiligung."
+  },
+  {
+    "question": "Welche Aussage zur Errungenschaft ist korrekt?",
+    "options": [
+      "Schenkungen gehören zur Errungenschaft", 
+      "Einkommen während der Ehe zählt zur Errungenschaft", 
+      "Alles vor der Ehe ist Errungenschaft", 
+      "Nur Immobilien zählen zur Errungenschaft"
+    ],
+    "correct_index": 1,
+    "explanation": "Das während der Ehe erworbene Einkommen ist Teil der Errungenschaft."
+  },
+  {
+    "question": "Was ist ein typischer Grund für einen Pflichtteilsstreit?",
+    "options": [
+      "Unklare gesetzliche Regelung", 
+      "Erbe wurde enterbt, obwohl er pflichtteilsgeschützt ist", 
+      "Kein Testament vorhanden", 
+      "Testament wurde mündlich verfasst"
+    ],
+    "correct_index": 1,
+    "explanation": "Enterbungen von pflichtteilsgeschützten Erben führen häufig zu Erbstreitigkeiten."
+  }
+]
+
