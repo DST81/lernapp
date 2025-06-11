@@ -14,7 +14,9 @@ st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
     "Deep Learning": "mc_questions_with_explanations.json",
     "NLP": "mc_NLP.json",
-    "UNIX": "mc_unix_for_poets.json"
+    "UNIX": "mc_unix_for_poets.json",
+    "BIO": "mc_bio.json",
+    "WR": "mc_wr.json"
 }
 
 
