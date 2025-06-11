@@ -1,0 +1,1235 @@
+[
+  {
+    "question": "Was versteht man unter Tokenization im Natural Language Processing?",
+    "options": [
+      "Das Zusammenfassen von Sätzen zu einem Absatz",
+      "Das Zerlegen von Text in kleinere Einheiten wie Wörter oder Satzzeichen",
+      "Das Entfernen von Stoppwörtern aus dem Text",
+      "Die Übersetzung von Text in eine andere Sprache"
+    ],
+    "correct_index": 1,
+    "explanation": "Tokenization bezeichnet die Aufteilung eines Textes in kleinere Einheiten, sogenannte Tokens, die meist Wörter oder Satzzeichen sind."
+  },
+  {
+    "question": "Was misst die Edit Distance zwischen zwei Zeichenketten?",
+    "options": [
+      "Die minimale Anzahl von Einfügungen, Löschungen oder Ersetzungen, um eine Kette in die andere zu überführen",
+      "Die Anzahl der gemeinsamen Buchstaben in beiden Ketten",
+      "Die Anzahl der Wörter in der längeren Kette",
+      "Die Anzahl der Satzzeichen in beiden Ketten"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Edit Distance ist ein Maß für die minimale Anzahl von Operationen, um eine Zeichenkette in eine andere zu transformieren."
+  },
+  {
+    "question": "Wozu dient ein regulärer Ausdruck (Regex) in der Textverarbeitung?",
+    "options": [
+      "Zur Suche und Mustererkennung in Texten",
+      "Zur Übersetzung von Texten in eine andere Sprache",
+      "Zur automatischen Korrektur von Rechtschreibfehlern",
+      "Zur Erkennung von Satzgrenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Reguläre Ausdrücke sind Muster, mit denen man Textabschnitte nach bestimmten Regeln finden und extrahieren kann."
+  },
+  {
+    "question": "Was beschreibt ein N-gramm-Modell in der Sprachmodellierung?",
+    "options": [
+      "Die Wahrscheinlichkeit eines Wortes basierend auf den vorherigen N-1 Wörtern",
+      "Die Anzahl der Buchstaben in einem Wort",
+      "Die Häufigkeit von Satzzeichen im Text",
+      "Die Struktur eines Satzes in Abhängigkeit von Grammatikregeln"
+    ],
+    "correct_index": 0,
+    "explanation": "N-gramm-Modelle schätzen die Wahrscheinlichkeit eines Wortes basierend auf einer festen Anzahl vorheriger Wörter."
+  },
+  {
+    "question": "Wie unterscheiden sich Word2Vec und GloVe bei Wortrepräsentationen?",
+    "options": [
+      "Word2Vec basiert auf lokalen Kontextfenstern, GloVe auf globalen Wort-Kooccurrenzen",
+      "Word2Vec nutzt globale Kooccurrenzen, GloVe lokale Kontextfenster",
+      "Beide nutzen ausschließlich syntaktische Informationen",
+      "Beide verwenden reine Ein-Hot-Codierungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Word2Vec lernt Wortvektoren basierend auf lokalen Kontextfenstern, während GloVe globale Kooccurrenzen über die gesamte Textmenge nutzt."
+  },
+  {
+    "question": "Welche Eigenschaft hat FastText gegenüber Word2Vec?",
+    "options": [
+      "FastText berücksichtigt die Unterwort-Struktur durch n-Gramme",
+      "FastText nutzt nur Ein-Hot-Codierungen",
+      "FastText ignoriert die Reihenfolge der Wörter",
+      "FastText verwendet ausschließlich syntaktische Merkmale"
+    ],
+    "correct_index": 0,
+    "explanation": "FastText berücksichtigt Subwort-Informationen, also Teile eines Wortes, was besonders für seltene Wörter vorteilhaft ist."
+  },
+  {
+    "question": "Was ist das Hauptprinzip der Transformer-Architektur?",
+    "options": [
+      "Selbst-Attention zur gewichteten Fokussierung auf relevante Teile der Eingabe",
+      "Rekurrente Verarbeitung von Sequenzen",
+      "Verwendung von konvolutionalen Filtern zur Mustererkennung",
+      "Statisches Einbetten von Wörtern ohne Kontext"
+    ],
+    "correct_index": 0,
+    "explanation": "Transformer verwenden Selbst-Attention, um alle Teile einer Sequenz parallel zu verarbeiten und die Abhängigkeiten zu modellieren."
+  },
+  {
+    "question": "Was ist der Zweck von POS-Tagging in der NLP?",
+    "options": [
+      "Jedes Wort mit seiner grammatischen Wortart zu kennzeichnen",
+      "Die Häufigkeit von Wörtern zu zählen",
+      "Die Satzlänge zu bestimmen",
+      "Die Satzstellung umzudrehen"
+    ],
+    "correct_index": 0,
+    "explanation": "POS-Tagging (Part-of-Speech) weist jedem Wort seine grammatische Kategorie wie Nomen, Verb, Adjektiv zu."
+  },
+  {
+    "question": "Was beschreibt Dependency Parsing?",
+    "options": [
+      "Die Bestimmung syntaktischer Beziehungen zwischen Wörtern in einem Satz",
+      "Das Zählen von Wörtern in einem Text",
+      "Die Umwandlung von Wörtern in Vektoren",
+      "Das Ersetzen von Synonymen"
+    ],
+    "correct_index": 0,
+    "explanation": "Dependency Parsing analysiert, welche Wörter syntaktisch voneinander abhängen, z.B. Subjekt-Verb-Beziehungen."
+  },
+  {
+    "question": "Wofür steht NER (Named Entity Recognition)?",
+    "options": [
+      "Die Erkennung und Klassifikation von Eigennamen wie Personen, Orten und Organisationen",
+      "Die Korrektur von Rechtschreibfehlern",
+      "Die Vorhersage des nächsten Wortes in einem Satz",
+      "Das Extrahieren von Satzgrenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "NER identifiziert benannte Entitäten im Text und klassifiziert sie in Kategorien wie Personen oder Orte."
+  },
+  {
+    "question": "Welche Eigenschaft hat ein RNN (Recurrent Neural Network)?",
+    "options": [
+      "Es verarbeitet Sequenzen unter Beibehaltung von Kontextinformationen über vorherige Schritte",
+      "Es analysiert einzelne Wörter unabhängig voneinander",
+      "Es basiert ausschließlich auf konvolutionalen Filtern",
+      "Es nutzt statische Einbettungen ohne Kontext"
+    ],
+    "correct_index": 0,
+    "explanation": "RNNs sind speziell für die Verarbeitung von Sequenzen entworfen und behalten dabei Informationen aus vorherigen Schritten im Gedächtnis."
+  },
+  {
+    "question": "Wozu dienen LSTMs in NLP?",
+    "options": [
+      "Zur Bewältigung des Vanishing-Gradient-Problems bei langen Sequenzen",
+      "Zur Beschleunigung der Vektorberechnung",
+      "Zur Erkennung von Satzzeichen",
+      "Zur Berechnung von TF-IDF-Werten"
+    ],
+    "correct_index": 0,
+    "explanation": "LSTMs sind spezielle RNN-Architekturen, die längerfristige Abhängigkeiten besser lernen können, indem sie das Vanishing-Gradient-Problem vermeiden."
+  },
+  {
+    "question": "Was ist Selbst-Attention in Transformern?",
+    "options": [
+      "Eine Methode, bei der jedes Element einer Eingabesequenz gewichtet auf alle anderen Elemente achtet",
+      "Eine Art von regulärem Ausdruck",
+      "Ein Verfahren zur Segmentierung von Texten",
+      "Ein spezielles Trainingsverfahren für RNNs"
+    ],
+    "correct_index": 0,
+    "explanation": "Selbst-Attention ermöglicht es jedem Element, Informationen von allen anderen Elementen der Sequenz zu beziehen und deren Wichtigkeit zu gewichten."
+  },
+  {
+    "question": "Was versteht man unter Pretraining bei BERT und GPT?",
+    "options": [
+      "Das Vortrainieren eines Modells auf großen Textkorpora vor der Feinabstimmung auf spezifische Aufgaben",
+      "Das Trainieren eines Modells auf einem kleinen, spezialisierten Datensatz",
+      "Die automatische Erzeugung von Fragen aus Texten",
+      "Das Testen von Modellen auf unbekannten Daten"
+    ],
+    "correct_index": 0,
+    "explanation": "Pretraining ist ein selbstüberwachter Lernprozess, bei dem das Modell auf großen Datenmengen allgemeine Sprachstrukturen lernt."
+  },
+  {
+    "question": "Was bedeutet Fine-tuning in der NLP-Modellierung?",
+    "options": [
+      "Die Anpassung eines vortrainierten Modells auf eine spezifische Aufgabe durch weiteres Training",
+      "Das Trainieren eines Modells von Grund auf neu",
+      "Das Entfernen von Stoppwörtern im Text",
+      "Das Übersetzen von Texten"
+    ],
+    "correct_index": 0,
+    "explanation": "Fine-tuning nutzt ein bereits vortrainiertes Modell und passt es gezielt an die Anforderungen einer konkreten Anwendung an."
+  },
+  {
+    "question": "Welche Aufgabe erfüllt Sentiment Analysis?",
+    "options": [
+      "Die automatische Bestimmung der Stimmung oder Meinung in einem Text",
+      "Die Erkennung von benannten Entitäten",
+      "Das Zusammenfassen von Texten",
+      "Die Generierung von Fragen"
+    ],
+    "correct_index": 0,
+    "explanation": "Sentiment Analysis klassifiziert Texte danach, ob sie positive, negative oder neutrale Stimmungen ausdrücken."
+  },
+  {
+    "question": "Was versteht man unter Topic Modeling?",
+    "options": [
+      "Die automatische Identifikation von Themen in einer Sammlung von Dokumenten",
+      "Das Zusammenfassen von Texten",
+      "Die Übersetzung von Texten in verschiedene Sprachen",
+      "Die Umwandlung von Texten in numerische Vektoren"
+    ],
+    "correct_index": 0,
+    "explanation": "Topic Modeling hilft, verborgene Themenstrukturen in großen Textsammlungen zu entdecken."
+  },
+  {
+    "question": "Welche Methode wird oft für Text-Summarization verwendet?",
+    "options": [
+      "Extraktive und abstrakte Zusammenfassung",
+      "Manuelles Umschreiben",
+      "Wortfrequenzzählung",
+      "Tokenization"
+    ],
+    "correct_index": 0,
+    "explanation": "Textzusammenfassung kann durch Auswahl wichtiger Sätze (extraktiv) oder durch Erzeugen neuer Formulierungen (abstraktiv) erfolgen."
+  },
+  {
+    "question": "Wozu dient Information Retrieval im NLP-Kontext?",
+    "options": [
+      "Zum Finden relevanter Dokumente oder Textstellen basierend auf einer Suchanfrage",
+      "Zur Grammatikprüfung",
+      "Zur Erkennung von Satzarten",
+      "Zur Vektorisierung von Wörtern"
+    ],
+    "correct_index": 0,
+    "explanation": "Information Retrieval ermöglicht das schnelle Auffinden von relevanten Informationen in großen Textbeständen."
+  },
+  {
+    "question": "Was ist Retrieval-Augmented Generation (RAG)?",
+    "options": [
+      "Ein Ansatz, bei dem ein Sprachmodell relevante Dokumente abruft und diese zur Antwortgenerierung nutzt",
+      "Ein Verfahren zur Tokenisierung",
+      "Eine Methode zur Bildverarbeitung",
+      "Ein Trainingsalgorithmus für RNNs"
+    ],
+    "correct_index": 0,
+    "explanation": "RAG kombiniert Informationsabruf mit Textgenerierung, um Antworten mit aktuellem Wissen zu erzeugen."
+  },
+  {
+    "question": "Warum ist Bias in KI problematisch?",
+    "options": [
+      "Weil Vorurteile und Ungleichheiten in Trainingsdaten zu unfairen Ergebnissen führen können",
+      "Weil KI dann schneller lernt",
+      "Weil es die Leistung verbessert",
+      "Weil Bias immer gewünscht ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Bias kann dazu führen, dass Modelle diskriminierende oder verzerrte Entscheidungen treffen."
+  },
+  {
+    "question": "Was bedeutet Model Alignment?",
+    "options": [
+      "Das Ausrichten eines KI-Modells auf menschliche Werte und Ziele",
+      "Das Anordnen von Modellen in einem Netzwerk",
+      "Das Trainieren eines Modells auf mehreren GPUs",
+      "Das Erstellen von Diagrammen"
+    ],
+    "correct_index": 0,
+    "explanation": "Alignment sorgt dafür, dass KI-Systeme erwünschte Verhaltensweisen zeigen und negative Folgen vermeiden."
+  },
+  {
+    "question": "Was ist Prompt Engineering?",
+    "options": [
+      "Die Gestaltung und Optimierung von Eingaben, um bessere Modellantworten zu erhalten",
+      "Die Entwicklung von Trainingsdaten",
+      "Das Trainieren eines Modells von Grund auf",
+      "Die Visualisierung von neuronalen Netzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Durch gutes Prompt Engineering kann man Sprachmodelle effektiver steuern."
+  },
+  {
+    "question": "Was sind Halluzinationen in Sprachmodellen?",
+    "options": [
+      "Die Generierung falscher oder erfundener Informationen",
+      "Das Erinnern an Trainingsdaten",
+      "Die Korrektur von Rechtschreibfehlern",
+      "Das Erkennen von Satzgrenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Halluzinationen treten auf, wenn Modelle plausible, aber falsche Antworten liefern."
+  },
+  {
+    "question": "Wozu dient Reinforcement Learning from Human Feedback (RLHF)?",
+    "options": [
+      "Um KI-Modelle durch menschliches Feedback auf gewünschte Verhaltensweisen zu trainieren",
+      "Um Daten automatisch zu annotieren",
+      "Zur Übersetzung von Texten",
+      "Zur Extraktion von Schlüsselwörtern"
+    ],
+    "correct_index": 0,
+    "explanation": "RLHF hilft, Modelle besser an menschliche Erwartungen anzupassen."
+  },
+  {
+    "question": "Was bezeichnet man als Stoppwörter im NLP?",
+    "options": [
+      "Häufige Wörter wie 'der', 'die', 'und', die oft aus der Analyse entfernt werden",
+      "Alle Eigennamen im Text",
+      "Fachbegriffe in einem Text",
+      "Satzzeichen"
+    ],
+    "correct_index": 0,
+    "explanation": "Stoppwörter sind häufig vorkommende Wörter, die meist wenig semantische Information tragen."
+  },
+  {
+    "question": "Wie funktioniert TF-IDF?",
+    "options": [
+      "Es gewichtet Wörter basierend auf ihrer Häufigkeit im Dokument und in der Gesamtheit der Dokumente",
+      "Es zählt die Gesamtanzahl der Wörter in einem Dokument",
+      "Es ist eine Methode zur Satzsegmentierung",
+      "Es wandelt Wörter in Vektoren um"
+    ],
+    "correct_index": 0,
+    "explanation": "TF-IDF hebt wichtige Wörter hervor, die in einem Dokument oft, aber insgesamt selten sind."
+  },
+  {
+    "question": "Was ist ein Word Embedding?",
+    "options": [
+      "Eine dichte Vektor-Darstellung von Wörtern, die semantische Ähnlichkeit abbildet",
+      "Eine Ein-Hot-Codierung von Wörtern",
+      "Eine Liste von Wörtern in einem Text",
+      "Eine Art von Satz"
+    ],
+    "correct_index": 0,
+    "explanation": "Word Embeddings repräsentieren Wörter als Vektoren, sodass ähnliche Wörter nah beieinander liegen."
+  },
+  {
+    "question": "Was beschreibt die Bag-of-Words-Darstellung?",
+    "options": [
+      "Eine Darstellung, die zählt, wie oft Wörter in einem Text vorkommen, ohne Reihenfolge zu berücksichtigen",
+      "Eine geordnete Liste von Wörtern",
+      "Eine Zusammenfassung des Textes",
+      "Eine Sequenz von Wortarten"
+    ],
+    "correct_index": 0,
+    "explanation": "Bag-of-Words ignoriert Wortreihenfolge, zählt nur Häufigkeiten."
+  },
+  {
+    "question": "Was ist Text Classification?",
+    "options": [
+      "Die Zuordnung von Texten zu vordefinierten Kategorien",
+      "Die Umwandlung von Text in Zahlen",
+      "Die Segmentierung von Texten in Sätze",
+      "Die Erkennung von Satzarten"
+    ],
+    "correct_index": 0,
+    "explanation": "Text Classification kategorisiert Texte, z.B. in Spam/Nicht-Spam oder Themenbereiche."
+  },
+  {
+    "question": "Was bedeutet Overfitting in ML-Modellen?",
+    "options": [
+      "Wenn ein Modell zu genau auf Trainingsdaten passt und auf neuen Daten schlecht generalisiert",
+      "Wenn ein Modell sehr schnell lernt",
+      "Wenn ein Modell zu wenig trainiert wurde",
+      "Wenn ein Modell große Datensätze nutzt"
+    ],
+    "correct_index": 0,
+    "explanation": "Overfitting führt zu schlechter Leistung auf unbekannten Daten, weil das Modell Details der Trainingsdaten auswendig gelernt hat."
+  },
+  {
+    "question": "Was ist ein Confusion Matrix?",
+    "options": [
+      "Eine Tabelle zur Bewertung der Leistung eines Klassifikationsmodells",
+      "Eine Matrix zur Text-Vektorisierung",
+      "Eine Darstellung der Wortarten in einem Text",
+      "Ein Diagramm für Wortfrequenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Confusion Matrix zeigt, wie oft ein Modell richtige und falsche Vorhersagen trifft."
+  },
+  {
+    "question": "Was misst die Genauigkeit (Accuracy) bei Klassifikationsmodellen?",
+    "options": [
+      "Den Anteil korrekter Vorhersagen aller Vorhersagen",
+      "Die Anzahl der Fehlklassifikationen",
+      "Die Zeit, die ein Modell zum Trainieren braucht",
+      "Die Komplexität des Modells"
+    ],
+    "correct_index": 0,
+    "explanation": "Accuracy gibt den Anteil richtig klassifizierter Beispiele an."
+  },
+  {
+    "question": "Wofür steht NLP?",
+    "options": [
+      "Natural Language Processing",
+      "Neural Linguistic Programming",
+      "New Language Paradigm",
+      "Non-linear Programming"
+    ],
+    "correct_index": 0,
+    "explanation": "NLP steht für Natural Language Processing, die Verarbeitung natürlicher Sprache mit Computern."
+  },
+  {
+    "question": "Was ist eine Stemming-Operation?",
+    "options": [
+      "Das Kürzen von Wörtern auf ihren Wortstamm",
+      "Das Ersetzen von Synonymen",
+      "Das Zusammenfügen von Sätzen",
+      "Das Übersetzen von Texten"
+    ],
+    "correct_index": 0,
+    "explanation": "Stemming reduziert Wörter auf ihre Grundform, z.B. 'laufend' zu 'lauf'."
+  },
+  {
+    "question": "Was bedeutet Lemmatization?",
+    "options": [
+      "Das Zurückführen von Wörtern auf ihre Grundform unter Berücksichtigung der Wortart",
+      "Das Zählen von Wörtern",
+      "Das Entfernen von Satzzeichen",
+      "Das Erzeugen von Synonymen"
+    ],
+    "correct_index": 0,
+    "explanation": "Lemmatization ist präziser als Stemming und nutzt grammatische Informationen."
+  },
+    {
+        "question": "Was beschreibt Tokenization im Natural Language Processing?",
+        "options": [
+            "Die Umwandlung von Text in Zahlen",
+            "Das Zerlegen eines Textes in kleinere Einheiten wie Wörter oder Zeichen",
+            "Das Entfernen von Stoppwörtern aus einem Text",
+            "Die Erkennung von Entitäten in einem Text"
+        ],
+        "correct_index": 1,
+        "explanation": "Tokenization ist der Prozess, bei dem ein Text in kleinere Teile, sogenannte Tokens, zerlegt wird. Diese Tokens können Wörter, Sätze oder Zeichen sein und dienen als Basis für viele NLP-Tasks."
+    },
+    {
+        "question": "Welcher Algorithmus wird häufig zur Berechnung der Edit Distance zwischen zwei Strings verwendet?",
+        "options": [
+            "K-Means Clustering",
+            "Levenshtein-Distanz",
+            "TF-IDF",
+            "Latent Dirichlet Allocation"
+        ],
+        "correct_index": 1,
+        "explanation": "Die Levenshtein-Distanz misst die minimale Anzahl von Zeichenänderungen (Einfügen, Löschen, Ersetzen), die notwendig sind, um einen String in einen anderen umzuwandeln."
+    },
+    {
+        "question": "Welche Methode wird in regulären Ausdrücken (Regex) verwendet, um eine Zeichenkette zu durchsuchen?",
+        "options": [
+            "Backpropagation",
+            "Pattern Matching",
+            "K-nearest Neighbors",
+            "Markov Chain"
+        ],
+        "correct_index": 1,
+        "explanation": "Pattern Matching ist eine Technik in regulären Ausdrücken, um Muster innerhalb von Texten zu finden, z. B. durch die Verwendung von Platzhaltern und quantifizierenden Symbolen."
+    },
+    {
+        "question": "Was beschreibt ein N-Gramm-Sprachmodell?",
+        "options": [
+            "Ein Modell, das einzelne Wörter im Text zählt",
+            "Ein Modell, das Vorhersagen auf Grundlage von festen Wortsequenzen trifft",
+            "Ein Modell, das vollständig auf neuronale Netzwerke basiert",
+            "Ein Modell, das ausschließlich auf Sentiment-Analyse verwendet wird"
+        ],
+        "correct_index": 1,
+        "explanation": "Ein N-Gramm-Modell analysiert Wortsequenzen der Länge N, um die Wahrscheinlichkeit des Auftretens eines bestimmten Wortes basierend auf den vorherigen Wörtern zu berechnen."
+    },
+    {
+        "question": "Welches Modell wird häufig für die Wortrepräsentation genutzt?",
+        "options": [
+            "Word2Vec",
+            "K-Means Clustering",
+            "Bag-of-Words",
+            "Naive Bayes"
+        ],
+        "correct_index": 0,
+        "explanation": "Word2Vec ist ein Modell, das Wörter in kontinuierliche Vektoren umwandelt, um semantische Beziehungen zwischen Wörtern zu erfassen."
+    },
+    {
+        "question": "Was unterscheidet GloVe von Word2Vec?",
+        "options": [
+            "GloVe basiert auf Statistik, während Word2Vec ein neuronales Netz nutzt",
+            "GloVe verwendet keine Vektorrepräsentationen",
+            "Word2Vec ist ausschließlich für neuronale Netze geeignet",
+            "GloVe kann nur für Bildverarbeitung genutzt werden"
+        ],
+        "correct_index": 0,
+        "explanation": "GloVe nutzt statistische Methoden zur Wortembeddings-Berechnung, während Word2Vec auf neuronalen Netzwerken basiert."
+    },
+    {
+        "question": "Welche Methode nutzt FastText zur Wortrepräsentation?",
+        "options": [
+            "Word embeddings auf Basis von Subword-Informationen",
+            "Clustering von Wortvektoren",
+            "Syntaxanalysen von Wortbedeutungen",
+            "Manuelles Mapping von Wörtern zu Kategorien"
+        ],
+        "correct_index": 0,
+        "explanation": "FastText erweitert klassische Word Embeddings durch die Einbeziehung von Subword-Informationen, wodurch seltene Wörter besser erfasst werden können."
+    },
+    {
+        "question": "Was ist ein Vorteil von Transformer-basierten Embeddings?",
+        "options": [
+            "Sie ignorieren den Kontext eines Wortes",
+            "Sie erfassen den Kontext durch Self-Attention",
+            "Sie basieren auf festen Wortlisten",
+            "Sie können nur für Bilder genutzt werden"
+        ],
+        "correct_index": 1,
+        "explanation": "Transformer-basierte Embeddings nutzen Self-Attention, um den Kontext eines Wortes in der gesamten Sequenz zu erfassen."
+    },
+    {
+        "question": "Welche Aufgabe erfüllt POS Tagging?",
+        "options": [
+            "Klassifikation von Dokumenten",
+            "Bestimmung der grammatikalischen Wortart eines Tokens",
+            "Erkennung von Entitäten in einem Satz",
+            "Übersetzung von Texten"
+        ],
+        "correct_index": 1,
+        "explanation": "POS-Tagging (Part-of-Speech Tagging) klassifiziert Wörter nach ihrer grammatikalischen Funktion, z. B. als Nomen, Verb oder Adjektiv."
+    },
+    {
+        "question": "Was ist Named Entity Recognition (NER)?",
+        "options": [
+            "Erkennung von Wortarten",
+            "Klassifizierung von Dokumenten",
+            "Extraktion von spezifischen Entitäten wie Personen, Orten oder Organisationen",
+            "Berechnung der Wortwahrscheinlichkeit in einem Text"
+        ],
+        "correct_index": 2,
+        "explanation": "Named Entity Recognition (NER) identifiziert spezifische Entitäten wie Namen, Orte oder Organisationen innerhalb eines Textes."
+    },
+    {
+        "question": "Was beschreibt Dependency Parsing?",
+        "options": [
+            "Die Erkennung von grammatikalischen Abhängigkeiten zwischen Wörtern in einem Satz",
+            "Das Entfernen von Stoppwörtern aus einem Text",
+            "Das Clustering von ähnlich verwendeten Wörtern",
+            "Die Vorhersage des nächsten Wortes in einem Satz"
+        ],
+        "correct_index": 0,
+        "explanation": "Dependency Parsing analysiert die grammatikalischen Abhängigkeiten zwischen Wörtern in einem Satz und erstellt eine hierarchische Struktur."
+    },
+    {
+        "question": "Welche Architektur wurde für die Verarbeitung von Sequenzdaten entwickelt?",
+        "options": [
+            "Convolutional Neural Networks (CNNs)",
+            "Recurrent Neural Networks (RNNs)",
+            "Transformer-Modelle",
+            "Decision Trees"
+        ],
+        "correct_index": 1,
+        "explanation": "Recurrent Neural Networks (RNNs) wurden speziell für die Verarbeitung von Sequenzdaten entwickelt, da sie den vorherigen Kontext für Vorhersagen nutzen."
+    },
+    {
+        "question": "Welche Eigenschaft macht LSTMs besonders im Vergleich zu normalen RNNs?",
+        "options": [
+            "Sie nutzen längere Kontextinformationen durch spezielle Speichermechanismen",
+            "Sie verarbeiten Eingaben parallel statt sequenziell",
+            "Sie benötigen keine Trainingsdaten",
+            "Sie sind ausschließlich für Bildverarbeitung geeignet"
+        ],
+        "correct_index": 0,
+        "explanation": "LSTMs nutzen Speichermechanismen wie Forget Gates, um langfristige Abhängigkeiten in Sequenzdaten zu erfassen."
+    },
+    {
+        "question": "Was ermöglicht der Mechanismus der Self-Attention in Transformer-Modellen?",
+        "options": [
+            "Das Speichern von vorherigen Neuronenausgaben",
+            "Das Vergleichen jedes Wortes mit allen anderen Wörtern im Satz",
+            "Die Parallelverarbeitung von Bildern",
+            "Das Entfernen von unbedeutenden Wörtern"
+        ],
+        "correct_index": 1,
+        "explanation": "Self-Attention erlaubt es einem Transformer-Modell, jedes Wort mit allen anderen Wörtern in der Sequenz zu vergleichen, wodurch Kontextinformationen besser erfasst werden."
+    },
+    {
+        "question": "Was ist ein Vorteil von Pretraining in NLP-Modellen?",
+        "options": [
+            "Das Modell lernt allgemeine Sprachstrukturen vor der spezifischen Anpassung",
+            "Das Modell benötigt keine weiteren Daten",
+            "Das Modell ist auf eine einzige Aufgabe beschränkt",
+            "Pretraining wird nur für Bildverarbeitung verwendet"
+        ],
+        "correct_index": 0,
+        "explanation": "Pretraining erlaubt einem Modell, allgemeine Sprachmuster zu lernen, bevor es für spezifische Aufgaben wie Sentiment-Analyse oder Fragebeantwortung feinabgestimmt wird."
+    },
+    {
+        "question": "Welches Transformer-Modell ist für die Textverarbeitung besonders bekannt?",
+        "options": [
+            "CNN",
+            "BERT",
+            "ResNet",
+            "K-Means"
+        ],
+        "correct_index": 1,
+        "explanation": "BERT (Bidirectional Encoder Representations from Transformers) ist ein weit verbreitetes Modell für die Verarbeitung von natürlicher Sprache."
+    },
+    {
+        "question": "Warum wird Fine-Tuning auf vortrainierten NLP-Modellen angewendet?",
+        "options": [
+            "Um das Modell auf spezifische Aufgaben anzupassen",
+            "Um das Modell komplett neu zu trainieren",
+            "Um die Trainingseffizienz zu reduzieren",
+            "Um die Modelle für die Bildverarbeitung anzupassen"
+        ],
+        "correct_index": 0,
+        "explanation": "Fine-Tuning passt ein vortrainiertes Modell durch zusätzliche Trainingsphasen an spezifische Aufgaben an."
+    },
+    {
+        "question": "Was ist das Ziel von Sentiment Analysis?",
+        "options": [
+            "Die Klassifizierung von Texten nach ihrer emotionalen Tendenz",
+            "Die Segmentierung eines Textes in einzelne Wörter",
+            "Das Entfernen irrelevanter Informationen aus einem Dokument",
+            "Die Erkennung von Named Entities"
+        ],
+        "correct_index": 0,
+        "explanation": "Sentiment Analysis bestimmt die emotionale Haltung eines Textes, z. B. positiv, neutral oder negativ."
+    },
+    {
+        "question": "Welche Technik wird in Topic Modeling häufig verwendet?",
+        "options": [
+            "Latent Dirichlet Allocation (LDA)",
+            "Support Vector Machines",
+            "Levenshtein-Distanz",
+            "Backpropagation"
+        ],
+        "correct_index": 0,
+        "explanation": "Latent Dirichlet Allocation (LDA) ist eine beliebte Methode zur Identifikation von Themen in großen Textsammlungen."
+    },
+    {
+        "question": "Was beschreibt Information Retrieval?",
+        "options": [
+            "Das Auffinden relevanter Informationen aus großen Datenmengen",
+            "Das Generieren neuer Texte aus bestehenden Daten",
+            "Die Verarbeitung von Bildern mit neuronalen Netzen",
+            "Das Training eines generativen Modells"
+        ],
+        "correct_index": 0,
+        "explanation": "Information Retrieval bezeichnet die Suche und Filterung relevanter Informationen aus umfangreichen Textsammlungen, z. B. für Suchmaschinen."
+    },
+    {
+        "question": "Was beschreibt Dependency Parsing?",
+        "options": [
+            "Die Erkennung von grammatikalischen Abhängigkeiten zwischen Wörtern in einem Satz",
+            "Das Entfernen von Stoppwörtern aus einem Text",
+            "Das Clustering von ähnlich verwendeten Wörtern",
+            "Die Vorhersage des nächsten Wortes in einem Satz"
+        ],
+        "correct_index": 0,
+        "explanation": "Dependency Parsing analysiert die grammatikalischen Abhängigkeiten zwischen Wörtern in einem Satz und erstellt eine hierarchische Struktur."
+    },
+    {
+        "question": "Welche Architektur wurde für die Verarbeitung von Sequenzdaten entwickelt?",
+        "options": [
+            "Convolutional Neural Networks (CNNs)",
+            "Recurrent Neural Networks (RNNs)",
+            "Transformer-Modelle",
+            "Decision Trees"
+        ],
+        "correct_index": 1,
+        "explanation": "Recurrent Neural Networks (RNNs) wurden speziell für die Verarbeitung von Sequenzdaten entwickelt, da sie den vorherigen Kontext für Vorhersagen nutzen."
+    },
+    {
+        "question": "Welche Eigenschaft macht LSTMs besonders im Vergleich zu normalen RNNs?",
+        "options": [
+            "Sie nutzen längere Kontextinformationen durch spezielle Speichermechanismen",
+            "Sie verarbeiten Eingaben parallel statt sequenziell",
+            "Sie benötigen keine Trainingsdaten",
+            "Sie sind ausschließlich für Bildverarbeitung geeignet"
+        ],
+        "correct_index": 0,
+        "explanation": "LSTMs nutzen Speichermechanismen wie Forget Gates, um langfristige Abhängigkeiten in Sequenzdaten zu erfassen."
+    },
+    {
+        "question": "Was ermöglicht der Mechanismus der Self-Attention in Transformer-Modellen?",
+        "options": [
+            "Das Speichern von vorherigen Neuronenausgaben",
+            "Das Vergleichen jedes Wortes mit allen anderen Wörtern im Satz",
+            "Die Parallelverarbeitung von Bildern",
+            "Das Entfernen von unbedeutenden Wörtern"
+        ],
+        "correct_index": 1,
+        "explanation": "Self-Attention erlaubt es einem Transformer-Modell, jedes Wort mit allen anderen Wörtern in der Sequenz zu vergleichen, wodurch Kontextinformationen besser erfasst werden."
+    },
+    {
+        "question": "Was ist ein Vorteil von Pretraining in NLP-Modellen?",
+        "options": [
+            "Das Modell lernt allgemeine Sprachstrukturen vor der spezifischen Anpassung",
+            "Das Modell benötigt keine weiteren Daten",
+            "Das Modell ist auf eine einzige Aufgabe beschränkt",
+            "Pretraining wird nur für Bildverarbeitung verwendet"
+        ],
+        "correct_index": 0,
+        "explanation": "Pretraining erlaubt einem Modell, allgemeine Sprachmuster zu lernen, bevor es für spezifische Aufgaben wie Sentiment-Analyse oder Fragebeantwortung feinabgestimmt wird."
+    },
+    {
+        "question": "Welches Transformer-Modell ist für die Textverarbeitung besonders bekannt?",
+        "options": [
+            "CNN",
+            "BERT",
+            "ResNet",
+            "K-Means"
+        ],
+        "correct_index": 1,
+        "explanation": "BERT (Bidirectional Encoder Representations from Transformers) ist ein weit verbreitetes Modell für die Verarbeitung von natürlicher Sprache."
+    },
+    {
+        "question": "Warum wird Fine-Tuning auf vortrainierten NLP-Modellen angewendet?",
+        "options": [
+            "Um das Modell auf spezifische Aufgaben anzupassen",
+            "Um das Modell komplett neu zu trainieren",
+            "Um die Trainingseffizienz zu reduzieren",
+            "Um die Modelle für die Bildverarbeitung anzupassen"
+        ],
+        "correct_index": 0,
+        "explanation": "Fine-Tuning passt ein vortrainiertes Modell durch zusätzliche Trainingsphasen an spezifische Aufgaben an."
+    },
+    {
+        "question": "Was ist das Ziel von Sentiment Analysis?",
+        "options": [
+            "Die Klassifizierung von Texten nach ihrer emotionalen Tendenz",
+            "Die Segmentierung eines Textes in einzelne Wörter",
+            "Das Entfernen irrelevanter Informationen aus einem Dokument",
+            "Die Erkennung von Named Entities"
+        ],
+        "correct_index": 0,
+        "explanation": "Sentiment Analysis bestimmt die emotionale Haltung eines Textes, z. B. positiv, neutral oder negativ."
+    },
+    {
+        "question": "Welche Technik wird in Topic Modeling häufig verwendet?",
+        "options": [
+            "Latent Dirichlet Allocation (LDA)",
+            "Support Vector Machines",
+            "Levenshtein-Distanz",
+            "Backpropagation"
+        ],
+        "correct_index": 0,
+        "explanation": "Latent Dirichlet Allocation (LDA) ist eine beliebte Methode zur Identifikation von Themen in großen Textsammlungen."
+    },
+    {
+        "question": "Was beschreibt Information Retrieval?",
+        "options": [
+            "Das Auffinden relevanter Informationen aus großen Datenmengen",
+            "Das Generieren neuer Texte aus bestehenden Daten",
+            "Die Verarbeitung von Bildern mit neuronalen Netzen",
+            "Das Training eines generativen Modells"
+        ],
+        "correct_index": 0,
+        "explanation": "Information Retrieval bezeichnet die Suche und Filterung relevanter Informationen aus umfangreichen Textsammlungen, z. B. für Suchmaschinen."
+    },
+    {
+        "question": "Was ist Retrieval-Augmented Generation (RAG) im NLP?",
+        "options": [
+            "Eine Technik zur Verbesserung generativer Modelle durch externe Wissensquellen",
+            "Ein Verfahren zur automatischen Datenannotation",
+            "Eine Methode zur Bildverarbeitung",
+            "Ein Mechanismus zur Erzeugung von künstlichen Trainingsdaten"
+        ],
+        "correct_index": 0,
+        "explanation": "Retrieval-Augmented Generation (RAG) kombiniert generative KI mit externen Wissensdatenbanken, um genauere und kontextreichere Antworten zu erzeugen."
+    },
+    {
+        "question": "Welche Herausforderung besteht bei der Ethik von NLP-Modellen?",
+        "options": [
+            "Die Entwicklung schnellerer Algorithmen",
+            "Die Vermeidung von Bias und unfairen Vorhersagen",
+            "Die Optimierung der GPU-Nutzung",
+            "Die Reduzierung der Trainingsdatenmenge"
+        ],
+        "correct_index": 1,
+        "explanation": "Ein zentrales ethisches Problem bei NLP-Modellen ist Bias, da Trainingsdaten Vorurteile enthalten können, die sich auf Vorhersagen auswirken."
+    },
+    {
+        "question": "Was ist Model Alignment in der KI?",
+        "options": [
+            "Die Anpassung eines KI-Modells an ethische und menschliche Werte",
+            "Die Wahl der besten Optimierungsstrategie",
+            "Das Entfernen von ungenutzten Features aus dem Modell",
+            "Die Skalierung eines neuronalen Netzwerks"
+        ],
+        "correct_index": 0,
+        "explanation": "Model Alignment bedeutet, KI-Modelle so zu trainieren, dass sie menschliche Werte und gewünschte Verhaltensweisen widerspiegeln."
+    },
+    {
+        "question": "Was ist Prompt Engineering?",
+        "options": [
+            "Die gezielte Gestaltung von Eingaben für Sprachmodelle",
+            "Die automatische Generierung von NLP-Trainingsdaten",
+            "Ein Verfahren zur Verbesserung von neuronalen Netzwerken",
+            "Eine Methode zur Textkompression"
+        ],
+        "correct_index": 0,
+        "explanation": "Prompt Engineering optimiert Eingaben, um Sprachmodelle gezielt zu steuern und qualitativ hochwertige Ausgaben zu erhalten."
+    },
+    {
+        "question": "Was beschreibt eine Halluzination bei KI-Sprachmodellen?",
+        "options": [
+            "Die Generierung von falschen oder erfundenen Informationen durch ein Modell",
+            "Die Wiederholung von bereits bekannten Fakten",
+            "Das Fehlen jeglicher Vorhersagen",
+            "Die Ausgabe reiner Zahlenwerte anstelle von Text"
+        ],
+        "correct_index": 0,
+        "explanation": "Eine Halluzination tritt auf, wenn KI-Modelle erfundene oder fehlerhafte Informationen generieren, die nicht in ihren Trainingsdaten enthalten sind."
+    },
+    {
+        "question": "Warum wird Reinforcement Learning from Human Feedback (RLHF) in KI verwendet?",
+        "options": [
+            "Um KI-Modelle durch menschliches Feedback an gewünschte Verhaltensweisen anzupassen",
+            "Um Modelle schneller zu trainieren",
+            "Um die Anzahl der benötigten Neuronen zu reduzieren",
+            "Um Trainingsdaten automatisch zu filtern"
+        ],
+        "correct_index": 0,
+        "explanation": "RLHF verbessert die Feinabstimmung von KI-Modellen, indem menschliches Feedback genutzt wird, um die gewünschte Ausgabe zu fördern."
+    },
+    {
+        "question": "Welches Problem kann durch Bias in NLP-Modellen entstehen?",
+        "options": [
+            "Diskriminierende oder verzerrte Vorhersagen",
+            "Langsame Modellkonvergenz",
+            "Zu hohe GPU-Auslastung",
+            "Fehlende Daten für das Training"
+        ],
+        "correct_index": 0,
+        "explanation": "Bias in NLP-Modellen kann dazu führen, dass bestimmte Gruppen bevorzugt oder benachteiligt werden, was ethische Probleme verursacht."
+    },
+    {
+        "question": "Warum ist es wichtig, Bias in NLP-Modellen zu erkennen?",
+        "options": [
+            "Um faire und unverzerrte Vorhersagen zu gewährleisten",
+            "Um die Rechenleistung zu optimieren",
+            "Um das Modell vor fehlerhaften Token zu schützen",
+            "Um die Anzahl der Trainingsdurchläufe zu reduzieren"
+        ],
+        "correct_index": 0,
+        "explanation": "Die Identifikation von Bias ist entscheidend, um faire Modelle zu gewährleisten und diskriminierende Vorhersagen zu vermeiden."
+    },
+    {
+        "question": "Was ist eine Möglichkeit, Bias in NLP-Modellen zu reduzieren?",
+        "options": [
+            "Durch Diversifizierung der Trainingsdaten",
+            "Durch das Entfernen aller unbekannten Wörter",
+            "Durch die Nutzung ausschließlich englischer Daten",
+            "Durch das Ausschalten von Dropout-Schichten"
+        ],
+        "correct_index": 0,
+        "explanation": "Bias kann reduziert werden, indem die Trainingsdaten diversifiziert und Algorithmen zur Entdeckung und Korrektur unfairer Muster eingesetzt werden."
+    },
+    {
+        "question": "Was ist der Hauptzweck von RLHF?",
+        "options": [
+            "Verbesserung der Modellanpassung durch menschliches Feedback",
+            "Schnelleres Training neuronaler Netzwerke",
+            "Reduktion der Anzahl trainierter Parameter",
+            "Erhöhung der GPU-Effizienz"
+        ],
+        "correct_index": 0,
+        "explanation": "RLHF erlaubt es, Modelle gezielt durch menschliches Feedback zu steuern, um erwünschte Verhaltensweisen zu fördern."
+    },
+
+    {
+        "question": "Was versteht man unter Tokenization im Natural Language Processing?",
+        "options": [
+        "Das Zusammenfassen von Sätzen zu einem Absatz",
+        "Das Zerlegen von Text in kleinere Einheiten wie Wörter oder Satzzeichen",
+        "Das Entfernen von Stoppwörtern aus dem Text",
+        "Die Übersetzung von Text in eine andere Sprache"
+        ],
+        "correct_index": 1,
+        "explanation": "Tokenization bezeichnet die Aufteilung eines Textes in kleinere Einheiten, sogenannte Tokens, die meist Wörter oder Satzzeichen sind."
+    },
+    {
+        "question": "Was misst die Edit Distance zwischen zwei Zeichenketten?",
+        "options": [
+        "Die minimale Anzahl von Einfügungen, Löschungen oder Ersetzungen, um eine Kette in die andere zu überführen",
+        "Die Anzahl der gemeinsamen Buchstaben in beiden Ketten",
+        "Die Anzahl der Wörter in der längeren Kette",
+        "Die Anzahl der Satzzeichen in beiden Ketten"
+        ],
+        "correct_index": 0,
+        "explanation": "Die Edit Distance ist ein Maß für die minimale Anzahl von Operationen, um eine Zeichenkette in eine andere zu transformieren."
+    },
+    {
+        "question": "Wozu dient ein regulärer Ausdruck (Regex) in der Textverarbeitung?",
+        "options": [
+        "Zur Suche und Mustererkennung in Texten",
+        "Zur Übersetzung von Texten in eine andere Sprache",
+        "Zur automatischen Korrektur von Rechtschreibfehlern",
+        "Zur Erkennung von Satzgrenzen"
+        ],
+        "correct_index": 0,
+        "explanation": "Reguläre Ausdrücke sind Muster, mit denen man Textabschnitte nach bestimmten Regeln finden und extrahieren kann."
+    },
+    {
+        "question": "Was beschreibt ein N-gramm-Modell in der Sprachmodellierung?",
+        "options": [
+        "Die Wahrscheinlichkeit eines Wortes basierend auf den vorherigen N-1 Wörtern",
+        "Die Anzahl der Buchstaben in einem Wort",
+        "Die Häufigkeit von Satzzeichen im Text",
+        "Die Struktur eines Satzes in Abhängigkeit von Grammatikregeln"
+        ],
+        "correct_index": 0,
+        "explanation": "N-gramm-Modelle schätzen die Wahrscheinlichkeit eines Wortes basierend auf einer festen Anzahl vorheriger Wörter."
+    },
+    {
+        "question": "Wie unterscheiden sich Word2Vec und GloVe bei Wortrepräsentationen?",
+        "options": [
+        "Word2Vec basiert auf lokalen Kontextfenstern, GloVe auf globalen Wort-Kooccurrenzen",
+        "Word2Vec nutzt globale Kooccurrenzen, GloVe lokale Kontextfenster",
+        "Beide nutzen ausschließlich syntaktische Informationen",
+        "Beide verwenden reine Ein-Hot-Codierungen"
+        ],
+        "correct_index": 0,
+        "explanation": "Word2Vec lernt Wortvektoren basierend auf lokalen Kontextfenstern, während GloVe globale Kooccurrenzen über die gesamte Textmenge nutzt."
+    },
+    {
+        "question": "Welche Eigenschaft hat FastText gegenüber Word2Vec?",
+        "options": [
+        "FastText berücksichtigt die Unterwort-Struktur durch n-Gramme",
+        "FastText nutzt nur Ein-Hot-Codierungen",
+        "FastText ignoriert die Reihenfolge der Wörter",
+        "FastText verwendet ausschließlich syntaktische Merkmale"
+        ],
+        "correct_index": 0,
+        "explanation": "FastText berücksichtigt Subwort-Informationen, also Teile eines Wortes, was besonders für seltene Wörter vorteilhaft ist."
+    },
+    {
+        "question": "Was ist das Hauptprinzip der Transformer-Architektur?",
+        "options": [
+        "Selbst-Attention zur gewichteten Fokussierung auf relevante Teile der Eingabe",
+        "Rekurrente Verarbeitung von Sequenzen",
+        "Verwendung von konvolutionalen Filtern zur Mustererkennung",
+        "Statisches Einbetten von Wörtern ohne Kontext"
+        ],
+        "correct_index": 0,
+        "explanation": "Transformer verwenden Selbst-Attention, um alle Teile einer Sequenz parallel zu verarbeiten und die Abhängigkeiten zu modellieren."
+    },
+    {
+        "question": "Was ist der Zweck von POS-Tagging in der NLP?",
+        "options": [
+        "Jedes Wort mit seiner grammatischen Wortart zu kennzeichnen",
+        "Die Häufigkeit von Wörtern zu zählen",
+        "Die Satzlänge zu bestimmen",
+        "Die Satzstellung umzudrehen"
+        ],
+        "correct_index": 0,
+        "explanation": "POS-Tagging (Part-of-Speech) weist jedem Wort seine grammatische Kategorie wie Nomen, Verb, Adjektiv zu."
+    },
+    {
+        "question": "Was beschreibt Dependency Parsing?",
+        "options": [
+        "Die Bestimmung syntaktischer Beziehungen zwischen Wörtern in einem Satz",
+        "Das Zählen von Wörtern in einem Text",
+        "Die Umwandlung von Wörtern in Vektoren",
+        "Das Ersetzen von Synonymen"
+        ],
+        "correct_index": 0,
+        "explanation": "Dependency Parsing analysiert, welche Wörter syntaktisch voneinander abhängen, z.B. Subjekt-Verb-Beziehungen."
+    },
+    {
+        "question": "Wofür steht NER (Named Entity Recognition)?",
+        "options": [
+        "Die Erkennung und Klassifikation von Eigennamen wie Personen, Orten und Organisationen",
+        "Die Korrektur von Rechtschreibfehlern",
+        "Die Vorhersage des nächsten Wortes in einem Satz",
+        "Das Extrahieren von Satzgrenzen"
+        ],
+        "correct_index": 0,
+        "explanation": "NER identifiziert benannte Entitäten im Text und klassifiziert sie in Kategorien wie Personen oder Orte."
+    },
+    {
+        "question": "Welche Eigenschaft hat ein RNN (Recurrent Neural Network)?",
+        "options": [
+        "Es verarbeitet Sequenzen unter Beibehaltung von Kontextinformationen über vorherige Schritte",
+        "Es analysiert einzelne Wörter unabhängig voneinander",
+        "Es basiert ausschließlich auf konvolutionalen Filtern",
+        "Es nutzt statische Einbettungen ohne Kontext"
+        ],
+        "correct_index": 0,
+        "explanation": "RNNs sind speziell für die Verarbeitung von Sequenzen entworfen und behalten dabei Informationen aus vorherigen Schritten im Gedächtnis."
+    },
+    {
+        "question": "Wozu dienen LSTMs in NLP?",
+        "options": [
+        "Zur Bewältigung des Vanishing-Gradient-Problems bei langen Sequenzen",
+        "Zur Beschleunigung der Vektorberechnung",
+        "Zur Erkennung von Satzzeichen",
+        "Zur Berechnung von TF-IDF-Werten"
+        ],
+        "correct_index": 0,
+        "explanation": "LSTMs sind spezielle RNN-Architekturen, die längerfristige Abhängigkeiten besser lernen können, indem sie das Vanishing-Gradient-Problem vermeiden."
+    },
+    {
+        "question": "Was ist Selbst-Attention in Transformern?",
+        "options": [
+        "Eine Methode, bei der jedes Element einer Eingabesequenz gewichtet auf alle anderen Elemente achtet",
+        "Eine Art von regulärem Ausdruck",
+        "Ein Verfahren zur Segmentierung von Texten",
+        "Ein spezielles Trainingsverfahren für RNNs"
+        ],
+        "correct_index": 0,
+        "explanation": "Selbst-Attention ermöglicht es jedem Element, Informationen von allen anderen Elementen der Sequenz zu beziehen und deren Wichtigkeit zu gewichten."
+    },
+    {
+        "question": "Was versteht man unter Pretraining bei BERT und GPT?",
+        "options": [
+        "Das Vortrainieren eines Modells auf großen Textkorpora vor der Feinabstimmung auf spezifische Aufgaben",
+        "Das Trainieren eines Modells auf einem kleinen, spezialisierten Datensatz",
+        "Die automatische Erzeugung von Fragen aus Texten",
+        "Das Testen von Modellen auf unbekannten Daten"
+        ],
+        "correct_index": 0,
+        "explanation": "Pretraining ist ein selbstüberwachter Lernprozess, bei dem das Modell auf großen Datenmengen allgemeine Sprachstrukturen lernt."
+    },
+    {
+        "question": "Was bedeutet Fine-tuning in der NLP-Modellierung?",
+        "options": [
+        "Die Anpassung eines vortrainierten Modells auf eine spezifische Aufgabe durch weiteres Training",
+        "Das Trainieren eines Modells von Grund auf neu",
+        "Das Entfernen von Stoppwörtern im Text",
+        "Das Übersetzen von Texten"
+        ],
+        "correct_index": 0,
+        "explanation": "Fine-tuning nutzt ein bereits vortrainiertes Modell und passt es gezielt an die Anforderungen einer konkreten Anwendung an."
+    },
+    {
+        "question": "Welche Aufgabe erfüllt Sentiment Analysis?",
+        "options": [
+        "Die automatische Bestimmung der Stimmung oder Meinung in einem Text",
+        "Die Erkennung von benannten Entitäten",
+        "Das Zusammenfassen von Texten",
+        "Die Generierung von Fragen"
+        ],
+        "correct_index": 0,
+        "explanation": "Sentiment Analysis klassifiziert Texte danach, ob sie positive, negative oder neutrale Stimmungen ausdrücken."
+    },
+    {
+        "question": "Was versteht man unter Topic Modeling?",
+        "options": [
+        "Die automatische Identifikation von Themen in einer Sammlung von Dokumenten",
+        "Das Zusammenfassen von Texten",
+        "Die Übersetzung von Texten in verschiedene Sprachen",
+        "Die Umwandlung von Texten in numerische Vektoren"
+        ],
+        "correct_index": 0,
+        "explanation": "Topic Modeling hilft, verborgene Themenstrukturen in großen Textsammlungen zu entdecken."
+    },
+    {
+        "question": "Welche Methode wird oft für Text-Summarization verwendet?",
+        "options": [
+        "Extraktive und abstrakte Zusammenfassung",
+        "Manuelles Umschreiben",
+        "Wortfrequenzzählung",
+        "Tokenization"
+        ],
+        "correct_index": 0,
+        "explanation": "Textzusammenfassung kann durch Auswahl wichtiger Sätze (extraktiv) oder durch Erzeugen neuer Formulierungen (abstraktiv) erfolgen."
+    },
+    {
+        "question": "Wozu dient Information Retrieval im NLP-Kontext?",
+        "options": [
+        "Zum Finden relevanter Dokumente oder Textstellen basierend auf einer Suchanfrage",
+        "Zur Grammatikprüfung",
+        "Zur Erkennung von Satzarten",
+        "Zur Vektorisierung von Wörtern"
+        ],
+        "correct_index": 0,
+        "explanation": "Information Retrieval ermöglicht das schnelle Auffinden von relevanten Informationen in großen Textbeständen."
+    },
+    {
+        "question": "Was ist Retrieval-Augmented Generation (RAG)?",
+        "options": [
+        "Ein Ansatz, bei dem ein Sprachmodell relevante Dokumente abruft und diese zur Antwortgenerierung nutzt",
+        "Ein Verfahren zur Tokenisierung",
+        "Eine Methode zur Bildverarbeitung",
+        "Ein Trainingsalgorithmus für RNNs"
+        ],
+        "correct_index": 0,
+        "explanation": "RAG kombiniert Informationsabruf mit Textgenerierung, um Antworten mit aktuellem Wissen zu erzeugen."
+    },
+    {
+        "question": "Warum ist Bias in KI problematisch?",
+        "options": [
+        "Weil Vorurteile und Ungleichheiten in Trainingsdaten zu unfairen Ergebnissen führen können",
+        "Weil KI dann schneller lernt",
+        "Weil es die Leistung verbessert",
+        "Weil Bias immer gewünscht ist"
+        ],
+        "correct_index": 0,
+        "explanation": "Bias kann dazu führen, dass Modelle diskriminierende oder verzerrte Entscheidungen treffen."
+    },
+    {
+        "question": "Was bedeutet Model Alignment?",
+        "options": [
+        "Das Ausrichten eines KI-Modells auf menschliche Werte und Ziele",
+        "Das Anordnen von Modellen in einem Netzwerk",
+        "Das Trainieren eines Modells auf mehreren GPUs",
+        "Das Erstellen von Diagrammen"
+        ],
+        "correct_index": 0,
+        "explanation": "Alignment sorgt dafür, dass KI-Systeme erwünschte Verhaltensweisen zeigen und negative Folgen vermeiden."
+    },
+    {
+        "question": "Was ist Prompt Engineering?",
+        "options": [
+        "Die Gestaltung und Optimierung von Eingaben, um bessere Modellantworten zu erhalten",
+        "Die Entwicklung von Trainingsdaten",
+        "Das Trainieren eines Modells von Grund auf",
+        "Die Visualisierung von neuronalen Netzen"
+        ],
+        "correct_index": 0,
+        "explanation": "Durch gutes Prompt Engineering kann man Sprachmodelle effektiver steuern."
+    },
+    {
+        "question": "Was sind Halluzinationen in Sprachmodellen?",
+        "options": [
+        "Die Generierung falscher oder erfundener Informationen",
+        "Das Erinnern an Trainingsdaten",
+        "Die Korrektur von Rechtschreibfehlern",
+        "Das Erkennen von Satzgrenzen"
+        ],
+        "correct_index": 0,
+        "explanation": "Halluzinationen treten auf, wenn Modelle plausible, aber falsche Antworten liefern."
+    },
+    {
+        "question": "Wozu dient Reinforcement Learning from Human Feedback (RLHF)?",
+        "options": [
+        "Um KI-Modelle durch menschliches Feedback auf gewünschte Verhaltensweisen zu trainieren",
+        "Um Daten automatisch zu annotieren",
+        "Zur Übersetzung von Texten",
+        "Zur Extraktion von Schlüsselwörtern"
+        ],
+        "correct_index": 0,
+        "explanation": "RLHF hilft, Modelle besser an menschliche Erwartungen anzupassen."
+    },
+    {
+        "question": "Was bezeichnet man als Stoppwörter im NLP?",
+        "options": [
+        "Häufige Wörter wie 'der', 'die', 'und', die oft aus der Analyse entfernt werden",
+        "Alle Eigennamen im Text",
+        "Fachbegriffe in einem Text",
+        "Satzzeichen"
+        ],
+        "correct_index": 0,
+        "explanation": "Stoppwörter sind häufig vorkommende Wörter, die meist wenig semantische Information tragen."
+    },
+    {
+        "question": "Wie funktioniert TF-IDF?",
+        "options": [
+        "Es gewichtet Wörter basierend auf ihrer Häufigkeit im Dokument und in der Gesamtheit der Dokumente",
+        "Es zählt die Gesamtanzahl der Wörter in einem Dokument",
+        "Es ist eine Methode zur Satzsegmentierung",
+        "Es wandelt Wörter in Vektoren um"
+        ],
+        "correct_index": 0,
+        "explanation": "TF-IDF hebt wichtige Wörter hervor, die in einem Dokument oft, aber insgesamt selten sind."
+    },
+    {
+        "question": "Was ist ein Word Embedding?",
+        "options": [
+        "Eine dichte Vektor-Darstellung von Wörtern, die semantische Ähnlichkeit abbildet",
+        "Eine Ein-Hot-Codierung von Wörtern",
+        "Eine Liste von Wörtern in einem Text",
+        "Eine Art von Satz"
+        ],
+        "correct_index": 0,
+        "explanation": "Word Embeddings repräsentieren Wörter als Vektoren, sodass ähnliche Wörter nah beieinander liegen."
+    },
+    {
+        "question": "Was beschreibt die Bag-of-Words-Darstellung?",
+        "options": [
+        "Eine Darstellung, die zählt, wie oft Wörter in einem Text vorkommen, ohne Reihenfolge zu berücksichtigen",
+        "Eine geordnete Liste von Wörtern",
+        "Eine Zusammenfassung des Textes",
+        "Eine Sequenz von Wortarten"
+        ],
+        "correct_index": 0,
+        "explanation": "Bag-of-Words ignoriert Wortreihenfolge, zählt nur Häufigkeiten."
+    },
+    {
+        "question": "Was ist Text Classification?",
+        "options": [
+        "Die Zuordnung von Texten zu vordefinierten Kategorien",
+        "Die Umwandlung von Text in Zahlen",
+        "Die Segmentierung von Texten in Sätze",
+        "Die Erkennung von Satzarten"
+        ],
+        "correct_index": 0,
+        "explanation": "Text Classification kategorisiert Texte, z.B. in Spam/Nicht-Spam oder Themenbereiche."
+    },
+    {
+        "question": "Was bedeutet Overfitting in ML-Modellen?",
+        "options": [
+        "Wenn ein Modell zu genau auf Trainingsdaten passt und auf neuen Daten schlecht generalisiert",
+        "Wenn ein Modell sehr schnell lernt",
+        "Wenn ein Modell zu wenig trainiert wurde",
+        "Wenn ein Modell große Datensätze nutzt"
+        ],
+        "correct_index": 0,
+        "explanation": "Overfitting führt zu schlechter Leistung auf unbekannten Daten, weil das Modell Details der Trainingsdaten auswendig gelernt hat."
+    },
+    {
+        "question": "Was ist ein Confusion Matrix?",
+        "options": [
+        "Eine Tabelle zur Bewertung der Leistung eines Klassifikationsmodells",
+        "Eine Matrix zur Text-Vektorisierung",
+        "Eine Darstellung der Wortarten in einem Text",
+        "Ein Diagramm für Wortfrequenzen"
+        ],
+        "correct_index": 0,
+        "explanation": "Die Confusion Matrix zeigt, wie oft ein Modell richtige und falsche Vorhersagen trifft."
+    },
+    {
+        "question": "Was misst die Genauigkeit (Accuracy) bei Klassifikationsmodellen?",
+        "options": [
+        "Den Anteil korrekter Vorhersagen aller Vorhersagen",
+        "Die Anzahl der Fehlklassifikationen",
+        "Die Zeit, die ein Modell zum Trainieren braucht",
+        "Die Komplexität des Modells"
+        ],
+        "correct_index": 0,
+        "explanation": "Accuracy gibt den Anteil richtig klassifizierter Beispiele an."
+    },
+    {
+        "question": "Wofür steht NLP?",
+        "options": [
+        "Natural Language Processing",
+        "Neural Linguistic Programming",
+        "New Language Paradigm",
+        "Non-linear Programming"
+        ],
+        "correct_index": 0,
+        "explanation": "NLP steht für Natural Language Processing, die Verarbeitung natürlicher Sprache mit Computern."
+    },
+    {
+        "question": "Was ist eine Stemming-Operation?",
+        "options": [
+        "Das Kürzen von Wörtern auf ihren Wortstamm",
+        "Das Ersetzen von Synonymen",
+        "Das Zusammenfügen von Sätzen",
+        "Das Übersetzen von Texten"
+        ],
+        "correct_index": 0,
+        "explanation": "Stemming reduziert Wörter auf ihre Grundform, z.B. 'laufend' zu 'lauf'."
+    },
+    {
+        "question": "Was bedeutet Lemmatization?",
+        "options": [
+        "Das Zurückführen von Wörtern auf ihre Grundform unter Berücksichtigung der Wortart",
+        "Das Zählen von Wörtern",
+        "Das Entfernen von Satzzeichen",
+        "Das Erzeugen von Synonymen"
+        ],
+        "correct_index": 0,
+        "explanation": "Lemmatization ist präziser als Stemming und nutzt grammatische Informationen."
+    }
+]

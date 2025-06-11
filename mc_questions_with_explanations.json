@@ -1,0 +1,1971 @@
+[
+  {
+    "question": "Welcher Satz beschreibt den Hauptunterschied zwischen Dense- und Convolutional-Schichten?",
+    "options": [
+      "Dense-Schichten lernen lokale Muster",
+      "Dense-Schichten lernen globale Muster, Convolutional-Schichten lokale Muster",
+      "Beide lernen nur globale Muster",
+      "Beide lernen nur lokale Muster"
+    ],
+    "correct_index": 1,
+    "explanation": "Dense-Schichten, auch vollverbundene Schichten genannt, verknüpfen jedes Eingabenelement mit jedem Ausgabenelement und sind besonders gut darin, globale Muster im gesamten Datenraum zu erfassen. Convolutional-Schichten hingegen verwenden Filter, die nur auf lokal begrenzte Teile der Eingabe wirken, wodurch sie effektiv lokale Muster und räumliche Hierarchien erkennen können. Dadurch sind Convolutional-Schichten besonders nützlich für Aufgaben wie die Bildverarbeitung, wo die Erkennung von lokalen Strukturen entscheidend ist."
+  },
+  {
+    "question": "Welches Prinzip ermöglicht es einem CNN, ein gelerntes Muster an jeder Bildposition zu erkennen?",
+    "options": [
+      "Datenaugmentierung",
+      "Translation Invariance",
+      "Überanpassung",
+      "Dropout"
+    ],
+    "correct_index": 1,
+    "explanation": "Translation Invariance in einem CNN wird durch die Verwendung von Faltungsschichten (Convolutional Layers) erreicht. Diese Schichten wenden identische Filter oder Kernen über alle Positionen eines Bildes an, was es dem Netzwerk ermöglicht, ein gelerntes Muster unabhängig von seiner genauen Lage im Bild zu erkennen. Darüber hinaus trägt die Pooling-Schicht dazu bei, die Positionsgenauigkeit weiter zu verringern und die Translation Invariance zu verstärken."
+  },
+  {
+    "question": "Wie gross ist die Tiefenachse eines RGB-Bildes?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein RGB-Bild besteht aus drei Farbkanälen: Rot, Grün und Blau. Jeder dieser Kanäle speichert die Intensitätswerte der entsprechenden Farbe für jedes Pixel im Bild. Daher ist die Tiefenachse, die die Anzahl der Farbkanäle repräsentiert, gleich 3."
+  },
+  {
+    "question": "Welche zwei Hyperparameter definieren eine Faltung massgeblich?",
+    "options": [
+      "Aktivierungsfunktion und Lernrate",
+      "Patch-Grösse und Ausgabetiefe",
+      "Optimierer und Batch-Grösse",
+      "Anzahl der Epochen und Padding"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Faltung in einem Convolutional Neural Network (CNN) wird maßgeblich durch die Filter- oder Kernelgröße (Patch-Größe) und die Anzahl der Filter (Ausgabetiefe) bestimmt. Die Patch-Größe legt fest, wie groß der Bereich ist, über den die Faltung ausgeführt wird, während die Ausgabetiefe bestimmt, wie viele Merkmalskarten (Feature Maps) erzeugt werden. Diese Hyperparameter beeinflussen die Fähigkeit des Modells, lokale Muster zu erkennen und die Repräsentationstiefe der Eingabedaten."
+  },
+  {
+    "question": "Ein 3×3-Fenster wird auf eine 5×5-Feature-Map ohne Padding angewendet. Um wie viele Tiles schrumpft jede räumliche Dimension?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_index": 1,
+    "explanation": "Wenn ein 3×3-Fenster ohne Padding auf eine 5×5-Feature-Map angewendet wird, schrumpft jede räumliche Dimension um 2, weil das Fenster an den Rändern der Map nicht vollständig angewendet werden kann. Das bedeutet, dass es insgesamt 2 weniger Positionsmöglichkeiten für das Fenster in jeder Dimension gibt. Somit reduziert sich jede Dimension von 5 auf (5 - 3 + 1) = 3."
+  },
+  {
+    "question": "Wie heisst die Technik, bei der zusätzliche Zeilen und Spalten hinzugefügt werden, um Eingabe- und Ausgabegrösse gleichzuhalten?",
+    "options": [
+      "Normalisierung",
+      "Padding",
+      "Striding",
+      "Pooling"
+    ],
+    "correct_index": 1,
+    "explanation": "Padding ist eine Technik im Deep Learning, bei der zusätzliche Zeilen und Spalten zu den Rändern eines Eingabedatensatzes hinzugefügt werden, um die Dimensionen der Ausgabe konstant zu halten. Dies wird häufig in Convolutional Neural Networks (CNNs) verwendet, um die Ausgabegröße nach Anwendung eines Filterkerns beizubehalten. Padding hilft, Informationen an den Rändern der Eingabe nicht zu verlieren und sorgt für eine konsistente Dimensionierung in nachfolgenden Schichten."
+  },
+  {
+    "question": "Welche Auswirkung hat Stride=2 bei einer Faltung?",
+    "options": [
+      "Keine Veränderung der Grösse",
+      "Vergrössert Höhe und Breite",
+      "Verkleinert Höhe und Breite um Faktor 2",
+      "Verdoppelt die Anzahl der Filter"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Stride von 2 in einem Faltungsvorgang bedeutet, dass der Filter bei jedem Schritt um 2 Pixel sowohl horizontal als auch vertikal verschoben wird. Dadurch wird der Output des Faltungsprozesses in Bezug auf Höhe und Breite auf etwa die Hälfte reduziert, was zu einer Verdichtung der Merkmalskarte führt. Dies trägt zur Reduzierung der Rechenkosten und zur Verringerung der dimensionalen Größe der Daten bei, während essentielle Merkmale beibehalten werden."
+  },
+  {
+    "question": "Was ist das primäre Ziel von Max-Pooling?",
+    "options": [
+      "Gewichte aktualisieren",
+      "Feature-Maps aggressiv verkleinern",
+      "Modell regulieren",
+      "Filterzahl erhöhen"
+    ],
+    "correct_index": 1,
+    "explanation": "Das primäre Ziel von Max-Pooling ist es, die Abmessungen von Feature-Maps zu reduzieren, während die wichtigsten Merkmale beibehalten werden, was die Berechnungseffizienz und Robustheit gegenüber kleinen Verschiebungen der Eingaben erhöht. Durch die Auswahl des maximalen Wertes in einem bestimmten Fenster fließen die markantesten Merkmale eines Bereichs in die nächste Schicht. Dies hilft, Überanpassung zu vermeiden und beschleunigt den Trainingsprozess in neuronalen Netzen."
+  },
+  {
+    "question": "Eine Feature-Map besitzt immer Achsen für . . .",
+    "options": [
+      "Breite, Höhe, Zeit",
+      "Höhe, Tiefe, Batch",
+      "Höhe, Breite, Tiefe",
+      "Filter, Verlust, Genauigkeit"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine Feature-Map in einem Convolutional Neural Network (CNN) repräsentiert die Ausgabe eines Filters, der über ein Eingangsbild oder eine vorherige Feature-Map angewendet wird. Sie hat drei Dimensionen: Höhe und Breite, die den räumlichen Umfang definieren, und Tiefe, die die Anzahl der angewendeten Filter oder Kanäle darstellt. Diese Struktur hilft, komplexe Merkmale aus den Eingabedaten zu extrahieren und zu lernen."
+  },
+  {
+    "question": "Was lernen tiefere Convolutional-Schichten typischerweise?",
+    "options": [
+      "Einfache Kanten",
+      "Rauschen",
+      "Grössere, abstraktere Muster aus früheren Features",
+      "Gewichtsinitialisierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Tiefere Convolutional-Schichten in einem neuronalen Netzwerk bauen typischerweise auf den grundlegenden Mustern der vorherigen Schichten auf. Diese Schichten lernen abstraktere und komplexere Merkmale, die oft größere Strukturen darstellen, wie beispielsweise Formen oder Objekte. Dadurch ist das Netzwerk in der Lage, auf einer höheren, semantischen Ebene Objekte in Bildern zu erkennen."
+  },
+  {
+    "question": "Average Pooling berechnet als Ausgabe eines Patches",
+    "options": [
+      "das Maximum jeder Tiefe",
+      "den Median jeder Tiefe",
+      "den Durchschnitt jeder Tiefe",
+      "das Minimum jeder Tiefe"
+    ],
+    "correct_index": 2,
+    "explanation": "Average Pooling fasst die Werte innerhalb eines Patches eines Eingabebildes zusammen, indem es den Durchschnitt der Werte für jede Kanal- oder Tiefenebene berechnet. Dadurch wird die Größe der Ausgabe reduziert, während wichtige Merkmale beibehalten werden. Dies hilft, die Berechnungseffizienz eines neuronalen Netzes zu verbessern und Overfitting zu reduzieren."
+  },
+  {
+    "question": "Wofür ist Max-Pooling nicht hauptsächlich zuständig?",
+    "options": [
+      "Raumhierarchien zu lernen",
+      "Parameterzahl reduzieren",
+      "Aktivierungen normalisieren",
+      "Downsampling durchführen"
+    ],
+    "correct_index": 2,
+    "explanation": "Max-Pooling ist vor allem dafür zuständig, die Dimensionen der Feature-Maps in einem Convolutional Neural Network zu reduzieren, wodurch die Berechnungseffizienz gesteigert und überflüssige Details entfernt werden. Es wählt das maximale Element aus einer festgelegten Filtergröße aus und behält so die hervorstechendsten Merkmale bei. Es normalisiert jedoch nicht die Aktivierungen, das heißt, es bringt sie nicht auf einen gemeinsamen Wertebereich."
+  },
+  {
+    "question": "Wenn Sie eine Feature-Map um Faktor 2 verkleinern möchten, wählen Sie am wahrscheinlichsten",
+    "options": [
+      "Max Pooling mit Stride 2",
+      "Padding",
+      "Faltung mit Stride 1",
+      "Average Pooling mit Stride 1"
+    ],
+    "correct_index": 0,
+    "explanation": "Max Pooling mit Stride 2 ist eine Technik, die angewendet wird, um die Dimensionen einer Feature-Map zu verkleinern, indem nur das größte Element aus jedem 2x2-Fenster ausgewählt wird, während man den Filter mit einem Schritt von 2 über die Eingabe verschiebt. Dies reduziert die Höhe und Breite der Feature-Map etwa um die Hälfte. Diese Methode sorgt auch für eine gewisse Translation Invarianz und reduziert die Berechnungsanforderungen im Netzwerk."
+  },
+  {
+    "question": "Welche Art von Mustern lernt typischerweise die erste Convolution Schicht?",
+    "options": [
+      "Komplexe Objekte wie Gesichter",
+      "Kleine lokale Merkmale (z.B. Kanten)",
+      "Globale Semantik",
+      "Farbverteilungen"
+    ],
+    "correct_index": 1,
+    "explanation": "Die erste Convolution-Schicht in einem Convolutional Neural Network (CNN) lernt typischerweise, einfache und lokale Merkmale wie Kanten, Linien und Farbverläufe zu erkennen. Diese grundlegenden Strukturen dienen als Bausteine für komplexere Muster, die in den tieferen Schichten des Netzwerks erfasst werden. Durch das Erkennen dieser einfachen Merkmale kann das CNN effektivere Darstellungen für die Bildverarbeitung aufbauen."
+  },
+  {
+    "question": "Nach der ersten Convolution repräsentiert die Tiefenachse der Feature Map . . .",
+    "options": [
+      "Farbkanäle",
+      "Einzelne Pixel",
+      "Filter / Features",
+      "Zeitschritte"
+    ],
+    "correct_index": 2,
+    "explanation": "Nach der ersten Convolution repräsentiert die Tiefenachse der Feature Map die Ausgabe der verschiedenen Filter, die auf das Eingangsdatenvolumen angewendet wurden. Jeder Filter extrahiert spezifische Merkmale oder Features, indem er auf das Eingangsbild konvolviert. Dadurch wird die Tiefenachse der Feature Map zu einem Stapel von Feature-Maps, wobei jede Map die Reaktion auf einen bestimmten Filter darstellt."
+  },
+  {
+    "question": "Hauptzweck des Paddings ist . . .",
+    "options": [
+      "Training zu beschleunigen",
+      "Overfitting zu verhindern",
+      "Räumliche Dimensionen des Inputs zu erhalten",
+      "Die Output-Depth zu reduzieren"
+    ],
+    "correct_index": 2,
+    "explanation": "Padding wird in Deep Learning-Modellen, insbesondere in Convolutional Neural Networks (CNNs), verwendet, um die räumlichen Dimensionen der Eingabedaten während der Faltung zu erhalten. Es verhindert den Informationsverlust an den Rändern des Bildes, indem es zusätzliche Ränder mit Nullen oder einem spezifischen Wert hinzufügt. Dadurch bleibt die Ausgangsgröße konstant oder kontrollierbar, was beim Aufbau tieferer Netzwerke nützlich ist."
+  },
+  {
+    "question": "Flattening in einem CNN bedeutet . . .",
+    "options": [
+      "Eine 1×1-Convolution anwenden",
+      "Die 3D-Feature-Map vor Dense-Layern in einen 1D-Vektor umwandeln",
+      "Feature-Maps Zero-Padden",
+      "über Kanäle mitteln"
+    ],
+    "correct_index": 1,
+    "explanation": "Flattening in einem CNN bedeutet, die mehrdimensionale Ausgabe der Convolutional- und Pooling-Schichten, oft eine 3D-Feature-Map, in einen eindimensionalen Vektor umzuwandeln. Diese Umwandlung ist notwendig, um die Daten in Dense-Layer, also vollverbundene Schichten, einzuspeisen, die klassischerweise in Neuronalen Netzen für die endgültige Klassifikation oder Regression verwendet werden. Durch das Flattening wird die geometrische Struktur der Daten zugunsten einer linearen Anordnung reduziert, was die Verarbeitung für Dense-Layer erleichtert."
+  },
+  {
+    "question": "Convolution-Layer lernen ___ Muster, während Dense-Layer ___ Muster lernen.",
+    "options": [
+      "globale; lokale",
+      "sequentielle; räumliche",
+      "lokale; globale",
+      "zeitliche; kategoriale"
+    ],
+    "correct_index": 2,
+    "explanation": "Convolution-Layer lernen lokale Muster, weil sie mit kleinen Filtern arbeiten, die lokale Regionen des Eingabebilds scannen, um Merkmale wie Kanten oder Texturen zu erfassen. Dense-Layer hingegen lernen globale Muster, indem sie volle Verbindungen zu allen Neuronen herstellen und dadurch das gesamte Informationsbild nutzen, um umfassendere oder zusammengesetzte Merkmale zu erkennen. Diese Kombination ermöglicht es neuronalen Netzen, sowohl feindetailierte als auch übergeordnete Strukturen in den Daten zu erfassen."
+  },
+  {
+    "question": "Ein Filter in einem CNN ist am besten beschrieben als . . .",
+    "options": [
+      "Einzelner Pixelwert",
+      "Gelernte Gewichtsmatrix, die ein spezifisches Merkmal detektiert",
+      "Lernratenplan",
+      "Stride der Convolution"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Filter in einem Convolutional Neural Network (CNN) ist eine kleine, trainierbare Matrix von Gewichten, die über das Eingabebild geschoben wird, um bestimmte Merkmale oder Muster zu erkennen. Während des Trainings passt das Netzwerk diese Gewichte an, um relevante Merkmale, wie Kanten, Texturen oder Formen, zu detektieren. Dadurch können CNNs komplexe Muster in Bildern erkennen und klassifizieren."
+  },
+  {
+    "question": "Wird kein Padding verwendet und der Kernel ist 3×3, wie viele Pixel gehen an jedem Rand verloren?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_index": 1,
+    "explanation": "Wenn kein Padding verwendet wird, verkleinert jede Anwendung eines 3×3-Kernels das Bild an jedem Rand um einen Pixel. Dies liegt daran, dass der Kernel zentriert auf jeden Pixel angewendet wird, und für Pixel an den Rändern fehlen die benötigten benachbarten Pixel. Daher verliert das Bild an jedem Rand einen Pixel."
+  },
+  {
+    "question": "Welche Pooling-Operation liefert den Maximalwert jedes Fensters?",
+    "options": [
+      "Min-Pooling",
+      "Average-Pooling",
+      "Sum-Pooling",
+      "Max-Pooling"
+    ],
+    "correct_index": 3,
+    "explanation": "Max-Pooling ist eine spezielle Pooling-Operation in neuronalen Netzen, die das größte Element eines bestimmten Fensters (Teilbereichs) der Eingabedaten auswählt. Dieser Ansatz reduziert die räumlichen Dimensionen der Daten und hebt die dominantesten Merkmale hervor. Dadurch wird die Komplexität des Modells verringert und eine gewisse Translation Invarianz erreicht."
+  },
+  {
+    "question": "Hierarchisches Lernen von Features in CNNs bedeutet, dass . . .",
+    "options": [
+      "Alle Layer dieselbe Abstraktionsebene lernen",
+      "Tiefere Layer Kombinationen einfacher Features früherer Layer lernen",
+      "Frühe Layer auf globalen Kontext fokussieren",
+      "Pooling-Layer Filter lernen"
+    ],
+    "correct_index": 1,
+    "explanation": "Hierarchisches Lernen von Features in Convolutional Neural Networks (CNNs) bedeutet, dass die Netzwerkstruktur es ermöglicht, dass tiefere Layers komplexere und abstraktere Merkmale erfassen, die auf den einfacheren Merkmalen basieren, die von den vorherigen Layern gelernt wurden. Frühere Layer identifizieren grundlegende Merkmale wie Kanten oder Farben, während tiefere Layer diese Informationen nutzen, um komplexere Muster und Kombinationen zu erkennen, wie z.B. Gesichtszüge oder Objekte. Dadurch entsteht eine zunehmend detaillierte und umfassende Repräsentation der Eingabedaten."
+  },
+  {
+    "question": "Ein CNN ben¨otigt weniger Trainingsdaten als ein vergleichbares Dense-Netz haupts¨achlich wegen . . .",
+    "options": [
+      "Datenaugmentation",
+      "Translationsinvarianz & Weight Sharing",
+      "Hoher Lernrate",
+      "Dropout-Regularisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein CNN benötigt weniger Trainingsdaten, da es durch die lokale Rezeptive Felder Übersetzungseinvarianten und durch Gewichtsweitergabe die Erkennung von Mustern unabhängig von deren Position im Eingabebild ermöglicht. Dies reduziert die Anzahl der zu lernenden Parameter im Vergleich zu einem dicht vernetzten Netzwerk. Dadurch kann das CNN effizienter generalisieren, auch bei einer kleineren Datenmenge."
+  },
+  {
+    "question": "Was ist das Hauptziel der Regularisierung",
+    "options": [
+      "Die Lernrate zu erhöhen",
+      "Die Trainingszeit zu verkürzen",
+      "Overfitting zu vermeiden",
+      "Die Datenmenge zu reduzieren"
+    ],
+    "correct_index": 2,
+    "explanation": "Regularisierung zielt darauf ab, Overfitting zu verhindern, indem sie die Komplexität eines Modells einschränkt und es daran hindert, sich zu stark an die Trainingsdaten anzupassen. Sie fügt typischerweise einen Strafterm zur Verlustfunktion hinzu, der das Modell dazu bringt, einfachere Lösungen zu bevorzugen. Dadurch wird die Generalisierungsfähigkeit des Modells auf neuen, ungesehenen Daten verbessert."
+  },
+  {
+    "question": "Wie wird die Regularisierung technisch in der Optimierung des Modells umgesetzt?",
+    "options": [
+      "Durch Erhöhung der Lernrate",
+      "Durch Hinzufügen eines Strafterms zur Verlustfunktion",
+      "Durch Reduktion der Batchgrösse",
+      "Durch Datenaugmentation"
+    ],
+    "correct_index": 1,
+    "explanation": "Reguläre Strafterme, wie L1- oder L2-Regularisierung, werden zur Verlustfunktion hinzugefügt, um Überanpassung zu verhindern. Diese Strafterm führt dazu, dass das Optimierungsverfahren nicht nur den Fehler des Modells minimiert, sondern auch die Komplexität der Modellparameter reduziert. Die Regularisierung hilft somit dabei, ein Gleichgewicht zwischen Modellgenauigkeit und Generalisierungsfähigkeit zu finden."
+  },
+  {
+    "question": "Was bewirkt der Strafterm in der Regularisierung?",
+    "options": [
+      "Er erhöht die Gewichte des Modells",
+      "Er macht das Modell langsamer",
+      "Er verhindert, dass das Modell die Trainingsdaten zu genau lernt",
+      "Er reduziert die Anzahl der Epochen"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Strafterm in der Regularisierung fügt dem Verlustfunktion eines Modells eine zusätzliche Komponente hinzu, die große Gewichte bestraft. Dies verhindert Überanpassung, indem es das Modell daran hindert, die Trainingsdaten zu genau zu lernen und stattdessen eine einfachere, allgemeinere Annäherung zu fördern. Dadurch bleibt das Modell besser in der Lage, auf neuen, ungesehenen Daten gut zu generalisieren."
+  },
+  {
+    "question": "Was ist ein typischer Effekt von L1-Regularisierung?",
+    "options": [
+      "Erhöhte Anzahl an Epochen",
+      "Gleichmässige Verteilung der Gewichte",
+      "Setzt Gewichte auf Null",
+      "Schnelleres Training"
+    ],
+    "correct_index": 2,
+    "explanation": "L1-Regularisierung fügt der Verlustfunktion eine Strafe proportional zur Summe der absoluten Werte der Gewichte hinzu. Dies fördert Sparsity, indem es viele Gewichte auf genau Null reduziert, was zu einem einfacheren Modell führen kann. Dadurch ist L1-Regularisierung besonders nützlich für Feature-Auswahl und verhindert Überanpassung."
+  },
+  {
+    "question": "Welche Norm wird in der L2-Regularisierung verwendet?",
+    "options": [
+      "Absolutwert",
+      "Quadratwurzel der quadrierten Gewichte",
+      "Kubikwurzel",
+      "Maximumswert"
+    ],
+    "correct_index": 1,
+    "explanation": "Die L2-Regularisierung verwendet die euklidische Norm, auch bekannt als die Frobenius-Norm. Dabei werden alle Gewichte quadriert, aufsummiert und aus der Summe die Quadratwurzel gezogen. Dadurch wird die Komplexität des Modells reduziert, indem große Gewichtswerte bestraft und kleinere Werte bevorzugt werden, was zu einer besseren Generalisierungsfähigkeit führt."
+  },
+  {
+    "question": "Was bewirkt die L2-Regularisierung im Modell?",
+    "options": [
+      "Sie reduziert die Datenmenge",
+      "Sie bevorzugt grössere Gewichte",
+      "Sie schränkt die Grösse der Gewichte ein",
+      "Sie entfernt irrelevante Features"
+    ],
+    "correct_index": 2,
+    "explanation": "Die L2-Regularisierung fügt einen Strafterm zur Verlustfunktion hinzu, der proportional zur Summe der Quadrate der Gewichte ist. Dadurch werden große Gewichtswerte bestraft, was hilft, Überanpassung zu verhindern und das Modell einfacher zu halten. Im Wesentlichen fördert sie kleinere und glattere Modelle, die besser generalisieren können."
+  },
+  {
+    "question": "Welche Aussage trifft auf L1-Regularisierung zu?",
+    "options": [
+      "Führt zu gleichmässiger Gewichtung",
+      "Führt zu Feature Selektion",
+      "Erhöht die Modellkomplexität",
+      "Führt zu längerer Trainingszeit"
+    ],
+    "correct_index": 1,
+    "explanation": "L1-Regularisierung, auch als Lasso bekannt, fügt der Verlustfunktion die Summe der absoluten Beträge der Gewichte hinzu. Diese Regularisierung tendiert dazu, einige Gewichte genau auf null zu setzen, was effektiv dazu führt, dass irrelevante Features eliminiert werden. Daher begünstigt sie die Auswahl relevanter Features und vereinfacht das Modell, indem sie Feature Selektion bewirkt."
+  },
+  {
+    "question": "Was stellt der Regularisierungsparameter dar?",
+    "options": [
+      "Die Lernrate des Modells",
+      "Die maximale Anzahl an Epochen",
+      "Das Gewicht des Strafterms in der Verlustfunktion",
+      "Die Anzahl der Features"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Regularisierungsparameter bestimmt, wie stark der Regularisierungsterm (Strafterm) in die Verlustfunktion des Modells eingeht. Dieser Term hilft dabei, Überanpassung zu vermeiden, indem er komplexe Modelle bestraft. Ein höherer Regularisierungsparameter verstärkt den Einfluss des Strafterms, was zu einfacheren Modellen führen kann."
+  },
+  {
+    "question": "Was passiert bei zu starker Regularisierung?",
+    "options": [
+      "Das Modell overfittet schneller",
+      "Die Gewichte werden zu klein und das Modell underfittet",
+      "Es entsteht kein Unterschied zur normalen Verlustfunktion",
+      "Die Batchgröße steigt"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei zu starker Regularisierung werden die Modellparameter stark eingeschränkt, wodurch die Gewichte zu klein werden. Dies kann dazu führen, dass das Modell die zugrunde liegenden Muster in den Daten nicht erfasst, was zu Underfitting führt. Das Modell ist dann nicht mehr in der Lage, sowohl auf den Trainings- als auch auf den Testdaten gut zu generalisieren."
+  },
+  {
+    "question": "Was bewirkt Dropout?",
+    "options": [
+      "Es reduziert die Anzahl der Trainingsdaten",
+      "Es entfernt dauerhaft Neuronen",
+      "Es deaktiviert zufällig Neuronen während des Trainings",
+      "Es erhöht die Netzwerkkomplexität"
+    ],
+    "correct_index": 2,
+    "explanation": "Dropout ist eine Regularisierungstechnik, die während des Trainings zufällig eine bestimmte Anzahl von Neuronen in einem neuronalen Netzwerk deaktiviert, um Überanpassung (Overfitting) zu verhindern. Dadurch wird das Netzwerk gezwungen, robuste und redundante Merkmale zu lernen, da es nicht auf das Vorhandensein bestimmter Neuronen angewiesen sein kann. Beim Testen sind alle Neuronen aktiv, und die Vorhersagen werden auf Basis des vollständigen Netzwerks getroffen."
+  },
+  {
+    "question": "Wozu dient Early Stopping?",
+    "options": [
+      "Um das Modell schneller zu machen",
+      "Um die Anzahl der Neuronen zu reduzieren",
+      "Um das Training zu stoppen, wenn sich der Validierungsfehler nicht mehr verbessert",
+      "Um alle Epochen vollständig zu nutzen"
+    ],
+    "correct_index": 2,
+    "explanation": "Early Stopping ist eine Regularisierungstechnik im maschinellen Lernen, die das Training beendet, wenn sich der Validierungsfehler über eine bestimmte Anzahl von Epochen nicht mehr verbessert. Dadurch wird Überanpassung vermieden, indem das Modell daran gehindert wird, sich zu stark an das Trainingsdaten-Set anzupassen. So wird die Generalisierungsfähigkeit des Modells auf neue Daten verbessert."
+  },
+  {
+    "question": "Was beschreibt das Bagging-Verfahren?",
+    "options": [
+      "Lernen mit nur einem Modell",
+      "Kombination von Modellen durch Mittelung ihrer Vorhersagen",
+      "Reduktion der Datenmenge",
+      "Entfernen von Ausreissern"
+    ],
+    "correct_index": 1,
+    "explanation": "Bagging (Bootstrap Aggregating) ist ein Ensemble-Lernverfahren, das die Genauigkeit und Stabilität von Maschinenlernmodellen verbessert, indem es mehrere Versionen desselben Modells auf verschiedenen Stichproben des Trainingsdatensatzes trainiert. Diese Stichproben werden durch Ziehen mit Zurücklegen erstellt, was zu variierenden Datensätzen führt und die durchschnittliche Vorhersage über alle Modelle hinweg genommen wird, um Rauschen und Varianz zu reduzieren. Insbesondere in Entscheidungsbäumen wird Bagging häufig verwendet und bildet die Grundlage für Algorithmen wie den Random Forest."
+  },
+  {
+    "question": "Welche Technik erweitert künstlich den Datensatz?",
+    "options": [
+      "Dropout",
+      "Batch Normalization",
+      "Data Augmentation",
+      "Early Stopping"
+    ],
+    "correct_index": 2,
+    "explanation": "Data Augmentation ist eine Technik, die verwendet wird, um die Menge und Vielfalt von Trainingsdaten künstlich zu erhöhen. Sie erreicht dies durch Transformationen wie Drehen, Skalieren, Spiegeln oder Hinzufügen von Rauschen zu bestehenden Daten. Dadurch wird das Modell robuster und generalisierungsstärker, da es auf vielfältigere Szenarien trainiert wird."
+  },
+  {
+    "question": "Welche Transformation ist kein typisches Beispiel für Data Augmentation?",
+    "options": [
+      "Rotation",
+      "Cropping",
+      "Normalisierung",
+      "Farbänderung"
+    ],
+    "correct_index": 2,
+    "explanation": "Data Augmentation umfasst Techniken, die künstlich die Vielfalt der Trainingsdaten erhöhen, wie z.B. Drehungen, Verschiebungen oder Spiegelungen von Bildern. Normalisierung hingegen ist keine Augmentationstechnik, sondern eine Vorverarbeitungsschritt, der die Werte der Daten skaliert, um schnelleres und stabileres Training zu ermöglichen. Sie verändert die statistischen Eigenschaften der Daten, aber nicht deren Vielzahl."
+  },
+  {
+    "question": "Was ist eine Einschränkung von Data Augmentation?",
+    "options": [
+      "Funktioniert nur mit numerischen Daten",
+      "Kann nicht für Klassifikationen verwendet werden",
+      "Ist bei stark korrelierten neuen Daten begrenzt wirksam",
+      "Verändert die Netzwerkarchitektur"
+    ],
+    "correct_index": 2,
+    "explanation": "Data Augmentation ist dann eingeschränkt wirksam, wenn die augmentierten Daten stark mit den Originaldaten korreliert sind, da sie dem Modell keine neuen Informationen hinzufügen. In solchen Fällen kann die Diversität der Trainingsdaten nicht ausreichend gesteigert werden, um die Generalisierungsfähigkeit des Modells zu verbessern. Dies kann insbesondere bei einfachen Transformationen wie leichten Rotationen oder Verschiebungen der Fall sein."
+  },
+  {
+    "question": "Was wird bei der Batch Normalization normalisiert?",
+    "options": [
+      "Die Daten vor dem Training",
+      "Die Eingabeschicht",
+      "Die Gewichte der Output-Schicht",
+      "Die Aktivierungen innerhalb eines Layers"
+    ],
+    "correct_index": 3,
+    "explanation": "Batch Normalization normalisiert die Aktivierungen innerhalb eines Layers, indem es deren Mittelwert und Varianz für jede Mini-Batch berechnet. Dies stabilisiert und beschleunigt das Training, da es den Gradientenfluss durch das Netzwerk verbessert. Nach der Normalisierung werden Skalierungs- und Verschiebungsparameter angewendet, um die Repräsentationsfähigkeit des Modells zu erhalten."
+  },
+  {
+    "question": "Was ist das Ziel von Batch Normalization?",
+    "options": [
+      "Overfitting zu verstärken",
+      "Nur die Trainingsdaten zu normalisieren",
+      "Die Verteilung der Aktivierungen zu stabilisieren",
+      "Die Gewichtsmatrix zu vergrößern"
+    ],
+    "correct_index": 2,
+    "explanation": "Batch Normalization zielt darauf ab, die Verteilung der Aktivierungen innerhalb eines neuronalen Netzes für jedes Mini-Batch zu stabilisieren. Dies wird erreicht, indem die Mittelwerte und Varianzen der Aktivierungen normalisiert und skaliert werden. Dadurch wird das Training beschleunigt und die Sensitivität gegenüber der Initialisierung der Gewichte verringert."
+  },
+  {
+    "question": "Wann wird Batch Normalization durchgeführt?",
+    "options": [
+      "Einmalig vor dem Training",
+      "Nach jeder Epoche",
+      "Nach jedem Batch",
+      "Nur bei großen Modellen"
+    ],
+    "correct_index": 2,
+    "explanation": "Batch Normalization wird im Allgemeinen nach der Berechnung der linearen Transformationen in einer Schicht und vor der Anwendung der Aktivierungsfunktion durchgeführt. Sie normalisiert die Ausgaben einer Schicht auf einheitliche Mittelwert- und Standardabwehrwerte basierend auf dem aktuellen Mini-Batch. Ziel ist es, den Trainingsprozess zu stabilisieren und die Konvergenz zu beschleunigen."
+  },
+  {
+    "question": "Was ist das Hauptziel von Data Augmentation?",
+    "options": [
+      "Die Genauigkeit des Validierungsdatensatzes zu reduzieren",
+      "Den Trainingsprozess zu verlangsamen",
+      "Mehr Trainingsdaten aus bestehenden Bildern zu generieren",
+      "Bilder zufällig zu löschen"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Hauptziel der Data Augmentation ist es, die Menge und Vielfalt der Trainingsdaten zu erhöhen, um das Modell robuster und generalisierbarer zu machen. Durch Transformationen wie Rotationen, Skalierungen oder Spiegelungen werden neue, variierte Datenpunkte aus bestehenden Daten erzeugt, ohne neue Daten sammeln zu müssen. Dies hilft, Overfitting zu reduzieren und die Modellleistung zu verbessern."
+  },
+  {
+    "question": "Warum sieht ein Modell mit Data Augmentation nie das gleiche Bild zweimal?",
+    "options": [
+      "Weil das Bildformat geändert wird",
+      "Weil immer neue Informationen generiert werden",
+      "Weil durch Zufallstransformationen jede Version leicht unterschiedlich ist",
+      "Weil alte Bilder gelöscht werden"
+    ],
+    "correct_index": 2,
+    "explanation": "Bei der Datenaugmentation werden bei jedem Durchlauf Zufallstransformationen wie Drehen, Skalieren oder Spiegeln auf die Eingabebilder angewendet. Diese Transformationen führen dazu, dass jedes generierte Bild eine leicht unterschiedliche Version des Originals darstellt. Dadurch sieht das Modell nie exakt dasselbe Bild zweimal, was die Generalisierungsfähigkeit verbessert."
+  },
+  {
+    "question": "Was ist ein Vorteil vortrainierter Modelle?",
+    "options": [
+      "Sie löschen irrelevante Daten automatisch",
+      "Sie lernen ohne Labels",
+      "Sie können gelernte Features auf andere Datensätze überführen",
+      "Sie ignorieren visuelle Merkmale"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Vorteil vortrainierter Modelle besteht darin, dass sie bereits auf umfangreichen Datensätzen trainiert wurden und dabei nützliche Merkmale (Features) gelernt haben. Diese gelernten Merkmale können auf neue, ähnliche Aufgaben angewendet und die Notwendigkeit ersetzt werden, ein Modell von Grund auf neu zu trainieren. Dies führt zu einer schnelleren Entwicklung und oft zu besseren Ergebnissen, insbesondere wenn nur begrenzte Daten für die Zielaufgabe verfügbar sind."
+  },
+  {
+    "question": "Warum wird der Dense Classifier eines pretrained CNNs nicht wiederverwendet?",
+    "options": [
+      "Er ist zu komplex",
+      "Er ist zufällig",
+      "Er ist spezifisch für die alten Klassen",
+      "Er ist zu langsam"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Dense Classifier eines pretrained CNN ist an die spezifischen Ausgabeklassen des ursprünglichen Trainingsdatensatzes angepasst. Beim Transfer Learning wird typischerweise ein neuer Classifier benötigt, da die neuen Aufgaben andere Klassen haben können. Das Beibehalten des alten Classifiers würde daher zu fehlerhaften Vorhersagen führen, da die Klassen nicht übereinstimmen."
+  },
+  {
+    "question": "Was bedeutet ”Freezing” in Bezug auf ein Modell?",
+    "options": [
+      "Die GPU wird deaktiviert",
+      "Trainingsdaten werden gesperrt",
+      "Layers und deren Gewichte werden eingefroren",
+      "Alle Bilder werden eingefroren gespeichert"
+    ],
+    "correct_index": 2,
+    "explanation": "Beim \"Freezing\" in einem Modell werden bestimmte Layers, also Schichten, fixiert, sodass deren Gewichte während des Trainings nicht aktualisiert werden. Dies geschieht oft beim Transfer Learning, um bereits gelernte Merkmale in den frühen Schichten eines vortrainierten Modells beizubehalten und nur die späteren Schichten für die spezifische Aufgabe anzupassen. Dadurch wird das Training effizienter und verhindert das Überanpassen auf das neue Datenset."
+  },
+  {
+    "question": "Wann darf man die oberen Schichten einer CNN zum Fine-Tuning freigeben?",
+    "options": [
+      "Sofort nach Modellinitialisierung",
+      "Bevor der Classifier trainiert wurde",
+      "Nachdem der Classifier trainiert wurde",
+      "Vor dem Einfrieren"
+    ],
+    "correct_index": 2,
+    "explanation": "Die oberen Schichten eines CNN enthalten spezialisierte Features, die auf den ursprünglichen Trainingsdaten basieren. Nachdem der Classifier trainiert wurde, können diese Schichten freigegeben werden, um sie an die neuen spezifischen Daten anzupassen, was die Fine-Tuning-Phase einleitet. Dadurch wird das Netzwerk in der Lage, die Merkmale der neuen Daten besser zu erkennen und zu klassifizieren."
+  },
+  {
+    "question": "Welche Eigenschaft trifft auf die unteren Schichten eines CNN zu?",
+    "options": [
+      "Sie erkennen komplexe Formen",
+      "Sie erkennen spezifische Objekte",
+      "Sie extrahieren generische Merkmale",
+      "Sie haben keine Funktion"
+    ],
+    "correct_index": 2,
+    "explanation": "Die unteren Schichten eines Convolutional Neural Networks (CNN) sind für die Erfassung grundlegender Muster im Eingabebild verantwortlich, wie Kanten, Linien und Farbkombinationen. Diese Schichten lernen allgemeine Merkmale, die über verschiedene Bildtypen hinweg nützlich sind. Dadurch schaffen sie eine solide Grundlage für die höheren Schichten, die zunehmend spezifischere und komplexere Merkmale extrahieren."
+  },
+  {
+    "question": "Was passiert beim “Fine Tuning”?",
+    "options": [
+      "Neue Bilder werden erzeugt",
+      "Der Convolutional Base wird vollständig neu trainiert",
+      "Nur obere Schichten des Bases werden weitertrainiert",
+      "Dropout wird deaktiviert"
+    ],
+    "correct_index": 2,
+    "explanation": "Beim Fine Tuning eines vortrainierten Modells werden in der Regel die letzten Schichten des Modells weitertrainiert, um sie besser an eine spezifische Aufgabe anzupassen. Die unteren Schichten bleiben oft eingefroren, weil sie grundlegende Merkmale gelernt haben, die allgemein nützlich sind. Dadurch können spezifische Merkmale der neuen Daten besser erkannt werden, ohne das gesamte Modell von Grund auf neu trainieren zu müssen."
+  },
+  {
+    "question": "Warum ist ein kleines Learning Rate beim Fine Tuning wichtig?",
+    "options": [
+      "Um schneller zu trainieren",
+      "Um grosse Änderungen an gelernten Repräsentationen zu vermeiden",
+      "Um das Modell zurückzusetzen",
+      "Um Data Augmentation zu verbessern"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein kleines Learning Rate beim Fine-Tuning ist wichtig, um die schon gelernten Repräsentationen im Modell nicht drastisch zu verändern. Dies hilft, das bereits erworbene Wissen zu konservieren und nur geringfügige Anpassungen vorzunehmen, um sich an neue Daten spezifischer anzupassen. Dadurch wird das Risiko verringert, bestehende generalisierte Muster zu zerstören, was die Modellleistung beeinträchtigen könnte."
+  },
+  {
+    "question": "Worin besteht ein Nachteil, zu viele Schichten feinzujustieren?",
+    "options": [
+      "Modelle werden unbrauchbar",
+      "Man kann keine Merkmale mehr extrahieren",
+      "Erhöhtes Risiko für Overfitting",
+      "Speicherplatz wird knapp"
+    ],
+    "correct_index": 2,
+    "explanation": "Wenn zu viele Schichten eines Deep-Learning-Modells feinjustiert werden, kann das Modell die Trainingsdaten zu genau nachahmen und dabei unwesentliche Details und Rauschen lernen, was zu Overfitting führt. Dadurch sinkt die Fähigkeit des Modells, auf neuen, ungesehenen Daten generalisierbare Vorhersagen zu treffen. Dieser Overfitting-Effekt kann die Modellleistung auf Test- und Validierungsdaten negativ beeinflussen."
+  },
+  {
+    "question": "Warum ist die Wiederverwendung von Features über verschiedene Probleme hinweg möglich?",
+    "options": [
+      "Weil alle Bilder gleich sind",
+      "Weil CNNs Bilddaten ignorieren",
+      "Weil Feature Maps generisch sind",
+      "Weil Labels nicht benötigt werden"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Wiederverwendung von Features über verschiedene Probleme hinweg ist möglich, weil Feature Maps oft generische Muster erfassen, die in verschiedenen Kontexten relevant sind, wie Kanten, Texturen und Formen. Diese allgemeinen Merkmale sind in vielen Datensätzen ähnlich und können daher in unterschiedlichen Anwendungen nützlich sein. Dadurch ermöglicht das Transferlernen, vortrainierte Modelle effizient für neue Aufgaben einzusetzen."
+  },
+  {
+    "question": "Was macht Dropout beim Training mit Data Augmentation?",
+    "options": [
+      "Fügt Rauschen hinzu",
+      "Verhindert das Speichern von Bildern",
+      "Ergänzt die Wirkung von Data Augmentation zur Reduzierung von Overfitting",
+      "Stoppt den Trainingsprozess"
+    ],
+    "correct_index": 2,
+    "explanation": "Dropout und Data Augmentation sind Techniken zur Reduzierung von Overfitting bei Deep-Learning-Modellen. Data Augmentation erweitert die Trainingsdatenmenge durch das Erzeugen von variantenreichen Datenproben, während Dropout das Netzwerk während des Trainings zufällig ausdünnt, indem bestimmte Neuronen deaktiviert werden. Zusammen sorgen sie dafür, dass das Modell robuster wird und besser generalisiert, indem sie die Abhängigkeit von spezifischen Merkmalen und Trainingsdaten verringern."
+  },
+  {
+    "question": "Was bedeutet es, wenn Eingaben “hoch korrelieren” sind?",
+    "options": [
+      "Sie sind komplett zufällig",
+      "Sie enthalten keine Informationen",
+      "Sie stammen aus derselben Quelle und ähneln sich",
+      "Sie sind unbrauchbar"
+    ],
+    "correct_index": 2,
+    "explanation": "Wenn Eingaben \"hoch korrelieren\", bedeutet das, dass sie sich in ihrem Verhalten stark ähneln, d. h. eine Änderung in einer Eingabe oft mit einer ähnlichen Änderung in einer anderen Eingabe einhergeht. Diese Inputs teilen oft eine gemeinsame Ursache oder Quelle, was dazu führt, dass sie innerhalb eines Datensatzes parallel variieren. Solch eine Korrelation kann die Effektivität einiger Modellierungsansätze, wie z. B. lineare Regression, beeinträchtigen, da Redundanzen entstehen."
+  },
+  {
+    "question": "Wann ist Feature Extraction besonders hilfreich?",
+    "options": [
+      "Wenn kein Computer verfügbar ist",
+      "Bei extrem grossen Datensätzen",
+      "Bei kleinen Datensätzen mit ähnlichen Aufgaben",
+      "Wenn keine GPU vorhanden ist"
+    ],
+    "correct_index": 2,
+    "explanation": "Feature Extraction ist besonders hilfreich bei kleinen Datensätzen, da sie die Informationsdichte des Inputs erhöht und somit die Generalisierungsfähigkeit des Modells verbessert. Sie ermöglicht es, relevante Merkmale aus vorverarbeiteten oder vortrainierten Daten zu extrahieren, was die Leistung bei ähnlichen Aufgaben steigern kann. Dies reduziert den Bedarf an großen Mengen von Trainingsdaten und Rechenleistung."
+  },
+  {
+    "question": "Was beschreibt ein Feed Forward Neural Network am besten?",
+    "options": [
+      "Ein neuronales Netz mit Rückkopplung",
+      "Ein Netz, in dem Informationen nur in eine Richtung – von Input zu Output – fliessen",
+      "Ein Netz, das ausschliesslich für Textverarbeitung verwendet wird",
+      "Ein Netz mit unendlich vielen Schichten"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Feed Forward Neural Network ist eine Art von künstlichem neuronalen Netzwerk, bei dem die Informationen ausschließlich von den Eingabeschichten zu den Ausgabeschichten fließen, ohne Rückkopplungen. Es besteht aus mehreren Schichten von Neuronen, in denen jede Schicht vollständig mit der nächsten verbunden ist. Diese Struktur ermöglicht eine einfache und effiziente Verarbeitung von Daten, indem sie Transformationen durch die neuronalen Gewichte vornimmt."
+  },
+  {
+    "question": "Welche Aussage über Aktivierungsfunktionen ist korrekt?",
+    "options": [
+      "Sie sind nur in der Ausgabeschicht notwendig",
+      "Sie bestimmen die Lernrate",
+      "Sie helfen, Nichtlinearitäten im Modell abzubilden",
+      "Sie reduzieren die Anzahl der benötigten Datenpunkte"
+    ],
+    "correct_index": 2,
+    "explanation": "Aktivierungsfunktionen sind entscheidend in neuronalen Netzen, da sie Nichtlinearitäten einführen, die es dem Modell ermöglichen, komplexe Muster und Zusammenhänge in den Daten zu erfassen. Ohne diese Nichtlinearitäten könnten neuronale Netze nur lineare Transformationen durchführen und somit nicht die notwendige Ausdruckskraft entwickeln. Dadurch können sie auch komplexe und vielschichtige Aufgaben wie Bild- und Spracherkennung bewältigen."
+  },
+  {
+    "question": "Wozu dient eine Verlustfunktion (Loss Function) in neuronalen Netzen?",
+    "options": [
+      "Zur Verbesserung der Aktivierungsfunktion",
+      "Zur Bewertung der Vorhersagequalität durch Vergleich mit den echten Labels",
+      "Zum Generieren neuer Trainingsdaten",
+      "Zum Speichern der Gewichtswerte"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Verlustfunktion dient in neuronalen Netzen dazu, die Differenz zwischen den vorhergesagten Ergebnissen des Modells und den tatsächlichen Labels zu quantifizieren. Sie bietet eine skalare Bewertung der Vorhersagequalität und leitet das Modell während des Trainings an, indem sie anzeigt, in welche Richtung die Modellgewichte angepasst werden sollten. Ziel ist es, die Verlustfunktion zu minimieren, um die Genauigkeit des Modells zu verbessern."
+  },
+  {
+    "question": "Was macht ein Optimizer im Training eines neuronalen Netzes?",
+    "options": [
+      "Fügt neue Daten hinzu",
+      "Passt die Aktivierungsfunktionen an",
+      "ändert die Struktur des Netzes",
+      "Aktualisiert Gewichte und Biases basierend auf der Verlustfunktion"
+    ],
+    "correct_index": 3,
+    "explanation": "Ein Optimizer passt die Gewichte und Biases eines neuronalen Netzes an, um den Fehler der Modellvorhersagen gegenüber den tatsächlichen Ergebnissen zu minimieren, wie er durch die Verlustfunktion gemessen wird. Er leitet die Richtung und Größe der Anpassungen ab, oft unter Verwendung von Verfahren wie Gradientenabstieg. Dies hilft dem Modell, besser zu lernen und genauere Vorhersagen zu treffen."
+  },
+  {
+    "question": "Was ist das Ziel beim Trainieren eines Deep-Learning-Modells?",
+    "options": [
+      "Möglichst viele Schichten und Neuronen zu verwenden",
+      "Zufällige Gewichtswerte beizubehalten",
+      "Die Vorhersagen möglichst nahe an den echten Labels auszurichten",
+      "Immer eine binäre Klassifikation zu verwenden"
+    ],
+    "correct_index": 2,
+    "explanation": "Beim Trainieren eines Deep-Learning-Modells ist das Ziel, die Gewichte und Biases so anzupassen, dass die Vorhersagen des Modells den echten Labels so nahe wie möglich kommen. Dies wird durch Minimierung einer Verlustfunktion erreicht, die den Unterschied zwischen den Vorhersagen und den tatsächlichen Werten misst. Ein gut trainiertes Modell kann dann auf unbekannte Daten verallgemeinern und korrekte Vorhersagen treffen."
+  },
+  {
+    "question": "Was ist ein typisches Ziel bei Regressionsproblemen in neuronalen Netzen?",
+    "options": [
+      "Die Erkennung von Objekten",
+      "Die Vorhersage diskreter Kategorien",
+      "Die Reduktion der Trainingszeit",
+      "Die Vorhersage kontinuierlicher Werte"
+    ],
+    "correct_index": 3,
+    "explanation": "Ein typisches Ziel bei Regressionsproblemen in neuronalen Netzen ist die Vorhersage kontinuierlicher (numerischer) Werte, wie z.B. Preise, Temperaturen oder Entfernungen. Neuronale Netze lernen dabei, eine Funktion zu approximieren, die Eingabedaten auf kontinuierliche Ausgabewerte abbildet. Dies geschieht durch Optimierung der Gewichte im Netzwerk, um den Fehler zwischen vorhergesagten und tatsächlichen Werten zu minimieren."
+  },
+  {
+    "question": "Warum ist die Initialisierung der Gewichte wichtig?",
+    "options": [
+      "Sie beschleunigt das Speichern der Modelle",
+      "Sie beeinflusst die Trainingsdatenmenge",
+      "Sie kann den Lernprozess positiv oder negativ beeinflussen",
+      "Sie bestimmt die Anzahl der Ausgabeklassen"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Initialisierung der Gewichte ist wichtig, da sie die Konvergenzgeschwindigkeit des Lernprozesses beeinflusst. Eine gute Initialisierung verhindert Probleme wie verschwindende oder explodierende Gradienten, die das Training instabil oder ineffizient machen können. Außerdem kann sie helfen, dass das Modell ein besseres lokales Minimum im Suchraum findet."
+  },
+  {
+    "question": "Welche Aussage zur Wahl der Anzahl versteckter Schichten (Hidden Layers) ist korrekt?",
+    "options": [
+      "Mehr Schichten sind immer besser",
+      "Ein einfaches Problem erfordert viele versteckte Schichten",
+      "Die Wahl hängt von der Komplexität des Problems ab",
+      "Versteckte Schichten sind optional"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Anzahl der versteckten Schichten in einem neuronalen Netzwerk sollte der Komplexität des zu lösenden Problems entsprechen. Einfache Probleme können oft durch Netzwerke mit weniger Schichten gelöst werden, während komplexe Probleme tiefere Netzwerke erfordern können, um die notwendige Repräsentationskraft zu bieten. Zu viele Schichten können jedoch zu Überanpassung führen und das Training erschweren."
+  },
+  {
+    "question": "Welcher Optimierer passt die Lernrate für jeden Parameter an?",
+    "options": [
+      "SGD",
+      "Adam",
+      "RMSProp",
+      "Momentum"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Adam-Optimierer kombiniert die Vorteile von Adagrad und RMSProp, um die Lernrate für jeden Parameter individuell anzupassen. Er verwendet gleitende Mittelwerte der ersten und zweiten Momente der Gradienten, um eine adaptive Lernrate zu berechnen. Dadurch kann Adam effizient und robust in Szenarien mit rauschhaften oder spärlichen Gradienten arbeiten."
+  },
+  {
+    "question": "Was ist das Hauptziel der Regularisierung in neuronalen Netzwerken?",
+    "options": [
+      "Die Trainingszeit zu verkürzen",
+      "überanpassung zu verhindern",
+      "Die Lernrate zu erhöhen",
+      "Die Netzwerkgrösse zu vergrössern"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Regularisierung in neuronalen Netzwerken zielt darauf ab, Überanpassung (Overfitting) zu verhindern, indem sie die Komplexität des Modells kontrolliert. Durch Hinzufügen einer Strafe für große Gewichte in der Verlustfunktion wird das Modell dazu angehalten, einfachere Muster zu lernen, die besser auf unbekannte Daten generalisieren. Dies ermöglicht es dem Modell, nicht nur die Trainingsdaten, sondern auch neue, ungesehene Daten effektiv vorherzusagen."
+  },
+  {
+    "question": "Was passiert beim Dropout während des Trainings?",
+    "options": [
+      "Die Gewichte werden eingefroren",
+      "Einige Neuronen werden zufällig deaktiviert",
+      "Der Lernrate wird reduziert",
+      "Der Optimierer wird gewechselt"
+    ],
+    "correct_index": 1,
+    "explanation": "Dropout ist eine Regularisierungstechnik, bei der während des Trainings einige Neuronen zufällig deaktiviert werden, um Überanpassung zu verhindern. Dadurch wird das Netzwerk gezwungen, robuster zu lernen, da es nicht von bestimmten Neuronen oder Verbindungen abhängig ist. Im Wesentlichen hilft Dropout, die Generalisierungsfähigkeit des Modells zu verbessern."
+  },
+  {
+    "question": "Was sagt die Lernrate aus?",
+    "options": [
+      "Die Lernrate bestimmt, wie viele Schichten ein neuronales Netz haben darf.",
+      "Die Lernrate gibt an, mit welcher Geschwindigkeit das Modell aus Informationen lernt",
+      "Die Lernrate legt fest, wie gross das endgültige Modell sein wird.",
+      "Die Lernrate gibt an, wie viele Datenpunkte pro Sekunde verarbeitet werden."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Lernrate ist ein Hyperparameter, der bestimmt, wie stark die Gewichte des Modells bei jedem Update-Schritt während des Trainings angepasst werden. Eine zu hohe Lernrate kann zu instabilen Trainingsprozessen führen, während eine zu niedrige das Training zu langsam macht oder in lokalen Minima steckenbleibt. Es ist wichtig, eine passende Lernrate zu wählen, um ein effektives und effizientes Lernen zu gewährleisten."
+  },
+  {
+    "question": "Was ist die Gefahr bei einer zu niedrigen Lernrate?",
+    "options": [
+      "Das Modell überspringt ständig das Minimum der Fehlerfunktion.",
+      "Das Training wird sofort abgebrochen.",
+      "Kann in einem lokalen Minimum stecken bleiben",
+      "Eine zu niedrige Lernrate führt zu überanpassung (Overfitting)."
+    ],
+    "correct_index": 2,
+    "explanation": "Eine zu niedrige Lernrate kann den Lernprozess extrem verlangsamen, da die Schritte, die das Modell bei der Optimierung der Kostenfunktion macht, sehr klein sind. Dies erhöht das Risiko, dass das Modell in einem lokalen Minimum stecken bleibt, da es möglicherweise nicht genügend \"Schwung\" hat, um dieses zu überwinden. Infolgedessen kann das Modell suboptimale Lösungen finden und es dauert länger, bis ein akzeptables Leistungsniveau erreicht wird."
+  },
+  {
+    "question": "Was ist die Gefahr bei einer zu hohen Lernrate?",
+    "options": [
+      "Das Modell erreicht das Optimum schneller und genauer.",
+      "Die Lösung kann divergieren",
+      "Overfitting",
+      "Das Training funktioniert nur bei linearen Modellen nicht mehr."
+    ],
+    "correct_index": 1,
+    "explanation": "Eine zu hohe Lernrate kann dazu führen, dass das Optimierungsverfahren über das Minimum der Loss-Funktion hinausschießt und instabile Aktualisierungen der Modellparameter vornimmt. Dies kann verhindern, dass das Modell konvergiert und letztlich zu einer divergenten Lösung führen, bei der der Verlust nicht minimiert wird. Dadurch wird das Training fehlerhaft und das Modell lernt nicht richtig."
+  },
+  {
+    "question": "Was macht die Lernrate-Strategie Step decay?",
+    "options": [
+      "Sie erhöht die Lernrate exponentiell mit jeder Epoche.",
+      "Macht die Lernrate um fixen Faktor kleiner nach einer gewünschten Anzahl Epochen",
+      "Sie passt die Lernrate zufällig während des Trainings an.",
+      "Sie setzt die Lernrate nach jeder Epoche auf null und startet neu."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Lernrate-Strategie Step Decay reduziert die Lernrate um einen festen Faktor nach einer bestimmten Anzahl von Epochen. Dies hilft dabei, das Training zu stabilisieren und fehlerhafte Anpassungen zu vermeiden, wenn sich das Modell dem Optimum nähert. Durch die schrittweise Verringerung kann das Modell feiner abgestimmte Updates vornehmen."
+  },
+  {
+    "question": "Was ist eine Epoche?",
+    "options": [
+      "Eine Epoche ist ein einzelner Durchlauf durch nur einen Datenpunkt des Trainingssatzes.",
+      "Eine Epoche ist ein Durchlauf bei dem alle Trainingsdaten einmal verwendet werden.",
+      "Eine Epoche beschreibt die Anzahl der Schichten in einem neuronalen Netzwerk.",
+      "Eine Epoche ist ein Durchlauf mit einem Anteil der Trainingsdaten"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Epoche bezeichnet in der Trainingsphase eines neuronalen Netzwerks einen vollständigen Durchlauf durch den gesamten Trainingsdatensatz. Während einer Epoche werden alle Datenpunkte einmal verwendet, um die Gewichte des Modells zu aktualisieren. Mehrere Epochen sind oft notwendig, um das Modell ausreichend zu trainieren und seine Genauigkeit zu verbessern."
+  },
+  {
+    "question": "Was ist die Gefahr, wenn mit zu weniger Epochen trainiert wird?",
+    "options": [
+      "Das Modell wird übertrainiert und passt sich zu stark den Trainingsdaten an.",
+      "Das Modell konvergiert allenfalls nicht zu einer guten Lösung",
+      "Das Modell wird zu stark regularisiert und erzielt daher keine guten Ergebnisse.",
+      "Das Modell benötigt keine Feinabstimmung mehr und ist sofort einsatzbereit"
+    ],
+    "correct_index": 1,
+    "explanation": "Wenn ein Modell mit zu wenigen Epochen trainiert wird, kann es sein, dass es die zugrunde liegenden Muster in den Trainingsdaten nicht ausreichend lernt und somit eine suboptimale Leistung erzielt. Dies führt oft zu einem hohen Trainingsfehler, da das Modell nicht genügend Zeit hatte, um seine Parameter anzupassen. Das Ergebnis ist ein Modell, das nicht gut generalisiert und weder auf den Trainings- noch auf den Testdaten zufriedenstellend arbeitet."
+  },
+  {
+    "question": "Wann wird die Modellleistung evaluiert?",
+    "options": [
+      "Am Ende der letzten Epoche",
+      "Nach jeder Epoche",
+      "Nach jedem gelerntem Datensatz",
+      "Vor dem Modell Training"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Modellleistung wird typischerweise nach jeder Epoche evaluiert, um den Fortschritt des Trainings zu überwachen und zu kontrollieren, ob das Modell gut generalisiert. Eine Epoche entspricht einem vollständigen Durchgang durch den gesamten Trainingsdatensatz. Durch die regelmäßige Bewertung können Anpassungen vorgenommen werden, falls das Modell unter- oder überanpasst."
+  },
+  {
+    "question": "Was ist ein Batch?",
+    "options": [
+      "Ein Batch ist die Anzahl der Schichten in einem neuronalen Netzwerk.",
+      "Ein Batch ist eine Teilmenge des Trainingsdatensatzes, die in einem Schritt verarbeitet wird.",
+      "Ein Batch ist eine einzelne Datenprobe, die dem Modell während des Trainings präsentiert wird.",
+      "Ein Batch ist eine spezielle Art von Modell, das auf den Trainingsdaten angewendet wird."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Batch ist eine Gruppe von Datenbeispielen aus dem Trainingsdatensatz, die gleichzeitig durch das neuronale Netzwerk verarbeitet werden. Durch die Verarbeitung in Batches wird der Lernprozess effizienter und stabiler, da nicht jedes Mal der gesamte Datensatz durchlaufen werden muss. Diese Methode hilft, die Berechnungen zu beschleunigen und den Speicherverbrauch zu optimieren."
+  },
+  {
+    "question": "Was für eine Gefahr gibt es, wenn man die Anzahl Epochen zu gross wählt?",
+    "options": [
+      "Das Modell wird zu stark regularisiert und lernt keine sinnvollen Muster.",
+      "Das Modell wir zu instabil und verlangsamt das Training",
+      "Das Modell wird zu langsam und benötigt mehr Epochen, um Ergebnisse zu liefern.",
+      "Das Modell wird zu stark auf den Trainingsdaten angepasst und zeigt keine Fehler mehr."
+    ],
+    "correct_index": 3,
+    "explanation": "Wenn die Anzahl der Epochen zu groß ist, kann das Modell das Risiko einer Überanpassung oder Überanpassung (Overfitting) eingehen. Dabei lernt das Modell die Trainingsdaten inklusive Rauschen und Ausreißern so gut, dass es die zugrunde liegenden Muster verallgemeinert. Dies führt dazu, dass das Modell bei neuen, unbekannten Daten schlecht generalisiert und somit schlechtere Leistung zeigt."
+  },
+  {
+    "question": "Was für eine Gefahr gibt es, wenn man die Anzahl Epochen zu gross wählt?",
+    "options": [
+      "Das Modell wird immer besser auf den Trainingsdaten, aber schlechter auf den Testdaten.",
+      "Das Modell benötigt umso mehr Zeit um mit den Trainingsdaten zu trainieren.",
+      "Das Modell könnte überanpassen (Overfitting), indem es sich zu sehr an die Trainingsdaten anpasst.",
+      "Das Modell wird automatisch in der Lage sein, auf alle unbekannten Daten sehr gut zu generisieren."
+    ],
+    "correct_index": 2,
+    "explanation": "Wenn die Anzahl der Epochen zu groß gewählt wird, besteht die Gefahr, dass das Modell die Trainingsdaten auswendig lernt und sich zu stark an sie anpasst. Dies führt zu Overfitting, bei dem das Modell zwar auf den Trainingsdaten sehr gute Ergebnisse liefert, aber bei neuen, unbekannten Daten schlecht generalisiert. Ein überangepasstes Modell kann daher keine verlässlichen Vorhersagen für Daten machen, die es noch nicht gesehen hat."
+  },
+  {
+    "question": "Welche grundlegende Idee steckt hinter dem Gradient Descent-Verfahren?",
+    "options": [
+      "Es findet das Maximum der Verlustfunktion durch zufällige Gewichtsanpassung.",
+      "Es passt die Gewichte so an, dass die Rechenzeit minimiert wird.",
+      "Es bewegt sich entlang der Gradientenrichtung, um lokale Maxima zu erreichen.",
+      "Es passt die Modellparameter schrittweise in Richtung des negativsten Gradienten an, um die Verlustfunktion zu minimieren."
+    ],
+    "correct_index": 3,
+    "explanation": "Gradient Descent ist ein Optimierungsverfahren, das verwendet wird, um die Verlustfunktion eines Modells zu minimieren. Es berechnet den Gradienten der Verlustfunktion bezüglich der Modellparameter und passt diese Parameter schrittweise in die Richtung des negativen Gradienten an. Dadurch wird sichergestellt, dass jeder Schritt die Parameter in Richtung eines lokalen Minimums der Verlustfunktion bewegt."
+  },
+  {
+    "question": "Welche Aufgabe hat ein Optimierer im Training eines neuronalen Netzwerks?",
+    "options": [
+      "Er bestimmt, wie viele Daten für das Modell gespeichert werden sollen.",
+      "Er reduziert den Speicherverbrauch, indem er Parameter entfernt.",
+      "Er passt die Gewichte des Modells so an, dass die Verlustfunktion minimiert wird.",
+      "Er erhöht die Modellkomplexität automatisch, um Overfitting zu vermeiden."
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Optimierer ist ein Algorithmus, der die Anpassung der Gewichte in einem neuronalen Netzwerk steuert, um die Verlustfunktion zu minimieren. Er berechnet, wie die Gewichte in kleinen Schritten verändert werden sollen, um das Modell in Richtung geringerer Fehler zu lenken. Dadurch hilft er dem Netzwerk, besser Muster in Daten zu erkennen und die Genauigkeit zu verbessern."
+  },
+  {
+    "question": "Wofür wird eine Loss Function im Training verwendet?",
+    "options": [
+      "Um den Unterschied zwischen Vorhersage und echtem Wert zu messen",
+      "Um die Trainingsdaten zu normalisieren",
+      "Um die Anzahl der Layer zu bestimmen",
+      "Um das Modell schneller zu machen"
+    ],
+    "correct_index": 0,
+    "explanation": "Eine Loss Function quantifiziert den Fehler oder die Diskrepanz zwischen den vorhergesagten Werten eines Modells und den tatsächlichen Werten. Sie dient als Grundlage zur Optimierung des Modells, indem sie während des Trainings den Gradientenabstieg leitet. Durch Minimierung der Loss Function wird das Modell schrittweise verbessert, um genauere Vorhersagen zu liefern."
+  },
+  {
+    "question": "Warum muss eine Loss Function differenzierbar sein?",
+    "options": [
+      "Damit Gradient Descent sie minimieren kann",
+      "Damit sie auf alle Probleme passt",
+      "Damit man keine Aktivierungsfunktion braucht",
+      "Damit sie ohne Optimizer funktioniert"
+    ],
+    "correct_index": 0,
+    "explanation": "Eine Loss Function muss differenzierbar sein, damit wir den Gradienten berechnen können, der die Richtung des steilsten Abstiegs angibt. Gradient Descent verwendet diese Informationen, um die Gewichte iterativ anzupassen und die Loss Function zu minimieren. Ohne Differenzierbarkeit wären diese Berechnungen nicht möglich und das Optimierungsverfahren würde nicht effektiv funktionieren."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen einer Loss Function und einer Metrik?",
+    "options": [
+      "Die Loss Function wird zur Optimierung genutzt, die Metrik zur Bewertung",
+      "Beide machen dasselbe",
+      "Metriken funktionieren nur bei Regression",
+      "Die Loss Function wird nur nach dem Training verwendet"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Loss Function misst, wie gut oder schlecht das Modell während des Trainings abschneidet, und wird verwendet, um die Modellparameter zu optimieren. Eine Metrik hingegen bewertet die Leistung des Modells auf einer separaten, aussagekräftigen Skala, die häufig zur Beurteilung des Modells nach Abschluss des Trainings genutzt wird. Während die Loss Function zur Modellanpassung dient, helfen Metriken dabei, die Qualität des Modells besser zu verstehen und zu kommunizieren."
+  },
+  {
+    "question": "Welche Aussage zu MSE ist korrekt?",
+    "options": [
+      "Grosse Fehler werden stärker bestraft als kleine",
+      "Alle Fehler werden gleich bewertet",
+      "MSE funktioniert nur bei Klassifikation",
+      "MSE ist nur für binäre Aufgaben geeignet"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Mean Squared Error (MSE) berechnet den durchschnittlichen quadratischen Unterschied zwischen vorhergesagten und tatsächlichen Werten. Da Fehler quadriert werden, wirken sich größere Abweichungen stärker auf den MSE aus als kleinere. Dies führt dazu, dass große Fehler relativ mehr zur Gesamtsumme beitragen und somit stärker bestraft werden."
+  },
+  {
+    "question": "Wofür ist die Categorical Cross-Entropy geeignet?",
+    "options": [
+      "Für Klassifikation mit mehr als zwei Klassen",
+      "Für Regression mit kontinuierlichen Werten",
+      "Für binäre Entscheidungen",
+      "Für Bilder mit nur einem Farbkanal"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Categorical Cross-Entropy ist ein Verlustfunktion, die für das Training von neuronalen Netzen bei Klassifikationsproblemen mit mehr als zwei Klassen verwendet wird. Sie misst die Differenz zwischen der wahren Klassenverteilung (oft als One-Hot-Vektor angegeben) und der vom Modell vorhergesagten Klassenverteilung. Diese Funktion ist besonders effektiv, da sie Modelle dazu anleitet, wahrscheinliche Klassen besser von unwahrscheinlichen zu unterscheiden."
+  },
+  {
+    "question": "Warum kann man bei Multi-Klassifikation keine MSE verwenden?",
+    "options": [
+      "Weil MSE keine Wahrscheinlichkeitsverteilungen berücksichtigt",
+      "Weil MSE zu schnell konvergiert",
+      "Weil MSE keine Label erkennt",
+      "Weil MSE nur bei Sigmoid funktioniert"
+    ],
+    "correct_index": 0,
+    "explanation": "Mean Squared Error (MSE) misst den quadratischen Unterschied zwischen vorhergesagten und tatsächlichen Werten und ist für kontinuierliche Werte geeigneter. Bei Multi-Klassifikation benötigen wir jedoch eine Maßzahl, die die Wahrscheinlichkeit einer Klasse korrekt widerspiegelt, wie etwa die Kreuzentropie. MSE berücksichtigt nicht die Wahrscheinlichkeit der Klassenzugehörigkeit, was zu unpassenden Fehlerbewertungen bei Klassifikationsproblemen führen kann."
+  },
+  {
+    "question": "Was passiert mit der Loss Function, wenn das Modell besser wird?",
+    "options": [
+      "Sie wird kleiner",
+      "Sie bleibt konstant",
+      "Sie wird negativ",
+      "Sie steigt exponentiell"
+    ],
+    "correct_index": 0,
+    "explanation": "Wenn das Modell besser wird, sagt es die Zielwerte genauer vorher. Dadurch verringert sich der Fehler zwischen den vorhergesagten und den tatsächlichen Werten. Folglich wird der Wert der Loss Function kleiner, was anzeigt, dass das Modell effizienter gelernt hat."
+  },
+  {
+    "question": "Was misst die Loss Function bei einem Klassifikationsmodell mit Softmax-Ausgabe?",
+    "options": [
+      "Wie gut die Wahrscheinlichkeitsverteilung zur wahren Klasse passt",
+      "Ob die Summe aller Gewichte 1 ist",
+      "Wie gross die Lernrate ist",
+      "Ob die Metrik Accuracy ¿ 90% ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Loss Function bei einem Klassifikationsmodell mit Softmax-Ausgabe misst, wie gut die vorhergesagten Wahrscheinlichkeiten der Klassen mit der wahren Klasse übereinstimmen. Häufig wird die Kreuzentropie als Loss Function verwendet, die die Differenz zwischen der vorhergesagten und der wahren Wahrscheinlichkeitsverteilung quantifiziert. Ein niedrigerer Loss-Wert zeigt eine bessere Anpassung der Vorhersagen an die tatsächlichen Klassen an."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen Binary und Categorical Cross-Entropy?",
+    "options": [
+      "Binary ist für 2 Klassen, Categorical für viele Klassen",
+      "Binary ist für Regression, Categorical für Bilder",
+      "Binary ist schneller, Categorical langsamer",
+      "Categorical benötigt keine One-Hot-Encoding"
+    ],
+    "correct_index": 0,
+    "explanation": "Binary Cross-Entropy wird verwendet, wenn das Modell zwei Klassen unterscheiden soll, also eine binäre Klassifikationsaufgabe vorliegt. Categorical Cross-Entropy hingegen kommt zum Einsatz, wenn es sich um eine Klassifikation mit mehr als zwei Klassen handelt, wobei jede Instanz genau einer Klasse zugeordnet wird. Beide Verlustfunktionen messen die Diskrepanz zwischen der tatsächlichen Klasse und der vorhergesagten Wahrscheinlichkeit."
+  },
+  {
+    "question": "Welche Loss Function würdest du für Hauspreisvorhersage nehmen?",
+    "options": [
+      "MSE",
+      "Binary Cross-Entropy",
+      "Categorical Cross-Entropy",
+      "Hinge Loss"
+    ],
+    "correct_index": 0,
+    "explanation": "Für die Vorhersage von Hauspreisen eignet sich die Mean Squared Error (MSE) Loss Function, da sie die durchschnittlichen quadratischen Abweichungen zwischen den vorhergesagten und den tatsächlichen Preisen misst. MSE bestraft größere Fehler stärker, wodurch das Modell dazu ermutigt wird, genauere Vorhersagen zu treffen. Dies ist besonders nützlich für Regressionsprobleme wie die Schätzung kontinuierlicher Werte."
+  },
+  {
+    "question": "Wozu dient ein Optimizer im Training eines neuronalen Netzes?",
+    "options": [
+      "Er passt die Gewichte an, um die Loss Function zu minimieren",
+      "Er misst die Testgenauigkeit",
+      "Er kontrolliert die Batch-Grösse",
+      "Er bestimmt die Anzahl der Epochen"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Optimizer ist ein Algorithmus, der während des Trainings eines neuronalen Netzes die Gewichte der Verbindungen anpasst, um die Loss Function zu minimieren. Er nutzt dabei Gradienteninformationen, um die Richtung und Größe der Anpassungen zu bestimmen. Dadurch hilft der Optimizer, das Modell so zu trainieren, dass es bessere Vorhersagen liefern kann."
+  },
+  {
+    "question": "Welche Information benötigt ein Optimizer bei jedem Schritt?",
+    "options": [
+      "Den Gradienten der Loss Function",
+      "Die Zielmetrik (z. B. Accuracy)",
+      "Die Anzahl der Layer",
+      "Den Dateinamen des Datasets"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Optimizer benötigt den Gradienten der Loss Function, um die Richtung und Größe der notwendigen Anpassungen an den Modellparametern zu bestimmen. Diese Gradienten zeigen, wie stark und in welche Richtung jeder Parameter geändert werden sollte, um die Loss Function zu minimieren. Durch das Aktualisieren der Parameter in Richtung des negativen Gradienten wird das Modell schrittweise optimiert."
+  },
+  {
+    "question": "Was ist der wichtigste Hyperparameter beim Optimizer?",
+    "options": [
+      "Die Lernrate",
+      "Die Anzahl der Layer",
+      "Die Grösse des Testsets",
+      "Die Aktivierungsfunktion"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Lernrate ist der wichtigste Hyperparameter eines Optimizers, da sie bestimmt, wie große Schritte der Optimierungsalgorithmus bei jedem Update der Gewichte macht. Eine zu hohe Lernrate kann dazu führen, dass der Optimierungsprozess instabil wird und das Modell divergiert, während eine zu niedrige Lernrate den Trainingsprozess verlangsamen und zu einem lokalen Minimum führen kann. Eine sorgfältig gewählte Lernrate ist entscheidend für den schnellen und effektiven Fortschritt des Trainings."
+  },
+  {
+    "question": "Was passiert bei einer zu hohen Lernrate?",
+    "options": [
+      "Das Modell konvergiert möglicherweise nicht oder divergiert",
+      "Das Modell lernt sehr stabil",
+      "Es wird kein Backpropagation benötigt",
+      "Die Loss Function wird ignoriert"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei einer zu hohen Lernrate können die Gewichtsaktualisierungen zu groß sein, sodass das Modell möglicherweise über das Optimum „springt“ und nicht konvergiert. Dies kann zu instablen Schwingungen im Verlust führen, wodurch das Modell letztlich divergieren kann. Das Lernen wird ineffizient und die Leistung des Modells verschlechtert sich."
+  },
+  {
+    "question": "Was passiert bei einer zu niedrigen Lernrate?",
+    "options": [
+      "Das Modell lernt extrem langsam",
+      "Die Genauigkeit steigt sofort auf 100%",
+      "Die Loss Function wird unbrauchbar",
+      "Das Modell vergisst alle vorherigen Schritte"
+    ],
+    "correct_index": 0,
+    "explanation": "Eine zu niedrige Lernrate führt dazu, dass das Modell die Gewichtsanpassungen nur in sehr kleinen Schritten vollzieht. Das bedeutet, dass das Training wesentlich länger dauert, um ein akzeptables Leistungsniveau zu erreichen. Zudem besteht das Risiko, dass das Modell in lokalen Minima hängen bleibt und nicht die beste Lösung findet."
+  },
+  {
+    "question": "Was ist “Learning Rate Decay”?",
+    "options": [
+      "Eine Technik, bei der die Lernrate schrittweise gesenkt wird",
+      "Eine Methode, um die Lernrate zu erhöhen",
+      "Eine spezielle Art von Loss Function",
+      "Ein Aktivierungstyp in der Ausgangsschicht"
+    ],
+    "correct_index": 0,
+    "explanation": "Learning Rate Decay ist eine Technik im Deep Learning, bei der die Lernrate während des Trainingsprozesses schrittweise verringert wird, um die Konvergenz zu verbessern. Dies hilft, große Sprünge im Optimierungsprozess zu reduzieren und ermöglicht ein feineres Einstellen der Gewichte, wenn das Modell sich dem Minimum der Kostenfunktion nähert. Dadurch kann die Stabilität des Trainings erhöht und oft ein besseres Endergebnis erzielt werden."
+  },
+  {
+    "question": "Was zeichnet Adam gegenüber SGD aus?",
+    "options": [
+      "Adam passt die Lernrate für jeden Parameter dynamisch an",
+      "Adam ignoriert Gradienten",
+      "Adam benötigt keine Loss Function",
+      "Adam ist deterministisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Adam kombiniert die Vorteile von sowohl Adagrad, das die Lernrate je nach Parameterhistorie anpasst, als auch Momentum, das Schwankungen glättet, indem es exponentiell gewichtete Mittelwerte von Gradientenverläufen speichert. Dadurch passt Adam die Lernrate dynamisch für jeden Parameter an und kann schneller und effizienter konvergieren als SGD. Dies macht Adam besonders geeignet für komplexe, nicht-konvexe Optimierungsprobleme."
+  },
+  {
+    "question": "Was ist das Ziel des Gradient Descent Algorithmus?",
+    "options": [
+      "Das Finden eines Minimums der Loss Function",
+      "Die Erstellung neuer Testdaten",
+      "Das Erhöhen der Batchgrösse",
+      "Die änderung der Modellarchitektur"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Gradient Descent Algorithmus zielt darauf ab, das Minimum einer Loss-Funktion zu finden, indem er iterativ in die Richtung des negativsten Gradienten der Funktion aktualisiert wird. Dadurch wird der Parameterraum so angepasst, dass der Fehler zwischen den vorhergesagten und den tatsächlichen Werten minimiert wird. Dies ist entscheidend für das Training von Modellen im maschinellen Lernen, um optimale Parameter zu bestimmen."
+  },
+  {
+    "question": "Warum sind rekurrente neuronale Netze (RNNs) besonders geeignet für Sequenzdaten?",
+    "options": [
+      "Weil sie keine Erinnerung haben.",
+      "Weil sie Abhängigkeiten zwischen aufeinanderfolgenden Datenpunkten erfassen können.",
+      "Weil sie schneller trainiert werden können.",
+      "Weil sie weniger Parameter benötigen."
+    ],
+    "correct_index": 1,
+    "explanation": "RNNs sind besonders geeignet für Sequenzdaten, weil sie Informationen aus früheren Zeitschritten in einem internen Speicher festhalten und dadurch zeitliche Abhängigkeiten erfassen können. Diese Fähigkeit ermöglicht es ihnen, Muster und Zusammenhänge in Daten zu erkennen, die über mehrere Zeitschritte verteilt sind. So können sie erfolgreich in Anwendungen wie Sprachverarbeitung oder Zeitreihenanalyse eingesetzt werden."
+  },
+  {
+    "question": "Welche Art von Daten sind Beispiele für Sequenzdaten?",
+    "options": [
+      "Bilder",
+      "Text und Zeitreihen",
+      "Tabellen und Datenbanken",
+      "Unabhängige Datenpunkte"
+    ],
+    "correct_index": 1,
+    "explanation": "Sequenzdaten sind Datensätze, bei denen die Reihenfolge der Elemente wichtig ist. Beispiele dafür sind Textdaten, bei denen die Reihenfolge der Wörter den Sinn des Textes beeinflusst, und Zeitreihen, wo der zeitliche Verlauf der Werte entscheidend ist. Solche Daten erfordern spezielle Modelle, die die Abhängigkeiten zwischen den aufeinanderfolgenden Elementen erfassen können, wie etwa Recurrent Neural Networks (RNNs)."
+  },
+  {
+    "question": "Warum ist die Reihenfolge in Sequenzdaten wichtig?",
+    "options": [
+      "Weil sie die Trainingszeit verkürzt.",
+      "Weil der Vorgänger den nachfolgenden Wert beeinflusst.",
+      "Weil sie die Anzahl der Parameter reduziert.",
+      "Weil sie die Klassifikationsgenauigkeit erhöht."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Reihenfolge in Sequenzdaten ist entscheidend, weil frühere Elemente oft den Kontext für spätere Elemente liefern, sodass sie deren Bedeutung oder Wert beeinflussen. In zeitabhängigen Daten, wie Sprach- oder Zeitreihendaten, hängt der aktuelle Zustand häufig von den vorhergehenden Zuständen ab. Daher ist das Berücksichtigen der Reihenfolge essenziell, um Muster und Zusammenhänge korrekt zu erfassen und zu analysieren."
+  },
+  {
+    "question": "Wie wird der state in einem RNN aktualisiert?",
+    "options": [
+      "Durch Multiplikation vom Input mit dem vorherigen State",
+      "Durch Anwendung einer nichtlinearen Funktion auf Input und den vorherigen State",
+      "Input und der vorangehende State werden skaliert und anschliessend addiert",
+      "Der skalierte Input wird mit dem bereits skalierten Output-State multipliziert"
+    ],
+    "correct_index": 1,
+    "explanation": "In einem RNN wird der Zustand (State) aktualisiert, indem der Input und der vorherige Zustand kombiniert und durch eine nichtlineare Aktivierungsfunktion, typischerweise eine Tanh- oder ReLU-Funktion, transformiert werden. Diese Funktion erzeugt den neuen Zustand, indem sie sowohl die aktuellen Informationen als auch das Gedächtnis der vorherigen Zustände berücksichtigt. Auf diese Weise ermöglicht das RNN die Verarbeitung und Speicherung sequenzieller Informationen."
+  },
+  {
+    "question": "Wie verarbeiten RNNs Sequenzen?",
+    "options": [
+      "Durch parallele Verarbeitung aller Elemente gleichzeitig.",
+      "Durch Iteration über die Sequenzelemente.",
+      "Durch Zufallsauswahl der Elemente.",
+      "Durch Verarbeitung aller Elemente in einem einzigen Schritt."
+    ],
+    "correct_index": 1,
+    "explanation": "RNNs (Recurrent Neural Networks) verarbeiten Sequenzen, indem sie jedes Element der Sequenz schrittweise iterieren und dabei jeweils den vorherigen Zustand als Kontext für das aktuelle Element verwenden. Dies ermöglicht es ihnen, Informationen über die gesamte Sequenz hinweg zu behalten und Muster über Zeitdimensionen zu erfassen. Der Zustand wird zu jedem Zeitpunkt aktualisiert, um die Sequenzinformationen dynamisch zu reflektieren."
+  },
+  {
+    "question": "Was bewahrt ein RNN während der Verarbeitung einer Sequenz?",
+    "options": [
+      "Einen festen Wert.",
+      "Einen Zustand, der Informationen über die bisher gesehenen Elemente enthält.",
+      "Eine zufällige Zahl.",
+      "Eine Konstante."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Recurrent Neural Network (RNN) speichert während der Sequenzverarbeitung Informationen in einem versteckten Zustand. Dieser Zustand wird von einem Zeitschritt zum nächsten weitergegeben und aktualisiert, um Kontextinformationen über bisher gesehene Elemente zu bewahren. Dadurch kann das RNN Abhängigkeiten in den Daten modellieren und auf frühere Eingaben in der Sequenz reagieren."
+  },
+  {
+    "question": "Wie wird der Zustand eines RNNs zwischen zwei unabhängigen Sequenzen behandelt?",
+    "options": [
+      "Er wird beibehalten.",
+      "Er wird zurückgesetzt.",
+      "Er wird zufällig initialisiert.",
+      "Er wird verdoppelt."
+    ],
+    "correct_index": 1,
+    "explanation": "In einem RNN wird der Zustand, also der versteckte Zustand oder \"hidden state\", typischerweise am Ende einer Sequenz zurückgesetzt, um die Verarbeitung unabhängiger Sequenzen sauber voneinander zu trennen. Dies verhindert, dass Informationen oder Abhängigkeiten von vorherigen Sequenzen die Analyse neuer, unabhängiger Sequenzen verfälschen. Der zurückgesetzte Zustand garantiert, dass jede Sequenz mit den gleichen Ausgangsbedingungen verarbeitet wird."
+  },
+  {
+    "question": "Welche Form hat die Eingabe eines RNNs?",
+    "options": [
+      "Ein 1D-Tensor.",
+      "Ein 2D-Tensor.",
+      "Ein 3D-Tensor.",
+      "Ein skalarer Wert."
+    ],
+    "correct_index": 2,
+    "explanation": "Ein RNN nimmt Eingaben in Form eines 3D-Tensors mit der Struktur (Batchgröße, Sequenzlänge, Merkmalanzahl) an. Hierbei steht die Batchgröße für die Anzahl der Sequenzen, die simultan verarbeitet werden, die Sequenzlänge für die Anzahl der Schritte in einer Sequenz, und die Merkmalanzahl für die dimensionalen Merkmale jedes Schritts. Diese Struktur erlaubt es dem RNN, zeitliche Abhängigkeiten in den Daten zu modellieren."
+  },
+  {
+    "question": "Wofür steht die Abkürzung LSTM?",
+    "options": [
+      "Long Short-Term Memory",
+      "Large Scale Training Model",
+      "Linear Sequential Training Model",
+      "Layered Sequential Training Model"
+    ],
+    "correct_index": 0,
+    "explanation": "LSTM steht für Long Short-Term Memory und ist eine spezielle Art von rekurrentem neuronalen Netzwerk (RNN), das entwickelt wurde, um das Problem langfristiger Abhängigkeiten zu lösen. Es hat eine komplexe Zellstruktur mit Eingangs-, Ausgangs- und Vergesstor-Gattern, die es ihm ermöglichen, relevante Informationen über längere Zeiträume hinweg zu speichern oder zu vergessen. Dadurch sind LSTMs besonders effektiv bei Aufgaben wie der Sprachverarbeitung oder der Zeitreihenanalyse."
+  },
+  {
+    "question": "Welches Problem löst LSTM?",
+    "options": [
+      "Das Problem der überanpassung.",
+      "Das Problem des verschwindenden Gradienten.",
+      "Das Problem der zu grossen Parameteranzahl.",
+      "Das Problem der langsamen Trainingszeit."
+    ],
+    "correct_index": 1,
+    "explanation": "LSTM (Long Short-Term Memory) Netzwerke lösen das Problem des verschwindenden Gradienten, das in traditionellen RNNs (Rekurrenten Neuronalen Netzen) auftritt, indem sie Informationen über längere Zeiträume hinweg speichern können. Sie verwenden spezielle Strukturen, wie z.B. Speicherzellen und drei zentrale Tore (Einlass-, Auslass- und Vergesst-Tor), um den Fluss von Informationen zu kontrollieren und wichtige Informationen länger zugänglich zu halten. Dadurch sind LSTMs in der Lage, Abhängigkeiten über größere Zeitschritte effektiv zu modellieren und sind besonders nützlich für Sequenz- und Zeitreihenanalysen."
+  },
+  {
+    "question": "Was ist die Funktion des Carry states c_t in einem LSTM?",
+    "options": [
+      "Er speichert zufällige Werte.",
+      "Er trägt Informationen über Zeitschritte hinweg.",
+      "Er initialisiert die Gewichte.",
+      "Er berechnet die Ausgabe direkt."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Carry state \\( c_t \\) in einem LSTM speichert langfristig relevante Informationen und bewahrt sie über mehrere Zeitschritte hinweg. Er ermöglicht es dem Modell, Abhängigkeiten über lange Sequenzen zu lernen, indem er wichtige Informationen weiterträgt und weniger relevante verwirft. So bleibt der Gradient bei der Rückpropagation stabil und Probleme wie der vanishing gradient werden vermieden."
+  },
+  {
+    "question": "Wie wird der nächste Carry state c_t+1 in einem LSTM berechnet?",
+    "options": [
+      "Durch Addition der Eingabe und des vorherigen Zustands.",
+      "Durch Addition von gewichteten neuen und gewichteten bestehenden irrelevanten Informationen",
+      "Durch Multiplikation mit einer Konstanten.",
+      "Durch Anwendung einer Aktivierungsfunktion."
+    ],
+    "correct_index": 1,
+    "explanation": "Der nächste Carry State \\( c_{t+1} \\) in einem LSTM wird berechnet, indem der aktuelle Zustand \\( c_t \\) mit dem Vergessens-Gate gewichtet wird, sodass irrelevante Informationen entfernt werden. Anschließend werden die neuen Informationen, die durch das Eingabe-Gate und die vorgeschlagene neue Information gewichtet sind, hinzugefügt. Dadurch kombiniert das LSTM bestehende relevante Informationen mit neuen wichtigen Informationen für den nächsten Zeitschritt."
+  },
+  {
+    "question": "Welche Komponenten (Gates) hat eine LSTM-Zelle?",
+    "options": [
+      "Eingabe-Gate, Ausgabe-Gate, Vergessens-Gate",
+      "Aktivierungsfunktion, Verlustfunktion, Optimierer",
+      "Hidden Layer, Output Layer, Input Layer",
+      "Bias, Gewichte, Aktivierungsfunktion"
+    ],
+    "correct_index": 0,
+    "explanation": "Eine LSTM-Zelle besteht aus drei Hauptkomponenten: dem Eingabe-Gate, dem Ausgabe-Gate und dem Vergessens-Gate. Das Eingabe-Gate entscheidet, welche neuen Informationen in den Zellzustand aufgenommen werden, das Vergessens-Gate bestimmt, welche Informationen aus dem Zellzustand gelöscht werden, und das Ausgabe-Gate reguliert, was aus dem Zellzustand als Ausgabe weitergegeben wird. Diese Gates ermöglichen es der LSTM-Zelle, relevante Informationen über längere Zeiträume beizubehalten und irrelevante Informationen effektiv zu vergessen."
+  },
+  {
+    "question": "Was ist die Hauptaufgabe des Carry-States in einem LSTM?",
+    "options": [
+      "Die Aktualisierung des versteckten Zustands",
+      "Die Steuerung, welche Informationen beibehalten oder vergessen werden",
+      "Die Berechnung der Ausgabe",
+      "Die Anwendung der Aktivierungsfunktion"
+    ],
+    "correct_index": 1,
+    "explanation": "In einem LSTM (Long Short-Term Memory) Netzwerk ist der Carry-State, auch als Zellzustand bekannt, entscheidend, um langfristige Abhängigkeiten in Sequenzen zu lernen. Er fließt durch das gesamte Netzwerk mit minimalen Änderungen und wird durch sogenannte \"Gate\"-Strukturen gesteuert, die entscheiden, welche Informationen hinzugefügt oder gelöscht werden. Dadurch wird sichergestellt, dass relevante Informationen über lange Zeiträume erhalten bleiben und irrelevante verworfen werden."
+  },
+  {
+    "question": "Was ist rekurrentes Dropout?",
+    "options": [
+      "Eine Methode zur Beschleunigung des Trainings, durch zufälliges Auslassen von Datenpunkten.",
+      "Eine Methode zur Reduktion der Parameteranzahl durch Auslassen jedes n-ten Werts.",
+      "Eine Methode zur Bekämpfung von Overfitting durch Anwendung einer konstanten Dropout-Maske über die Zeit.",
+      "Eine Methode zur Erhöhung der Klassifikationsgenauigkeit durch Dropout irrelevanter Parameter."
+    ],
+    "correct_index": 2,
+    "explanation": "Rekurrentes Dropout ist eine Technik, um Overfitting in rekurrenten neuronalen Netzen (RNNs) zu reduzieren, indem während der gesamten Ausführung über eine Zeitreihe hinweg eine konstante Dropout-Maske auf die Neuronen angewendet wird. Diese konstante Maske sorgt dafür, dass dieselben Neuronen bei jedem Zeitschritt deaktiviert werden, was zu einer robusteren und stabileren Lernstruktur führt. Dadurch wird die Netzwerkkapazität gezielt reduziert, ohne die dynamische zeitliche Abhängigkeit der Daten zu stören."
+  },
+  {
+    "question": "Warum ist das Stapeln von rekurrenten Schichten nützlich?",
+    "options": [
+      "Es reduziert die Trainingszeit.",
+      "Es erhöht die Repräsentationskraft des Netzwerks.",
+      "Es verringert die Anzahl der Parameter.",
+      "Es beschleunigt die Vorwärtspropagation."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Stapeln von rekurrenten Schichten erhöht die Tiefe des Netzwerks, was ihm ermöglicht, komplexere Muster in den Daten zu lernen. Jede zusätzliche Schicht verarbeitet die Ausgabe der vorherigen Schicht und kann dadurch tiefere zeitliche Abhängigkeiten und abstraktere Merkmale erfassen. Dies verbessert die Fähigkeit des Netzwerks, anspruchsvolle zeitliche Sequenzen und Beziehungen in den Eingangsdaten zu modellieren."
+  },
+  {
+    "question": "Wie funktioniert ein bidirektionales RNN?",
+    "options": [
+      "Es verarbeitet die Eingabesequenz in einer zufälligen Reihenfolge.",
+      "Es verarbeitet die Eingabesequenz in beiden Richtungen (chronologisch und antichronologisch).",
+      "Es verarbeitet die Eingabesequenz nur in umgekehrter Reihenfolge.",
+      "Es verarbeitet die Eingabesequenz parallel."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein bidirektionales RNN besteht aus zwei separaten RNNs, die parallel arbeiten: eines, das die Eingaben in Vorwärtsrichtung verarbeitet, und eines, das sie in Rückwärtsrichtung verarbeitet. Dadurch kann das Modell Informationen sowohl aus der Vergangenheit als auch aus der Zukunft eines bestimmten Zeitschritts in der Sequenz nutzen. Die Ergebnisse beider RNNs werden kombiniert, um die finale Ausgabe zu erzeugen, was die Kontextualisierung verbessert."
+  },
+  {
+    "question": "Warum können bidirektionale RNNs die Leistung verbessern?",
+    "options": [
+      "Weil sie die Trainingszeit verkürzen.",
+      "Weil sie unterschiedliche Repräsentationen der Daten nutzen.",
+      "Weil sie die Anzahl der Parameter reduzieren.",
+      "Weil sie die Klassifikationsgenauigkeit direkt erhöhen."
+    ],
+    "correct_index": 1,
+    "explanation": "Bidirektionale RNNs können die Leistung verbessern, weil sie Informationen aus der Vergangenheit und der Zukunft nutzen, indem sie zwei separate Hidden Layers trainieren: eine für die Vorwärts- und eine für die Rückwärtsrichtung. Dadurch wird ein umfassenderer Kontext bereitgestellt, der zu genaueren Vorhersagen führt. Diese Fähigkeit ist besonders nützlich in Aufgaben wie der Sprachverarbeitung, wo der gesamte Kontext eines Satzes entscheidend ist."
+  },
+  {
+    "question": "Warum ist es wichtig, zuerst einfache Modelle auszuprobieren?",
+    "options": [
+      "Weil sie schneller trainiert werden können.",
+      "Weil sie eine Basis für die Erklärung der Nutzung eines komplexeren Modells bieten.",
+      "Weil sie weniger Parameter haben.",
+      "Weil sie immer die besten Ergebnisse liefern."
+    ],
+    "correct_index": 1,
+    "explanation": "Einfachere Modelle sind oft leichter zu verstehen und zu interpretieren, was dabei hilft, erste Einblicke in die Daten zu gewinnen und potenzielle Probleme frühzeitig zu erkennen. Sie sind ressourcenschonender und erlauben eine schnellere Iteration während des Entwicklungsprozesses. Zudem bieten sie eine solide Grundlage, um zu entscheiden, ob der zusätzliche Aufwand eines komplexeren Modells überhaupt gerechtfertigt ist."
+  },
+  {
+    "question": "Welche Art von Dropout sollte in RNNs angewendet werden?",
+    "options": [
+      "Zufälliges Dropout.",
+      "Zeitlich konstantes Dropout.",
+      "Kein Dropout.",
+      "Nur Dropout auf die Eingabeschicht."
+    ],
+    "correct_index": 1,
+    "explanation": "Zeitlich konstantes Dropout wird in RNNs angewendet, um die zeitliche Konsistenz der Maskierung beizubehalten, während die Überanpassung reduziert wird. Dies bedeutet, dass dieselben Neuronen über alle Zeitschritte in einer RNN-Schicht hinweg deaktiviert werden, wodurch die zeitlichen Abhängigkeiten in den Daten besser berücksichtigt werden können. Diese Methode verbessert die Stabilität des Trainings und verhindert, dass das Modell zufällig unterschiedliche Informationen zu unterschiedlichen Zeitpunkten verliert."
+  },
+  {
+    "question": "Wann sind bidirektionale RNNs möglicherweise nicht geeignet?",
+    "options": [
+      "Wenn die jüngste Vergangenheit viel informativer ist als der Beginn der Sequenz.",
+      "Wenn man Voraussagen treffen möchte, basierend auf die Vergangenheit.",
+      "Wenn es sich um Textdaten handelt.",
+      "Wenn die Sequenz in umgekehrter Reihenfolge verarbeitet werden soll."
+    ],
+    "correct_index": 0,
+    "explanation": "Bidirektionale RNNs verarbeiten Informationen aus der gesamten Sequenz in beide Richtungen, was zusätzlichen Rechenaufwand und Speicherbedarf bedeutet. Wenn die jüngsten Datenpunkte jedoch viel wichtiger sind als die vorherigen, wie etwa bei Echtzeitanwendungen oder Vorhersagen auf Basis der jüngsten Ereignisse, kann ein unidirektionales RNN effizienter sein. In solchen Fällen bieten sie eine schnellere Verarbeitung, da sie sich auf die relevantesten Informationen konzentrieren können."
+  },
+  {
+    "question": "Was ist ein Tensor im Kontext von Deep Learning?",
+    "options": [
+      "Eine spezielle Aktivierungsfunktion",
+      "Ein Container für numerische Daten",
+      "Ein Optimierungsverfahren",
+      "Ein neuronales Netz"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Tensor ist eine multidimensionale Datenstruktur, die numerische Daten speichert und in Deep Learning-Modellen als Eingabedaten, Gewichte oder Ausgaben verwendet wird. Tensors können Skalar-, Vektor-, Matrix- oder höherdimensionale Darstellungen haben, je nach Anzahl der Dimensionen (Ränge) der Daten. Diese Struktur ermöglicht effiziente mathematische Operationen, die für das Training und die Ausführung von Modellen notwendig sind."
+  },
+  {
+    "question": "Wie nennt man einen Tensor mit nur einer Zahl?",
+    "options": [
+      "Vektor",
+      "Matrix",
+      "Skalar",
+      "Tabelle"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Tensor mit nur einer Zahl wird als Skalar bezeichnet. In der linearen Algebra und im Zusammenhang mit Tensorsystemen ist ein Skalar ein null-dimensionales Objekt, da er keine Richtung oder Ausdehnung hat. Er repräsentiert einfach einen einzelnen Wert, wie z. B. eine Zahl oder eine konstante Größe."
+  },
+  {
+    "question": "Woraus besteht ein 2D-Tensor typischerweise?",
+    "options": [
+      "Aus einer Liste von Skalaren",
+      "Aus einer Liste von Matrizen",
+      "Aus einem Array von Vektoren",
+      "Aus einem Array von Bildern"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein 2D-Tensor besteht aus einer rechteckigen Anordnung von Zahlen, die in Zeilen und Spalten organisiert sind, ähnlich einer Matrix. Jede Zeile oder Spalte kann als Vektor betrachtet werden, daher beschreibt ein 2D-Tensor ein Array von Vektoren. Diese Struktur wird häufig verwendet, um tabellarische Daten oder Bilder in der maschinellen Lernpraxis darzustellen."
+  },
+  {
+    "question": "Welcher Begriff beschreibt die Anzahl der Achsen eines Tensors?",
+    "options": [
+      "Tiefe",
+      "Breite",
+      "Rang (Rank)",
+      "Grösse"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Begriff \"Rang\" oder \"Rank\" beschreibt die Anzahl der Achsen oder Dimensionen eines Tensors in Deep Learning und Mathematik. Ein Skalar hat den Rang 0, ein Vektor hat den Rang 1, eine Matrix hat den Rang 2, und höhere Rangstufen entsprechen höheren Dimensionen. Der Rang eines Tensors gibt an, wie viele Indizes benötigt werden, um ein spezifisches Element innerhalb des Tensors auszuwählen."
+  },
+  {
+    "question": "Welcher dieser Tensors hat die Form eines Würfels aus Zahlen?",
+    "options": [
+      "1D-Tensor",
+      "2D-Tensor",
+      "3D-Tensor",
+      "0D-Tensor"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein 3D-Tensor hat drei Dimensionen und kann als Würfel aus Zahlen betrachtet werden. Er erweitert die Konzepte des 1D-Vektors (Linie von Zahlen) und des 2D-Matrix (Fläche von Zahlen) um eine zusätzliche Dimension. Ein 3D-Tensor wird häufig verwendet, um mehrschichtige Strukturen wie Farbbilder oder volumetrische Daten darzustellen."
+  },
+  {
+    "question": "Welches Datenformat wird typischerweise für Zeitreihendaten (Timeseries) verwendet?",
+    "options": [
+      "2D-Tensor mit (samples, features)",
+      "3D-Tensor mit (samples, timesteps, features)",
+      "4D-Tensor mit (samples, height, width, channels)",
+      "5D-Tensor mit (samples, channels, timesteps, features)"
+    ],
+    "correct_index": 1,
+    "explanation": "Zeitreihendaten werden häufig in einem 3D-Tensor repräsentiert, wobei die Dimensionen \"samples\" die Anzahl der unabhängigen Beobachtungen oder Sequenzen darstellt, \"timesteps\" die Anzahl der Zeitschritte innerhalb jeder Beobachtung und \"features\" die Anzahl der beobachteten Variablen pro Zeitschritt. Diese Struktur ermöglicht es, komplexe Muster und Zusammenhänge in zeitabhängigen Daten zu modellieren. Solche Tensoren sind besonders nützlich für Modelle wie RNNs oder LSTMs, die für sequenzielle Daten optimiert sind."
+  },
+  {
+    "question": "Wie ist die typische Struktur eines 4D-Tensors für Bilddaten?",
+    "options": [
+      "(samples, features, labels, channels)",
+      "(samples, channels, height, width)",
+      "(samples, timesteps, channels)",
+      "(features, samples, height, width)"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein 4D-Tensor für Bilddaten hat typischerweise die Struktur (samples, channels, height, width), die die Anzahl der Bilder, die Anzahl der Farbkanäle (z. B. RGB), die Höhe und die Breite jedes Bildes repräsentiert. Diese Struktur ermöglicht es, mehrere Bilder gleichzeitig zu verarbeiten, wobei jeder Kanal Informationen über unterschiedliche Farbkomponenten oder Merkmale eines Bildes liefert. Diese Anordnung ist besonders im Bereich der Convolutional Neural Networks (CNNs) verbreitet, da sie die Verarbeitung und Analyse von Bilddaten erleichtert."
+  },
+  {
+    "question": "Welche Aussage über Vektordaten ist korrekt?",
+    "options": [
+      "Vektordaten werden immer als 1D-Tensoren gespeichert",
+      "Vektordaten bestehen meist aus 3D-Tensoren",
+      "Vektordaten sind in der Regel als 2D-Tensoren organisiert, mit (samples, features)",
+      "Vektordaten enthalten nur Zeitangaben"
+    ],
+    "correct_index": 2,
+    "explanation": "Vektordaten werden oft in einem 2D-Array dargestellt, bei dem jede Zeile einem Datenpunkt (Sample) und jede Spalte einem Merkmal (Feature) entspricht. Dies erlaubt eine strukturierte und effiziente Darstellung und Verarbeitung in Machine-Learning-Modellen. Solche 2D-Tensoren sind zentral in der Datenverarbeitung und -analyse, da sie eine klare Trennung zwischen verschiedenen Datenbeobachtungen und deren Merkmalen ermöglichen."
+  },
+  {
+    "question": "Was ist ein Hauptvorteil von 1D Convolutional Neural Networks gegenüber RNNs?",
+    "options": [
+      "Höhere Genauigkeit bei Sprachverarbeitung",
+      "Geringerer Rechenaufwand",
+      "Berücksichtigen Langzeitabhängigkeiten besser",
+      "Können keine Sequenzen verarbeiten"
+    ],
+    "correct_index": 1,
+    "explanation": "1D Convolutional Neural Networks (CNNs) können dank ihrer parallelen Verarbeitungsstruktur effizienter als Recurrent Neural Networks (RNNs) arbeiten, die Daten sequenziell verarbeiten. CNNs fokussieren sich darauf, lokale Muster zu erfassen, was zu schnellerer Berechnung führt, da die Verarbeitung nicht auf die vorherige Eingabe angewiesen ist. Dies reduziert den Rechenaufwand erheblich im Vergleich zu der sequentiellen Natur von RNNs."
+  },
+  {
+    "question": "Welche Aufgabe erfüllt ein 1D Convolutional Layer?",
+    "options": [
+      "Klassifiziert ganze Bilder",
+      "Analysiert lokale Muster in Sequenzen",
+      "Berechnet statistische Kennzahlen",
+      "D. Sortiert Daten nach Zeit"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein 1D Convolutional Layer verarbeitet sequenzielle Daten, wie Zeitreihen oder Text, indem er lokale Muster innerhalb der Daten analysiert. Er gleitet mit Filtern über die Eingabesequenz, um Merkmale aus kleinen Teilabschnitten zu extrahieren. Diese lokal erkannten Muster helfen dabei, relevante Informationen für Aufgaben wie Klassifikation oder Vorhersage zu identifizieren."
+  },
+  {
+    "question": "Was beschreibt “Translation Invariance” bei CNNs?",
+    "options": [
+      "Fähigkeit, Muster unabhängig von ihrer Position zu erkennen",
+      "Fähigkeit, Wörter zwischen Sprachen zu übersetzen",
+      "Anpassung der Lernrate über Zeit",
+      "Reduktion der Trainingszeit"
+    ],
+    "correct_index": 0,
+    "explanation": "Translation Invariance bei Convolutional Neural Networks (CNNs) beschreibt die Fähigkeit des Modells, ein erkanntes Muster unabhängig von dessen Position im Eingabebild zu identifizieren. Diese Eigenschaft wird hauptsächlich durch die Verwendung von Faltungsschichten ermöglicht, die das Bild in kleinen Teilen scannen und Merkmale mit Hilfe von Filtern extrahieren. Dadurch können CNNs zuverlässig Objekte erkennen, selbst wenn diese im Bild verschoben sind."
+  },
+  {
+    "question": "Was bewirkt eine Pooling-Schicht im Zusammenhang mit 1D CNNs?",
+    "options": [
+      "Verstärkt Signale",
+      "Fügt Rauschen hinzu",
+      "Reduziert die Sequenzlänge",
+      "Wandelt Text in Zahlen um"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine Pooling-Schicht in 1D-CNNs dient dazu, die Sequenzlänge der Eingabedaten zu reduzieren, indem sie die wichtigsten Merkmale extrahiert und die Dimensionsreduktion fördert. Sie minimiert die Rechenlast und hilft, die Netzwerkgeneralisation zu verbessern, indem sie unerwünschte Variationen in der Datenrepräsentation vermindert. Dies wird typischerweise durch Operationen wie Max-Pooling oder Average-Pooling erreicht."
+  },
+  {
+    "question": "Was ist ein Nachteil von 1D CNNs im Vergleich zu RNNs?",
+    "options": [
+      "Höherer Speicherverbrauch",
+      "Unfähigkeit, Reihenfolge global zu berücksichtigen",
+      "Nur für Bilder geeignet",
+      "Sehr langsam in der Verarbeitung"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Nachteil von 1D-CNNs im Vergleich zu RNNs besteht darin, dass sie hauptsächlich lokale Muster in den Daten erfassen, da sie mit festen Filterlängen arbeiten und daher die Reihenfolge der gesamten Sequenz nicht global berücksichtigen können. RNNs hingegen verarbeiten Sequenzen schrittweise und sind dadurch besser in der Lage, Abhängigkeiten über lange Distanzen hinweg zu modellieren. Dies macht RNNs oft effektiver, wenn es auf das Verständnis der gesamten zeitlichen Reihenfolge einer Eingabesequenz ankommt."
+  },
+  {
+    "question": "Welche Layer werden oft am Ende eines 1D CNN verwendet, um Klassifikation zu ermöglichen?",
+    "options": [
+      "Recurrent Layers",
+      "Dense Layers",
+      "Embedding Layers",
+      "Batch-Normalization-Layers"
+    ],
+    "correct_index": 1,
+    "explanation": "Am Ende eines 1D CNN wird häufig ein oder mehrere Dense Layer (auch vollständig verbundene Schichten genannt) verwendet, um die extrahierten Merkmale in vorhergesagte Klassen zu transformieren. Diese Dense Layer verdichten die Informationen, die durch die vorherigen Schichten gewonnen wurden, auf eine feste Anzahl von Ausgängen, die der Anzahl der Klassen entspricht. Oft wird abschließend eine Aktivierungsfunktion wie Softmax verwendet, um Klassifikationswahrscheinlichkeiten bereitzustellen."
+  },
+  {
+    "question": "Was beschreibt ein “Window” bei einer 1D Convolution?",
+    "options": [
+      "Ein Modellparameter",
+      "Ein Trainingsdatensatz",
+      "Ein lokaler Abschnitt der Eingabesequenz",
+      "Ein Visualisierungstool"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein \"Window\" bei einer 1D Convolution bezieht sich auf einen limitierten Abschnitt der Eingabesequenz, über den der Filter gleitet. Der Filter wendet seine Operationen auf diesen Abschnitt an, um Merkmale zu extrahieren. Durch Verschiebung des Windows entlang der Eingabesequenz erhält man eine Feature-Map, die lokale Informationen repräsentiert."
+  },
+  {
+    "question": "Was passiert bei Max-Pooling in einer 1D Sequenz?",
+    "options": [
+      "Mittelwertbildung über alle Werte",
+      "Auswahl des höchsten Werts in einem Patch",
+      "Duplizieren von Sequenzteilen",
+      "Addition aller Patches"
+    ],
+    "correct_index": 1,
+    "explanation": "Max-Pooling in einer 1D-Sequenz ist ein Downsampling-Verfahren, bei dem die Sequenz in nicht überlappende Segmente (oder \"Patches\") unterteilt wird. Für jedes Segment wird der höchste Wert ausgewählt und in die Ausgabe-Sequenz übernommen. Dieses Verfahren reduziert die Datenmenge und hilft dabei, die wichtigsten Merkmale zu extrahieren und Überanpassung zu vermeiden."
+  },
+  {
+    "question": "Welche Eigenschaft unterscheidet RNNs von 1D CNNs?",
+    "options": [
+      "RNNs sind translational invariant",
+      "RNNs verarbeiten Daten ohne Reihenfolge",
+      "RNNs sind auf die Reihenfolge der Eingaben sensitiv",
+      "RNNs verwenden keine Gewichtungen"
+    ],
+    "correct_index": 2,
+    "explanation": "RNNs (Recurrent Neural Networks) unterscheiden sich von 1D CNNs (1D Convolutional Neural Networks) dadurch, dass sie eine eingebaute Rekurrenzstruktur haben, die es ihnen ermöglicht, Informationen über die Reihenfolge der Eingaben zu behalten und zeitliche Abhängigkeiten zu modellieren. Dadurch sind RNNs besonders geeignet für sequenzielle Daten, wie z.B. Text oder Zeitreihen. Im Gegensatz dazu sind 1D CNNs primär auf Merkmalsextraktion aus festgelegten Fenstergrößen ausgelegt und berücksichtigen die Reihenfolge der Eingaben nicht explizit."
+  },
+  {
+    "question": "Was kann eine Kombination aus CNN und RNN ermöglichen?",
+    "options": [
+      "Schnelleres Training ohne Qualitätsverlust",
+      "Gleichzeitige Text- und Bildverarbeitung",
+      "Berücksichtigung von Reihenfolge bei langen Sequenzen",
+      "Automatische Hyperparameterwahl"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Kombination aus CNNs (Convolutional Neural Networks) und RNNs (Recurrent Neural Networks) ermöglicht es, sowohl räumliche als auch zeitliche Abhängigkeiten in den Daten zu erfassen. CNNs eignen sich hervorragend zur Extraktion von lokalen Merkmalen aus Daten, wie z. B. in Bildern, während RNNs in der Lage sind, die Reihenfolge und den Kontext von Sequenzen zu modellieren. Dadurch kann ein Modell Informationen aus komplexen Dateneingaben, wie Videos oder gesprochener Sprache, effektiver verarbeiten und analysieren."
+  },
+  {
+    "question": "Welche Art von Daten eignet sich typischerweise NICHT für 1D CNNs?",
+    "options": [
+      "Tonaufnahmen",
+      "Zeitreihen",
+      "Texte",
+      "Farbbilder"
+    ],
+    "correct_index": 3,
+    "explanation": "1D-CNNs sind speziell für sequentielle Daten konzipiert, bei denen die Eingabe durch eine einzige Dimension repräsentiert wird, wie beispielsweise Zeitreihen oder Textdaten. Farbbilder hingegen sind zweidimensional, da sie aus Pixeln bestehen, die sowohl in der Höhe als auch in der Breite organisiert sind, und zudem Informationen aus mehreren Kanälen (z. B. RGB) enthalten. Daher sind 2D-CNNs besser geeignet, um die räumlichen Zusammenhänge und Farbkanäle in Farbbildern zu verarbeiten."
+  },
+  {
+    "question": "Was ist eine wichtige Designentscheidung bei 1D CNNs?",
+    "options": [
+      "Anzahl der LSTM-Zellen",
+      "Fenstergröße (Kernel size)",
+      "Reihenfolge der Wörter",
+      "Verwendung von Backpropagation"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Fenstergröße (Kernel size) ist entscheidend, da sie bestimmt, wie viele Eingabedatenpunkte auf einmal verarbeitet werden, was die Erkennung von Merkmalen beeinflusst. Eine kleinere Fenstergröße erfasst feinere Details, während eine größere Fenstergröße über größere zeitliche oder räumliche Muster hinausblicken kann. Die richtige Wahl hängt von der Art der Daten und den zu erkennenden Mustern ab."
+  },
+  {
+    "question": "Warum nutzt man in der Praxis oft mehrere gestapelte Convolution- und Pooling-Schichten?",
+    "options": [
+      "Zur Visualisierung von Eingabedaten",
+      "Um Speicherplatz zu sparen",
+      "Um komplexere und längerfristige Muster zu erkennen",
+      "Um die Lernrate konstant zu halten"
+    ],
+    "correct_index": 2,
+    "explanation": "Mehrere gestapelte Convolution-Schichten ermöglichen es dem Netzwerk, eine Hierarchie von Merkmalen zu lernen, wobei die frühen Schichten einfache Muster wie Kanten erkennen und spätere Schichten komplexere Strukturen und Objekte erfassen. Pooling-Schichten reduzieren die Dimensionalität, wodurch die Berechnungseffizienz gesteigert wird und die wichtigsten Merkmale extrahiert werden. Durch diese Kombination kann das Modell effizienter und robuster lernen und verallgemeinern."
+  },
+  {
+    "question": "Was ist das Grundprinzip eines Multi-Input Modells?",
+    "options": [
+      "Nutzung eines einzelnen Datentyps",
+      "Kombination verschiedener Eingangsdaten in einem Modell",
+      "Verwendung eines einzigen Neurons",
+      "Reduktion des Speichers"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Multi-Input Modell verarbeitet mehrere Eingabedatenströme gleichzeitig, indem es unterschiedliche Arten von Informationen kombiniert. Dies ermöglicht es dem Modell, aus vielfältigen Datenquellen umfassendere Erkenntnisse zu gewinnen und komplexere Zusammenhänge zu erkennen. Die Eingaben können dabei durch separate Pfade oder Teilschichten verarbeitet und dann zu einer einheitlichen Repräsentation zusammengeführt werden, oft durch Techniken wie Concatenation oder Addition."
+  },
+  {
+    "question": "Welche Technik wird verwendet, um unterschiedliche Input-Datenströme zusammenzuführen?",
+    "options": [
+      "Dropout",
+      "Add oder Concatenate Layer",
+      "Batch Normalization",
+      "Activation Layer"
+    ],
+    "correct_index": 1,
+    "explanation": "Um unterschiedliche Input-Datenströme in einem Deep-Learning-Modell zusammenzuführen, werden häufig Add- oder Concatenate-Layer verwendet. Der Add-Layer addiert entsprechende Elemente der Eingabeströme, während der Concatenate-Layer die Daten entlang einer bestimmten Achse verbindet. Diese Techniken ermöglichen es, Informationen aus verschiedenen Quellen zu kombinieren und weiterzuverarbeiten."
+  },
+  {
+    "question": "Was ermöglicht ein Multi-Input Modell?",
+    "options": [
+      "Einsatz von nur einem Datentyp",
+      "Nutzung mehrerer unabhängiger Datenquellen",
+      "Reduktion der Modellgrösse",
+      "Entfernen von Bias"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Multi-Input Modell ermöglicht es, mehrere unterschiedliche Datenquellen gleichzeitig in einem Deep-Learning-Modell zu verarbeiten. Dies ist nützlich, um verschiedene Aspekte eines Problems zu kombinieren und dadurch potenziell präzisere oder umfassendere Vorhersagen zu treffen. Beispielsweise können in einem Modell sowohl Bild- als auch Textdaten parallel verarbeitet werden, um reichhaltigere Informationen zu nutzen."
+  },
+  {
+    "question": "Wie funktioniert die naive Methode zur Kombination multimodaler Inputs?",
+    "options": [
+      "Ignorieren einzelner Datenquellen",
+      "Training separater Modelle mit anschliessender Mittelung der Vorhersagen",
+      "Reduktion der Anzahl der Inputs",
+      "Verstärkung einzelner Features"
+    ],
+    "correct_index": 1,
+    "explanation": "Die naive Methode zur Kombination multimodaler Inputs besteht darin, für jede Eingabemodalität ein separates Modell zu trainieren. Anschließend werden die Vorhersagen dieser Modelle gemittelt, um eine finale Entscheidung zu treffen. Diese Methode nutzt die Stärken jedes Modells, berücksichtigt jedoch nicht die möglichen Abhängigkeiten zwischen den Modalitäten."
+  },
+  {
+    "question": "Warum gilt das naive Verfahren bei Multi-Input Modellen als nachteilig?",
+    "options": [
+      "Es benötigt zu viele Daten",
+      "Es erkennt keine Korrelationen zwischen den Eingaben",
+      "Es verhindert Training",
+      "Es nutzt zu viele Layer"
+    ],
+    "correct_index": 1,
+    "explanation": "Das naive Verfahren bei Multi-Input-Modellen behandelt jede Eingabe unabhängig voneinander und analysiert sie einzeln. Dadurch kann es keine Interdependenzen oder Korrelationen zwischen den verschiedenen Eingaben erkennen. Dies führt dazu, dass potenziell wertvolle Informationen, die in der Beziehung zwischen Eingaben liegen, ungenutzt bleiben."
+  },
+  {
+    "question": "Was zeichnet Multi-Output Modelle aus?",
+    "options": [
+      "Sie erzeugen nur eine einzelne Vorhersage",
+      "Sie können mehrere Zielattribute gleichzeitig vorhersagen",
+      "Sie arbeiten nur mit Bildern",
+      "Sie sind auf Audio beschränkt"
+    ],
+    "correct_index": 1,
+    "explanation": "Multi-Output Modelle sind in der Lage, mehrere Zielvariablen gleichzeitig vorherzusagen, was sie besonders nützlich macht, wenn es darum geht, komplexe Probleme zu lösen, bei denen multiple Ausgaben miteinander in Beziehung stehen. Diese Modelle verwenden eine einzige Eingabemenge, um unterschiedliche, aber oft zusammenhängende Zielattribute zu generieren. Dadurch können sie effizienter und konsistenter als separate Modelle arbeiten, die für jede Zielvariable einzeln trainiert werden müssten."
+  },
+  {
+    "question": "Warum kann ein Multi-Output Modell Vorteile gegenüber mehreren Einzelmodellen haben?",
+    "options": [
+      "Geringere Trainingsdaten",
+      "Gemeinsames Lernen von Zusammenhängen zwischen den Zielattributen",
+      "Komplettes Vermeiden von Dropout",
+      "Reduzierung der Anzahl an GPUs"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Multi-Output Modell kann mehrere Zielvariablen gleichzeitig vorhersagen und dabei gemeinsame Merkmale und Zusammenhänge zwischen diesen Zielvariablen effizienter nutzen. Durch das Teilen von Informationen und die gleichzeitige Optimierung können solche Modelle oft bessere Vorhersagen treffen und die Rechenressourcen effizienter nutzen. Zudem reduziert das Training eines einzigen Modells den Verwaltungsaufwand im Vergleich zu mehreren Einzelmodellen."
+  },
+  {
+    "question": "Wie werden Verluste in einem Multi-Output Modell behandelt?",
+    "options": [
+      "Sie werden einzeln pro Zielattribut berechnet",
+      "Es wird ein Gesamtverlust über alle Ausgaben gebildet",
+      "Es wird eine gewichtete Gesamtverlust als Summe über alle Verlustfunktionen der einzelnen Zielattribute",
+      "Nur der grösste Verlust zählt"
+    ],
+    "correct_index": 2,
+    "explanation": "In einem Multi-Output-Modell wird für jedes Ausgabemerkmal eine separate Verlustfunktion definiert. Diese Verluste werden dann zu einem Gesamtverlust summiert, wobei jedem Verlust eine Gewichtung zugeordnet werden kann, um die Bedeutung einzelner Outputs zu steuern. Die Modelloptimierung zielt darauf ab, diesen gewichteten Gesamtverlust zu minimieren, um alle Ausgaben gleichzeitig zu verbessern."
+  },
+  {
+    "question": "Welche Herausforderung besteht bei Multi-Input Modellen?",
+    "options": [
+      "Die Daten müssen die gleiche Form haben",
+      "Unterschiedliche Eingabestrukturen müssen sinnvoll integriert werden",
+      "Nur Bilddaten sind erlaubt",
+      "Keine"
+    ],
+    "correct_index": 1,
+    "explanation": "Multi-Input-Modelle müssen Daten aus verschiedenen Quellen oder mit unterschiedlichen Strukturen verarbeiten, was die Integration und Kombination dieser heterogenen Informationen zu einer Herausforderung macht. Unterschiedliche Datenformate erfordern oft spezielle Vorverarbeitungs- und Modellierungsansätze, um aussagekräftige Merkmale zu extrahieren und zu verknüpfen. Ein effektives Multi-Input-Modell muss sicherstellen, dass es die Korrelations- und Interaktionsmuster zwischen diesen Eingaben korrekt erfasst und nutzt."
+  },
+  {
+    "question": "Was ist ein Vorteil von Multi-Input Modellen im Vergleich zu klassischen Modellen?",
+    "options": [
+      "Sie reduzieren die Anzahl der Epochen",
+      "Sie ermöglichen die gleichzeitige Verarbeitung verschiedener Datenformate",
+      "Sie verhindern alle Fehler",
+      "Sie benötigen keine Labels"
+    ],
+    "correct_index": 1,
+    "explanation": "Multi-Input Modelle können gleichzeitig verschiedene Arten von Daten, wie Text, Bilder oder numerische Werte, verarbeiten, wodurch sie komplexere Zusammenhänge erkennen können. Dies verbessert die Modellleistung in Situationen, in denen Informationen aus mehreren Quellen kombiniert werden müssen. So können Multi-Input Modelle umfassendere und akkuratere Vorhersagen treffen, da sie die Vorteile verschiedener Datenformate nutzen."
+  },
+  {
+    "question": "Welche Aussage ist korrekt für ein Multi-Output Modell?",
+    "options": [
+      "Alle Ausgaben sind unabhängig",
+      "Korrelationen zwischen Zielattributen können genutzt werden",
+      "Nur ein Zielattribut wird gleichzeitig vorhergesagt",
+      "Modelle sind auf Textdaten beschränkt"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Multi-Output Modell kann mehrere Zielvariablen gleichzeitig vorhersagen. Dadurch hat es die Fähigkeit, die Korrelationen und gemeinsamen Muster zwischen diesen Zielvariablen zu erfassen und zu nutzen. Dies kann die Vorhersagegenauigkeit erhöhen, indem es die Informationen darüber verwendet, wie die Zielvariablen zusammenhängen."
+  },
+  {
+    "question": "Wofür stehen die Begriffe ”Multiple Inputs” und ”Multiple Outputs”?",
+    "options": [
+      "Für sequentielle Daten",
+      "Für kombinierte Nutzung mehrerer Eingaben und Vorhersage mehrerer Ziele",
+      "Für Zufallsergebnisse",
+      "Für Layer-Normalisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "\"Multiple Inputs\" bezieht sich auf Modelle, die mehrere verschiedene Eingabedatenquellen gleichzeitig verarbeiten können, um komplexere Zusammenhänge zu berücksichtigen. \"Multiple Outputs\" bedeutet, dass ein Modell mehrere verschiedene Zielgrößen gleichzeitig vorhersagen kann. Zusammen ermöglichen diese Ansätze flexiblere und vielseitigere Machine-Learning-Modelle, die in realen Anwendungen oft notwendig sind."
+  },
+  {
+    "question": "Was passiert, wenn mehrere Modelle in der naiven Multi-Input Methode trainiert werden?",
+    "options": [
+      "Jedes Modell wird separat trainiert und das Ergebnis gemittelt",
+      "Es wird nur ein Modell trainiert",
+      "Die Modelle verhindern sich gegenseitig",
+      "Das Training wird abgebrochen"
+    ],
+    "correct_index": 0,
+    "explanation": "In der naiven Multi-Input Methode werden mehrere Modelle unabhängig voneinander trainiert, wobei jedes Modell seine eigene Version der Eingabedaten verarbeitet. Nach dem Training werden die Ergebnisse der einzelnen Modelle zusammengeführt, indem typischerweise der Durchschnitt ihrer Vorhersagen gebildet wird. Diese Methode nutzt die Stärken mehrerer Modelle, um die Gesamtvorhersage stabiler und potenziell genauer zu machen."
+  },
+  {
+    "question": "Welche Aussage trifft auf Multi-Input Modelle zu?",
+    "options": [
+      "Sie nutzen immer nur eine einzige Datenquelle",
+      "Sie erfordern zwingend Bilddaten",
+      "Sie ermöglichen die Verarbeitung verschiedener Datenquellen im gleichen Modell",
+      "Sie ersetzen vollständig CNNs"
+    ],
+    "correct_index": 2,
+    "explanation": "Multi-Input Modelle erlauben es, mehrere verschiedene Datenquellen simultan in einem einzigen Modell zu verarbeiten, indem sie separate Eingabeschichten für unterschiedliche Datentypen verwenden. Dies ermöglicht eine umfassendere Analyse, da das Modell Informationen aus verschiedenen Perspektiven integrieren kann. Solche Modelle sind besonders nützlich in Anwendungen, bei denen verschiedene Arten von Daten (z.B. Bild- und Textdaten) zusammengeführt werden müssen, um genauere Vorhersagen oder Klassifikationen zu treffen."
+  },
+  {
+    "question": "Eine Residualverbindung besteht darin, fr¨uhere Darstellungen in den nachgelagerten Datenfluss wieder einzuspeisen, sodass die Ausgabe...",
+    "options": [
+      "... nur die ursprüngliche Eingabe enthält",
+      "... nur die Transformation durch die Schicht enthält",
+      "... sowohl die ursprüngliche Eingabe als auch die Transformation durch die Schicht enthält",
+      "... entweder die ursprüngliche Eingabe oder die Transformation durch die Schicht enthält"
+    ],
+    "correct_index": 2,
+    "explanation": "Residualverbindungen, auch bekannt als Skip-Verbindungen, sorgen dafür, dass die ursprüngliche Eingabe einer Schicht zur Ausgabe dieser Schicht hinzuaddiert wird. Dadurch fließen Informationen unverändert durch das Netzwerk, was den Gradientenfluss verbessert und die Schulung tiefer Netzwerke erleichtert. Dies hilft, das Problem des verschwindenden Gradienten zu vermeiden und unterstützt die Modellgenauigkeit."
+  },
+  {
+    "question": "Was ist die Hauptidee hinter dem Attention-Mechanismus?",
+    "options": [
+      "Alle Input-Teile gleichmässig zu gewichten.",
+      "Bestimmten Teilen des Inputs mehr Bedeutung beizumessen als anderen.",
+      "Die Input Sequence zu verkürzen.",
+      "Die Dimensionalität der Input-Daten zu erhöhen."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Attention-Mechanismus erlaubt einem Modell, sich selektiv auf wichtige Teile des Eingabedatenstroms zu konzentrieren, indem er unterschiedlichen Segmenten des Inputs unterschiedliche Gewichtungen zuweist. Dies ermöglicht eine fokussierte Informationsverarbeitung, bei der relevante Informationen hervorgehoben und irrelevante Informationen unterdrückt werden. Dadurch verbessert sich die Fähigkeit des Modells, kontextuelle Abhängigkeiten zu erkennen und präzisere Vorhersagen zu treffen."
+  },
+  {
+    "question": "Was ermöglicht der Attention-Mechanismus einem Modell in Bezug auf die Input Features?",
+    "options": [
+      "Nur das erste Feature der Sequence zu berücksichtigen.",
+      "Features context-aware zu interpretieren.",
+      "Die Anzahl der Features zu reduzieren.",
+      "Alle Features zufällig zu gewichten."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Attention-Mechanismus ermöglicht es einem Modell, sich auf relevante Teile der Eingabedaten zu konzentrieren, indem es unterschiedliche Gewichtungen für verschiedene Input-Features berechnet. Dadurch kann das Modell Features je nach Kontext dynamisch priorisieren und interpretieren. Dies führt zu einer verbesserten Erfassung von Abhängigkeiten und Beziehungen innerhalb der Daten."
+  },
+  {
+    "question": "Wozu dient der erste Schritt im Self-Attention Mechanismus, wenn man beispielsweise das Wort 'station' in einem Satz betrachtet?",
+    "options": [
+      "Die grammatikalische Rolle von 'station' zu bestimmen.",
+      "Die Relevancy Scores zwischen 'station' und jedem anderen Wort im Satz zu berechnen.",
+      "Die h¨aufigsten W¨orter neben 'station' zu finden.",
+      "'station' durch ein Synonym zu ersetzen."
+    ],
+    "correct_index": 1,
+    "explanation": "Der erste Schritt im Self-Attention-Mechanismus besteht darin, Relevanzscores zwischen dem fokussierten Wort 'station' und jedem anderen Wort im Satz zu berechnen. Dies wird erreicht, indem das Wort 'station' in den Query-Vektor und die anderen Worte in Key-Vektoren umgewandelt werden, die dann miteinander verglichen werden. Diese Relevanzscores bestimmen, wie viel Aufmerksamkeit jedes Wort relativ zu 'station' erhalten sollte, um kontextuelle Beziehungen zu erfassen."
+  },
+  {
+    "question": "Was repräsentiert der resultierende Vektor nach Anwendung von Self-Attention auf ein Wort?",
+    "options": [
+      "Eine isolierte Darstellung des Wortes.",
+      "Eine kontextualisierte Darstellung des Wortes unter Berücksichtigung seines Surrounding Context",
+      "Die semantische Ähnlichkeit zu einem festen Ankerwort.",
+      "Die Frequenz des Wortes im gesamten Dataset."
+    ],
+    "correct_index": 1,
+    "explanation": "Der resultierende Vektor nach der Anwendung von Self-Attention auf ein Wort liefert eine kontextualisierte Darstellung dieses Wortes. Diese Darstellung berücksichtigt die Bedeutung und Beziehungen des Wortes zu anderen Wörtern im selben Satz oder Textabschnitt. Dadurch erhält das Wort Bedeutungsnuancen, die aus seinem Kontext hervorgehen, was wichtig für Aufgaben wie maschinelle Übersetzung oder Textverständnis ist."
+  },
+  {
+    "question": "Was bedeutet der Begriff ”Multi-Head” im Kontext von Multi-Head Attention?",
+    "options": [
+      "Das Modell hat mehrere Output Layers.",
+      "Der Self-Attention Layer operiert auf mehreren unabhängigen Repräsentationen (Sub-Spaces) gleichzeitig.",
+      "Es werden mehrere verschiedene Attention-Mechanismen kombiniert.",
+      "Das Modell kann mehrere Sprachen gleichzeitig verarbeiten."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Begriff \"Multi-Head\" im Kontext von Multi-Head Attention bezieht sich auf die parallele Nutzung mehrerer Self-Attention-Mechanismen, die auf voneinander unabhängigen Teilräumen (Sub-Spaces) operieren. Jede \"Kopf\" verarbeitet die Eingabedaten unterschiedlich, was zu einer Vielfalt von Aufmerksamkeitspunkten führt und somit die Fähigkeit des Modells verbessert, unterschiedliche Aspekte der Daten zu erfassen. Die Ergebnisse der einzelnen \"Köpfe\" werden anschließend kombiniert, um eine umfassendere und informativere Repräsentation der Daten zu erzeugen."
+  },
+  {
+    "question": "Welchen Nutzen hat die Verwendung von unabhängigen ”Heads” in Multi-Head Attention?",
+    "options": [
+      "Jeder Head lernt, die gleiche Art von Features zu erkennen, um die Robustheit zu erhöhen.",
+      "Es hilft dem Layer, verschiedene Gruppen von Features oder Beziehungen für jedes Token zu lernen.",
+      "Es reduziert den Speicherbedarf des Modells.",
+      "Es vereinfacht die mathematische Formulierung der Attention."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Verwendung von unabhängigen „Heads“ in Multi-Head Attention ermöglicht es dem Modell, unterschiedliche Aspekte oder Muster in den Daten parallel zu erfassen. Jeder Head lernt verschiedene Beziehungen oder Features, was die Fähigkeit des Modells verbessert, komplexe und vielfältige Zusammenhänge in den Daten zu verstehen. Dadurch wird die Gesamtstruktur der Information besser erfasst und die Modellleistung gesteigert."
+  },
+  {
+    "question": "Was erm¨oglicht es einem Transformer, die Beziehung zwischen W¨ortern zu verstehen, die weit voneinander entfernt in einem Satz stehen?",
+    "options": [
+      "Die rekursive Struktur des Modells.",
+      "Der Self-Attention Mechanismus, der alle Wortpaare direkt vergleicht.",
+      "Ein fester Context Window Ansatz.",
+      "Die Verwendung von Convolutional Layers."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Transformer verwendet den Self-Attention Mechanismus, um jedes Wort im Satz mit jedem anderen Wort zu vergleichen, unabhängig von deren Entfernung zueinander. Dabei werden Gewichte berechnet, die die Wichtigkeit und den Kontext der Wörter in Bezug zueinander bestimmen. Dieses Verfahren ermöglicht es, langreichweitige Abhängigkeiten zwischen Wörtern zu erfassen und so die Bedeutung komplexer Satzstrukturen besser zu verstehen."
+  },
+  {
+    "question": "Wenn ein Modell lernt, 'mehr Aufmerksamkeit' auf bestimmte Features zu richten, was bedeutet das für die internen Weights des Attention-Mechanismus?",
+    "options": [
+      "Die Weights für diese Features werden tendenziell grösser.",
+      "Die Weights für diese Features werden tendenziell kleiner.",
+      "Die Weights bleiben unverändert, nur die Activations ändern sich.",
+      "Die Weights werden randomisiert."
+    ],
+    "correct_index": 0,
+    "explanation": "Im Kontext eines Attention-Mechanismus dienen die internen Weights dazu, die Relevanz der verschiedenen Eingabefeatures zu bestimmen. Wenn ein Modell lernt, mehr Aufmerksamkeit auf bestimmte Features zu richten, bedeutet dies, dass die Attention-Weights für diese Features erhöht werden, um ihre Bedeutung im Kontext der Gesamteingabe zu verstärken. Dadurch haben diese Features einen größeren Einfluss auf die nachfolgenden Verarbeitungsschritte des Modells."
+  },
+  {
+    "question": "Welchen Vorteil bietet Multi-Head Attention gegenüber Single-Head Attention?",
+    "options": [
+      "Es ist immer schneller in der Berechnung.",
+      "Es ermöglicht dem Modell, verschiedene Aspekte oder Subtypen von Beziehungen gleichzeitig in unterschiedlichen Sub-Spaces zu erfassen.",
+      "Es benötigt weniger Parameter.",
+      "Es ist einfacher zu implementieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Multi-Head Attention ermöglicht es, Informationen aus verschiedenen Repräsentationsräumen gleichzeitig zu extrahieren, indem mehrere Attention-Mechanismen parallel verwendet werden. Dies erlaubt dem Modell, unterschiedliche Arten von Beziehungen und Kontextinformationen effektiver zu erfassen als Single-Head Attention. Dadurch wird die Modellkapazität erhöht und die Generalisierungsfähigkeit verbessert."
+  },
+  {
+    "question": "Was ist der Hauptzweck des Transformer-Encoders?",
+    "options": [
+      "Text in Sprache umzuwandeln",
+      "Eine Eingabesequenz in eine kontextbewusste Repräsentation zu überführen",
+      "Zufällige Textgenerierung",
+      "Bilderkennung"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Hauptzweck des Transformer-Encoders ist es, jede Position einer Eingabesequenz in eine dichte, kontextbewusste Repräsentation zu transformieren. Dies geschieht durch eine Serie von Self-Attention-Mechanismen und Feedforward-Netzwerken, die es dem Modell ermöglichen, Beziehungen zwischen verschiedenen Teilen der Sequenz zu verstehen. Dadurch kann der Encoder Informationen und Abhängigkeiten aus dem gesamten Eingabekontext erfassen und bereitstellen."
+  },
+  {
+    "question": "Was ist eine Residual Connection im Transformer-Encoder?",
+    "options": [
+      "Eine Technik zur Optimierung von Verlustfunktionen",
+      "Eine Methode zur Rechenzeitverkürzung",
+      "Eine Verbindung, die den ursprünglichen Input beibehält und addiert",
+      "Eine Art von Dropout-Verfahren"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine Residual Connection im Transformer-Encoder ist eine Architekturkomponente, die den ursprünglichen Input eines Layers direkt mit dessen Output addiert. Diese Verbindung hilft dabei, den Gradientenfluss zu verbessern und erleichtert das Training tiefer Netzwerke, indem sie den Informationsverlust minimiert. Durch die Addition des ursprünglichen Inputs bleibt der Netzwerkgradient stabiler und die Modellkonvergenz wird beschleunigt."
+  },
+  {
+    "question": "Was macht die Multi-Head Attention im Transformer-Encoder?",
+    "options": [
+      "Rechnet nur den Mittelwert von Eingabewerten",
+      "Erzeugt eine einfache gewichtete Summe",
+      "Führt mehrere parallele Selbstaufmerksamkeiten durch",
+      "Führt eine lineare Transformation durch"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Multi-Head Attention im Transformer-Encoder ermöglicht es dem Modell, gleichzeitig Informationen aus verschiedenen Repräsentationsräumen bzw. verschiedenen Positionen im Eingabesequenzraum zu verarbeiten. Dazu führt sie mehrere parallele Selbstaufmerksamkeitsberechnungen durch, bei denen die Eingabedaten in unterschiedliche Teilräume projiziert und individuell verarbeitet werden. Diese parallelen Ergebnisse werden dann kombiniert, was dem Modell eine reichhaltigere und deutlichere Repräsentation der Daten ermöglicht."
+  },
+  {
+    "question": "Wozu dienen Dense Layers im Transformer-Encoder?",
+    "options": [
+      "Zum Filtern irrelevanter Wörter",
+      "Zum Lernen von Repräsentationen",
+      "Zum Erhöhen der Eingabesequenz",
+      "Zum Maskieren von Tokens"
+    ],
+    "correct_index": 1,
+    "explanation": "Dense Layers im Transformer-Encoder dienen dazu, nicht-lineare Transformationen der Eingabedaten zu ermöglichen, um komplexe Muster und Beziehungen zu lernen. Sie helfen, die Repräsentationen zu verfeinern und Informationen im Merkmalsraum zu abstrahieren. Dies verbessert die Fähigkeit des Modells, relevante Merkmale für die nachfolgenden Aufgaben zu extrahieren."
+  },
+  {
+    "question": "Was ist das Ergebnis des Transformer-Encoders?",
+    "options": [
+      "Eine einzelne Zahl",
+      "Eine fixierte Textausgabe",
+      "Eine Sequenz von kontextabhängigen Embeddings",
+      "Ein Vektor mit Zufallswerten"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Transformer-Encoder verarbeitet eine Eingabesequenz und erzeugt für jedes Token einen kontextabhängigen Vektor (Embedding), indem er sowohl die Informationen des Tokens selbst als auch die seiner Umgebung berücksichtigt. Diese Embeddings repräsentieren die Bedeutung jedes Tokens im Kontext der gesamten Sequenz. Durch die Verwendung von Selbstaufmerksamkeit und mehreren Schichten können die erzeugten Embeddings komplexe Beziehungen und Bedeutungen erfassen."
+  },
+  {
+    "question": "Was ermöglicht der Einsatz mehrerer Köpfe (Heads) in der Multi-Head Attention?",
+    "options": [
+      "Geringeren Speicherverbrauch",
+      "Höhere Trainingsgeschwindigkeit",
+      "Lernen verschiedener Aspekte der Eingabe",
+      "Verringerung der Sequenzlänge"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Einsatz mehrerer Köpfe in der Multi-Head Attention ermöglicht es dem Modell, verschiedene Aspekte der Eingabe parallel zu analysieren, indem es multiple, unabhängige Gewichtungsmechanismen anwendet. Dadurch können unterschiedliche Beziehungen und Merkmale der Daten gleichzeitig erfasst werden, was die Modellkapazität und -leistung verbessert. So wird eine vielfältigere und reichhaltigere Repräsentation der Eingabeinformationen erreicht."
+  },
+  {
+    "question": "Wozu dient Positional Encoding in einem Transformer?",
+    "options": [
+      "Um die Länge einer Sequenz zu erhöhen",
+      "Um Wortbedeutungen zu normalisieren",
+      "Um Positionsinformationen in die Eingabedaten zu integrieren",
+      "Um Stoppwörter zu entfernen"
+    ],
+    "correct_index": 2,
+    "explanation": "Positional Encoding wird in Transformern verwendet, um Sequenzinformationen in die Eingaben zu integrieren, da diese Modelle keine inhärente räumliche oder sequenzielle Struktur erkennen. Es fügt den Daten positionsabhängige Informationen hinzu, damit das Modell die Reihenfolge der Token berücksichtigen kann. Dies ist entscheidend für Aufgaben, bei denen die Position der Daten das Verständnis und die Bedeutung beeinflusst."
+  },
+  {
+    "question": "Was enthält ein Embedding eines Tokens im Transformer?",
+    "options": [
+      "Nur die Wortbedeutung",
+      "Wortvektor + Positionsvektor",
+      "Nur der Positionsvektor",
+      "Zufällige Initialisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Embedding eines Tokens im Transformer kombiniert zwei Komponenten: den Wortvektor, der die semantische Bedeutung des Tokens in einem kontinuierlichen Vektorraum repräsentiert, und den Positionsvektor, der die Position des Tokens in der Sequenz kodiert. Diese Kombination ermöglicht es dem Modell, sowohl die Bedeutung als auch die Reihenfolge der Tokens zu berücksichtigen. Durch die Addition beider Vektoren erhält der Transformer eine reichhaltigere Eingabedarstellung für das Verstehen von Texten."
+  },
+  {
+    "question": "Was passiert, wenn Positional Encoding weggelassen wird?",
+    "options": [
+      "Das Modell kann Reihenfolgeinformationen nicht berücksichtigen",
+      "Das Modell funktioniert besser",
+      "Der Speicherbedarf sinkt",
+      "Der Output ist immer zufällig"
+    ],
+    "correct_index": 0,
+    "explanation": "Ohne Positional Encoding fehlen dem Modell die Informationen zur Reihenfolge der Eingabedaten, wodurch Wörter oder andere Eingabeelemente als austauschbar betrachtet werden. Da Transformers typischerweise parallel arbeiten und keine inhärente Reihenfolge haben, sind Positional Encodings notwendig, um die Struktur und Reihenfolge der Daten explizit zu codieren. Ohne diese kann das Modell die Bedeutung von Wortstellungen oder anderen Positionsabhängigkeiten in der Eingabe nicht erfassen."
+  },
+  {
+    "question": "Wofür wurden Transformer ursprünglich entwickelt?",
+    "options": [
+      "Textklassifikation",
+      "Bildverarbeitung",
+      "Maschinelle übersetzung",
+      "Clustering"
+    ],
+    "correct_index": 2,
+    "explanation": "Transformer wurden ursprünglich für die maschinelle Übersetzung entwickelt, um Sprachpaare effizienter und genauer voneinander zu übersetzen. Sie verwenden dabei ein self-attention Mechanismus, der es erlaubt, Kontexte und Abhängigkeiten innerhalb des Textes besser zu erfassen als frühere Modelle. Dies verbessert die Qualität der Übersetzungen und reduziert die Rechenintensität im Vergleich zu vorherigen seq2seq-Modellen mit RNNs oder LSTMs."
+  },
+  {
+    "question": "Welche beiden Hauptkomponenten hat ein Transformer-Modell?",
+    "options": [
+      "Attention-Modul und CNN",
+      "Input-Schicht und LSTM",
+      "Encoder und Decoder",
+      "Klassifikator und Regulator"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Transformer-Modell besteht aus zwei Hauptkomponenten: dem Encoder und dem Decoder. Der Encoder verarbeitet die Eingabedaten und erzeugt eine Repräsentation, die wichtige Informationen extrahiert. Der Decoder verwendet diese Repräsentation, um die Ausgabesequenz zu generieren, indem es Schritt für Schritt Tokens vorhersagt."
+  },
+  {
+    "question": "Was geschieht während der Inferenzphase eines Seq2Seq-Modells?",
+    "options": [
+      "Die Ausgabe wird direkt aus dem Zieltext gelesen",
+      "Die Zielsequenz wird komplett vorausgeladen",
+      "Die Ausgabe wird Schritt für Schritt generiert",
+      "Die Decoder-Schicht wird übersprungen"
+    ],
+    "correct_index": 2,
+    "explanation": "Während der Inferenzphase eines Seq2Seq-Modells wird zunächst eine Eingabesequenz durch den Encoder prozessiert, um einen Kontextvektor zu erstellen. Dieser Kontextvektor liefert dem Decoder den notwendigen Kontext, um die Ausgangssequenz schrittweise zu generieren. Bei jedem Schritt greift der Decoder auf den vorherigen Ausgabezustand zurück, um das nächste Token der Sequenz vorherzusagen, bis ein Endsymbol erreicht wird."
+  },
+  {
+    "question": "Welche Rolle spielt der Decoder im Transformer-Modell?",
+    "options": [
+      "Kodiert den Quelltext",
+      "Normalisiert die Positionsembeddings",
+      "Generiert neue Tokens auf Basis von Eingabesequenz und bisherigen Tokens",
+      "Extrahiert Schlüsselwörter"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Decoder im Transformer-Modell dient dazu, schrittweise neue Tokens zu generieren, indem er sowohl die Eingabesequenz als auch die bereits generierten Tokens berücksichtigt. Er nutzt Selbstaufmerksamkeit, um den Kontext der generierten Sequenz zu erfassen, und fokussiert sich durch eine zusätzliche Schicht auf wichtige Teile der Eingabesequenz mittels Cross-Attention. Dies ermöglicht es, in Aufgaben wie maschineller Übersetzung oder Textgenerierung kohärente und sinnvolle Ausgaben zu erzeugen."
+  },
+  {
+    "question": "Was ist der Hauptzweck des Transformer-Encoders?",
+    "options": [
+      "Kontextabhängige Repräsentationen von Eingabetokens erzeugen",
+      "Text generieren",
+      "Zielsequenzen in Quellsequenzen übersetzen",
+      "Das nächste Token in einer Zielsequenz vorhersagen"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Transformer-Encoder dient dazu, jedes Eingabetoken in einer Sequenz in eine kontextabhängige Repräsentation umzuwandeln, indem er die Beziehungen zwischen den Tokens modelliert. Mithilfe von Mechanismen wie Self-Attention kann er Informationen aus der gesamten Sequenz integrieren, um die Bedeutung eines Tokens im Kontext aller anderen Tokens zu erfassen. Dies ermöglicht es, die Eingabedaten effizient für nachfolgende Aufgaben wie Textklassifikation oder maschinelle Übersetzung zu verarbeiten."
+  },
+  {
+    "question": "Welcher Mechanismus verwendet der Transformer-Encoder um den Kontext zu berechnen?",
+    "options": [
+      "Rekurrentes Gedächtnis",
+      "Self-Attention",
+      "Convolutional-Filter",
+      "Pooling"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Transformer-Encoder verwendet den Self-Attention-Mechanismus, um den Kontext eines Wortes innerhalb eines Satzes zu berechnen, indem er das Wort mit allen anderen Wörtern im Satz vergleicht. Dadurch kann er relevante Beziehungen erfassen und entscheiden, welche Wörter für die aktuelle Berechnung am wichtigsten sind. Diese Gewichtungen ermöglichen es dem Modell, kontextabhängige Repräsentationen von Wörtern zu erzeugen."
+  },
+  {
+    "question": "Was versucht der Decoder vorherzusagen?",
+    "options": [
+      "Alle Tokens gleichzeitig",
+      "Vorheriges Token",
+      "Token N+1 basierend auf Tokens 0 bis N",
+      "Ein zufälliges Token"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Decoder in einem sequenziellen Modell versucht vorherzusagen, welches das nächstes Token (Token N+1) sein soll, indem er die bisherige Sequenz von Tokens (Tokens 0 bis N) analysiert. Dies geschieht, um kohärenten und semantisch sinnvollen Text zu generieren. Dieser Prozess ist zentral für Anwendungen wie maschinelle Übersetzung und Textgenerierung."
+  },
+  {
+    "question": "Was wäre die Folge, wenn der Decoder während des Trainings vollen Zugriff auf die gesamte Zielsequenz hätte?",
+    "options": [
+      "Schnellere Konvergenz",
+      "Overfitting",
+      "Perfekte Trainingsgenauigkeit, aber nutzlose Inferenz",
+      "Underfitting"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Folge wäre, dass der Decoder lernen könnte, sich auf Informationen aus der gesamten Zielsequenz zu stützen, um perfekte Ausgaben während des Trainings zu erzeugen, was zu einer perfekten Trainingsgenauigkeit führt. Dies würde jedoch nicht der realen Nutzung während der Inferenz entsprechen, da dort nur die vorhergesagten vorherigen Token genutzt werden können. Diese Diskrepanz zwischen Training und Inferenz würde dazu führen, dass das Modell in realen Szenarien schlechte Leistung zeigt, da es sich während der Inferenz nicht auf die gesamte Zielsequenz stützen kann."
+  }
+]

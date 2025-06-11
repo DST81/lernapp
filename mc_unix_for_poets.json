@@ -1,0 +1,311 @@
+[
+  {
+    "question": "Welche Aufgabe erfüllt der Befehl `tr -sc 'A-Za-z' '\\012' < genesis` in einem NLP-Workflow?",
+    "options": [
+      "Er zählt alle Wörter im Text.",
+      "Er konvertiert alle Zeichen in Kleinbuchstaben.",
+      "Er ersetzt alle Zeichen außerhalb des Alphabets durch Zeilenumbrüche zur Tokenisierung.",
+      "Er sortiert die Wörter im Text alphabetisch."
+    ],
+    "correct_index": 2,
+    "explanation": "Der Befehl `tr -sc 'A-Za-z' '\\012'` ersetzt alle Nicht-Buchstaben (inkl. Satzzeichen, Leerzeichen usw.) durch Zeilenumbrüche, sodass jedes Wort in einer eigenen Zeile steht – ein wichtiger Schritt bei der Tokenisierung."
+  },
+  {
+    "question": "Was ist das Ziel der Verwendung von `uniq -c` nach dem Sortieren eines Textes?",
+    "options": [
+      "Wörter in Groß- und Kleinschreibung zu vereinheitlichen",
+      "Doppelte Wörter zu entfernen",
+      "Die Häufigkeit von Wörtern zu zählen",
+      "Wörter alphabetisch zu sortieren"
+    ],
+    "correct_index": 2,
+    "explanation": "`uniq -c` zählt die Anzahl aufeinanderfolgender identischer Zeilen – in diesem Fall Wörter – wenn sie zuvor mit `sort` alphabetisch sortiert wurden."
+  },
+  {
+    "question": "Welches Kommando zählt die Anzahl von Wörtern, die mit einem Großbuchstaben beginnen?",
+    "options": [
+      "grep '[A-Z]'",
+      "grep '^[A-Z]'",
+      "grep '[A-Z]$'",
+      "grep -i '[aeiou]'"
+    ],
+    "correct_index": 1,
+    "explanation": "Der reguläre Ausdruck `^[A-Z]` steht für Zeilen (also Wörter), die mit einem Großbuchstaben beginnen."
+  },
+  {
+    "question": "Wie erzeugt man eine Liste aller Bigramme aus einem Text?",
+    "options": [
+      "Mit `uniq -c | sort -nr`",
+      "Mit `paste file1 file2`",
+      "Durch Tokenisierung, Verschieben und Verwenden von `paste`",
+      "Mit `sed 's/ /\\n/g'`"
+    ],
+    "correct_index": 2,
+    "explanation": "Bigramme entstehen, indem man eine Wortliste dupliziert, um eine Position verschiebt und dann mit `paste` zeilenweise zusammenfügt."
+  },
+  {
+    "question": "Was macht `grep 'ing$'` in Bezug auf Wörter in einem Text?",
+    "options": [
+      "Findet alle Wörter mit einem Großbuchstaben",
+      "Findet alle Wörter, die auf 'ing' enden",
+      "Findet alle Wörter, die mit 'ing' beginnen",
+      "Findet alle Wörter, die 'ing' enthalten"
+    ],
+    "correct_index": 1,
+    "explanation": "Der reguläre Ausdruck `ing$` bedeutet, dass die Zeile (bzw. das Wort) mit 'ing' endet."
+  },
+  {
+    "question": "Wofür steht das Symbol `|` (Pipe) in Unix-Tools?",
+    "options": [
+      "Zum Kommentieren von Code",
+      "Zum Vergleich zweier Dateien",
+      "Zum Weiterleiten der Ausgabe eines Befehls als Eingabe für den nächsten",
+      "Zum Öffnen einer Datei"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Pipe (`|`) verbindet zwei Befehle, sodass die Ausgabe des ersten Befehls direkt als Eingabe für den zweiten verwendet wird – ein Grundprinzip in der Shell-Verarbeitungskette."
+  },
+  {
+    "question": "Welche Aussage über `sed` ist korrekt?",
+    "options": [
+      "Es ist ein Werkzeug zur Wortzählung.",
+      "Es erlaubt das Suchen und Ersetzen von Zeichenketten in Texten.",
+      "Es zählt die Anzahl der Wörter pro Zeile.",
+      "Es tokenisiert einen Text in einzelne Wörter."
+    ],
+    "correct_index": 1,
+    "explanation": "`sed` ist ein Stream-Editor und eignet sich besonders für Ersetzungen, z. B. mit `sed 's/alt/neu/g'`."
+  },
+  {
+    "question": "Was bewirkt `sort -nr`?",
+    "options": [
+      "Sortiert numerisch in aufsteigender Reihenfolge",
+      "Sortiert alphabetisch, Groß- und Kleinschreibung ignorierend",
+      "Sortiert numerisch in absteigender Reihenfolge",
+      "Sortiert Wörter nach ihrer Silbenanzahl"
+    ],
+    "correct_index": 2,
+    "explanation": "`sort -nr` sortiert Zeilen nach Zahlwerten (`-n`) und in umgekehrter Reihenfolge (`-r`), typischerweise verwendet nach `uniq -c`, um häufige Begriffe oben zu zeigen."
+  },
+  {
+    "question": "Was ist das Ziel der Tokenisierung in der Sprachverarbeitung?",
+    "options": [
+      "Texte zu verschlüsseln",
+      "Texte in kleinere Einheiten wie Wörter oder Sätze zu zerlegen",
+      "Texte zu übersetzen",
+      "Texte nach Sprache zu klassifizieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Tokenisierung ist der Prozess, bei dem ein Text in kleinere Einheiten – typischerweise Wörter oder Satzzeichen – zerlegt wird, um die weitere Analyse zu erleichtern."
+  },
+  {
+    "question": "Welche Unix-Tools werden typischerweise in einer NLP-Toolchain verwendet?",
+    "options": [
+      "ls, cd, mkdir",
+      "curl, wget, ping",
+      "tr, sort, uniq, grep",
+      "ssh, scp, rsync"
+    ],
+    "correct_index": 2,
+    "explanation": "Tools wie `tr`, `sort`, `uniq` und `grep` eignen sich hervorragend zur einfachen Textanalyse, z. B. zur Tokenisierung und Häufigkeitsanalyse."
+  },
+  {
+    "question": "Welche Funktion erfüllt `tr 'A-Z' 'a-z'` in einem Unix-Kontext?",
+    "options": [
+      "Es ersetzt alle Zeichen durch Leerzeichen",
+      "Es zählt die Anzahl der Großbuchstaben",
+      "Es konvertiert Großbuchstaben in Kleinbuchstaben",
+      "Es löscht alle Kleinbuchstaben"
+    ],
+    "correct_index": 2,
+    "explanation": "Dieser Befehl konvertiert alle Großbuchstaben zu Kleinbuchstaben – ein häufiger Schritt zur Normalisierung von Text."
+  },
+  {
+    "question": "Wie kann man mit `sort` und `uniq` ein Frequenzranking der Wörter erstellen?",
+    "options": [
+      "sort | uniq -c | sort -nr",
+      "uniq -c | sort -n | sort",
+      "sort -u | sort -nr",
+      "grep | sort -r | uniq"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Befehle `sort | uniq -c | sort -nr` sortieren die Wörter, zählen sie und sortieren sie nach Häufigkeit in absteigender Reihenfolge."
+  },
+  {
+    "question": "Welcher Befehl zählt, wie viele Zeilen, Wörter und Zeichen eine Datei enthält?",
+    "options": [
+      "grep -c",
+      "wc",
+      "ls -l",
+      "sort -n"
+    ],
+    "correct_index": 1,
+    "explanation": "`wc` steht für 'word count' und zeigt Zeilen, Wörter und Zeichen einer Datei oder eines Textstroms an."
+  },
+  {
+    "question": "Was bewirkt `cut -f1` bei einer tabulatorgetrennten Datei?",
+    "options": [
+      "Es entfernt die erste Spalte",
+      "Es zeigt die erste Spalte an",
+      "Es ersetzt Tabs durch Leerzeichen",
+      "Es zählt die Felder pro Zeile"
+    ],
+    "correct_index": 1,
+    "explanation": "Mit `cut -f1` extrahiert man das erste Feld (Spalte) einer tabulatorgetrennten Datei."
+  },
+  {
+    "question": "Wie kann man Satzzeichen in einem Text entfernen?",
+    "options": [
+      "tr -d '[:punct:]'",
+      "grep '[A-Za-z]'",
+      "sort -u",
+      "sed 's/ /\\n/g'"
+    ],
+    "correct_index": 0,
+    "explanation": "`tr -d '[:punct:]'` löscht alle Satzzeichen (Punkt, Komma, Ausrufezeichen usw.) im Text."
+  },
+  {
+    "question": "Welcher Befehl zeigt alle Zeilen mit dem Wort 'the' als ganzes Wort?",
+    "options": [
+      "grep the",
+      "grep '\\bthe\\b'",
+      "grep '^the'",
+      "grep 'the$'"
+    ],
+    "correct_index": 1,
+    "explanation": "`\\b` ist ein Wortgrenzen-Marker. `grep '\\bthe\\b'` findet nur das vollständige Wort 'the' und nicht Teile davon wie 'there' oder 'another'."
+  },
+  {
+    "question": "Was bedeutet das Flag `-w` bei `grep`?",
+    "options": [
+      "Zeige nur Wörter mit mehr als 5 Zeichen",
+      "Ignoriere Groß-/Kleinschreibung",
+      "Finde nur ganze Wörter",
+      "Zähle die Wortanzahl in einer Zeile"
+    ],
+    "correct_index": 2,
+    "explanation": "`grep -w` sucht nur nach ganzen Wörtern und ignoriert Treffer in Wortbestandteilen."
+  },
+  {
+    "question": "Was macht `head -n 10`?",
+    "options": [
+      "Zeigt die letzten 10 Zeilen einer Datei",
+      "Zeigt die ersten 10 Zeichen jeder Zeile",
+      "Zeigt die ersten 10 Zeilen einer Datei",
+      "Kürzt jede Zeile auf 10 Wörter"
+    ],
+    "correct_index": 2,
+    "explanation": "`head -n 10` gibt die ersten zehn Zeilen einer Datei oder eines Eingabestroms aus."
+  },
+  {
+    "question": "Wie kann man die Länge jedes Wortes in einem Text zählen?",
+    "options": [
+      "wc -l",
+      "awk '{ print length($1) }'",
+      "cut -c1-5",
+      "sort -n"
+    ],
+    "correct_index": 1,
+    "explanation": "`awk '{ print length($1) }'` gibt die Länge des ersten Feldes (z. B. eines Wortes) jeder Zeile aus – hilfreich bei der Analyse der Wortlängenverteilung."
+  },
+  {
+    "question": "Wie kann man Wörter zählen, die mindestens einmal vorkommen?",
+    "options": [
+      "sort | uniq",
+      "sort | uniq -c",
+      "uniq | wc -l",
+      "sort | grep -c"
+    ],
+    "correct_index": 2,
+    "explanation": "`sort | uniq` entfernt Duplikate, `wc -l` zählt die verbleibenden eindeutigen Wörter – also die Anzahl unterschiedlicher Wörter."
+  },
+  {
+    "question": "Was ist ein Bigram?",
+    "options": [
+      "Ein einzelnes Wort",
+      "Ein Paar von aufeinanderfolgenden Wörtern",
+      "Eine Zusammenfassung eines Satzes",
+      "Ein Wort mit zwei Silben"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Bigram ist ein Paar von zwei direkt aufeinanderfolgenden Wörtern – z. B. 'New York'."
+  },
+  {
+    "question": "Was bewirkt `tail -n +2`?",
+    "options": [
+      "Zeigt nur die erste Zeile",
+      "Löscht die letzten zwei Zeilen",
+      "Beginnt die Ausgabe ab der zweiten Zeile",
+      "Zeigt nur Zeilen mit mindestens zwei Wörtern"
+    ],
+    "correct_index": 2,
+    "explanation": "`tail -n +2` beginnt die Ausgabe ab Zeile 2 – typischerweise verwendet, um z. B. Kopfzeilen zu überspringen."
+  },
+  {
+    "question": "Welche Ausgabe erzeugt `tr -s ' '`?",
+    "options": [
+      "Er ersetzt Leerzeichen durch Tabs",
+      "Er löscht alle Leerzeichen",
+      "Er reduziert aufeinanderfolgende Leerzeichen auf genau ein Leerzeichen",
+      "Er ersetzt Leerzeichen durch Zeilenumbrüche"
+    ],
+    "correct_index": 2,
+    "explanation": "`tr -s` (squeeze) reduziert wiederholte Zeichen (hier Leerzeichen) auf genau eines – nützlich bei unregelmäßig formatiertem Text."
+  },
+  {
+    "question": "Wie erstellt man aus einem Text eine Liste der 10 häufigsten Wörter?",
+    "options": [
+      "sort | uniq -c | head",
+      "uniq -c | sort -n | head",
+      "sort | uniq -c | sort -nr | head -n 10",
+      "sort -n | uniq -c | head"
+    ],
+    "correct_index": 2,
+    "explanation": "Diese Pipeline zählt die Wörter (`uniq -c`), sortiert sie numerisch absteigend (`sort -nr`) und gibt die Top 10 aus."
+  },
+  {
+    "question": "Welche Aussage zu `awk` ist korrekt?",
+    "options": [
+      "Es ersetzt Zeichen",
+      "Es ist ein Musterabgleich-Tool wie `grep`",
+      "Es verarbeitet Zeilen und Felder und erlaubt z. B. Berechnungen pro Spalte",
+      "Es zählt Dateien in einem Verzeichnis"
+    ],
+    "correct_index": 2,
+    "explanation": "`awk` ist ein mächtiges Tool zur Analyse und Transformation von zeilen- und feldbasierten Textdaten – ideal z. B. zur Analyse von CSV-Dateien."
+  },
+  {
+    "question": "Was ist ein Stopwort im NLP?",
+    "options": [
+      "Ein Wort, das nicht erkannt wurde",
+      "Ein Satzzeichen",
+      "Ein bedeutungsträchtiges Schlüsselwort",
+      "Ein häufiges Wort wie 'und', 'ist', 'the', das oft ignoriert wird"
+    ],
+    "correct_index": 3,
+    "explanation": "Stopwörter sind häufig vorkommende Wörter, die in vielen NLP-Anwendungen ignoriert werden, weil sie wenig inhaltliche Relevanz besitzen."
+  },
+  {
+    "question": "Was ist das Ziel von Normalisierung in der Textverarbeitung?",
+    "options": [
+      "Texte zu verschlüsseln",
+      "Groß-/Kleinschreibung, Satzzeichen und ähnliche Varianten zu vereinheitlichen",
+      "Texte zu kopieren",
+      "Texte zu analysieren, ohne sie zu verändern"
+    ],
+    "correct_index": 1,
+    "explanation": "Normalisierung bedeutet, ähnliche Textformen zu vereinheitlichen – z. B. 'Haus' und 'haus', oder das Entfernen von Satzzeichen."
+  },
+  {
+    "question": "Was bewirkt `uniq` ohne `sort`?",
+    "options": [
+      "Es zählt Wörter alphabetisch",
+      "Es zählt jedes Wort einmal",
+      "Es entfernt nur aufeinanderfolgende Duplikate",
+      "Es sortiert Wörter zufällig"
+    ],
+    "correct_index": 2,
+    "explanation": "`uniq` entfernt nur direkt aufeinanderfolgende identische Zeilen – daher ist ein vorheriges `sort` meistens notwendig."
+  }
+]
+

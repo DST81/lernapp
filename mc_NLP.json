@@ -1,0 +1,1103 @@
+[
+  {
+    "question": "Wofür steht in einem regulären Ausdruck das Zeichen `.`?",
+    "options": [
+      "Für ein Leerzeichen",
+      "Für ein beliebiges Zeichen außer Zeilenumbruch",
+      "Für das Ende eines Satzes",
+      "Für ein Tabulatorzeichen"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Punkt `.` steht in regulären Ausdrücken für ein beliebiges Zeichen außer dem Zeilenumbruch."
+  },
+  {
+    "question": "Was ist ein Korpus in der Computerlinguistik?",
+    "options": [
+      "Ein einzelnes Wort",
+      "Ein Sprachmodell",
+      "Eine Sammlung von Texten",
+      "Ein Synonymlexikon"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Korpus ist eine strukturierte Sammlung von Texten, die für linguistische Analysen genutzt wird."
+  },
+  {
+    "question": "Was versteht man unter Tokenisierung?",
+    "options": [
+      "Das Übersetzen von Text",
+      "Das Entfernen von Satzzeichen",
+      "Das Zerlegen von Text in Wörter oder andere Einheiten",
+      "Das Messen der Satzlänge"
+    ],
+    "correct_index": 2,
+    "explanation": "Bei der Tokenisierung wird Text in kleinere Einheiten (Tokens) wie Wörter oder Satzzeichen aufgeteilt."
+  },
+  {
+    "question": "Was bezeichnet man als Normalisierung in der Textverarbeitung?",
+    "options": [
+      "Das Übersetzen von Text",
+      "Die Vereinheitlichung der Schreibweise z. B. durch Kleinschreibung",
+      "Das Entfernen von Stopwords",
+      "Die Analyse der Wortarten"
+    ],
+    "correct_index": 1,
+    "explanation": "Normalisierung sorgt für einheitliche Repräsentationen, z. B. durch Kleinschreibung oder Entfernen von Sonderzeichen."
+  },
+  {
+    "question": "Wozu dient die Satz-Segmentierung?",
+    "options": [
+      "Zum Zählen der Wörter im Text",
+      "Zur Unterteilung eines Textes in Sätze",
+      "Zum Markieren von Schlüsselwörtern",
+      "Zur Übersetzung von Texten"
+    ],
+    "correct_index": 1,
+    "explanation": "Satz-Segmentierung teilt Text in Einheiten auf Satzebene – ein wichtiger Schritt in der Textvorverarbeitung."
+  },
+  {
+    "question": "Was misst der Minimum Edit Distance Algorithmus?",
+    "options": [
+      "Die durchschnittliche Wortlänge",
+      "Die Ähnlichkeit zweier Wörter basierend auf der minimalen Anzahl von Operationen",
+      "Die Häufigkeit eines Wortes im Korpus",
+      "Die syntaktische Struktur eines Satzes"
+    ],
+    "correct_index": 1,
+    "explanation": "Minimum Edit Distance zählt die minimalen Umwandlungsoperationen (Einfügen, Löschen, Ersetzen), um ein Wort in ein anderes zu transformieren."
+  },
+  {
+    "question": "Welche Operationen werden beim Minimum Edit Distance typischerweise verwendet?",
+    "options": [
+      "Addition, Subtraktion, Multiplikation",
+      "Einfügen, Löschen, Ersetzen",
+      "Sortieren, Gruppieren, Filtern",
+      "Kopieren, Einfügen, Umordnen"
+    ],
+    "correct_index": 1,
+    "explanation": "Die drei Grundoperationen des Minimum Edit Distance Algorithmus sind Einfügen, Löschen und Ersetzen."
+  },
+  {
+    "question": "Was ist ein N-Gramm-Modell?",
+    "options": [
+      "Ein Modell, das Bilddaten klassifiziert",
+      "Ein Modell, das Wortfolgen in n-Größen analysiert",
+      "Ein Regelwerk zur Satzstruktur",
+      "Ein Klassifikator für Emotionen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein N-Gramm-Modell analysiert n aufeinanderfolgende Wörter, um die Wahrscheinlichkeit von Wortfolgen vorherzusagen."
+  },
+  {
+    "question": "Wie kann man ein N-Gramm-Modell evaluieren?",
+    "options": [
+      "Mit Word2Vec",
+      "Durch Testen auf einem Bilddatensatz",
+      "Mit Metriken wie Perplexity und Cross-Entropy",
+      "Durch manuelles Korrekturlesen"
+    ],
+    "correct_index": 2,
+    "explanation": "Perplexity und Cross-Entropy sind gängige Evaluationsmetriken für Sprachmodelle wie N-Gramme."
+  },
+  {
+    "question": "Wofür kann der Befehl `grep` in UNIX verwendet werden?",
+    "options": [
+      "Zum Vergleichen von Bildern",
+      "Zum Durchsuchen von Texten nach regulären Ausdrücken",
+      "Zum Formatieren von Tabellen",
+      "Zum Verschieben von Dateien"
+    ],
+    "correct_index": 1,
+    "explanation": "`grep` ist ein mächtiges Tool zum Suchen nach Mustern in Texten mittels regulärer Ausdrücke."
+  },
+  {
+    "question": "Welche UNIX-Kommandos helfen, doppelte Zeilen in einer Datei zu finden und zu zählen?",
+    "options": [
+      "`sort | uniq -c`",
+      "`cut | paste`",
+      "`grep | sed`",
+      "`awk | tr`"
+    ],
+    "correct_index": 0,
+    "explanation": "Mit `sort | uniq -c` können doppelte Zeilen gezählt werden, da `uniq` nur auf sortierte Eingaben korrekt funktioniert."
+  },
+  {
+    "question": "Was macht der UNIX-Befehl `wc`?",
+    "options": [
+      "Wandelt Text in Sprache um",
+      "Zählt Wörter, Zeilen und Zeichen in Dateien",
+      "Kompiliert Quellcode",
+      "Findet grammatikalische Fehler"
+    ],
+    "correct_index": 1,
+    "explanation": "`wc` steht für 'word count' und zählt Zeilen, Wörter und Zeichen in einer Datei."
+  },
+  {
+    "question": "Was kann der Befehl `tr` in UNIX?",
+    "options": [
+      "Textdateien übersetzen",
+      "Text transformieren, z. B. Groß- in Kleinbuchstaben umwandeln",
+      "Texte in andere Sprachen übersetzen",
+      "Texte analysieren"
+    ],
+    "correct_index": 1,
+    "explanation": "`tr` wird genutzt, um Zeichen zu ersetzen oder zu löschen, z. B. zum Umwandeln in Kleinbuchstaben."
+  },
+  {
+    "question": "Wozu kann ein Naive-Bayes-Modell im NLP verwendet werden?",
+    "options": [
+      "Zur Berechnung von Edit-Distanzen",
+      "Zur Textklassifikation, z. B. Spam-Erkennung",
+      "Zum Aufbau eines Dialogsystems",
+      "Zur Übersetzung von Text"
+    ],
+    "correct_index": 1,
+    "explanation": "Naive Bayes ist ein einfaches, aber effektives probabilistisches Modell zur Textklassifikation."
+  },
+  {
+    "question": "Warum heißt Naive Bayes „naiv“?",
+    "options": [
+      "Weil es keine Wahrscheinlichkeiten berechnet",
+      "Weil es unabhängig von der Anzahl der Merkmale arbeitet",
+      "Weil es eine starke Annahme über die Unabhängigkeit der Merkmale macht",
+      "Weil es für Einsteiger geeignet ist"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Modell nimmt an, dass alle Merkmale unabhängig voneinander sind – was in der Praxis oft nicht ganz stimmt."
+  },
+  {
+    "question": "Welche NLP-Anwendung ist typisch für Textklassifikation?",
+    "options": [
+      "Tokenisierung",
+      "POS-Tagging",
+      "Spam-Erkennung",
+      "Satzsegmentierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Spam-Erkennung ist eine klassische Aufgabe für Textklassifikatoren wie Naive Bayes."
+  },
+  {
+    "question": "Welche Aussage trifft auf das Naive Bayes Modell zu?",
+    "options": [
+      "Es ist deterministisch",
+      "Es basiert auf der Berechnung von Prior- und Likelihood-Wahrscheinlichkeiten",
+      "Es verwendet neuronale Netze",
+      "Es benötigt große Datenmengen zum Trainieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Naive Bayes nutzt die Bayessche Regel mit Schätzungen von Prior- und Likelihood-Wahrscheinlichkeiten."
+  },
+  {
+    "question": "Was bedeutet das Wort 'Token' im NLP?",
+    "options": [
+      "Eine Variable im Quellcode",
+      "Ein Zeichen oder Wort als elementare Verarbeitungseinheit",
+      "Ein vollständiger Absatz",
+      "Ein Trainingsdatensatz"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Token ist eine grundlegende Einheit wie ein Wort oder Zeichen, die bei der Verarbeitung verwendet wird."
+  },
+  {
+    "question": "Welches UNIX-Tool hilft beim Kombinieren von Spalten aus zwei Dateien?",
+    "options": [
+      "cut",
+      "paste",
+      "grep",
+      "sort"
+    ],
+    "correct_index": 1,
+    "explanation": "`paste` kombiniert zeilenweise den Inhalt zweier Dateien und ist nützlich bei Datenvorverarbeitung."
+  },
+  {
+    "question": "Welches Tool verwendet man, um Textspalten basierend auf Trennzeichen auszuschneiden?",
+    "options": [
+      "cut",
+      "comm",
+      "uniq",
+      "scp"
+    ],
+    "correct_index": 0,
+    "explanation": "`cut` erlaubt das Extrahieren von Textspalten aus Dateien – z. B. mit `-d` zur Angabe eines Delimiters."
+  },
+  {
+    "question": "Wofür steht die Abkürzung TF-IDF?",
+    "options": [
+      "Term Frequency – Inverse Document Frequency",
+      "Token Feature – Indexed Document Format",
+      "Text Function – Indexed Definition Factor",
+      "Term File – IDentification Format"
+    ],
+    "correct_index": 0,
+    "explanation": "TF-IDF bewertet, wie wichtig ein Wort für ein Dokument ist, indem es die Häufigkeit im Dokument mit der Seltenheit im Korpus kombiniert."
+  },
+  {
+    "question": "Welcher Vorteil zeichnet dichte Wortvektoren wie Word2Vec gegenüber TF-IDF aus?",
+    "options": [
+      "Sie sind einfacher zu berechnen",
+      "Sie enthalten syntaktische Informationen",
+      "Sie repräsentieren semantische Ähnlichkeit zwischen Wörtern",
+      "Sie sind sparsamer in der Rechenleistung"
+    ],
+    "correct_index": 2,
+    "explanation": "Word2Vec & Co. modellieren semantische Ähnlichkeiten durch Vektorraumanordnungen, im Gegensatz zu TF-IDF, das keine Bedeutung abbildet."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen CBOW und Skip-Gram in Word2Vec?",
+    "options": [
+      "CBOW sagt Wörter voraus, Skip-Gram Vorhersagen von Sätzen",
+      "CBOW nutzt die Wortfrequenz, Skip-Gram nicht",
+      "CBOW sagt ein Zielwort basierend auf Kontext voraus, Skip-Gram sagt Kontext basierend auf Zielwort voraus",
+      "CBOW verwendet nur Subwörter"
+    ],
+    "correct_index": 2,
+    "explanation": "CBOW aggregiert Kontext, um ein Wort vorherzusagen, während Skip-Gram aus einem Wort den Kontext lernen will."
+  },
+  {
+    "question": "Welche Methode kann OOV (Out-of-Vocabulary) Wörter besser verarbeiten?",
+    "options": [
+      "TF-IDF",
+      "Word2Vec",
+      "GloVe",
+      "FastText"
+    ],
+    "correct_index": 3,
+    "explanation": "FastText nutzt Subwortinformationen und kann dadurch auch Wörter behandeln, die im Training nicht vorkamen."
+  },
+  {
+    "question": "Was trifft auf GloVe zu?",
+    "options": [
+      "Es basiert auf lokalen Kontextfenstern",
+      "Es verwendet Subwortinformationen",
+      "Es basiert auf globalen Wort-Kookkurrenzen",
+      "Es nutzt keine Vektoren"
+    ],
+    "correct_index": 2,
+    "explanation": "GloVe (Global Vectors) nutzt globale Statistiken über Kookkurrenzen im Korpus zur Berechnung der Embeddings."
+  },
+  {
+    "question": "Was ist ein Nachteil von Word2Vec?",
+    "options": [
+      "Es erfordert sehr große Modelle",
+      "Es kann keine mehrdeutigen Wörter unterscheiden",
+      "Es ist zu langsam",
+      "Es verwendet keine neuronalen Netze"
+    ],
+    "correct_index": 1,
+    "explanation": "Word2Vec generiert für jedes Wort nur einen Vektor, egal in welchem Kontext es verwendet wird – das erschwert Polysemie."
+  },
+  {
+    "question": "Was ist ein Merkmal der BPE-Tokenisierung?",
+    "options": [
+      "Sie zerteilt Wörter nach Morphemen",
+      "Sie verwendet feste Vokabulare ohne Anpassung",
+      "Sie lernt Token durch häufige Paarzusammenführungen",
+      "Sie basiert auf Silbenstruktur"
+    ],
+    "correct_index": 2,
+    "explanation": "BPE (Byte-Pair Encoding) beginnt mit Zeichen und fügt häufige Paare zu neuen Tokens zusammen."
+  },
+  {
+    "question": "Was bewirkt der `AutoTokenizer` von Hugging Face?",
+    "options": [
+      "Er trainiert ein Sprachmodell",
+      "Er tokenisiert Text automatisch passend zum gewählten Modell",
+      "Er übersetzt zwischen Sprachen",
+      "Er lädt Word2Vec-Vektoren"
+    ],
+    "correct_index": 1,
+    "explanation": "`AutoTokenizer` erkennt anhand des Modellnamens die passende Tokenisierungsmethode (BPE, WordPiece etc.) und konfiguriert sie automatisch."
+  },
+  {
+    "question": "Welche Tokenization-Methode verwendet BERT?",
+    "options": [
+      "WordPiece",
+      "BPE",
+      "Unigram",
+      "FastText"
+    ],
+    "correct_index": 0,
+    "explanation": "BERT verwendet WordPiece, um auch unbekannte Wörter durch Kombination bekannter Subwörter abzubilden."
+  },
+  {
+    "question": "Welche Einschränkung haben klassische Wort-Embeddings?",
+    "options": [
+      "Sie sind zu groß",
+      "Sie sind kontextsensitiv",
+      "Sie repräsentieren jedes Wort unabhängig vom Kontext",
+      "Sie benötigen GPU-Unterstützung"
+    ],
+    "correct_index": 2,
+    "explanation": "Klassische Embeddings wie Word2Vec ordnen jedem Wort einen festen Vektor zu – unabhängig vom Kontext."
+  },
+  {
+    "question": "Was bedeutet 'Polysemie' in Bezug auf Wort-Embeddings?",
+    "options": [
+      "Ein Wort hat viele Synonyme",
+      "Ein Wort hat mehrere Bedeutungen",
+      "Ein Wort ist besonders häufig",
+      "Ein Wort ist grammatikalisch falsch"
+    ],
+    "correct_index": 1,
+    "explanation": "Polysemie beschreibt die Eigenschaft eines Wortes, mehrere Bedeutungen zu haben – was klassische Embeddings nicht abbilden können."
+  },
+  {
+    "question": "Welches Werkzeug kann zur Visualisierung von Embeddings verwendet werden?",
+    "options": [
+      "TensorBoard",
+      "AutoTokenizer",
+      "spaCy",
+      "TF-IDF-Viewer"
+    ],
+    "correct_index": 0,
+    "explanation": "TensorBoard bietet ein Projector-Tool zur Visualisierung von Embeddings z. B. per PCA oder t-SNE."
+  },
+  {
+    "question": "Was versteht man unter einem 'Embedding Layer' in neuronalen Netzen?",
+    "options": [
+      "Einen Schichttyp zur Normalisierung",
+      "Ein Zwischenspeicher für Token",
+      "Eine Matrix, die Wörter in Vektoren abbildet",
+      "Eine Wortliste mit Stoppwörtern"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Embedding Layer übersetzt Wörter oder Tokens in dichte Vektoren und wird oft als erste Schicht in NLP-Netzen verwendet."
+  },
+  {
+    "question": "Welche Sprachmodelle nutzen kontextabhängige Embeddings?",
+    "options": [
+      "TF-IDF",
+      "Word2Vec",
+      "BERT, GPT",
+      "GloVe"
+    ],
+    "correct_index": 2,
+    "explanation": "Moderne Transformer-Modelle wie BERT und GPT erzeugen für jedes Wort je nach Kontext unterschiedliche Embeddings."
+  },
+  {
+    "question": "Was unterscheidet Unigram-Tokenization von BPE?",
+    "options": [
+      "Unigram arbeitet mit Vokabelwahrscheinlichkeiten, BPE mit Häufigkeit von Paaren",
+      "Beide sind identisch",
+      "Unigram trennt Silben, BPE nicht",
+      "BPE ist probabilistisch, Unigram deterministisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Unigram-Modelle basieren auf Wahrscheinlichkeiten ganzer Subwörter, während BPE inkrementell häufige Paare zusammenfügt."
+  },
+  {
+    "question": "Was ist ein typisches Ziel beim Training eines Word2Vec-Modells?",
+    "options": [
+      "Minimierung der Wortanzahl im Korpus",
+      "Vorhersage von Satzenden",
+      "Optimierung der Wort-Ähnlichkeitsvorhersage",
+      "Erkennung grammatikalischer Fehler"
+    ],
+    "correct_index": 2,
+    "explanation": "Ziel ist es, Vektoren so zu trainieren, dass ähnliche Wörter ähnliche Kontexte haben – semantische Nähe."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen statischen und dynamischen Embeddings?",
+    "options": [
+      "Statische ändern sich bei jedem Lauf, dynamische nicht",
+      "Statische sind für alle Kontexte gleich, dynamische berücksichtigen Kontext",
+      "Statische basieren auf Subwörtern, dynamische auf Buchstaben",
+      "Statische sind schneller"
+    ],
+    "correct_index": 1,
+    "explanation": "Statische Embeddings wie Word2Vec erzeugen pro Wort einen Vektor, dynamische wie bei BERT erzeugen kontextspezifische Vektoren."
+  },
+  {
+    "question": "Wozu dient die Softmax-Funktion beim Training von Word2Vec?",
+    "options": [
+      "Zur Normalisierung der Wortvektoren",
+      "Zur Berechnung von Wahrscheinlichkeiten für Ausgaben",
+      "Zur Bestimmung der Trainingszeit",
+      "Zur Optimierung der Satzstruktur"
+    ],
+    "correct_index": 1,
+    "explanation": "Softmax wird verwendet, um Wahrscheinlichkeiten über den Wortschatz zu berechnen – z. B. für die Vorhersage eines Zielwortes."
+  },
+  {
+    "question": "Was versteht man unter Subword-Informationen in Embeddings?",
+    "options": [
+      "Informationen zu Satzstruktur",
+      "Informationen über semantische Netze",
+      "Vektoren für Teile von Wörtern, z. B. Silben oder Zeichenfolgen",
+      "Vorkommen von Wörtern im Text"
+    ],
+    "correct_index": 2,
+    "explanation": "Subword-Modelle wie FastText brechen Wörter in kleinere Einheiten auf, um auch unbekannte Wörter modellieren zu können."
+  },
+  {
+    "question": "Warum sind kontextuelle Embeddings für viele NLP-Aufgaben besser geeignet?",
+    "options": [
+      "Weil sie kleinere Modelle erzeugen",
+      "Weil sie schneller trainierbar sind",
+      "Weil sie die Bedeutung eines Wortes je nach Kontext berücksichtigen",
+      "Weil sie ohne Tokenizer funktionieren"
+    ],
+    "correct_index": 2,
+    "explanation": "Kontextuelle Embeddings wie bei BERT berücksichtigen die Umgebung eines Wortes – z. B. zur Unterscheidung von Bedeutungen wie 'Bank'."
+  },
+  {
+    "question": "Welche der folgenden Wortarten gehört zu den **offenen Klassen**?",
+    "options": [
+      "Pronomen",
+      "Konjunktionen",
+      "Substantive",
+      "Präpositionen"
+    ],
+    "correct_index": 2,
+    "explanation": "Substantive gehören zu den offenen Klassen – es entstehen ständig neue (z. B. 'Smartphone')."
+  },
+  {
+    "question": "Was zeichnet **geschlossene Wortklassen** aus?",
+    "options": [
+      "Sie enthalten sehr viele Wörter",
+      "Sie ändern sich häufig",
+      "Es kommen kaum neue Wörter hinzu",
+      "Sie bestehen nur aus Verben"
+    ],
+    "correct_index": 2,
+    "explanation": "Geschlossene Klassen wie Pronomen, Präpositionen oder Konjunktionen sind stabil und verändern sich selten."
+  },
+  {
+    "question": "Was ist ein typisches Beispiel für ein **Adverb**?",
+    "options": [
+      "laufen",
+      "schnell",
+      "Haus",
+      "und"
+    ],
+    "correct_index": 1,
+    "explanation": "Adverbien beschreiben Umstände wie Zeit, Ort oder Art und Weise – z. B. 'schnell'."
+  },
+  {
+    "question": "Was leistet ein **Part-of-Speech (POS) Tagger**?",
+    "options": [
+      "Er ersetzt Stoppwörter",
+      "Er erkennt die Bedeutung von Texten",
+      "Er weist Wörtern ihre grammatische Kategorie zu",
+      "Er trennt Wörter in Silben"
+    ],
+    "correct_index": 2,
+    "explanation": "POS-Tagger klassifizieren Wörter in Kategorien wie Nomen, Verb, Adjektiv usw."
+  },
+  {
+    "question": "Welche Information liefert ein POS-Tagger NICHT?",
+    "options": [
+      "Wortart",
+      "Beugungsform",
+      "Satzbedeutung",
+      "Tempus"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein POS-Tagger liefert keine Bedeutungsanalyse, sondern grammatikalische Informationen."
+  },
+  {
+    "question": "Was ist ein typisches Tag-Set für POS-Tagging im Englischen?",
+    "options": [
+      "BIO",
+      "Penn Treebank",
+      "NER",
+      "SyntaxNet"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Penn Treebank-Tagset ist ein weit verbreitetes POS-Tagging-Set für Englisch."
+  },
+  {
+    "question": "Welche Methode kann für ein einfaches POS-Tagging verwendet werden?",
+    "options": [
+      "Naive Bayes",
+      "K-Means Clustering",
+      "PCA",
+      "t-SNE"
+    ],
+    "correct_index": 0,
+    "explanation": "Naive Bayes ist ein einfacher probabilistischer Klassifikator, der gut für einfache POS-Tagger geeignet ist."
+  },
+  {
+    "question": "Was ist die Aufgabe eines Named Entity Recognizers?",
+    "options": [
+      "Grammatikalische Fehler erkennen",
+      "Satzbau analysieren",
+      "Wortarten markieren",
+      "Namen, Orte und Organisationen im Text erkennen"
+    ],
+    "correct_index": 3,
+    "explanation": "NER-Systeme erkennen bestimmte Entitäten wie Personen, Orte, Marken etc. im Text."
+  },
+  {
+    "question": "Was bedeutet die Abkürzung BIO im BIO-Tagging?",
+    "options": [
+      "Beginning, Inside, Outside",
+      "Binary Input Output",
+      "Basic Information Order",
+      "Before, Inside, Object"
+    ],
+    "correct_index": 0,
+    "explanation": "BIO-Tags markieren, ob ein Token den Beginn (B), die Fortsetzung (I) oder keinen Teil (O) einer Entität darstellt."
+  },
+  {
+    "question": "Welches Tag beschreibt in BIO-Notation ein Wort, das Teil einer Entität, aber nicht der erste Token ist?",
+    "options": [
+      "B-LOC",
+      "I-LOC",
+      "O",
+      "B-PER"
+    ],
+    "correct_index": 1,
+    "explanation": "I-LOC bedeutet 'Inside' einer Ortsentität (Location), aber nicht der Beginn."
+  },
+  {
+    "question": "Was beschreibt der 'O'-Tag im BIO-Tagging?",
+    "options": [
+      "Andere Wortart",
+      "Ein Wort, das zu keiner Entität gehört",
+      "Obligatorisches Tag",
+      "Ortsspezifisches Tag"
+    ],
+    "correct_index": 1,
+    "explanation": "'O' steht für 'Outside', d. h. das Wort gehört zu keiner benannten Entität."
+  },
+  {
+    "question": "Was ist eine typische Anwendung für Named Entity Recognition?",
+    "options": [
+      "Maschinelles Übersetzen",
+      "Rechtschreibkorrektur",
+      "Informations-Extraktion",
+      "Satz-Segmentierung"
+    ],
+    "correct_index": 2,
+    "explanation": "NER wird oft verwendet, um strukturierte Informationen (z. B. aus Nachrichtenartikeln) zu extrahieren."
+  },
+  {
+    "question": "Welche der folgenden Entitäten erkennt ein typisches NER-System NICHT direkt?",
+    "options": [
+      "Personen",
+      "Zeitangaben",
+      "Emotionen",
+      "Organisationen"
+    ],
+    "correct_index": 2,
+    "explanation": "NER-Systeme erkennen Entitätstypen wie Personen, Orte, Organisationen – aber keine abstrakten Konzepte wie Emotionen."
+  },
+  {
+    "question": "Was ist das Ziel von Dependency Parsing?",
+    "options": [
+      "Erkennung von Named Entities",
+      "Bestimmung der Abhängigkeiten zwischen Wörtern",
+      "Erstellung von Word Embeddings",
+      "Tokenisierung von Text"
+    ],
+    "correct_index": 1,
+    "explanation": "Dependency Parsing analysiert die grammatischen Beziehungen (z. B. Subjekt, Objekt) zwischen Wörtern im Satz."
+  },
+  {
+    "question": "Welche Beziehung zeigt ein Dependency-Parser?",
+    "options": [
+      "Synonymbeziehungen",
+      "Hierarchie zwischen Absätzen",
+      "Grammatikalische Abhängigkeiten zwischen Wörtern",
+      "Sprachfamilien"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Dependency-Parser stellt die grammatische Struktur eines Satzes als gerichteten Graphen dar."
+  },
+  {
+    "question": "Welche NLP-Komponente ist hilfreich für das Extrahieren von Subjekt-Prädikat-Objekt-Strukturen?",
+    "options": [
+      "Stemming",
+      "Tokenisierung",
+      "Dependency Parsing",
+      "Lemmatization"
+    ],
+    "correct_index": 2,
+    "explanation": "Dependency Parsing kann verwendet werden, um Subjekt-, Objekt- und Verb-Beziehungen zu analysieren."
+  },
+  {
+    "question": "Was kann eine POS-Tagging-Analyse zur Verbesserung beitragen?",
+    "options": [
+      "Sentimentanalyse",
+      "Syntaxanalyse",
+      "Satzklassifikation",
+      "Alle genannten"
+    ],
+    "correct_index": 3,
+    "explanation": "POS-Tagging liefert wertvolle Informationen für viele nachgelagerte Aufgaben in NLP."
+  },
+  {
+    "question": "Welche Bibliothek bietet einfache Tools für POS-Tagging, NER und Dependency Parsing?",
+    "options": [
+      "NumPy",
+      "spaCy",
+      "Matplotlib",
+      "Pandas"
+    ],
+    "correct_index": 1,
+    "explanation": "spaCy ist eine moderne NLP-Bibliothek mit integrierten Funktionen für POS, NER und Parsing."
+  },
+  {
+    "question": "Was ist typisch für eine benannte Entität?",
+    "options": [
+      "Sie ist ein seltenes Wort",
+      "Sie ist großgeschrieben",
+      "Sie ist eindeutig identifizierbar",
+      "Sie ist immer ein Verb"
+    ],
+    "correct_index": 2,
+    "explanation": "Named Entities sind eindeutig referenzierbare Begriffe wie 'Angela Merkel' oder 'Microsoft'."
+  },
+  {
+    "question": "Welche der folgenden Aussagen ist korrekt?",
+    "options": [
+      "POS-Tagging ist für Deep Learning irrelevant",
+      "NER kann nur mit Handregeln durchgeführt werden",
+      "Dependency Parsing analysiert Satzstruktur",
+      "BIO-Tagging dient der Wortvektorisierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Dependency Parsing ist eine Technik zur Analyse der grammatischen Struktur eines Satzes."
+  },
+  {
+    "question": "Was ist das Grundprinzip eines Transformer-Modells?",
+    "options": [
+      "Wörter werden sequenziell verarbeitet",
+      "Wörter beeinflussen sich nur über Nachbarwörter",
+      "Jedes Wort kann sich direkt auf alle anderen Wörter im Kontext beziehen",
+      "Es nutzt rekurrente neuronale Netze"
+    ],
+    "correct_index": 2,
+    "explanation": "Transformer-Modelle nutzen Selbstaufmerksamkeit (Self-Attention), sodass jedes Wort alle anderen im Kontext berücksichtigen kann."
+  },
+  {
+    "question": "Welche Komponente ist **zentral** für Transformer-Modelle?",
+    "options": [
+      "ReLU-Schichten",
+      "Selbstaufmerksamkeit (Self-Attention)",
+      "Pooling Layer",
+      "Max-Pooling"
+    ],
+    "correct_index": 1,
+    "explanation": "Self-Attention erlaubt es dem Modell, Beziehungen zwischen allen Token im Input zu lernen."
+  },
+  {
+    "question": "Was macht der **Multi-Head Attention Mechanismus**?",
+    "options": [
+      "Er berechnet parallele Attention-Gewichte",
+      "Er reduziert das Modell auf ein einzelnes Token",
+      "Er entfernt irrelevante Tokens",
+      "Er kombiniert mehrere Modelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Multi-Head Attention lernt verschiedene Aspekte der Beziehungen zwischen Tokens gleichzeitig."
+  },
+  {
+    "question": "Welche Reihenfolge ist korrekt für einen Transformer-Encoder?",
+    "options": [
+      "Self-Attention → Add & Norm → Feed-Forward → Add & Norm",
+      "Feed-Forward → Self-Attention → Norm",
+      "Pooling → Self-Attention → Output",
+      "Self-Attention → Max-Pooling → Output"
+    ],
+    "correct_index": 0,
+    "explanation": "Die typische Abfolge besteht aus Attention + Add & Norm, dann Feed-Forward + Add & Norm."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen BERT und GPT?",
+    "options": [
+      "BERT nutzt Autoregression, GPT nutzt Masked Language Modeling",
+      "Beide nutzen dieselbe Pretraining-Methode",
+      "BERT ist bidirektional, GPT autoregressiv",
+      "GPT ist ein reines Encoder-Modell"
+    ],
+    "correct_index": 2,
+    "explanation": "BERT ist bidirektional und verwendet Masked Language Modeling, GPT ist autoregressiv (einseitig)."
+  },
+  {
+    "question": "Welche Strategie verwendet BERT beim Pretraining?",
+    "options": [
+      "Next Word Prediction",
+      "Masked Language Modeling",
+      "Sequence Labeling",
+      "Text Summarization"
+    ],
+    "correct_index": 1,
+    "explanation": "BERT maskiert zufällige Tokens und trainiert, sie vorherzusagen (Masked Language Modeling)."
+  },
+  {
+    "question": "Welche Pretraining-Aufgabe verwendet GPT?",
+    "options": [
+      "Token-Klassifikation",
+      "Autoregressive Sprachmodellierung",
+      "Entitäten-Erkennung",
+      "Maschinelles Übersetzen"
+    ],
+    "correct_index": 1,
+    "explanation": "GPT sagt sequentiell das nächste Wort vorher – ein autoregressives Vorgehen."
+  },
+  {
+    "question": "Was versteht man unter **Fine-Tuning** eines vortrainierten Modells?",
+    "options": [
+      "Eine allgemeine Verbesserung des Modells",
+      "Training von Grund auf mit neuen Daten",
+      "Anpassung eines vortrainierten Modells an eine spezifische Aufgabe",
+      "Evaluierung eines Modells auf Testdaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Fine-Tuning nutzt ein vortrainiertes Modell und passt es mit spezifischen Daten an eine konkrete Aufgabe an."
+  },
+  {
+    "question": "Welche Komponente im Transformer erlaubt es, Wortreihenfolge zu berücksichtigen?",
+    "options": [
+      "Attention-Gewichte",
+      "Layer-Normalization",
+      "Positional Encoding",
+      "Feed-Forward Layer"
+    ],
+    "correct_index": 2,
+    "explanation": "Positional Encoding ergänzt Positionsinformationen, da Transformer selbst positionsunabhängig sind."
+  },
+  {
+    "question": "Was passiert beim Training eines einfachen Transformer-Modells?",
+    "options": [
+      "Die Embeddings werden gefreezt",
+      "Die Attention-Matrizen werden zufällig gewählt",
+      "Die Modellgewichte werden durch Backpropagation angepasst",
+      "Nur der Output-Layer wird trainiert"
+    ],
+    "correct_index": 2,
+    "explanation": "Wie bei anderen neuronalen Netzen wird das Modell durch Backpropagation auf Fehler hin optimiert."
+  },
+  {
+    "question": "Welches Verfahren ist **typisch für den Einsatz eines vortrainierten Modells**?",
+    "options": [
+      "Trainieren von Grund auf",
+      "Zufällige Initialisierung aller Parameter",
+      "Fine-Tuning mit domänenspezifischen Daten",
+      "Abkürzen der Trainingsdaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Fine-Tuning ist gängige Praxis, um mit wenigen Daten gute Ergebnisse zu erzielen."
+  },
+  {
+    "question": "Was passiert bei Masked Language Modeling?",
+    "options": [
+      "Das Modell lernt, das nächste Token vorherzusagen",
+      "Das Modell versucht, verdeckte Wörter im Kontext korrekt zu ergänzen",
+      "Nur benannte Entitäten werden markiert",
+      "Der Kontext wird vollständig entfernt"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei MLM werden einige Tokens maskiert und das Modell muss sie anhand des Kontexts vorhersagen."
+  },
+  {
+    "question": "Warum ist **bidirektionaler Kontext** in BERT nützlich?",
+    "options": [
+      "Er macht das Modell schneller",
+      "Er erlaubt parallele Verarbeitung",
+      "Er erlaubt Berücksichtigung von Kontext links und rechts des Tokens",
+      "Er reduziert die Anzahl der Parameter"
+    ],
+    "correct_index": 2,
+    "explanation": "BERT berücksichtigt Informationen vor und nach dem maskierten Wort – hilfreich für viele Aufgaben."
+  },
+  {
+    "question": "Was trifft auf GPT zu?",
+    "options": [
+      "Es ist ein bidirektionales Modell",
+      "Es verwendet Self-Attention in Encoder und Decoder",
+      "Es ist autoregressiv und basiert nur auf vorherigen Tokens",
+      "Es ist für Masked Language Modeling optimiert"
+    ],
+    "correct_index": 2,
+    "explanation": "GPT ist autoregressiv: es nutzt nur den bisherigen Kontext, nicht zukünftige Tokens."
+  },
+  {
+    "question": "Welche Aufgabe ist **typisch** für das Fine-Tuning eines Transformer-Modells?",
+    "options": [
+      "Named Entity Recognition",
+      "Modelldekomposition",
+      "Lemmatization",
+      "Tokenisierung"
+    ],
+    "correct_index": 0,
+    "explanation": "NER ist ein klassisches Beispiel für Fine-Tuning – das Modell wird auf Entitäten trainiert."
+  },
+  {
+    "question": "Was ist eine Herausforderung beim Training großer Transformer-Modelle?",
+    "options": [
+      "Fehlende Tokenizer",
+      "Zu wenig Aufmerksamkeit",
+      "Hoher Speicher- und Rechenaufwand",
+      "Ungeeignete Textformate"
+    ],
+    "correct_index": 2,
+    "explanation": "Große Transformer benötigen viel Speicher und Rechenleistung – z. B. für Matrixmultiplikationen im Attention-Modul."
+  },
+  {
+    "question": "Welcher Tokenizer wird **typischerweise** mit BERT-Modellen verwendet?",
+    "options": [
+      "Unigram",
+      "WordPiece",
+      "Whitespace",
+      "BPEmb"
+    ],
+    "correct_index": 1,
+    "explanation": "BERT verwendet WordPiece, das Tokens aus häufigen Unterwort-Einheiten konstruiert."
+  },
+  {
+    "question": "Was ist ein **großer Vorteil** vortrainierter Transformer-Modelle?",
+    "options": [
+      "Sie müssen nicht trainiert werden",
+      "Sie sind leicht zu interpretieren",
+      "Sie ermöglichen Transferlernen mit wenigen Daten",
+      "Sie benötigen keine Tokenisierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Mit Fine-Tuning können Modelle mit wenig domänenspezifischen Daten gute Leistungen erbringen."
+  },
+  {
+    "question": "Welche Bibliothek stellt Zugang zu vortrainierten Transformer-Modellen bereit?",
+    "options": [
+      "TensorFlow Hub",
+      "OpenCV",
+      "Hugging Face Transformers",
+      "Matplotlib NLP"
+    ],
+    "correct_index": 2,
+    "explanation": "Hugging Face bietet einfache APIs für eine Vielzahl von vortrainierten NLP-Modellen."
+  },
+  {
+    "question": "Wie lässt sich ein vortrainiertes Modell gezielt einsetzen?",
+    "options": [
+      "Durch Zufallsinitialisierung",
+      "Durch Maskieren aller Tokens",
+      "Durch Feintuning mit Task-spezifischen Daten",
+      "Durch Umwandlung in ein CNN"
+    ],
+    "correct_index": 2,
+    "explanation": "Gezielter Einsatz bedeutet, ein vortrainiertes Modell für eine bestimmte Aufgabe wie Klassifikation oder NER feinabzustimmen."
+  },
+  {
+    "question": "Welche Aufgabe lässt sich besonders gut mit einem vortrainierten BERT-Modell umsetzen?",
+    "options": [
+      "Bildklassifikation",
+      "Maschinelles Übersetzen",
+      "Fragebeantwortung auf Textpassagen",
+      "Generierung von Musik"
+    ],
+    "correct_index": 2,
+    "explanation": "BERT-Modelle eignen sich sehr gut für Fragebeantwortung, da sie bidirektional Kontext analysieren können."
+  },
+  {
+    "question": "Welche Library bietet Zugriff auf hunderte vortrainierte Modelle und Pipelines für Aufgaben wie Textklassifikation oder Summarization?",
+    "options": [
+      "NumPy",
+      "Scikit-learn",
+      "Hugging Face Transformers",
+      "KerasCV"
+    ],
+    "correct_index": 2,
+    "explanation": "Hugging Face Transformers bietet Zugriff auf vortrainierte Sprachmodelle und fertige Pipelines für viele NLP-Aufgaben."
+  },
+  {
+    "question": "Was beschreibt Retrieval-Augmented Generation (RAG)?",
+    "options": [
+      "Ein Modell, das Texte mit Tabellen kombiniert",
+      "Ein Modell, das externe Wissensquellen bei der Textgenerierung nutzt",
+      "Ein System zur Generierung von Zusammenfassungen",
+      "Ein Training mit wenigen Beispielen (Few-Shot)"
+    ],
+    "correct_index": 1,
+    "explanation": "RAG kombiniert Textretrieval (z. B. über FAISS) mit generativer Textverarbeitung durch Transformer-Modelle."
+  },
+  {
+    "question": "Welches Tool ist besonders geeignet für schnelle Prototypen von NLP-Anwendungen mit Webinterface?",
+    "options": [
+      "Django",
+      "Flask",
+      "Streamlit",
+      "Airflow"
+    ],
+    "correct_index": 2,
+    "explanation": "Streamlit ist speziell auf Data-Science-Prototypen ausgerichtet und sehr schnell einsatzbereit für NLP-Projekte."
+  },
+  {
+    "question": "Was ist ein typischer Anwendungsfall für FAISS?",
+    "options": [
+      "Textklassifikation",
+      "Schnelle semantische Ähnlichkeitssuche in Vektor-Räumen",
+      "Named Entity Recognition",
+      "Stemming und Lemmatisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "FAISS ist für schnelle Suche in großen Embedding-Räumen optimiert – z. B. für Retrieval in RAG-Systemen."
+  },
+  {
+    "question": "Welche Methode eignet sich am besten für automatische Zusammenfassungen?",
+    "options": [
+      "Naive Bayes",
+      "Regular Expressions",
+      "Encoder-Decoder-Transformer",
+      "Dependency Parsing"
+    ],
+    "correct_index": 2,
+    "explanation": "Encoder-Decoder-Modelle wie T5 oder BART werden gezielt für Textzusammenfassungen trainiert."
+  },
+  {
+    "question": "Welche Kombination von Tools ist geeignet, um ein Frage-Antwort-System mit Wissensdatenbank zu bauen?",
+    "options": [
+      "OpenCV + TensorFlow",
+      "Streamlit + GPT + FAISS",
+      "Matplotlib + SQLite",
+      "Keras + Docker"
+    ],
+    "correct_index": 1,
+    "explanation": "Streamlit für das Interface, GPT für Generierung, FAISS für semantisches Retrieval – ein gängiges Setup für RAG."
+  },
+  {
+    "question": "Was ist eine zentrale Herausforderung bei der praktischen Umsetzung von NLP-Prototypen?",
+    "options": [
+      "Modelltraining ist zu schnell",
+      "Zu viele passende Tools",
+      "Kombination von Modellen, APIs und User-Interface",
+      "Textdaten sind immer perfekt formatiert"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Integration verschiedener Bausteine – Modell, Tokenizer, API, UI – ist oft die größte Herausforderung."
+  },
+  {
+    "question": "Warum ist es wichtig, NLP-Anwendungen mit theoretischen Konzepten zu begründen?",
+    "options": [
+      "Weil es Vorschrift ist",
+      "Weil man ohne Theorie nicht coden kann",
+      "Um Modelle zielgerichtet zu wählen und erklären zu können",
+      "Weil alle Tools auf Theorien beruhen, die man auswendig können muss"
+    ],
+    "correct_index": 2,
+    "explanation": "Theorie hilft, Modelle passend zur Aufgabe auszuwählen, Fehler zu verstehen und Lösungen begründen zu können."
+  },
+  {
+    "question": "Welche Anwendung ist **kein typischer** Anwendungsfall für ein NLP-System?",
+    "options": [
+      "Textklassifikation",
+      "Sentimentanalyse",
+      "Spracherkennung aus Audio",
+      "Zusammenfassung langer Texte"
+    ],
+    "correct_index": 2,
+    "explanation": "Spracherkennung (Speech-to-Text) gehört zur Sprachverarbeitung, ist aber kein Text-basiertes NLP im engeren Sinne."
+  },
+  {
+    "question": "Was versteht man unter 'Bias' in Sprachmodellen?",
+    "options": [
+      "Eine Methode zur Textkomprimierung",
+      "Eine systematische Verzerrung durch Trainingsdaten",
+      "Ein Verfahren zur Prompt-Erzeugung",
+      "Ein neutrales Verhalten von KI-Systemen"
+    ],
+    "correct_index": 1,
+    "explanation": "Bias in Sprachmodellen bezeichnet systematische Verzerrungen, die durch unausgewogene oder problematische Trainingsdaten entstehen."
+  },
+  {
+    "question": "Was ist das Ziel von Reinforcement Learning from Human Feedback (RLHF)?",
+    "options": [
+      "Schnelleres Training großer Modelle",
+      "Nutzerfeedback in Echtzeit visualisieren",
+      "Modelle an menschliche Wertvorstellungen anpassen",
+      "Prompts automatisch erstellen"
+    ],
+    "correct_index": 2,
+    "explanation": "RLHF nutzt menschliches Feedback, um das Verhalten eines Modells in gewünschte Richtungen zu lenken und sozial akzeptabler zu machen."
+  },
+  {
+    "question": "Warum können Prompts das Verhalten eines Sprachmodells stark beeinflussen?",
+    "options": [
+      "Weil Prompts den Trainingsdatensatz verändern",
+      "Weil Prompts die Modellarchitektur neu definieren",
+      "Weil das Modell auf die semantische Struktur des Prompts reagiert",
+      "Weil Prompts die GPU-Auslastung steuern"
+    ],
+    "correct_index": 2,
+    "explanation": "Prompts steuern, worauf das Modell achtet, welche Aspekte betont werden – dadurch verändern sie direkt die Ausgabequalität und -richtung."
+  },
+  {
+    "question": "Welche Aussage beschreibt ein ethisches Risiko von Sprachmodellen?",
+    "options": [
+      "Sprachmodelle benötigen große Mengen an GPU-RAM",
+      "Sprachmodelle können irreführende Informationen erzeugen",
+      "Sprachmodelle sind nicht mit Bildern kompatibel",
+      "Sprachmodelle nutzen keine Satzzeichen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein wesentliches ethisches Risiko ist die Erzeugung falscher oder manipulativer Inhalte ohne Kennzeichnung."
+  },
+  {
+    "question": "Was bedeutet 'Halluzination' bei LLMs?",
+    "options": [
+      "Das Modell erzeugt visuelle Ausgaben",
+      "Das Modell erkennt keine Sprache mehr",
+      "Das Modell liefert inhaltlich falsche, aber plausibel klingende Antworten",
+      "Das Modell reagiert nicht auf Prompts"
+    ],
+    "correct_index": 2,
+    "explanation": "Halluzinationen treten auf, wenn LLMs Informationen erfinden oder Fakten falsch wiedergeben, obwohl sie glaubwürdig klingen."
+  },
+  {
+    "question": "Warum ist Transparenz bei KI-Modellen wichtig?",
+    "options": [
+      "Zur besseren Grafikkarten-Auslastung",
+      "Zur rechtlichen Absicherung und Nachvollziehbarkeit",
+      "Um Text schneller zu generieren",
+      "Damit Prompts kürzer werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Transparenz ermöglicht Nachvollziehbarkeit von Entscheidungen, Vertrauen in das System und identifizierbare Verantwortlichkeit."
+  },
+  {
+    "question": "Welche Herausforderung stellt sich bei der Verantwortung für KI-generierte Inhalte?",
+    "options": [
+      "Wer ist für Inhalte verantwortlich – Nutzer, Entwickler oder Betreiber?",
+      "Ob der Prompt in Python geschrieben wurde",
+      "Welche Tokenizer-Strategie verwendet wurde",
+      "Ob der Output lesbar ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Da KI-Modelle eigenständig Inhalte erzeugen, ist oft unklar, wer für Fehlinformationen oder Schäden haftbar ist – Nutzer, Entwickler oder Plattform."
+  },
+  {
+    "question": "Wie kann man sicherstellen, dass ein Modell möglichst faire Ergebnisse liefert?",
+    "options": [
+      "Nur kurze Prompts verwenden",
+      "Manuelle Evaluation durch divers zusammengesetzte Testgruppen",
+      "Einsatz von Masked Language Modeling",
+      "Vermeidung aller Tokenizer"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine diverse Evaluation und gezieltes Testen auf diskriminierende Muster kann helfen, die Fairness von Modellen besser zu bewerten."
+  },
+  {
+    "question": "Was ist eine häufige Kritik an Closed-Source-LLMs im Hinblick auf Machtverhältnisse?",
+    "options": [
+      "Sie sind nicht performant genug",
+      "Sie kosten zu wenig",
+      "Zugang, Trainingsdaten und Entscheidungen liegen bei wenigen Akteuren",
+      "Sie unterstützen keine Emojis"
+    ],
+    "correct_index": 2,
+    "explanation": "Closed-Source-Modelle verschärfen Machtasymmetrien, da nur wenige Firmen über Trainingsdaten, Infrastruktur und Nutzungsrechte verfügen."
+  },
+  {
+    "question": "Welcher Umgang mit Prompts wird als besonders kritisch reflektiert?",
+    "options": [
+      "Bewusste Formulierung zur gezielten Ergebnissteuerung",
+      "Verwendung von Synonymen",
+      "Einsatz von Zahlen und Aufzählungen",
+      "Nutzung in mehreren Sprachen"
+    ],
+    "correct_index": 0,
+    "explanation": "Bewusste Prompt-Steuerung kann auch zur Manipulation führen – etwa in Form von Framing oder Suggestionen, die Ergebnisse verzerren."
+  }
+
+]
