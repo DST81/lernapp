@@ -7,6 +7,7 @@ import random
 st.set_page_config(page_title="LernApp", page_icon="📘", layout="centered")
 st.title("📘 Interaktive LernApp")
 
+
 # -------------------- Fachauswahl --------------------
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
@@ -14,6 +15,8 @@ verfügbare_fächer = {
     "NLP": "mc_NLP.json",
     "UNIX": "mc_unix_for_poets.json"
 }
+st.sidebar.image("helfer.png", caption="Ich bin ein Lernassistent", use_column_width=True)
+
 ausgewähltes_fach = st.sidebar.selectbox("Wähle ein Fach:", list(verfügbare_fächer.keys()))
 
 # -------------------- Session State pro Fach --------------------
@@ -111,6 +114,7 @@ if verfügbare_fragen:
                     "nur_falsche_wiederholung": ss('nur_falsche_wiederholung', False)
                 }, f)
             ss_set('antwort_gegeben', True)
+        
     
     if ss('antwort_gegeben',False):
         st.info("✅ Du hast diese Frage bereits beantwortet. Klicke unten für die nächste.")
