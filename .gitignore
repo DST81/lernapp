@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment Ordner (angepasst auf deinen venv-Namen)
+mc_LernApp/
+env/
+.venv/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE-spezifische Dateien
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs und temporäre Dateien
+*.log
+*.tmp
+*.temp
+
+# OS-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Optional: .env Dateien mit Umgebungsvariablen
+.env
+#Private Daten
+Deep_Learning_Kurs_Aufgabenblatt_Multiple_Choice.pdf
+Deep_Learning_Kurs_Aufgabenblatt_Multiple_Choice_Verbesserung.pdf
+mc_LernApp/
