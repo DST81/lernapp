@@ -16,7 +16,8 @@ verfügbare_fächer = {
     "WR": "mc_wr.json",
     "Deep Learning": "mc_questions_with_explanations.json",
     "NLP": "mc_NLP.json",
-    "UNIX": "mc_unix_for_poets.json"
+    "UNIX": "mc_unix_for_poets.json",
+    "Banken": "mc_banken.json"
 }
 
 
