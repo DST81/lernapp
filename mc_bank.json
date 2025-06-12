@@ -1,0 +1,624 @@
+[
+  {
+    "question": "Welche Hauptdienstleistungen bieten Banken an?",
+    "options": ["Kredite und Einlagenverwaltung", "Steuerberatung", "Immobilienbewertung", "Krankenversicherung"],
+    "correct_index": 0,
+    "explanation": "Banken bieten Kernleistungen wie Einlagenverwaltung, Kredite, Zahlungsverkehr und Vermögensverwaltung."
+  },
+  {
+    "question": "Was ist ein Kernbankensystem?",
+    "options": ["Ein zentrales IT-System zur Verwaltung von Bankdienstleistungen", "Ein physisches Tresor-System", "Eine gesetzliche Vorschrift", "Ein Bankgebäude"],
+    "correct_index": 0,
+    "explanation": "Das Kernbankensystem ist die zentrale Software für Kontoführung, Transaktionen und Kundenverwaltung."
+  },
+  {
+    "question": "Welche Buchungsregeln gelten in der doppelten Buchführung?",
+    "options": ["Jede Buchung hat eine Soll- und eine Haben-Seite", "Es werden nur Einnahmen gebucht", "Alle Einträge sind optional", "Es gibt keine festen Konten"],
+    "correct_index": 0,
+    "explanation": "Die doppelte Buchführung verlangt, dass jede Transaktion durch zwei gegenläufige Buchungen erfasst wird."
+  },
+  {
+    "question": "Was ist ein Hash?",
+    "options": ["Eine eindeutige Darstellung von Daten", "Eine zufällige Zahl", "Ein physischer Schlüssel", "Ein Bankkonto"],
+    "correct_index": 0,
+    "explanation": "Ein Hash ist eine kryptografische Funktion, die Daten sicher und eindeutig darstellt."
+  },
+  {
+    "question": "Was ist das Ziel des Value-at-Risk (VaR)?",
+    "options": ["Risiko eines Portfolios zu messen", "Kreditwürdigkeit zu berechnen", "Bankgeheimnisse zu schützen", "Steuern zu optimieren"],
+    "correct_index": 0,
+    "explanation": "VaR misst das maximal erwartete Verlustpotenzial eines Portfolios innerhalb eines Zeitraums mit gegebener Wahrscheinlichkeit."
+  },
+  {
+    "question": "Warum sind Hashes Einwegefunktionen?",
+    "options": ["Weil ihre Berechnung nicht umkehrbar ist", "Weil sie einfach verändert werden können", "Weil sie zufällig erstellt werden", "Weil sie nur kurze Daten speichern"],
+    "correct_index": 0,
+    "explanation": "Hashes sind Einwegefunktionen, da ihre Berechnung nicht zurückgeführt werden kann, wodurch sie sicher für Datenintegrität sind."
+  },
+  {
+    "question": "Was versteht man unter Zinsen?",
+    "options": ["Preis für geliehenes Geld", "Ein Steuerbetrag", "Eine Bankgebühr", "Eine einmalige Zahlung"],
+    "correct_index": 0,
+    "explanation": "Zinsen sind der Preis für die Nutzung von Kapital und hängen von Risiko sowie Marktbedingungen ab."
+  },
+  {
+    "question": "Was ist ein Ertragsmodell für Banken?",
+    "options": ["Zinsen und Gebühren auf Finanzprodukte", "Nur die Einzahlung von Kunden", "Ausschließlich Kreditvergabe", "Spenden von Unternehmen"],
+    "correct_index": 0,
+    "explanation": "Banken erzielen Einnahmen aus Zinsen, Gebühren für Dienstleistungen und Wertpapierhandel."
+  },
+  {
+    "question": "Was ist eine Transaktion im Bankwesen?",
+    "options": ["Eine Überweisung oder Zahlung", "Ein Vertrag", "Ein Kontoauszug", "Eine Steuererklärung"],
+    "correct_index": 0,
+    "explanation": "Eine Transaktion ist eine finanzielle Bewegung, z. B. eine Überweisung oder eine Zahlung."
+  },
+  {
+    "question": "Was beschreibt die Buchungssystematik in der doppelten Buchführung?",
+    "options": ["Jede Buchung hat eine Soll- und eine Haben-Seite", "Es gibt nur Einnahmen", "Kontostände werden nicht erfasst", "Nur Bargeldtransaktionen zählen"],
+    "correct_index": 0,
+    "explanation": "In der doppelten Buchführung wird jede Buchung mit einem Gegenposten erfasst."
+  },
+  {
+    "question": "Welche Daten speichert eine Bank über Transaktionen?",
+    "options": ["Datum, Betrag, Konto, Empfänger", "Nur den Betrag", "Keine Daten", "Nur den Empfänger"],
+    "correct_index": 0,
+    "explanation": "Eine Bank speichert Informationen wie Datum, Betrag, Konto und Empfänger jeder Transaktion."
+  },
+  {
+    "question": "Was ist eine Kontoführung?",
+    "options": ["Verwaltung eines Bankkontos und seiner Bewegungen", "Nur das Eröffnen eines Kontos", "Eine Steuerprüfung", "Die einmalige Einzahlung auf ein Konto"],
+    "correct_index": 0,
+    "explanation": "Die Kontoführung beinhaltet die Verwaltung eines Kontos und die Erfassung seiner Transaktionen."
+  },
+  {
+    "question": "Wie funktioniert die Buchung in einem Kernbankensystem?",
+    "options": ["Jede Transaktion wird direkt verarbeitet", "Nur Bargeld wird verbucht", "Es werden keine Transaktionen gespeichert", "Kontostände sind nicht relevant"],
+    "correct_index": 0,
+    "explanation": "Kernbankensysteme verarbeiten Buchungen automatisch und aktualisieren Kontostände."
+  },
+  {
+    "question": "Welche Art von Verträgen verwaltet eine Bank?",
+    "options": ["Darlehensverträge, Einlageverträge, Zahlungsverträge", "Nur Mietverträge", "Steuerverträge", "Immobilienverträge"],
+    "correct_index": 0,
+    "explanation": "Banken verwalten Verträge für Kredite, Einlagen und Zahlungen."
+  },
+  {
+    "question": "Wie hängen Ereignisse mit der Buchführung zusammen?",
+    "options": ["Ereignisse lösen Buchungen aus", "Ereignisse haben keinen Einfluss", "Buchführung passiert zufällig", "Nur Kredite sind betroffen"],
+    "correct_index": 0,
+    "explanation": "Transaktionen, Zinsberechnungen und Vertragsänderungen sind Ereignisse, die Buchungen auslösen."
+  },
+  {
+    "question": "Was passiert, wenn ein Konto ins Minus gerät?",
+    "options": ["Es entsteht eine Schuld gegenüber der Bank", "Das Konto wird gelöscht", "Der Kunde verliert alle Einlagen", "Es hat keine Folgen"],
+    "correct_index": 0,
+    "explanation": "Ein negatives Konto bedeutet eine Verbindlichkeit gegenüber der Bank."
+  },
+  {
+    "question": "Wie kann eine Bank ihre Risiken minimieren?",
+    "options": ["Durch Risikomessung und Kapitalallokation", "Durch das Vermeiden von Transaktionen", "Indem keine Kredite vergeben werden", "Indem keine Konten geführt werden"],
+    "correct_index": 0,
+    "explanation": "Banken nutzen Risikomessung und Kapitalallokation, um sich gegen Verluste abzusichern."
+  },
+  {
+    "question": "Was bedeutet Non-reputable Resource Management?",
+    "options": ["Sichere Nachverfolgbarkeit von Transaktionen", "Ein falscher Kontostand", "Nicht überprüfbare Daten", "Konten ohne Namen"],
+    "correct_index": 0,
+    "explanation": "Dieses Konzept sorgt für unveränderliche und überprüfbare Finanztransaktionen."
+  },
+  {
+    "question": "Wie werden digitale Schlüssel verwendet?",
+    "options": ["Zum Verschlüsseln von Daten", "Zum Drucken von Kontoauszügen", "Um Papiergeld zu erzeugen", "Zum Öffnen von Banktresoren"],
+    "correct_index": 0,
+    "explanation": "Digitale Schlüssel dienen der sicheren Verschlüsselung und Authentifizierung in Bankprozessen."
+  },
+  {
+    "question": "Was ist ein Zinssatz?",
+    "options": ["Ein Prozentsatz auf geliehenes Geld", "Ein einmaliger Steuerbetrag", "Der Preis für ein Bankkonto", "Ein Bonus für Bargeldzahlungen"],
+    "correct_index": 0,
+    "explanation": "Der Zinssatz gibt an, wie viel für geliehenes Kapital gezahlt oder verdient wird."
+  },
+  {
+    "question": "Was beschreibt eine Zinseszins-Berechnung?",
+    "options": ["Zinsen auf vorherige Zinsen", "Ein fester Betrag", "Ein einmaliger Bankbonus", "Eine Steuervergünstigung"],
+    "correct_index": 0,
+    "explanation": "Beim Zinseszins werden nicht nur die ursprünglichen Beträge, sondern auch zuvor erhaltene Zinsen verzinst."
+  },
+  {
+    "question": "Wie wird ein Kredit vergeben?",
+    "options": ["Basierend auf Bonität und Zinssätzen", "Nach Belieben der Bank", "Nur an Unternehmen", "Durch eine zufällige Auswahl"],
+    "correct_index": 0,
+    "explanation": "Kredite werden anhand von Bonitätsprüfungen und Marktbedingungen vergeben."
+  },
+  {
+    "question": "Warum sind Hashes wichtig für die Sicherheit?",
+    "options": ["Sie verhindern Manipulation von Daten", "Sie sind einfache Zahlen", "Sie haben keinen Einfluss auf Daten", "Sie helfen beim Drucken von Bankdokumenten"],
+    "correct_index": 0,
+    "explanation": "Hashes sorgen dafür, dass Daten nicht nachträglich verändert werden können und sind essenziell für Integrität."
+  },
+  {
+    "question": "Was ist ein Kreditrisikomodell?",
+    "options": ["Eine Methode zur Berechnung von Kreditrisiken", "Ein System für Steuerberechnungen", "Ein Verfahren zur Kontoeröffnung", "Eine Art von Zinsrechnung"],
+    "correct_index": 0,
+    "explanation": "Kreditrisikomodelle helfen Banken, die Wahrscheinlichkeit von Kreditausfällen zu berechnen."
+  },
+  {
+    "question": "Was ist ein Merkle Tree?",
+    "options": ["Eine Struktur zur Validierung von Hashes", "Ein Bankkonto", "Ein physischer Schlüssel", "Ein Zinssatz"],
+    "correct_index": 0,
+    "explanation": "Merkle Trees ermöglichen eine effiziente Validierung kryptografischer Daten."
+  },
+  {
+    "question": "Wie hängen Zinssätze und Kreditprodukte zusammen?",
+    "options": ["Kredite sind mit Zinsen bepreist", "Kredite haben keine Verbindung zu Zinsen", "Nur Banken profitieren von Zinsen", "Zinsen existieren nicht"],
+    "correct_index": 0,
+    "explanation": "Kreditprodukte enthalten Zinssätze als Kosten für geliehenes Kapital."
+  },
+  {
+    "question": "Was beschreibt die Kapitalallokation?",
+    "options": ["Verteilung von Finanzmitteln zur Risikominimierung", "Automatische Steuerberechnungen", "Ausschließlich die Buchführung", "Ein fester Zinssatz"],
+    "correct_index": 0,
+    "explanation": "Kapitalallokation beschreibt die gezielte Verteilung von Bankkapital zur Optimierung von Erträgen und zur Risikominimierung."
+  },
+  {
+    "question": "Welche Aufgabe hat ein Kernbankensystem?",
+    "options": ["Verwaltung von Konten und Transaktionen", "Erstellung von Steuerberichten", "Vermietung von Immobilien", "Handel mit Rohstoffen"],
+    "correct_index": 0,
+    "explanation": "Ein Kernbankensystem verwaltet zentrale Bankprozesse wie Kontoführung, Buchungen und Transaktionen."
+  },
+  {
+    "question": "Wie funktioniert die doppelte Buchführung?",
+    "options": ["Jede Transaktion wird als Soll und Haben erfasst", "Nur Einnahmen werden verbucht", "Alle Transaktionen werden zufällig gespeichert", "Es gibt keine Regeln"],
+    "correct_index": 0,
+    "explanation": "Die doppelte Buchführung verlangt, dass jede Buchung zwei korrespondierende Einträge aufweist – eine im Soll und eine im Haben."
+  },
+  {
+    "question": "Was ist eine Kontotransaktion?",
+    "options": ["Eine finanzielle Bewegung auf einem Konto", "Ein Steuerbescheid", "Eine Bankkarte", "Ein einmaliger Kontoauszug"],
+    "correct_index": 0,
+    "explanation": "Eine Kontotransaktion bezeichnet eine finanzielle Bewegung, wie Überweisungen, Zahlungen oder Einlagen."
+  },
+  {
+    "question": "Warum sind digitale Signaturen wichtig?",
+    "options": ["Sie bestätigen die Authentizität von Transaktionen", "Sie dienen der optischen Verschönerung", "Sie ersetzen Kontonummern", "Sie sind nur für Offline-Transaktionen relevant"],
+    "correct_index": 0,
+    "explanation": "Digitale Signaturen sichern die Authentizität und Integrität von digitalen Transaktionen."
+  },
+  {
+    "question": "Was ist der Zusammenhang zwischen Hashes und Merkle Trees?",
+    "options": ["Merkle Trees bestehen aus mehreren Hashes", "Hash und Merkle Tree sind identisch", "Merkle Trees dienen nur der Kontoeröffnung", "Hashes sind ausschließlich für Steuerberichte relevant"],
+    "correct_index": 0,
+    "explanation": "Merkle Trees sind hierarchische Strukturen aus Hashes und ermöglichen eine effiziente Datenverifikation."
+  },
+  {
+    "question": "Welche Informationen enthält eine Buchung?",
+    "options": ["Datum, Betrag, Konto, Gegenkonto", "Nur das Datum", "Nur die Kontonummer", "Es gibt keine festen Angaben"],
+    "correct_index": 0,
+    "explanation": "Eine Buchung enthält relevante Informationen wie Datum, Betrag und beteiligte Konten."
+  },
+  {
+    "question": "Warum benötigen Banken ein Datenmodell?",
+    "options": ["Zur strukturierten Speicherung und Verarbeitung von Bankdaten", "Zur manuellen Berechnung von Transaktionen", "Zur Erstellung von Papierbelegen", "Nur für Steuerabrechnungen"],
+    "correct_index": 0,
+    "explanation": "Datenmodelle helfen Banken, Transaktionen, Verträge und Buchführungsprozesse effizient zu organisieren."
+  },
+  {
+    "question": "Was ist ein Vertrag im Bankwesen?",
+    "options": ["Eine rechtliche Vereinbarung über Finanzdienstleistungen", "Ein Kontoauszug", "Eine einzelne Zahlung", "Eine Steuererklärung"],
+    "correct_index": 0,
+    "explanation": "Ein Bankvertrag regelt die Bedingungen für Finanzprodukte wie Kredite oder Konten."
+  },
+  {
+    "question": "Was beschreibt ein Kreditmodell?",
+    "options": ["Berechnung von Risiken und Rückzahlungen", "Ein festgelegter Zinssatz", "Eine Liste von Steuerberichten", "Eine rechtliche Vorschrift"],
+    "correct_index": 0,
+    "explanation": "Ein Kreditmodell bewertet Kreditnehmer, Zinsen und Risiken anhand von Finanzkennzahlen."
+  },
+  {
+    "question": "Was bedeutet 'Preis des Geldes'?",
+    "options": ["Der Zinssatz eines Kredits", "Die Steuerlast einer Bank", "Der Wert einer Bankfiliale", "Der Druck von Banknoten"],
+    "correct_index": 0,
+    "explanation": "Der Zinssatz ist der Preis des Geldes und bestimmt die Kosten für Kreditaufnahme oder Sparguthaben."
+  },
+  {
+    "question": "Wie wird der Zinseszins berechnet?",
+    "options": ["Durch Verzinsung von vorherigen Zinsen", "Durch eine einmalige Zahlung", "Durch staatliche Vorgaben", "Er bleibt konstant"],
+    "correct_index": 0,
+    "explanation": "Beim Zinseszins wächst das Kapital durch kontinuierliche Verzinsung von vorherigen Zinsen."
+  },
+  {
+    "question": "Warum sind Kreditrisiken für Banken relevant?",
+    "options": ["Weil Kreditausfälle zu Verlusten führen", "Weil sie keine Auswirkungen haben", "Weil alle Kredite immer zurückgezahlt werden", "Weil nur Privatkunden betroffen sind"],
+    "correct_index": 0,
+    "explanation": "Kreditrisiken betreffen Banken, da uneinbringliche Kredite zu finanziellen Verlusten führen können."
+  },
+  {
+    "question": "Was ist der Zusammenhang zwischen Kreditrisiko und Zinsen?",
+    "options": ["Höheres Risiko führt zu höheren Zinsen", "Zinsen sind unabhängig von Risiken", "Kreditrisiken beeinflussen keine Zinssätze", "Banken vergeben Kredite immer ohne Zinsen"],
+    "correct_index": 0,
+    "explanation": "Kreditrisiko beeinflusst die Zinshöhe – je riskanter ein Kredit, desto höher der Zinssatz."
+  },
+  {
+    "question": "Wie helfen Risikomessmodelle bei der Kapitalallokation?",
+    "options": ["Sie bestimmen, wie viel Kapital für Risikopositionen bereitgestellt wird", "Sie haben keinen Einfluss auf die Kapitalallokation", "Sie dienen ausschließlich Steuerzwecken", "Sie sind nur für Privatkunden relevant"],
+    "correct_index": 0,
+    "explanation": "Risikomessmodelle helfen Banken, Kapital so zu verteilen, dass Risiken minimiert und Gewinne maximiert werden."
+  },
+  {
+    "question": "Was ist ein Expected Shortfall (ES)?",
+    "options": ["Ein Risikomaß für extreme Verluste", "Ein Steuerbetrag", "Ein Kontoauszug", "Ein einmaliger Zinssatz"],
+    "correct_index": 0,
+    "explanation": "Expected Shortfall misst die erwarteten Verluste in Extremsituationen über einen definierten Zeitraum."
+  },
+  {
+    "question": "Wie hängen Kreditprodukte und Cashflows zusammen?",
+    "options": ["Kreditprodukte generieren Cashflows durch Rückzahlungen", "Kredite haben keine Verbindung zu Cashflows", "Nur Privatkunden sind betroffen", "Cashflows sind nicht relevant für Banken"],
+    "correct_index": 0,
+    "explanation": "Kreditprodukte beeinflussen Cashflows durch Zinszahlungen und Tilgungen."
+  },
+  {
+    "question": "Warum ist die Simulation von Finanzrisiken wichtig?",
+    "options": ["Um potenzielle Verluste besser abzuschätzen", "Weil sie keine Auswirkungen hat", "Weil nur hohe Gewinne relevant sind", "Weil Banken immer sicher sind"],
+    "correct_index": 0,
+    "explanation": "Finanzsimulationen ermöglichen die Vorhersage möglicher Verluste und helfen bei der Risikosteuerung."
+  },
+  {
+    "question": "Welche Verteilung wird oft für Aktienrisiken verwendet?",
+    "options": ["Log-normal Verteilung", "Steuerberechnung", "Lineare Regression", "Einheitswerte"],
+    "correct_index": 0,
+    "explanation": "Log-normal Verteilungen sind gängig zur Modellierung von Aktienrisiken."
+  },
+  {
+    "question": "Wie funktioniert eine Kredit-Simulation?",
+    "options": ["Durch Berechnung von Ausfallwahrscheinlichkeiten", "Durch eine zufällige Auswahl", "Durch direkte Buchung ohne Analyse", "Nur durch Steuerberechnungen"],
+    "correct_index": 0,
+    "explanation": "Kredit-Simulationen berechnen mögliche Ausfälle und Auswirkungen auf die Bankbilanz."
+  },
+  {
+    "question": "Wie funktioniert ein 2-Phase-Commit-Protokoll?",
+    "options": ["Es stellt sicher, dass alle beteiligten Systeme eine Transaktion entweder vollständig ausführen oder vollständig abbrechen.", "Es sorgt dafür, dass Transaktionen zufällig gespeichert werden.", "Es ist ein System zur Zinsberechnung.", "Es wird nur bei Privatkonten angewendet."],
+    "correct_index": 0,
+    "explanation": "Ein 2-Phase-Commit-Protokoll garantiert Konsistenz, indem es Transaktionen entweder vollständig bestätigt oder zurücksetzt."
+  },
+  {
+    "question": "Warum sind Hashes wichtig für digitale Sicherheit?",
+    "options": ["Sie verhindern Manipulation von Daten.", "Sie erhöhen die Steuerlast.", "Sie ersetzen Bankkonten.", "Sie haben keinen Einfluss auf Transaktionen."],
+    "correct_index": 0,
+    "explanation": "Hashes sorgen dafür, dass digitale Daten nicht nachträglich verändert werden können."
+  },
+  {
+    "question": "Was beschreibt eine Transaktion in einer Blockchain?",
+    "options": ["Eine unveränderliche Aufzeichnung einer finanziellen Bewegung.", "Eine zufällige Nummer.", "Eine Steuererklärung.", "Eine einmalige Kreditentscheidung."],
+    "correct_index": 0,
+    "explanation": "In einer Blockchain wird jede Transaktion unveränderlich aufgezeichnet und durch Hashes gesichert."
+  },
+  {
+    "question": "Was ist eine Chain of Hashes?",
+    "options": ["Eine miteinander verknüpfte Reihe von Hashes, die eine unveränderliche Datenstruktur bilden.", "Eine zufällige Zahlenfolge.", "Eine Steuerregelung.", "Eine Bankgebühr."],
+    "correct_index": 0,
+    "explanation": "Eine Chain of Hashes verknüpft mehrere Hash-Werte miteinander und ermöglicht Datenintegrität."
+  },
+  {
+    "question": "Warum ist ein Hash eine Einwegfunktion?",
+    "options": ["Weil seine Berechnung nicht umkehrbar ist.", "Weil er einfach verändert werden kann.", "Weil er eine zufällige Zahl darstellt.", "Weil er ein Bankkonto ersetzt."],
+    "correct_index": 0,
+    "explanation": "Hashes sind Einwegfunktionen, weil sie nicht zurückgerechnet werden können."
+  },
+  {
+    "question": "Wie hängen digitale Signaturen und Hashes zusammen?",
+    "options": ["Digitale Signaturen verwenden Hashes zur Verifikation von Daten.", "Sie sind unabhängig voneinander.", "Digitale Signaturen haben keinen Einfluss auf Sicherheit.", "Hashes ersetzen digitale Signaturen."],
+    "correct_index": 0,
+    "explanation": "Digitale Signaturen nutzen Hashes, um die Authentizität von Daten zu bestätigen."
+  },
+  {
+    "question": "Was ist die frei verfügbare Quote im Erbrecht?",
+    "options": ["Der Teil des Erbes, über den der Erblasser frei verfügen kann.", "Die Pflichtteilquote.", "Der steuerfreie Betrag.", "Ein fester Prozentsatz für Banken."],
+    "correct_index": 0,
+    "explanation": "Die frei verfügbare Quote ist der Teil eines Nachlasses, den der Erblasser nicht durch Pflichtteile gebunden ist."
+  },
+  {
+    "question": "Wie kann eine Bank ihre Kreditrisiken minimieren?",
+    "options": ["Durch Bonitätsprüfung und Risikomessmodelle.", "Indem sie keine Kredite vergibt.", "Nur durch staatliche Vorschriften.", "Indem sie alle Konten löscht."],
+    "correct_index": 0,
+    "explanation": "Banken minimieren Kreditrisiken durch Bonitätsprüfungen, Risikobewertung und Kapitalreserven."
+  },
+  {
+    "question": "Was beschreibt ein Expected Shortfall (ES)?",
+    "options": ["Ein Maß für extreme Verluste in einem bestimmten Zeitraum.", "Eine Steuerregelung.", "Eine zufällige Berechnung.", "Ein einmaliger Zinssatz."],
+    "correct_index": 0,
+    "explanation": "Expected Shortfall misst erwartete Verluste in Extremsituationen über einen definierten Zeitraum."
+  },
+  {
+    "question": "Warum ist die Simulation von Finanzrisiken wichtig?",
+    "options": ["Um potenzielle Verluste besser abzuschätzen.", "Weil sie keine Auswirkungen hat.", "Weil nur hohe Gewinne relevant sind.", "Weil Banken immer sicher sind."],
+    "correct_index": 0,
+    "explanation": "Finanzsimulationen ermöglichen die Vorhersage möglicher Verluste und helfen bei der Risikosteuerung."
+  },
+  {
+    "question": "Welche Verteilung wird oft für Aktienrisiken verwendet?",
+    "options": ["Log-normal Verteilung.", "Steuerberechnung.", "Lineare Regression.", "Einheitswerte."],
+    "correct_index": 0,
+    "explanation": "Log-normal Verteilungen sind gängig zur Modellierung von Aktienrisiken."
+  },
+  {
+    "question": "Was ist ein Merkle Tree?",
+    "options": ["Eine Struktur zur Validierung von Hashes.", "Ein Bankkonto.", "Ein physischer Schlüssel.", "Ein Zinssatz."],
+    "correct_index": 0,
+    "explanation": "Merkle Trees ermöglichen eine effiziente Validierung kryptografischer Daten."
+  },
+  {
+    "question": "Wie funktioniert eine Kredit-Simulation?",
+    "options": ["Durch Berechnung von Ausfallwahrscheinlichkeiten.", "Durch eine zufällige Auswahl.", "Durch direkte Buchung ohne Analyse.", "Nur durch Steuerberechnungen."],
+    "correct_index": 0,
+    "explanation": "Kredit-Simulationen berechnen mögliche Ausfälle und Auswirkungen auf die Bankbilanz."
+  },
+  {
+    "question": "Warum ist die Kapitalallokation für Banken entscheidend?",
+    "options": ["Um Verluste zu minimieren und Risiken zu steuern.", "Weil sie keine Auswirkungen hat.", "Weil Kapital willkürlich verteilt wird.", "Weil Zinsen irrelevant sind."],
+    "correct_index": 0,
+    "explanation": "Kapitalallokation ermöglicht eine strategische Verteilung finanzieller Mittel zur Risikosteuerung."
+  },
+  {
+    "question": "Wie beeinflusst die Korrelation von Finanzprodukten das Risiko?",
+    "options": ["Höhere Korrelation kann das Risiko eines Portfolios erhöhen.", "Korrelation hat keinen Einfluss.", "Nur der Zinssatz ist relevant.", "Es gibt keine Korrelation."],
+    "correct_index": 0,
+    "explanation": "Höhere Korrelation zwischen Finanzprodukten kann das Gesamtrisiko eines Portfolios erhöhen."
+  },
+  {
+    "question": "Warum ist die Buchführung in einem Bankensystem entscheidend?",
+    "options": ["Sie dokumentiert alle Finanztransaktionen und sichert deren Nachvollziehbarkeit.", "Sie ist nicht relevant.", "Banken brauchen keine Buchführung.", "Nur Steuerbehörden sind betroffen."],
+    "correct_index": 0,
+    "explanation": "Die Buchführung gewährleistet transparente und korrekte Finanzaufzeichnungen."
+  },
+  {
+    "question": "Was bedeutet 'Non-reputable Resource Management'?",
+    "options": ["Sicherstellung der Nachverfolgbarkeit von Finanztransaktionen.", "Ein falscher Kontostand.", "Nicht überprüfbare Daten.", "Konten ohne Namen."],
+    "correct_index": 0,
+    "explanation": "Dieses Konzept sorgt für unveränderliche und überprüfbare Finanztransaktionen."
+  },
+  {
+    "question": "Was beschreibt eine Kontenbuchführung?",
+    "options": ["Die systematische Erfassung aller finanziellen Bewegungen eines Kontos.", "Nur eine Steuerregelung.", "Ein einmaliges Ereignis.", "Nur Kredite werden erfasst."],
+    "correct_index": 0,
+    "explanation": "Die Kontenbuchführung dokumentiert alle Kontobewegungen systematisch."
+  },
+  {
+    "question": "Was ist eine Kapitalallokationsstrategie?",
+    "options": ["Die gezielte Verteilung von Finanzmitteln zur Optimierung von Erträgen und Minimierung von Risiken.", "Eine zufällige Entscheidung.", "Ein Zinssatz.", "Eine Steuerregelung."],
+    "correct_index": 0,
+    "explanation": "Kapitalallokation bestimmt, wie Finanzmittel zur Risikosteuerung und Gewinnoptimierung verteilt werden."
+  },
+  {
+    "question": "Was ist die Hauptfunktion eines Kontensystems in einer Bank?",
+    "options": ["Erfassung und Verwaltung von Transaktionen und Kontoständen", "Nur Steuerberechnungen", "Kreditvergabe ohne Prüfung", "Ein einmaliges Ereignis"],
+    "correct_index": 0,
+    "explanation": "Ein Kontensystem verwaltet Transaktionen und Kontostände eines Kunden innerhalb der Bank."
+  },
+  {
+    "question": "Warum benötigen Banken ein Transaktionsmodell?",
+    "options": ["Zur sicheren Verarbeitung und Nachverfolgung von Finanzbewegungen", "Nur für Steuerzwecke", "Weil Transaktionen zufällig passieren", "Um physisches Geld zu drucken"],
+    "correct_index": 0,
+    "explanation": "Banken nutzen Transaktionsmodelle, um Finanzbewegungen strukturiert zu speichern und zu validieren."
+  },
+  {
+    "question": "Was beschreibt die Buchungssicherheit in einer Bankensoftware?",
+    "options": ["Unveränderbare Speicherung von Finanztransaktionen", "Nur zufällige Kontoerstellung", "Regelmäßige Steuerprüfung", "Manuelle Korrekturen ohne Überprüfung"],
+    "correct_index": 0,
+    "explanation": "Buchungssicherheit bedeutet, dass Transaktionen nicht nachträglich manipuliert werden können."
+  },
+  {
+    "question": "Warum ist die Konsistenz von Banktransaktionen wichtig?",
+    "options": ["Um sicherzustellen, dass alle Geldbewegungen korrekt und nachvollziehbar sind", "Weil Banken keine Konsistenz benötigen", "Weil Kontostände irrelevant sind", "Nur für Steuerbehörden"],
+    "correct_index": 0,
+    "explanation": "Konsistenz gewährleistet korrekte und überprüfbare Geldflüsse innerhalb einer Bank."
+  },
+  {
+    "question": "Wie funktioniert eine Transaktionsprüfung?",
+    "options": ["Überprüfung der Richtigkeit und Vollständigkeit einer Buchung", "Zufällige Auswahl von Konten", "Nur Steuerüberprüfung", "Eine einmalige Bankgebühr"],
+    "correct_index": 0,
+    "explanation": "Transaktionsprüfungen validieren Buchungen auf Vollständigkeit und Richtigkeit."
+  },
+  {
+    "question": "Welche Rolle spielt eine Blockchain in der Buchführung?",
+    "options": ["Sie speichert Transaktionen unveränderlich und transparent", "Sie ersetzt Bankkonten", "Sie berechnet Zinsen", "Sie ist nur für Steuerberichte relevant"],
+    "correct_index": 0,
+    "explanation": "Eine Blockchain bietet eine unveränderliche und transparente Möglichkeit zur Speicherung von Finanztransaktionen."
+  },
+  {
+    "question": "Was ist ein Audit-Log in einer Banksoftware?",
+    "options": ["Eine detaillierte Aufzeichnung aller System- und Benutzeraktionen", "Ein zufälliges Konto", "Eine einmalige Zinsberechnung", "Ein Steuerbescheid"],
+    "correct_index": 0,
+    "explanation": "Audit-Logs speichern alle Aktivitäten innerhalb eines Bankensystems und ermöglichen eine Nachverfolgung."
+  },
+  {
+    "question": "Warum sind Zeitstempel für Transaktionen entscheidend?",
+    "options": ["Sie stellen die korrekte Reihenfolge und Authentizität von Buchungen sicher", "Nur für Steuerdokumente", "Weil Transaktionen zufällig passieren", "Weil Kontonummern irrelevant sind"],
+    "correct_index": 0,
+    "explanation": "Zeitstempel ermöglichen eine genaue Nachverfolgung und Validierung von Transaktionszeitpunkten."
+  },
+  {
+    "question": "Was bedeutet eine atomare Transaktion?",
+    "options": ["Eine Transaktion wird entweder vollständig durchgeführt oder vollständig zurückgesetzt", "Eine zufällige Bewegung von Geldern", "Eine Steuerregelung", "Eine einmalige Kontoprüfung"],
+    "correct_index": 0,
+    "explanation": "Eine atomare Transaktion stellt sicher, dass kein unvollständiger Zustand entsteht – entweder sie wird ganz ausgeführt oder gar nicht."
+  },
+  {
+    "question": "Warum sind Transaktionsprotokolle wichtig für Banken?",
+    "options": ["Zur detaillierten Aufzeichnung aller Finanzbewegungen", "Nur für Steuerzwecke", "Weil Banken keine Protokolle benötigen", "Weil Kontostände unwichtig sind"],
+    "correct_index": 0,
+    "explanation": "Transaktionsprotokolle garantieren eine vollständige Nachverfolgbarkeit aller Buchungen und Geldbewegungen."
+  },
+  {
+    "question": "Was ist der Zusammenhang zwischen Ereignissen und Buchungen?",
+    "options": ["Ereignisse lösen Transaktionsbuchungen aus", "Ereignisse haben keinen Einfluss auf Buchungen", "Nur Kreditvergabe ist betroffen", "Buchungen passieren ohne Ereignisse"],
+    "correct_index": 0,
+    "explanation": "Bankereignisse wie Zahlungen oder Zinsberechnungen initiieren Buchungen im Kontosystem."
+  },
+  {
+    "question": "Wie kann ein Bankensystem doppelte Buchungen verhindern?",
+    "options": ["Durch eindeutige Transaktions-IDs und Validierungsmechanismen", "Durch zufällige Prüfungen", "Durch manuelle Kontrollen", "Indem nur Bargeldtransaktionen erlaubt werden"],
+    "correct_index": 0,
+    "explanation": "Eindeutige Transaktions-IDs und Validierungsmechanismen verhindern doppelte Buchungen."
+  },
+  {
+    "question": "Warum ist eine Transaktionsvalidierung notwendig?",
+    "options": ["Um sicherzustellen, dass alle Buchungen korrekt und nicht manipuliert sind", "Weil Buchungen zufällig entstehen", "Weil Banken keine Validierung benötigen", "Weil nur Steuerprüfungen relevant sind"],
+    "correct_index": 0,
+    "explanation": "Validierung schützt vor fehlerhaften oder manipulierten Buchungen und sichert die Integrität des Systems."
+  },
+  {
+    "question": "Was beschreibt die Vertrauenswürdigkeit eines Finanzsystems?",
+    "options": ["Die Fähigkeit, konsistente und nachvollziehbare Buchungen zu gewährleisten", "Die zufällige Verarbeitung von Geldflüssen", "Eine einmalige Steuerregelung", "Die vollständige Abschaffung von Konten"],
+    "correct_index": 0,
+    "explanation": "Ein vertrauenswürdiges Finanzsystem gewährleistet korrekte und überprüfbare Transaktionen."
+  },
+  {
+    "question": "Warum ist eine korrekte Kontoführung für Banken essenziell?",
+    "options": ["Um exakte Buchungen und korrekte Kontostände sicherzustellen", "Weil Banken keine Konten benötigen", "Weil nur Steuerprüfungen wichtig sind", "Weil Bargeld immer vorrangig ist"],
+    "correct_index": 0,
+    "explanation": "Kontoführung sichert eine korrekte Buchhaltung und konsistente Transaktionsverwaltung."
+  },
+  {
+    "question": "Wie kann eine Bank die Unveränderlichkeit ihrer Buchführung sicherstellen?",
+    "options": ["Durch die Verwendung kryptografischer Hashes und Audit-Logs", "Durch zufällige Speicherungen", "Indem keine Transaktionen aufgezeichnet werden", "Indem Steuerberichte automatisch gelöscht werden"],
+    "correct_index": 0,
+    "explanation": "Kryptografische Methoden wie Hashes und Audit-Logs garantieren eine unveränderliche Buchführung."
+  },
+  {
+    "question": "Was ist der Vorteil einer digital signierten Transaktion?",
+    "options": ["Sie garantiert Authentizität und Unveränderlichkeit", "Sie ersetzt Steuerprüfungen", "Sie macht Transaktionen weniger nachvollziehbar", "Sie ist nur für Offline-Zahlungen wichtig"],
+    "correct_index": 0,
+    "explanation": "Digitale Signaturen bestätigen die Echtheit und Unveränderlichkeit einer Transaktion."
+  },
+  {
+    "question": "Warum sind Kontrollmechanismen in Bankensystemen wichtig?",
+    "options": ["Zur Sicherstellung korrekter Transaktionen und Betrugsprävention", "Nur für Steuerbehörden relevant", "Weil Banken keine Kontrolle benötigen", "Weil Bargeld sicher genug ist"],
+    "correct_index": 0,
+    "explanation": "Kontrollmechanismen verhindern Betrug, Fehler und manipulierte Buchungen."
+  },
+  {
+    "question": "Was ist eine korrelierte Kredit-Ausfallwahrscheinlichkeit?",
+    "options": ["Ein Modell zur Berechnung von Ausfällen mehrerer Kredite mit ähnlichen Risiken", "Eine einmalige Steuerregelung", "Eine zufällige Berechnung", "Eine feste Zinshöhe für alle Kredite"],
+    "correct_index": 0,
+    "explanation": "Ein korreliertes Kreditrisikomodell untersucht die Wahrscheinlichkeit, dass mehrere Kredite gemeinsam ausfallen."
+  },
+  {
+    "question": "Was ist eine Hauptanforderung an ein Datenmodell für ein Kernbankensystem?",
+    "options": ["Abbildung von Konten, Transaktionen und Verträgen", "Automatisches Drucken von Kontoauszügen", "Berechnung von Wechselkursen", "Verwaltung von Kreditkartenlayouts"],
+    "correct_index": 0,
+    "explanation": "Ein Datenmodell muss alle relevanten Entitäten wie Konten, Buchungen und vertragliche Beziehungen strukturiert abbilden können."
+  },
+  {
+    "question": "Was bedeutet 'Kontoführung durch Ereignisse' in einem Bankensystem?",
+    "options": ["Jede Änderung wird durch ein Ereignis wie Zahlung, Zins oder Gebühr ausgelöst", "Die Bank aktualisiert Konten nur einmal jährlich", "Kontoführung geschieht manuell per Excel", "Es wird keine Historie gespeichert"],
+    "correct_index": 0,
+    "explanation": "Ereignisbasierte Kontoführung bedeutet, dass jede Änderung eines Kontos von einem dokumentierten Ereignis ausgelöst wird."
+  },
+  {
+    "question": "Welche Funktion übernimmt die doppelte Buchführung im Bankenwesen?",
+    "options": ["Erfassung jeder Transaktion auf zwei Konten: Soll und Haben", "Einseitige Erfassung im Kassenbuch", "Nur Aufzeichnung von Einnahmen", "Zufällige Generierung von Salden"],
+    "correct_index": 0,
+    "explanation": "Die doppelte Buchführung stellt sicher, dass jede Buchung durch eine korrespondierende Gegenbuchung dokumentiert ist."
+  },
+  {
+    "question": "Welche Eigenschaften sollte ein Finanztransaktionsmodell erfüllen?",
+    "options": ["Nachvollziehbarkeit, Integrität, Unveränderlichkeit", "Verschleierung von Abläufen", "Beliebige Änderung ohne Protokollierung", "Zufällige Buchungsreihenfolge"],
+    "correct_index": 0,
+    "explanation": "Ein stabiles Modell muss alle Vorgänge auditierbar und revisionssicher machen."
+  },
+  {
+    "question": "Was ist der Zweck eines digitalen Schlüssels in der Banken-IT?",
+    "options": ["Sichere Identifikation und Autorisierung von Zugriffen und Signaturen", "Öffnen physischer Bankschalter", "Ersetzen von IBANs", "Zinssatzfestlegung"],
+    "correct_index": 0,
+    "explanation": "Digitale Schlüssel sind Teil kryptografischer Verfahren zur Authentifizierung und Signaturkontrolle."
+  },
+  {
+    "question": "Wozu dient ein Hash im Bankenumfeld?",
+    "options": ["Verifikation von Datenintegrität bei Transaktionen", "Buchung von Fremdwährungen", "Zinsberechnung für Sparkonten", "Verwalten von Kreditrestlaufzeiten"],
+    "correct_index": 0,
+    "explanation": "Hashes gewährleisten, dass Daten während der Speicherung oder Übertragung nicht manipuliert wurden."
+  },
+  {
+    "question": "Was beschreibt ein Transaktionsmodell in der Bankeninformatik?",
+    "options": ["Strukturierte Darstellung von Geldbewegungen inklusive Status, Zeit und Verwendungszweck", "Erstellung von HTML-Vorlagen für Kontoauszüge", "Berechnung von Lohnnebenkosten", "Einmaliger Kontoabschluss"],
+    "correct_index": 0,
+    "explanation": "Transaktionsmodelle dienen der Abbildung und Kontrolle finanzieller Bewegungen im System."
+  },
+  {
+    "question": "Was ist eine 2-Phasen-Commit-Logik?",
+    "options": ["Eine Methode zur sicheren Durchführung verteilter Transaktionen", "Ein Zinssatzberechnungsmodell", "Ein Papierkontoauszug", "Ein Dateiformat für SEPA-Überweisungen"],
+    "correct_index": 0,
+    "explanation": "2PC stellt sicher, dass eine Transaktion entweder vollständig abgeschlossen oder vollständig abgebrochen wird – über alle beteiligten Systeme hinweg."
+  },
+  {
+    "question": "Welche Information sollte in einem Buchungsdatensatz immer enthalten sein?",
+    "options": ["Zeitpunkt, Betrag, Buchungskonto, Gegenkonto", "Nur der Betrag", "Nur der Name des Kunden", "Nur der Verwendungszweck"],
+    "correct_index": 0,
+    "explanation": "Vollständige Buchungen müssen alle relevanten Informationen beinhalten, um nachvollziehbar zu sein."
+  },
+  {
+    "question": "Was bedeutet es, wenn ein Konto 'event sourced' modelliert ist?",
+    "options": ["Alle Zustände ergeben sich ausschließlich aus der Sequenz von Ereignissen", "Der Kontostand wird täglich manuell angepasst", "Nur die letzte Transaktion ist relevant", "Konten sind steuerlich irrelevant"],
+    "correct_index": 0,
+    "explanation": "Beim Event-Sourcing wird der Zustand eines Kontos nicht direkt gespeichert, sondern aus allen vergangenen Ereignissen abgeleitet."
+  },
+  {
+    "question": "Was ist die zentrale Eigenschaft einer Unveränderlichkeits-Architektur?",
+    "options": ["Einträge können nicht gelöscht oder verändert, sondern nur ergänzt werden", "Daten können jederzeit zurückgesetzt werden", "Änderungen werden überschrieben", "Unveränderlichkeit ist optional"],
+    "correct_index": 0,
+    "explanation": "Unveränderlichkeit (Immutability) dient der Revisionssicherheit und Nachvollziehbarkeit in Finanzsystemen."
+  },
+  {
+    "question": "Was beschreibt ein Hash-Chain-Konzept im Bankenumfeld?",
+    "options": ["Verkettung von Transaktionsdaten zur Fälschungssicherheit", "Kaskadierende Steuerberechnung", "Synchronisierung von Bankfilial-Servern", "Verzinsung von Kreditraten"],
+    "correct_index": 0,
+    "explanation": "Jeder neue Datensatz enthält den Hash des Vorgängers – so kann keine einzelne Buchung heimlich geändert werden."
+  },
+  {
+    "question": "Wofür steht 'Immutability' in der Bankeninformatik?",
+    "options": ["Unveränderbare, überprüfbare Speicherung historischer Finanzdaten", "Flexible Änderung beliebiger Transaktionen", "Papierausdrucke von Kontoauszügen", "Ein Zinskonzept"],
+    "correct_index": 0,
+    "explanation": "Immutability schützt die Integrität von Buchungsdaten – sie sind nur durch neue Events korrigierbar."
+  },
+  {
+    "question": "Welche Struktur nutzt ein Merkle Tree?",
+    "options": ["Hierarchische Aggregation von Hashwerten", "Lineare Liste von Transaktionen", "Buchung nach Alphabet", "Steuerlogikbaum"],
+    "correct_index": 0,
+    "explanation": "Merkle Trees ermöglichen effiziente Prüfbarkeit großer Mengen kryptografisch gesicherter Daten."
+  },
+  {
+    "question": "Was wird durch digitale Signaturen sichergestellt?",
+    "options": ["Die Echtheit und Integrität einer Transaktion", "Die Höhe des Zinssatzes", "Die Bonität eines Kunden", "Die Existenz eines Kontos"],
+    "correct_index": 0,
+    "explanation": "Digitale Signaturen stellen sicher, dass eine Nachricht authentisch vom Absender stammt und nicht verändert wurde."
+  },
+  {
+    "question": "Was ist ein Vorteil einer modellierten Buchung mit Event-Datenhaltung?",
+    "options": ["Lückenlose Nachvollziehbarkeit jeder Kontoänderung", "Direktes Überschreiben des Kontosaldos", "Speicherung nur des Endstands", "Vermeidung von Transaktions-IDs"],
+    "correct_index": 0,
+    "explanation": "Eventbasierte Buchhaltung erlaubt volle Transparenz über den Verlauf aller Bewegungen."
+  },
+  {
+    "question": "Was unterscheidet Konto-Snapshots von Event-Replay?",
+    "options": ["Snapshots speichern den Zustand zu einem Zeitpunkt, Replays berechnen ihn aus Ereignissen", "Beide liefern identische Daten", "Snapshots sind steuerlich bindend", "Replays verwenden Excel"],
+    "correct_index": 0,
+    "explanation": "Snapshots sind praktische Zwischenspeicher; Event Replays berechnen den Zustand aus der Historie."
+  },
+  {
+    "question": "Warum ist Versionierung in Bankendatenmodellen wichtig?",
+    "options": ["Damit alle Veränderungen dokumentiert und nachvollziehbar sind", "Weil Konten täglich gelöscht werden", "Weil Zinsen nicht gespeichert werden", "Versionierung ist irrelevant"],
+    "correct_index": 0,
+    "explanation": "Versionierte Modelle erlauben lückenlose Historienführung und Prüfung von Änderungen an Konten und Verträgen."
+  },
+  {
+    "question": "Welcher Vorteil ergibt sich aus modellierter Kontoführung?",
+    "options": ["Erhöhte Automatisierung und Reduktion von Fehlerquellen", "Weniger Speicherbedarf", "Keine Notwendigkeit für Buchungsprotokolle", "Zufällige Rechenvorgänge"],
+    "correct_index": 0,
+    "explanation": "Modellierte Kontoführung ermöglicht konsistente und überprüfbare Abbildungen aller Finanzprozesse."
+  }]
+
+  
+
+  
+  
