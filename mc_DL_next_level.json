@@ -1,4 +1,136 @@
 [
+    {
+    "question": "Welche Auswirkung hat das Hinzufügen von Dropout in einem neuronalen Netz während des Trainings?",
+    "options": [
+      "Es beschleunigt das Training",
+      "Es erhöht die Modellkomplexität",
+      "Es reduziert Overfitting durch zufälliges Deaktivieren von Neuronen",
+      "Es erhöht die Anzahl der Parameter im Modell"
+    ],
+    "correct_index": 2,
+    "explanation": "Dropout ist eine Regularisierungsmethode, die Overfitting reduziert, indem zufällig Neuronen während des Trainings deaktiviert werden."
+  },
+  {
+    "question": "Warum ist die Initialisierung der Gewichte bei tiefen Netzen besonders wichtig?",
+    "options": [
+      "Weil sie das Modell robuster gegen Angriffe macht",
+      "Weil falsche Initialisierung den Gradientenfluss behindern kann",
+      "Weil Initialisierung das Overfitting erhöht",
+      "Weil alle Gewichte null sein sollten"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine schlechte Initialisierung kann zu verschwindenden oder explodierenden Gradienten führen, was das Training behindert."
+  },
+  {
+    "question": "Wozu dient der Mechanismus der 'Attention' in einem Transformer-Modell?",
+    "options": [
+      "Er ersetzt vollständig die Aktivierungsfunktionen",
+      "Er erlaubt es dem Modell, relevante Teile der Eingabe gezielt zu gewichten",
+      "Er verringert die Anzahl der Modellparameter",
+      "Er entfernt das Bedürfnis nach Backpropagation"
+    ],
+    "correct_index": 1,
+    "explanation": "Attention gewichtet die Wichtigkeit verschiedener Eingabeteile kontextabhängig und verbessert damit die Verarbeitung von Sequenzdaten."
+  },
+  {
+    "question": "Welche Funktion erfüllt die Positionsembedding-Komponente im Transformer?",
+    "options": [
+      "Sie reduziert die Modellgröße",
+      "Sie gibt dem Modell Information über die Reihenfolge der Token",
+      "Sie verhindert Überanpassung",
+      "Sie ersetzt den Self-Attention-Mechanismus"
+    ],
+    "correct_index": 1,
+    "explanation": "Da Transformer keine rekursive oder sequentielle Verarbeitung haben, werden Positionsinformationen durch Positionsembeddings hinzugefügt."
+  },
+  {
+    "question": "Was unterscheidet LSTMs von klassischen RNNs?",
+    "options": [
+      "LSTMs verwenden kein Backpropagation",
+      "LSTMs haben eine zusätzliche Speicherzelle zur besseren Langzeitabhängigkeit",
+      "LSTMs sind nicht differenzierbar",
+      "LSTMs benötigen keine Trainingsdaten"
+    ],
+    "correct_index": 1,
+    "explanation": "LSTMs verfügen über eine Speicherzelle mit Gate-Mechanismen, um Langzeitinformationen besser zu speichern und weiterzugeben."
+  },
+  {
+    "question": "Welche Herausforderung adressiert Batch Normalization in tiefen neuronalen Netzen?",
+    "options": [
+      "Explodierende Gradienten",
+      "Vanishing Gradients",
+      "Internal Covariate Shift",
+      "Overfitting durch zu große Modelle"
+    ],
+    "correct_index": 2,
+    "explanation": "Batch Normalization reduziert den 'Internal Covariate Shift' und stabilisiert so das Training tiefer Netze."
+  },
+  {
+    "question": "Was beschreibt der Begriff 'gradient clipping' in RNNs?",
+    "options": [
+      "Das Abschalten von Neuronen mit kleinem Gradienten",
+      "Das Limitieren der Gradienten, um Explodieren zu verhindern",
+      "Das Anwenden von Dropout",
+      "Das Entfernen aller negativen Gradienten"
+    ],
+    "correct_index": 1,
+    "explanation": "Gradient Clipping verhindert zu große Updates bei explodierenden Gradienten und stabilisiert das Training, besonders bei RNNs."
+  },
+  {
+    "question": "Wie verändert Data Augmentation typischerweise den Trainingsprozess bei CNNs?",
+    "options": [
+      "Es macht das Modell kleiner",
+      "Es erhöht die Genauigkeit durch synthetisch erzeugte Varianz",
+      "Es verhindert die Konvergenz",
+      "Es reduziert die Trainingsdatenmenge"
+    ],
+    "correct_index": 1,
+    "explanation": "Durch Data Augmentation entsteht mehr Vielfalt in den Trainingsdaten, was das Modell robuster macht und Overfitting reduziert."
+  },
+  {
+    "question": "Warum sind 1D-CNNs für Sequenzdaten effizienter als RNNs?",
+    "options": [
+      "Weil sie die Reihenfolge ignorieren",
+      "Weil sie keine Backpropagation benötigen",
+      "Weil sie lokal auf Muster achten und parallelisiert werden können",
+      "Weil sie keine Gewichtsmatrizen verwenden"
+    ],
+    "correct_index": 2,
+    "explanation": "1D-CNNs erkennen lokale Muster und sind durch ihre Parallelisierbarkeit oft schneller und ressourcenschonender als RNNs."
+  },
+  {
+    "question": "Was ist ein typisches Anzeichen von Overfitting während des Trainings?",
+    "options": [
+      "Die Trainings- und Validierungsfehler sinken gleichermaßen",
+      "Der Trainingsfehler sinkt, aber der Validierungsfehler steigt",
+      "Beide Fehler steigen",
+      "Die Genauigkeit auf beiden Sets steigt"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein sinkender Trainingsfehler bei steigendem Validierungsfehler ist ein klassisches Zeichen für Overfitting."
+  },
+  {
+    "question": "Welche Rolle spielt der Loss-Function bei Supervised Learning?",
+    "options": [
+      "Sie berechnet die Metriken auf dem Testset",
+      "Sie hilft, die optimalen Hyperparameter zu bestimmen",
+      "Sie quantifiziert den Fehler zwischen Prediction und Ground Truth",
+      "Sie bestimmt die Netzwerkstruktur"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Loss-Funktion misst, wie stark die Vorhersagen vom wahren Label abweichen – sie ist zentral für das Lernen."
+  },
+  {
+    "question": "Was bewirkt ein kleiner Lernratenwert beim Training eines Modells?",
+    "options": [
+      "Das Modell lernt schneller",
+      "Das Modell überspringt lokale Minima",
+      "Das Modell konvergiert langsam, aber stabiler",
+      "Das Modell wird untrainierbar"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine kleine Lernrate sorgt für langsamere, aber stabilere Schritte im Gradientenabstieg."
+  },
   {
     "question": "Welche Funktion hat der Backpropagation-Algorithmus in einem neuronalen Netz?",
     "options": [
