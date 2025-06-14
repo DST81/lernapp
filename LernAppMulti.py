@@ -15,6 +15,7 @@ verfügbare_fächer = {
     "BIO": "mc_bio.json",
     "WR": "mc_wr.json",
     "Deep Learning": "mc_questions_with_explanations.json",
+    "Deep Learning for pros": "mc_DL_next_level.json",
     "NLP": "mc_NLP.json",
     "UNIX": "mc_unix_for_poets.json",
     "Banken": "mc_bank.json"
