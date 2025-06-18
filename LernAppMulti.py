@@ -81,15 +81,24 @@ if ss('antwort_gegeben', None) is None:
     ss_set('antwort_gegeben', False)
 
 
-frage = ss('aktuelle_frage', None)
-if frage is None or frage['id'] not in [f['id'] for f in verfügbare_fragen]:
+alte_frage = ss('aktuelle_frage', None)
+verfügbare_ids = [f['id'] for f in verfügbare_fragen]
+
+# Nur neue Frage ziehen, wenn:
+# - keine Frage gespeichert ist
+# - oder diese Frage nicht mehr gültig ist
+# UND noch keine Antwort gegeben wurde
+if (alte_frage is None or alte_frage['id'] not in verfügbare_ids) and not ss('antwort_gegeben', False):
     if verfügbare_fragen:
-        frage = random.choice(verfügbare_fragen)
-        ss_set('aktuelle_frage', frage)
+        neue_frage = random.choice(verfügbare_fragen)
+        ss_set('aktuelle_frage', neue_frage)
         ss_set('antwort_gegeben', False)
-        ss_set(f'antwort_radio-{frage["id"]}', None)
+        ss_set(f'antwort_radio-{neue_frage["id"]}', None)
+        frage = neue_frage
     else:
-        frage=None
+        frage = None
+else:
+    frage = alte_frage
 
 if frage:
     st.subheader(frage['question'])
