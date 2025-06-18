@@ -171,7 +171,7 @@ st.sidebar.metric("Noch offen", len(alle_fragen) - len(ss('beantwortete_ids', []
 nur_falsche = st.sidebar.checkbox("Nur falsch beantwortete wiederholen", value=ss('nur_falsche_wiederholung', False))
 if nur_falsche != ss('nur_falsche_wiederholung', False):
     ss_set('nur_falsche_wiederholung', nur_falsche)
-        for key in ["aktuelle_frage", "antwort_gegeben"]:
+    for key in ["aktuelle_frage", "antwort_gegeben"]:
         full_key = key_prefix + key
         if full_key in st.session_state:
             del st.session_state[full_key]
