@@ -74,7 +74,7 @@ speicherstand_laden(SPEICHERDATEI)
 # -------------------- Frageauswahl --------------------
 
 if ss('nur_falsche_wiederholung', False):
-    verfügbare_fragen = [f for f in verfügbare_fragen if f['id'] in ss('falsch_beantwortete_ids', [])]
+    verfügbare_fragen = [f for f in alle_fragen if f['id'] in ss('falsch_beantwortete_ids', [])]
 else:
     verfügbare_fragen = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
 # -------------------- Initialisierung --------------------
