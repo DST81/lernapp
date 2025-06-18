@@ -169,13 +169,28 @@ st.sidebar.metric("Beantwortet", len(ss('beantwortete_ids', [])))
 st.sidebar.metric("Noch offen", len(alle_fragen) - len(ss('beantwortete_ids', [])))
 
 nur_falsche = st.sidebar.checkbox("Nur falsch beantwortete wiederholen", value=ss('nur_falsche_wiederholung', False))
+
 if nur_falsche != ss('nur_falsche_wiederholung', False):
     ss_set('nur_falsche_wiederholung', nur_falsche)
-    for key in ["aktuelle_frage", "antwort_gegeben"]:
-        full_key = key_prefix + key
-        if full_key in st.session_state:
-            del st.session_state[full_key]
-    st.rerun()
+
+    # Hole den passenden Fragenpool
+    if nur_falsche:
+        verfügbare_fragen_neu = [f for f in alle_fragen if f['id'] in ss('falsch_beantwortete_ids', [])]
+    else:
+        verfügbare_fragen_neu = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
+
+    if verfügbare_fragen_neu:
+        frage_neu = random.choice(verfügbare_fragen_neu)
+        ss_set('aktuelle_frage', frage_neu)
+        ss_set('antwort_gegeben', False)
+        # Antwort-Radio-Key ggf. löschen, damit Radio frisch ist
+        antwort_key = f"{key_prefix}antwort_radio-{frage_neu['id']}"
+        if antwort_key in st.session_state:
+            del st.session_state[antwort_key]
+    else:
+        ss_set('aktuelle_frage', None)
+        ss_set('antwort_gegeben', False)
+
 
 if st.sidebar.button("🔄 Spiel zurücksetzen"):
     if os.path.exists(SPEICHERDATEI):
