@@ -9,7 +9,7 @@ st.title("📘 Interaktive LernApp")
 
 
 # -------------------- Fachauswahl --------------------
-st.sidebar.image("helfer.png", caption="Hallo Simone, ich bin dein Lernassistent", use_container_width=True)
+st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_container_width=True)
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
     "Geschichte": "mc_Geschichte.json",
@@ -59,23 +59,23 @@ def speicherstand_laden(datei):
     if os.path.exists(datei):
         with open(datei, 'r') as f:
             daten = json.load(f)
-            ss_set('beantwortete_ids', set(daten.get('beantwortete_ids', [])))
-            ss_set('falsch_beantwortete_ids', set(daten.get('falsch_beantwortete_ids', [])))
+            ss_set('beantwortete_ids', daten.get('beantwortete_ids', []))
+            ss_set('falsch_beantwortete_ids', daten.get('falsch_beantwortete_ids', []))
             ss_set('score', daten.get('score', 0))
             ss_set('nur_falsche_wiederholung', daten.get('nur_falsche_wiederholung', False))
     else:
-        ss_set('beantwortete_ids', set())
-        ss_set('falsch_beantwortete_ids', set())
+        ss_set('beantwortete_ids', [])
+        ss_set('falsch_beantwortete_ids', [])
         ss_set('score', 0)
         ss_set('nur_falsche_wiederholung', False)
 
 speicherstand_laden(SPEICHERDATEI)
 
 # -------------------- Frageauswahl --------------------
-verfügbare_fragen = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', set())]
+verfügbare_fragen = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
 
 if ss('nur_falsche_wiederholung', False):
-    verfügbare_fragen = [f for f in verfügbare_fragen if f['id'] in ss('falsch_beantwortete_ids', set())]
+    verfügbare_fragen = [f for f in verfügbare_fragen if f['id'] in ss('falsch_beantwortete_ids', []))]
 # -------------------- Initialisierung --------------------
 if ss('antwort_gegeben', None) is None:
     ss_set('antwort_gegeben', False)
@@ -107,15 +107,21 @@ if verfügbare_fragen:
                 ss_set('score', ss('score', 0) + 1)
             else:
                 st.error(f"❌ Falsch. Richtig wäre: {richtige_antwort}")
-                ss('falsch_beantwortete_ids', set()).add(frage['id'])
-            ss('beantwortete_ids', set()).add(frage['id'])
+                falsch_ids = ss('falsch_beantwortete_ids', [])
+                if frage['id'] not in falsch_ids:
+                    falsch_ids.append(frage['id'])
+                    ss_set('falsch_beantwortete_ids'), falsch_ids)
+            beantwortet_ids=ss('beantwortete_ids', [])
+            if frage['id'] not in beantwortet_ids:
+                beantwortet_ids.append(frage['id'])
+                ss_set('beantwortete_ids',beantwortet_ids)
             if 'explanation' in frage:
                 st.info(f"ℹ️ Erklärung: {frage['explanation']}")
             # Spielstand speichern
             with open(SPEICHERDATEI, 'w') as f:
                 json.dump({
-                    "beantwortete_ids": list(ss('beantwortete_ids', set())),
-                    "falsch_beantwortete_ids": list(ss('falsch_beantwortete_ids', set())),
+                    "beantwortete_ids": list(ss('beantwortete_ids', [])),
+                    "falsch_beantwortete_ids": list(ss('falsch_beantwortete_ids', [])),
                     "score": ss('score', 0),
                     "nur_falsche_wiederholung": ss('nur_falsche_wiederholung', False)
                 }, f)
