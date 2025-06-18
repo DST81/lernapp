@@ -160,7 +160,7 @@ else:
                     del st.session_state[full_key]
             st.rerun()
     else:
-        st.write('Alle Fragen wurden korrekt beantwortet!")
+        st.write("Alle Fragen wurden korrekt beantwortet!")
 
 # -------------------- Statistik & Optionen --------------------
 st.sidebar.markdown("---")
