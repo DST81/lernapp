@@ -133,8 +133,9 @@ if verfügbare_fragen:
         st.info("✅ Du hast diese Frage bereits beantwortet. Klicke unten für die nächste.")
         if st.button("Nächste Frage anzeigen"):
             keys_to_delete = [
-                f"{key_prefix}aktuelle_frage",
-                f"{key_prefix}antwort_gegeben",
+                'antwort_gegeben',
+                'antwort_radio',
+                'aktuelle_frage',
                 antwort_key
             ]
 
@@ -150,8 +151,10 @@ else:
 if ss('falsch_beantwortete_ids', []):
     if st.button('🔁 Falsch beantwortete Fragen wiederholen'):
         ss_set('nur_falsche_wiederholung',True)
-        if f'{key_prefix}aktuelle_frage' in st.session_state:
-            del st.session_state[f'{key_prefix}aktuelle_frage']
+        for k in ['aktuelle_frage', 'antwort_gegeben', 'antwort_radio']:
+            k_full = f"{key_prefix}{k}"
+            if k_full in st.session_state:
+                del st.session_state[k_full]
         st.rerun()
 
 # -------------------- Statistik & Optionen --------------------
