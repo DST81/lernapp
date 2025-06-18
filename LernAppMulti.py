@@ -110,7 +110,7 @@ if verfügbare_fragen:
                 falsch_ids = ss('falsch_beantwortete_ids', [])
                 if frage['id'] not in falsch_ids:
                     falsch_ids.append(frage['id'])
-                    ss_set('falsch_beantwortete_ids'), falsch_ids)
+                    ss_set('falsch_beantwortete_ids'), falsch_ids))
             beantwortet_ids=ss('beantwortete_ids', [])
             if frage['id'] not in beantwortet_ids:
                 beantwortet_ids.append(frage['id'])
