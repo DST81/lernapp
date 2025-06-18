@@ -147,6 +147,13 @@ if verfügbare_fragen:
 else:
     st.info("🎉 Alle Fragen in diesem Fach sind beantwortet!")
 
+if ss('falsch_beantwortete_ids', []):
+    if st.button('🔁 Falsch beantwortete Fragen wiederholen'):
+        ss_set('nur_falsche_wiederholung',True)
+        if f'{key_prefix}aktuelle_frage' in st.session_state:
+            del st.session_state[f'{key_prefix}aktuelle_frage']
+        st.rerun()
+
 # -------------------- Statistik & Optionen --------------------
 st.sidebar.markdown("---")
 st.sidebar.metric("Punktzahl", ss('score', 0))
