@@ -72,10 +72,11 @@ def speicherstand_laden(datei):
 speicherstand_laden(SPEICHERDATEI)
 
 # -------------------- Frageauswahl --------------------
-verfügbare_fragen = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
 
 if ss('nur_falsche_wiederholung', False):
     verfügbare_fragen = [f for f in verfügbare_fragen if f['id'] in ss('falsch_beantwortete_ids', [])]
+else:
+    verfügbare_fragen = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
 # -------------------- Initialisierung --------------------
 if ss('antwort_gegeben', None) is None:
     ss_set('antwort_gegeben', False)
