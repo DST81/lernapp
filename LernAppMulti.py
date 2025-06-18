@@ -7,7 +7,6 @@ import random
 st.set_page_config(page_title="LernApp", page_icon="📘", layout="centered")
 st.title("📘 Interaktive LernApp")
 
-
 # -------------------- Fachauswahl --------------------
 st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_container_width=True)
 st.sidebar.title("📚 Fachauswahl")
@@ -22,19 +21,18 @@ verfügbare_fächer = {
     "Banken": "mc_bank.json"
 }
 
-
 ausgewähltes_fach = st.sidebar.selectbox("Wähle ein Fach:", list(verfügbare_fächer.keys()))
 
 # -------------------- Session State pro Fach --------------------
 if "aktuelles_fach" not in st.session_state:
     st.session_state.aktuelles_fach = ausgewähltes_fach
 elif st.session_state.aktuelles_fach != ausgewähltes_fach:
-    # Nur die fragebezogenen Keys zurücksetzen, nicht alles!
+    # Nur die fragebezogenen Keys des alten Fachs löschen
     for key in list(st.session_state.keys()):
         if key.startswith(f"{st.session_state.aktuelles_fach}_"):
             del st.session_state[key]
     st.session_state.aktuelles_fach = ausgewähltes_fach
-    st.rerun()
+    st.rerun()  # statt st.rerun()
 
 key_prefix = f"{ausgewähltes_fach}_"
 
@@ -77,10 +75,10 @@ if ss('nur_falsche_wiederholung', False):
     verfügbare_fragen = [f for f in alle_fragen if f['id'] in ss('falsch_beantwortete_ids', [])]
 else:
     verfügbare_fragen = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
+
 # -------------------- Initialisierung --------------------
 if ss('antwort_gegeben', None) is None:
     ss_set('antwort_gegeben', False)
-
 
 if verfügbare_fragen:
     frage = ss('aktuelle_frage', None)
@@ -88,7 +86,7 @@ if verfügbare_fragen:
         frage = random.choice(verfügbare_fragen)
         ss_set('aktuelle_frage', frage)
         ss_set('antwort_gegeben', False)
-        ss_set('antwort_radio', None)
+        ss_set(f'antwort_radio-{frage["id"]}', None)
 
     st.subheader(frage['question'])
     antwort_key = f"{key_prefix}antwort_radio-{frage['id']}"
@@ -96,7 +94,6 @@ if verfügbare_fragen:
 
     if not ss('antwort_gegeben', False):
         if st.button("Antwort überprüfen"):
-    
             if ausgewählt is None:
                 st.warning("Bitte wähle eine Antwort aus.")
                 st.stop()
@@ -112,31 +109,29 @@ if verfügbare_fragen:
                 if frage['id'] not in falsch_ids:
                     falsch_ids.append(frage['id'])
                     ss_set('falsch_beantwortete_ids', falsch_ids)
-            beantwortet_ids=ss('beantwortete_ids', [])
+            beantwortet_ids = ss('beantwortete_ids', [])
             if frage['id'] not in beantwortet_ids:
                 beantwortet_ids.append(frage['id'])
-                ss_set('beantwortete_ids',beantwortet_ids)
+                ss_set('beantwortete_ids', beantwortet_ids)
             if 'explanation' in frage:
                 st.info(f"ℹ️ Erklärung: {frage['explanation']}")
             # Spielstand speichern
             with open(SPEICHERDATEI, 'w') as f:
                 json.dump({
-                    "beantwortete_ids": list(ss('beantwortete_ids', [])),
-                    "falsch_beantwortete_ids": list(ss('falsch_beantwortete_ids', [])),
+                    "beantwortete_ids": ss('beantwortete_ids', []),
+                    "falsch_beantwortete_ids": ss('falsch_beantwortete_ids', []),
                     "score": ss('score', 0),
                     "nur_falsche_wiederholung": ss('nur_falsche_wiederholung', False)
                 }, f)
             ss_set('antwort_gegeben', True)
-        
-    
-    if ss('antwort_gegeben',False):
+
+    if ss('antwort_gegeben', False):
         st.info("✅ Du hast diese Frage bereits beantwortet. Klicke unten für die nächste.")
         if st.button("Nächste Frage anzeigen"):
             keys_to_delete = [
-                'antwort_gegeben',
-                'antwort_radio',
-                'aktuelle_frage',
-                antwort_key
+                f"{key_prefix}antwort_gegeben",
+                f"{antwort_key}",
+                f"{key_prefix}aktuelle_frage"
             ]
 
             for key in keys_to_delete:
@@ -150,8 +145,8 @@ else:
 
 if ss('falsch_beantwortete_ids', []):
     if st.button('🔁 Falsch beantwortete Fragen wiederholen'):
-        ss_set('nur_falsche_wiederholung',True)
-        for k in ['aktuelle_frage', 'antwort_gegeben', 'antwort_radio']:
+        ss_set('nur_falsche_wiederholung', True)
+        for k in ['aktuelle_frage', 'antwort_gegeben', f"antwort_radio-{ss('aktuelle_frage', {}).get('id', '')}"]:
             k_full = f"{key_prefix}{k}"
             if k_full in st.session_state:
                 del st.session_state[k_full]
@@ -160,14 +155,20 @@ if ss('falsch_beantwortete_ids', []):
 # -------------------- Statistik & Optionen --------------------
 st.sidebar.markdown("---")
 st.sidebar.metric("Punktzahl", ss('score', 0))
-st.sidebar.metric("Beantwortet", len(ss('beantwortete_ids', set())))
-st.sidebar.metric("Noch offen", len(alle_fragen) - len(ss('beantwortete_ids', set())))
+st.sidebar.metric("Beantwortet", len(ss('beantwortete_ids', [])))
+st.sidebar.metric("Noch offen", len(alle_fragen) - len(ss('beantwortete_ids', [])))
 
 # Wiederholungsoption
 nur_falsche = st.sidebar.checkbox("Nur falsch beantwortete wiederholen", value=ss('nur_falsche_wiederholung', False))
-ss_set('nur_falsche_wiederholung', nur_falsche)
+if nur_falsche != ss('nur_falsche_wiederholung', False):
+    ss_set('nur_falsche_wiederholung', nur_falsche)
+    st.rerun()
 
 if st.sidebar.button("🔄 Spiel zurücksetzen"):
-    os.remove(SPEICHERDATEI) if os.path.exists(SPEICHERDATEI) else None
-    st.session_state.clear()
+    if os.path.exists(SPEICHERDATEI):
+        os.remove(SPEICHERDATEI)
+    # Nur Keys des aktuellen Fachs löschen
+    for key in list(st.session_state.keys()):
+        if key.startswith(key_prefix):
+            del st.session_state[key]
     st.rerun()
