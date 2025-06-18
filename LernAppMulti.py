@@ -121,7 +121,7 @@ if frage:
                     "nur_falsche_wiederholung": ss('nur_falsche_wiederholung', False)
                 }, f)
             ss_set('antwort_gegeben', True)
-            st.rerun()
+            
 
     # Antwort wurde bereits gegeben – Rückmeldung anzeigen
     if ss('antwort_gegeben', False):
