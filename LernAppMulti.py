@@ -80,24 +80,28 @@ else:
 if ss('antwort_gegeben', None) is None:
     ss_set('antwort_gegeben', False)
 
-if verfügbare_fragen:
-    frage = ss('aktuelle_frage', None)
-    if frage is None:
+
+frage = ss('aktuelle_frage', None)
+if frage is None or frage['id'] not in [f['id'] for f in verfügbare_fragen]:
+    if verfügbare_fragen:
         frage = random.choice(verfügbare_fragen)
         ss_set('aktuelle_frage', frage)
         ss_set('antwort_gegeben', False)
         ss_set(f'antwort_radio-{frage["id"]}', None)
+    else:
+        frage=None
 
+if frage:
     st.subheader(frage['question'])
     antwort_key = f"{key_prefix}antwort_radio-{frage['id']}"
     ausgewählt = st.radio("Wähle eine Antwort:", frage['options'], key=antwort_key)
-
+    
     if not ss('antwort_gegeben', False):
         if st.button("Antwort überprüfen"):
             if ausgewählt is None:
                 st.warning("Bitte wähle eine Antwort aus.")
                 st.stop()
-
+    
             richtige_antwort = frage['options'][frage['correct_index']]
             gegebene_antwort = ausgewählt
             if gegebene_antwort == richtige_antwort:
@@ -143,14 +147,14 @@ if verfügbare_fragen:
 else:
     st.info("🎉 Alle Fragen in diesem Fach sind beantwortet!")
 
-if ss('falsch_beantwortete_ids', []):
-    if st.button('🔁 Falsch beantwortete Fragen wiederholen'):
-        ss_set('nur_falsche_wiederholung', True)
-        for k in ['aktuelle_frage', 'antwort_gegeben', f"antwort_radio-{ss('aktuelle_frage', {}).get('id', '')}"]:
-            k_full = f"{key_prefix}{k}"
-            if k_full in st.session_state:
-                del st.session_state[k_full]
-        st.rerun()
+    if ss('falsch_beantwortete_ids', []):
+        if st.button('🔁 Falsch beantwortete Fragen wiederholen'):
+            ss_set('nur_falsche_wiederholung', True)
+            for k in ['aktuelle_frage', 'antwort_gegeben', f"antwort_radio-{ss('aktuelle_frage', {}).get('id', '')}"]:
+                k_full = f"{key_prefix}{k}"
+                if k_full in st.session_state:
+                    del st.session_state[k_full]
+            st.rerun()
 
 # -------------------- Statistik & Optionen --------------------
 st.sidebar.markdown("---")
