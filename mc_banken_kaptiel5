@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Was versteht man unter einer kryptographischen Hashfunktion?",
+    "options": [
+      "Einen Algorithmus, der Daten komprimiert und einen festen, eindeutigen Wert berechnet",
+      "Eine Technik, die ausschließlich zur Datenverschlüsselung genutzt wird",
+      "Einen Zufallsgenerator zur Erzeugung von Schlüsselmaterial",
+      "Eine Datenbank für digitale Zertifikate"
+    ],
+    "correct_index": 0,
+    "explanation": "Eine kryptographische Hashfunktion nimmt eine Eingabe beliebiger Länge und gibt einen festen, eindeutigen Hash-Wert aus, der die Daten eindeutig repräsentiert."
+  },
+  {
+    "question": "Welche Eigenschaft trifft NICHT auf kryptographische Hashfunktionen zu?",
+    "options": [
+      "Deterministisch",
+      "Kollisionsresistent",
+      "Variable Ausgabelänge abhängig von der Eingabelänge",
+      "Einwegfunktion"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine kryptographische Hashfunktion gibt immer eine feste Länge aus, egal wie groß der Eingabe-Text ist."
+  },
+  {
+    "question": "Welcher Schlüssel wird zur Erstellung einer digitalen Signatur benutzt?",
+    "options": [
+      "Der öffentliche Schlüssel",
+      "Der private Schlüssel",
+      "Ein zufälliger Sitzungsschlüssel",
+      "Kein Schlüssel, es reicht der Hash der Nachricht"
+    ],
+    "correct_index": 1,
+    "explanation": "Der private Schlüssel des Signierers wird verwendet, um die digitale Signatur zu erstellen. Die Empfänger nutzen dann den öffentlichen Schlüssel zur Prüfung."
+  },
+  {
+    "question": "Warum ist eine digitale Signatur wichtig?",
+    "options": [
+      "Sie vergrößert die Nachricht automatisch",
+      "Sie erlaubt es, die Nachricht zu komprimieren",
+      "Sie ermöglicht die Authentizität und Integrität der Nachricht zu gewährleisten",
+      "Sie ersetzt die symmetrische Verschlüsselung"
+    ],
+    "correct_index": 2,
+    "explanation": "Digitale Signaturen gewährleisten die Echtheit der Nachricht und dass sie nicht verändert wurde, da jede Änderung die Signatur ungültig machen würde."
+  },
+  {
+    "question": "Was ist die Merkle-Wurzel in einem Merkle-Baum?",
+    "options": [
+      "Der Hash-Wert der größten Datei",
+      "Der oberste Hash-Wert, der aus allen Blatt-Hashes berechnet wird",
+      "Die Summe der Werte aller Blätter",
+      "Die ID des ersten Blattes"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Merkle-Wurzel fasst rekursiv die Hash-Werte aller Daten zu einem einzelnen Wert zusammen und repräsentiert die Integrität des gesamten Baumes."
+  },
+  {
+    "question": "Warum sind Merkle-Bäume besonders nützlich bei der Integritätsprüfung großer Datensätze?",
+    "options": [
+      "Weil sie die Daten automatisch verschlüsseln",
+      "Weil sie schnelle und effiziente Integritätsprüfungen ermöglichen",
+      "Weil sie die Daten vor Diebstahl schützen",
+      "Weil sie die Speichergröße der Daten verringern"
+    ],
+    "correct_index": 1,
+    "explanation": "Merkle-Bäume erlauben es, Änderungen in einem großen Datensatz schnell zu erkennen, da sich der Merkle-Wurzelwert ändert, sobald auch nur ein einziges Blatt verändert wird."
+  },
+  {
+    "question": "Welche Aussage beschreibt die Unveränderlichkeit (Immutability) der Daten am besten?",
+    "options": [
+      "Die Daten können leicht gelöscht oder verändert werden",
+      "Die Daten werden regelmäßig automatisch aktualisiert",
+      "Die Daten können nach der Speicherung nicht mehr verändert werden, ohne dass der Hash-Wert und die Signatur ungültig werden",
+      "Die Daten werden automatisch komprimiert und archiviert"
+    ],
+    "correct_index": 2,
+    "explanation": "Unveränderlichkeit bedeutet, dass jede nachträgliche Änderung sofort auffällt, da der zugehörige Hash und die Signatur nicht mehr passen."
+  },
+  {
+    "question": "Welche Formel beschreibt die Kontostandsänderung in einem Kontomodell der Form A(t+1,i)?",
+    "options": [
+      "A(t+1,i) = A(t,i) - w(t+1,i) + d(t+1,i)",
+      "A(t+1,i) = A(t,i) + w(t+1,i) + d(t+1,i)",
+      "A(t+1,i) = w(t+1,i) - d(t+1,i)",
+      "A(t+1,i) = d(t+1,i) - w(t+1,i) - A(t,i)"
+    ],
+    "correct_index": 0,
+    "explanation": "Der neue Kontostand entspricht dem alten Kontostand minus der Auszahlungen plus der Einzahlungen zur nächsten Zeit t+1."
+  },
+  {
+    "question": "Wozu dient der Transfernachrichtsmechanismus t(t,i,j)?",
+    "options": [
+      "Er überträgt den Kontostand automatisch auf andere Konten",
+      "Er stellt die Nachricht dar, die beim Transfer vom Konto i an Konto j gesendet wird",
+      "Er speichert die Transaktionshistorie dauerhaft auf der Blockchain",
+      "Er generiert die digitale Signatur der Transaktion"
+    ],
+    "correct_index": 1,
+    "explanation": "t(t,i,j) beschreibt die Transfernachricht, die beim Senden einer Transaktion erstellt und an das Zielkonto geschickt wird."
+  },
+  {
+    "question": "Was passiert, wenn eine Transfernachricht bei der Zielbank abgelehnt wird?",
+    "options": [
+      "Die Nachricht geht verloren und der Empfänger erhält kein Geld",
+      "Die Bank leitet automatisch ein zweites Konto ein",
+      "Die Nachricht wird zurückgeschickt und der ursprüngliche Kontostand des Absenders bleibt unverändert",
+      "Die Nachricht wartet ewig auf Bestätigung"
+    ],
+    "correct_index": 2,
+    "explanation": "Wird die Nachricht abgelehnt, erfolgt keine Gutschrift beim Empfänger und der ursprüngliche Kontostand beim Sender bleibt unverändert."
+  }
+]
