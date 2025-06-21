@@ -10,16 +10,16 @@ st.title("📘 Interaktive LernApp")
 # -------------------- Fachauswahl --------------------
 st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_container_width=True)
 st.sidebar.title("📚 Fachauswahl")
-    #"Doppelte Buchführung": "mc_bank_Kapitel2.json",    #"Hashes, Keys und Signaturen": "mc_bank_Kapitel4.json",    #"Zins, Diskontierung": "mc_bank_Kapitel6.json",
-    #"Bankprodukte": "mc_bank_Kapitel7.json",
-    #"Simulatione/Risikomessung": "mc_bank_Kapitel10.json",
+   
 verfügbare_fächer = {
     "Einführung Banken": "mc_bank_Kapitel1.json",
-
+    "Doppelte Buchführung": "mc_bank_Kapitel2.json",
     "Modellierung von Banken":"mc_bank_Kapitel3.json",
-
+    "Hashes, Keys und Signaturen": "mc_bank_Kapitel4.json",
     "Transaktionen/Architektur": "mc_bank_Kapitel5.json",
-
+    "Zins, Diskontierung": "mc_bank_Kapitel6.json",
+    "Bankprodukte": "mc_bank_Kapitel7.json",
+    "Simulatione/Risikomessung": "mc_bank_Kapitel10.json",
     "Deep Learning": "mc_questions_with_explanations.json",
     "Deep Learning for pros": "mc_DL_next_level.json",
     "NLP": "mc_NLP.json",
