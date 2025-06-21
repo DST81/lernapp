@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Welche der folgenden Dienstleistungen gehört typischerweise zu den Kernleistungen einer Retailbank?",
+    "options": [
+      "Handel mit Derivaten",
+      "Bereitstellung von Giro- und Sparkonten",
+      "Organisation von Börsengängen",
+      "Handel mit Rohstoffen"
+    ],
+    "correct_index": 1,
+    "explanation": "Retailbanken fokussieren sich auf Privat- und Kleingewerbekunden und bieten vor allem Konten, Zahlungsverkehr und einfache Kredite an."
+  },
+  {
+    "question": "Welche Aufgabe übernimmt der Zinsüberschuss bei der Betriebswirtschaft einer Bank?",
+    "options": [
+      "Er entspricht ausschließlich den Beratungserträgen der Bank.",
+      "Er ergibt sich aus der Differenz von Einlagen- und Kreditzinsen und ist eine wesentliche Ertragsquelle.",
+      "Er ist identisch mit der Bankgebühr.",
+      "Er bezeichnet die Gesamtheit der Personalaufwendungen der Bank."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Zinsspanne, also die Differenz zwischen den Zinsen auf Einlagen und Kredite, ist die zentrale Ertragsquelle der klassischen Bankgeschäfte."
+  },
+  {
+    "question": "Welche der folgenden Funktionen ist ein typisches Merkmal eines Core-Banking-Systems?",
+    "options": [
+      "Verwaltung der Kundendaten und der Konten sowie die Buchung der Transaktionen",
+      "Durchführung komplexer Investmentbanking-Deals",
+      "Bereitstellung von Börsenkursen in Echtzeit",
+      "Erstellung von Versicherungsverträgen"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Core-Banking-System ist der zentrale Bestandteil der IT einer Retailbank und ermöglicht die Kontoführung und die Abwicklung von Zahlungen und Transaktionen."
+  },
+  {
+    "question": "Welche volkswirtschaftliche Funktion übernehmen Banken hauptsächlich durch die Kreditvergabe?",
+    "options": [
+      "Sie verhindern die Inflation.",
+      "Sie stellen der Wirtschaft Kapital zur Verfügung und fördern so Investitionen und Wachstum.",
+      "Sie verwalten ausschließlich Kundeneinlagen.",
+      "Sie übernehmen die Aufgabe der Zentralbanken."
+    ],
+    "correct_index": 1,
+    "explanation": "Banken vergeben Kredite und ermöglichen so die Finanzierung von Unternehmen und Haushalten, was das Wirtschaftswachstum unterstützt."
+  },
+  {
+    "question": "Worin besteht der Zweck eines Systems der Aufzeichnungen in der Bank-IT?",
+    "options": [
+      "Es ermöglicht die Buchung neuer Kredite.",
+      "Es erfasst und speichert alle relevanten Daten, um regulatorische und betriebliche Anforderungen zu erfüllen.",
+      "Es reduziert die Kosten der IT-Infrastruktur.",
+      "Es regelt ausschließlich den physischen Zugang zu Bankgebäuden."
+    ],
+    "correct_index": 1,
+    "explanation": "Systeme der Aufzeichnungen gewährleisten die Erfassung und Speicherung aller Daten aus Prozessen und Transaktionen für die interne und externe Kontrolle und Berichterstattung."
+  },
+  {
+    "question": "Welche der folgenden Tätigkeiten fällt typischerweise nicht in die Verantwortung einer Retailbank?",
+    "options": [
+      "Vermögensverwaltung und Finanzberatung",
+      "Bereitstellung von Girokonten und Sparkonten",
+      "Handel mit komplexen Derivaten am internationalen Kapitalmarkt",
+      "Vergabe von Hypotheken und Verbraucherkrediten"
+    ],
+    "correct_index": 2,
+    "explanation": "Retailbanken fokussieren sich auf das Massengeschäft mit Privat- und KMU-Kunden. Der komplexe Handel mit Derivaten ist Aufgabe von Investmentbanken."
+  },
+  {
+    "question": "Warum sind genaue Aufzeichnungen der Kunden- und Transaktionsdaten für Banken besonders wichtig?",
+    "options": [
+      "Sie verbessern ausschließlich die Werbung der Bank.",
+      "Sie gewährleisten Datensicherheit, ermöglichen Finanzplanung und stellen die Einhaltung regulatorischer Vorgaben sicher.",
+      "Sie beschleunigen die Kontoeröffnung.",
+      "Sie werden nur aus steuerlichen Gründen geführt."
+    ],
+    "correct_index": 1,
+    "explanation": "Die umfassende Dokumentation ist notwendig, um rechtlichen Verpflichtungen nachzukommen, die Geschäftstätigkeit zu überwachen und Risiken zu steuern."
+  },
+  {
+    "question": "Welche Art von Risiken muss die IT einer Bank besonders beachten, wenn es um die Kreditvergabe geht?",
+    "options": [
+      "Technologische Innovationsrisiken",
+      "Ausfallrisiken der Kreditnehmer und Liquiditätsrisiken der Bank",
+      "Risiken der Buchungsgeschwindigkeit",
+      "Allein Umweltrisiken"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei der Kreditvergabe entstehen Ausfallrisiken, wenn der Kunde nicht zahlen kann, und Liquiditätsrisiken, wenn zu viele Kunden gleichzeitig ihre Einlagen abziehen."
+  },
+  {
+    "question": "Welches der folgenden Systeme unterstützt Banken bei der Prüfung der Bonität von Kreditnehmern?",
+    "options": [
+      "Wertpapierhandelssystem",
+      "Kreditsystem (Loan Management System)",
+      "Online-Banking-Plattform",
+      "Dokumentenmanagement-System"
+    ],
+    "correct_index": 1,
+    "explanation": "Kreditsysteme prüfen die Kreditwürdigkeit, verwalten den Kreditprozess und kommunizieren dafür auch mit externen Auskunfteien."
+  },
+  {
+    "question": "Warum ist der Zahlungsverkehr aus volkswirtschaftlicher Perspektive zentral für die Wirtschaft?",
+    "options": [
+      "Er ermöglicht ausschließlich die Vergütung der Bankmitarbeiter.",
+      "Er ist die Grundlage für jede wirtschaftliche Transaktion und ermöglicht die reibungslose Abwicklung von Zahlungen.",
+      "Er erhöht die Steuern der Kunden.",
+      "Er ermöglicht die Preisbindung der Produkte."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein funktionierender Zahlungsverkehr ist unverzichtbar für die tägliche Wirtschaftstätigkeit und stellt sicher, dass Unternehmen und Privatpersonen Zahlungen tätigen und empfangen können."
+  },
+  {
+    "question": "Welche Aufgabe gehört NICHT zu einem Risikomanagement-System einer Retailbank?",
+    "options": [
+      "Szenariorechnungen und Stresstests durchführen",
+      "Kreditrisiken überwachen und bewerten",
+      "Kampagnen zur Neukundengewinnung planen",
+      "Einhaltung regulatorischer Vorgaben (Basel III/IV) sicherstellen"
+    ],
+    "correct_answer": 2,
+    "explanation": "Risikomanagement-Systeme dienen der Analyse und Kontrolle von Risiken sowie der Einhaltung regulatorischer Vorschriften. Die Planung von Neukundengewinnung ist eher Aufgabe des Marketings."
+  },
+  {
+    "question": "Warum ist das Treasury- und Liquiditätsmanagement für eine Bank wichtig?",
+    "options": [
+      "Weil es die Kundendaten auf dem neuesten Stand hält.",
+      "Weil es die Verwaltung der Bankliquidität und die Einhaltung regulatorischer Liquiditätsquoten ermöglicht.",
+      "Weil es automatisch neue Kreditverträge erstellt.",
+      "Weil es ausschließlich für die Kontoführung der Privatkunden zuständig ist."
+    ],
+    "correct_answer": 1,
+    "explanation": "Das Treasury- und Liquiditätsmanagement steuert Kapitalflüsse und Refinanzierung, überwacht die Bankliquidität und stellt die Einhaltung der Liquiditätsvorschriften sicher."
+  },
+  {
+    "question": "Welche Aussage zu Verträgen bei einer Bank ist richtig?",
+    "options": [
+      "Verträge definieren nur die technischen Abläufe der Bank-IT-Systeme.",
+      "Banken existieren rechtlich betrachtet aus der Summe der Verträge mit Kunden und Geschäftspartnern.",
+      "Verträge in einer Bank gelten nur für Sparkonten, nicht für Kredite oder andere Produkte.",
+      "Verträge müssen nie schriftlich festgehalten werden."
+    ],
+    "correct_answer": 1,
+    "explanation": "Banken sind rechtlich als Summe ihrer Vertragsbeziehungen zu Kunden, Partnern und Mitarbeitern definiert. Alle Rechte und Pflichten leiten sich aus diesen Verträgen ab."
+  },
+  {
+    "question": "Warum muss jede Transaktion in der Buchhaltung einer Bank doppelt erfasst werden (Soll und Haben)?",
+    "options": [
+      "Damit die Buchhaltung doppelt so viel Arbeit hat.",
+      "Um die regulatorischen Kontrollen der Aufsicht zu erschweren.",
+      "Um sicherzustellen, dass die Bilanz (Aktiva = Passiva) immer ausgeglichen ist und Buchungsfehler besser erkannt werden.",
+      "Um die Kontoauszüge der Kunden zu verlängern."
+    ],
+    "correct_answer": 2,
+    "explanation": "Die doppelte Buchführung gewährleistet, dass jeder Geschäftsfall immer die Bilanzgleichung wahrt. Gleichzeitig werden Fehler leichter erkannt und der Buchungsprozess ist transparent und nachvollziehbar."
+  },
+  {
+    "question": "Welches der folgenden Beispiele beschreibt eine Transaktion gemäß der Vertragsbeziehung am besten?",
+    "options": [
+      "Die Erstellung eines neuen Kontovertrags durch die Bank.",
+      "Die monatliche Zinsgutschrift auf einem Sparkonto aufgrund der Vertragsvereinbarung.",
+      "Die Entwicklung neuer Software für das Online-Banking der Bank.",
+      "Die Erstellung eines Finanzberichts für die Aufsichtsbehörde."
+    ],
+    "correct_answer": 1,
+    "explanation": "Transaktionen sind konkrete Aktionen, die aus einem Vertrag entstehen. Die Zinsgutschrift ist eine vertraglich festgelegte Leistung der Bank, die regelmäßig durchgeführt und verbucht wird."
+  },
+  {
+    "question": "Warum sind Ereignisse zentral für die Nachvollziehbarkeit von Bankverträgen und deren Zustand?",
+    "options": [
+      "Weil sie die IT-Kosten der Bank senken",
+      "Weil sie die Beziehung zu Regulatoren verbessern",
+      "Weil sie jeden Schritt der Vertragserfüllung dokumentieren und nicht veränderbar gespeichert werden",
+      "Weil sie ausschließlich für interne Audits erstellt werden"
+    ],
+    "correct_answer": 2,
+    "explanation": "Ereignisse wie Zahlungen und Informationen zeigen, ob die Verpflichtungen aus einem Vertrag erbracht wurden oder nicht. Sie müssen unveränderbar und lückenlos gespeichert werden, um die Vertragserfüllung prüfen zu können."
+  },
+  {
+    "question": "Welche Aufgabe übernehmen Risikomanagement-Systeme in einer Retailbank laut diesem Abschnitt?",
+    "options": [
+      "Sie führen ausschließlich Wertpapiergeschäfte durch",
+      "Sie überwachen und bewerten Risiken (Kredit-, Markt- und Liquiditätsrisiken) und unterstützen Entscheidungsprozesse zu Risikostrategien",
+      "Sie erstellen automatisch die Monatsabrechnungen der Kunden",
+      "Sie berechnen die Buchungssätze der doppelten Buchführung"
+    ],
+    "correct_answer": 1,
+    "explanation": "Risikomanagement-Systeme erfassen Risiken und deren Entwicklung, führen Stresstests und Szenariorechnungen durch und helfen der Bank bei der Festlegung ihrer Risikostrategien und der Einhaltung regulatorischer Vorgaben."
+  },
+  {
+    "question": "Warum ist die doppelte Buchführung zentral für die Modellierung von Banktransaktionen?",
+    "options": [
+      "Weil sie die Zinsentwicklung automatisch berechnet",
+      "Weil sie sicherstellt, dass jede Transaktion immer auf mindestens zwei Konten (Soll und Haben) gebucht und die Bilanzgleichung gewahrt wird",
+      "Weil sie erlaubt, Kundenkredite zu automatisieren",
+      "Weil sie die Einhaltung der Liquiditätsquoten garantiert"
+    ],
+    "correct_answer": 1,
+    "explanation": "Die doppelte Buchführung sorgt dafür, dass jeder Buchungsvorgang die Bilanzgleichung (Aktiva = Passiva) aufrechterhält und erleichtert die Kontrolle der Buchhaltung, da jeder Betrag sowohl im Soll als auch im Haben verbucht wird."
+  },
+  {
+    "question": "Welche der folgenden Aussagen beschreibt am besten die Rolle der Transaktionen bei der Vertragserfüllung?",
+    "options": [
+      "Transaktionen ersetzen die Vertragsdokumente und gelten rechtlich als Vertrag",
+      "Transaktionen führen die vertraglich vereinbarten Leistungen aus und verändern den Zustand eines Vertrags (z. B. die Rückzahlung eines Kredits)",
+      "Transaktionen spielen nur bei der Kontoeröffnung eine Rolle und nicht bei der laufenden Vertragserfüllung",
+      "Transaktionen sind optional und nur für interne Analysen der Bank wichtig"
+    ],
+    "correct_answer": 1,
+    "explanation": "Transaktionen konkretisieren die in einem Vertrag vereinbarten Verpflichtungen, z. B. die Zahlung einer Rate aus einem Kreditvertrag. Sie ändern laufend den Status des Vertrags und machen die Vertragserfüllung nachvollziehbar."
+  },
+  {
+    "question": "Warum muss eine Bank die Vertragspartner genau kennen und im System erfassen?",
+    "options": [
+      "Weil es die IT-Wartung erleichtert",
+      "Weil es die Bewertung der Filialen erleichtert",
+      "Weil sie so die Rechte und Verpflichtungen jeder Partei zuordnen und regulatorische und rechtliche Vorgaben (z. B. Geldwäscheprävention) erfüllen kann",
+      "Weil sie so die Marketingaktionen besser planen kann"
+    ],
+    "correct_answer": 2,
+    "explanation": "Jede Vertragspartei muss eindeutig identifiziert sein, damit die Bank ihre vertraglichen und regulatorischen Pflichten erfüllen und die Transaktionen und Verpflichtungen der richtigen Partei zuordnen kann."
+  }
+]
