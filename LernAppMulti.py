@@ -12,7 +12,7 @@ st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
     "Einführung Banken": "mc_bank_Kapitel1.json",
-    "Doppelte Buchführung: "mc_bank_Kapitel2.json",
+    "Doppelte Buchführung": "mc_bank_Kapitel2.json",
     "Modellierung von Banken":"mc_bank_Kapitel3.json",
     "Hashes, Keys und Signaturen": "mc_bank_Kapitel4.json",
     "Transaktionen/Architektur": "mc_bank_Kapitel5.json",
