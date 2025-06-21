@@ -1,1 +1,222 @@
-
+[
+  {
+    "question": "Was ist ein Hauptmerkmal von Hashfunktionen?",
+    "options": [
+      "Sie geben immer denselben Hashwert für unterschiedliche Eingaben zurück",
+      "Sie sind bidirektional berechenbar",
+      "Sie liefern einen festen Ausgabewert unabhängig von der Eingabelänge",
+      "Sie benötigen einen privaten Schlüssel"
+    ],
+    "correct_index": 2,
+    "explanation": "Hashfunktionen erzeugen eine feste Ausgabelänge, egal wie groß die Eingabe ist."
+  },
+  {
+    "question": "Was passiert bei einer Hash-Kollision?",
+    "options": [
+      "Zwei verschiedene Eingaben liefern denselben Hashwert",
+      "Ein Hashwert ist zu lang",
+      "Zwei identische Eingaben ergeben unterschiedliche Hashwerte",
+      "Die Hashfunktion liefert keinen Wert zurück"
+    ],
+    "correct_index": 0,
+    "explanation": "Eine Kollision tritt auf, wenn zwei unterschiedliche Eingaben denselben Hashwert erzeugen."
+  },
+  {
+    "question": "Wofür werden Hashfunktionen in digitalen Signaturen genutzt?",
+    "options": [
+      "Zur Speicherung von Passwortlisten",
+      "Zur schnellen Datenkompression",
+      "Zur Authentifizierung und Sicherstellung der Datenintegrität",
+      "Zur Indexierung von Blockchains"
+    ],
+    "correct_index": 2,
+    "explanation": "Digitale Signaturen verwenden Hashfunktionen, um die Integrität und Authentizität von Daten zu überprüfen."
+  },
+  {
+    "question": "Welche Eigenschaft beschreibt die 'Preimage Resistance' einer Hashfunktion?",
+    "options": [
+      "Es ist unmöglich, die Länge des Inputs zu erraten",
+      "Es ist schwierig, eine Eingabe zu einem gegebenen Hashwert zu berechnen",
+      "Der Hashwert ist stets eindeutig",
+      "Die Berechnung benötigt keine Zeit"
+    ],
+    "correct_index": 1,
+    "explanation": "Preimage Resistance bedeutet, dass es sehr schwer ist, eine Eingabe zu finden, die zu einem bestimmten Hash führt."
+  },
+  {
+    "question": "Was ist ein Hash-Pointer?",
+    "options": [
+      "Ein Zeiger auf eine Speicheradresse, der zusätzlich einen Hashwert enthält",
+      "Ein zufällig generierter Hashwert",
+      "Ein öffentlicher Schlüssel in asymmetrischer Kryptografie",
+      "Ein Name für Blockchain-Benutzer"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Hash-Pointer enthält sowohl die Adresse als auch den Hash der referenzierten Daten zur Integritätsprüfung."
+  },
+  {
+    "question": "Worin liegt der Vorteil eines Merkle-Baums bei großen Datenmengen?",
+    "options": [
+      "Er speichert alle Transaktionen in einer Datenbank",
+      "Er verschlüsselt Daten symmetrisch",
+      "Er ermöglicht eine schnelle und sichere Verifikation einzelner Daten",
+      "Er erlaubt den Zugriff auf private Schlüssel"
+    ],
+    "correct_index": 2,
+    "explanation": "Merkle-Bäume ermöglichen die effiziente Verifikation großer Datenmengen durch Hash-Verkettung."
+  },
+  {
+    "question": "Was beschreibt das Avalanche-Effekt-Prinzip im Hashing?",
+    "options": [
+      "Die Ausgabe des Hashwerts ist besonders lang",
+      "Ein kleiner Unterschied in der Eingabe erzeugt einen stark unterschiedlichen Hash",
+      "Hashwerte bleiben bei kleinen Änderungen gleich",
+      "Nur die ersten Bits eines Hashes sind relevant"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein kleiner Unterschied in der Eingabe führt bei guten Hashfunktionen zu einem komplett anderen Hashwert – das nennt man Avalanche-Effekt."
+  },
+  {
+    "question": "Wofür wird das sogenannte 'Salting' verwendet?",
+    "options": [
+      "Zur besseren Entschlüsselung",
+      "Zur Kollisionsreduktion bei Verschlüsselung",
+      "Zur Erzeugung kürzerer Hashwerte",
+      "Zur Erhöhung der Sicherheit bei Passwort-Hashing"
+    ],
+    "correct_index": 3,
+    "explanation": "Beim Salting wird dem Passwort ein zufälliger Wert hinzugefügt, um gleiche Passwörter unterschiedlich zu hashen und Angriffe zu erschweren."
+  },
+  {
+    "question": "Was bedeutet Rehashing in Hash-Tabellen?",
+    "options": [
+      "Daten werden gelöscht",
+      "Hashwerte werden zweimal gespeichert",
+      "Die Hash-Tabelle wird vergrößert und die Werte neu berechnet",
+      "Hashwerte werden in Klartext umgewandelt"
+    ],
+    "correct_index": 2,
+    "explanation": "Beim Rehashing wird die Hash-Tabelle bei hohem Füllgrad vergrößert und alle Daten neu einsortiert."
+  },
+  {
+    "question": "Welche Eigenschaft beschreibt Collision Resistance?",
+    "options": [
+      "Zwei gleiche Eingaben erzeugen unterschiedliche Hashes",
+      "Zwei verschiedene Eingaben erzeugen immer den gleichen Hash",
+      "Es ist schwierig, zwei verschiedene Eingaben mit demselben Hashwert zu finden",
+      "Die Hashfunktion hat einen konstanten Speicherbedarf"
+    ],
+    "correct_index": 2,
+    "explanation": "Collision Resistance bedeutet, dass es sehr unwahrscheinlich ist, zwei unterschiedliche Eingaben mit demselben Hashwert zu erzeugen."
+  },
+  {
+    "question": "Was ist das Ziel digitaler Signaturen in Banktransaktionen?",
+    "options": [
+      "Reduktion der Dateigröße",
+      "Bestätigung der Herkunft und Unveränderbarkeit",
+      "Erhöhung der Rechenlast",
+      "Erstellung von Merkle-Bäumen"
+    ],
+    "correct_index": 1,
+    "explanation": "Digitale Signaturen bestätigen, dass die Transaktion authentisch ist und nicht verändert wurde."
+  },
+  {
+    "question": "Was geschieht, wenn ein Element in einem Merkle-Baum verändert wird?",
+    "options": [
+      "Der gesamte Baum wird automatisch gelöscht",
+      "Der Merkle-Root ändert sich",
+      "Die Veränderung ist nicht feststellbar",
+      "Die Struktur wird zu einer Hash-Tabelle"
+    ],
+    "correct_index": 1,
+    "explanation": "Wenn eine Transaktion im Merkle-Baum verändert wird, ändert sich die gesamte Hashstruktur bis zur Wurzel – und damit der Merkle-Root."
+  },
+  {
+    "question": "Warum verwendet man Hashfunktionen in Blockchains?",
+    "options": [
+      "Zur Datenkompression",
+      "Zur effizienten Datenstrukturierung",
+      "Zur Sicherstellung der Integrität durch Verkettung",
+      "Zur Rückgewinnung von Originaldaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Hashfunktionen verketten Blöcke kryptographisch miteinander, um deren Unveränderbarkeit zu gewährleisten."
+  },
+  {
+    "question": "Was unterscheidet Hashing von Verschlüsselung?",
+    "options": [
+      "Hashing ist reversibel",
+      "Hashing stellt Vertraulichkeit sicher",
+      "Hashing ist eine Einwegfunktion, Verschlüsselung nicht",
+      "Hashing basiert auf privaten Schlüsseln"
+    ],
+    "correct_index": 2,
+    "explanation": "Hashing ist eine Einwegfunktion – das Original kann nicht zurückgewonnen werden, im Gegensatz zur Verschlüsselung."
+  },
+  {
+    "question": "Wozu dient ein Merkle-Proof?",
+    "options": [
+      "Zur Verschlüsselung von Knoten",
+      "Zum Nachweis der Existenz eines Elements im Merkle-Baum",
+      "Zur Erzeugung des Merkle-Roots",
+      "Zur Signierung eines Blocks"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Merkle-Proof erlaubt die Bestätigung, dass eine Transaktion Teil eines Merkle-Baums ist – ohne den gesamten Baum zu prüfen."
+  },
+  {
+    "question": "Was ist ein digitaler Fingerabdruck im Kontext der Kryptografie?",
+    "options": [
+      "Ein QR-Code zur Authentifizierung",
+      "Ein biometrisches Merkmal",
+      "Ein Hashwert, der Daten eindeutig identifiziert",
+      "Ein Benutzername mit Passwort"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Hashwert wird oft als digitaler Fingerabdruck bezeichnet, da er Daten eindeutig identifiziert."
+  },
+  {
+    "question": "Was ist ein Vorteil zentralisierter Ledger mit Hashing?",
+    "options": [
+      "Vollständige Anonymität",
+      "Unveränderbarkeit durch digitale Signaturen und Hashing",
+      "Jeder Teilnehmer kann Daten ändern",
+      "Keine Notwendigkeit für Datenüberprüfung"
+    ],
+    "correct_index": 1,
+    "explanation": "Durch die Kombination von Hashing und digitalen Signaturen entsteht auch in zentralen Systemen ein hohes Maß an Datenintegrität."
+  },
+  {
+    "question": "Wie heißt der Vorgang, bei dem Transaktionen durch Hashes miteinander verbunden werden?",
+    "options": [
+      "Block-Verkettung",
+      "Hash-Chaining",
+      "Transaktions-Codierung",
+      "Daten-Aggregation"
+    ],
+    "correct_index": 1,
+    "explanation": "Hash-Chaining verbindet Transaktionen oder Blöcke kryptografisch, sodass jede Veränderung sichtbar wird."
+  },
+  {
+    "question": "Wofür steht SHA in 'SHA-256'?",
+    "options": [
+      "Secure Hash Algorithm",
+      "Symmetric Hash Adapter",
+      "Standard Hash Application",
+      "Secure Host Access"
+    ],
+    "correct_index": 0,
+    "explanation": "SHA steht für 'Secure Hash Algorithm', ein weit verbreiteter kryptografischer Hashalgorithmus."
+  },
+  {
+    "question": "Was stellt die 'Load Factor' bei Hash-Tabellen dar?",
+    "options": [
+      "Die Länge der Hashwerte",
+      "Das Verhältnis belegter Plätze zur Gesamtkapazität",
+      "Die Anzahl möglicher Kollisionen",
+      "Die Anzahl verknüpfter Listen"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Load Factor misst, wie voll eine Hash-Tabelle ist, und hilft bei der Entscheidung, wann Rehashing notwendig ist."
+  }
+]
