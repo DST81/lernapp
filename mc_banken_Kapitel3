@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Worauf beruhen Geschäftsbeziehungen zwischen Bank und Kunde hauptsächlich?",
+    "options": [
+      "Auf mündlichen Absprachen",
+      "Auf Verträgen",
+      "Auf Zufall",
+      "Auf staatlichen Subventionen"
+    ],
+    "correct_index": 1,
+    "explanation": "Geschäftsbeziehungen beruhen auf vertraglichen Vereinbarungen, die Rechte und Pflichten der Parteien regeln."
+  },
+  {
+    "question": "Welche Arten von Verträgen gibt es typischerweise zwischen Bank und Kunde?",
+    "options": [
+      "Kaufvertrag, Mietvertrag, Liefervertrag",
+      "Kontoeröffnungsvertrag, Kreditvertrag, Depotvertrag",
+      "Arbeitsvertrag und Ehevertrag",
+      "Nur Leasingvertrag"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Bank schließt mit Kunden Kontoeröffnungs-, Kredit- und Depotverträge, nicht etwa Kauf- oder Eheverträge."
+  },
+  {
+    "question": "Welche Rolle spielen Transaktionen innerhalb der Bank?",
+    "options": [
+      "Sie dienen nur der Archivierung",
+      "Sie setzen die vertraglichen Vereinbarungen in konkrete finanzielle Bewegungen um",
+      "Sie verhindern Buchungsfehler",
+      "Sie werden ausschließlich manuell verarbeitet"
+    ],
+    "correct_index": 1,
+    "explanation": "Transaktionen realisieren die vertraglich vereinbarten Bewegungen auf Konten."
+  },
+  {
+    "question": "Warum ändert jede Transaktion häufig auch den Kontostand?",
+    "options": [
+      "Weil sie nur die AGB der Bank betrifft",
+      "Weil sie keine Wirkung hat",
+      "Weil sie Gutschriften oder Lastschriften ausführt, die sich auf Salden auswirken",
+      "Weil sie ausschließlich Zinsen berechnet"
+    ],
+    "correct_index": 2,
+    "explanation": "Jede Transaktion bucht Beträge zu oder ab, was automatisch den Kontostand verändert."
+  },
+  {
+    "question": "Welche Aussage zu langfristigen Verträgen ist richtig?",
+    "options": [
+      "Verträge gelten nur für eine Transaktion",
+      "Sie regeln die Bedingungen, unter denen regelmäßig Transaktionen stattfinden",
+      "Sie werden jede Woche erneuert",
+      "Sie gelten nur für Kassenoperationen"
+    ],
+    "correct_index": 1,
+    "explanation": "Langfristige Verträge definieren wiederkehrende Geschäftsbeziehungen und deren Transaktionen."
+  },
+  {
+    "question": "Warum ist doppelte Buchführung wichtig?",
+    "options": [
+      "Sie ist gesetzlich verboten",
+      "Sie hilft, dass jeder Geschäftsvorfall immer als Soll- und Haben-Buchung erfasst wird",
+      "Sie ermöglicht die Löschung alter Buchungen",
+      "Sie ist nur bei Barzahlungen nötig"
+    ],
+    "correct_index": 1,
+    "explanation": "Die doppelte Buchführung sorgt dafür, dass jeder Geschäftsvorfall bilanziell ausgeglichen ist."
+  },
+  {
+    "question": "Welche Bilanzgleichung muss immer gelten?",
+    "options": [
+      "Umsatz = Gewinn",
+      "Aktiva = Passiva",
+      "Einnahmen = Ausgaben",
+      "Einlagen = Kredite"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Summe der Aktiva entspricht immer der Summe der Passiva in der Bilanz."
+  },
+  {
+    "question": "Welches Konto steigt bei einer Bareinzahlung durch den Kunden im Soll?",
+    "options": [
+      "Kundeneinlagen",
+      "Eigenkapital",
+      "Kasse der Bank",
+      "Kreditforderungen"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Kasse der Bank (ein Aktivkonto) wird bei Bareinzahlungen belastet (Soll-Buchung)."
+  },
+  {
+    "question": "Welche Buchung beschreibt die Ausgabe eines Kredits?",
+    "options": [
+      "Soll: Kundeneinlagen, Haben: Kreditforderungen",
+      "Soll: Kreditforderungen, Haben: Kundeneinlagen",
+      "Soll: Zinsaufwand, Haben: Eigenkapital",
+      "Soll: Kundenkonto, Haben: Zinsaufwand"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Bank gewährt einen Kredit, was die Kreditforderungen (Soll) und die Kundeneinlagen (Haben) erhöht."
+  },
+  {
+    "question": "Welche der folgenden Eigenschaften gehört zu ACID?",
+    "options": [
+      "Authentizität",
+      "Dauerhaftigkeit (Durability)",
+      "Flexibilität",
+      "Integrität der Passwörter"
+    ],
+    "correct_index": 1,
+    "explanation": "Durability bedeutet, dass Transaktionen dauerhaft gespeichert bleiben, auch bei Systemfehlern."
+  },
+  {
+    "question": "Warum ist Atomarität bei Transaktionen wichtig?",
+    "options": [
+      "Damit Transaktionen immer schneller ausgeführt werden",
+      "Damit entweder alle Teilschritte ausgeführt oder alle zurückgerollt werden",
+      "Damit die Buchungskosten sinken",
+      "Damit der Kunde Zinsen spart"
+    ],
+    "correct_index": 1,
+    "explanation": "Atomarität garantiert, dass Transaktionen entweder vollständig oder gar nicht durchgeführt werden."
+  },
+  {
+    "question": "Was versteht man unter Clearing im Bankwesen?",
+    "options": [
+      "Die Reinigung der Buchhaltungsdaten",
+      "Die Verrechnung von Zahlungen zwischen Banken über ein Abwicklungssystem",
+      "Die Erstellung der Jahresbilanz",
+      "Die Genehmigung eines Kredits"
+    ],
+    "correct_index": 1,
+    "explanation": "Clearing bedeutet die zentrale Verrechnung der Zahlungsaufträge zwischen Banken."
+  },
+  {
+    "question": "Welche grundlegende Designregel meint das Single-Responsibility-Principle?",
+    "options": [
+      "Jede Klasse soll nur eine Aufgabe haben",
+      "Jede Klasse soll mindestens 10 Methoden enthalten",
+      "Jede Klasse soll alle Funktionen übernehmen",
+      "Jede Klasse muss mindestens zwei Verantwortlichkeiten haben"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Single-Responsibility-Prinzip besagt, dass jede Klasse genau eine Aufgabe haben sollte."
+  },
+  {
+    "question": "Welche Aufgabe hat der Transaktions-Manager?",
+    "options": [
+      "Er bewirbt die Bankprodukte",
+      "Er nimmt Transaktionen entgegen und prüft deren Zulässigkeit gegenüber Konten und Verträgen",
+      "Er berechnet Zinsen am Jahresende",
+      "Er erstellt die Jahresbilanz"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Transaktions-Manager validiert und verarbeitet Transaktionen gemäß Kontostand und Vertragsbedingungen."
+  },
+  {
+    "question": "Warum werden Transaktionen unveränderlich aufgezeichnet?",
+    "options": [
+      "Damit der Platz auf der Festplatte geschont wird",
+      "Damit sie jederzeit gelöscht werden können",
+      "Damit die Buchhaltung überprüfbar und manipulationssicher ist",
+      "Damit der Kunde sie bearbeiten kann"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Unveränderlichkeit sichert Nachvollziehbarkeit und Integrität der Buchungen."
+  },
+  {
+    "question": "Welcher Kontostatus verhindert Transaktionen?",
+    "options": [
+      "Offen",
+      "Gesperrt",
+      "Überzogen",
+      "Kreditwürdig"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein gesperrtes Konto lässt keine Transaktionen zu."
+  },
+  {
+    "question": "Welcher Prozess ist bei verteilten Transaktionen besonders wichtig?",
+    "options": [
+      "Zwei-Phasen-Commit-Protokoll (Two-Phase-Commit)",
+      "Handschriftliche Quittung",
+      "Postversand der Buchungsbelege",
+      "Kündigung der Konten"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Zwei-Phasen-Commit-Protokoll sichert verteilte Transaktionen atomar über mehrere Systeme hinweg."
+  },
+  {
+    "question": "Welche der folgenden ist KEINE typische Banktransaktion?",
+    "options": [
+      "Überweisung",
+      "Kontoeröffnung",
+      "Mietvertrag unterschreiben",
+      "Kreditrückzahlung"
+    ],
+    "correct_index": 2,
+    "explanation": "Mietvertrag unterschreiben gehört nicht zu typischen Banktransaktionen."
+  },
+  {
+    "question": "Warum ist das 'Open-Closed-Principle' wichtig?",
+    "options": [
+      "Damit bestehender Code verändert wird, wenn neue Funktionen hinzukommen",
+      "Damit bestehender Code unverändert bleiben und durch neue Funktionen erweitert werden kann",
+      "Damit die Software regelmäßig neugeschrieben werden muss",
+      "Damit der Kunde eigene Änderungen machen darf"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Prinzip ermöglicht Erweiterung ohne Änderung des bestehenden Codes und fördert Wartbarkeit."
+  },
+  {
+    "question": "Welche der folgenden Transaktionen erfordert eine Prüfung der verfügbaren Mittel?",
+    "options": [
+      "Eine Einzahlung",
+      "Eine Kontoeröffnung",
+      "Eine Überweisung",
+      "Die Kontoschließung"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine Überweisung erfordert die Prüfung, ob der Kunde genug Guthaben oder Kreditrahmen hat."
+  }
+]
