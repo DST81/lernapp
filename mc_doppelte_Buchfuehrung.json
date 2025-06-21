@@ -1,16 +1,5 @@
 [
   {
-    "question": "Wer veröffentlichte die erste systematische Abhandlung über die doppelte Buchführung?",
-    "options": [
-      "Adam Smith",
-      "John Maynard Keynes",
-      "Luca Pacioli",
-      "Max Weber"
-    ],
-    "correct_index": 2,
-    "explanation": "Luca Pacioli veröffentlichte 1494 die erste systematische Abhandlung über die doppelte Buchführung."
-  },
-  {
     "question": "Was ist das Hauptbuch in der Buchführung?",
     "options": [
       "Ein Buch zur Erfassung von Lagerbeständen",
