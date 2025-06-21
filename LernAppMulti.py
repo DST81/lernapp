@@ -11,9 +11,14 @@ st.title("📘 Interaktive LernApp")
 st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_container_width=True)
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
-    "Geschichte": "mc_Geschichte.json",
-    "BIO": "mc_bio.json",
-    "WR": "mc_wr.json",
+    "Einführung Banken": "mc_bank_Kapitel1.json",
+    "Doppelte Buchführung: "mc_bank_Kapitel2.json",
+    "Modellierung von Banken":"mc_bank_Kapitel3.json",
+    "Hashes, Keys und Signaturen": "mc_bank_Kapitel4.json",
+    "Transaktionen/Architektur": "mc_bank_Kapitel5.json",
+    "Zins, Diskontierung": "mc_bank_Kapitel6.json",
+    "Bankprodukte": "mc_bank_Kapitel7.json",
+    "Simulatione/Risikomessung": "mc_bank_Kapitel10.json",
     "Deep Learning": "mc_questions_with_explanations.json",
     "Deep Learning for pros": "mc_DL_next_level.json",
     "NLP": "mc_NLP.json",
@@ -168,29 +173,24 @@ st.sidebar.metric("Punktzahl", ss('score', 0))
 st.sidebar.metric("Beantwortet", len(ss('beantwortete_ids', [])))
 st.sidebar.metric("Noch offen", len(alle_fragen) - len(ss('beantwortete_ids', [])))
 
-nur_falsche = st.sidebar.checkbox("Nur falsch beantwortete wiederholen", value=ss('nur_falsche_wiederholung', False))
+# Button zum Anzeigen der falsch beantworteten Fragen
+if st.sidebar.button("Falsch beantwortete Fragen anzeigen"):
+    falsch_ids = ss('falsch_beantwortete_ids', [])
+    falsch_fragen = [f for f in alle_fragen if f['id'] in falsch_ids]
 
-if nur_falsche != ss('nur_falsche_wiederholung', False):
-    ss_set('nur_falsche_wiederholung', nur_falsche)
-
-    # Hole den passenden Fragenpool
-    if nur_falsche:
-        verfügbare_fragen_neu = [f for f in alle_fragen if f['id'] in ss('falsch_beantwortete_ids', [])]
+    if falsch_fragen:
+        st.sidebar.write("Falsch beantwortete Fragen:")
+        for frage in falsch_fragen:
+            st.sidebar.write(f"- {frage['text']}")
     else:
-        verfügbare_fragen_neu = [f for f in alle_fragen if f['id'] not in ss('beantwortete_ids', [])]
+        st.sidebar.write("Keine falsch beantworteten Fragen.")
 
-    if verfügbare_fragen_neu:
-        frage_neu = random.choice(verfügbare_fragen_neu)
-        ss_set('aktuelle_frage', frage_neu)
-        ss_set('antwort_gegeben', False)
-        # Antwort-Radio-Key ggf. löschen, damit Radio frisch ist
-        antwort_key = f"{key_prefix}antwort_radio-{frage_neu['id']}"
-        if antwort_key in st.session_state:
-            del st.session_state[antwort_key]
-    else:
-        ss_set('aktuelle_frage', None)
-        ss_set('antwort_gegeben', False)
-
+# Optional: Wenn du trotzdem eine einzelne Frage anzeigen willst,
+# kannst du z.B. hier eine Zufallsfrage aus den falsch beantworteten auswählen
+if 'falsch_beantwortete_ids' in st.session_state and st.session_state['falsch_beantwortete_ids']:
+    frage_neu = random.choice([f for f in alle_fragen if f['id'] in st.session_state['falsch_beantwortete_ids']])
+    st.write("Aktuelle falsch beantwortete Frage:")
+    st.write(frage_neu['text'])
 
 if st.sidebar.button("🔄 Spiel zurücksetzen"):
     if os.path.exists(SPEICHERDATEI):
