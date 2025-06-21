@@ -218,5 +218,60 @@
     ],
     "correct_index": 1,
     "explanation": "Der Load Factor misst, wie voll eine Hash-Tabelle ist, und hilft bei der Entscheidung, wann Rehashing notwendig ist."
+  },
+  {
+    "question": "Was ist eine Hash-Funktion?",
+    "options": [
+      "Eine Methode zur Sortierung von Daten nach Zeitstempel",
+      "Ein Verfahren zur reversiblen Verschlüsselung von Daten",
+      "Eine Technik zur Kompression von Audioinhalten",
+      "Ein Prozess, der Daten einem Index in einer Hash-Tabelle zuordnet"
+    ],
+    "correct_index": 3,
+    "explanation": "Hashing bezeichnet die Umwandlung eines Schlüssels in einen Indexwert mittels einer Hash-Funktion, um effizienten Datenzugriff zu ermöglichen."
+  },
+  {
+    "question": "Was beschreibt eine Hash-Funktion am genauesten?",
+    "options": [
+      "Sie analysiert große Datenbanken mit KI",
+      "Sie nimmt eine Eingabe und gibt einen festen Bytewert zurück, der als Index in einer Hash-Tabelle dient",
+      "Sie speichert Klartextdaten zur späteren Wiederverwendung",
+      "Sie erzeugt dynamische Schlüssel zur Laufzeit"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Hash-Funktion nimmt eine Eingabe und berechnet daraus einen Hashwert fester Länge, der als Index in einer Hash-Tabelle verwendet wird."
+  },
+  {
+    "question": "Was sind Hash-Kollisionen?",
+    "options": [
+      "Ein Absturz durch fehlerhafte Hash-Funktion",
+      "Zwei identische Eingaben, die zwei unterschiedliche Hashwerte liefern",
+      "Zwei unterschiedliche Eingaben, die denselben Hashwert ergeben",
+      "Eine doppelte Indexzuweisung bei linearer Suche"
+    ],
+    "correct_index": 2,
+    "explanation": "Hash-Kollisionen entstehen, wenn zwei verschiedene Eingaben denselben Hashwert erzeugen – ein Maß für die Qualität einer Hash-Funktion."
+  },
+  {
+    "question": "Was ist eine Hash-Tabelle?",
+    "options": [
+      "Ein statisches Array ohne Schlüsselbezug",
+      "Eine Liste, die sortierte Daten mit linearem Zugriff speichert",
+      "Eine Datenstruktur, die Schlüssel über Hashing mit Werten verbindet",
+      "Ein Datenformat für die Speicherung von Mediendateien"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine Hash-Tabelle ist eine Datenstruktur, die mittels Hash-Funktion Schlüssel auf eindeutige Indexwerte abbildet, um schnellen Zugriff auf die zugehörigen Daten zu ermöglichen."
+  },
+  {
+    "question": "Welche Anwendung gehört NICHT zu den typischen Einsätzen von Hashing?",
+    "options": [
+      "Passwortspeicherung durch gehashte Werte",
+      "Datenindexierung in Datenbanken",
+      "Sichere Datenkompression bei Videoformaten",
+      "Speicherung von Schlüssel-Wert-Paaren in Hash-Tabellen"
+    ],
+    "correct_index": 2,
+    "explanation": "Hashing wird nicht primär für Video-Komprimierung verwendet, sondern hauptsächlich für Passwortspeicherung, Datenindexierung und schnelle Suche in Schlüssel-Wert-Strukturen."
   }
 ]
