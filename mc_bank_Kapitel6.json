@@ -1,0 +1,444 @@
+[
+  {
+    "question": "Woraus ergibt sich der Wert eines Kontos laut Account Mathematics?",
+    "options": [
+      "Aus der Anzahl der Transaktionen pro Tag",
+      "Aus der Summe aller akzeptierten Transaktionen",
+      "Aus der Durchschnittssumme der Transaktionen",
+      "Aus der Anzahl der Abhebungen"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Kontowert entspricht der Summe aller akzeptierten Transaktionen. Diese müssen unveränderbar und nachprüfbar protokolliert werden."
+  },
+  {
+    "question": "Warum ist es wichtig, jede Transaktion digital zu signieren und zu hashen?",
+    "options": [
+      "Damit sie automatisch storniert werden kann",
+      "Damit die Transaktion leicht verändert werden kann",
+      "Damit sie unveränderbar und nachprüfbar ist",
+      "Damit der Kontostand sich automatisch aktualisiert"
+    ],
+    "correct_index": 2,
+    "explanation": "Signaturen und Hashes sorgen dafür, dass Transaktionen unveränderlich und nachweisbar bleiben, wodurch die Integrität und Nachprüfbarkeit gewährleistet ist."
+  },
+  {
+    "question": "Welche Aufgabe hat der öffentliche Schlüsselregister (Public Key Registry) laut dem Text?",
+    "options": [
+      "Es speichert die Kontostände aller Parteien",
+      "Es verifiziert die digitale Signatur jeder Transaktion",
+      "Es stellt die öffentlichen Schlüssel der Parteien zur Verfügung, damit Signaturen geprüft werden können",
+      "Es führt automatisch Geldtransfers aus"
+    ],
+    "correct_index": 2,
+    "explanation": "Das öffentliche Schlüsselregister stellt die öffentlichen Schlüssel bereit, damit die Signaturen der Transaktionen jederzeit überprüft werden können."
+  },
+  {
+    "question": "Wozu dienen sogenannte 'Public or Organizational Hash Registries'?",
+    "options": [
+      "Sie speichern digitale, signierte Transaktions-Hashes mit Zeitstempel zur Nachweisbarkeit",
+      "Sie führen die Konten der Kunden automatisch",
+      "Sie berechnen automatisch Zinsen",
+      "Sie verhindern Netzwerkzugriffe"
+    ],
+    "correct_index": 0,
+    "explanation": "Hash-Register speichern Transaktions-Hashes mit Signatur und Zeitstempel, sodass jederzeit der Nachweis erbracht werden kann, dass eine Transaktion stattfand."
+  },
+  {
+    "question": "Welche der folgenden Eigenschaften ist KEINE der Event-Driven-Architektur laut Text?",
+    "options": [
+      "Asynchrone Kommunikation",
+      "Starke Kopplung der Systeme",
+      "Lose Kopplung der Services",
+      "Skalierbarkeit und Echtzeitverarbeitung"
+    ],
+    "correct_index": 1,
+    "explanation": "Event-Driven-Architekturen setzen auf lose Kopplung der Systeme, nicht auf starke Kopplung, um die Flexibilität und Resilienz zu erhöhen."
+  },
+  {
+    "question": "Welche der folgenden Aktionen ist Teil der ersten Phase (Prepare) des 2PC-Protokolls?",
+    "options": [
+      "Der Koordinator sendet ein Commit-Kommando an alle Teilnehmer",
+      "Jeder Teilnehmer überprüft, ob er die Transaktion ausführen kann und stimmt mit JA oder NEIN",
+      "Die Transaktion wird automatisch durchgeführt",
+      "Die Transaktion wird automatisch zurückgesetzt"
+    ],
+    "correct_index": 1,
+    "explanation": "In der Prepare-Phase stimmt jeder Teilnehmer mit JA oder NEIN ab, je nachdem, ob er die Transaktion ausführen kann."
+  },
+  {
+    "question": "Welchen Vorteil bietet der 3PC- gegenüber dem 2PC-Commit-Protokoll?",
+    "options": [
+      "Es spart Speicherplatz",
+      "Es reduziert die Wahrscheinlichkeit, dass der gesamte Prozess bei einem Ausfall blockiert",
+      "Es ermöglicht, mehr Geld zu überweisen",
+      "Es erstellt automatisch neue Konten"
+    ],
+    "correct_index": 1,
+    "explanation": "3PC ergänzt eine Zwischenphase und reduziert so die Blockierungsgefahr bei Coordinator-Ausfällen, wodurch der Prozess ausfallsicherer wird."
+  },
+  {
+    "question": "Wodurch werden Transaktionen in einer Event-Driven-Architektur typischerweise initiiert?",
+    "options": [
+      "Durch periodische Zeitgeber",
+      "Durch Ereignisse externer Systeme (z. B. Einzahlungen, Zahlungen oder Überweisungen)",
+      "Manuell durch Administratoren",
+      "Durch den zentralen Buchungslauf am Monatsende"
+    ],
+    "correct_index": 1,
+    "explanation": "Event-Driven-Systeme reagieren auf externe Ereignisse (z. B. Zahlungen oder Überweisungen), die dann automatisch verarbeitet werden."
+  },
+  {
+    "question": "Warum setzen Banken häufig auf Event-Sourcing?",
+    "options": [
+      "Weil es automatisch Buchhaltungsfehler korrigiert",
+      "Weil der gesamte Kontostand immer berechnet und nie gespeichert wird",
+      "Weil jedes Ereignis unveränderbar protokolliert und der Zustand daraus jederzeit rekonstruiert werden kann",
+      "Weil damit die Transaktionskosten reduziert werden"
+    ],
+    "correct_index": 2,
+    "explanation": "Event-Sourcing zeichnet jedes Ereignis unveränderbar auf und erlaubt so, Zustände jederzeit wiederherzustellen und die Änderungen nachzuvollziehen."
+  },
+  {
+    "question": "Welches der folgenden Systeme passt am besten zur Implementierung eines eventgetriebenen Nachrichtensystems?",
+    "options": [
+      "Apache Kafka",
+      "Microsoft Word",
+      "Excel",
+      "Apache HTTP Server"
+    ],
+    "correct_index": 0,
+    "explanation": "Apache Kafka ist ein verteiltes Event-Streaming-System, das besonders gut zur Implementierung eventgetriebener Architekturen geeignet ist."
+  },
+  {
+    "question": "Was bezeichnet der Begriff 'Zins' im Kontext von Geld?",
+    "options": [
+      "Die Zeitdauer, die Geld investiert wird",
+      "Den Preis für die Nutzung von Geld",
+      "Die ursprüngliche Geldsumme",
+      "Die Anzahl der Jahre bis zur Rückzahlung"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Zins ist der Preis, der für die Nutzung von Geld bezahlt wird."
+  },
+  {
+    "question": "Wie wird der Betrag nach einem Jahr bei einfachem Zins mit dem Zinssatz r berechnet?",
+    "options": [
+      "$A \times (1 + r)^n$",
+      "$A \times (1 + r \times n)$",
+      "$A \times r \times n$",
+      "$\frac{A}{1 + r}$"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei einfachem Zins wächst das Kapital linear, der Betrag nach n Jahren ist $A(1 + r n)$."
+  },
+  {
+    "question": "Was bedeutet Zinseszins?",
+    "options": [
+      "Zinsen, die nur auf das Anfangskapital berechnet werden",
+      "Zinsen, die auf Zinsen der Vorjahre berechnet werden",
+      "Zinsen, die nur einmal jährlich gezahlt werden",
+      "Ein fester Zinssatz ohne Veränderung"
+    ],
+    "correct_index": 1,
+    "explanation": "Zinseszins bedeutet, dass Zinsen auf bereits angefallene Zinsen berechnet werden, was das Kapital schneller wachsen lässt."
+  },
+  {
+    "question": "Wie lautet die Formel für das Endkapital bei jährlicher Verzinsung mit Zinseszins nach n Jahren?",
+    "options": [
+      "$A \\times (1 + r)^n$",
+      "$A \\times (1 + r \\times n)$",
+      "$A \\times r^n$",
+      "$\\frac{A}{(1 + r)^n}$"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Kapital wächst geometrisch und wird mit $A \\times (1 + r)^n$ berechnet."
+  },
+  {
+    "question": "Was beschreibt der Begriff 'Nominalzins'?",
+    "options": [
+      "Den effektiven Jahreszins inklusive Zinseszins",
+      "Den Zinssatz ohne Berücksichtigung von Zinseszins",
+      "Den Zinssatz bei Tagesgeldanlagen",
+      "Den Zinssatz nach Steuerabzug"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Nominalzins ist der Zinssatz, der ohne Berücksichtigung von Zinseszins angegeben wird."
+  },
+  {
+    "question": "Was versteht man unter 'effektivem Jahreszins'?",
+    "options": [
+      "Den Zins, der sich aus mehrfacher Verzinsung im Jahr ergibt",
+      "Den Zinssatz vor Steuern",
+      "Den Zinssatz bei einfacher Verzinsung",
+      "Den Zinssatz, der nur auf das Anfangskapital bezogen ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Der effektive Jahreszins berücksichtigt die Häufigkeit der Zinsgutschriften und damit den Zinseszinseffekt."
+  },
+  {
+    "question": "Wie wirkt sich häufigere Verzinsung (z.B. monatlich statt jährlich) auf den Endbetrag aus?",
+    "options": [
+      "Der Endbetrag wird kleiner",
+      "Der Endbetrag bleibt gleich",
+      "Der Endbetrag wird größer",
+      "Der Endbetrag halbiert sich"
+    ],
+    "correct_index": 2,
+    "explanation": "Häufigere Verzinsung führt zu einem höheren Endbetrag wegen des Zinseszinseffekts."
+  },
+  {
+    "question": "Wie lautet die Formel für die Verzinsung bei m-maliger jährlicher Verzinsung nach n Jahren?",
+    "options": [
+      "$A \\times \\left(1 + \\frac{r}{m}\\right)^{m \\times n}$",
+      "$A \\times \\left(1 + \\frac{r \\times n}{m}\\right)$",
+      "$A \\times \\left(1 + r \\times m\\right)^n$",
+      "$A \\times \\left(1 + r\\right)^m$"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei mehrmaliger Verzinsung pro Jahr wächst das Kapital nach $A \\times \\left(1 + \\frac{r}{m}\\right)^{m \\times n}$."
+  },
+  {
+    "question": "Was ist die 'Diskontierung' im Zusammenhang mit Zinsen?",
+    "options": [
+      "Berechnung des zukünftigen Wertes eines Betrags",
+      "Berechnung des heutigen Wertes eines zukünftigen Betrags",
+      "Erhöhung des Zinssatzes wegen Inflation",
+      "Steuerliche Absetzung von Zinsen"
+    ],
+    "correct_index": 1,
+    "explanation": "Diskontierung bedeutet, zukünftige Zahlungen auf den heutigen Wert zurückzurechnen."
+  },
+  {
+    "question": "Wie berechnet man den Barwert (Present Value) eines Betrags $A$, der in einem Jahr mit Zinssatz $r$ fällig ist?",
+    "options": [
+      "$A \\cdot (1 + r)$",
+      "$\\frac{A}{1 + r}$",
+      "$A \\cdot r$",
+      "$\\frac{A}{r}$"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Barwert entspricht $A$ geteilt durch $(1 + r)$, da zukünftige Beträge abgezinst werden."
+  },
+  {
+    "question": "Was passiert mit der Schuldenhöhe, wenn Zinsen auf Schulden nicht bezahlt werden?",
+    "options": [
+      "Die Schulden bleiben gleich",
+      "Die Schulden nehmen durch Zinseszins zu",
+      "Die Schulden verringern sich automatisch",
+      "Die Schulden werden abgeschrieben"
+    ],
+    "correct_index": 1,
+    "explanation": "Nicht bezahlte Zinsen führen durch Zinseszins dazu, dass die Schulden steigen."
+  },
+  {
+    "question": "Welchen Effekt hat die sogenannte 'Sieben-Zehn-Regel' (Rule of 72) bei der Verzinsung?",
+    "options": [
+      "Das Kapital verdoppelt sich in ca. 7 Jahren bei 10% Zins",
+      "Das Kapital halbiert sich in 7 Jahren bei 10% Zins",
+      "Der Zinssatz halbiert sich alle 7 Jahre",
+      "Das Kapital wächst linear um 7% pro Jahr"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Regel besagt, dass sich Kapital bei 10% Zinsen in ca. 7 Jahren verdoppelt."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einfachem Zins und Zinseszins?",
+    "options": [
+      "Einfacher Zins wird nur auf das Anfangskapital berechnet, Zinseszins auch auf die Zinsen",
+      "Einfacher Zins wird täglich berechnet, Zinseszins jährlich",
+      "Einfacher Zins ist höher als Zinseszins",
+      "Es gibt keinen Unterschied"
+    ],
+    "correct_index": 0,
+    "explanation": "Beim einfachen Zins wird nur das Anfangskapital verzinst, beim Zinseszins auch die bereits erzielten Zinsen."
+  },
+  {
+    "question": "Was beschreibt der Begriff 'Barwert' (Present Value) in der Finanzmathematik?",
+    "options": [
+      "Den Betrag, den man heute investieren muss, um in der Zukunft eine bestimmte Summe zu erhalten",
+      "Den Betrag, den man in der Zukunft erhalten wird",
+      "Den Zinssatz pro Jahr",
+      "Die Zeitdauer bis zur Rückzahlung"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Barwert ist der heutige Wert einer zukünftigen Zahlung, abgezinst mit dem Zinssatz."
+  },
+  {
+    "question": "Wie verändert sich der effektive Jahreszins bei kontinuierlicher Verzinsung im Vergleich zur jährlichen Verzinsung?",
+    "options": [
+      "Er ist kleiner als der nominale Zinssatz",
+      "Er ist gleich dem nominalen Zinssatz",
+      "Er ist größer als der nominale Zinssatz",
+      "Er ist null"
+    ],
+    "correct_index": 2,
+    "explanation": "Bei kontinuierlicher Verzinsung ist der effektive Zinssatz etwas größer als der nominale, da der Zins permanent verzinst wird."
+  },
+  {
+    "question": "Welcher mathematische Ausdruck beschreibt die kontinuierliche Verzinsung mit Zinssatz $r$ nach $t$ Jahren?",
+    "options": [
+      "$A \\cdot e^{r t}$",
+      "$A \\cdot (1 + r)^t$",
+      "$A \\cdot (1 + r t)$",
+      "$\\frac{A}{1 + r t}$"
+    ],
+    "correct_index": 0,
+    "explanation": "Die kontinuierliche Verzinsung wird durch die Exponentialfunktion $A \\cdot e^{r t}$ beschrieben."
+  },
+  {
+    "question": "Warum ist das Konzept des Barwerts wichtig bei der Bewertung von Krediten?",
+    "options": [
+      "Weil es hilft, die zukünftigen Zahlungen auf den heutigen Wert zu reduzieren",
+      "Weil es die Steuerlast reduziert",
+      "Weil es den Zinssatz erhöht",
+      "Weil es den Kreditbetrag verdoppelt"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Barwert ermöglicht, den heutigen Wert von zukünftigen Zahlungen einzuschätzen, wichtig für Kreditbewertungen."
+  },
+  {
+    "question": "Welche Wirkung hat der Zinseszins auf Schulden, wenn keine Rückzahlungen erfolgen?",
+    "options": [
+      "Die Schulden bleiben gleich",
+      "Die Schulden wachsen exponentiell",
+      "Die Schulden werden linear größer",
+      "Die Schulden werden automatisch beglichen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ohne Rückzahlungen wächst die Schuld durch Zinseszins exponentiell an."
+  },
+  {
+    "question": "Wie lautet die Formel für die Berechnung des Barwerts eines Betrags $A$, der in $n$ Jahren bei Zinssatz $r$ fällig ist?",
+    "options": [
+      "$A / (1 + r)^n$",
+      "$A \\cdot (1 + r)^n$",
+      "$A \\cdot r \\cdot n$",
+      "$A / (1 - r)^n$"
+    ],
+    "correct_index": 0,
+    "explanation": "Der Barwert wird mit der Formel $A / (1 + r)^n$ berechnet, um zukünftige Zahlungen abzuzinsen."
+  },
+  {
+    "question": "Was passiert bei der sogenannten 'Diskontierung'?",
+    "options": [
+      "Zukünftige Beträge werden auf einen Gegenwartswert zurückgerechnet",
+      "Die Zinsen werden erhöht",
+      "Die Schulden werden abgeschrieben",
+      "Die Kapitalanlage wächst linear"
+    ],
+    "correct_index": 0,
+    "explanation": "Diskontierung bezeichnet die Umrechnung eines zukünftigen Betrags auf seinen heutigen Wert."
+  },
+  {
+    "question": "Was versteht man unter einem 'ideal bank' im Kontext von Cash-Flow-Strömen?",
+    "options": [
+      "Eine Bank mit variablen Zinssätzen je nach Einzahlungshöhe.",
+      "Eine Bank, die denselben Zinssatz auf Einlagen und Kredite anwendet, ohne Gebühren und mit additiver Wirkung der Transaktionen.",
+      "Eine Bank, die ausschließlich Kredite vergibt.",
+      "Eine Bank mit sehr hohen Servicegebühren."
+    ],
+    "correct_index": 1,
+    "explanation": "Eine 'ideal bank' wendet denselben Zinssatz auf Einlagen und Kredite an, hat keine Servicegebühren und Transaktionen sind additiv bezüglich des Endkontostands."
+  },
+  {
+    "question": "Wie wird der Future Value (FV) eines Cash-Flow-Stroms $(X_0, X_1, \\ldots, X_n)$ mit Zinssatz $r$ pro Periode berechnet?",
+    "options": [
+      "$FV = X_0 + X_1 + \\ldots + X_n$",
+      "$FV = X_0(1+r)^n + X_1(1+r)^{n-1} + \\ldots + X_n$",
+      "$FV = (X_0 + X_1 + \\ldots + X_n)(1+r)^n$",
+      "$FV = \\frac{X_0 + X_1 + \\ldots + X_n}{(1+r)^n}$"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Future Value wird berechnet, indem jeder Zahlungsbetrag mit $(1+r)$ hoch der Anzahl der Perioden multipliziert wird, die er investiert ist."
+  },
+  {
+    "question": "Wie lautet die Formel für den Present Value (PV) eines Cash-Flow-Stroms $(X_0, X_1, \\ldots, X_n)$ mit Zinssatz $r$ pro Periode?",
+    "options": [
+      "$PV = X_0(1+r)^n + X_1(1+r)^{n-1} + \\ldots + X_n$",
+      "$PV = X_0 + \\frac{X_1}{(1+r)} + \\frac{X_2}{(1+r)^2} + \\ldots + \\frac{X_n}{(1+r)^n}$",
+      "$PV = (X_0 + X_1 + \\ldots + X_n)(1+r)^n$",
+      "$PV = \\frac{(X_0 + X_1 + \\ldots + X_n)}{(1+r)^n}$"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Present Value wird berechnet, indem jede Zahlung durch $(1+r)$ hoch der Anzahl der Perioden bis zur Zahlung diskontiert wird."
+  },
+  {
+    "question": "Wie hängen Future Value (FV) und Present Value (PV) bei Zinssatz $r$ und $n$ Perioden zusammen?",
+    "options": [
+      "$PV = FV (1+r)^n$",
+      "$PV = \\frac{FV}{(1+r)^n}$",
+      "$FV = \\frac{PV}{(1+r)^n}$",
+      "$FV = PV (1-r)^n$"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Present Value entspricht dem Future Value abgezinst um $n$ Perioden, also $PV = \\frac{FV}{(1+r)^n}$."
+  },
+  {
+    "question": "Was bedeutet 'continuous compounding' bei der Zinsberechnung?",
+    "options": [
+      "Zinsen werden nur einmal jährlich berechnet.",
+      "Zinsen werden unendlich oft pro Jahr berechnet, was zu einer exponentiellen Verzinsung führt.",
+      "Zinsen werden nur am Ende der Laufzeit berechnet.",
+      "Zinsen werden nur monatlich berechnet."
+    ],
+    "correct_index": 1,
+    "explanation": "Bei kontinuierlicher Verzinsung (continuous compounding) erfolgt die Verzinsung unendlich oft, was mathematisch einer Exponentialfunktion entspricht."
+  },
+  {
+    "question": "Was beschreibt der 'internal rate of return' (IRR)?",
+    "options": [
+      "Den Zinssatz, bei dem der Future Value einer Investition maximal ist.",
+      "Den Zinssatz, bei dem der Present Value einer Cash-Flow-Reihe genau Null ist.",
+      "Den durchschnittlichen Zinssatz eines Bankkontos.",
+      "Den Zinssatz, bei dem die Investition den höchsten Gewinn erzielt."
+    ],
+    "correct_index": 1,
+    "explanation": "Der IRR ist der Zinssatz, bei dem die Summe der abgezinsten Cash Flows (der Present Value) null ist."
+  },
+  {
+    "question": "Unter welchen Bedingungen gibt es laut Hauptsatz des IRR eine eindeutige positive Lösung für den internen Zinsfuß?",
+    "options": [
+      "Wenn alle Cash Flows positiv sind.",
+      "Wenn der erste Cash Flow negativ und alle folgenden positiv sind, mit mindestens einem strikt positiven Wert.",
+      "Wenn alle Cash Flows negativ sind.",
+      "Wenn alle Cash Flows null sind."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Hauptsatz besagt, dass bei einem negativen Anfangswert und allen folgenden positiven Cash Flows mit mindestens einem strikt positiven Wert die IRR-Formel eine eindeutige positive Lösung hat."
+  },
+  {
+    "question": "Was bedeutet die Äquivalenz von zwei Cash-Flow-Strömen bei einem idealen Bankmodell?",
+    "options": [
+      "Dass sie dieselbe Anzahl an Zahlungen haben.",
+      "Dass sie zum gleichen Zeitpunkt dieselbe Zahlungsgröße haben.",
+      "Dass sie denselben Present Value bei gleichem Zinssatz haben.",
+      "Dass sie keine negativen Zahlungen enthalten."
+    ],
+    "correct_index": 2,
+    "explanation": "Zwei Cash-Flow-Ströme sind äquivalent, wenn sie denselben Present Value haben; dann kann eine Bank den einen in den anderen transformieren."
+  },
+  {
+    "question": "Was besagt das Net Present Value (NPV)-Kriterium bei Investitionsentscheidungen?",
+    "options": [
+      "Investitionen mit negativem NPV sind vorzuziehen.",
+      "Investitionen mit positivem NPV sind vorteilhaft und sollten erwogen werden.",
+      "Der NPV ist unabhängig vom Zinssatz.",
+      "Investitionen mit kleinem NPV sind am besten."
+    ],
+    "correct_index": 1,
+    "explanation": "Das NPV-Kriterium besagt, dass nur Investitionen mit positivem Net Present Value wirtschaftlich sinnvoll sind."
+  },
+  {
+    "question": "Im Beispiel zum Baumfällen: Welche Alternative hat den höheren Net Present Value bei 10% Zinssatz?",
+    "options": [
+      "Das frühzeitige Fällen nach 1 Jahr (Cash-Flow-Strömung: -1, 2).",
+      "Das spätere Fällen nach 2 Jahren (Cash-Flow-Strömung: -1, 0, 3).",
+      "Beide Alternativen sind gleichwertig.",
+      "Es wurde kein Zinssatz angegeben."
+    ],
+    "correct_index": 1,
+    "explanation": "Das spätere Fällen hat mit NPV=1,48 einen höheren Wert als das frühzeitige Fällen mit NPV=0,18, daher ist es vorteilhafter."
+  }
+]
+
+
