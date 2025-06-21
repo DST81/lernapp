@@ -8,7 +8,7 @@
       "Ein Buch zur Erfassung von Personaldaten"
     ],
     "correct_index": 2,
-    "explanation": "Das Hauptbuch ist das zentrale Buch der Buchführung, in dem alle Geschäftsvorfälle erfasst werden."
+    "explanation": "Das Hauptbuch ist das zentrale Buch in der Buchführung, in dem alle Geschäftsvorfälle eines Unternehmens systematisch erfasst werden. Es enthält Konten für Vermögenswerte, Verbindlichkeiten, Eigenkapital, Erträge und Aufwendungen und dient als Grundlage für die Erstellung der Bilanz und der Gewinn- und Verlustrechnung."
   },
   {
     "question": "Welche Konten werden im Kassenbuch erfasst?",
@@ -19,7 +19,7 @@
       "Alle Verbindlichkeiten gegenüber Lieferanten"
     ],
     "correct_index": 2,
-    "explanation": "Das Kassenbuch erfasst alle Bareinnahmen und Barausgaben."
+    "explanation": "Das Kassenbuch ist ein Nebenbuch der Buchführung, das alle Bareinnahmen und Barausgaben eines Unternehmens erfasst. Es dient der Kontrolle des Bargeldbestands und der Dokumentation von Bargeschäften."
   },
   {
     "question": "Was wird im Debitorenbuch erfasst?",
@@ -30,7 +30,7 @@
       "Alle Verbindlichkeiten gegenüber Lieferanten"
     ],
     "correct_index": 1,
-    "explanation": "Das Debitorenbuch erfasst alle Forderungen gegenüber Kunden."
+    "explanation": "Das Debitorenbuch ist ein Nebenbuch, das alle Forderungen eines Unternehmens gegenüber seinen Kunden erfasst. Es dient der Überwachung und Verwaltung der offenen Posten aus Lieferungen und Leistungen."
   },
   {
     "question": "Welche Seite eines T-Kontos wird für die Erhöhung von Aktivkonten verwendet?",
@@ -41,7 +41,7 @@
       "Keine der Seiten"
     ],
     "correct_index": 1,
-    "explanation": "Die Soll-Seite eines T-Kontos wird für die Erhöhung von Aktivkonten verwendet."
+    "explanation": "In der doppelten Buchführung wird die Soll-Seite eines T-Kontos verwendet, um Erhöhungen von Aktivkonten zu erfassen. Aktivkonten sind Konten, die Vermögenswerte des Unternehmens darstellen, wie z.B. Bankguthaben, Forderungen oder Grundstücke."
   },
   {
     "question": "Welche Seite eines T-Kontos wird für die Erhöhung von Passivkonten verwendet?",
@@ -52,7 +52,7 @@
       "Keine der Seiten"
     ],
     "correct_index": 1,
-    "explanation": "Die Haben-Seite eines T-Kontos wird für die Erhöhung von Passivkonten verwendet."
+    "explanation": "Die Haben-Seite eines T-Kontos wird für die Erhöhung von Passivkonten verwendet. Passivkonten umfassen Verbindlichkeiten, Rückstellungen und das Eigenkapital eines Unternehmens."
   },
   {
     "question": "Was ist ein Eröffnungsbilanzkonto?",
@@ -63,7 +63,7 @@
       "Ein Konto zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 1,
-    "explanation": "Das Eröffnungsbilanzkonto ist ein Spiegelbild der Anfangsbilanz, in dem die Aktivposten im Haben und die Passivposten im Soll stehen."
+    "explanation": "Das Eröffnungsbilanzkonto ist ein temporäres Konto, das zu Beginn eines neuen Geschäftsjahres erstellt wird, um die Anfangsbestände der Bilanzkonten zu übertragen. Es stellt ein Spiegelbild der Schlussbilanz des Vorjahres dar, wobei Aktivposten im Haben und Passivposten im Soll gebucht werden."
   },
   {
     "question": "Welche Konten werden im Bankbuch erfasst?",
@@ -74,7 +74,7 @@
       "Alle Verbindlichkeiten gegenüber Lieferanten"
     ],
     "correct_index": 2,
-    "explanation": "Das Bankbuch erfasst alle Bankbewegungen, wie Einzahlungen und Auszahlungen."
+    "explanation": "Das Bankbuch ist ein Nebenbuch, das alle Bankbewegungen eines Unternehmens erfasst, einschließlich Einzahlungen, Auszahlungen, Überweisungen und Lastschriften. Es dient der Kontrolle des Bankkontos und der Abstimmung mit den Bankauszügen."
   },
   {
     "question": "Was ist das Grundbuch in der Buchführung?",
@@ -85,7 +85,7 @@
       "Ein Buch zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 1,
-    "explanation": "Das Grundbuch, auch Journal genannt, ist das chronologische Buch der Buchführung, in dem alle Geschäftsvorfälle in zeitlicher Reihenfolge erfasst werden."
+    "explanation": "Das Grundbuch, auch Journal genannt, ist das chronologische Buch der Buchführung, in dem alle Geschäftsvorfälle eines Unternehmens in zeitlicher Reihenfolge erfasst werden. Jeder Eintrag im Grundbuch enthält das Datum, die betroffenen Konten, die Beträge und eine kurze Beschreibung des Geschäftsvorfalls."
   },
   {
     "question": "Welche Konten werden im Warenbuch erfasst?",
@@ -96,7 +96,7 @@
       "Alle Verbindlichkeiten gegenüber Lieferanten"
     ],
     "correct_index": 2,
-    "explanation": "Das Warenbuch erfasst alle Wareneingänge und Warenausgänge."
+    "explanation": "Das Warenbuch ist ein Nebenbuch, das alle Wareneingänge und Warenausgänge eines Unternehmens erfasst. Es dient der Kontrolle des Warenbestands und der Dokumentation von Warenbewegungen."
   },
   {
     "question": "Was ist ein Gewinn- und Verlustkonto?",
@@ -107,7 +107,7 @@
       "Ein Konto zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 2,
-    "explanation": "Das Gewinn- und Verlustkonto ist ein Konto zur Erfassung von Erträgen und Aufwendungen, um den Gewinn oder Verlust eines Geschäftsjahres zu ermitteln."
+    "explanation": "Das Gewinn- und Verlustkonto (GuV-Konto) ist ein Erfolgskonto, das alle Erträge und Aufwendungen eines Unternehmens während eines Geschäftsjahres erfasst. Am Ende des Geschäftsjahres wird der Saldo des GuV-Kontos ermittelt, der den Gewinn oder Verlust des Unternehmens darstellt. Dieser Saldo wird dann auf das Eigenkapitalkonto übertragen."
   },
   {
     "question": "Welche Konten werden im Kreditorenbuch erfasst?",
@@ -118,7 +118,7 @@
       "Alle Bareinnahmen und Barausgaben"
     ],
     "correct_index": 2,
-    "explanation": "Das Kreditorenbuch erfasst alle Verbindlichkeiten gegenüber Lieferanten."
+    "explanation": "Das Kreditorenbuch ist ein Nebenbuch, das alle Verbindlichkeiten eines Unternehmens gegenüber seinen Lieferanten erfasst. Es dient der Überwachung und Verwaltung der offenen Posten aus Eingangsrechnungen."
   },
   {
     "question": "Was ist ein Schlussbilanzkonto?",
@@ -129,7 +129,7 @@
       "Ein Konto zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 2,
-    "explanation": "Das Schlussbilanzkonto ist ein Konto zur Erfassung der Schlussbestände aller Konten, um die Bilanz zu erstellen."
+    "explanation": "Das Schlussbilanzkonto ist ein temporäres Konto, das am Ende eines Geschäftsjahres erstellt wird, um die Schlussbestände aller Bilanzkonten zu erfassen. Es dient als Grundlage für die Erstellung der Schlussbilanz, die die Vermögens-, Schulden- und Eigenkapitalverhältnisse eines Unternehmens zu einem bestimmten Stichtag darstellt."
   },
   {
     "question": "Welche Konten werden im Lohnbuch erfasst?",
@@ -140,7 +140,7 @@
       "Alle Wareneingänge und Warenausgänge"
     ],
     "correct_index": 2,
-    "explanation": "Das Lohnbuch erfasst alle Lohn- und Gehaltszahlungen an Mitarbeiter."
+    "explanation": "Das Lohnbuch ist ein Nebenbuch, das alle Lohn- und Gehaltszahlungen eines Unternehmens an seine Mitarbeiter erfasst. Es dient der Dokumentation der Lohnabrechnungen und der Erfüllung der gesetzlichen Aufzeichnungspflichten."
   },
   {
     "question": "Was ist ein Privatkonto?",
@@ -151,7 +151,7 @@
       "Ein Konto zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 2,
-    "explanation": "Das Privatkonto ist ein Unterkonto des Eigenkapitalkontos zur Erfassung von Privatentnahmen und Privateinlagen."
+    "explanation": "Das Privatkonto ist ein Unterkonto des Eigenkapitalkontos, das in Einzelunternehmen und Personengesellschaften verwendet wird, um Privatentnahmen und Privateinlagen der Unternehmer zu erfassen. Privatentnahmen sind Entnahmen von Geld oder anderen Vermögenswerten für private Zwecke, während Privateinlagen Einlagen von privatem Vermögen in das Unternehmen darstellen."
   },
   {
     "question": "Welche Konten werden im Fuhrpark erfasst?",
@@ -162,7 +162,7 @@
       "Alle Wareneingänge und Warenausgänge"
     ],
     "correct_index": 0,
-    "explanation": "Im Fuhrpark werden alle Fahrzeuge des Unternehmens erfasst."
+    "explanation": "Im Fuhrpark werden alle Fahrzeuge eines Unternehmens erfasst, einschließlich Pkw, Lkw, Gabelstapler und anderer betrieblicher Fahrzeuge. Der Fuhrpark ist ein Teil des Anlagevermögens und wird in der Bilanz unter den Sachanlagen ausgewiesen."
   },
   {
     "question": "Was ist ein Forderungssammelkonto?",
@@ -173,7 +173,7 @@
       "Ein Konto zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 0,
-    "explanation": "Ein Forderungssammelkonto ist ein Unterkonto des Kontos 'Forderungen aus Lieferungen und Leistungen' zur Erfassung von Forderungen gegenüber Kunden."
+    "explanation": "Ein Forderungssammelkonto ist ein Unterkonto des Kontos 'Forderungen aus Lieferungen und Leistungen', das zur Erfassung von Forderungen gegenüber Kunden verwendet wird, die noch nicht einzeln verbucht wurden. Es dient der vorübergehenden Erfassung von Forderungen, die später auf einzelne Debitorenkonten übertragen werden."
   },
   {
     "question": "Welche Konten werden im Scheckverkehr erfasst?",
@@ -184,7 +184,7 @@
       "Alle erhaltenen Schecks"
     ],
     "correct_index": 3,
-    "explanation": "Im Scheckverkehr werden alle erhaltenen Schecks erfasst."
+    "explanation": "Im Scheckverkehr werden alle erhaltenen Schecks erfasst, die ein Unternehmen von seinen Kunden erhält. Die erhaltenen Schecks werden zunächst auf einem Scheckkonto verbucht und nach Einreichung bei der Bank auf das Bankkonto übertragen."
   },
   {
     "question": "Was ist ein Eigenbeleg?",
@@ -195,7 +195,7 @@
       "Ein Beleg zur Erfassung von Kundenfeedback"
     ],
     "correct_index": 2,
-    "explanation": "Ein Eigenbeleg ist ein Beleg, der vom Unternehmen selbst erstellt wird, um Geschäftsvorfälle zu dokumentieren."
+    "explanation": "Ein Eigenbeleg ist ein Beleg, der vom Unternehmen selbst erstellt wird, um Geschäftsvorfälle zu dokumentieren, für die kein externer Beleg vorliegt. Eigenbelege werden beispielsweise für Privatentnahmen, Bareinnahmen oder Barausgaben erstellt und müssen alle relevanten Informationen enthalten, wie Datum, Betrag, Art des Geschäftsvorfalls und Unterschrift des Verantwortlichen."
   },
   {
     "question": "Welche Konten werden bei der Buchung von Kreditkartenzahlungen verwendet?",
@@ -206,6 +206,6 @@
       "Eigenkapital und Umsatzerlöse"
     ],
     "correct_index": 0,
-    "explanation": "Bei der Buchung von Kreditkartenzahlungen werden zunächst die Forderungen gegenüber der Kreditkartengesellschaft erfasst und nach Gutschrift des Gegenwertes auf dem Bankkonto wird die Bank an Forderungen gebucht."
+    "explanation": "Bei der Buchung von Kreditkartenzahlungen werden zunächst die Forderungen gegenüber der Kreditkartengesellschaft auf einem Forderungssammelkonto erfasst. Nach Gutschrift des Gegenwertes auf dem Bankkonto wird die Bank an das Forderungssammelkonto gebucht, um die Forderung auszugleichen."
   }
 ]
