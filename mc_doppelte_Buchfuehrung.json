@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Wer veröffentlichte die erste systematische Abhandlung über die doppelte Buchführung?",
+    "options": [
+      "Adam Smith",
+      "John Maynard Keynes",
+      "Luca Pacioli",
+      "Max Weber"
+    ],
+    "correct_index": 2,
+    "explanation": "Luca Pacioli veröffentlichte 1494 die erste systematische Abhandlung über die doppelte Buchführung."
+  },
+  {
+    "question": "Was ist das Hauptbuch in der Buchführung?",
+    "options": [
+      "Ein Buch zur Erfassung von Lagerbeständen",
+      "Ein Buch zur Erfassung von Kundenfeedback",
+      "Das zentrale Buch zur Erfassung aller Geschäftsvorfälle",
+      "Ein Buch zur Erfassung von Personaldaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Hauptbuch ist das zentrale Buch der Buchführung, in dem alle Geschäftsvorfälle erfasst werden."
+  },
+  {
+    "question": "Welche Konten werden im Kassenbuch erfasst?",
+    "options": [
+      "Alle Wareneingänge",
+      "Alle Bankbewegungen",
+      "Alle Bareinnahmen und Barausgaben",
+      "Alle Verbindlichkeiten gegenüber Lieferanten"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Kassenbuch erfasst alle Bareinnahmen und Barausgaben."
+  },
+  {
+    "question": "Was wird im Debitorenbuch erfasst?",
+    "options": [
+      "Alle Bankbewegungen",
+      "Alle Forderungen gegenüber Kunden",
+      "Alle Lohn- und Gehaltszahlungen",
+      "Alle Verbindlichkeiten gegenüber Lieferanten"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Debitorenbuch erfasst alle Forderungen gegenüber Kunden."
+  },
+  {
+    "question": "Welche Seite eines T-Kontos wird für die Erhöhung von Aktivkonten verwendet?",
+    "options": [
+      "Haben-Seite",
+      "Soll-Seite",
+      "Beide Seiten",
+      "Keine der Seiten"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Soll-Seite eines T-Kontos wird für die Erhöhung von Aktivkonten verwendet."
+  },
+  {
+    "question": "Welche Seite eines T-Kontos wird für die Erhöhung von Passivkonten verwendet?",
+    "options": [
+      "Soll-Seite",
+      "Haben-Seite",
+      "Beide Seiten",
+      "Keine der Seiten"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Haben-Seite eines T-Kontos wird für die Erhöhung von Passivkonten verwendet."
+  },
+  {
+    "question": "Was ist ein Eröffnungsbilanzkonto?",
+    "options": [
+      "Ein Konto zur Erfassung von Lagerbeständen",
+      "Ein Spiegelbild der Anfangsbilanz zur Übertragung der Anfangsbestände",
+      "Ein Konto zur Erfassung von Personaldaten",
+      "Ein Konto zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Eröffnungsbilanzkonto ist ein Spiegelbild der Anfangsbilanz, in dem die Aktivposten im Haben und die Passivposten im Soll stehen."
+  },
+  {
+    "question": "Welche Konten werden im Bankbuch erfasst?",
+    "options": [
+      "Alle Bareinnahmen und Barausgaben",
+      "Alle Wareneingänge",
+      "Alle Bankbewegungen",
+      "Alle Verbindlichkeiten gegenüber Lieferanten"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Bankbuch erfasst alle Bankbewegungen, wie Einzahlungen und Auszahlungen."
+  },
+  {
+    "question": "Was ist das Grundbuch in der Buchführung?",
+    "options": [
+      "Ein Buch zur Erfassung von Lagerbeständen",
+      "Das chronologische Buch zur Erfassung aller Geschäftsvorfälle",
+      "Ein Buch zur Erfassung von Personaldaten",
+      "Ein Buch zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Grundbuch, auch Journal genannt, ist das chronologische Buch der Buchführung, in dem alle Geschäftsvorfälle in zeitlicher Reihenfolge erfasst werden."
+  },
+  {
+    "question": "Welche Konten werden im Warenbuch erfasst?",
+    "options": [
+      "Alle Bankbewegungen",
+      "Alle Bareinnahmen und Barausgaben",
+      "Alle Wareneingänge und Warenausgänge",
+      "Alle Verbindlichkeiten gegenüber Lieferanten"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Warenbuch erfasst alle Wareneingänge und Warenausgänge."
+  },
+  {
+    "question": "Was ist ein Gewinn- und Verlustkonto?",
+    "options": [
+      "Ein Konto zur Erfassung von Lagerbeständen",
+      "Ein Konto zur Erfassung von Personaldaten",
+      "Ein Konto zur Erfassung von Erträgen und Aufwendungen",
+      "Ein Konto zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Gewinn- und Verlustkonto ist ein Konto zur Erfassung von Erträgen und Aufwendungen, um den Gewinn oder Verlust eines Geschäftsjahres zu ermitteln."
+  },
+  {
+    "question": "Welche Konten werden im Kreditorenbuch erfasst?",
+    "options": [
+      "Alle Forderungen gegenüber Kunden",
+      "Alle Bankbewegungen",
+      "Alle Verbindlichkeiten gegenüber Lieferanten",
+      "Alle Bareinnahmen und Barausgaben"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Kreditorenbuch erfasst alle Verbindlichkeiten gegenüber Lieferanten."
+  },
+  {
+    "question": "Was ist ein Schlussbilanzkonto?",
+    "options": [
+      "Ein Konto zur Erfassung von Lagerbeständen",
+      "Ein Konto zur Erfassung von Personaldaten",
+      "Ein Konto zur Erfassung der Schlussbestände aller Konten",
+      "Ein Konto zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Schlussbilanzkonto ist ein Konto zur Erfassung der Schlussbestände aller Konten, um die Bilanz zu erstellen."
+  },
+  {
+    "question": "Welche Konten werden im Lohnbuch erfasst?",
+    "options": [
+      "Alle Bankbewegungen",
+      "Alle Bareinnahmen und Barausgaben",
+      "Alle Lohn- und Gehaltszahlungen",
+      "Alle Wareneingänge und Warenausgänge"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Lohnbuch erfasst alle Lohn- und Gehaltszahlungen an Mitarbeiter."
+  },
+  {
+    "question": "Was ist ein Privatkonto?",
+    "options": [
+      "Ein Konto zur Erfassung von Lagerbeständen",
+      "Ein Konto zur Erfassung von Personaldaten",
+      "Ein Unterkonto des Eigenkapitalkontos zur Erfassung von Privatentnahmen und Privateinlagen",
+      "Ein Konto zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Privatkonto ist ein Unterkonto des Eigenkapitalkontos zur Erfassung von Privatentnahmen und Privateinlagen."
+  },
+  {
+    "question": "Welche Konten werden im Fuhrpark erfasst?",
+    "options": [
+      "Alle Fahrzeuge des Unternehmens",
+      "Alle Bankbewegungen",
+      "Alle Bareinnahmen und Barausgaben",
+      "Alle Wareneingänge und Warenausgänge"
+    ],
+    "correct_index": 0,
+    "explanation": "Im Fuhrpark werden alle Fahrzeuge des Unternehmens erfasst."
+  },
+  {
+    "question": "Was ist ein Forderungssammelkonto?",
+    "options": [
+      "Ein Unterkonto des Kontos 'Forderungen aus Lieferungen und Leistungen' zur Erfassung von Forderungen gegenüber Kunden",
+      "Ein Konto zur Erfassung von Lagerbeständen",
+      "Ein Konto zur Erfassung von Personaldaten",
+      "Ein Konto zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Forderungssammelkonto ist ein Unterkonto des Kontos 'Forderungen aus Lieferungen und Leistungen' zur Erfassung von Forderungen gegenüber Kunden."
+  },
+  {
+    "question": "Welche Konten werden im Scheckverkehr erfasst?",
+    "options": [
+      "Alle Bankbewegungen",
+      "Alle Bareinnahmen und Barausgaben",
+      "Alle Wareneingänge und Warenausgänge",
+      "Alle erhaltenen Schecks"
+    ],
+    "correct_index": 3,
+    "explanation": "Im Scheckverkehr werden alle erhaltenen Schecks erfasst."
+  },
+  {
+    "question": "Was ist ein Eigenbeleg?",
+    "options": [
+      "Ein Beleg zur Erfassung von Lagerbeständen",
+      "Ein Beleg zur Erfassung von Personaldaten",
+      "Ein Beleg, der vom Unternehmen selbst erstellt wird, um Geschäftsvorfälle zu dokumentieren",
+      "Ein Beleg zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Eigenbeleg ist ein Beleg, der vom Unternehmen selbst erstellt wird, um Geschäftsvorfälle zu dokumentieren."
+  },
+  {
+    "question": "Welche Konten werden bei der Buchung von Kreditkartenzahlungen verwendet?",
+    "options": [
+      "Forderungen und Bank",
+      "Kasse und Verbindlichkeiten",
+      "Bank und Forderungen",
+      "Eigenkapital und Umsatzerlöse"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei der Buchung von Kreditkartenzahlungen werden zunächst die Forderungen gegenüber der Kreditkartengesellschaft erfasst und nach Gutschrift des Gegenwertes auf dem Bankkonto wird die Bank an Forderungen gebucht."
+  }
+]
