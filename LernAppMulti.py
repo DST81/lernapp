@@ -182,7 +182,7 @@ if st.sidebar.button("Falsch beantwortete Fragen anzeigen"):
     if falsch_fragen:
         st.sidebar.write("Falsch beantwortete Fragen:")
         for frage in falsch_fragen:
-            st.sidebar.write(f"- {frage['question']}:{frage['explanaiton']")
+            st.sidebar.write(f"- {frage['question']}:{frage['explanaiton']}")
     else:
         st.sidebar.write("Keine falsch beantworteten Fragen.")
 
