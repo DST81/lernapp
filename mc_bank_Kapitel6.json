@@ -123,10 +123,10 @@
   {
     "question": "Wie wird der Betrag nach einem Jahr bei einfachem Zins mit dem Zinssatz r berechnet?",
     "options": [
-      r"$A \times (1 + r)^n$",
-      r"$A \times (1 + r \times n)$",
-      r"$A \times r \times n$",
-      r"$\frac{A}{1 + r}$"
+      "$A \times (1 + r)^n$",
+      "$A \times (1 + r \times n)$",
+      "$A \times r \times n$",
+      "$\frac{A}{1 + r}$"
     ],
     "correct_index": 1,
     "explanation": "Bei einfachem Zins wächst das Kapital linear, der Betrag nach n Jahren ist r"$A(1 + r n)$."
