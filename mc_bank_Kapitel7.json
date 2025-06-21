@@ -1,1 +1,222 @@
-
+[
+  {
+    "question": "Was ist die Formel für den Barwert (Present Value) zukünftiger Cashflows?",
+    "options": [
+      "PV = CF_t / (1 + i)^t",
+      "PV = CF_t * (1 + i)^t",
+      "PV = CF_t / (1 - i)^t",
+      "PV = CF_t * (1 - i)^t"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet PV = CF_t / (1 + i)^t, wobei CF_t der Cashflow in Periode t, i der Diskontierungszinssatz und t die Periode ist."
+  },
+  {
+    "question": "Welche Art von Kredit wird typischerweise für private Ausgaben verwendet?",
+    "options": [
+      "Hypothekarkredit",
+      "Leasing",
+      "Konsumentenkredit",
+      "Unternehmenskredit"
+    ],
+    "correct_index": 2,
+    "explanation": "Konsumentenkredite sind kurzfristige Kredite, die typischerweise für private Ausgaben verwendet werden."
+  },
+  {
+    "question": "Was ist die Wahrscheinlichkeit, dass kein Ausfall eintritt, in einem Ausfallmodell?",
+    "options": [
+      "W = (1 - d)^t",
+      "W = (1 + d)^t",
+      "W = (1 - d) / t",
+      "W = (1 + d) / t"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Wahrscheinlichkeit, dass kein Ausfall eintritt, wird durch die Formel W = (1 - d)^t berechnet, wobei d die Ausfallrate und t die Periode ist."
+  },
+  {
+    "question": "Welche Formel beschreibt die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
+    "options": [
+      "W = (1 - d)^t",
+      "W = (1 - d)^{t-1} * d",
+      "W = (1 + d)^t",
+      "W = (1 + d)^{t-1} * d"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t wird durch die Formel W = (1 - d)^{t-1} * d berechnet."
+  },
+  {
+    "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
+    "options": [
+      "L = D * (1 + D + A)",
+      "L = D / (1 + D + A)",
+      "L = D + (1 + D + A)",
+      "L = D - (1 + D + A)"
+    ],
+    "correct_index": 0,
+    "explanation": "Der erwartete Verlust wird durch die Formel L = D * (1 + D + A) berechnet, wobei D die Recovery Rate und A die ausstehende Kreditsumme ist."
+  },
+  {
+    "question": "Welche Art von Leasing wird unterschiedlich bilanziert?",
+    "options": [
+      "Operating Leasing",
+      "Finance Leasing",
+      "Konsumentenleasing",
+      "Hypothekenleasing"
+    ],
+    "correct_index": 0,
+    "explanation": "Operating Leasing wird unterschiedlich bilanziert im Vergleich zu Finance Leasing."
+  },
+  {
+    "question": "Was ist der Zweck von Rückstellungen in der Buchführung?",
+    "options": [
+      "Zur Erfassung von Lagerbeständen",
+      "Zur Erfassung von erwarteten Kreditausfällen",
+      "Zur Erfassung von Personaldaten",
+      "Zur Erfassung von Kundenfeedback"
+    ],
+    "correct_index": 1,
+    "explanation": "Rückstellungen werden gebildet, um erwartete Kreditausfälle zu erfassen und regelmäßig gemäß interner Risikomodelle und regulatorischer Vorgaben zu bewerten und anzupassen."
+  },
+  {
+    "question": "Welche Standards werden für die Bilanzierung verwendet?",
+    "options": [
+      "OR, HGB, IFRS",
+      "GAAP, HGB, IFRS",
+      "OR, GAAP, IFRS",
+      "OR, HGB, GAAP"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Bilanzierung erfolgt nach Standards wie OR, HGB und/oder IFRS."
+  },
+  {
+    "question": "Was ist die Spot Rate?",
+    "options": [
+      "Ein zukünftiger Zinssatz",
+      "Ein sofortiger Zinssatz für eine bestimmte Laufzeit",
+      "Ein durchschnittlicher Zinssatz",
+      "Ein historischer Zinssatz"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Spot Rate ist der sofortige Zinssatz für eine bestimmte Laufzeit."
+  },
+  {
+    "question": "Was ist der Instantaneous Forward?",
+    "options": [
+      "Ein sofortiger Zinssatz",
+      "Ein Zukünftiger Zinssatz für eine bestimmte Periode",
+      "Ein durchschnittlicher Zinssatz",
+      "Ein historischer Zinssatz"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Instantaneous Forward ist der Zinssatz für eine zukünftige Periode."
+  },
+  {
+    "question": "Was ist die Par Yield?",
+    "options": [
+      "Die Rendite einer Anleihe, die zum Nominalwert gehandelt wird",
+      "Die Rendite einer Anleihe, die über dem Nominalwert gehandelt wird",
+      "Die Rendite einer Anleihe, die unter dem Nominalwert gehandelt wird",
+      "Die Rendite einer Anleihe, die nicht gehandelt wird"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Par Yield ist die Rendite einer Anleihe, die zum Nominalwert gehandelt wird."
+  },
+  {
+    "question": "Welche Faktoren werden bei der risikobasierten Kalkulation berücksichtigt?",
+    "options": [
+      "Bonität des Kunden, Marktzinsen, interne Refinanzierungskosten",
+      "Lagerbestände, Personalkosten, Verwaltungskosten",
+      "Kundenfeedback, Marktbedingungen, Verwaltungskosten",
+      "Bonität des Kunden, Lagerbestände, Marktbedingungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei der risikobasierten Kalkulation werden die Bonität des Kunden, Marktzinsen und interne Refinanzierungskosten berücksichtigt."
+  },
+  {
+    "question": "Was ist der Zweck des Marktvergleichs bei der Produktbepreisung?",
+    "options": [
+      "Zur Festlegung des Zinssatzes",
+      "Zur Berücksichtigung von Verwaltungskosten",
+      "Zur Anpassung an Marktbedingungen und Wettbewerbsvergleich",
+      "Zur Berechnung der Rückstellungen"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Marktvergleich dient der Anpassung an Marktbedingungen und dem Wettbewerbsvergleich."
+  },
+  {
+    "question": "Was ist die Aufgabe bei der Amortisation?",
+    "options": [
+      "Schreiben einer Amortisationsfunktion in Python",
+      "Berechnung der Zinskurve",
+      "Erstellung einer Bilanz",
+      "Bewertung von Rückstellungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Aufgabe besteht darin, eine Amortisationsfunktion in Python zu schreiben und für eine Ratepause und Verlängerung der Laufzeit zu erweitern."
+  },
+  {
+    "question": "Was ist die Formel für die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
+    "options": [
+      "W = (1 - d)^t",
+      "W = (1 - d)^{t-1} * d",
+      "W = (1 + d)^t",
+      "W = (1 + d)^{t-1} * d"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t wird durch die Formel W = (1 - d)^{t-1} * d berechnet."
+  },
+  {
+    "question": "Was ist die Formel für die Kalibrierung der Ausfallrate?",
+    "options": [
+      "w = (1 - d)^g * d",
+      "w = (1 + d)^g * d",
+      "w = (1 - d) / g * d",
+      "w = (1 + d) / g * d"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Kalibrierung der Ausfallrate wird durch die Formel w = (1 - d)^g * d beschrieben."
+  },
+  {
+    "question": "Was ist der Zweck der Buchführung von Kreditprodukten?",
+    "options": [
+      "Zur Erfassung von Lagerbeständen",
+      "Zur Erfassung von Kundenfeedback",
+      "Zur Aktivierung als Forderungen und zur Bildung von Rückstellungen",
+      "Zur Erfassung von Personaldaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Buchführung von Kreditprodukten dient der Aktivierung als Forderungen und der Bildung von Rückstellungen für erwartete Kreditausfälle."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Operating Leasing und Finance Leasing?",
+    "options": [
+      "Operating Leasing wird unterschiedlich bilanziert als Finance Leasing",
+      "Operating Leasing hat höhere Zinsen als Finance Leasing",
+      "Operating Leasing hat eine kürzere Laufzeit als Finance Leasing",
+      "Operating Leasing wird nicht bilanziert"
+    ],
+    "correct_index": 0,
+    "explanation": "Operating Leasing wird unterschiedlich bilanziert im Vergleich zu Finance Leasing."
+  },
+  {
+    "question": "Was ist der Zweck der Segmentierung des Kreditportfolios?",
+    "options": [
+      "Zur Erfassung von Lagerbeständen",
+      "Zur Erfassung von Kundenfeedback",
+      "Zur besseren Risikosteuerung und Kontrolle",
+      "Zur Erfassung von Personaldaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Segmentierung des Kreditportfolios dient der besseren Risikosteuerung und Kontrolle."
+  },
+  {
+    "question": "Was ist die Formel für den Barwert zukünftiger Cashflows?",
+    "options": [
+      "PV = CF_t / (1 + i)^t",
+      "PV = CF_t * (1 + i)^t",
+      "PV = CF_t / (1 - i)^t",
+      "PV = CF_t * (1 - i)^t"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet PV = CF_t / (1 + i)^t."
+  }
+]
