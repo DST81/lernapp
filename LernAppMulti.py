@@ -11,14 +11,14 @@ st.title("📘 Interaktive LernApp")
 st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_container_width=True)
 st.sidebar.title("📚 Fachauswahl")
 verfügbare_fächer = {
-    "Geschichte": "mc/mc_Geschichte.json",
-    "BIO": "mc/mc_bio.json",
-    "WR": "mc/mc_wr.json",
-    "Deep Learning": "mc/mc_questions_with_explanations.json",
-    "Deep Learning for pros": "mc/mc_DL_next_level.json",
-    "NLP": "mc/mc_NLP.json",
-    "UNIX": "mc/mc_unix_for_poets.json",
-    "Banken": "mc/mc_bank.json"
+    "Geschichte": "mc_Geschichte.json",
+    "BIO": "mc_bio.json",
+    "WR": "mc_wr.json",
+    "Deep Learning": "mc_questions_with_explanations.json",
+    "Deep Learning for pros": "mc_DL_next_level.json",
+    "NLP": "mc_NLP.json",
+    "UNIX": "mc_unix_for_poets.json",
+    "Banken": "mc_bank.json"
 }
 
 ausgewähltes_fach = st.sidebar.selectbox("Wähle ein Fach:", list(verfügbare_fächer.keys()))
