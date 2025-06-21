@@ -123,13 +123,13 @@
   {
     "question": "Wie wird der Betrag nach einem Jahr bei einfachem Zins mit dem Zinssatz r berechnet?",
     "options": [
-      "A * (1 + r)^n",
-      "A * (1 + r * n)",
-      "A * r * n",
-      "A / (1 + r)"
+      r"$A \times (1 + r)^n$",
+      r"$A \times (1 + r \times n)$",
+      r"$A \times r \times n$",
+      r"$\frac{A}{1 + r}$"
     ],
     "correct_index": 1,
-    "explanation": "Bei einfachem Zins wächst das Kapital linear, der Betrag nach n Jahren ist A*(1 + r*n)."
+    "explanation": "Bei einfachem Zins wächst das Kapital linear, der Betrag nach n Jahren ist r"$A(1 + r n)$."
   },
   {
     "question": "Was bedeutet Zinseszins?",
@@ -145,13 +145,13 @@
   {
     "question": "Wie lautet die Formel für das Endkapital bei jährlicher Verzinsung mit Zinseszins nach n Jahren?",
     "options": [
-      "A * (1 + r)^n",
-      "A * (1 + r * n)",
-      "A * r^n",
-      "A / (1 + r)^n"
+      "$A \\times (1 + r)^n$",
+      "$A \\times (1 + r \\times n)$",
+      "$A \\times r^n$",
+      "$\\frac{A}{(1 + r)^n}$"
     ],
     "correct_index": 0,
-    "explanation": "Das Kapital wächst geometrisch und wird mit A * (1 + r)^n berechnet."
+    "explanation": "Das Kapital wächst geometrisch und wird mit $A \\times (1 + r)^n$ berechnet."
   },
   {
     "question": "Was beschreibt der Begriff 'Nominalzins'?",
@@ -189,13 +189,13 @@
   {
     "question": "Wie lautet die Formel für die Verzinsung bei m-maliger jährlicher Verzinsung nach n Jahren?",
     "options": [
-      "A * (1 + r/m)^(m*n)",
-      "A * (1 + r*n/m)",
-      "A * (1 + r*m)^n",
-      "A * (1 + r)^m"
+      "$A \\times \\left(1 + \\frac{r}{m}\\right)^{m \\times n}$",
+      "$A \\times \\left(1 + \\frac{r \\times n}{m}\\right)$",
+      "$A \\times \\left(1 + r \\times m\\right)^n$",
+      "$A \\times \\left(1 + r\\right)^m$"
     ],
     "correct_index": 0,
-    "explanation": "Bei mehrmaliger Verzinsung pro Jahr wächst das Kapital nach A*(1 + r/m)^(m*n)."
+    "explanation": "Bei mehrmaliger Verzinsung pro Jahr wächst das Kapital nach $A \\times \\left(1 + \\frac{r}{m}\\right)^{m \\times n}$."
   },
   {
     "question": "Was ist die 'Diskontierung' im Zusammenhang mit Zinsen?",
@@ -209,15 +209,15 @@
     "explanation": "Diskontierung bedeutet, zukünftige Zahlungen auf den heutigen Wert zurückzurechnen."
   },
   {
-    "question": "Wie berechnet man den Barwert (Present Value) eines Betrags A, der in einem Jahr mit Zinssatz r fällig ist?",
+    "question": "Wie berechnet man den Barwert (Present Value) eines Betrags $A$, der in einem Jahr mit Zinssatz $r$ fällig ist?",
     "options": [
-      "A * (1 + r)",
-      "A / (1 + r)",
-      "A * r",
-      "A / r"
+      "$A \\cdot (1 + r)$",
+      "$\\frac{A}{1 + r}$",
+      "$A \\cdot r$",
+      "$\\frac{A}{r}$"
     ],
     "correct_index": 1,
-    "explanation": "Der Barwert ist A geteilt durch (1 + r), da zukünftige Beträge abgezinst werden."
+    "explanation": "Der Barwert entspricht $A$ geteilt durch $(1 + r)$, da zukünftige Beträge abgezinst werden."
   },
   {
     "question": "Was passiert mit der Schuldenhöhe, wenn Zinsen auf Schulden nicht bezahlt werden?",
@@ -275,15 +275,15 @@
     "explanation": "Bei kontinuierlicher Verzinsung ist der effektive Zinssatz etwas größer als der nominale, da der Zins permanent verzinst wird."
   },
   {
-    "question": "Welcher mathematische Ausdruck beschreibt die kontinuierliche Verzinsung mit Zinssatz r nach t Jahren?",
+    "question": "Welcher mathematische Ausdruck beschreibt die kontinuierliche Verzinsung mit Zinssatz $r$ nach $t$ Jahren?",
     "options": [
-      "A * e^(r*t)",
-      "A * (1 + r)^t",
-      "A * (1 + r*t)",
-      "A / (1 + r*t)"
+      "$A \\cdot e^{r t}$",
+      "$A \\cdot (1 + r)^t$",
+      "$A \\cdot (1 + r t)$",
+      "$\\frac{A}{1 + r t}$"
     ],
     "correct_index": 0,
-    "explanation": "Kontinuierliche Verzinsung wird durch die Exponentialfunktion A * e^(r*t) beschrieben."
+    "explanation": "Die kontinuierliche Verzinsung wird durch die Exponentialfunktion $A \\cdot e^{r t}$ beschrieben."
   },
   {
     "question": "Warum ist das Konzept des Barwerts wichtig bei der Bewertung von Krediten?",
@@ -308,15 +308,15 @@
     "explanation": "Ohne Rückzahlungen wächst die Schuld durch Zinseszins exponentiell an."
   },
   {
-    "question": "Wie lautet die Formel für die Berechnung des Barwerts eines Betrags A, der in n Jahren bei Zinssatz r fällig ist?",
+    "question": "Wie lautet die Formel für die Berechnung des Barwerts eines Betrags $A$, der in $n$ Jahren bei Zinssatz $r$ fällig ist?",
     "options": [
-      "A / (1 + r)^n",
-      "A * (1 + r)^n",
-      "A * r * n",
-      "A / (1 - r)^n"
+      "$A / (1 + r)^n$",
+      "$A \\cdot (1 + r)^n$",
+      "$A \\cdot r \\cdot n$",
+      "$A / (1 - r)^n$"
     ],
     "correct_index": 0,
-    "explanation": "Der Barwert wird mit A / (1 + r)^n berechnet, um zukünftige Zahlungen abzuzinsen."
+    "explanation": "Der Barwert wird mit der Formel $A / (1 + r)^n$ berechnet, um zukünftige Zahlungen abzuzinsen."
   },
   {
     "question": "Was passiert bei der sogenannten 'Diskontierung'?",
@@ -341,37 +341,37 @@
     "explanation": "Eine 'ideal bank' wendet denselben Zinssatz auf Einlagen und Kredite an, hat keine Servicegebühren und Transaktionen sind additiv bezüglich des Endkontostands."
   },
   {
-    "question": "Wie wird der Future Value (FV) eines Cash-Flow-Stroms (X0, X1,..., Xn) mit Zinssatz r pro Periode berechnet?",
+    "question": "Wie wird der Future Value (FV) eines Cash-Flow-Stroms $(X_0, X_1, \\ldots, X_n)$ mit Zinssatz $r$ pro Periode berechnet?",
     "options": [
-      "FV = X0 + X1 + ... + Xn",
-      "FV = X0(1+r)^n + X1(1+r)^(n-1) + ... + Xn",
-      "FV = (X0 + X1 + ... + Xn)(1+r)^n",
-      "FV = (X0 + X1 + ... + Xn)/(1+r)^n"
+      "$FV = X_0 + X_1 + \\ldots + X_n$",
+      "$FV = X_0(1+r)^n + X_1(1+r)^{n-1} + \\ldots + X_n$",
+      "$FV = (X_0 + X_1 + \\ldots + X_n)(1+r)^n$",
+      "$FV = \\frac{X_0 + X_1 + \\ldots + X_n}{(1+r)^n}$"
     ],
     "correct_index": 1,
-    "explanation": "Der Future Value wird berechnet, indem jeder Zahlungsbetrag mit dem Zinssatz hoch der Anzahl der Perioden multipliziert wird, die er investiert wurde."
+    "explanation": "Der Future Value wird berechnet, indem jeder Zahlungsbetrag mit $(1+r)$ hoch der Anzahl der Perioden multipliziert wird, die er investiert ist."
   },
   {
-    "question": "Wie lautet die Formel für den Present Value (PV) eines Cash-Flow-Stroms (X0, X1,..., Xn) mit Zinssatz r pro Periode?",
+    "question": "Wie lautet die Formel für den Present Value (PV) eines Cash-Flow-Stroms $(X_0, X_1, \\ldots, X_n)$ mit Zinssatz $r$ pro Periode?",
     "options": [
-      "PV = X0(1+r)^n + X1(1+r)^(n-1) + ... + Xn",
-      "PV = X0 + X1/(1+r) + X2/(1+r)^2 + ... + Xn/(1+r)^n",
-      "PV = (X0 + X1 + ... + Xn)(1+r)^n",
-      "PV = (X0 + X1 + ... + Xn)/(1+r)^n"
+      "$PV = X_0(1+r)^n + X_1(1+r)^{n-1} + \\ldots + X_n$",
+      "$PV = X_0 + \\frac{X_1}{(1+r)} + \\frac{X_2}{(1+r)^2} + \\ldots + \\frac{X_n}{(1+r)^n}$",
+      "$PV = (X_0 + X_1 + \\ldots + X_n)(1+r)^n$",
+      "$PV = \\frac{(X_0 + X_1 + \\ldots + X_n)}{(1+r)^n}$"
     ],
     "correct_index": 1,
-    "explanation": "Der Present Value wird berechnet, indem jede Zahlung durch (1+r) hoch der Anzahl der Perioden bis zur Zahlung diskontiert wird."
+    "explanation": "Der Present Value wird berechnet, indem jede Zahlung durch $(1+r)$ hoch der Anzahl der Perioden bis zur Zahlung diskontiert wird."
   },
   {
-    "question": "Wie hängen Future Value (FV) und Present Value (PV) bei Zinssatz r und n Perioden zusammen?",
+    "question": "Wie hängen Future Value (FV) und Present Value (PV) bei Zinssatz $r$ und $n$ Perioden zusammen?",
     "options": [
-      "PV = FV * (1+r)^n",
-      "PV = FV / (1+r)^n",
-      "FV = PV / (1+r)^n",
-      "FV = PV * (1-r)^n"
+      "$PV = FV (1+r)^n$",
+      "$PV = \\frac{FV}{(1+r)^n}$",
+      "$FV = \\frac{PV}{(1+r)^n}$",
+      "$FV = PV (1-r)^n$"
     ],
     "correct_index": 1,
-    "explanation": "PV ist der abgezinste Wert des Future Value, also PV = FV / (1+r)^n."
+    "explanation": "Der Present Value entspricht dem Future Value abgezinst um $n$ Perioden, also $PV = \\frac{FV}{(1+r)^n}$."
   },
   {
     "question": "Was bedeutet 'continuous compounding' bei der Zinsberechnung?",
