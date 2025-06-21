@@ -182,16 +182,11 @@ if st.sidebar.button("Falsch beantwortete Fragen anzeigen"):
     if falsch_fragen:
         st.sidebar.write("Falsch beantwortete Fragen:")
         for frage in falsch_fragen:
-            st.sidebar.write(f"- {frage['question']}:{frage['explanaiton']}")
+            st.sidebar.write(f"- {frage['question']}:{frage['explanation']}")
     else:
         st.sidebar.write("Keine falsch beantworteten Fragen.")
 
-# Optional: Wenn du trotzdem eine einzelne Frage anzeigen willst,
-# kannst du z.B. hier eine Zufallsfrage aus den falsch beantworteten auswählen
-if 'falsch_beantwortete_ids' in st.session_state and st.session_state['falsch_beantwortete_ids']:
-    frage_neu = random.choice([f for f in alle_fragen if f['id'] in st.session_state['falsch_beantwortete_ids']])
-    st.write("Aktuelle falsch beantwortete Frage:")
-    st.write(frage_neu['text'])
+
 
 if st.sidebar.button("🔄 Spiel zurücksetzen"):
     if os.path.exists(SPEICHERDATEI):
