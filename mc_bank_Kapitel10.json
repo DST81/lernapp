@@ -1,6 +1,6 @@
 [
     {
-        "question": "Was misst Value-at-Risk (VaR)?",
+        "question": "Was misst Value-at-Risk (VaR) (Risikowert)?",
         "options": [
             "Die durchschnittliche Rendite eines Portfolios",
             "Das maximale Risiko eines Portfolios",
@@ -8,10 +8,10 @@
             "Die Volatilität eines Portfolios"
         ],
         "correct_index": 2,
-        "explanation": "Value-at-Risk (VaR) ist ein statistisches Maß, das den maximalen Verlust eines Portfolios über einen bestimmten Zeitraum mit einer bestimmten Wahrscheinlichkeit quantifiziert. Es wird häufig im Risikomanagement verwendet, um das finanzielle Risiko innerhalb eines Unternehmens oder eines Investmentportfolios zu bewerten."
+        "explanation": "Value-at-Risk (VaR) (Risikowert) ist ein statistisches Maß, das den maximalen Verlust eines Portfolios über einen bestimmten Zeitraum mit einer bestimmten Wahrscheinlichkeit quantifiziert. Es wird häufig im Risikomanagement verwendet, um das finanzielle Risiko innerhalb eines Unternehmens oder eines Investmentportfolios zu bewerten."
     },
     {
-        "question": "Was ist Expected Shortfall (ES)?",
+        "question": "Was ist Expected Shortfall (ES) (Erwarteter Fehlbetrag)?",
         "options": [
             "Der durchschnittliche Verlust, der den VaR überschreitet",
             "Der maximale Verlust eines Portfolios",
@@ -19,10 +19,10 @@
             "Die durchschnittliche Rendite eines Portfolios"
         ],
         "correct_index": 0,
-        "explanation": "Expected Shortfall (ES), auch bekannt als Conditional VaR, ist ein Risikomaß, das den durchschnittlichen Verlust in den schlechtesten Szenarien quantifiziert, die den VaR-Schwellenwert überschreiten. Es bietet zusätzliche Informationen über das Tail-Risiko der Verteilung."
+        "explanation": "Expected Shortfall (ES) (Erwarteter Fehlbetrag), auch bekannt als Conditional VaR, ist ein Risikomaß, das den durchschnittlichen Verlust in den schlechtesten Szenarien quantifiziert, die den VaR-Schwellenwert überschreiten. Es bietet zusätzliche Informationen über das Tail-Risiko der Verteilung."
     },
     {
-        "question": "Welche Verteilung wird häufig zur Modellierung von Asset Returns verwendet?",
+        "question": "Welche Verteilung wird häufig zur Modellierung von Asset Returns (Vermögensrenditen) verwendet?",
         "options": [
             "Normalverteilung",
             "Binomialverteilung",
@@ -30,7 +30,7 @@
             "Poisson-Verteilung"
         ],
         "correct_index": 2,
-        "explanation": "Die Log-Normalverteilung wird häufig zur Modellierung von Asset Returns verwendet, da sie immer positive Werte liefert, was für Finanzanlagen wie Aktien realistisch ist. Sie ist rechtsschief und wird oft zur Modellierung von Aktienkursen und anderen Finanzinstrumenten verwendet."
+        "explanation": "Die Log-Normalverteilung wird häufig zur Modellierung von Asset Returns (Vermögensrenditen) verwendet, da sie immer positive Werte liefert, was für Finanzanlagen wie Aktien realistisch ist. Sie ist rechtsschief und wird oft zur Modellierung von Aktienkursen und anderen Finanzinstrumenten verwendet."
     },
     {
         "question": "Was ist der Hauptzweck einer Monte-Carlo-Simulation im Risikomanagement?",
@@ -66,7 +66,7 @@
         "explanation": "Die Hauptannahme der log-normalen Verteilung von Preisen ist, dass die logarithmischen Renditen normalverteilt sind. Dies bedeutet, dass die Preise selbst log-normalverteilt sind, was in der Finanzmathematik häufig zur Modellierung von Aktienkursen verwendet wird."
     },
     {
-        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) Analyse?",
+        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse?",
         "options": [
             "Die Berechnung der durchschnittlichen Rendite eines Portfolios",
             "Die Vorhersage zukünftiger Marktbedingungen",
@@ -74,10 +74,10 @@
             "Die Berechnung der Volatilität eines Portfolios"
         ],
         "correct_index": 2,
-        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) Analyse ist die Quantifizierung des potenziellen Verlusts eines risikobehafteten Vermögenswerts oder Portfolios über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko innerhalb eines Unternehmens oder eines Investmentportfolios zu bewerten."
+        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse ist die Quantifizierung des potenziellen Verlusts eines risikobehafteten Vermögenswerts oder Portfolios über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko innerhalb eines Unternehmens oder eines Investmentportfolios zu bewerten."
     },
     {
-        "question": "Was ist die Formel für den Expected Shortfall (ES)?",
+        "question": "Was ist die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag)?",
         "options": [
             "$ES = VaR$",
             "$ES = E[R | R < VaR]$",
@@ -85,10 +85,10 @@
             "$ES = E[R]$"
         ],
         "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) lautet $ES = E[R | R < VaR]$, wobei $E$ der Erwartungswertoperator ist und $R$ die Rendite darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
+        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) lautet $ES = E[R | R < VaR]$, wobei $E$ der Erwartungswertoperator ist und $R$ die Rendite darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
     },
     {
-        "question": "Was ist der Hauptvorteil der Verwendung der log-normalen Verteilung zur Modellierung von Asset Returns?",
+        "question": "Was ist der Hauptvorteil der Verwendung der log-normalen Verteilung zur Modellierung von Asset Returns (Vermögensrenditen)?",
         "options": [
             "Sie liefert immer positive Werte",
             "Sie ist einfach zu berechnen",
@@ -96,7 +96,7 @@
             "Sie liefert immer negative Werte"
         ],
         "correct_index": 0,
-        "explanation": "Der Hauptvorteil der Verwendung der log-normalen Verteilung zur Modellierung von Asset Returns ist, dass sie immer positive Werte liefert. Dies ist realistisch für Finanzanlagen wie Aktien, die nicht negativ werden können."
+        "explanation": "Der Hauptvorteil der Verwendung der log-normalen Verteilung zur Modellierung von Asset Returns (Vermögensrenditen) ist, dass sie immer positive Werte liefert. Dies ist realistisch für Finanzanlagen wie Aktien, die nicht negativ werden können."
     },
     {
         "question": "Was ist der Hauptzweck der Monte-Carlo-Simulation in einem Kreditprozess?",
@@ -121,7 +121,7 @@
         "explanation": "Die Formel für die Ausfallwahrscheinlichkeit (Probability of Default, PD) in einem Kreditprozess lautet $PD = 1 - e^{-\\lambda T}$, wobei $\\lambda$ die Ausfallrate und $T$ die Zeit ist. Diese Formel wird häufig verwendet, um die Wahrscheinlichkeit eines Kreditausfalls zu berechnen."
     },
     {
-        "question": "Was ist die Formel für die Recovery Rate (RR) in einem Kreditprozess?",
+        "question": "Was ist die Formel für die Recovery Rate (RR) (Rückgewinnungsrate) in einem Kreditprozess?",
         "options": [
             "$RR = 1 - LGD$",
             "$RR = LGD$",
@@ -129,10 +129,10 @@
             "$RR = LGD - 1$"
         ],
         "correct_index": 0,
-        "explanation": "Die Formel für die Recovery Rate (RR) in einem Kreditprozess lautet $RR = 1 - LGD$, wobei $LGD$ der Loss Given Default ist. Die Recovery Rate gibt den Anteil des Kreditbetrags an, der im Falle eines Ausfalls zurückerlangt werden kann."
+        "explanation": "Die Formel für die Recovery Rate (RR) (Rückgewinnungsrate) in einem Kreditprozess lautet $RR = 1 - LGD$, wobei $LGD$ der Loss Given Default (Verlust bei Ausfall) ist. Die Recovery Rate gibt den Anteil des Kreditbetrags an, der im Falle eines Ausfalls zurückerlangt werden kann."
     },
     {
-        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) Analyse in einem Kreditprozess?",
+        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess?",
         "options": [
             "Die Berechnung der durchschnittlichen Rendite eines Kredits",
             "Die Vorhersage zukünftiger Marktbedingungen",
@@ -140,10 +140,10 @@
             "Die Berechnung der Volatilität eines Kredits"
         ],
         "correct_index": 2,
-        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) Analyse in einem Kreditprozess ist die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko eines Kredits zu bewerten."
+        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess ist die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko eines Kredits zu bewerten."
     },
     {
-        "question": "Was ist die Formel für den Expected Shortfall (ES) in einem Kreditprozess?",
+        "question": "Was ist die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess?",
         "options": [
             "$ES = VaR$",
             "$ES = E[L | L > VaR]$",
@@ -151,7 +151,7 @@
             "$ES = E[L]$"
         ],
         "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
+        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
     },
     {
         "question": "Was ist der Hauptvorteil der Verwendung der Monte-Carlo-Simulation in einem Kreditprozess?",
@@ -165,7 +165,7 @@
         "explanation": "Der Hauptvorteil der Verwendung der Monte-Carlo-Simulation in einem Kreditprozess ist, dass sie komplexe Modelle und Unsicherheiten berücksichtigen kann. Dies ermöglicht eine realistischere Bewertung von Kreditrisiken und die Berücksichtigung verschiedener Risikofaktoren."
     },
     {
-        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) Analyse in einem Kreditprozess?",
+        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess?",
         "options": [
             "Die Berechnung der durchschnittlichen Rendite eines Kredits",
             "Die Vorhersage zukünftiger Marktbedingungen",
@@ -173,10 +173,10 @@
             "Die Berechnung der Volatilität eines Kredits"
         ],
         "correct_index": 2,
-        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) Analyse in einem Kreditprozess ist die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko eines Kredits zu bewerten."
+        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess ist die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko eines Kredits zu bewerten."
     },
     {
-        "question": "Was ist die Formel für den Expected Shortfall (ES) in einem Kreditprozess?",
+        "question": "Was ist die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess?",
         "options": [
             "$ES = VaR$",
             "$ES = E[L | L > VaR]$",
@@ -184,39 +184,6 @@
             "$ES = E[L]$"
         ],
         "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
-    },
-    {
-        "question": "Was ist der Hauptvorteil der Verwendung der Monte-Carlo-Simulation in einem Kreditprozess?",
-        "options": [
-            "Sie liefert immer positive Werte",
-            "Sie ist einfach zu berechnen",
-            "Sie kann komplexe Modelle und Unsicherheiten berücksichtigen",
-            "Sie liefert immer negative Werte"
-        ],
-        "correct_index": 2,
-        "explanation": "Der Hauptvorteil der Verwendung der Monte-Carlo-Simulation in einem Kreditprozess ist, dass sie komplexe Modelle und Unsicherheiten berücksichtigen kann. Dies ermöglicht eine realistischere Bewertung von Kreditrisiken und die Berücksichtigung verschiedener Risikofaktoren."
-    },
-    {
-        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) Analyse in einem Kreditprozess?",
-        "options": [
-            "Die Berechnung der durchschnittlichen Rendite eines Kredits",
-            "Die Vorhersage zukünftiger Marktbedingungen",
-            "Die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall",
-            "Die Berechnung der Volatilität eines Kredits"
-        ],
-        "correct_index": 2,
-        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) Analyse in einem Kreditprozess ist die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko eines Kredits zu bewerten."
-    },
-    {
-        "question": "Was ist die Formel für den Expected Shortfall (ES) in einem Kreditprozess?",
-        "options": [
-            "$ES = VaR$",
-            "$ES = E[L | L > VaR]$",
-            "$ES = E[L | L < VaR]$",
-            "$ES = E[L]$"
-        ],
-        "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
+        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
     }
 ]
