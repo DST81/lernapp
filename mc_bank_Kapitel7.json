@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "question": "Was ist die Formel für einfache Zinsen?",
     "options": [
       "Z = K / (i * t)",
@@ -75,17 +76,17 @@
     ],
     "correct_index": 1,
     "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t wird durch die Formel W = (1 - d)^(t-1) * d berechnet, wobei d die Ausfallrate pro Periode ist."
-  },
-  {
-    "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
-    "options": [
-      "L = D * (1 + D + A)",
-      "L = D / (1 + D + A)",
-      "L = D + (1 + D + A)",
-      "L = D - (1 + D + A)"
-    ],
-    "correct_index": 0,
-    "explanation": "Der erwartete Verlust wird durch die Formel L = D * (1 + D + A) berechnet, wobei D die Recovery Rate und A die ausstehende Kreditsumme ist."
+=======
+      "question": "Was ist die Formel für den Barwert (Present Value) zukünftiger Cashflows?",
+      "options": [
+          "$PV = \\frac{CF_t}{(1 + i)^t}$",
+          "$PV = CF_t \\cdot (1 + i)^t$",
+          "$PV = \\frac{CF_t}{(1 - i)^t}$",
+          "$PV = CF_t \\cdot (1 - i)^t$"
+      ],
+      "correct_index": 0,
+      "explanation": 
+          "Die Formel für den Barwert zukünftiger Cashflows lautet $PV = \\frac{CF_t}{(1 + i)^t}$, wobei $CF_t$ der Cashflow in Periode $t$, $i$ der Diskontierungszinssatz und $t$ die Periode ist."
   },
   {
     "question": "Welche Art von Kredit wird typischerweise für private Ausgaben verwendet?",
@@ -97,6 +98,104 @@
     ],
     "correct_index": 2,
     "explanation": "Konsumentenkredite sind kurzfristige Kredite, die typischerweise für private Ausgaben verwendet werden."
+  },
+  {
+      "question": "Was ist die Wahrscheinlichkeit, dass kein Ausfall eintritt, in einem Ausfallmodell?",
+      "options": [
+          "$W = (1 - d)^t$",
+          "$W = (1 + d)^t$",
+          "$W = \\frac{1 - d}{t}$",
+          "$W = \\frac{1 + d}{t}$"
+      ],
+      "correct_index": 0,
+      "explanation": 
+          "Die Wahrscheinlichkeit, dass kein Ausfall eintritt, wird durch die Formel $W = (1 - d)^t$ berechnet, wobei $d$ die Ausfallrate und $t$ die Periode ist."
+  },
+  {
+      "question": "Welche Formel beschreibt die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
+      "options": [
+          "$W = (1 - d)^t$",
+          "$W = (1 - d)^{t-1} \\cdot d$",
+          "$W = (1 + d)^t$",
+          "$W = (1 + d)^{t-1} \\cdot d$"
+      ],
+      "correct_index": 1,
+      "explanation": 
+          "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ wird durch die Formel $W = (1 - d)^{t-1} \\cdot d$ berechnet."
+>>>>>>> bdc20db8844ca95c570e01d06cef62cc6482e5b7
+  },
+  {
+      "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
+      "options": [
+          "$L = D \\cdot (1 + D + A)$",
+          "$L = \\frac{D}{1 + D + A}$",
+          "$L = D + (1 + D + A)$",
+          "$L = D - (1 + D + A)$"
+      ],
+      "correct_index": 0,
+      "explanation": 
+          "Der erwartete Verlust wird durch die Formel $L = D \\cdot (1 + D + A)$ berechnet, wobei $D$ die Recovery Rate und $A$ die ausstehende Kreditsumme ist."
+  },
+  {
+    "question": "Welche Art von Kredit wird typischerweise für private Ausgaben verwendet?",
+    "options": [
+      "Hypothekarkredit",
+      "Leasing",
+      "Konsumentenkredit",
+      "Unternehmenskredit"
+    ],
+    "correct_index": 2,
+<<<<<<< HEAD
+    "explanation": "Konsumentenkredite sind kurzfristige Kredite, die typischerweise für private Ausgaben verwendet werden."
+=======
+    "explanation": "Der Marktvergleich dient der Anpassung an Marktbedingungen und dem Wettbewerbsvergleich."
+  },
+  {
+    "question": "Was ist die Aufgabe bei der Amortisation?",
+    "options": [
+      "Schreiben einer Amortisationsfunktion in Python",
+      "Berechnung der Zinskurve",
+      "Erstellung einer Bilanz",
+      "Bewertung von Rückstellungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Aufgabe besteht darin, eine Amortisationsfunktion in Python zu schreiben und für eine Ratepause und Verlängerung der Laufzeit zu erweitern."
+  },
+  {
+      "question": "Was ist die Formel für die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$?",
+      "options": [
+          "$W = (1 - d)^t$",
+          "$W = (1 - d)^{t-1} \\cdot d$",
+          "$W = (1 + d)^t$",
+          "$W = (1 + d)^{t-1} \\cdot d$"
+      ],
+      "correct_index": 1,
+      "explanation": 
+          "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ wird durch die Formel $W = (1 - d)^{t-1} \\cdot d$ berechnet."
+  },
+  {
+      "question": "Was ist die Formel für die Kalibrierung der Ausfallrate?",
+      "options": [
+          "$w = (1 - d)^g \\cdot d$",
+          "$w = (1 + d)^g \\cdot d$",
+          "$w = \\frac{(1 - d)}{g} \\cdot d$",
+          "$w = \\frac{(1 + d)}{g} \\cdot d$"
+      ],
+      "correct_index": 0,
+      "explanation": 
+          "Die Kalibrierung der Ausfallrate wird durch die Formel $w = (1 - d)^g \\cdot d$ beschrieben."
+  },
+  {
+    "question": "Was ist der Zweck der Buchführung von Kreditprodukten?",
+    "options": [
+      "Zur Erfassung von Lagerbeständen",
+      "Zur Erfassung von Kundenfeedback",
+      "Zur Aktivierung als Forderungen und zur Bildung von Rückstellungen",
+      "Zur Erfassung von Personaldaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Buchführung von Kreditprodukten dient der Aktivierung als Forderungen und der Bildung von Rückstellungen für erwartete Kreditausfälle."
+>>>>>>> bdc20db8844ca95c570e01d06cef62cc6482e5b7
   },
   {
     "question": "Was ist der Unterschied zwischen Operating Leasing und Finance Leasing?",
@@ -121,6 +220,7 @@
     "explanation": "Die Segmentierung des Kreditportfolios dient der besseren Risikosteuerung und Kontrolle. Durch die Segmentierung können Kredite nach Produkttyp, Laufzeit und Risikoklassen besser überwacht und gesteuert werden."
   },
   {
+<<<<<<< HEAD
     "question": "Was ist die Spot Rate?",
     "options": [
       "Ein zukünftiger Zinssatz",
@@ -229,5 +329,16 @@
     ],
     "correct_index": 1,
     "explanation": "Der Hauptgrund für Ausfälle bei Hypothekarkrediten ist Scheidung. Hypothekarkredite sind oft langfristige Finanzierungen, die von der finanziellen Stabilität des Haushalts abhängen. Eine Scheidung kann diese Stabilität beeinträchtigen und zu Zahlungsausfällen führen."
+=======
+      "question": "Was ist die Formel für den Barwert zukünftiger Cashflows?",
+      "options": [
+          "$PV = \\frac{CF_t}{(1 + i)^t}$",
+          "$PV = CF_t \\cdot (1 + i)^t$",
+          "$PV = \\frac{CF_t}{(1 - i)^t}$",
+          "$PV = CF_t \\cdot (1 - i)^t$"
+      ],
+      "correct_index": 0,
+      "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet $PV = \\frac{CF_t}{(1 + i)^t}$."
+>>>>>>> bdc20db8844ca95c570e01d06cef62cc6482e5b7
   }
 ]
