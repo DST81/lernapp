@@ -1,14 +1,18 @@
 [
   {
-    "question": "Was ist die Formel für den Barwert (Present Value) zukünftiger Cashflows?",
-    "options": [
-      "PV = CF_t / (1 + i)^t",
-      "PV = CF_t * (1 + i)^t",
-      "PV = CF_t / (1 - i)^t",
-      "PV = CF_t * (1 - i)^t"
-    ],
-    "correct_index": 0,
-    "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet PV = CF_t / (1 + i)^t, wobei CF_t der Cashflow in Periode t, i der Diskontierungszinssatz und t die Periode ist."
+      "question": "Was ist die Formel für den Barwert (Present Value) zukünftiger Cashflows?",
+      "options": [
+          "$PV = \\frac{CF_t}{(1 + i)^t}$",
+          "$PV = CF_t \\cdot (1 + i)^t$",
+          "$PV = \\frac{CF_t}{(1 - i)^t}$",
+          "$PV = CF_t \\cdot (1 - i)^t$"
+      ],
+      "correct_index": 0,
+      "explanation": (
+          "Die Formel für den Barwert zukünftiger Cashflows lautet "
+          "$PV = \\frac{CF_t}{(1 + i)^t}$, wobei $CF_t$ der Cashflow in Periode $t$, "
+          "$i$ der Diskontierungszinssatz und $t$ die Periode ist."
+      )
   },
   {
     "question": "Welche Art von Kredit wird typischerweise für private Ausgaben verwendet?",
@@ -22,37 +26,46 @@
     "explanation": "Konsumentenkredite sind kurzfristige Kredite, die typischerweise für private Ausgaben verwendet werden."
   },
   {
-    "question": "Was ist die Wahrscheinlichkeit, dass kein Ausfall eintritt, in einem Ausfallmodell?",
-    "options": [
-      "W = (1 - d)^t",
-      "W = (1 + d)^t",
-      "W = (1 - d) / t",
-      "W = (1 + d) / t"
-    ],
-    "correct_index": 0,
-    "explanation": "Die Wahrscheinlichkeit, dass kein Ausfall eintritt, wird durch die Formel W = (1 - d)^t berechnet, wobei d die Ausfallrate und t die Periode ist."
+      "question": "Was ist die Wahrscheinlichkeit, dass kein Ausfall eintritt, in einem Ausfallmodell?",
+      "options": [
+          "$W = (1 - d)^t$",
+          "$W = (1 + d)^t$",
+          "$W = \\frac{1 - d}{t}$",
+          "$W = \\frac{1 + d}{t}$"
+      ],
+      "correct_index": 0,
+      "explanation": (
+          "Die Wahrscheinlichkeit, dass kein Ausfall eintritt, wird durch die Formel "
+          "$W = (1 - d)^t$ berechnet, wobei $d$ die Ausfallrate und $t$ die Periode ist."
+      )
   },
   {
-    "question": "Welche Formel beschreibt die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
-    "options": [
-      "W = (1 - d)^t",
-      "W = (1 - d)^{t-1} * d",
-      "W = (1 + d)^t",
-      "W = (1 + d)^{t-1} * d"
-    ],
-    "correct_index": 1,
-    "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t wird durch die Formel W = (1 - d)^{t-1} * d berechnet."
+      "question": "Welche Formel beschreibt die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
+      "options": [
+          "$W = (1 - d)^t$",
+          "$W = (1 - d)^{t-1} \\cdot d$",
+          "$W = (1 + d)^t$",
+          "$W = (1 + d)^{t-1} \\cdot d$"
+      ],
+      "correct_index": 1,
+      "explanation": (
+          "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ wird durch die Formel "
+          "$W = (1 - d)^{t-1} \\cdot d$ berechnet."
+      )
   },
   {
-    "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
-    "options": [
-      "L = D * (1 + D + A)",
-      "L = D / (1 + D + A)",
-      "L = D + (1 + D + A)",
-      "L = D - (1 + D + A)"
-    ],
-    "correct_index": 0,
-    "explanation": "Der erwartete Verlust wird durch die Formel L = D * (1 + D + A) berechnet, wobei D die Recovery Rate und A die ausstehende Kreditsumme ist."
+      "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
+      "options": [
+          "$L = D \\cdot (1 + D + A)$",
+          "$L = \\frac{D}{1 + D + A}$",
+          "$L = D + (1 + D + A)$",
+          "$L = D - (1 + D + A)$"
+      ],
+      "correct_index": 0,
+      "explanation": (
+          "Der erwartete Verlust wird durch die Formel "
+          "$L = D \\cdot (1 + D + A)$ berechnet, wobei $D$ die Recovery Rate und $A$ die ausstehende Kreditsumme ist."
+      )
   },
   {
     "question": "Welche Art von Leasing wird unterschiedlich bilanziert?",
@@ -154,26 +167,32 @@
     "explanation": "Die Aufgabe besteht darin, eine Amortisationsfunktion in Python zu schreiben und für eine Ratepause und Verlängerung der Laufzeit zu erweitern."
   },
   {
-    "question": "Was ist die Formel für die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
-    "options": [
-      "W = (1 - d)^t",
-      "W = (1 - d)^{t-1} * d",
-      "W = (1 + d)^t",
-      "W = (1 + d)^{t-1} * d"
-    ],
-    "correct_index": 1,
-    "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t wird durch die Formel W = (1 - d)^{t-1} * d berechnet."
+      "question": "Was ist die Formel für die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$?",
+      "options": [
+          "$W = (1 - d)^t$",
+          "$W = (1 - d)^{t-1} \\cdot d$",
+          "$W = (1 + d)^t$",
+          "$W = (1 + d)^{t-1} \\cdot d$"
+      ],
+      "correct_index": 1,
+      "explanation": (
+          "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ "
+          "wird durch die Formel $W = (1 - d)^{t-1} \\cdot d$ berechnet."
+      )
   },
   {
-    "question": "Was ist die Formel für die Kalibrierung der Ausfallrate?",
-    "options": [
-      "w = (1 - d)^g * d",
-      "w = (1 + d)^g * d",
-      "w = (1 - d) / g * d",
-      "w = (1 + d) / g * d"
-    ],
-    "correct_index": 0,
-    "explanation": "Die Kalibrierung der Ausfallrate wird durch die Formel w = (1 - d)^g * d beschrieben."
+      "question": "Was ist die Formel für die Kalibrierung der Ausfallrate?",
+      "options": [
+          "$w = (1 - d)^g \\cdot d$",
+          "$w = (1 + d)^g \\cdot d$",
+          "$w = \\frac{(1 - d)}{g} \\cdot d$",
+          "$w = \\frac{(1 + d)}{g} \\cdot d$"
+      ],
+      "correct_index": 0,
+      "explanation": (
+          "Die Kalibrierung der Ausfallrate wird durch die Formel "
+          "$w = (1 - d)^g \\cdot d$ beschrieben."
+      )
   },
   {
     "question": "Was ist der Zweck der Buchführung von Kreditprodukten?",
@@ -209,14 +228,14 @@
     "explanation": "Die Segmentierung des Kreditportfolios dient der besseren Risikosteuerung und Kontrolle."
   },
   {
-    "question": "Was ist die Formel für den Barwert zukünftiger Cashflows?",
-    "options": [
-      "PV = CF_t / (1 + i)^t",
-      "PV = CF_t * (1 + i)^t",
-      "PV = CF_t / (1 - i)^t",
-      "PV = CF_t * (1 - i)^t"
-    ],
-    "correct_index": 0,
-    "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet PV = CF_t / (1 + i)^t."
+      "question": "Was ist die Formel für den Barwert zukünftiger Cashflows?",
+      "options": [
+          "$PV = \\frac{CF_t}{(1 + i)^t}$",
+          "$PV = CF_t \\cdot (1 + i)^t$",
+          "$PV = \\frac{CF_t}{(1 - i)^t}$",
+          "$PV = CF_t \\cdot (1 - i)^t$"
+      ],
+      "correct_index": 0,
+      "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet $PV = \\frac{CF_t}{(1 + i)^t}$."
   }
 ]
