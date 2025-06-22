@@ -77,15 +77,15 @@
     "explanation": "Unveränderlichkeit bedeutet, dass jede nachträgliche Änderung sofort auffällt, da der zugehörige Hash und die Signatur nicht mehr passen."
   },
   {
-    "question": "Welche Formel beschreibt die Kontostandsänderung in einem Kontomodell der Form A(t+1,i)?",
-    "options": [
-      "A(t+1,i) = A(t,i) - w(t+1,i) + d(t+1,i)",
-      "A(t+1,i) = A(t,i) + w(t+1,i) + d(t+1,i)",
-      "A(t+1,i) = w(t+1,i) - d(t+1,i)",
-      "A(t+1,i) = d(t+1,i) - w(t+1,i) - A(t,i)"
+    "question": "Welche Formel beschreibt die Kontostandsänderung in einem Kontomodell der Form $A(t+1,i)$?",
+     "options": [
+    "$A(t+1,i) = A(t,i) - w(t+1,i) + d(t+1,i)$",
+    "$A(t+1,i) = A(t,i) + w(t+1,i) + d(t+1,i)$",
+    "$A(t+1,i) = w(t+1,i) - d(t+1,i)$",
+    "$A(t+1,i) = d(t+1,i) - w(t+1,i) - A(t,i)$"
     ],
     "correct_index": 0,
-    "explanation": "Der neue Kontostand entspricht dem alten Kontostand minus der Auszahlungen plus der Einzahlungen zur nächsten Zeit t+1."
+    "explanation": "Der neue Kontostand entspricht dem alten Kontostand $A(t,i)$ minus der Auszahlung $w(t+1,i)$ plus der Einzahlung $d(t+1,i)$ zur nächsten Zeit $t+1$."
   },
   {
     "question": "Wozu dient der Transfernachrichtsmechanismus t(t,i,j)?",
@@ -108,5 +108,148 @@
     ],
     "correct_index": 2,
     "explanation": "Wird die Nachricht abgelehnt, erfolgt keine Gutschrift beim Empfänger und der ursprüngliche Kontostand beim Sender bleibt unverändert."
+  },
+  {
+    "question": "Welche Aufgabe übernimmt der öffentliche Schlüssel bei digitalen Signaturen?",
+    "options": [
+      "Er signiert die Nachricht.",
+      "Er überprüft die digitale Signatur der Nachricht.",
+      "Er erstellt die Merkle-Wurzel.",
+      "Er löscht die Nachricht nach der Prüfung."
+    ],
+    "correct_index": 1,
+    "explanation": "Der öffentliche Schlüssel ermöglicht es jedem, die digitale Signatur zu verifizieren."
+  },
+  {
+    "question": "Was bedeutet der Begriff 'Nichtabstreitbarkeit' (Non-Repudiation)?",
+    "options": [
+      "Ein Server kann immer leugnen, dass er die Transaktion durchgeführt hat.",
+      "Der Signierende kann später nicht glaubhaft leugnen, die Nachricht signiert zu haben.",
+      "Jede Partei darf Transaktionen zurückziehen.",
+      "Die Transaktionen werden automatisch storniert."
+    ],
+    "correct_index": 1,
+    "explanation": "Nichtabstreitbarkeit bedeutet, dass der Signierende nicht leugnen kann, die Transaktion signiert zu haben."
+  },
+  {
+    "question": "Welcher der folgenden Schritte gehört NICHT zur Zwei-Phasen-Commit-Protokoll (2PC)?",
+    "options": [
+      "Prepare-Phase",
+      "Commit-Phase",
+      "PreCommit-Phase",
+      "Abstimmungs-Phase (Voting)"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Zwei-Phasen-Commit-Protokoll kennt nur die Prepare- und Commit-Phase. Die PreCommit-Phase gehört zu 3PC."
+  },
+  {
+    "question": "Welche der folgenden Eigenschaften beschreibt am besten die Event-Driven Architecture in Banksystemen?",
+    "options": [
+      "Starke Kopplung der Dienste",
+      "Asynchrone Kommunikation und lose Kopplung",
+      "Synchrone RPC-Kommunikation",
+      "Kein Auditing der Transaktionen erforderlich"
+    ],
+    "correct_index": 1,
+    "explanation": "Event-Driven Architecture nutzt lose gekoppelte, asynchrone Kommunikation, die besonders skalierbar und auditierbar ist."
+  },
+  {
+    "question": "Warum werden digitale Signaturen und öffentliche Schlüsselregister in der non-repudiable Resource-Management-Architektur verwendet?",
+    "options": [
+      "Um die privaten Schlüssel zentral zu speichern",
+      "Um Manipulationen und Abstreitbarkeit der Transaktionen zu verhindern",
+      "Um die Kontostände automatisch zu aktualisieren",
+      "Um die Datenspeicherung zu verschlüsseln"
+    ],
+    "correct_index": 1,
+    "explanation": "Sie verhindern Manipulationen und stellen sicher, dass Transaktionen nicht abgestritten werden können."
+  },
+  {
+    "question": "Welches Ziel verfolgt der Two-Phase Commit (2PC)?",
+    "options": [
+      "Sicherzustellen, dass alle Teilnehmer einer verteilten Transaktion denselben Commit-Zustand erreichen.",
+      "Alle Teilnehmer sofort zu blockieren.",
+      "Transaktionen zu verschlüsseln.",
+      "Die Netzwerkgeschwindigkeit zu optimieren."
+    ],
+    "correct_index": 0,
+    "explanation": "2PC stellt sicher, dass entweder alle committen oder alle abbrechen, um die Konsistenz der verteilten Transaktion zu gewährleisten."
+  },
+  {
+    "question": "Warum ist der Three-Phase Commit (3PC) robuster als der Two-Phase Commit?",
+    "options": [
+      "3PC reduziert die Anzahl der Nachrichten.",
+      "3PC fügt eine zusätzliche Phase hinzu und verringert das Risiko, dass der Prozess bei Fehlern blockiert.",
+      "3PC benötigt keine digitalen Signaturen.",
+      "3PC funktioniert nur mit einem Teilnehmer."
+    ],
+    "correct_index": 1,
+    "explanation": "Der 3PC führt eine PreCommit-Phase ein, die das Blockieren bei einem Koordinatorausfall reduziert."
+  },
+  {
+    "question": "Welche Rolle spielt der Transaction Manager (TM) bei der Verarbeitung einer externen Einzahlung?",
+    "options": [
+      "Er druckt die Kontoauszüge aus.",
+      "Er empfängt die Einzahlung, validiert sie und initiiert Commit-Protokolle mit Account- und Ledger-Systemen.",
+      "Er löscht die Transaktion aus der Datenbank.",
+      "Er blockiert die Einzahlung bis Monatsende."
+    ],
+    "correct_index": 1,
+    "explanation": "Der TM empfängt externe Zahlungen und validiert sie, bevor er sie intern über Commit-Protokolle verbucht."
+  },
+  {
+    "question": "Welche der folgenden Eigenschaften ist zentral beim Event Sourcing?",
+    "options": [
+      "Jeder Event verändert direkt die Datenbank ohne Log.",
+      "Jeder Statuswechsel wird als unveränderbarer Event gespeichert und der aktuelle Zustand lässt sich aus diesen Events rekonstruieren.",
+      "Event Sourcing benötigt keine Speicherung der Änderungen.",
+      "Event Sourcing reduziert die Notwendigkeit der Datensicherung."
+    ],
+    "correct_index": 1,
+    "explanation": "Beim Event Sourcing werden alle Änderungen als Events protokolliert, aus denen der Zustand wiederhergestellt werden kann."
+  },
+  {
+    "question": "Warum ist ein öffentlich zugängliches Schlüsselregister bei der non-repudiable Ressourcenverwaltung sinnvoll?",
+    "options": [
+      "Es speichert auch die Kontostände der Banken.",
+      "Es ermöglicht allen Parteien, digitale Signaturen zu prüfen und die Identität der Kommunikationspartner zu verifizieren.",
+      "Es generiert automatisch neue Schlüssel bei Transaktionen.",
+      "Es reduziert die Speicherkosten für Transaktionen."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Register ermöglicht die Überprüfung der digitalen Signaturen und der Identität der Kommunikationspartner."
+  },
+  {
+    "question": "Welche der folgenden Aktionen erfolgen während der PreCommit-Phase des Three-Phase Commit (3PC)?",
+    "options": [
+      "Die Transaktion ist bereits vollständig abgeschlossen.",
+      "Die Teilnehmer wechseln in einen vorbereiteten Zustand, der sicherstellt, dass der Commit nach einem Absturz durchgeführt werden kann.",
+      "Die Teilnehmer führen die Transaktion rückgängig.",
+      "Die Transaktion wird automatisch protokolliert, ohne dass die Teilnehmer reagieren."
+    ],
+    "correct_index": 1,
+    "explanation": "In der PreCommit-Phase wechseln die Teilnehmer in einen Zustand, der den späteren Commit sichert."
+  },
+  {
+    "question": "Welche der folgenden Aussagen zur Integritätsprüfung mit Merkle-Bäumen ist korrekt?",
+    "options": [
+      "Ein Blattknoten enthält die gesamte Transaktionshistorie.",
+      "Die Integrität eines Datensatzes lässt sich nur durch lineare Prüfung aller Blätter verifizieren.",
+      "Eine kleine Änderung in einem Blatt verändert die Merkle-Wurzel und ermöglicht einfache Erkennung der Manipulation.",
+      "Die Merkle-Wurzel hängt nur von der Zeit der Transaktion ab."
+    ],
+    "correct_index": 2,
+    "explanation": "Jede kleine Änderung an einem Blatt verändert die gesamte Merkle-Wurzel, wodurch die Manipulation leicht erkannt wird."
+  },
+  {
+    "question": "Welches Ziel verfolgt die digitale Signatur bei der Absicherung der Kontotransaktionen?",
+    "options": [
+      "Transaktionen schneller auszuführen.",
+      "Die Authentizität und Integrität der Transaktion zu gewährleisten und ihre Nichtabstreitbarkeit sicherzustellen.",
+      "Den Kontostand automatisch zu berechnen.",
+      "Das Format der Transaktionen zu standardisieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Die digitale Signatur gewährleistet Herkunft, Integrität und Nichtabstreitbarkeit der Transaktion."
   }
 ]
