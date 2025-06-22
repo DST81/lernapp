@@ -46,13 +46,13 @@
     {
         "question": "Was ist die Formel für die kontinuierliche Verzinsung?",
         "options": [
-            "$S_T = S_0 \\cdot e^{rT}$",
-            "$S_T = S_0 \\cdot (1 + r)^T$",
-            "$S_T = S_0 \\cdot rT$",
-            "$S_T = S_0 + rT$"
+            "$$S_T = S_0 \\cdot e^{rT}$$",
+            "$$S_T = S_0 \\cdot (1 + r)^T$$",
+            "$$S_T = S_0 \\cdot rT$$",
+            "$$S_T = S_0 + rT$$"
         ],
         "correct_index": 0,
-        "explanation": "Die Formel für die kontinuierliche Verzinsung lautet $S_T = S_0 \\cdot e^{rT}$, wobei $S_T$ der zukünftige Wert, $S_0$ der Anfangswert, $r$ der Zinssatz und $T$ die Zeit ist. Diese Formel wird häufig in der Finanzmathematik verwendet, um den zukünftigen Wert einer Investition zu berechnen."
+        "explanation": "Die Formel für die kontinuierliche Verzinsung lautet $$S_T = S_0 \\cdot e^{rT}$$, wobei $$S_T$$ der zukünftige Wert, $$S_0$$ der Anfangswert, $$r$$ der Zinssatz und $$T$$ die Zeit ist. Diese Formel wird häufig in der Finanzmathematik verwendet, um den zukünftigen Wert einer Investition zu berechnen."
     },
     {
         "question": "Was ist die Hauptannahme der log-normalen Verteilung von Preisen?",
@@ -79,13 +79,13 @@
     {
         "question": "Was ist die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag)?",
         "options": [
-            "$ES = VaR$",
-            "$ES = E[R | R < VaR]$",
-            "$ES = E[R | R > VaR]$",
-            "$ES = E[R]$"
+            "$$ES = VaR$$",
+            "$$ES = E[R | R < VaR]$$",
+            "$$ES = E[R | R > VaR]$$",
+            "$$ES = E[R]$$"
         ],
         "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) lautet $ES = E[R | R < VaR]$, wobei $E$ der Erwartungswertoperator ist und $R$ die Rendite darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
+        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) lautet $$ES = E[R | R < VaR]$$, wobei $$E$$ der Erwartungswertoperator ist und $$R$$ die Rendite darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
     },
     {
         "question": "Was ist der Hauptvorteil der Verwendung der log-normalen Verteilung zur Modellierung von Asset Returns (Vermögensrenditen)?",
@@ -112,24 +112,24 @@
     {
         "question": "Was ist die Formel für die Ausfallwahrscheinlichkeit (Probability of Default, PD) in einem Kreditprozess?",
         "options": [
-            "$PD = 1 - e^{-\\lambda T}$",
-            "$PD = e^{-\\lambda T}$",
-            "$PD = 1 + e^{-\\lambda T}$",
-            "$PD = \\lambda T$"
+            "$$PD = 1 - e^{-\\lambda T}$$",
+            "$$PD = e^{-\\lambda T}$$",
+            "$$PD = 1 + e^{-\\lambda T}$$",
+            "$$PD = \\lambda T$$"
         ],
         "correct_index": 0,
-        "explanation": "Die Formel für die Ausfallwahrscheinlichkeit (Probability of Default, PD) in einem Kreditprozess lautet $PD = 1 - e^{-\\lambda T}$, wobei $\\lambda$ die Ausfallrate und $T$ die Zeit ist. Diese Formel wird häufig verwendet, um die Wahrscheinlichkeit eines Kreditausfalls zu berechnen."
+        "explanation": "Die Formel für die Ausfallwahrscheinlichkeit (Probability of Default, PD) in einem Kreditprozess lautet $$PD = 1 - e^{-\\lambda T}$$, wobei $$\\lambda$$ die Ausfallrate und $$T$$ die Zeit ist. Diese Formel wird häufig verwendet, um die Wahrscheinlichkeit eines Kreditausfalls zu berechnen."
     },
     {
         "question": "Was ist die Formel für die Recovery Rate (RR) (Rückgewinnungsrate) in einem Kreditprozess?",
         "options": [
-            "$RR = 1 - LGD$",
-            "$RR = LGD$",
-            "$RR = 1 + LGD$",
-            "$RR = LGD - 1$"
+            "$$RR = 1 - LGD$$",
+            "$$RR = LGD$$",
+            "$$RR = 1 + LGD$$",
+            "$$RR = LGD - 1$$"
         ],
         "correct_index": 0,
-        "explanation": "Die Formel für die Recovery Rate (RR) (Rückgewinnungsrate) in einem Kreditprozess lautet $RR = 1 - LGD$, wobei $LGD$ der Loss Given Default (Verlust bei Ausfall) ist. Die Recovery Rate gibt den Anteil des Kreditbetrags an, der im Falle eines Ausfalls zurückerlangt werden kann."
+        "explanation": "Die Formel für die Recovery Rate (RR) (Rückgewinnungsrate) in einem Kreditprozess lautet $$RR = 1 - LGD$$, wobei $$LGD$$ der Loss Given Default (Verlust bei Ausfall) ist. Die Recovery Rate gibt den Anteil des Kreditbetrags an, der im Falle eines Ausfalls zurückerlangt werden kann."
     },
     {
         "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess?",
@@ -145,13 +145,13 @@
     {
         "question": "Was ist die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess?",
         "options": [
-            "$ES = VaR$",
-            "$ES = E[L | L > VaR]$",
-            "$ES = E[L | L < VaR]$",
-            "$ES = E[L]$"
+            "$$ES = VaR$$",
+            "$$ES = E[L | L > VaR]$$",
+            "$$ES = E[L | L < VaR]$$",
+            "$$ES = E[L]$$"
         ],
         "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
+        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess lautet $$ES = E[L | L > VaR]$$, wobei $$E$$ der Erwartungswertoperator ist und $$L$$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
     },
     {
         "question": "Was ist der Hauptvorteil der Verwendung der Monte-Carlo-Simulation in einem Kreditprozess?",
@@ -165,28 +165,6 @@
         "explanation": "Der Hauptvorteil der Verwendung der Monte-Carlo-Simulation in einem Kreditprozess ist, dass sie komplexe Modelle und Unsicherheiten berücksichtigen kann. Dies ermöglicht eine realistischere Bewertung von Kreditrisiken und die Berücksichtigung verschiedener Risikofaktoren."
     },
     {
-        "question": "Was ist der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess?",
-        "options": [
-            "Die Berechnung der durchschnittlichen Rendite eines Kredits",
-            "Die Vorhersage zukünftiger Marktbedingungen",
-            "Die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall",
-            "Die Berechnung der Volatilität eines Kredits"
-        ],
-        "correct_index": 2,
-        "explanation": "Der Hauptzweck der Value-at-Risk (VaR) (Risikowert) Analyse in einem Kreditprozess ist die Quantifizierung des potenziellen Verlusts eines Kredits über einen definierten Zeitraum für ein gegebenes Konfidenzintervall. VaR wird häufig im Risikomanagement verwendet, um das finanzielle Risiko eines Kredits zu bewerten."
-    },
-    {
-        "question": "Was ist die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess?",
-        "options": [
-            "$ES = VaR$",
-            "$ES = E[L | L > VaR]$",
-            "$ES = E[L | L < VaR]$",
-            "$ES = E[L]$"
-        ],
-        "correct_index": 1,
-        "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
-    },
-    {
         "question": "Was ist die Formel für die Portfolio-Rendite \\( R_P \\)?",
         "options": [
             "$$R_P = \\sum_{i=1}^{M} w_i R_i$$",
@@ -195,7 +173,7 @@
             "$$R_P = \\sum_{i=1}^{M} N_i (S_i(1) - S_i(0))$$"
         ],
         "correct_index": 0,
-        "explanation": "Die Formel für die Portfolio-Rendite \\( R_P \\) ist $$R_P = \\\\sum_{i=1}^{M} w_i R_i$$, wobei \\( w_i \\) das Gewicht des Vermögenswerts \\( i \\) im Portfolio und \\( R_i \\) die Rendite des Vermögenswerts \\( i \\) ist. Diese Formel zeigt, dass die Portfolio-Rendite der gewichtete Durchschnitt der Renditen der einzelnen Vermögenswerte ist."
+        "explanation": "Die Formel für die Portfolio-Rendite \\( R_P \\) ist $$R_P = \\sum_{i=1}^{M} w_i R_i$$, wobei \\( w_i \\) das Gewicht des Vermögenswerts \\( i \\) im Portfolio und \\( R_i \\) die Rendite des Vermögenswerts \\( i \\) ist. Diese Formel zeigt, dass die Portfolio-Rendite der gewichtete Durchschnitt der Renditen der einzelnen Vermögenswerte ist."
     },
     {
         "question": "Was ist der Hauptzweck der Cholesky-Zerlegung in der Portfolio-Simulation?",
@@ -209,7 +187,7 @@
         "explanation": "Der Hauptzweck der Cholesky-Zerlegung in der Portfolio-Simulation ist die Zerlegung der Kovarianzmatrix in eine untere Dreiecksmatrix und ihre Transponierte, um korrelierte Renditen zu generieren. Dies ermöglicht die Simulation von Portfolio-Renditen, die die gewünschten statistischen Eigenschaften aufweisen."
     },
     {
-        "question": "Was ist die Formel für die Varianz der Portfolio-Rendite ( \\operatorname{Var}(R_P) )?",
+        "question": "Was ist die Formel für die Varianz der Portfolio-Rendite \\( \\operatorname{Var}(R_P) \\)?",
         "options": [
             "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} w_i \\sigma_i^2$$",
             "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_{ij}$$",
@@ -217,7 +195,7 @@
             "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_i \\sigma_j$$"
         ],
         "correct_index": 1,
-        "explanation": "Die Formel für die Varianz der Portfolio-Rendite ( \\operatorname{Var}(R_P) ) ist $$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_{ij}$$, wobei ( w_i ) und ( w_j ) die Gewichte der Vermögenswerte ( i ) und ( j ) im Portfolio sind und ( \\sigma_{ij} ) die Kovarianz zwischen den Renditen der Vermögenswerte ( i ) und ( j ) ist. Diese Formel berücksichtigt die Kovarianz zwischen allen Paaren von Vermögenswerten im Portfolio."
+        "explanation": "Die Formel für die Varianz der Portfolio-Rendite \\( \\operatorname{Var}(R_P) \\) ist $$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_{ij}$$, wobei \\( w_i \\) und \\( w_j \\) die Gewichte der Vermögenswerte \\( i \\) und \\( j \\) im Portfolio sind und \\( \\sigma_{ij} \\) die Kovarianz zwischen den Renditen der Vermögenswerte \\( i \\) und \\( j \\) ist. Diese Formel berücksichtigt die Kovarianz zwischen allen Paaren von Vermögenswerten im Portfolio."
     },
     {
         "question": "Was ist der Hauptzweck des Rebalancings in einem Portfolio?",
@@ -231,7 +209,7 @@
         "explanation": "Der Hauptzweck des Rebalancings in einem Portfolio ist die Anpassung der Portfolio-Gewichte, um die Zielgewichte zu erreichen und das Risiko zu kontrollieren. Durch Rebalancing wird sichergestellt, dass das Portfolio die gewünschte Asset-Allokation beibehält und das Risiko innerhalb der gewünschten Grenzen bleibt."
     },
     {
-        "question": "Was ist die Formel für die Kovarianz zwischen zwei Zufallsvariablen ( X ) und ( Y )?",
+        "question": "Was ist die Formel für die Kovarianz zwischen zwei Zufallsvariablen \\( X \\) und \\( Y \\)?",
         "options": [
             "$$\\text{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])]$$",
             "$$\\text{Cov}(X, Y) = E[X]E[Y]$$",
@@ -239,7 +217,7 @@
             "$$\\text{Cov}(X, Y) = \\sqrt{\\text{Var}(X)\\text{Var}(Y)}$$"
         ],
         "correct_index": 0,
-        "explanation": "Die Formel für die Kovarianz zwischen zwei Zufallsvariablen ( X ) und ( Y ) ist $$\\text{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])]$$. Diese Formel misst den linearen Zusammenhang zwischen den beiden Variablen und ist ein zentrales Konzept in der Statistik und Portfolio-Theorie."
+        "explanation": "Die Formel für die Kovarianz zwischen zwei Zufallsvariablen \\( X \\) und \\( Y \\) ist $$\\text{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])]$$. Diese Formel misst den linearen Zusammenhang zwischen den beiden Variablen und ist ein zentrales Konzept in der Statistik und Portfolio-Theorie."
     },
     {
         "question": "Was ist der Hauptzweck der Monte-Carlo-Simulation in der Kreditsimulation?",
@@ -253,4 +231,3 @@
         "explanation": "Der Hauptzweck der Monte-Carlo-Simulation in der Kreditsimulation ist die Simulation des Kreditprozesses unter Berücksichtigung von Zahlungspausen und Ausfallwahrscheinlichkeiten. Dies ermöglicht eine realistischere Risikobewertung und die Analyse verschiedener Szenarien."
     }
 ]
-
