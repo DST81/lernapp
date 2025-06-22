@@ -8,11 +8,10 @@
           "$PV = CF_t \\cdot (1 - i)^t$"
       ],
       "correct_index": 0,
-      "explanation": (
+      "explanation": 
           "Die Formel für den Barwert zukünftiger Cashflows lautet "
           "$PV = \\frac{CF_t}{(1 + i)^t}$, wobei $CF_t$ der Cashflow in Periode $t$, "
           "$i$ der Diskontierungszinssatz und $t$ die Periode ist."
-      )
   },
   {
     "question": "Welche Art von Kredit wird typischerweise für private Ausgaben verwendet?",
