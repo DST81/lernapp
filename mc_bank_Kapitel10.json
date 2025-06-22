@@ -185,5 +185,72 @@
         ],
         "correct_index": 1,
         "explanation": "Die Formel für den Expected Shortfall (ES) (Erwarteter Fehlbetrag) in einem Kreditprozess lautet $ES = E[L | L > VaR]$, wobei $E$ der Erwartungswertoperator ist und $L$ den Verlust darstellt. ES quantifiziert den durchschnittlichen Verlust in den schlechtesten Szenarien, die den VaR-Schwellenwert überschreiten."
+    },
+    {
+        "question": "Was ist die Formel für die Portfolio-Rendite \\( R_P \\)?",
+        "options": [
+            "$$R_P = \\sum_{i=1}^{M} w_i R_i$$",
+            "$$R_P = \\frac{\\sum_{i=1}^{M} N_i S_i(1)}{P(0)}$$",
+            "$$R_P = \\frac{\\sum_{i=1}^{M} N_i S_i(0)}{P(1)}$$",
+            "$$R_P = \\sum_{i=1}^{M} N_i (S_i(1) - S_i(0))$$"
+        ],
+        "correct_index": 0,
+        "explanation": "Die Formel für die Portfolio-Rendite \\( R_P \\) ist $$R_P = \\\\sum_{i=1}^{M} w_i R_i$$, wobei \\( w_i \\) das Gewicht des Vermögenswerts \\( i \\) im Portfolio und \\( R_i \\) die Rendite des Vermögenswerts \\( i \\) ist. Diese Formel zeigt, dass die Portfolio-Rendite der gewichtete Durchschnitt der Renditen der einzelnen Vermögenswerte ist."
+    },
+    {
+        "question": "Was ist der Hauptzweck der Cholesky-Zerlegung in der Portfolio-Simulation?",
+        "options": [
+            "Die Berechnung der durchschnittlichen Rendite eines Portfolios",
+            "Die Vorhersage zukünftiger Marktbedingungen",
+            "Die Zerlegung der Kovarianzmatrix in eine untere Dreiecksmatrix und ihre Transponierte, um korrelierte Renditen zu generieren",
+            "Die Berechnung der Volatilität eines Portfolios"
+        ],
+        "correct_index": 2,
+        "explanation": "Der Hauptzweck der Cholesky-Zerlegung in der Portfolio-Simulation ist die Zerlegung der Kovarianzmatrix in eine untere Dreiecksmatrix und ihre Transponierte, um korrelierte Renditen zu generieren. Dies ermöglicht die Simulation von Portfolio-Renditen, die die gewünschten statistischen Eigenschaften aufweisen."
+    },
+    {
+        "question": "Was ist die Formel für die Varianz der Portfolio-Rendite ( \\operatorname{Var}(R_P) )?",
+        "options": [
+            "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} w_i \\sigma_i^2$$",
+            "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_{ij}$$",
+            "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} w_i^2 \\sigma_i^2$$",
+            "$$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_i \\sigma_j$$"
+        ],
+        "correct_index": 1,
+        "explanation": "Die Formel für die Varianz der Portfolio-Rendite ( \\operatorname{Var}(R_P) ) ist $$\\operatorname{Var}(R_P) = \\sum_{i=1}^{M} \\sum_{j=1}^{M} w_i w_j \\sigma_{ij}$$, wobei ( w_i ) und ( w_j ) die Gewichte der Vermögenswerte ( i ) und ( j ) im Portfolio sind und ( \\sigma_{ij} ) die Kovarianz zwischen den Renditen der Vermögenswerte ( i ) und ( j ) ist. Diese Formel berücksichtigt die Kovarianz zwischen allen Paaren von Vermögenswerten im Portfolio."
+    },
+    {
+        "question": "Was ist der Hauptzweck des Rebalancings in einem Portfolio?",
+        "options": [
+            "Die Maximierung der Rendite eines Portfolios",
+            "Die Anpassung der Portfolio-Gewichte, um die Zielgewichte zu erreichen und das Risiko zu kontrollieren",
+            "Die Vorhersage zukünftiger Marktbedingungen",
+            "Die Berechnung der Volatilität eines Portfolios"
+        ],
+        "correct_index": 1,
+        "explanation": "Der Hauptzweck des Rebalancings in einem Portfolio ist die Anpassung der Portfolio-Gewichte, um die Zielgewichte zu erreichen und das Risiko zu kontrollieren. Durch Rebalancing wird sichergestellt, dass das Portfolio die gewünschte Asset-Allokation beibehält und das Risiko innerhalb der gewünschten Grenzen bleibt."
+    },
+    {
+        "question": "Was ist die Formel für die Kovarianz zwischen zwei Zufallsvariablen ( X ) und ( Y )?",
+        "options": [
+            "$$\\text{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])]$$",
+            "$$\\text{Cov}(X, Y) = E[X]E[Y]$$",
+            "$$\\text{Cov}(X, Y) = E[XY]$$",
+            "$$\\text{Cov}(X, Y) = \\sqrt{\\text{Var}(X)\\text{Var}(Y)}$$"
+        ],
+        "correct_index": 0,
+        "explanation": "Die Formel für die Kovarianz zwischen zwei Zufallsvariablen ( X ) und ( Y ) ist $$\\text{Cov}(X, Y) = E[(X - E[X])(Y - E[Y])]$$. Diese Formel misst den linearen Zusammenhang zwischen den beiden Variablen und ist ein zentrales Konzept in der Statistik und Portfolio-Theorie."
+    },
+    {
+        "question": "Was ist der Hauptzweck der Monte-Carlo-Simulation in der Kreditsimulation?",
+        "options": [
+            "Die Berechnung der durchschnittlichen Rendite eines Kredits",
+            "Die Vorhersage zukünftiger Marktbedingungen",
+            "Die Simulation des Kreditprozesses unter Berücksichtigung von Zahlungspausen und Ausfallwahrscheinlichkeiten",
+            "Die Berechnung der Volatilität eines Kredits"
+        ],
+        "correct_index": 2,
+        "explanation": "Der Hauptzweck der Monte-Carlo-Simulation in der Kreditsimulation ist die Simulation des Kreditprozesses unter Berücksichtigung von Zahlungspausen und Ausfallwahrscheinlichkeiten. Dies ermöglicht eine realistischere Risikobewertung und die Analyse verschiedener Szenarien."
     }
 ]
+
