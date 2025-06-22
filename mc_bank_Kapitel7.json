@@ -2,90 +2,90 @@
   {
     "question": "Was ist die Formel für einfache Zinsen?",
     "options": [
-      "Z = K / (i * t)",
-      "Z = K * i * t",
-      "Z = K * i / t",
-      "Z = K + i + t"
+      "$Z = \\frac{K}{i \\cdot t}$",
+      "$Z = K \\cdot i \\cdot t$",
+      "$Z = \\frac{K \\cdot i}{t}$",
+      "$Z = K + i + t$"
     ],
     "correct_index": 1,
-    "explanation": "Die Formel für einfache Zinsen lautet Z = K * i * t, wobei Z die Zinsen, K das Anfangskapital, i der Zinssatz pro Zeiteinheit und t die Zeitperiode ist."
+    "explanation": "Die Formel für einfache Zinsen lautet $Z = K \\cdot i \\cdot t$, wobei $Z$ die Zinsen, $K$ das Anfangskapital, $i$ der Zinssatz pro Zeiteinheit und $t$ die Zeitperiode ist."
   },
   {
     "question": "Was ist die Formel für die Abzinsung?",
     "options": [
-      "K = N * (1 + i)^t",
-      "K = N / (1 + i)^t",
-      "K = N * (1 - i)^t",
-      "K = N / (1 - i)^t"
+      "$K = N \\cdot (1 + i)^t$",
+      "$K = \\frac{N}{(1 + i)^t}$",
+      "$K = N \\cdot (1 - i)^t$",
+      "$K = \\frac{N}{(1 - i)^t}$"
     ],
     "correct_index": 1,
-    "explanation": "Die Formel für die Abzinsung lautet K = N / (1 + i)^t, wobei K der Barwert, N der zukünftige Nominalwert, i der Zinssatz pro Periode und t die Anzahl der Perioden ist."
+    "explanation": "Die Formel für die Abzinsung lautet $K = \\frac{N}{(1 + i)^t}$, wobei $K$ der Barwert, $N$ der zukünftige Nominalwert, $i$ der Zinssatz pro Periode und $t$ die Anzahl der Perioden ist."
   },
   {
     "question": "Was ist die Formel für den Zinseszins?",
     "options": [
-      "K_n = K * (1 + i)^n",
-      "K_n = K / (1 + i)^n",
-      "K_n = K * (1 - i)^n",
-      "K_n = K + i * n"
+      "$K_n = K \\cdot (1 + i)^n$",
+      "$K_n = \\frac{K}{(1 + i)^n}$",
+      "$K_n = K \\cdot (1 - i)^n$",
+      "$K_n = K + i \\cdot n$"
     ],
     "correct_index": 0,
-    "explanation": "Die Formel für den Zinseszins lautet K_n = K * (1 + i)^n, wobei K_n das Endkapital, K das Anfangskapital, i der Zinssatz pro Periode und n die Anzahl der Perioden ist."
+    "explanation": "Die Formel für den Zinseszins lautet $K_n = K \\cdot (1 + i)^n$, wobei $K_n$ das Endkapital, $K$ das Anfangskapital, $i$ der Zinssatz pro Periode und $n$ die Anzahl der Perioden ist."
   },
   {
     "question": "Was ist die Formel für den Barwert zukünftiger Cashflows?",
     "options": [
-      "PV = Σ CF_t * (1 + i)^t",
-      "PV = Σ CF_t / (1 + i)^t",
-      "PV = Σ CF_t * (1 - i)^t",
-      "PV = Σ CF_t / (1 - i)^t"
+      "$PV = \\sum\\limits_{t=1}^{n} CF_t \\cdot (1 + i)^t$",
+      "$PV = \\sum\\limits_{t=1}^{n} \\frac{CF_t}{(1 + i)^t}$",
+      "$PV = \\sum\\limits_{t=1}^{n} CF_t \\cdot (1 - i)^t$",
+      "$PV = \\sum\\limits_{t=1}^{n} \\frac{CF_t}{(1 - i)^t}$"
     ],
     "correct_index": 1,
-    "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet PV = Σ CF_t / (1 + i)^t, wobei PV der Barwert, CF_t der Cashflow in Periode t, i der Diskontierungszinssatz und t die Periode ist."
+    "explanation": "Die Formel für den Barwert zukünftiger Cashflows lautet $PV = \\sum\\limits_{t=1}^{n} \\frac{CF_t}{(1 + i)^t}$, wobei $PV$ der Barwert, $CF_t$ der Cashflow in Periode $t$, $i$ der Diskontierungszinssatz und $t$ die Periode ist."
   },
   {
     "question": "Was ist die Formel für den Bondpreis (Anleihepreis)?",
     "options": [
-      "P = C * (1 - (1 + i)^-n) / i + N / (1 + i)^n",
-      "P = C / (1 + i)^n + N * i",
-      "P = C * (1 + i)^n + N / i",
-      "P = C / i + N * (1 + i)^n"
+      "$P = C \\cdot \\frac{1 - (1 + i)^{-n}}{i} + \\frac{N}{(1 + i)^n}$",
+      "$P = \\frac{C}{(1 + i)^n} + N \\cdot i$",
+      "$P = C \\cdot (1 + i)^n + \\frac{N}{i}$",
+      "$P = \\frac{C}{i} + N \\cdot (1 + i)^n$"
     ],
     "correct_index": 0,
-    "explanation": "Die algebraische Bondpreis-Formel lautet P = C * (1 - (1 + i)^-n) / i + N / (1 + i)^n, wobei P der Preis der Anleihe, C die Kuponzahlung pro Periode, i der Diskontierungszinssatz, n die Anzahl der Perioden bis zur Fälligkeit und N der Nominalwert der Anleihe ist."
+    "explanation": "Die algebraische Bondpreis-Formel lautet $P = C \\cdot \\frac{1 - (1 + i)^{-n}}{i} + \\frac{N}{(1 + i)^n}$, wobei $P$ der Preis der Anleihe, $C$ die Kuponzahlung pro Periode, $i$ der Diskontierungszinssatz, $n$ die Anzahl der Perioden bis zur Fälligkeit und $N$ der Nominalwert der Anleihe ist."
   },
   {
     "question": "Was ist die Annuitätenformel?",
     "options": [
-      "R = K * i * (1 + i)^n / ((1 + i)^n - 1)",
-      "R = K * (1 + i)^n / i",
-      "R = K / (1 + i)^n",
-      "R = K * i / (1 + i)^n"
+      "$R = K \\cdot \\frac{i \\cdot (1 + i)^n}{(1 + i)^n - 1}$",
+      "$R = \\frac{K \\cdot (1 + i)^n}{i}$",
+      "$R = \\frac{K}{(1 + i)^n}$",
+      "$R = \\frac{K \\cdot i}{(1 + i)^n}$"
     ],
     "correct_index": 0,
-    "explanation": "Die Annuitätenformel lautet R = K * i * (1 + i)^n / ((1 + i)^n - 1), wobei R die konstante Rückzahlungsrate pro Periode, K der Kreditbetrag, i der Zinssatz pro Periode und n die Anzahl der Zahlungsperioden ist."
+    "explanation": "Die Annuitätenformel lautet $R = K \\cdot \\frac{i \\cdot (1 + i)^n}{(1 + i)^n - 1}$, wobei $R$ die konstante Rückzahlungsrate pro Periode, $K$ der Kreditbetrag, $i$ der Zinssatz pro Periode und $n$ die Anzahl der Zahlungsperioden ist."
   },
   {
     "question": "Was ist die Formel für die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
     "options": [
-      "W = (1 - d)^t",
-      "W = (1 - d)^(t-1) * d",
-      "W = (1 + d)^t",
-      "W = (1 + d)^(t-1) * d"
+      "$W = (1 - d)^t$",
+      "$W = (1 - d)^{t-1} \\cdot d$",
+      "$W = (1 + d)^t$",
+      "$W = (1 + d)^{t-1} \\cdot d$"
     ],
     "correct_index": 1,
-    "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t wird durch die Formel W = (1 - d)^(t-1) * d berechnet, wobei d die Ausfallrate pro Periode ist."
+    "explanation": "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ wird durch die Formel $W = (1 - d)^{t-1} \\cdot d$ berechnet, wobei $d$ die Ausfallrate pro Periode ist."
   },
   {
     "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
     "options": [
-      "L = D * (1 + D + A)",
-      "L = D / (1 + D + A)",
-      "L = D + (1 + D + A)",
-      "L = D - (1 + D + A)"
+      "$L = D \\cdot (1 + D + A)$",
+      "$L = \\frac{D}{(1 + D + A)}$",
+      "$L = D + (1 + D + A)$",
+      "$L = D - (1 + D + A)$"
     ],
     "correct_index": 0,
-    "explanation": "Der erwartete Verlust wird durch die Formel L = D * (1 + D + A) berechnet, wobei D die Recovery Rate und A die ausstehende Kreditsumme ist."
+    "explanation": "Der erwartete Verlust wird durch die Formel $L = D \\cdot (1 + D + A)$ berechnet, wobei $D$ die Recovery Rate und $A$ die ausstehende Kreditsumme ist."
   },
   {
     "question": "Welche Art von Kredit wird typischerweise für private Ausgaben verwendet?",
@@ -189,13 +189,13 @@
   {
     "question": "Was ist die Formel für die Kalibrierung der Ausfallrate?",
     "options": [
-      "w = (1 - d)^g * d",
-      "w = (1 + d)^g * d",
-      "w = (1 - d) / g * d",
-      "w = (1 + d) / g * d"
+      "$w = (1 - d)^g \\cdot d$",
+      "$w = (1 + d)^g \\cdot d$",
+      "$w = \\frac{(1 - d)}{g} \\cdot d$",
+      "$w = \\frac{(1 + d)}{g} \\cdot d$"
     ],
     "correct_index": 0,
-    "explanation": "Die Kalibrierung der Ausfallrate wird durch die Formel w = (1 - d)^g * d beschrieben, wobei w die Ausfallrate, d die Ausfallwahrscheinlichkeit pro Periode und g der Ausfallzeitpunkt ist."
+    "explanation": "Die Kalibrierung der Ausfallrate wird durch die Formel $w = (1 - d)^g \\cdot d$ beschrieben, wobei $w$ die Ausfallrate, $d$ die Ausfallwahrscheinlichkeit pro Periode und $g$ der Ausfallzeitpunkt ist."
   },
   {
     "question": "Was ist der Zweck der Buchführung von Kreditprodukten?",
@@ -229,5 +229,82 @@
     ],
     "correct_index": 1,
     "explanation": "Der Hauptgrund für Ausfälle bei Hypothekarkrediten ist Scheidung. Hypothekarkredite sind oft langfristige Finanzierungen, die von der finanziellen Stabilität des Haushalts abhängen. Eine Scheidung kann diese Stabilität beeinträchtigen und zu Zahlungsausfällen führen."
+  },
+  {
+    "question": "Was ist ein Konsumentenkredit?",
+    "options": [
+      "Ein Kredit für den Kauf von Immobilien",
+      "Ein Kredit für den Kauf von Luxusgütern",
+      "Ein Kredit für private Ausgaben wie Autokauf oder Ratenkauf",
+      "Ein Kredit für geschäftliche Investitionen"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Konsumentenkredit ist ein Kredit für private Ausgaben wie Autokauf oder Ratenkauf. Diese Kredite sind meist unbesichert und haben kürzere Laufzeiten und höhere Zinssätze als Hypothekarkredite."
+  },
+  {
+    "question": "Was ist Leasing?",
+    "options": [
+      "Ein Kredit für den Kauf von Immobilien",
+      "Eine Finanzierungsmethode, bei der ein Leasingnehmer gegen regelmäßige Zahlungen ein Wirtschaftsgut nutzt",
+      "Ein Kredit für private Ausgaben",
+      "Ein Kredit für geschäftliche Investitionen"
+    ],
+    "correct_index": 1,
+    "explanation": "Leasing ist eine Finanzierungsmethode, bei der ein Leasingnehmer gegen regelmäßige Zahlungen ein Wirtschaftsgut wie Fahrzeuge oder Maschinen nutzt. Es gibt verschiedene Arten von Leasing, darunter Operating Leasing und Finance Leasing."
+  },
+  {
+    "question": "Was ist ein Hypothekarkredit?",
+    "options": [
+      "Ein Kredit für den Kauf von Luxusgütern",
+      "Ein Kredit für private Ausgaben",
+      "Ein Kredit, der durch Immobilien als Sicherheit besichert ist",
+      "Ein Kredit für geschäftliche Investitionen"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Hypothekarkredit ist ein Kredit, der durch Immobilien als Sicherheit besichert ist. Diese Kredite haben meist langfristige Laufzeiten und niedrigere Zinssätze aufgrund der Besicherung."
+  },
+  {
+    "question": "Was ist Operating Leasing?",
+    "options": [
+      "Eine Art von Leasing mit längeren Laufzeiten und Option zum Kauf",
+      "Eine Art von Leasing, bei der das Wirtschaftsgut bilanziell zu aktivieren ist",
+      "Eine Art von Leasing mit kurzen bis mittelfristigen Laufzeiten, bei dem das Risiko beim Leasinggeber verbleibt",
+      "Eine Art von Leasing für private Ausgaben"
+    ],
+    "correct_index": 2,
+    "explanation": "Operating Leasing ist eine Art von Leasing mit kurzen bis mittelfristigen Laufzeiten, bei dem das Risiko beim Leasinggeber verbleibt. Diese Leasingverträge sind oft flexibler und ermöglichen es dem Leasingnehmer, das Wirtschaftsgut nach Ablauf des Vertrags zurückzugeben."
+  },
+  {
+    "question": "Was ist Finance Leasing?",
+    "options": [
+      "Eine Art von Leasing mit kurzen bis mittelfristigen Laufzeiten",
+      "Eine Art von Leasing, bei der das Risiko beim Leasinggeber verbleibt",
+      "Eine Art von Leasing mit längeren Laufzeiten und Option zum Kauf, bei dem das Wirtschaftsgut bilanziell zu aktivieren ist",
+      "Eine Art von Leasing für private Ausgaben"
+    ],
+    "correct_index": 2,
+    "explanation": "Finance Leasing ist eine Art von Leasing mit längeren Laufzeiten und Option zum Kauf, bei dem das Wirtschaftsgut bilanziell zu aktivieren ist. Diese Leasingverträge sind oft weniger flexibel, ermöglichen es dem Leasingnehmer jedoch, das Wirtschaftsgut am Ende der Laufzeit zu erwerben."
+  },
+  {
+    "question": "Was ist eine Festhypothek?",
+    "options": [
+      "Eine Hypothek mit variablem Zinssatz",
+      "Eine Hypothek mit festem Zinssatz über die gesamte Laufzeit oder einen längeren Zeitraum",
+      "Eine Hypothek mit kurzen Laufzeiten",
+      "Eine Hypothek für private Ausgaben"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Festhypothek ist eine Hypothek mit festem Zinssatz über die gesamte Laufzeit oder einen längeren Zeitraum. Diese Hypotheken bieten Planungssicherheit für den Kreditnehmer, da der Zinssatz nicht schwankt."
+  },
+  {
+    "question": "Was ist eine variable Hypothek?",
+    "options": [
+      "Eine Hypothek mit festem Zinssatz",
+      "Eine Hypothek mit kurzen Laufzeiten",
+      "Eine Hypothek, bei der sich der Zinssatz an Marktveränderungen anpasst",
+      "Eine Hypothek für private Ausgaben"
+    ],
+    "correct_index": 2,
+    "explanation": "Eine variable Hypothek ist eine Hypothek, bei der sich der Zinssatz an Marktveränderungen anpasst. Diese Hypotheken bieten Flexibilität, bergen jedoch das Risiko von Zinssatzänderungen."
   }
 ]
