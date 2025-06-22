@@ -33,10 +33,9 @@
           "$W = \\frac{1 + d}{t}$"
       ],
       "correct_index": 0,
-      "explanation": (
+      "explanation": 
           "Die Wahrscheinlichkeit, dass kein Ausfall eintritt, wird durch die Formel "
           "$W = (1 - d)^t$ berechnet, wobei $d$ die Ausfallrate und $t$ die Periode ist."
-      )
   },
   {
       "question": "Welche Formel beschreibt die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt t?",
@@ -47,10 +46,9 @@
           "$W = (1 + d)^{t-1} \\cdot d$"
       ],
       "correct_index": 1,
-      "explanation": (
+      "explanation": 
           "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ wird durch die Formel "
           "$W = (1 - d)^{t-1} \\cdot d$ berechnet."
-      )
   },
   {
       "question": "Was ist die Formel für den erwarteten Verlust (Expected Loss)?",
@@ -61,10 +59,9 @@
           "$L = D - (1 + D + A)$"
       ],
       "correct_index": 0,
-      "explanation": (
+      "explanation": 
           "Der erwartete Verlust wird durch die Formel "
           "$L = D \\cdot (1 + D + A)$ berechnet, wobei $D$ die Recovery Rate und $A$ die ausstehende Kreditsumme ist."
-      )
   },
   {
     "question": "Welche Art von Leasing wird unterschiedlich bilanziert?",
@@ -174,10 +171,9 @@
           "$W = (1 + d)^{t-1} \\cdot d$"
       ],
       "correct_index": 1,
-      "explanation": (
+      "explanation": 
           "Die Wahrscheinlichkeit eines Ausfalls zum Zeitpunkt $t$ "
           "wird durch die Formel $W = (1 - d)^{t-1} \\cdot d$ berechnet."
-      )
   },
   {
       "question": "Was ist die Formel für die Kalibrierung der Ausfallrate?",
@@ -188,10 +184,9 @@
           "$w = \\frac{(1 + d)}{g} \\cdot d$"
       ],
       "correct_index": 0,
-      "explanation": (
+      "explanation": 
           "Die Kalibrierung der Ausfallrate wird durch die Formel "
           "$w = (1 - d)^g \\cdot d$ beschrieben."
-      )
   },
   {
     "question": "Was ist der Zweck der Buchführung von Kreditprodukten?",
