@@ -117,7 +117,7 @@
       "Kampagnen zur Neukundengewinnung planen",
       "Einhaltung regulatorischer Vorgaben (Basel III/IV) sicherstellen"
     ],
-    "correct_answer": 2,
+    "correct_index": 2,
     "explanation": "Risikomanagement-Systeme dienen der Analyse und Kontrolle von Risiken sowie der Einhaltung regulatorischer Vorschriften. Die Planung von Neukundengewinnung ist eher Aufgabe des Marketings."
   },
   {
@@ -128,7 +128,7 @@
       "Weil es automatisch neue Kreditverträge erstellt.",
       "Weil es ausschließlich für die Kontoführung der Privatkunden zuständig ist."
     ],
-    "correct_answer": 1,
+    "correct_index": 1,
     "explanation": "Das Treasury- und Liquiditätsmanagement steuert Kapitalflüsse und Refinanzierung, überwacht die Bankliquidität und stellt die Einhaltung der Liquiditätsvorschriften sicher."
   },
   {
@@ -139,7 +139,7 @@
       "Verträge in einer Bank gelten nur für Sparkonten, nicht für Kredite oder andere Produkte.",
       "Verträge müssen nie schriftlich festgehalten werden."
     ],
-    "correct_answer": 1,
+    "correct_index": 1,
     "explanation": "Banken sind rechtlich als Summe ihrer Vertragsbeziehungen zu Kunden, Partnern und Mitarbeitern definiert. Alle Rechte und Pflichten leiten sich aus diesen Verträgen ab."
   },
   {
@@ -150,7 +150,7 @@
       "Um sicherzustellen, dass die Bilanz (Aktiva = Passiva) immer ausgeglichen ist und Buchungsfehler besser erkannt werden.",
       "Um die Kontoauszüge der Kunden zu verlängern."
     ],
-    "correct_answer": 2,
+    "correct_index": 2,
     "explanation": "Die doppelte Buchführung gewährleistet, dass jeder Geschäftsfall immer die Bilanzgleichung wahrt. Gleichzeitig werden Fehler leichter erkannt und der Buchungsprozess ist transparent und nachvollziehbar."
   },
   {
@@ -161,7 +161,7 @@
       "Die Entwicklung neuer Software für das Online-Banking der Bank.",
       "Die Erstellung eines Finanzberichts für die Aufsichtsbehörde."
     ],
-    "correct_answer": 1,
+    "correct_index": 1,
     "explanation": "Transaktionen sind konkrete Aktionen, die aus einem Vertrag entstehen. Die Zinsgutschrift ist eine vertraglich festgelegte Leistung der Bank, die regelmäßig durchgeführt und verbucht wird."
   },
   {
@@ -172,7 +172,7 @@
       "Weil sie jeden Schritt der Vertragserfüllung dokumentieren und nicht veränderbar gespeichert werden",
       "Weil sie ausschließlich für interne Audits erstellt werden"
     ],
-    "correct_answer": 2,
+    "correct_index": 2,
     "explanation": "Ereignisse wie Zahlungen und Informationen zeigen, ob die Verpflichtungen aus einem Vertrag erbracht wurden oder nicht. Sie müssen unveränderbar und lückenlos gespeichert werden, um die Vertragserfüllung prüfen zu können."
   },
   {
@@ -183,7 +183,7 @@
       "Sie erstellen automatisch die Monatsabrechnungen der Kunden",
       "Sie berechnen die Buchungssätze der doppelten Buchführung"
     ],
-    "correct_answer": 1,
+    "correct_index": 1,
     "explanation": "Risikomanagement-Systeme erfassen Risiken und deren Entwicklung, führen Stresstests und Szenariorechnungen durch und helfen der Bank bei der Festlegung ihrer Risikostrategien und der Einhaltung regulatorischer Vorgaben."
   },
   {
@@ -194,7 +194,7 @@
       "Weil sie erlaubt, Kundenkredite zu automatisieren",
       "Weil sie die Einhaltung der Liquiditätsquoten garantiert"
     ],
-    "correct_answer": 1,
+    "correct_index": 1,
     "explanation": "Die doppelte Buchführung sorgt dafür, dass jeder Buchungsvorgang die Bilanzgleichung (Aktiva = Passiva) aufrechterhält und erleichtert die Kontrolle der Buchhaltung, da jeder Betrag sowohl im Soll als auch im Haben verbucht wird."
   },
   {
@@ -205,7 +205,7 @@
       "Transaktionen spielen nur bei der Kontoeröffnung eine Rolle und nicht bei der laufenden Vertragserfüllung",
       "Transaktionen sind optional und nur für interne Analysen der Bank wichtig"
     ],
-    "correct_answer": 1,
+    "correct_index": 1,
     "explanation": "Transaktionen konkretisieren die in einem Vertrag vereinbarten Verpflichtungen, z. B. die Zahlung einer Rate aus einem Kreditvertrag. Sie ändern laufend den Status des Vertrags und machen die Vertragserfüllung nachvollziehbar."
   },
   {
@@ -216,7 +216,7 @@
       "Weil sie so die Rechte und Verpflichtungen jeder Partei zuordnen und regulatorische und rechtliche Vorgaben (z. B. Geldwäscheprävention) erfüllen kann",
       "Weil sie so die Marketingaktionen besser planen kann"
     ],
-    "correct_answer": 2,
+    "correct_index": 2,
     "explanation": "Jede Vertragspartei muss eindeutig identifiziert sein, damit die Bank ihre vertraglichen und regulatorischen Pflichten erfüllen und die Transaktionen und Verpflichtungen der richtigen Partei zuordnen kann."
   }
 ]
