@@ -121,15 +121,15 @@
     "explanation": "Der Zins ist der Preis, der für die Nutzung von Geld bezahlt wird."
   },
   {
-    "question": "Wie wird der Betrag nach einem Jahr bei einfachem Zins mit dem Zinssatz r berechnet?",
+    "question": "Wie wird der Betrag nach einem Jahr bei einfachem Zins mit dem Zinssatz $r$ berechnet?",
     "options": [
-      "$A \times (1 + r)^n$",
-      "$A \times (1 + r \times n)$",
-      "$A \times r \times n$",
-      "$\frac{A}{1 + r}$"
+      "$A \\times (1 + r)^n$",
+      "$A \\times (1 + r \\times n)$",
+      "$A \\times r \\times n$",
+      "$\\frac{A}{1 + r}$"
     ],
     "correct_index": 1,
-    "explanation": "Bei einfachem Zins wächst das Kapital linear, der Betrag nach n Jahren ist $A(1 + r n)$."
+    "explanation": "Bei einfachem Zins wächst das Kapital linear, der Betrag nach $n$ Jahren ist $A(1 + r n)$."
   },
   {
     "question": "Was bedeutet Zinseszins?",
