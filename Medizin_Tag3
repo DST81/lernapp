@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Was beschreibt eine IT-Architektur?",
+    "options": [
+      "Ein einzelnes Softwareprodukt",
+      "Ein Modell von Systemen und ihren Beziehungen",
+      "Ein Netzwerkdiagramm",
+      "Ein Datenbank-Schema"
+    ],
+    "correct_index": 1,
+    "explanation": "Architektur beschreibt Struktur, Eigenschaften und Beziehungen von Systemen."
+  },
+  {
+    "question": "Welche Domäne gehört NICHT zur klassischen Unternehmensarchitektur?",
+    "options": [
+      "Geschäftsarchitektur",
+      "Datenarchitektur",
+      "Applikationsarchitektur",
+      "Personalarchitektur"
+    ],
+    "correct_index": 3,
+    "explanation": "Personalarchitektur ist keine klassische Architekturdomain."
+  },
+  {
+    "question": "Was ist ein typisches Ziel von Datenarchitekturen?",
+    "options": [
+      "Datensilos fördern",
+      "Zentrale, konsistente Datenhaltung",
+      "Manuelle Dateneingabe",
+      "Reduktion von Datennutzung"
+    ],
+    "correct_index": 1,
+    "explanation": "Datenarchitekturen sollen Konsistenz und Verfügbarkeit sicherstellen."
+  },
+  {
+    "question": "Was beschreibt der PDCA-Zyklus?",
+    "options": [
+      "Ein Sicherheitsmodell",
+      "Einen kontinuierlichen Verbesserungsprozess",
+      "Eine Datenbankstruktur",
+      "Einen Netzwerkstandard"
+    ],
+    "correct_index": 1,
+    "explanation": "PDCA steht für Plan–Do–Check–Act."
+  },
+  {
+    "question": "Welche Herausforderung ist typisch für Spital-IT?",
+    "options": [
+      "Wenig Systeme",
+      "Hohe Systemhomogenität",
+      "Viele Fachsysteme",
+      "Kaum regulatorische Anforderungen"
+    ],
+    "correct_index": 2,
+    "explanation": "Spitäler nutzen viele spezialisierte Systeme."
+  },
+  {
+    "question": "Was ist ein Architektur-Board?",
+    "options": [
+      "Ein Entwicklerteam",
+      "Ein Entscheidungsgremium für Architekturfragen",
+      "Ein Softwareprodukt",
+      "Ein externer Auditor"
+    ],
+    "correct_index": 1,
+    "explanation": "Das Architektur-Board legt Standards und Prinzipien fest."
+  },
+  {
+    "question": "Warum ist Interoperabilität wichtig?",
+    "options": [
+      "Um Systeme zu isolieren",
+      "Um Daten zwischen Systemen austauschen zu können",
+      "Um Kosten zu erhöhen",
+      "Um Prozesse zu verlangsamen"
+    ],
+    "correct_index": 1,
+    "explanation": "Interoperabilität ermöglicht durchgängige Prozesse."
+  },
+  {
+    "question": "Welche Gefahr entsteht durch fehlende Datenintegration?",
+    "options": [
+      "Mehr Transparenz",
+      "Manuelle Fehler",
+      "Bessere Analyse",
+      "Höhere Automatisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Fehlende Integration führt zu Medienbrüchen und Fehlern."
+  },
+  {
+    "question": "Was ist ein Data Lake?",
+    "options": [
+      "Eine relationale Datenbank",
+      "Ein zentrales Rohdaten-Repository",
+      "Ein Archiv für Papierakten",
+      "Ein Backup-System"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Data Lake speichert strukturierte und unstrukturierte Rohdaten."
+  },
+  {
+    "question": "Warum ist Architektur Governance wichtig?",
+    "options": [
+      "Zur Einschränkung von Innovation",
+      "Zur Sicherstellung von Standards und Qualität",
+      "Zur Reduktion von IT",
+      "Zur Abschaffung von Regeln"
+    ],
+    "correct_index": 1,
+    "explanation": "Governance sorgt für Konsistenz und Nachhaltigkeit."
+  }
+]
