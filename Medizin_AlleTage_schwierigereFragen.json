@@ -330,5 +330,214 @@
     ],
     "correct_index": 1,
     "explanation": "Systeme mit Einfluss auf Diagnostik oder Therapie gelten als Medizinprodukte."
+  },
+  {
+    "question": "Welche Ebene der Interoperabilität stellt sicher, dass unterschiedliche Systeme die Bedeutung von Daten verstehen?",
+    "options": [
+      "Syntaktische Interoperabilität",
+      "Semantische Interoperabilität",
+      "Technische Interoperabilität",
+      "Prozessuale Interoperabilität"
+    ],
+    "correct_index": 1,
+    "explanation": "Semantische Interoperabilität stellt sicher, dass der Inhalt der Daten korrekt interpretiert wird, unabhängig vom System."
+  },
+  {
+    "question": "Welche der folgenden Aussagen beschreibt am besten den Vorteil einer Hub-and-Spoke Architektur in einem Krankenhaus-IT-System?",
+    "options": [
+      "Jedes System kommuniziert direkt mit jedem anderen System.",
+      "Änderungen in einem Sub-System erfordern keine Anpassungen im Sender-System.",
+      "Alle Daten werden dezentral ohne zentrale Steuerung verteilt.",
+      "Es gibt keine Möglichkeit zur zentralen Überwachung der Nachrichten."
+    ],
+    "correct_index": 1,
+    "explanation": "Bei Hub-and-Spoke wird ein zentraler Kommunikationsserver genutzt, wodurch der Sender nur an den Hub sendet und Änderungen in Sub-Systemen keine Anpassungen am Sender erfordern."
+  },
+  {
+    "question": "In HL7 v2 Nachrichten ist das PID-Segment für welche Art von Informationen zuständig?",
+    "options": [
+      "Patientenstammdaten",
+      "Labormesswerte",
+      "Radiologiebefunde",
+      "Nachrichtenkopf und Metadaten"
+    ],
+    "correct_index": 0,
+    "explanation": "Das PID-Segment enthält Stammdaten des Patienten, wie Name, Geburtsdatum und Geschlecht."
+  },
+  {
+    "question": "Welche Funktion erfüllt das MSH-Segment in HL7 v2?",
+    "options": [
+      "Es definiert den Header der Nachricht, inklusive Sender, Empfänger und Nachrichtentyp.",
+      "Es enthält die Patientenaufnahmedaten.",
+      "Es überträgt Laborwerte.",
+      "Es wird für Bilddaten im PACS verwendet."
+    ],
+    "correct_index": 0,
+    "explanation": "MSH steht für Message Header und gibt an, wer die Nachricht sendet, an wen sie geht, und welchen Typ sie hat."
+  },
+  {
+    "question": "Welche der folgenden HL7 v2 Message Types beschreibt eine Patientenaufnahme?",
+    "options": [
+      "ADT^A01",
+      "ORU^R01",
+      "MDM^T02",
+      "ORM^O01"
+    ],
+    "correct_index": 0,
+    "explanation": "ADT^A01 steht für Admit/Discharge/Transfer Nachricht, Event A01 = Patient aufnehmen."
+  },
+  {
+    "question": "Warum sind Integration Engines wie Mirth Connect in modernen Spitälern besonders wichtig?",
+    "options": [
+      "Sie ermöglichen die zentrale Steuerung, Filterung und Transformation von Nachrichten.",
+      "Sie ersetzen alle Laborgeräte und medizinischen Bildsysteme.",
+      "Sie erstellen automatisch medizinische Diagnosen.",
+      "Sie verschlüsseln automatisch alle HL7 v2 Nachrichten ohne Konfiguration."
+    ],
+    "correct_index": 0,
+    "explanation": "Integration Engines dienen als Middleware, um Daten zu transformieren, zu filtern und zuverlässig zwischen heterogenen Systemen zu verteilen."
+  },
+  {
+    "question": "In HL7 v2 OBX-Segmenten steht das Feld OBX-8 für welche Information?",
+    "options": [
+      "Flag für Normalbereich (H/L/N)",
+      "Der Labortestname",
+      "Patientenklasse",
+      "Ergebniswert"
+    ],
+    "correct_index": 0,
+    "explanation": "OBX-8 enthält Flags, die angeben, ob der Wert hoch (H), niedrig (L) oder normal (N) ist."
+  },
+  {
+    "question": "Welches Prinzip unterscheidet HL7 FHIR von HL7 v2?",
+    "options": [
+      "FHIR nutzt RESTful APIs und Web-Standards wie JSON und HTTP.",
+      "FHIR verwendet ausschließlich Pipes als Trenner.",
+      "FHIR ist textbasiert und benötigt keine HTTP-Verbindungen.",
+      "FHIR erlaubt nur den Austausch von Bilddaten."
+    ],
+    "correct_index": 0,
+    "explanation": "FHIR ist modern, basiert auf Web-Standards und RESTful APIs, im Gegensatz zu HL7 v2, das textbasiert ist."
+  },
+  {
+    "question": "Welche Aussage trifft auf syntaktische Interoperabilität zu?",
+    "options": [
+      "Sie prüft, ob ein System die Datenstruktur lesen kann.",
+      "Sie prüft, ob der Inhalt korrekt interpretiert wird.",
+      "Sie sorgt für rechtliche Konformität von Patientendaten.",
+      "Sie stellt sicher, dass Hardwarekomponenten kompatibel sind."
+    ],
+    "correct_index": 0,
+    "explanation": "Syntaktische Interoperabilität bedeutet, dass Datenformate korrekt gelesen werden können."
+  },
+  {
+    "question": "In HL7 v2, welches Feld des PV1-Segments gibt den aktuellen Aufenthaltsort des Patienten an?",
+    "options": [
+      "PV1-3",
+      "PV1-2",
+      "PID-7",
+      "OBX-5"
+    ],
+    "correct_index": 0,
+    "explanation": "PV1-3 enthält die Abteilung, Zimmer und Bett des Patienten."
+  },
+  {
+    "question": "Warum ist die Point-to-Point Architektur in großen Spitälern problematisch?",
+    "options": [
+      "Die Anzahl der Schnittstellen wächst quadratisch mit der Anzahl der Systeme.",
+      "Sie erfordert keine Anpassungen bei Updates.",
+      "Sie nutzt zentrale Kommunikationsserver zur Steuerung.",
+      "Alle Nachrichten werden automatisch gefiltert."
+    ],
+    "correct_index": 0,
+    "explanation": "Bei N Systemen erfordert Point-to-Point N*(N-1)/2 Schnittstellen, was schnell unüberschaubar wird."
+  },
+  {
+    "question": "Welches HL7 v2 Segment enthält die Messwerte eines Labortests?",
+    "options": [
+      "OBX",
+      "PID",
+      "MSH",
+      "PV1"
+    ],
+    "correct_index": 0,
+    "explanation": "Das OBX-Segment enthält Laborwerte oder andere Observationen."
+  },
+  {
+    "question": "Was beschreibt die 80/20-Regel in HL7 FHIR?",
+    "options": [
+      "20% der Felder decken 80% der üblichen Anwendungsfälle ab.",
+      "80% der Nachrichten sind für Patienteninformationen, 20% für Billing.",
+      "80% der Systeme müssen FHIR implementieren, 20% können proprietär bleiben.",
+      "20% der HL7 v2 Segmente werden von FHIR ignoriert."
+    ],
+    "correct_index": 0,
+    "explanation": "FHIR definiert die Kernfelder für 80% der Anwendungsfälle, der Rest kann über Extensions ergänzt werden."
+  },
+  {
+    "question": "Welche Aussage beschreibt das ZTE-Segment im SAP zu Digisono Beispiel korrekt?",
+    "options": [
+      "Es ist ein benutzerdefiniertes Segment, das nur SAP kennt und Termininformationen enthält.",
+      "Es ist ein Standard-OBX-Segment für Labormessungen.",
+      "Es enthält nur Patientenstammdaten.",
+      "Es definiert den Message Header."
+    ],
+    "correct_index": 0,
+    "explanation": "Z-Segmente sind benutzerdefinierte Segmente, die in HL7 v2 implementiert werden können, z. B. für SAP-spezifische Daten."
+  },
+  {
+    "question": "Welches Problem löst das Gateway im Radiologie-KI Workflow?",
+    "options": [
+      "Pseudonymisierung der Patientendaten vor Cloud-Analyse.",
+      "Erhöhung der Bildauflösung automatisch.",
+      "Automatisches Parsen von HL7 v3 Nachrichten.",
+      "Direktes Speichern der Bilder im KIS."
+    ],
+    "correct_index": 0,
+    "explanation": "Das Gateway entfernt personenbezogene Daten und ersetzt sie durch Tracking-IDs, bevor die Cloud-KI Zugriff hat."
+  },
+  {
+    "question": "Welcher Vorteil ergibt sich aus der Nutzung von RESTful APIs in FHIR?",
+    "options": [
+      "Apps können Daten on-demand abrufen, statt auf Push-Nachrichten zu warten.",
+      "Es wird nur Textdateien statt Binärdaten unterstützt.",
+      "Alle alten HL7 v2 Systeme werden automatisch kompatibel.",
+      "Es werden alle Labordaten standardisiert in PDF ausgegeben."
+    ],
+    "correct_index": 0,
+    "explanation": "RESTful APIs ermöglichen es Clients, Daten bei Bedarf abzurufen, wie bei einer Webanwendung."
+  },
+  {
+    "question": "In einem OBX-Segment, was beschreibt der Index 5 typischerweise?",
+    "options": [
+      "Den gemessenen Wert des Labortests",
+      "Die Einheit der Messung",
+      "Die Patientenklasse",
+      "Den Nachrichtentyp"
+    ],
+    "correct_index": 0,
+    "explanation": "OBX-5 enthält den tatsächlichen Wert des Tests."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen HL7 v2 und v3?",
+    "options": [
+      "HL7 v3 nutzt XML-Struktur, v2 ist textbasiert und Pipe-delimited.",
+      "HL7 v2 verwendet JSON, v3 ausschließlich CSV.",
+      "HL7 v2 ist nur für Bilddaten, v3 für Labordaten.",
+      "HL7 v3 ist älter und nicht mehr im Einsatz."
+    ],
+    "correct_index": 0,
+    "explanation": "HL7 v3 verwendet XML, ist strenger in der Definition der Datenstruktur; v2 ist kompakt, textbasiert und sehr verbreitet."
+  },
+  {
+    "question": "Welche Maßnahme erhöht die Verfügbarkeit eines Mirth Servers in einem Krankenhaus?",
+    "options": [
+      "Redundanz über mehrere Server (High Availability Cluster).",
+      "Verwendung nur eines dedizierten Server für alle Nachrichten.",
+      "Automatische Übersetzung aller Nachrichten in JSON.",
+      "Nur der Laborbereich wird an den Hub angeschlossen."
+    ],
+    "correct_index": 0,
+    "explanation": "High Availability Cluster verhindern, dass der Ausfall eines Servers den gesamten Nachrichtenaustausch blockiert."
   }
 ]
