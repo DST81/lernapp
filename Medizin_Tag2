@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Was ist ein Medizinprodukt?",
+    "options": [
+      "Jede Software im Spital",
+      "Ein Produkt mit medizinischer Zweckbestimmung",
+      "Ein pharmazeutisches Arzneimittel",
+      "Ein Verwaltungswerkzeug"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Medizinprodukt dient diagnostischen oder therapeutischen medizinischen Zwecken."
+  },
+  {
+    "question": "Welche Klassifizierung beeinflusst die regulatorischen Anforderungen eines Medizinprodukts?",
+    "options": [
+      "Die Farbe des Geräts",
+      "Die Risikoklasse",
+      "Der Hersteller",
+      "Das Einsatzland"
+    ],
+    "correct_index": 1,
+    "explanation": "Je höher die Risikoklasse, desto strenger die regulatorischen Anforderungen."
+  },
+  {
+    "question": "Was ist ein zentrales Schutzziel der IT-Sicherheit?",
+    "options": [
+      "Profitabilität",
+      "Verfügbarkeit",
+      "Marktanteil",
+      "Skalierbarkeit"
+    ],
+    "correct_index": 1,
+    "explanation": "Verfügbarkeit ist eines der drei zentralen Schutzziele (CIA-Triade)."
+  },
+  {
+    "question": "Welche drei Begriffe bilden die CIA-Triade?",
+    "options": [
+      "Confidentiality, Integrity, Availability",
+      "Control, Information, Access",
+      "Compliance, Integrity, Audit",
+      "Confidentiality, Identity, Authorization"
+    ],
+    "correct_index": 0,
+    "explanation": "Die CIA-Triade beschreibt die Kernziele der Informationssicherheit."
+  },
+  {
+    "question": "Warum sind Medizinprodukte besonders sicherheitskritisch?",
+    "options": [
+      "Weil sie teuer sind",
+      "Weil Fehler Patienten gefährden können",
+      "Weil sie selten eingesetzt werden",
+      "Weil sie nur offline genutzt werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Fehler oder Angriffe können direkte Auswirkungen auf die Patientensicherheit haben."
+  },
+  {
+    "question": "Was beschreibt 'Post-Market Surveillance'?",
+    "options": [
+      "Die Entwicklung eines Produkts",
+      "Die Überwachung nach Markteinführung",
+      "Die klinische Studie",
+      "Die Software-Entwicklung"
+    ],
+    "correct_index": 1,
+    "explanation": "Nach der Zulassung muss die Sicherheit kontinuierlich überwacht werden."
+  },
+  {
+    "question": "Welche Bedrohung ist typisch für Medizinsysteme?",
+    "options": [
+      "Geringe Nutzerzahlen",
+      "Cyberangriffe auf vernetzte Geräte",
+      "Zu wenig Daten",
+      "Fehlende Software"
+    ],
+    "correct_index": 1,
+    "explanation": "Vernetzte Medizingeräte sind attraktive Ziele für Cyberangriffe."
+  },
+  {
+    "question": "Was ist das Ziel von Risikomanagement?",
+    "options": [
+      "Risiken ignorieren",
+      "Risiken identifizieren und minimieren",
+      "Risiken maximieren",
+      "Risiken delegieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Risikomanagement soll Gefahren systematisch reduzieren."
+  },
+  {
+    "question": "Warum sind Updates bei Medizinprodukten kritisch?",
+    "options": [
+      "Weil sie teuer sind",
+      "Weil sie neue Risiken einführen können",
+      "Weil sie nicht erlaubt sind",
+      "Weil sie nie nötig sind"
+    ],
+    "correct_index": 1,
+    "explanation": "Software-Updates können unbeabsichtigte Auswirkungen auf Sicherheit und Funktion haben."
+  },
+  {
+    "question": "Welche Rolle spielt Dokumentation bei Medizinprodukten?",
+    "options": [
+      "Keine Rolle",
+      "Nur für Marketing",
+      "Zentrale Rolle für Zulassung und Sicherheit",
+      "Nur für Entwickler"
+    ],
+    "correct_index": 2,
+    "explanation": "Dokumentation ist essenziell für Nachvollziehbarkeit, Zulassung und Sicherheit."
+  }
+]
