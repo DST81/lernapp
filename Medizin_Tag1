@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Welche Hauptakteure gehören typischerweise zum Schweizer Gesundheitssystem?",
+    "options": [
+      "Patienten, Leistungserbringer, Versicherer und Staat",
+      "Industrie, Banken, Apotheken und Versicherer",
+      "IT-Anbieter, Pharmafirmen und Universitäten",
+      "Krankenkassen, NGOs und private Haushalte"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Gesundheitssystem besteht aus Patienten, Leistungserbringern (z. B. Spitäler), Versicherern und staatlichen Regulatoren."
+  },
+  {
+    "question": "Was ist ein zentrales Ziel der Digitalisierung im Gesundheitswesen?",
+    "options": [
+      "Reduktion der Anzahl medizinischer Fachkräfte",
+      "Verbesserung von Qualität, Effizienz und Patientensicherheit",
+      "Vollständige Automatisierung ärztlicher Entscheidungen",
+      "Ausschliesslich Kostensenkung"
+    ],
+    "correct_index": 1,
+    "explanation": "Digitalisierung soll Prozesse effizienter machen, die Qualität erhöhen und die Patientensicherheit verbessern."
+  },
+  {
+    "question": "Welche Herausforderung ist typisch für das Gesundheitswesen?",
+    "options": [
+      "Geringe regulatorische Anforderungen",
+      "Homogene IT-Systemlandschaften",
+      "Hohe Komplexität und viele Stakeholder",
+      "Kaum Datenschutzanforderungen"
+    ],
+    "correct_index": 2,
+    "explanation": "Viele Akteure, hohe Regulierung und heterogene Systeme machen das Gesundheitswesen besonders komplex."
+  },
+  {
+    "question": "Welche Rolle spielen Krankenkassen im Schweizer Gesundheitssystem?",
+    "options": [
+      "Sie betreiben Spitäler",
+      "Sie regulieren medizinische Geräte",
+      "Sie finanzieren Leistungen über Prämien",
+      "Sie entwickeln medizinische Leitlinien"
+    ],
+    "correct_index": 2,
+    "explanation": "Krankenkassen übernehmen die Finanzierung medizinischer Leistungen über Versicherungsprämien."
+  },
+  {
+    "question": "Was beschreibt der Begriff 'Patient Journey'?",
+    "options": [
+      "Die Abrechnung medizinischer Leistungen",
+      "Den gesamten Behandlungsweg eines Patienten",
+      "Die Logistik im Spital",
+      "Die IT-Architektur eines Krankenhauses"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Patientenpfad beschreibt alle Stationen eines Patienten von Eintritt bis Nachsorge."
+  },
+  {
+    "question": "Warum ist Datenschutz im Gesundheitswesen besonders kritisch?",
+    "options": [
+      "Weil medizinische Daten leicht ersetzbar sind",
+      "Weil Gesundheitsdaten hochsensibel sind",
+      "Weil es keine gesetzlichen Vorgaben gibt",
+      "Weil Daten nur intern genutzt werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Gesundheitsdaten gehören zu den sensibelsten personenbezogenen Daten."
+  },
+  {
+    "question": "Welche Rolle spielt IT als Enabler im Gesundheitswesen?",
+    "options": [
+      "IT ersetzt medizinische Fachpersonen",
+      "IT unterstützt Prozesse, Vernetzung und Datenverfügbarkeit",
+      "IT dient ausschliesslich der Administration",
+      "IT wird nur in der Forschung eingesetzt"
+    ],
+    "correct_index": 1,
+    "explanation": "IT ermöglicht Integration, Effizienz und datenbasierte Entscheidungen."
+  },
+  {
+    "question": "Was ist ein typisches Ziel von eHealth?",
+    "options": [
+      "Reduktion medizinischer Leistungen",
+      "Verbesserung der Vernetzung aller Akteure",
+      "Ausschluss von Patienten aus Entscheidungsprozessen",
+      "Abschaffung physischer Spitäler"
+    ],
+    "correct_index": 1,
+    "explanation": "eHealth fördert die digitale Vernetzung im Gesundheitswesen."
+  },
+  {
+    "question": "Welche Dimension gehört NICHT zu den klassischen Zielen im Gesundheitswesen?",
+    "options": [
+      "Qualität",
+      "Zugänglichkeit",
+      "Profitmaximierung",
+      "Effizienz"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Gesundheitssystem ist nicht primär auf Profitmaximierung ausgelegt."
+  },
+  {
+    "question": "Welche Herausforderung entsteht durch demografischen Wandel?",
+    "options": [
+      "Sinkender Behandlungsbedarf",
+      "Mehr chronische Erkrankungen",
+      "Weniger Kosten im Gesundheitswesen",
+      "Geringerer Pflegebedarf"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine alternde Bevölkerung führt zu mehr chronischen Krankheiten und höherem Versorgungsbedarf."
+  }
+]
