@@ -101,8 +101,18 @@ if frage is None or frage['id'] not in [f['id'] for f in verfügbare_fragen]:
 # -------------------- Frage anzeigen --------------------
 if frage:
     st.subheader(frage['question'])
+
     antwort_key = f"{key_prefix}antwort_radio-{frage['id']}"
-    ausgewählt = st.radio("Wähle eine Antwort:", frage['options'], key=antwort_key)
+    
+    # Randomisiere die Optionen
+    options = frage['options'][:]  # Kopie
+    richtige_antwort = options[frage['correct_index']]
+    random.shuffle(options)
+
+    # Merke die neue Position der richtigen Antwort nach Shuffle
+    neue_correct_index = options.index(richtige_antwort)
+
+    ausgewählt = st.radio("Wähle eine Antwort:", options, key=antwort_key)
 
     if not ss('antwort_gegeben', False):
         if st.button("Antwort überprüfen"):
@@ -110,7 +120,6 @@ if frage:
                 st.warning("Bitte wähle eine Antwort aus.")
                 st.stop()
 
-            richtige_antwort = frage['options'][frage['correct_index']]
             gegebene_antwort = ausgewählt
             if gegebene_antwort == richtige_antwort:
                 ss_set('score', ss('score', 0) + 1)
@@ -137,7 +146,6 @@ if frage:
 
     # Antwort wurde bereits gegeben – Rückmeldung anzeigen
     if ss('antwort_gegeben', False):
-        richtige_antwort = frage['options'][frage['correct_index']]
         gegebene_antwort = st.session_state.get(antwort_key)
 
         if gegebene_antwort == richtige_antwort:
