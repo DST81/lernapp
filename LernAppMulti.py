@@ -13,6 +13,11 @@ st.sidebar.title("📚 Fachauswahl")
    
 verfügbare_fächer = {
     "Einführung Banken": "mc_bank_Kapitel1.json",
+    "Medizin Tag 1": "Medizin_Tag1.json",
+    "Medizin Tag 2": "Medizin_Tag2.json",
+    "Medizin Tag 3": "Medizin_Tag3.json",
+    "Medizin Tag 4": "Medizin_Tag4.json",
+    "Medizin Tag 5": "Medizin_Tag5.json",
     "Doppelte Buchführung": "mc_bank_Kapitel2.json",
     "Modellierung von Banken":"mc_bank_Kapitel3.json",
     "Hashes, Keys und Signaturen": "mc_bank_Kapitel4.json",
