@@ -1,0 +1,281 @@
+[
+  {
+    "question": "Warum ist das Gesundheitswesen aus ökonomischer Sicht kein klassischer Markt?",
+    "options": [
+      "Weil es keine Nachfrage gibt",
+      "Weil Informationsasymmetrien zwischen Patienten und Leistungserbringern bestehen",
+      "Weil Preise vollständig frei festgelegt werden",
+      "Weil Wettbewerb vollständig ausgeschlossen ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Patienten können medizinische Leistungen meist nicht fachlich beurteilen, wodurch Informationsasymmetrien entstehen."
+  },
+  {
+    "question": "Welche Konsequenz hat die Trennung von Leistungserbringung und Finanzierung im Gesundheitssystem?",
+    "options": [
+      "Direkte Preisverhandlungen zwischen Arzt und Patient",
+      "Anreizprobleme wie Über- oder Unterversorgung",
+      "Vollständige Kostenkontrolle",
+      "Reduktion regulatorischer Eingriffe"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Kosten trägt meist der Versicherer, was zu Fehlanreizen führen kann."
+  },
+  {
+    "question": "Warum ist Prozessdigitalisierung im Spital besonders komplex?",
+    "options": [
+      "Weil Prozesse kaum dokumentiert sind",
+      "Weil medizinische Prozesse hochgradig variabel und interdisziplinär sind",
+      "Weil keine IT-Systeme vorhanden sind",
+      "Weil Patienten standardisiert behandelt werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Medizinische Prozesse unterscheiden sich stark je nach Patient und Fachbereich."
+  },
+  {
+    "question": "Welche Rolle spielt der Staat im Schweizer Gesundheitssystem primär?",
+    "options": [
+      "Direkter Leistungserbringer",
+      "Regulator und Rahmengeber",
+      "Technologieanbieter",
+      "Alleiniger Kostenträger"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Staat setzt rechtliche und regulatorische Rahmenbedingungen."
+  },
+  {
+    "question": "Warum ist Value-Based Healthcare ein Gegenentwurf zu volumenbasierter Vergütung?",
+    "options": [
+      "Es belohnt die Anzahl erbrachter Leistungen",
+      "Es fokussiert auf Behandlungsergebnisse und Qualität",
+      "Es reduziert Transparenz",
+      "Es schliesst Patienten aus"
+    ],
+    "correct_index": 1,
+    "explanation": "Value-Based Healthcare verknüpft Vergütung mit Outcome statt Menge."
+  },
+
+  {
+    "question": "Warum steigen die regulatorischen Anforderungen mit der Risikoklasse eines Medizinprodukts?",
+    "options": [
+      "Weil die Herstellung teurer ist",
+      "Weil potenzielle Schäden für Patienten zunehmen",
+      "Weil mehr Software enthalten ist",
+      "Weil die Produkte häufiger verkauft werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Höheres Risiko erfordert strengere Sicherheits- und Nachweispflichten."
+  },
+  {
+    "question": "Welche Aussage beschreibt Software als Medizinprodukt (SaMD) korrekt?",
+    "options": [
+      "SaMD ist immer eingebettete Gerätesoftware",
+      "SaMD kann auch ohne physisches Medizinprodukt existieren",
+      "SaMD unterliegt keiner Regulierung",
+      "SaMD darf keine klinischen Entscheidungen unterstützen"
+    ],
+    "correct_index": 1,
+    "explanation": "SaMD ist eigenständige Software mit medizinischer Zweckbestimmung."
+  },
+  {
+    "question": "Warum ist Cybersecurity bei vernetzten Medizinprodukten besonders kritisch?",
+    "options": [
+      "Weil sie selten aktualisiert werden",
+      "Weil Sicherheitslücken direkte Auswirkungen auf Patienten haben können",
+      "Weil sie nicht reguliert sind",
+      "Weil sie nur intern genutzt werden"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Angriff kann Therapie oder Diagnose direkt beeinflussen."
+  },
+  {
+    "question": "Was ist der Hauptzweck eines klinischen Risikomanagements?",
+    "options": [
+      "Kosten senken",
+      "Gefahren systematisch identifizieren und kontrollieren",
+      "Innovation beschleunigen",
+      "Dokumentation minimieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Ziel ist die Reduktion von Risiken für Patienten und Anwender."
+  },
+  {
+    "question": "Warum ist Post-Market Surveillance regulatorisch verpflichtend?",
+    "options": [
+      "Weil Risiken erst im Realbetrieb sichtbar werden",
+      "Weil Produkte vor Markteintritt ungetestet sind",
+      "Weil sie Marketingdaten liefert",
+      "Weil sie Software ersetzt"
+    ],
+    "correct_index": 0,
+    "explanation": "Viele Risiken zeigen sich erst im klinischen Alltag."
+  },
+
+  {
+    "question": "Warum entstehen in Spitälern häufig Datensilos?",
+    "options": [
+      "Durch mangelnde Digitalisierung",
+      "Durch fachbereichsspezifische Spezialsoftware",
+      "Durch zentrale Datenhaltung",
+      "Durch gesetzliche Vorgaben"
+    ],
+    "correct_index": 1,
+    "explanation": "Fachsysteme sind historisch getrennt entstanden."
+  },
+  {
+    "question": "Welche Aufgabe erfüllt eine Applikationsarchitektur?",
+    "options": [
+      "Definition medizinischer Prozesse",
+      "Beschreibung der eingesetzten Softwaresysteme und ihrer Interaktionen",
+      "Festlegung der Hardware",
+      "Regulierung des Datenschutzes"
+    ],
+    "correct_index": 1,
+    "explanation": "Sie beschreibt Anwendungen und ihre Schnittstellen."
+  },
+  {
+    "question": "Warum ist Architektur Governance notwendig?",
+    "options": [
+      "Zur Einschränkung der IT-Nutzung",
+      "Zur Sicherstellung langfristiger Konsistenz",
+      "Zur Vermeidung von Innovation",
+      "Zur Reduktion von Personal"
+    ],
+    "correct_index": 1,
+    "explanation": "Governance verhindert Wildwuchs und technische Schulden."
+  },
+  {
+    "question": "Was ist ein wesentliches Risiko fehlender Systemintegration?",
+    "options": [
+      "Bessere Datenqualität",
+      "Medienbrüche und manuelle Übertragungsfehler",
+      "Schnellere Prozesse",
+      "Höhere Automatisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Manuelle Datentransfers sind fehleranfällig."
+  },
+  {
+    "question": "Warum sind Referenzarchitekturen im Gesundheitswesen hilfreich?",
+    "options": [
+      "Sie ersetzen individuelle Lösungen",
+      "Sie bieten bewährte Struktur- und Designmuster",
+      "Sie sind gesetzlich vorgeschrieben",
+      "Sie eliminieren Integrationsbedarf"
+    ],
+    "correct_index": 1,
+    "explanation": "Referenzarchitekturen dienen als Orientierung."
+  },
+
+  {
+    "question": "Warum eignet sich die Radiologie besonders für KI-Anwendungen?",
+    "options": [
+      "Weil Bilder leicht interpretierbar sind",
+      "Weil grosse Mengen standardisierter Bilddaten vorliegen",
+      "Weil Radiologen überflüssig sind",
+      "Weil keine Regulierung besteht"
+    ],
+    "correct_index": 1,
+    "explanation": "Bilddaten sind datenreich und strukturiert."
+  },
+  {
+    "question": "Was ist ein zentrales Risiko von Bias in KI-Modellen?",
+    "options": [
+      "Längere Trainingszeiten",
+      "Systematische Fehlentscheidungen für bestimmte Patientengruppen",
+      "Höhere Rechenkosten",
+      "Schlechtere Bildauflösung"
+    ],
+    "correct_index": 1,
+    "explanation": "Nicht-repräsentative Trainingsdaten verzerren Ergebnisse."
+  },
+  {
+    "question": "Warum ist Explainability in medizinischer KI wichtig?",
+    "options": [
+      "Für schnellere Berechnungen",
+      "Für Vertrauen, Nachvollziehbarkeit und regulatorische Akzeptanz",
+      "Für bessere Grafiken",
+      "Für geringeren Speicherbedarf"
+    ],
+    "correct_index": 1,
+    "explanation": "Ärzte müssen Entscheidungen nachvollziehen können."
+  },
+  {
+    "question": "Welche Aufgabe erfüllt PACS im radiologischen Workflow?",
+    "options": [
+      "Bildanalyse",
+      "Speicherung, Verteilung und Anzeige von Bilddaten",
+      "Befunderstellung",
+      "KI-Training"
+    ],
+    "correct_index": 1,
+    "explanation": "PACS ist das zentrale Bildarchiv."
+  },
+  {
+    "question": "Warum ist die klinische Validierung von KI komplex?",
+    "options": [
+      "Weil Modelle statisch sind",
+      "Weil klinische Realität stark variiert",
+      "Weil es keine Daten gibt",
+      "Weil KI nicht reguliert ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Modelle müssen unter realen Bedingungen bestehen."
+  },
+
+  {
+    "question": "Warum ist HL7 v2 trotz seines Alters weiterhin verbreitet?",
+    "options": [
+      "Weil es moderner als FHIR ist",
+      "Weil es tief in bestehende Systeme integriert ist",
+      "Weil es gesetzlich vorgeschrieben ist",
+      "Weil es einfacher als CSV ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Legacy-Systeme nutzen HL7 v2 seit Jahrzehnten."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen syntaktischer und semantischer Interoperabilität?",
+    "options": [
+      "Syntax betrifft Sicherheit",
+      "Semantik betrifft die Bedeutung der Daten",
+      "Syntax betrifft Datenschutz",
+      "Semantik betrifft Transportprotokolle"
+    ],
+    "correct_index": 1,
+    "explanation": "Gleiche Struktur bedeutet nicht gleiche Bedeutung."
+  },
+  {
+    "question": "Warum benötigen Integration Engines Transformationslogik?",
+    "options": [
+      "Um Netzwerke zu ersetzen",
+      "Um unterschiedliche Datenmodelle kompatibel zu machen",
+      "Um Daten zu speichern",
+      "Um KI-Modelle zu trainieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Systeme verwenden unterschiedliche Formate und Codes."
+  },
+  {
+    "question": "Welche Schwäche hat HL7 v2 aus heutiger Sicht?",
+    "options": [
+      "Zu komplexe Syntax",
+      "Fehlende strikte Semantik",
+      "Hohe Lesbarkeit",
+      "Web-Kompatibilität"
+    ],
+    "correct_index": 1,
+    "explanation": "HL7 v2 lässt viel Interpretationsspielraum."
+  },
+  {
+    "question": "Warum eignet sich FHIR besonders für mobile Gesundheitsanwendungen?",
+    "options": [
+      "Weil es binär ist",
+      "Weil es REST, JSON und klare Ressourcen nutzt",
+      "Weil es HL7 v2 ersetzt",
+      "Weil es keine Authentifizierung benötigt"
+    ],
+    "correct_index": 1,
+    "explanation": "FHIR ist API- und entwicklerfreundlich."
+  }
+]
