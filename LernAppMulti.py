@@ -101,16 +101,18 @@ if frage is None or frage['id'] not in [f['id'] for f in verfügbare_fragen]:
 # -------------------- Frage anzeigen --------------------
 if frage:
     st.subheader(frage['question'])
-
     antwort_key = f"{key_prefix}antwort_radio-{frage['id']}"
-    
-    # Randomisiere die Optionen
-    options = frage['options'][:]  # Kopie
-    richtige_antwort = options[frage['correct_index']]
-    random.shuffle(options)
 
-    # Merke die neue Position der richtigen Antwort nach Shuffle
-    neue_correct_index = options.index(richtige_antwort)
+    # Shuffle einmalig speichern
+    if f"{key_prefix}shuffled_options_{frage['id']}" not in st.session_state:
+        options = frage['options'][:]
+        random.shuffle(options)
+        st.session_state[f"{key_prefix}shuffled_options_{frage['id']}"] = options
+    else:
+        options = st.session_state[f"{key_prefix}shuffled_options_{frage['id']}"]
+
+    # Korrekte Antwort merken
+    richtige_antwort = frage['options'][frage['correct_index']]
 
     ausgewählt = st.radio("Wähle eine Antwort:", options, key=antwort_key)
 
@@ -142,7 +144,6 @@ if frage:
                     "nur_falsche_wiederholung": ss('nur_falsche_wiederholung', False)
                 }, f)
             ss_set('antwort_gegeben', True)
-            
 
     # Antwort wurde bereits gegeben – Rückmeldung anzeigen
     if ss('antwort_gegeben', False):
@@ -156,14 +157,9 @@ if frage:
             st.info(f"ℹ️ Erklärung: {frage['explanation']}")
 
         if st.button("Nächste Frage anzeigen"):
-            akt_frage = ss('aktuelle_frage', None)
-            antwort_radio_key = f"antwort_radio-{akt_frage['id']}" if isinstance(akt_frage, dict) else None
-            for k in ['aktuelle_frage', 'antwort_gegeben']:
+            # Alte Keys löschen
+            for k in ['aktuelle_frage', 'antwort_gegeben', f"shuffled_options_{frage['id']}"]:
                 full_key = f"{key_prefix}{k}"
-                if full_key in st.session_state:
-                    del st.session_state[full_key]
-            if antwort_radio_key:
-                full_key = f"{key_prefix}{antwort_radio_key}"
                 if full_key in st.session_state:
                     del st.session_state[full_key]
             st.rerun()
