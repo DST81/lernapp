@@ -164,5 +164,171 @@
     ],
     "correct_index": 1,
     "explanation": "Systeme mit Einfluss auf Diagnostik oder Therapie gelten als Medizinprodukte."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Patientenpfad im Gesundheitssystem am treffendsten?",
+    "options": [
+      "Eine rein administrative Abfolge von Abrechnungsprozessen",
+      "Die Gesamtheit aller klinischen, organisatorischen und informativen Schritte von der Prävention bis zur Nachsorge",
+      "Ausschliesslich den stationären Aufenthalt eines Patienten",
+      "Eine IT-Architektur zur Abbildung medizinischer Prozesse"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Patientenpfad umfasst alle medizinischen, organisatorischen und datenbezogenen Schritte entlang der Versorgung eines Patienten."
+  },
+  {
+    "question": "Welche Rolle spielt das Klinikinformationssystem (KIS) im Patientenpfad?",
+    "options": [
+      "Primär die Bildverarbeitung radiologischer Daten",
+      "Ausschliesslich die Abrechnung mit Versicherungen",
+      "Zentrale Koordination klinischer Prozesse, Dokumentation und Kommunikation",
+      "Nur die Verwaltung von Laborwerten"
+    ],
+    "correct_index": 2,
+    "explanation": "Das KIS ist das zentrale System zur Unterstützung klinischer Prozesse, Dokumentation und Kommunikation."
+  },
+  {
+    "question": "Warum sind strukturierte Daten im Patientenpfad besonders relevant für Data Analytics?",
+    "options": [
+      "Sie sind einfacher zu archivieren",
+      "Sie benötigen weniger Speicherplatz",
+      "Sie erlauben automatisierte Auswertungen und Modellbildung",
+      "Sie sind rechtlich weniger sensibel"
+    ],
+    "correct_index": 2,
+    "explanation": "Strukturierte Daten ermöglichen automatisierte Analysen und sind Grundlage für ML-Modelle."
+  },
+  {
+    "question": "Welche Datenquelle ist typischerweise am wenigsten standardisiert?",
+    "options": [
+      "Laborwerte",
+      "Radiologische Bilder",
+      "Freitext in Arztberichten",
+      "Medikamentenstammdaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Freitextdaten sind hochgradig unstrukturiert und schwer automatisiert auszuwerten."
+  },
+  {
+    "question": "Welches KI-Potenzial besteht besonders im Bereich der Triage?",
+    "options": [
+      "Optimierung von Bildauflösungen",
+      "Priorisierung von Patienten nach Dringlichkeit",
+      "Reduktion von Datenschutzanforderungen",
+      "Ersetzung medizinischer Fachpersonen"
+    ],
+    "correct_index": 1,
+    "explanation": "KI kann helfen, Patienten nach Risiko und Dringlichkeit zu priorisieren."
+  },
+  {
+    "question": "Welche Aussage zu personalisierter Medizin ist korrekt?",
+    "options": [
+      "Sie basiert ausschliesslich auf Genomdaten",
+      "Sie ersetzt klinische Erfahrung vollständig",
+      "Sie kombiniert genetische, klinische und Lebensstildaten",
+      "Sie ist nur in der Prävention relevant"
+    ],
+    "correct_index": 2,
+    "explanation": "Personalisierte Medizin integriert verschiedene Datenquellen zur individualisierten Versorgung."
+  },
+  {
+    "question": "Warum ist Onkologie ein Vorreiter der personalisierten Medizin?",
+    "options": [
+      "Wegen geringer Datenverfügbarkeit",
+      "Aufgrund klarer monogener Krankheitsbilder",
+      "Durch molekulare Charakterisierung von Tumoren",
+      "Wegen niedriger Therapiekosten"
+    ],
+    "correct_index": 2,
+    "explanation": "Tumorprofile ermöglichen gezielte Therapien in der Onkologie."
+  },
+  {
+    "question": "Was ist eine zentrale Limitation genetischer Risikovorhersagen?",
+    "options": [
+      "Fehlende Rechenleistung",
+      "Unveränderlichkeit genetischer Daten",
+      "Komplexe Wechselwirkungen von Genen und Umwelt",
+      "Zu geringe Sequenziergenauigkeit"
+    ],
+    "correct_index": 2,
+    "explanation": "Viele Krankheiten entstehen durch komplexe Gen-Umwelt-Interaktionen."
+  },
+  {
+    "question": "Was beschreibt ein digitales Zwillingsmodell in der Medizin?",
+    "options": [
+      "Eine Kopie der elektronischen Patientenakte",
+      "Ein KI-gestütztes Simulationsmodell individueller Physiologie",
+      "Ein Backup-System für medizinische Daten",
+      "Ein Wearable mit erweiterten Sensoren"
+    ],
+    "correct_index": 1,
+    "explanation": "Digitale Zwillinge simulieren Krankheitsverläufe und Therapieeffekte."
+  },
+  {
+    "question": "Welche Präventionsform zielt auf Rückfallvermeidung ab?",
+    "options": [
+      "Primärprävention",
+      "Sekundärprävention",
+      "Tertiärprävention",
+      "Universelle Prävention"
+    ],
+    "correct_index": 2,
+    "explanation": "Tertiärprävention soll Komplikationen und Rückfälle verhindern."
+  },
+
+  {
+    "question": "Welche Eigenschaft macht radiologische Daten besonders geeignet für Machine Learning?",
+    "options": [
+      "Hohe Subjektivität",
+      "Geringe Datenmenge",
+      "Standardisierte Bildformate",
+      "Fehlende Metadaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Standardisierte Formate wie DICOM erleichtern ML-Anwendungen."
+  },
+  {
+    "question": "Was ist die Hauptfunktion eines PACS?",
+    "options": [
+      "Therapieplanung",
+      "Bildarchivierung und -verteilung",
+      "Genomdatenanalyse",
+      "Abrechnung medizinischer Leistungen"
+    ],
+    "correct_index": 1,
+    "explanation": "PACS dient der Speicherung, Verwaltung und Bereitstellung medizinischer Bilder."
+  },
+  {
+    "question": "Warum ist DICOM mehr als ein Bildformat?",
+    "options": [
+      "Es speichert nur Pixelwerte",
+      "Es enthält umfangreiche Metadaten",
+      "Es ist proprietär",
+      "Es ersetzt HL7"
+    ],
+    "correct_index": 1,
+    "explanation": "DICOM kombiniert Bilddaten mit medizinischen Metainformationen."
+  },
+  {
+    "question": "Welche Herausforderung entsteht beim Einsatz von KI in der Radiologie?",
+    "options": [
+      "Mangel an Bilddaten",
+      "Fehlende klinische Relevanz",
+      "Bias durch nicht-repräsentative Trainingsdaten",
+      "Zu geringe Rechenleistung moderner Systeme"
+    ],
+    "correct_index": 2,
+    "explanation": "Nicht-repräsentative Daten können zu systematischen Fehlern führen."
+  },
+  {
+    "question": "Warum gelten KI-Systeme in der Medizin als Medizinprodukte?",
+    "options": [
+      "Wegen ihrer hohen Kosten",
+      "Weil sie klinische Entscheidungen beeinflussen",
+      "Aufgrund der verwendeten Hardware",
+      "Weil sie immer autonom arbeiten"
+    ],
+    "correct_index": 1,
+    "explanation": "Systeme mit Einfluss auf Diagnostik oder Therapie gelten als Medizinprodukte."
   }
 ]
