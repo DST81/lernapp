@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Was ist das Ziel der personalisierten Medizin?",
+    "options": [
+      "Standardtherapie für alle",
+      "Individuelle Therapie basierend auf Patientendaten",
+      "Reduktion medizinischer Daten",
+      "Vereinfachung der Diagnostik"
+    ],
+    "correct_index": 1,
+    "explanation": "Personalisierte Medizin berücksichtigt genetische und individuelle Faktoren."
+  },
+  {
+    "question": "Welche Daten sind zentral für personalisierte Medizin?",
+    "options": [
+      "Nur administrative Daten",
+      "Genom-, Umwelt- und Lifestyle-Daten",
+      "Ausschliesslich Bilddaten",
+      "Nur Versicherungsdaten"
+    ],
+    "correct_index": 1,
+    "explanation": "Mehrdimensionale Daten ermöglichen individuelle Risikoprofile."
+  },
+  {
+    "question": "Welche Rolle spielt KI in der Radiologie?",
+    "options": [
+      "Ersatz der Radiologen",
+      "Unterstützung bei Bildanalyse",
+      "Reduktion von Bilddaten",
+      "Ausschliesslich Archivierung"
+    ],
+    "correct_index": 1,
+    "explanation": "KI unterstützt Radiologen bei der Befundung."
+  },
+  {
+    "question": "Was ist PACS?",
+    "options": [
+      "Ein Laborinformationssystem",
+      "Ein Bildarchivierungs- und Kommunikationssystem",
+      "Ein Abrechnungssystem",
+      "Ein KI-Modell"
+    ],
+    "correct_index": 1,
+    "explanation": "PACS speichert und verwaltet radiologische Bilder."
+  },
+  {
+    "question": "Warum ist DICOM wichtig?",
+    "options": [
+      "Es ist ein Bildbearbeitungsprogramm",
+      "Es standardisiert medizinische Bilddaten",
+      "Es ersetzt PACS",
+      "Es ist nur für Forschung"
+    ],
+    "correct_index": 1,
+    "explanation": "DICOM ermöglicht interoperablen Bildaustausch."
+  },
+  {
+    "question": "Welche ML-Anwendung ist typisch in der Radiologie?",
+    "options": [
+      "Spracherkennung",
+      "Tumorerkennung in Bilddaten",
+      "Abrechnung",
+      "Terminplanung"
+    ],
+    "correct_index": 1,
+    "explanation": "Bildanalyse ist das Hauptanwendungsfeld."
+  },
+  {
+    "question": "Welche Herausforderung besteht bei ML in der Medizin?",
+    "options": [
+      "Zu viele Daten",
+      "Datenqualität und Validierung",
+      "Zu einfache Modelle",
+      "Fehlende Hardware"
+    ],
+    "correct_index": 1,
+    "explanation": "Schlechte Daten führen zu schlechten Modellen."
+  },
+  {
+    "question": "Was bedeutet 'Good Machine Learning Practice'?",
+    "options": [
+      "Schnelles Training",
+      "Regulatorisch saubere Entwicklung",
+      "Automatisierte Diagnose",
+      "Verzicht auf Tests"
+    ],
+    "correct_index": 1,
+    "explanation": "GMLP beschreibt Qualitätsanforderungen für ML-Produkte."
+  },
+  {
+    "question": "Warum ist Validierung von KI-Modellen wichtig?",
+    "options": [
+      "Um Marketing zu verbessern",
+      "Um Patientensicherheit zu gewährleisten",
+      "Um Rechenzeit zu sparen",
+      "Um Kosten zu erhöhen"
+    ],
+    "correct_index": 1,
+    "explanation": "Unvalidierte Modelle können falsche Entscheidungen verursachen."
+  },
+  {
+    "question": "Welche Fachbereiche dominieren KI-Medizinprodukte?",
+    "options": [
+      "Dermatologie",
+      "Radiologie und Kardiologie",
+      "Psychiatrie",
+      "Chirurgie"
+    ],
+    "correct_index": 1,
+    "explanation": "Diese Bereiche sind besonders daten- und bildintensiv."
+  }
+]
