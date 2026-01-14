@@ -1,0 +1,827 @@
+[
+  {
+    "question": "Welche Aussage beschreibt den Patientenpfad im Gesundheitssystem am treffendsten?",
+    "options": [
+      "Eine rein administrative Abfolge von Abrechnungsprozessen",
+      "Die Gesamtheit aller klinischen, organisatorischen und informativen Schritte von der Prävention bis zur Nachsorge",
+      "Ausschliesslich den stationären Aufenthalt eines Patienten",
+      "Eine IT-Architektur zur Abbildung medizinischer Prozesse"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Patientenpfad umfasst alle medizinischen, organisatorischen und datenbezogenen Schritte entlang der Versorgung eines Patienten."
+  },
+  {
+    "question": "Welche Funktion übernimmt das Klinikinformationssystem (KIS) primär?",
+    "options": [
+      "Nur die Verwaltung von Laborwerten",
+      "Zentrale Koordination klinischer Prozesse, Dokumentation und Kommunikation",
+      "Primär die Bildverarbeitung radiologischer Daten",
+      "Ausschliesslich die Abrechnung mit Versicherungen"
+    ],
+    "correct_index": 1,
+    "explanation": "Das KIS ist das zentrale System zur Unterstützung klinischer Prozesse, Dokumentation und Kommunikation."
+  },
+  {
+    "question": "Warum sind strukturierte Daten im Patientenpfad besonders wertvoll für Analysen?",
+    "options": [
+      "Sie sind einfacher zu archivieren",
+      "Sie erlauben automatisierte Auswertungen und Modellbildung",
+      "Sie benötigen weniger Speicherplatz",
+      "Sie sind rechtlich weniger sensibel"
+    ],
+    "correct_index": 1,
+    "explanation": "Strukturierte Daten ermöglichen automatisierte Analysen und bilden die Grundlage für ML-Modelle."
+  },
+  {
+    "question": "Welche Datenquelle ist im Patientenpfad typischerweise am wenigsten standardisiert?",
+    "options": [
+      "Laborwerte",
+      "Radiologische Bilder",
+      "Freitext in Arztberichten",
+      "Medikamentenstammdaten"
+    ],
+    "correct_index": 2,
+    "explanation": "Freitextdaten sind hochgradig unstrukturiert und schwer automatisiert auszuwerten."
+  },
+  {
+    "question": "Welche Aufgabe hat die elektronische Patientenakte im Vergleich zum klassischen Patientenpfad?",
+    "options": [
+      "Sie ersetzt alle klinischen Entscheidungen",
+      "Sie dokumentiert und verknüpft Informationen entlang des Patientenpfads digital",
+      "Sie dient ausschliesslich der Abrechnung",
+      "Sie ist nur für statistische Auswertungen relevant"
+    ],
+    "correct_index": 1,
+    "explanation": "Die elektronische Patientenakte verknüpft Informationen digital entlang des gesamten Patientenpfads."
+  },
+  {
+    "question": "Welches Potenzial bietet KI in der Triage?",
+    "options": [
+      "Reduktion von Datenschutzanforderungen",
+      "Priorisierung von Patienten nach Dringlichkeit",
+      "Optimierung von Bildauflösungen",
+      "Ersetzung medizinischer Fachpersonen"
+    ],
+    "correct_index": 1,
+    "explanation": "KI kann helfen, Patienten nach Risiko und Dringlichkeit zu priorisieren."
+  },
+  {
+    "question": "Welche Rolle spielt die Interoperabilität zwischen KIS und Laborinformationssystemen?",
+    "options": [
+      "Sie verhindert doppelte Dateneingabe und ermöglicht automatisierten Datenaustausch",
+      "Sie ersetzt die klinische Dokumentation",
+      "Sie wird nur für Abrechnungszwecke benötigt",
+      "Sie dient ausschliesslich der Backup-Erstellung"
+    ],
+    "correct_index": 0,
+    "explanation": "Durch Interoperabilität werden Daten automatisch ausgetauscht und doppelte Eingaben vermieden."
+  },
+  {
+    "question": "Warum ist die Nutzung von standardisierten Codes wie ICD oder LOINC im Patientenpfad wichtig?",
+    "options": [
+      "Sie erleichtern die statistische Auswertung und den Datenaustausch zwischen Systemen",
+      "Sie ersetzen den Arzt bei Diagnosen",
+      "Sie dienen nur der internen Dokumentation",
+      "Sie reduzieren die Speicherkosten"
+    ],
+    "correct_index": 0,
+    "explanation": "Standardisierte Codes ermöglichen eindeutige Klassifikation von Diagnosen und Laborwerten."
+  },
+  {
+    "question": "Welche Aussage zu digitalen Patientenpfaden trifft am besten zu?",
+    "options": [
+      "Sie bestehen nur aus Softwaremodulen ohne klinischen Bezug",
+      "Sie bilden die gesamte Patientenreise von Prävention bis Nachsorge digital ab",
+      "Sie dienen ausschliesslich der Abrechnung von Leistungen",
+      "Sie ersetzen alle medizinischen Fachkräfte"
+    ],
+    "correct_index": 1,
+    "explanation": "Digitale Patientenpfade spiegeln alle Schritte entlang der Versorgung eines Patienten wider."
+  },
+  {
+    "question": "Welche Herausforderung entsteht beim Einsatz von KIS in komplexen Kliniken?",
+    "options": [
+      "Integration heterogener Systeme und Prozesse",
+      "Unfähigkeit, Patientendaten zu speichern",
+      "Automatische klinische Entscheidungen ohne Fachpersonal",
+      "Reduktion der Datensicherheit"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Integration verschiedener Systeme ist komplex, da klinische Abläufe sehr heterogen sind."
+  },
+  {
+    "question": "Wie unterstützt ein KIS die Qualitätssicherung in Krankenhäusern?",
+    "options": [
+      "Durch automatisierte Dokumentation, Reporting und Monitoring klinischer Prozesse",
+      "Durch Ersatz der Ärzte bei Diagnosen",
+      "Durch Reduktion der medizinischen Ausbildung",
+      "Durch Speicherung von Patientendaten ohne Analyse"
+    ],
+    "correct_index": 0,
+    "explanation": "KIS ermöglicht Monitoring, Berichte und Qualitätssicherung entlang der klinischen Prozesse."
+  },
+  {
+    "question": "Welche Information wird typischerweise nicht direkt im KIS gespeichert?",
+    "options": [
+      "Patientenstammdaten",
+      "Laborwerte",
+      "Radiologische Bilddateien selbst (werden meist im PACS gespeichert)",
+      "Medikamentenpläne"
+    ],
+    "correct_index": 2,
+    "explanation": "Radiologische Bilder werden in der Regel in einem PACS gespeichert und nicht direkt im KIS."
+  },
+  {
+    "question": "Welches Ziel verfolgt die Digitalisierung des Patientenpfads primär?",
+    "options": [
+      "Steigerung der klinischen Effizienz, bessere Datenverfügbarkeit und Unterstützung von Entscheidungen",
+      "Ersatz von Ärzten und Pflegepersonal",
+      "Nur die Archivierung von Daten",
+      "Reduktion der Patientenzahlen"
+    ],
+    "correct_index": 0,
+    "explanation": "Digitale Patientenpfade verbessern Effizienz, Datenzugang und klinische Entscheidungen."
+  },
+  {
+    "question": "Warum ist die Echtzeit-Verfügbarkeit von Patientendaten entscheidend?",
+    "options": [
+      "Sie erlaubt sofortige klinische Entscheidungen und koordiniertes Handeln",
+      "Sie reduziert automatisch die Behandlungskosten",
+      "Sie ersetzt die medizinische Ausbildung",
+      "Sie verhindert die Nutzung von Papierakten komplett"
+    ],
+    "correct_index": 0,
+    "explanation": "Echtzeitdaten unterstützen Ärzte und Pflegepersonal bei schnellen und fundierten Entscheidungen."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Nutzen von Alerts und Benachrichtigungen im KIS am besten?",
+    "options": [
+      "Sie erhöhen die Patientensicherheit durch Hinweise auf kritische Werte oder Medikamenteninteraktionen",
+      "Sie dienen nur administrativen Zwecken",
+      "Sie ersetzen die ärztliche Kontrolle komplett",
+      "Sie werden nur bei Laborwerten unterhalb der Norm genutzt"
+    ],
+    "correct_index": 0,
+    "explanation": "Alerts im KIS warnen medizinisches Personal vor kritischen Werten oder Interaktionen, um Sicherheit zu erhöhen."
+  },
+  {
+    "question": "Welche Eigenschaft unterscheidet strukturierte von unstrukturierten Daten?",
+    "options": [
+      "Strukturierte Daten haben ein festes Format und sind maschinenlesbar, unstrukturierte Daten nicht",
+      "Strukturierte Daten können nicht gespeichert werden",
+      "Unstrukturierte Daten haben immer numerische Werte",
+      "Unstrukturierte Daten benötigen keine Analyse"
+    ],
+    "correct_index": 0,
+    "explanation": "Strukturierte Daten folgen einem festen Schema und sind leicht für Analysen nutzbar, unstrukturierte Daten nicht."
+  },
+  {
+    "question": "Was beschreibt Data Mining am treffendsten?",
+    "options": [
+      "Extraktion von Mustern und Zusammenhängen aus großen Datenmengen",
+      "Speichern von Daten ohne Analyse",
+      "Visualisierung von statischen Berichten",
+      "Rein manuelle Auswertung kleiner Datensätze"
+    ],
+    "correct_index": 0,
+    "explanation": "Data Mining dient dazu, verborgene Muster und Zusammenhänge in großen Datenmengen zu erkennen."
+  },
+  {
+    "question": "Welche Rolle spielt Feature Engineering in Machine Learning Projekten?",
+    "options": [
+      "Optimierung der Eingabedaten durch Auswahl, Transformation und Erstellung relevanter Merkmale",
+      "Vollständige Automatisierung ohne Datenvorbereitung",
+      "Reduktion der Daten auf einen einzigen Wert",
+      "Ersetzung von Trainingsdaten durch Zufallswerte"
+    ],
+    "correct_index": 0,
+    "explanation": "Feature Engineering verbessert die Datenqualität und Relevanz für das ML-Modell."
+  },
+  {
+    "question": "Welcher Unterschied besteht zwischen überwachtem und unüberwachtem Lernen?",
+    "options": [
+      "Überwachtes Lernen nutzt gelabelte Daten, unüberwachtes Lernen findet Muster in ungelabelten Daten",
+      "Überwachtes Lernen benötigt keine Trainingsdaten",
+      "Unüberwachtes Lernen erfordert manuelle Labels",
+      "Überwachtes Lernen wird nur für Bilddaten verwendet"
+    ],
+    "correct_index": 0,
+    "explanation": "Beim überwachten Lernen werden Modelle auf bekannten Ergebnissen trainiert, beim unüberwachten Lernen werden Muster ohne Labels entdeckt."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Bias-Variance-Tradeoff korrekt?",
+    "options": [
+      "Modelle mit hohem Bias unterfitten, Modelle mit hoher Varianz überfitten",
+      "Bias und Varianz haben keinen Einfluss auf die Modellqualität",
+      "Hoher Bias führt automatisch zu perfekter Generalisierung",
+      "Varianz reduziert den Datenbedarf"
+    ],
+    "correct_index": 0,
+    "explanation": "Bias beschreibt systematische Fehler, Varianz die Sensitivität gegenüber Trainingsdaten; ein Tradeoff muss gefunden werden."
+  },
+  {
+    "question": "Welche der folgenden Methoden dient primär der Reduktion der Dimensionalität?",
+    "options": [
+      "Principal Component Analysis (PCA)",
+      "Random Forest Klassifikation",
+      "K-Means Clustering",
+      "Naive Bayes Klassifikation"
+    ],
+    "correct_index": 0,
+    "explanation": "PCA transformiert Daten in einen niedrigeren Dimensionsraum unter Erhalt der wichtigsten Varianz."
+  },
+  {
+    "question": "Warum ist die Datenqualität entscheidend für KI-Modelle?",
+    "options": [
+      "Schlechte Daten führen zu ungenauen oder verzerrten Vorhersagen",
+      "Datenqualität hat keinen Einfluss auf Modellleistung",
+      "Nur die Modellarchitektur zählt",
+      "Modelle können immer fehlende Daten selbstständig korrigieren"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Qualität der Daten bestimmt, wie zuverlässig und genau ein KI-Modell Vorhersagen treffen kann."
+  },
+  {
+    "question": "Was ist der Zweck von Trainings-, Validierungs- und Testdatensätzen?",
+    "options": [
+      "Training: Modell lernen, Validierung: Hyperparameter optimieren, Test: Generalisierung prüfen",
+      "Alle drei werden nur für Speicherung genutzt",
+      "Training: Visualisierung, Validierung: Datensammlung, Test: Reporting",
+      "Testdatensatz wird für Training verwendet"
+    ],
+    "correct_index": 0,
+    "explanation": "Daten werden getrennt genutzt, um Overfitting zu vermeiden und die Modellgeneralisation zu prüfen."
+  },
+  {
+    "question": "Welche Herausforderung tritt bei unbalancierten Datensätzen häufig auf?",
+    "options": [
+      "Das Modell favorisiert die häufigere Klasse und liefert verzerrte Vorhersagen",
+      "Das Modell wird automatisch perfekt generalisieren",
+      "Unbalancierte Daten haben keinen Effekt",
+      "Das Modell kann keine Features mehr verwenden"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei unbalancierten Daten werden seltene Klassen oft ignoriert, was zu schlechter Performance führt."
+  },
+  {
+    "question": "Welcher Vorteil bietet Cross-Validation?",
+    "options": [
+      "Bessere Einschätzung der Modellgeneralisation auf unbekannten Daten",
+      "Reduktion der Datenqualität",
+      "Automatisches Generieren von Labels",
+      "Nur für unüberwachtes Lernen relevant"
+    ],
+    "correct_index": 0,
+    "explanation": "Cross-Validation teilt die Daten in Folds, sodass das Modell auf verschiedenen Teilmengen getestet wird."
+  },
+  {
+    "question": "Warum werden neuronale Netze besonders bei Bild- und Textdaten eingesetzt?",
+    "options": [
+      "Sie können komplexe nichtlineare Muster erkennen",
+      "Sie benötigen keine Datenvorbereitung",
+      "Sie ersetzen menschliche Entscheidungen vollständig",
+      "Sie funktionieren nur bei kleinen Datensätzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Neuronale Netze lernen komplexe Muster und Beziehungen, die traditionelle Modelle oft nicht erfassen."
+  },
+  {
+    "question": "Was beschreibt Overfitting in Machine Learning?",
+    "options": [
+      "Das Modell passt zu stark an Trainingsdaten, Generalisierung auf neue Daten schlecht",
+      "Das Modell lernt gar nichts",
+      "Overfitting tritt nur bei zu wenig Daten auf",
+      "Overfitting verbessert die Testdatengenauigkeit automatisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Overfitting bedeutet, dass das Modell Trainingsdaten zu genau erlernt und auf neuen Daten schlecht performt."
+  },
+  {
+    "question": "Welche Aussage trifft auf Supervised Learning zu?",
+    "options": [
+      "Das Modell wird mit Eingaben und bekannten Ausgaben trainiert",
+      "Es werden nur ungekennzeichnete Daten genutzt",
+      "Supervised Learning wird nur in der Medizin eingesetzt",
+      "Keine Trainingsdaten werden benötigt"
+    ],
+    "correct_index": 0,
+    "explanation": "Supervised Learning verwendet Paare von Eingaben und bekannten Ergebnissen für das Training."
+  },
+  {
+    "question": "Warum ist ein Testdatensatz unabhängig vom Trainingsdatensatz wichtig?",
+    "options": [
+      "Um die Generalisierungsfähigkeit des Modells objektiv zu bewerten",
+      "Um das Modell auf die Trainingsdaten zu optimieren",
+      "Er dient nur der Visualisierung von Ergebnissen",
+      "Er wird zur Feature-Erstellung genutzt"
+    ],
+    "correct_index": 0,
+    "explanation": "Nur unabhängige Testdaten erlauben eine realistische Bewertung, wie das Modell auf neuen Daten performt."
+  },
+  {
+    "question": "Welche Aussage beschreibt Ensemble-Methoden korrekt?",
+    "options": [
+      "Sie kombinieren mehrere Modelle, um die Gesamtgenauigkeit zu erhöhen",
+      "Sie ersetzen Trainingsdaten durch zufällige Werte",
+      "Sie sind nur für unüberwachtes Lernen geeignet",
+      "Ensembles reduzieren automatisch die Datenqualität"
+    ],
+    "correct_index": 0,
+    "explanation": "Ensemble-Methoden kombinieren Vorhersagen mehrerer Modelle, um Fehler einzelner Modelle auszugleichen."
+  },
+  {
+    "question": "Welche Bildmodalität liefert vor allem Informationen zur Dichte von Geweben?",
+    "options": [
+      "CT (Computertomographie)",
+      "Ultraschall",
+      "PET (Positronen-Emissions-Tomographie)",
+      "fMRT (funktionelle Magnetresonanztomographie)"
+    ],
+    "correct_index": 0,
+    "explanation": "Die CT bildet Dichteunterschiede von Geweben durch Röntgenstrahlen ab."
+  },
+  {
+    "question": "Welche Aussage beschreibt die Hounsfield-Skala in der CT korrekt?",
+    "options": [
+      "Sie quantifiziert die Dichte von Geweben in CT-Einheiten",
+      "Sie misst die Magnetfeldstärke",
+      "Sie gibt die Strahlungsdauer in Sekunden an",
+      "Sie bewertet nur die Bildschärfe"
+    ],
+    "correct_index": 0,
+    "explanation": "Hounsfield-Einheiten geben die Dichte von Geweben in der CT an."
+  },
+  {
+    "question": "Was ist ein typisches Einsatzgebiet von KI in der Radiologie?",
+    "options": [
+      "Automatische Erkennung von Läsionen und Anomalien in Bilddaten",
+      "Abrechnung von Patientenkonten",
+      "Planung von OP-Terminen",
+      "Patientenregistrierung"
+    ],
+    "correct_index": 0,
+    "explanation": "KI-Algorithmen können Muster in Bilddaten erkennen, z. B. Tumore oder Frakturen."
+  },
+  {
+    "question": "Warum ist eine ausreichende Menge annotierter Bilddaten entscheidend für KI-Modelle?",
+    "options": [
+      "Damit das Modell zuverlässig Muster erkennt und generalisieren kann",
+      "Um die Bilddateigröße zu reduzieren",
+      "Für die Archivierung der Bilder",
+      "Damit der Radiologe weniger arbeiten muss"
+    ],
+    "correct_index": 0,
+    "explanation": "KI-Modelle lernen aus gelabelten Bildern; ohne genügend Trainingsdaten ist die Genauigkeit eingeschränkt."
+  },
+  {
+    "question": "Welche Herausforderung kann bei KI-gestützten Diagnosen auftreten?",
+    "options": [
+      "Bias durch nicht-repräsentative Trainingsdaten kann zu fehlerhaften Vorhersagen führen",
+      "Die KI kann automatisch alle menschlichen Entscheidungen ersetzen",
+      "KI benötigt keine Validierung",
+      "Alle Radiologen müssen ersetzt werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Nicht-repräsentative Trainingsdaten können systematische Fehler verursachen, die die Diagnose verfälschen."
+  },
+  {
+    "question": "Welche Aussage beschreibt ein Convolutional Neural Network (CNN) korrekt?",
+    "options": [
+      "Ein spezielles neuronales Netz, das besonders gut Muster in Bilddaten erkennt",
+      "Ein Algorithmus zur Datenbankabfrage",
+      "Ein System zur Patientendokumentation",
+      "Ein lineares Regressionsmodell für Laborwerte"
+    ],
+    "correct_index": 0,
+    "explanation": "CNNs sind auf Bildverarbeitung spezialisiert und lernen Filter, um Muster zu erkennen."
+  },
+  {
+    "question": "Was ist der Vorteil von DICOM gegenüber einfachen Bildformaten wie JPEG?",
+    "options": [
+      "DICOM enthält neben Pixeln auch umfangreiche Metadaten zu Patientendaten und Untersuchungsparametern",
+      "DICOM reduziert automatisch die Dateigröße",
+      "DICOM verschlüsselt Bilder standardmäßig",
+      "DICOM wird nur in der Pathologie verwendet"
+    ],
+    "correct_index": 0,
+    "explanation": "DICOM speichert nicht nur Bilddaten, sondern auch Patienteninformationen, Aufnahmeparameter und Zeitsstempel."
+  },
+  {
+    "question": "Welche Rolle spielt ein PACS-System in der Radiologie?",
+    "options": [
+      "Archivierung, Verwaltung und Verteilung medizinischer Bilder",
+      "Durchführung der Operationen",
+      "Patientenregistrierung",
+      "Laboranalyse"
+    ],
+    "correct_index": 0,
+    "explanation": "PACS dient als zentrales Bildarchiv und ermöglicht die Bereitstellung für Radiologen und KI-Systeme."
+  },
+  {
+    "question": "Warum ist Bildnormalisierung für KI-Modelle wichtig?",
+    "options": [
+      "Sie reduziert Unterschiede in Helligkeit, Kontrast und Skalierung zwischen Bildern",
+      "Sie erhöht die Strahlendosis für bessere Qualität",
+      "Sie löscht nicht benötigte Bilder automatisch",
+      "Sie ersetzt die Annotation durch Radiologen"
+    ],
+    "correct_index": 0,
+    "explanation": "Normierte Bilddaten verbessern die Konsistenz und Stabilität beim Training von Modellen."
+  },
+  {
+    "question": "Welche Aussage beschreibt Radiomics?",
+    "options": [
+      "Extraktion quantitativer Merkmale aus medizinischen Bildern zur Analyse",
+      "Manuelle Annotation von Patientenakten",
+      "Automatische OP-Planung",
+      "Einfache Speicherung von Bildern"
+    ],
+    "correct_index": 0,
+    "explanation": "Radiomics nutzt Bildinformationen, um numerische Features für Prognose und Diagnostik zu erzeugen."
+  },
+  {
+    "question": "Was ist der Vorteil von Transfer Learning in der Radiologie-KI?",
+    "options": [
+      "Ein vortrainiertes Modell kann auf kleinere, spezialisierte Datensätze angepasst werden",
+      "Das Modell benötigt keine Trainingsdaten mehr",
+      "Transfer Learning erzeugt automatisch Labels",
+      "Es ersetzt alle Radiologen"
+    ],
+    "correct_index": 0,
+    "explanation": "Transfer Learning spart Zeit und Daten, indem bereits gelernte Muster auf neue Aufgaben übertragen werden."
+  },
+  {
+    "question": "Welche Bedeutung hat die Sensitivität eines KI-Modells in der Radiologie?",
+    "options": [
+      "Sie gibt den Anteil korrekt erkannter positiver Fälle an",
+      "Sie zeigt die Anzahl falsch negativer Fälle",
+      "Sie bestimmt die Bildauflösung",
+      "Sie reduziert die Trainingszeit"
+    ],
+    "correct_index": 0,
+    "explanation": "Sensitivität misst, wie gut das Modell tatsächlich positive Fälle erkennt, z. B. Tumore."
+  },
+  {
+    "question": "Warum sind multimodale Ansätze in der KI-Radiologie interessant?",
+    "options": [
+      "Sie kombinieren verschiedene Bildmodalitäten oder Datenquellen, um genauere Diagnosen zu ermöglichen",
+      "Sie beschränken sich auf nur eine Bildquelle",
+      "Sie reduzieren die Datenqualität",
+      "Sie automatisieren die Patientenregistrierung"
+    ],
+    "correct_index": 0,
+    "explanation": "Multimodale Ansätze verbessern die Diagnose, indem Informationen aus CT, MRT, Ultraschall oder klinischen Daten kombiniert werden."
+  },
+  {
+    "question": "Welche Aussage beschreibt das Konzept der Ground Truth in Radiologie-KI?",
+    "options": [
+      "Es sind von Experten erstellte Referenzlabels, die als Vergleich für Modellvorhersagen dienen",
+      "Es handelt sich um automatisch generierte Zufallsdaten",
+      "Ground Truth wird nur für Laborwerte genutzt",
+      "Es ersetzt den PACS-Server"
+    ],
+    "correct_index": 0,
+    "explanation": "Ground Truth dient als Benchmark, um die Leistung von KI-Modellen objektiv zu bewerten."
+  },
+  {
+    "question": "Warum ist die Integration von KI-Systemen in bestehende Radiologie-Workflows herausfordernd?",
+    "options": [
+      "Schnittstellen, Datenstandards, Validierung und Akzeptanz der Nutzer müssen berücksichtigt werden",
+      "KI ersetzt automatisch alle Radiologen ohne Anpassung",
+      "Die Bilddaten werden durch KI gelöscht",
+      "KI benötigt keine klinische Überprüfung"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Integration erfordert technische, organisatorische und regulatorische Anpassungen, damit KI-Tools zuverlässig arbeiten."
+  },
+  {
+    "question": "Welche Rolle spielt KI bei der Patienten-Triage in Notaufnahmen?",
+    "options": [
+      "Priorisierung von Patienten nach Dringlichkeit anhand klinischer Daten",
+      "Automatische Patientenaufnahme ohne Fachpersonal",
+      "Reduktion von Laboranalysen",
+      "Erstellung von Patientenrechnungen"
+    ],
+    "correct_index": 0,
+    "explanation": "KI kann Risikoprofile analysieren und Patienten nach Dringlichkeit priorisieren."
+  },
+  {
+    "question": "Warum sind strukturierte Daten im Patientenpfad für KI-Analysen besonders wichtig?",
+    "options": [
+      "Sie ermöglichen automatisierte Auswertungen, Vorhersagen und Modellbildung",
+      "Sie reduzieren die Dateigröße von Bilddaten",
+      "Sie ersetzen Radiologen",
+      "Sie vereinfachen die Patientenregistrierung"
+    ],
+    "correct_index": 0,
+    "explanation": "Strukturierte Daten können direkt von KI-Systemen verarbeitet werden, z. B. für Prognosemodelle."
+  },
+  {
+    "question": "Welche Datenquelle im Krankenhaus ist typischerweise am schwierigsten für KI zu nutzen?",
+    "options": [
+      "Freitext in Arztbriefen oder Notizen",
+      "Laborwerte in standardisierten Tabellen",
+      "Medikamentenstammdaten",
+      "Radiologische Bilder im DICOM-Format"
+    ],
+    "correct_index": 0,
+    "explanation": "Freitextdaten sind unstrukturiert und erfordern NLP-Methoden zur Analyse."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Nutzen von Predictive Analytics in der Patientenversorgung?",
+    "options": [
+      "Vorhersage von Komplikationen oder Aufenthaltsdauer auf Basis vorhandener Daten",
+      "Automatisches Schreiben von Arztbriefen",
+      "Reduktion von Strahlendosen",
+      "Erhöhung der Bandbreite im PACS-System"
+    ],
+    "correct_index": 0,
+    "explanation": "Predictive Analytics nutzt historische und aktuelle Daten, um Risiken und Verläufe vorherzusagen."
+  },
+  {
+    "question": "Warum ist die Qualität der Daten entscheidend für KI-gestützte Entscheidungen?",
+    "options": [
+      "Fehlerhafte, unvollständige oder verzerrte Daten führen zu unzuverlässigen Vorhersagen",
+      "Geringere Qualität reduziert nur die Speichergröße",
+      "KI korrigiert automatisch alle Fehler",
+      "Datenqualität ist nur für Abrechnungszwecke relevant"
+    ],
+    "correct_index": 0,
+    "explanation": "KI-Modelle sind stark datenabhängig; schlechte Datenqualität wirkt sich direkt auf Genauigkeit und Bias aus."
+  },
+  {
+    "question": "Welche Funktion hat ein digitales Patientenmodell (Digital Twin) in der Medizin?",
+    "options": [
+      "Simulation individueller Krankheitsverläufe und Therapieeffekte",
+      "Archivierung von Laborwerten",
+      "Patientenregistrierung",
+      "Automatische Bildkontrastverstärkung"
+    ],
+    "correct_index": 0,
+    "explanation": "Digitale Zwillinge verwenden Patientendaten, um personalisierte Vorhersagen zu Therapieeffekten zu liefern."
+  },
+  {
+    "question": "Welche Art von KI-Modellen wird typischerweise für Vorhersagen von Krankenhausaufenthalten genutzt?",
+    "options": [
+      "Supervised Learning Modelle wie Entscheidungsbäume oder Random Forests",
+      "Rein textbasierte Rule Engines ohne Training",
+      "Bilderkennungssysteme für CT oder MRT",
+      "Rein statistische Durchschnittswerte ohne Features"
+    ],
+    "correct_index": 0,
+    "explanation": "Supervised Learning-Modelle lernen aus historischen Patientendaten und können Aufenthaltsdauer oder Komplikationsrisiken vorhersagen."
+  },
+  {
+    "question": "Was versteht man unter semantischer Interoperabilität im Krankenhaus?",
+    "options": [
+      "Verschiedene Systeme können Daten nicht nur austauschen, sondern auch korrekt interpretieren",
+      "Nur der Nachrichtenaustausch wird technisch möglich",
+      "Es werden automatisch Bilder konvertiert",
+      "Es dient der Bandbreitenoptimierung im Netzwerk"
+    ],
+    "correct_index": 0,
+    "explanation": "Semantische Interoperabilität gewährleistet, dass Datenbedeutungen zwischen Systemen konsistent bleiben."
+  },
+  {
+    "question": "Warum sind multimodale Datenanalysen für die Patientenversorgung interessant?",
+    "options": [
+      "Kombination von Laborwerten, Bilddaten und Vitalparametern ermöglicht genauere Vorhersagen",
+      "Sie reduzieren die Anzahl der Patienten",
+      "Sie ersetzen die ärztliche Untersuchung",
+      "Sie komprimieren Patientendaten für das Archiv"
+    ],
+    "correct_index": 0,
+    "explanation": "Durch die Integration verschiedener Datenquellen kann KI umfassendere Risikoprofile erstellen."
+  },
+  {
+    "question": "Welche Limitation kann die Übertragbarkeit von KI-Modellen zwischen Kliniken einschränken?",
+    "options": [
+      "Unterschiedliche Datenerfassung, Formate oder Patientengruppen",
+      "Zu hohe Auflösung der CT-Bilder",
+      "Fehlende Radiologen",
+      "Nur die Bandbreite des PACS-Netzwerks"
+    ],
+    "correct_index": 0,
+    "explanation": "Variationen in Datenqualität, -format und Patientenpopulation können die Generalisierbarkeit von Modellen einschränken."
+  },
+  {
+    "question": "Welche Aussage beschreibt Explainable AI (XAI) im klinischen Kontext am besten?",
+    "options": [
+      "Techniken, die die Entscheidungsgrundlagen von KI transparent und nachvollziehbar machen",
+      "Automatische Anonymisierung von Patientendaten",
+      "Schnellere Speicherung von Bilddaten im PACS",
+      "Automatische Terminplanung"
+    ],
+    "correct_index": 0,
+    "explanation": "XAI ermöglicht es Ärzten, die KI-Entscheidungen zu verstehen und zu überprüfen."
+  },
+  {
+    "question": "Warum ist ein Data Governance Framework wichtig für KI im Krankenhaus?",
+    "options": [
+      "Regelt Datenqualität, Sicherheit, Verantwortlichkeiten und Compliance für KI-Anwendungen",
+      "Erhöht automatisch die Rechenleistung",
+      "Erstellt Patientendaten automatisch neu",
+      "Reduziert die Bildauflösung für KI"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Data Governance Framework stellt sicher, dass KI-gestützte Analysen rechtlich, qualitativ und sicher durchgeführt werden."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Unterschied zwischen KI-gestützten Entscheidungsunterstützungssystemen und autonomen Systemen?",
+    "options": [
+      "Entscheidungsunterstützung liefert Empfehlungen, während autonome Systeme selbst Entscheidungen treffen",
+      "Autonome Systeme unterstützen nur die Abrechnung",
+      "Entscheidungsunterstützung ersetzt Radiologen komplett",
+      "Autonome Systeme speichern nur Bilder"
+    ],
+    "correct_index": 0,
+    "explanation": "KI kann Empfehlungen liefern oder vollständig eigenständige Entscheidungen treffen, abhängig von der Anwendung."
+  },
+  {
+    "question": "Welche Bedeutung haben Ground Truth Daten für KI-Analysen im Patientenpfad?",
+    "options": [
+      "Sie dienen als verlässliche Referenzlabels für Training und Validierung von Modellen",
+      "Sie werden nur zur Archivierung verwendet",
+      "Sie ersetzen PACS-Systeme",
+      "Sie reduzieren automatisch die Strahlendosis"
+    ],
+    "correct_index": 0,
+    "explanation": "Ground Truth Daten sind von Experten validierte Daten, die als Grundlage für die Modellbewertung dienen."
+  },
+  {
+    "question": "Warum ist die kontinuierliche Validierung von KI-Modellen im klinischen Betrieb erforderlich?",
+    "options": [
+      "Um sicherzustellen, dass Modelle zuverlässig bleiben, insbesondere bei sich ändernden Patientendaten",
+      "Damit alle Bilder automatisch archiviert werden",
+      "Zur Reduktion der Bandbreite im Netzwerk",
+      "Für automatische Abrechnung der Patienten"
+    ],
+    "correct_index": 0,
+    "explanation": "Modelle können mit neuen Daten driftet oder an Genauigkeit verlieren, daher ist laufende Validierung notwendig."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Vorteil einer Hub-and-Spoke Architektur in einem Krankenhaus-IT-System?",
+    "options": [
+      "Jedes System kommuniziert direkt mit jedem anderen System.",
+      "Änderungen in einem Subsystem erfordern keine Anpassungen im Sender-System, da Kommunikation über einen zentralen Hub läuft.",
+      "Alle Daten werden dezentral ohne zentrale Steuerung verteilt.",
+      "Es gibt keine Möglichkeit zur zentralen Überwachung der Nachrichten."
+    ],
+    "correct_index": 1,
+    "explanation": "Bei Hub-and-Spoke wird ein zentraler Kommunikationsserver genutzt, sodass Subsysteme nur den Hub ansprechen müssen, was Änderungen vereinfacht."
+  },
+  {
+    "question": "Was ist die Hauptaufgabe einer Integration Engine wie Mirth Connect?",
+    "options": [
+      "Zentrale Steuerung, Transformation, Filterung und Weiterleitung von Nachrichten zwischen heterogenen Systemen.",
+      "Automatische Diagnoseerstellung für Patienten.",
+      "Direkte Archivierung von Bilddaten im PACS.",
+      "Nur die Verschlüsselung von Nachrichten ohne Anpassungen."
+    ],
+    "correct_index": 0,
+    "explanation": "Integration Engines dienen als Middleware und ermöglichen reibungslosen Datenaustausch zwischen unterschiedlichen Systemen."
+  },
+  {
+    "question": "Welche HL7 v2 Nachricht beschreibt typischerweise die Aufnahme eines Patienten?",
+    "options": [
+      "ADT^A01",
+      "ORM^O01",
+      "ORU^R01",
+      "MDM^T02"
+    ],
+    "correct_index": 0,
+    "explanation": "ADT^A01 steht für Admit/Discharge/Transfer Event A01 = Patient aufnehmen."
+  },
+  {
+    "question": "Welches HL7 v2 Segment enthält Patientenstammdaten?",
+    "options": [
+      "PID",
+      "OBX",
+      "PV1",
+      "MSH"
+    ],
+    "correct_index": 0,
+    "explanation": "Das PID-Segment enthält grundlegende Informationen über den Patienten wie Name, Geburtsdatum und Geschlecht."
+  },
+  {
+    "question": "Welche Information liefert das OBX-Segment in HL7 v2 Nachrichten?",
+    "options": [
+      "Messwerte oder Beobachtungen, z. B. Laborwerte",
+      "Patientenstammdaten",
+      "Aufenthaltsinformationen des Patienten",
+      "Nachrichtenkopf-Informationen"
+    ],
+    "correct_index": 0,
+    "explanation": "OBX steht für Observation/Result und enthält konkrete Messwerte oder Befunde."
+  },
+  {
+    "question": "Welche Funktion hat das MSH-Segment in HL7 v2?",
+    "options": [
+      "Definiert den Header der Nachricht inklusive Sender, Empfänger und Nachrichtentyp",
+      "Enthält Laborwerte",
+      "Speichert Radiologiebefunde",
+      "Verwaltet Patientenzimmerinformationen"
+    ],
+    "correct_index": 0,
+    "explanation": "MSH steht für Message Header und legt grundlegende Metadaten der Nachricht fest."
+  },
+  {
+    "question": "Was beschreibt semantische Interoperabilität in der Gesundheits-IT?",
+    "options": [
+      "Sicherstellen, dass unterschiedliche Systeme die Bedeutung von Daten korrekt interpretieren",
+      "Nur die Struktur der Datenformate kompatibel halten",
+      "Automatische Datenkompression",
+      "Sicherstellen, dass Hardwarekomponenten kompatibel sind"
+    ],
+    "correct_index": 0,
+    "explanation": "Semantische Interoperabilität geht über syntaktische Kompatibilität hinaus und garantiert korrekte Interpretation von Inhalten."
+  },
+  {
+    "question": "Was bedeutet syntaktische Interoperabilität?",
+    "options": [
+      "Systeme können Datenformate lesen und Nachrichten technisch korrekt austauschen",
+      "Der Inhalt der Daten wird unabhängig vom System korrekt interpretiert",
+      "Alle Geräte im Krankenhaus sind kompatibel",
+      "Patientendaten werden automatisch anonymisiert"
+    ],
+    "correct_index": 0,
+    "explanation": "Syntaktische Interoperabilität bezieht sich auf die technische Verständlichkeit von Datenformaten und Strukturen."
+  },
+  {
+    "question": "Welche Herausforderung besteht bei Point-to-Point Architekturen in Krankenhäusern?",
+    "options": [
+      "Die Anzahl der Schnittstellen wächst quadratisch mit der Zahl der Systeme, was Wartung und Skalierung erschwert",
+      "Es gibt keinen zentralen Nachrichtentransport",
+      "Alle Daten werden automatisch validiert",
+      "Es können nur Laborwerte übertragen werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei N Systemen werden N*(N-1)/2 Schnittstellen benötigt, was unübersichtlich und schwer wartbar ist."
+  },
+  {
+    "question": "Was ist der Vorteil von RESTful APIs in HL7 FHIR?",
+    "options": [
+      "Clients können Daten on-demand abrufen und standardisierte Webtechnologien nutzen",
+      "Nur Bilddateien können übertragen werden",
+      "Alle alten HL7 v2 Nachrichten werden automatisch konvertiert",
+      "Reduziert die Notwendigkeit von Datenvalidierung"
+    ],
+    "correct_index": 0,
+    "explanation": "FHIR nutzt RESTful APIs und Webstandards wie HTTP/JSON, wodurch moderne Apps direkt auf Daten zugreifen können."
+  },
+  {
+    "question": "Welche Bedeutung hat die 80/20-Regel in FHIR?",
+    "options": [
+      "20% der Felder decken 80% der üblichen klinischen Anwendungsfälle ab",
+      "80% der Systeme müssen FHIR unterstützen",
+      "20% der HL7 v2 Segmente werden ignoriert",
+      "80% der Patienteninformationen sind standardisiert"
+    ],
+    "correct_index": 0,
+    "explanation": "FHIR definiert die Kernfelder für 80% der Anwendungsfälle; der Rest kann durch Extensions ergänzt werden."
+  },
+  {
+    "question": "Warum werden Z-Segmente in HL7 v2 genutzt?",
+    "options": [
+      "Für benutzerdefinierte Felder, die nicht im Standard definiert sind",
+      "Für alle Labormessungen",
+      "Für die Nachrichtensignatur",
+      "Zur Definition von Patientenaufenthalten"
+    ],
+    "correct_index": 0,
+    "explanation": "Z-Segmente ermöglichen es, zusätzliche, system- oder kundenspezifische Daten zu übertragen."
+  },
+  {
+    "question": "Welche Rolle spielt ein Gateway im Radiologie-KI Workflow?",
+    "options": [
+      "Pseudonymisierung von Patientendaten vor KI-Analyse in der Cloud",
+      "Automatische Verbesserung der Bildqualität",
+      "Speicherung der Originalbilder direkt im KIS",
+      "Erstellung von Laborberichten"
+    ],
+    "correct_index": 0,
+    "explanation": "Gateways ersetzen personenbezogene Daten durch Tracking-IDs, bevor KI-Modelle die Bilder analysieren."
+  },
+  {
+    "question": "Welche Maßnahme erhöht die Verfügbarkeit einer Integration Engine im Krankenhaus?",
+    "options": [
+      "Redundanz über mehrere Server (High Availability Cluster)",
+      "Nur ein dedizierter Server für alle Nachrichten",
+      "Automatische Konvertierung aller Nachrichten in JSON",
+      "Anbindung nur einzelner Abteilungen"
+    ],
+    "correct_index": 0,
+    "explanation": "High Availability Cluster verhindern Ausfälle und sichern die kontinuierliche Datenverarbeitung."
+  },
+  {
+    "question": "Welches Segment in HL7 v2 gibt den Aufenthaltsort des Patienten an?",
+    "options": [
+      "PV1-3",
+      "PID-5",
+      "OBX-2",
+      "MSH-7"
+    ],
+    "correct_index": 0,
+    "explanation": "PV1-3 enthält Abteilung, Zimmer und Bett des Patienten."
+  }
+]
