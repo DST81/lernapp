@@ -1,0 +1,112 @@
+[
+  {
+    "question": "Was bedeutet Interoperabilität im Gesundheitswesen?",
+    "options": [
+      "Systeme sind isoliert",
+      "Systeme können Daten austauschen und verstehen",
+      "Systeme nutzen identische Software",
+      "Systeme sind offline"
+    ],
+    "correct_index": 1,
+    "explanation": "Interoperabilität umfasst syntaktisches und semantisches Verständnis."
+  },
+  {
+    "question": "Wofür wird HL7 v2 hauptsächlich verwendet?",
+    "options": [
+      "Bildverarbeitung",
+      "Nachrichtenaustausch klinischer Daten",
+      "Web-APIs",
+      "Datenanalyse"
+    ],
+    "correct_index": 1,
+    "explanation": "HL7 v2 ist der klassische Messaging-Standard im Spital."
+  },
+  {
+    "question": "Was ist HL7 FHIR?",
+    "options": [
+      "Ein Bildformat",
+      "Ein moderner REST-basierter Standard",
+      "Ein Datenbanktyp",
+      "Ein Betriebssystem"
+    ],
+    "correct_index": 1,
+    "explanation": "FHIR nutzt JSON/XML und RESTful APIs."
+  },
+  {
+    "question": "Welche Rolle spielt eine Integration Engine?",
+    "options": [
+      "Speicherung von Bildern",
+      "Transformation und Routing von Nachrichten",
+      "KI-Modelltraining",
+      "Abrechnung"
+    ],
+    "correct_index": 1,
+    "explanation": "Integration Engines entkoppeln Systeme."
+  },
+  {
+    "question": "Was ist ein Nachteil von Point-to-Point-Integrationen?",
+    "options": [
+      "Geringe Komplexität",
+      "Hoher Wartungsaufwand",
+      "Hohe Flexibilität",
+      "Geringe Fehleranfälligkeit"
+    ],
+    "correct_index": 1,
+    "explanation": "Viele direkte Schnittstellen sind schwer wartbar."
+  },
+  {
+    "question": "Was beschreibt das Segment PID in HL7 v2?",
+    "options": [
+      "Patient Identification",
+      "Procedure Information",
+      "Payment Information",
+      "Provider Identification"
+    ],
+    "correct_index": 0,
+    "explanation": "PID enthält Patientendaten."
+  },
+  {
+    "question": "Welche Ressource beschreibt Messwerte in FHIR?",
+    "options": [
+      "Patient",
+      "Observation",
+      "Encounter",
+      "Device"
+    ],
+    "correct_index": 1,
+    "explanation": "Observation enthält Labor- und Vitalwerte."
+  },
+  {
+    "question": "Warum ist DICOM für KI wichtig?",
+    "options": [
+      "Es ist ein KI-Framework",
+      "Es liefert standardisierte Bilddaten",
+      "Es ersetzt HL7",
+      "Es speichert Texte"
+    ],
+    "correct_index": 1,
+    "explanation": "Standardisierte Bilddaten sind Voraussetzung für KI."
+  },
+  {
+    "question": "Was ist semantische Interoperabilität?",
+    "options": [
+      "Gleiche Datenformate",
+      "Gleiche Bedeutung der Daten",
+      "Gleiche Software",
+      "Gleiche Hardware"
+    ],
+    "correct_index": 1,
+    "explanation": "Daten müssen nicht nur übertragen, sondern korrekt interpretiert werden."
+  },
+  {
+    "question": "Warum gewinnt FHIR an Bedeutung?",
+    "options": [
+      "Wegen hoher Komplexität",
+      "Wegen einfacher Integration in moderne Apps",
+      "Wegen fehlender Standards",
+      "Wegen geringerer Sicherheit"
+    ],
+    "correct_index": 1,
+    "explanation": "FHIR ist gut geeignet für mobile und cloudbasierte Anwendungen."
+  }
+]
