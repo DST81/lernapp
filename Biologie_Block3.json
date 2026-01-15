@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Warum ist die direkte Protein-Charakterisierung gegenüber rein genomischen oder transkriptomischen Analysen besonders wichtig?",
+    "options": [
+      "Weil Proteine ausschließlich aus nicht-kodierenden RNAs entstehen",
+      "Weil Proteinmengen immer exakt den mRNA-Mengen entsprechen",
+      "Weil Proteine posttranslationale Modifikationen, Isoformen und Abbauprozesse aufweisen können, die aus DNA- oder RNA-Daten allein nicht ableitbar sind",
+      "Weil Proteine grundsätzlich stabiler sind als DNA"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Proteomik erfasst funktionelle Aspekte wie Modifikationen, Turnover und Aktivitätszustände, die nicht direkt aus Genom- oder Transkriptomdaten hervorgehen."
+  },
+  {
+    "question": "Welches Prinzip beschreibt ein massenspektrometriebasiertes Proteomik-Experiment am zutreffendsten?",
+    "options": [
+      "Proteine werden direkt ohne Vorbehandlung anhand ihrer Länge sequenziert",
+      "Peptide werden nach enzymatischer Verdauung ionisiert, nach m/z getrennt und anhand von Fragmentierungsmustern identifiziert",
+      "RNA-Moleküle werden fragmentiert und mit Proteindatenbanken verglichen",
+      "Proteine werden ausschließlich über ihre Isoelektrischen Punkte bestimmt"
+    ],
+    "correct_index": 1,
+    "explanation": "In der MS-basierten Proteomik werden Proteine verdaut, die Peptide ionisiert und im Massenspektrometer analysiert sowie datenbankbasiert identifiziert."
+  },
+  {
+    "question": "Warum wird Trypsin häufig als Protease in der Proteomik eingesetzt?",
+    "options": [
+      "Weil es zufällige Spaltstellen erzeugt und so die Sequenzabdeckung maximiert",
+      "Weil es ausschließlich aromatische Aminosäuren spaltet",
+      "Weil es reproduzierbar nach Lysin und Arginin spaltet und dadurch gut interpretierbare Peptidlängen für MS-Analysen erzeugt",
+      "Weil es keine Ausnahmen bei der Spaltung besitzt"
+    ],
+    "correct_index": 2,
+    "explanation": "Trypsin erzeugt durch seine spezifische Spaltung gut geeignete Peptide für die Massenspektrometrie."
+  },
+  {
+    "question": "Welcher Zweck wird durch die Flüssigchromatographie (LC) vor der Massenspektrometrie erfüllt?",
+    "options": [
+      "Ionisation der Peptide im Hochvakuum",
+      "Fragmentierung der Peptide in b- und y-Ionen",
+      "Reduktion der Probenkomplexität durch zeitliche Trennung der Peptide vor der MS-Analyse",
+      "Direkte Bestimmung der Aminosäuresequenz"
+    ],
+    "correct_index": 2,
+    "explanation": "LC trennt Peptide vor der MS zeitlich, wodurch Überlagerungen reduziert und Identifikationen verbessert werden."
+  },
+  {
+    "question": "Welche Aussage zu b- und y-Ionen bei der CID-Fragmentierung ist korrekt?",
+    "options": [
+      "b-Ionen entstehen ausschließlich am C-Terminus des Peptids",
+      "y-Ionen repräsentieren Fragmente vom C-Terminus und b-Ionen vom N-Terminus des Peptids",
+      "a-Ionen sind die häufigsten Fragmente in CID-Spektren",
+      "b- und y-Ionen enthalten stets identische Aminosäuren"
+    ],
+    "correct_index": 1,
+    "explanation": "b-Ionen erweitern sich vom N-Terminus, y-Ionen vom C-Terminus aus."
+  },
+  {
+    "question": "Was ist ein zentrales Merkmal des de novo Peptidsequenzierens?",
+    "options": [
+      "Es basiert ausschließlich auf Datenbanksuchen",
+      "Es nutzt nur MS1-Daten ohne Fragmentierung",
+      "Es rekonstruiert die Aminosäuresequenz direkt aus dem MS/MS-Spektrum ohne Sequenzdatenbank",
+      "Es ist fehlerfrei bei hoher Probenkomplexität"
+    ],
+    "correct_index": 2,
+    "explanation": "De novo Sequenzierung ist datenbankunabhängig und nutzt Fragmentmassen zur direkten Sequenzableitung."
+  },
+  {
+    "question": "Warum stellen isotopische Peaks (z. B. durch C13) eine Herausforderung bei der Spektrenanalyse dar?",
+    "options": [
+      "Weil sie ausschließlich bei kleinen Peptiden auftreten",
+      "Weil sie zusätzliche Peaks erzeugen, die von monoisotopischen Signalen unterschieden werden müssen",
+      "Weil sie die Ionisation vollständig verhindern",
+      "Weil sie nur bei Orbitrap-Massenspektrometern auftreten"
+    ],
+    "correct_index": 1,
+    "explanation": "Isotope führen zu Peak-Serien, die korrekt interpretiert werden müssen, um Fehlzuordnungen zu vermeiden."
+  },
+  {
+    "question": "Welches Problem adressiert der Target-Decoy-Ansatz in der Proteomik?",
+    "options": [
+      "Die Quantifizierung von Proteinmengen",
+      "Die Reduktion von Probenkomplexität",
+      "Die Abschätzung der Fehlerrate (False Discovery Rate) bei Peptididentifikationen",
+      "Die Vorhersage von Proteinstrukturen"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Target-Decoy-Ansatz erlaubt eine empirische Abschätzung falsch-positiver Identifikationen."
+  },
+  {
+    "question": "Wie wird die False Discovery Rate (FDR) im Target-Decoy-Ansatz typischerweise interpretiert?",
+    "options": [
+      "Als Anteil korrekt identifizierter Peptide",
+      "Als Verhältnis von Ziel- zu Decoy-Treffern unterhalb eines Schwellenwerts",
+      "Als geschätzter Anteil falscher Treffer unter allen akzeptierten Identifikationen",
+      "Als absolute Anzahl falsch identifizierter Proteine"
+    ],
+    "correct_index": 2,
+    "explanation": "Die FDR gibt den erwarteten Anteil falscher Identifikationen in der akzeptierten Trefferliste an."
+  },
+  {
+    "question": "Welche Eigenschaft der Aminosäure-Seitenketten beeinflusst die Proteinfaltung besonders stark?",
+    "options": [
+      "Die Anzahl der Peptidbindungen",
+      "Die Polarität und Ladung der Seitenketten in wässriger Umgebung",
+      "Die Position im genetischen Code",
+      "Die absolute Häufigkeit im Proteom"
+    ],
+    "correct_index": 1,
+    "explanation": "Hydrophobe, polare und geladene Seitenketten treiben die Ausbildung der 3D-Struktur maßgeblich."
+  },
+  {
+    "question": "Welche Beschreibung der Proteinstrukturebenen ist korrekt?",
+    "options": [
+      "Die Primärstruktur beschreibt die räumliche Anordnung mehrerer Untereinheiten",
+      "Die Sekundärstruktur umfasst lokale Faltungsmotive wie α-Helices und β-Faltblätter",
+      "Die Tertiärstruktur beschreibt ausschließlich Disulfidbrücken",
+      "Die Quartärstruktur ist identisch mit der Primärstruktur"
+    ],
+    "correct_index": 1,
+    "explanation": "Sekundärstrukturen entstehen durch Wasserstoffbrücken im Peptidrückgrat."
+  },
+  {
+    "question": "Welches grundlegende Prinzip beschreibt den Zusammenhang zwischen Aminosäuresequenz und Proteinstruktur?",
+    "options": [
+      "Die 3D-Struktur ist unabhängig von der Sequenz",
+      "Die Aminosäuresequenz enthält alle Informationen zur Ausbildung der nativen Proteinstruktur",
+      "Die Proteinstruktur wird ausschließlich durch Chaperone bestimmt",
+      "Nur posttranslationale Modifikationen bestimmen die Faltung"
+    ],
+    "correct_index": 1,
+    "explanation": "Nach dem Anfinsen-Dogma ist die Sequenz die Grundlage der Proteinstruktur."
+  },
+  {
+    "question": "Was ist das zentrale Prinzip des Homology Modelling?",
+    "options": [
+      "Vorhersage von Proteinstrukturen ohne bekannte Referenzen",
+      "Simulation der Proteinfaltung auf atomarer Ebene",
+      "Ableitung einer Proteinstruktur basierend auf strukturell bekannten homologen Sequenzen",
+      "Direkte Messung der Struktur mittels Massenspektrometrie"
+    ],
+    "correct_index": 2,
+    "explanation": "Homology Modelling nutzt evolutionär verwandte Proteine mit bekannter Struktur als Vorlage."
+  },
+  {
+    "question": "Worin unterscheidet sich AlphaFold grundlegend vom klassischen Homology Modelling?",
+    "options": [
+      "AlphaFold verwendet keine Sequenzinformationen",
+      "AlphaFold sagt Strukturen ausschließlich experimentell voraus",
+      "AlphaFold nutzt tiefe neuronale Netze, um Strukturinformationen direkt aus Sequenzmustern zu lernen",
+      "AlphaFold ist nur für kleine Peptide anwendbar"
+    ],
+    "correct_index": 2,
+    "explanation": "AlphaFold kombiniert Sequenzinformationen mit maschinellem Lernen für hochpräzise Strukturvorhersagen."
+  },
+  {
+    "question": "Welche Kennzahl wird typischerweise verwendet, um die Qualität von Proteinstrukturvorhersagen zu bewerten?",
+    "options": [
+      "GC-Gehalt der Sequenz",
+      "Retention Time in der LC-MS",
+      "Scores oder Konfidenzwerte wie pLDDT zur Einschätzung der lokalen Strukturzuverlässigkeit",
+      "Anzahl der detektierten Peptide"
+    ],
+    "correct_index": 2,
+    "explanation": "Konfidenzmetriken erlauben die Interpretation der Zuverlässigkeit vorhergesagter Strukturbereiche."
+  }
+]
