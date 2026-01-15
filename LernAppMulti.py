@@ -18,6 +18,7 @@ verfügbare_fächer = {
     "Medizin Tag 4": "Medizin_Tag4.json",
     "Medizin Tag 5": "Medizin_Tag5.json",
     "Medizin Schwierige Fragen": "Medizin_AlleTage_schwierigereFragen.json",
+    "Biologie Block ":"biologie_block3.json",
     "Einführung Banken": "mc_bank_Kapitel1.json",
     "Doppelte Buchführung": "mc_bank_Kapitel2.json",
     "Modellierung von Banken":"mc_bank_Kapitel3.json",
