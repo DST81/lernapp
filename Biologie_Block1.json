@@ -163,5 +163,225 @@
     ],
     "correct_index": 1,
     "explanation": "Phylogenetische Bäume stellen evolutionäre Verwandtschaftsverhältnisse basierend auf Sequenzähnlichkeiten dar."
+  },
+  {
+    "question": "Warum ist die Untersuchung des Proteoms im Vergleich zum Transkriptom besonders aussagekräftig?",
+    "options": [
+      "Weil das Proteom direkt die genomische DNA widerspiegelt",
+      "Weil Proteine posttranslationale Modifikationen und Abbauprozesse widerspiegeln, die auf RNA-Ebene nicht sichtbar sind",
+      "Weil Proteine weniger variabel als mRNA sind",
+      "Weil das Proteom unabhängig von Umweltbedingungen ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Proteine unterliegen Modifikationen, unterschiedlicher Stabilität und Regulation, die nicht aus der mRNA allein abgeleitet werden können."
+  },
+  {
+    "question": "Welche Information kann ausschließlich durch direkte Proteincharakterisierung gewonnen werden?",
+    "options": [
+      "Die Nukleotidsequenz eines Gens",
+      "Die chromosomale Lage eines Gens",
+      "Posttranslationale Modifikationen wie Phosphorylierung oder Acetylierung",
+      "Die Anzahl der Introns eines Gens"
+    ],
+    "correct_index": 2,
+    "explanation": "Posttranslationale Modifikationen entstehen nach der Translation und sind daher nicht auf DNA- oder RNA-Ebene erkennbar."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Zusammenhang zwischen Proteinmenge und biologischer Funktion am treffendsten?",
+    "options": [
+      "Die Proteinmenge ist immer proportional zur mRNA-Menge",
+      "Die Proteinmenge ist irrelevant für die biologische Funktion",
+      "Die Proteinmenge resultiert aus Synthese- und Abbauraten und kann unabhängig von der mRNA variieren",
+      "Proteine werden nach der Translation nicht mehr reguliert"
+    ],
+    "correct_index": 2,
+    "explanation": "Proteinlevel werden sowohl durch Translation als auch durch Abbau bestimmt und korrelieren nicht zwingend mit der mRNA-Menge."
+  },
+  {
+    "question": "Welche Eigenschaft macht Proteine zu besonders vielseitigen Biomolekülen?",
+    "options": [
+      "Die chemische Uniformität aller Aminosäuren",
+      "Die große Vielfalt an Aminosäure-Seitenketten mit unterschiedlichen physikochemischen Eigenschaften",
+      "Die starre lineare Struktur der Polypeptidkette",
+      "Die ausschließliche Bindung an Nukleinsäuren"
+    ],
+    "correct_index": 1,
+    "explanation": "Unterschiedliche Seitenketten ermöglichen vielfältige Wechselwirkungen und Funktionen von Proteinen."
+  },
+  {
+    "question": "Welche Aussage zu geladenen Aminosäuren ist korrekt?",
+    "options": [
+      "Geladene Aminosäuren kommen nur im Proteininneren vor",
+      "Geladene Seitenketten beeinflussen die Löslichkeit und intermolekulare Wechselwirkungen von Proteinen",
+      "Geladene Aminosäuren sind ausschließlich negativ geladen",
+      "Ihre Ladung ist unabhängig vom pH-Wert"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Ladung von Aminosäuren beeinflusst Proteinstruktur, Löslichkeit und Bindungseigenschaften und ist pH-abhängig."
+  },
+  {
+    "question": "Welche Strukturstufe eines Proteins wird hauptsächlich durch Wasserstoffbrücken stabilisiert?",
+    "options": [
+      "Primärstruktur",
+      "Sekundärstruktur",
+      "Tertiärstruktur",
+      "Quartärstruktur"
+    ],
+    "correct_index": 1,
+    "explanation": "α-Helices und β-Faltblätter der Sekundärstruktur werden überwiegend durch Wasserstoffbrücken stabilisiert."
+  },
+  {
+    "question": "Was beschreibt die Tertiärstruktur eines Proteins?",
+    "options": [
+      "Die lineare Aminosäureabfolge",
+      "Die lokale Faltung einzelner Peptidabschnitte",
+      "Die dreidimensionale Gesamtfaltung einer einzelnen Polypeptidkette",
+      "Die Anordnung mehrerer Proteinkomplexe"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Tertiärstruktur beschreibt die vollständige 3D-Faltung einer einzelnen Polypeptidkette."
+  },
+  {
+    "question": "Welche Wechselwirkung trägt besonders zur Stabilisierung der Tertiärstruktur bei?",
+    "options": [
+      "Peptidbindungen",
+      "Hydrophobe Wechselwirkungen zwischen unpolaren Seitenketten",
+      "Basenpaarung",
+      "Phosphodiesterbindungen"
+    ],
+    "correct_index": 1,
+    "explanation": "Hydrophobe Effekte treiben die Faltung, indem unpolare Seitenketten vom wässrigen Umfeld abgeschirmt werden."
+  },
+  {
+    "question": "Was ist eine charakteristische Eigenschaft der Quartärstruktur?",
+    "options": [
+      "Sie beschreibt die Faltung einzelner Aminosäuren",
+      "Sie ist nur bei Membranproteinen vorhanden",
+      "Sie beschreibt die räumliche Anordnung mehrerer Polypeptidketten",
+      "Sie ist identisch mit der Tertiärstruktur"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Quartärstruktur beschreibt, wie mehrere Polypeptidketten zu einem funktionellen Proteinassemblat zusammenlagern."
+  },
+  {
+    "question": "Warum kann eine kleine Änderung in der Aminosäuresequenz große strukturelle Folgen haben?",
+    "options": [
+      "Weil jede Aminosäure unabhängig von ihrer Position wirkt",
+      "Weil Wechselwirkungen in Proteinen kooperativ sind und sich strukturell fortpflanzen",
+      "Weil Proteine keine stabile Struktur besitzen",
+      "Weil die Peptidbindung instabil ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Änderungen können das Wechselwirkungsnetzwerk beeinflussen und dadurch die gesamte Faltung verändern."
+  },
+  {
+    "question": "Welche Annahme liegt dem Prinzip des Homology Modelling zugrunde?",
+    "options": [
+      "Sequenzähnliche Proteine besitzen ähnliche dreidimensionale Strukturen",
+      "Alle Proteine falten sich identisch",
+      "Strukturähnlichkeit ist unabhängig von der Sequenz",
+      "Nur experimentelle Methoden liefern valide Strukturen"
+    ],
+    "correct_index": 0,
+    "explanation": "Homology Modelling basiert auf der Beobachtung, dass Struktur stärker konserviert ist als Sequenz."
+  },
+  {
+    "question": "Warum ist Homology Modelling bei geringer Sequenzidentität problematisch?",
+    "options": [
+      "Weil dann keine Aminosäuren mehr vorhanden sind",
+      "Weil strukturelle Abweichungen mit sinkender Sequenzähnlichkeit zunehmen",
+      "Weil die Proteinlänge nicht bestimmt werden kann",
+      "Weil keine Template-Strukturen existieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei geringer Sequenzidentität steigt die Unsicherheit der strukturellen Vorhersage deutlich."
+  },
+  {
+    "question": "Welche Information nutzt AlphaFold zusätzlich zu klassischen Sequenzvergleichen?",
+    "options": [
+      "Nur experimentelle Röntgenstrukturdaten",
+      "Kovarianzen und evolutionäre Kopplungen zwischen Aminosäuren",
+      "Zufällige Konformationsmodelle",
+      "Ausschließlich chemische Formeln"
+    ],
+    "correct_index": 1,
+    "explanation": "AlphaFold nutzt evolutionäre Kopplungen, um räumliche Nähe von Aminosäuren vorherzusagen."
+  },
+  {
+    "question": "Was beschreibt der pLDDT-Wert im AlphaFold-Output?",
+    "options": [
+      "Die molekulare Masse des Proteins",
+      "Die erwartete Genauigkeit der lokalen Strukturvorhersage",
+      "Die Anzahl homologer Sequenzen",
+      "Die Stabilität des Proteins im Experiment"
+    ],
+    "correct_index": 1,
+    "explanation": "Der pLDDT-Wert gibt an, wie zuverlässig einzelne Bereiche der vorhergesagten Struktur sind."
+  },
+  {
+    "question": "Warum sind intrinsisch ungeordnete Proteinregionen schwer vorherzusagen?",
+    "options": [
+      "Weil sie keine Aminosäuren enthalten",
+      "Weil sie keine stabile dreidimensionale Struktur einnehmen",
+      "Weil sie ausschließlich aus hydrophoben Aminosäuren bestehen",
+      "Weil sie nur in Prokaryoten vorkommen"
+    ],
+    "correct_index": 1,
+    "explanation": "Intrinsisch ungeordnete Regionen besitzen keine feste Struktur und sind daher schwer modellierbar."
+  },
+  {
+    "question": "Welche Aussage beschreibt die Beziehung zwischen Proteinstruktur und Funktion korrekt?",
+    "options": [
+      "Die Funktion eines Proteins ist unabhängig von seiner Struktur",
+      "Nur die Primärstruktur ist funktionell relevant",
+      "Die spezifische 3D-Struktur ermöglicht die spezifische biologische Funktion",
+      "Alle Proteine besitzen dieselbe Faltungslogik"
+    ],
+    "correct_index": 2,
+    "explanation": "Die räumliche Struktur bestimmt Bindungseigenschaften, Aktivität und Interaktionen eines Proteins."
+  },
+  {
+    "question": "Warum ist die Vorhersage von Proteinstrukturen für die Biologie und Medizin wichtig?",
+    "options": [
+      "Weil sie die Genomsequenz ersetzt",
+      "Weil sie funktionelle Interpretation und Wirkstoffdesign ermöglicht",
+      "Weil sie ausschließlich akademisches Interesse hat",
+      "Weil sie experimentelle Methoden überflüssig macht"
+    ],
+    "correct_index": 1,
+    "explanation": "Strukturinformationen helfen, Funktionen zu verstehen und gezielt Medikamente zu entwickeln."
+  },
+  {
+    "question": "Welche Rolle spielen Seitenketten bei der Protein-Protein-Interaktion?",
+    "options": [
+      "Sie haben keinen Einfluss auf Bindungen",
+      "Sie bestimmen durch Form und Ladung die Spezifität von Interaktionen",
+      "Sie dienen ausschließlich der Stabilisierung der Peptidbindung",
+      "Sie sind immer im Proteininneren verborgen"
+    ],
+    "correct_index": 1,
+    "explanation": "Seitenketten vermitteln über physikochemische Eigenschaften spezifische Wechselwirkungen."
+  },
+  {
+    "question": "Warum ist Strukturinformation allein nicht immer ausreichend zur Funktionsvorhersage?",
+    "options": [
+      "Weil Strukturen grundsätzlich falsch sind",
+      "Weil Dynamik, Modifikationen und Interaktionspartner ebenfalls funktionell relevant sind",
+      "Weil Sequenzen wichtiger als Strukturen sind",
+      "Weil Proteine statische Moleküle sind"
+    ],
+    "correct_index": 1,
+    "explanation": "Proteinaktivität hängt auch von Dynamik, Regulation und zellulärem Kontext ab."
+  },
+  {
+    "question": "Welche Aussage beschreibt Proteinfaltung am treffendsten?",
+    "options": [
+      "Proteinfaltung ist ein zufälliger Prozess ohne energetische Grundlage",
+      "Proteinfaltung folgt einem energetisch günstigen Zustand, der durch die Sequenz vorgegeben ist",
+      "Proteine falten sich nur mit externer Energiezufuhr",
+      "Proteinfaltung ist für jedes Protein identisch"
+    ],
+    "correct_index": 1,
+    "explanation": "Die native Faltung entspricht meist einem energetisch minimalen Zustand, der sequenzabhängig ist."
   }
 ]
