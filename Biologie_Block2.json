@@ -1,1 +1,283 @@
+[
+  {
+    "question": "Welches Prinzip beschreibt die Polymerase-Kettenreaktion (PCR) am zutreffendsten?",
+    "options": [
+      "Die einmalige Synthese eines DNA-Strangs aus RNA ohne Temperaturänderung",
+      "Die exponentielle Amplifikation eines spezifischen DNA-Abschnitts durch zyklische Temperaturänderungen und enzymatische DNA-Synthese",
+      "Die lineare Vervielfältigung des gesamten Genoms durch zufällige Primer",
+      "Die direkte Messung von RNA-Mengen mittels Fluoreszenzfarbstoffen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Phase der PCR ist dafür verantwortlich, dass Primer an die Matrizen-DNA binden?",
+    "options": [
+      "Denaturierung bei hoher Temperatur zur Trennung der DNA-Stränge",
+      "Annealing, bei dem die Temperatur das spezifische Anlagern der Primer ermöglicht",
+      "Elongation, bei der Nukleotide an den neuen Strang angefügt werden",
+      "Ligation, bei der DNA-Fragmente miteinander verbunden werden"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was beschreibt der Ct-Wert in einer quantitativen PCR (qPCR)?",
+    "options": [
+      "Die Anzahl der PCR-Zyklen bis die Polymerase inaktiv wird",
+      "Den Zyklus, bei dem das Fluoreszenzsignal erstmals einen definierten Schwellenwert überschreitet",
+      "Die absolute Menge der eingesetzten Primer",
+      "Die maximale Fluoreszenz am Ende der PCR"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Aussage zum Ct-Wert ist korrekt?",
+    "options": [
+      "Ein höherer Ct-Wert deutet auf eine höhere Ausgangsmenge an Template hin",
+      "Ein niedriger Ct-Wert weist auf eine höhere initiale Konzentration der Zielsequenz hin",
+      "Der Ct-Wert ist unabhängig von der Ausgangsmenge der DNA",
+      "Der Ct-Wert kann nur bei Endpunkt-PCR bestimmt werden"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Warum werden bei RNA-Sequenzierung RNA-Moleküle zuerst in cDNA umgeschrieben?",
+    "options": [
+      "Weil RNA stabiler als DNA ist",
+      "Weil Sequenzierplattformen DNA und nicht RNA als Ausgangsmaterial benötigen",
+      "Weil cDNA kürzer als RNA ist",
+      "Weil RNA keine Basenpaarung eingehen kann"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welcher Schritt gehört typischerweise zur RNA-Seq-Library-Herstellung?",
+    "options": [
+      "Direkte Hybridisierung der RNA auf Glaschips",
+      "Ligation von Sequenzieradaptern an cDNA-Fragmente",
+      "Amplifikation ohne vorherige Fragmentierung",
+      "Übersetzung der RNA in Protein"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was ist der wesentliche Unterschied zwischen Microarrays und RNA-Sequenzierung?",
+    "options": [
+      "Microarrays messen diskrete Zählwerte, RNA-Seq kontinuierliche Intensitäten",
+      "RNA-Seq ist auf bekannte Sequenzen beschränkt, Microarrays nicht",
+      "Microarrays beruhen auf Hybridisierung, RNA-Seq auf direkter Sequenzierung",
+      "RNA-Seq kann keine alternativen Spleissvarianten erfassen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Warum haben Microarrays eine begrenzte dynamische Bandbreite?",
+    "options": [
+      "Weil Fluoreszenzsignale durch Hintergrundrauschen und Sättigung begrenzt sind",
+      "Weil nur kurze RNA-Fragmente gemessen werden",
+      "Weil jedes Gen nur einmal auf dem Chip vorhanden ist",
+      "Weil sie keine Normalisierung erlauben"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Welche Eigenschaft charakterisiert RNA-Seq-Daten im Vergleich zu Microarray-Daten?",
+    "options": [
+      "RNA-Seq-Daten sind kontinuierlich und normalverteilt",
+      "RNA-Seq-Daten bestehen aus diskreten Zählwerten von Sequenzier-Reads",
+      "RNA-Seq-Daten sind unabhängig von Sequenziertiefe",
+      "RNA-Seq-Daten benötigen keine statistische Modellierung"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Verteilung beschreibt RNA-Seq-Zähldaten in biologischen Replikaten am besten?",
+    "options": [
+      "Normalverteilung",
+      "Poisson-Verteilung ohne zusätzliche Varianz",
+      "Negative Binomialverteilung mit zusätzlicher Dispersion",
+      "Gleichverteilung"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Warum ist Qualitätskontrolle mit Tools wie FastQC vor der Analyse essenziell?",
+    "options": [
+      "Um biologische Effekte künstlich zu verstärken",
+      "Um technische Artefakte und Sequenzierprobleme frühzeitig zu erkennen",
+      "Um die Anzahl der Gene zu reduzieren",
+      "Um automatisch differentielle Gene zu identifizieren"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was beschreibt ein FASTQ-File?",
+    "options": [
+      "Ein komprimiertes Alignment-Format",
+      "Eine Datei mit Rohsequenzen und zugehörigen Qualitätswerten pro Base",
+      "Eine Liste normalisierter Genexpressionswerte",
+      "Eine Ontologie-basierte Annotation von Genen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welchen Zweck erfüllt das Trimming von Sequenzierdaten?",
+    "options": [
+      "Es entfernt Gene mit niedriger Expression",
+      "Es entfernt Adaptersequenzen und Basen mit geringer Qualität von Reads",
+      "Es ordnet Reads direkt Genen zu",
+      "Es normalisiert die Read-Zahlen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was bedeutet Mapping im Kontext von RNA-Seq?",
+    "options": [
+      "Die Zuordnung von Genen zu Ontologien",
+      "Das Alignieren von Reads auf ein Referenzgenom oder Referenztranskriptom",
+      "Die Normalisierung der Rohdaten",
+      "Die statistische Auswertung der Zähldaten"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Warum beeinflusst die Qualität des Referenzgenoms das Mapping-Ergebnis stark?",
+    "options": [
+      "Weil schlechte Referenzen zu falsch zugeordneten oder nicht gemappten Reads führen können",
+      "Weil Referenzgenome die Sequenziertiefe festlegen",
+      "Weil Referenzgenome die PCR-Effizienz bestimmen",
+      "Weil Referenzen nur für Microarrays relevant sind"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Was ist ein wesentliches Merkmal von BAM-Dateien?",
+    "options": [
+      "Sie enthalten ausschließlich Rohsequenzen",
+      "Sie sind binäre, komprimierte Formate für effizient gespeicherte Alignments",
+      "Sie speichern nur Qualitätsstatistiken",
+      "Sie sind identisch mit FASTA-Dateien"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Warum ist Normalisierung von Transkriptomdaten notwendig?",
+    "options": [
+      "Um biologische Unterschiede zu eliminieren",
+      "Um systematische technische Effekte zu reduzieren und Proben vergleichbar zu machen",
+      "Um alle Gene auf denselben Ausdruckswert zu setzen",
+      "Um statistische Tests zu vermeiden"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was ist das Grundprinzip der Quantile-Normalisierung?",
+    "options": [
+      "Alle Gene eines Samples werden auf Null gesetzt",
+      "Die Verteilungen der Intensitätswerte verschiedener Proben werden einander angeglichen",
+      "Nur hoch exprimierte Gene werden skaliert",
+      "Zählwerte werden durch Genlängen dividiert"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche zusätzliche Größe berücksichtigt die RPKM-Normalisierung?",
+    "options": [
+      "Die Anzahl der Chromosomen",
+      "Die Länge des Gens und die Sequenziertiefe",
+      "Die Anzahl der Replikate",
+      "Die Varianz zwischen Proben"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welches Problem adressiert die TMM-Normalisierung besonders?",
+    "options": [
+      "Unterschiedliche Genlängen",
+      "Skewed Verteilungen durch sehr stark exprimierte Gene in einzelnen Proben",
+      "Fehlende biologische Replikate",
+      "Sequenzfehler einzelner Reads"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was ist das Ziel der differentiellen Genexpressionsanalyse?",
+    "options": [
+      "Gene zufällig Gruppen zuzuordnen",
+      "Gene zu identifizieren, deren Expression sich zwischen Bedingungen systematisch unterscheidet",
+      "Alle Gene eines Experiments zu normalisieren",
+      "Technische Artefakte zu simulieren"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Warum werden bei differentieller Genexpressionsanalyse p-Werte korrigiert?",
+    "options": [
+      "Um biologische Variation zu erhöhen",
+      "Um das Problem multipler Hypothesentests zu adressieren",
+      "Um Fold Changes zu vergrößern",
+      "Um technische Replikate zu entfernen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was beschreibt Principal Component Analysis (PCA)?",
+    "options": [
+      "Eine Methode zur Identifikation einzelner Gene",
+      "Eine Dimensionsreduktionsmethode, die Hauptquellen der Variation sichtbar macht",
+      "Einen statistischen Test für differentielle Expression",
+      "Eine Form der Normalisierung von Zähldaten"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welches Ziel verfolgt Clustering in der Transkriptomanalyse?",
+    "options": [
+      "Die Berechnung von p-Werten für einzelne Gene",
+      "Das Gruppieren ähnlicher Gene oder Proben basierend auf Expressionsmustern",
+      "Die Reduktion der Sequenziertiefe",
+      "Die Eliminierung biologischer Replikate"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Warum sind biologische Replikate für experimentelles Design essenziell?",
+    "options": [
+      "Weil sie technische Artefakte verstärken",
+      "Weil sie erlauben, zwischen systematischen Effekten und Zufallsvariation zu unterscheiden",
+      "Weil sie Normalisierung überflüssig machen",
+      "Weil sie die Anzahl getesteter Gene reduzieren"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was beschreibt eine Überrepräsentationsanalyse (Overrepresentation Analysis)?",
+    "options": [
+      "Die Identifikation der am stärksten exprimierten Gene",
+      "Die statistische Prüfung, ob funktionelle Kategorien in einer Genliste häufiger auftreten als erwartet",
+      "Die Normalisierung von GO-Terms",
+      "Die Berechnung von Fold Changes für Ontologien"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welcher statistische Test wird typischerweise für Überrepräsentationsanalysen verwendet?",
+    "options": [
+      "t-Test",
+      "Hypergeometrischer Test",
+      "Lineare Regression",
+      "Chi-Quadrat-Test mit kontinuierlichen Daten"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Warum ist bei funktionellen Anreicherungsanalysen Vorsicht geboten?",
+    "options": [
+      "Weil Ontologien immer vollständig korrekt sind",
+      "Weil die Qualität der Annotationen variieren kann und Ergebnisse davon abhängen",
+      "Weil statistische Tests hier nicht anwendbar sind",
+      "Weil nur experimentelle Evidenz verwendet wird"
+    ],
+    "correct_index": 1
+  }
+]
 
