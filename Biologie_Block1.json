@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Warum ist die Protein-Charakterisierung in der modernen Biologie besonders wichtig?",
+    "options": [
+      "Weil Proteine die vollständige genetische Information eines Organismus speichern",
+      "Weil Proteine direkt die meisten biologischen Funktionen ausführen und den Phänotyp bestimmen",
+      "Weil Proteine stabiler sind als DNA und sich daher besser für Langzeitspeicherung eignen",
+      "Weil Proteine ausschließlich als strukturelle Bestandteile von Zellen dienen"
+    ],
+    "correct_index": 1,
+    "explanation": "Proteine übernehmen katalytische, regulatorische und strukturelle Funktionen und sind daher zentral für den beobachtbaren Phänotyp eines Organismus."
+  },
+  {
+    "question": "Welches Prinzip beschreibt das zentrale Dogma der Molekularbiologie korrekt?",
+    "options": [
+      "Information fließt von Proteinen zurück zu RNA und DNA",
+      "Biologische Information wird ausschließlich auf Proteinebene gespeichert",
+      "Sequenzielle Information wird von DNA über RNA zu Proteinen weitergegeben",
+      "RNA und DNA haben identische biologische Funktionen"
+    ],
+    "correct_index": 2,
+    "explanation": "Das zentrale Dogma beschreibt den Informationsfluss von DNA zu RNA (Transkription) und von RNA zu Protein (Translation)."
+  },
+  {
+    "question": "Was ist ein wesentliches Merkmal eines massenspektrometrie-basierten Proteomik-Experiments?",
+    "options": [
+      "Direkte Abbildung der 3D-Struktur eines Proteins",
+      "Messung des Massen-zu-Ladungs-Verhältnisses von Peptiden zur Proteinidentifikation",
+      "Bestimmung der Nukleotidsequenz eines Gens",
+      "Quantifizierung von mRNA-Molekülen durch Fluoreszenz"
+    ],
+    "correct_index": 1,
+    "explanation": "In der Massenspektrometrie werden Peptide anhand ihres Massen-zu-Ladungs-Verhältnisses analysiert, um Proteine zu identifizieren und zu quantifizieren."
+  },
+  {
+    "question": "Was ist das Ziel des de novo peptide sequencing?",
+    "options": [
+      "Die Identifikation von Proteinen ausschließlich anhand vorhandener Datenbanken",
+      "Die Vorhersage der Proteinstruktur aus der Aminosäuresequenz",
+      "Die Rekonstruktion der Aminosäuresequenz eines Peptids ohne Datenbankabgleich",
+      "Die Bestimmung der Genomsequenz eines Organismus"
+    ],
+    "correct_index": 2,
+    "explanation": "Beim de novo peptide sequencing wird die Peptidsequenz direkt aus MS/MS-Daten abgeleitet, ohne auf bekannte Sequenzen zurückzugreifen."
+  },
+  {
+    "question": "Welchen Zweck erfüllt der Target-Decoy-Approach in der Proteomik?",
+    "options": [
+      "Er beschleunigt die Massenspektrometrie-Messung",
+      "Er ermöglicht die Bestimmung der False Discovery Rate durch Vergleich mit künstlichen Decoy-Sequenzen",
+      "Er verbessert die Fragmentierung von Peptiden",
+      "Er ersetzt statistische Auswertungen vollständig"
+    ],
+    "correct_index": 1,
+    "explanation": "Durch den Vergleich von Treffern gegen echte (Target) und künstliche (Decoy) Sequenzen lässt sich die Fehlerrate von Identifikationen abschätzen."
+  },
+  {
+    "question": "Welche Eigenschaft unterscheidet hydrophobe von polaren Aminosäuren?",
+    "options": [
+      "Hydrophobe Aminosäuren besitzen ausschließlich geladene Seitenketten",
+      "Polare Aminosäuren kommen nur im Inneren von Proteinen vor",
+      "Hydrophobe Aminosäuren haben überwiegend unpolare Seitenketten",
+      "Polare Aminosäuren sind immer negativ geladen"
+    ],
+    "correct_index": 2,
+    "explanation": "Hydrophobe Aminosäuren besitzen unpolare Seitenketten und werden häufig im Inneren von Proteinen gefunden."
+  },
+  {
+    "question": "Welche Aussage beschreibt die Primärstruktur eines Proteins korrekt?",
+    "options": [
+      "Sie beschreibt die räumliche Anordnung mehrerer Proteinuntereinheiten",
+      "Sie beschreibt lokale Faltungsformen wie α-Helices und β-Faltblätter",
+      "Sie entspricht der linearen Aminosäuresequenz eines Proteins",
+      "Sie beschreibt die vollständige dreidimensionale Struktur"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Primärstruktur ist die lineare Abfolge der Aminosäuren, die durch die genetische Information festgelegt ist."
+  },
+  {
+    "question": "Welcher Zusammenhang zwischen Aminosäuresequenz und Proteinstruktur ist grundlegend?",
+    "options": [
+      "Die 3D-Struktur eines Proteins ist unabhängig von seiner Sequenz",
+      "Die Aminosäuresequenz bestimmt maßgeblich die Faltung und damit die 3D-Struktur",
+      "Nur posttranslationale Modifikationen bestimmen die Proteinstruktur",
+      "Die Proteinstruktur entsteht zufällig im Zytoplasma"
+    ],
+    "correct_index": 1,
+    "explanation": "Die physikochemischen Eigenschaften der Aminosäuren steuern die Faltung und somit die dreidimensionale Struktur."
+  },
+  {
+    "question": "Was ist das grundlegende Prinzip des Homology Modelling?",
+    "options": [
+      "Proteinstrukturen werden ausschließlich experimentell bestimmt",
+      "Die Struktur eines Proteins wird anhand der Struktur eines homologen Proteins vorhergesagt",
+      "Homology Modelling benötigt keine Sequenzinformation",
+      "Es basiert auf zufälligen Konformationsänderungen"
+    ],
+    "correct_index": 1,
+    "explanation": "Homology Modelling nutzt die strukturelle Ähnlichkeit homologer Proteine zur Vorhersage unbekannter Strukturen."
+  },
+  {
+    "question": "Wodurch unterscheidet sich AlphaFold grundlegend von klassischem Homology Modelling?",
+    "options": [
+      "AlphaFold verwendet ausschließlich experimentelle Strukturdaten",
+      "AlphaFold sagt Proteinstrukturen mithilfe tiefer neuronaler Netzwerke direkt aus der Sequenz voraus",
+      "AlphaFold ist nur für kleine Proteine anwendbar",
+      "AlphaFold benötigt zwingend ein Template-Protein"
+    ],
+    "correct_index": 1,
+    "explanation": "AlphaFold nutzt Deep-Learning-Modelle, um Proteinstrukturen mit hoher Genauigkeit direkt aus der Sequenz vorherzusagen."
+  },
+  {
+    "question": "Welche Kennzahl wird typischerweise zur Bewertung der Zuverlässigkeit von Vorhersagen verwendet?",
+    "options": [
+      "pH-Wert",
+      "ROC-Kurve und AUC",
+      "Molekulargewicht",
+      "Isoelektrischer Punkt"
+    ],
+    "correct_index": 1,
+    "explanation": "ROC-Kurve und AUC messen die Trennschärfe eines Klassifikationsmodells und sind zentrale Qualitätskennzahlen."
+  },
+  {
+    "question": "Welche Aussage beschreibt FASTA-Dateien korrekt?",
+    "options": [
+      "FASTA ist ein binäres Format für Proteinstrukturen",
+      "FASTA speichert ausschließlich Metadaten ohne Sequenzen",
+      "FASTA ist ein textbasiertes Format zur Darstellung von Sequenzen mit Ein-Buchstaben-Code",
+      "FASTA wird nur für RNA-Sequenzen verwendet"
+    ],
+    "correct_index": 2,
+    "explanation": "FASTA ist ein einfaches textbasiertes Format zur Speicherung von DNA-, RNA- oder Proteinsequenzen."
+  },
+  {
+    "question": "Was ist ein Open Reading Frame (ORF)?",
+    "options": [
+      "Ein Bereich einer DNA-Sequenz ohne Stopcodons zwischen Start- und Stopcodon",
+      "Eine Region mit besonders vielen Introns",
+      "Eine regulatorische Promotorsequenz",
+      "Ein Abschnitt der nicht transkribiert wird"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein ORF ist eine Sequenz, die potenziell in ein Protein übersetzt werden kann, da sie ein Start- und ein Stopcodon enthält."
+  },
+  {
+    "question": "Welcher Unterschied besteht zwischen orthologen und paralogen Genen?",
+    "options": [
+      "Orthologe entstehen durch Genduplikation, Paraloge durch Artbildung",
+      "Paraloge stammen aus verschiedenen Organismen, Orthologe aus demselben",
+      "Orthologe Gene gehen auf ein gemeinsames Gen im letzten gemeinsamen Vorfahren zurück",
+      "Paraloge haben immer identische Funktionen"
+    ],
+    "correct_index": 2,
+    "explanation": "Orthologe Gene entstehen durch Speziation aus einem gemeinsamen Vorläufergen, während Paraloge durch Genduplikation entstehen."
+  },
+  {
+    "question": "Was beschreibt ein phylogenetischer Baum?",
+    "options": [
+      "Die chemische Zusammensetzung von Proteinen",
+      "Die evolutionären Beziehungen zwischen Sequenzen oder Organismen",
+      "Die 3D-Struktur eines Proteins",
+      "Die Expression von Genen in verschiedenen Geweben"
+    ],
+    "correct_index": 1,
+    "explanation": "Phylogenetische Bäume stellen evolutionäre Verwandtschaftsverhältnisse basierend auf Sequenzähnlichkeiten dar."
+  }
+]
