@@ -383,5 +383,225 @@
     ],
     "correct_index": 1,
     "explanation": "Die native Faltung entspricht meist einem energetisch minimalen Zustand, der sequenzabhängig ist."
+  },
+  {
+    "question": "Welche Abfolge beschreibt das zentrale Dogma der Molekularbiologie korrekt?",
+    "options": [
+      "Protein → RNA → DNA",
+      "DNA → Protein → RNA",
+      "DNA → RNA → Protein",
+      "RNA → DNA → Protein"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Welche Aussage beschreibt eine wichtige Ausnahme vom klassischen zentralen Dogma?",
+    "options": [
+      "Die Replikation von Proteinen aus Aminosäuren",
+      "Die reverse Transkription von RNA in DNA",
+      "Die Translation von DNA direkt in Protein",
+      "Die spontane Entstehung von RNA aus Proteinen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Eigenschaft unterscheidet DNA funktionell am stärksten von RNA?",
+    "options": [
+      "DNA ist meist einzelsträngig, RNA doppelsträngig",
+      "DNA enthält Thymin, RNA enthält Uracil",
+      "DNA kann keine Basenpaarung eingehen",
+      "RNA ist ausschließlich im Zellkern lokalisiert"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Rolle spielen Ribosomen im zentralen Dogma?",
+    "options": [
+      "Sie synthetisieren RNA anhand einer DNA-Matrize",
+      "Sie katalysieren die Synthese von Proteinen anhand einer mRNA-Sequenz",
+      "Sie replizieren das Genom während der Zellteilung",
+      "Sie bauen Aminosäuren zu Nukleotiden um"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welcher Prozess verbindet funktionell RNA und Protein?",
+    "options": [
+      "Transkription",
+      "Translation",
+      "Replikation",
+      "Spleißen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Aussage beschreibt die Funktion von tRNA am zutreffendsten?",
+    "options": [
+      "Sie speichert genetische Information langfristig",
+      "Sie transportiert spezifische Aminosäuren zum Ribosom während der Proteinsynthese",
+      "Sie katalysiert die Peptidbindung zwischen Aminosäuren",
+      "Sie reguliert die Transkription von Genen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Datenbank ist primär für annotierte Proteinsequenzen bekannt?",
+    "options": [
+      "GenBank",
+      "UniProt",
+      "PDB",
+      "Ensembl"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Information findet man typischerweise in der Protein Data Bank (PDB)?",
+    "options": [
+      "Primärsequenzen aller bekannten Gene",
+      "Experimentell bestimmte 3D-Strukturen von Proteinen und Nukleinsäuren",
+      "Expressionsprofile von Transkripten",
+      "Phylogenetische Stammbäume ganzer Genome"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Eigenschaft ist für Open Reading Frames (ORFs) charakteristisch?",
+    "options": [
+      "Sie beginnen immer mit einem Stopcodon",
+      "Sie enthalten eine Sequenz ohne Stopcodons über eine signifikante Länge",
+      "Sie bestehen ausschließlich aus Introns",
+      "Sie kodieren ausschließlich regulatorische RNAs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welches Signal wird häufig zur Identifikation von Protein-kodierenden Genen verwendet?",
+    "options": [
+      "Poly-A-Schwanz",
+      "Startcodon in passendem Leserahmen",
+      "Promotorsequenzen mit CpG-Inseln",
+      "Sekundärstruktur der mRNA"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was ist das Hauptziel eines Sequence Alignments?",
+    "options": [
+      "Die Vorhersage der 3D-Struktur eines Proteins",
+      "Das Identifizieren von Ähnlichkeiten zur Ableitung funktioneller oder evolutionärer Beziehungen",
+      "Die Bestimmung der Expressionsstärke eines Gens",
+      "Die Simulation von Mutationen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welcher Unterschied besteht zwischen globalem und lokalem Alignment?",
+    "options": [
+      "Globales Alignment sucht nur kurze konservierte Motive",
+      "Lokales Alignment vergleicht komplette Sequenzen über ihre gesamte Länge",
+      "Globales Alignment versucht, Sequenzen über ihre gesamte Länge optimal auszurichten",
+      "Lokales Alignment ist nur für DNA-Sequenzen geeignet"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Welche Rolle spielen Substitutionsmatrizen wie BLOSUM oder PAM?",
+    "options": [
+      "Sie definieren die Länge eines Alignments",
+      "Sie bewerten Aminosäureaustausche basierend auf evolutionärer Wahrscheinlichkeit",
+      "Sie sagen die Sekundärstruktur von Proteinen voraus",
+      "Sie bestimmen die Leserahmen von Genen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Aussage zur Funktionsvoraussage anhand von Homologie ist korrekt?",
+    "options": [
+      "Sequenzähnlichkeit garantiert identische Funktion",
+      "Hohe Sequenzähnlichkeit deutet häufig auf funktionelle Verwandtschaft hin",
+      "Funktion kann unabhängig von Sequenzähnlichkeit vorhergesagt werden",
+      "Nur 3D-Strukturen erlauben Funktionsvoraussagen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Kenngröße wird häufig zur Bewertung von Sequence Alignments verwendet?",
+    "options": [
+      "pH-Wert",
+      "E-Wert",
+      "GC-Gehalt",
+      "Expressionsniveau"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was bedeutet ein niedriger E-Wert in einem Datenbank-Alignment?",
+    "options": [
+      "Das Alignment ist wahrscheinlich zufällig entstanden",
+      "Das Alignment weist eine hohe statistische Signifikanz auf",
+      "Die Sequenzen sind sehr kurz",
+      "Die Funktion ist experimentell bestätigt"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welches Prinzip liegt der biologischen Evolution zugrunde?",
+    "options": [
+      "Zufällige Variation und natürliche Selektion",
+      "Gerichtete Mutation durch Umweltreize",
+      "Konstante genetische Stabilität",
+      "Ausschließliche Vererbung erworbener Eigenschaften"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Welche Aussage beschreibt homologe Sequenzen korrekt?",
+    "options": [
+      "Sie entstehen unabhängig voneinander ohne gemeinsamen Ursprung",
+      "Sie gehen auf einen gemeinsamen evolutionären Vorfahren zurück",
+      "Sie besitzen identische Funktionen in allen Organismen",
+      "Sie unterscheiden sich nur in nicht-kodierenden Bereichen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Was ist ein phylogenetischer Baum?",
+    "options": [
+      "Eine grafische Darstellung der Genexpression",
+      "Ein Modell zur Darstellung evolutionärer Beziehungen zwischen Sequenzen oder Organismen",
+      "Eine Datenbank für Proteinstrukturen",
+      "Ein Algorithmus zur Genvorhersage"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Information repräsentieren die Knoten in einem phylogenetischen Baum?",
+    "options": [
+      "Messfehler der Sequenzierung",
+      "Hypothetische gemeinsame Vorfahren",
+      "Mutationsraten einzelner Gene",
+      "Expressionsstärken von Proteinen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Voraussetzung ist zentral für die Erstellung eines phylogenetischen Baums aus Sequenzen?",
+    "options": [
+      "Identische Sequenzlängen ohne Lücken",
+      "Ein sinnvolles multiples Sequenzalignment",
+      "Experimentell bestimmte Proteinstrukturen",
+      "Absolute Zeitangaben für Mutationen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Welche Aussage zur Interpretation phylogenetischer Bäume ist korrekt?",
+    "options": [
+      "Die horizontale Anordnung gibt immer reale Zeit wieder",
+      "Die Länge der Äste kann evolutionäre Distanz widerspiegeln",
+      "Alle Blätter sind gleich eng miteinander verwandt",
+      "Der Baum zeigt ausschließlich funktionelle Unterschiede"
+    ],
+    "correct_index": 1
   }
 ]
