@@ -1,0 +1,68 @@
+[
+  {
+    "question": "Was ist ein Beispiel für einen Patientenpfad in der Onkologie?",
+    "options": [
+      "Zuweisungsschreiben, Sonographie, Mammographie, Pathologie, Verlaufsberichte, Tumorboard, CT/MRI/PET, Operation, Radiotherapie, Antihormonelle Therapie",
+      "Nur Laborberichte und Rezepte",
+      "Nur Arztbriefe und Befunde",
+      "Nur administrative Dokumente"
+    ],
+    "correct_index": 0,
+    "explanation": "F6: Ein typischer Patientenpfad in der Onkologie umfasst Zuweisungsschreiben, Sonographie, Mammographie, Pathologie, Verlaufsberichte, Tumorboard, CT/MRI/PET, Operation, Radiotherapie und antihormonelle Therapie über mehrere Monate. (F6)"
+  },
+  {
+    "question": "Was ist die Ausgangslage für die Verarbeitung medizinischer Berichte?",
+    "options": [
+      "Alle Daten sind strukturiert und maschinenlesbar",
+      "Medizinische Berichte bestehen aus sehr vielen unstrukturierten Daten",
+      "Daten sind nur in Papierform verfügbar",
+      "Daten sind vollständig anonymisiert"
+    ],
+    "correct_index": 1,
+    "explanation": "F8: Die Ausgangslage ist, dass medizinische Berichte sehr viele unstrukturierte Daten enthalten, die manuell extrahiert werden müssen, was einen hohen personellen und zeitlichen Aufwand erfordert. (F8)"
+  },
+  {
+    "question": "Was erkennt Named Entity Recognition (NER) in medizinischen Texten?",
+    "options": [
+      "Nur Datum und Uhrzeit",
+      "Bekannte Entitäten wie Diagnose, Medikamentenname, Symptom/Zeichen, Alter",
+      "Nur Patientenname und Adresse",
+      "Nur Laborwerte"
+    ],
+    "correct_index": 1,
+    "explanation": "F12: Named Entity Recognition erkennt bekannte Entitäten wie Diagnose, Medikamentenname, Symptom/Zeichen und Alter in medizinischen Texten. (F12)"
+  },
+  {
+    "question": "Was erkennt Relation Extraction in medizinischen Texten?",
+    "options": [
+      "Nur die Patienten-ID",
+      "Zusammenhänge innerhalb des Texts, z.B. Zeitpunkt einer Erkrankung und Medikamenteneinnahme",
+      "Nur die Diagnose",
+      "Nur die Behandlungsdauer"
+    ],
+    "correct_index": 1,
+    "explanation": "F13: Relation Extraction erkennt Zusammenhänge innerhalb des Texts, z. B. „Zeitpunkt einer Erkrankung“ und „Ramipril als Medikament für die letzten 8 Jahre“. (F13)"
+  },
+  {
+    "question": "Was macht Entity Linking in medizinischen Texten?",
+    "options": [
+      "Verknüpft Patienten mit ihren Ärzten",
+      "Zuordnung von Diagnosen oder Therapien zu medizinischen Codes (ICD10, UMLS etc.)",
+      "Verknüpft Laborwerte mit Diagnosen",
+      "Verknüpft Medikamente mit Preisen"
+    ],
+    "correct_index": 1,
+    "explanation": "F14: Entity Linking ordnet Diagnosen oder Therapien zu medizinischen Codes wie ICD10 oder UMLS zu, um sie maschinenlesbar und vergleichbar zu machen. (F14)"
+  },
+  {
+    "question": "Was erkennt Assertion Detection in medizinischen Texten?",
+    "options": [
+      "Nur positive Aussagen",
+      "Den gesamten Text-Kontext, z. B. ob eine Erkrankung auf den Patienten oder eine andere Person zutrifft",
+      "Nur die Diagnose",
+      "Nur die Behandlung"
+    ],
+    "correct_index": 1,
+    "explanation": "F15: Assertion Detection berücksichtigt den gesamten Text-Kontext, z. B. ob eine Erkrankung auf den Patienten oder eine andere Person (z. B. Bruder) zutrifft, um falsche Annahmen zu vermeiden. (F15)"
+  }
+]

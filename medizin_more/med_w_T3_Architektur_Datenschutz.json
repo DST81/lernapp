@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Was zeigt die Prozesslandkarte eines Spitals (high-level) und welche Systeme sind beteiligt?",
+    "options": [
+      "Nur die Verwaltung und Finanzen des Spitals",
+      "Den gesamten Patientenpfad von der Aufnahme bis zur Entlassung, inkl. Notfallversorgung, OP, stationärer Behandlung, Pflege und Entlassung",
+      "Nur die medizinischen Abteilungen wie Radiologie und Labor",
+      "Nur die IT-Systeme des Spitals"
+    ],
+    "correct_index": 1,
+    "explanation": "S6: Die Prozesslandkarte eines Spitals zeigt den gesamten Patientenpfad, von der Notfallversorgung über die stationäre Behandlung, OP, Pflege bis zur Entlassung. Sie umfasst auch Unternehmensprozesse wie Aufklärung, Dokumentation und Rechnungsstellung. (S6)"
+  },
+  {
+    "question": "Was sind die vier Domänen des Architekturstacks?",
+    "options": [
+      "Geschäfts-, Daten-, Applikations- und Plattformarchitektur",
+      "Hardware, Software, Netzwerk, Sicherheit",
+      "Patient, Arzt, Pflege, Verwaltung",
+      "KIS, PACS, LIS, PDMS"
+    ],
+    "correct_index": 0,
+    "explanation": "S9: Der Architekturstack sorgt für Durchgängigkeit von Unternehmensanforderungen (Geschäftsprozesse) bis zur Systemumgebung der ICT. Die vier Domänen sind: Geschäftsarchitektur, Datenarchitektur, Applikationsarchitektur und Plattformarchitektur. (S9)"
+  },
+  {
+    "question": "Was ist der Zweck des Architekturstacks?",
+    "options": [
+      "Er dient nur zur Darstellung der IT-Systeme",
+      "Er ermöglicht die Umsetzung von Geschäftsanforderungen in ICT-Services",
+      "Er ist nur für die IT-Abteilung relevant",
+      "Er dient zur Reduzierung der Mitarbeiteranzahl"
+    ],
+    "correct_index": 1,
+    "explanation": "S9: Der Architekturstack ist erforderlich, um Geschäftsanforderungen in Bezug auf ICT-Services zielführend, nachhaltig und nutzenstiftend umsetzen zu können. (S9)"
+  },
+  {
+    "question": "Was ist der Plan-Do-Check-Act (PDCA)-Zyklus in der Architektur?",
+    "options": [
+      "Ein einmaliger Prozess zur Systementwicklung",
+      "Ein iterativer Zyklus zur kontinuierlichen Verbesserung von Architekturen",
+      "Ein Prozess zur Kostensenkung",
+      "Ein Prozess zur Mitarbeiterbewertung"
+    ],
+    "correct_index": 1,
+    "explanation": "S11: Der PDCA-Zyklus ist ein iterativer Ansatz zur kontinuierlichen Verbesserung von Produkten, Personen und Dienstleistungen. Er besteht aus Planen, Umsetzen, Prüfen und Handeln. (S11)"
+  },
+  {
+    "question": "Was geschieht im „Plan“-Schritt des PDCA-Zyklus in der Architektur?",
+    "options": [
+      "Umsetzung von Architekturänderungen",
+      "Bestimmung der Maturität und Architektur-Review",
+      "Nachführung von Zielarchitektur, Pflege von Architekturen und Bausteinen, Kommunikation an Stakeholder",
+      "Prüfung der Architektur-Konformität von Projekten"
+    ],
+    "correct_index": 2,
+    "explanation": "S12: Im „Plan“-Schritt werden Zielarchitektur und Roadmap nachgeführt, konsistente Architekturen und Bausteine gepflegt, Best-Practices adaptiert und Stakeholder über die Architektur kommuniziert. (S12)"
+  },
+  {
+    "question": "Was geschieht im „Check“-Schritt des PDCA-Zyklus in der Architektur?",
+    "options": [
+      "Nachführung der Zielarchitektur",
+      "Prüfung der Architektur-Konformität von ICT-Projekten und Exception-Management",
+      "Bestimmung der Maturität",
+      "Kommunikation an Stakeholder"
+    ],
+    "correct_index": 1,
+    "explanation": "S12: Im „Check“-Schritt erfolgt die Prüfung der Architektur-Konformität von ICT-Projekten und Vorhaben sowie das Exception-Management. (S12)"
+  },
+  {
+    "question": "Was sind die vier Architektur-Domänen und was beschreiben sie?",
+    "options": [
+      "Geschäfts-, Daten-, Applikations- und Plattformarchitektur: beschreiben Geschäftsziele, Datenstrukturen, Applikationen und Plattformen",
+      "Hardware, Software, Netzwerk, Sicherheit: beschreiben die technische Infrastruktur",
+      "Patient, Arzt, Pflege, Verwaltung: beschreiben die Rollen im Spital",
+      "KIS, PACS, LIS, PDMS: beschreiben die medizinischen Systeme"
+    ],
+    "correct_index": 0,
+    "explanation": "S14: Die vier Architektur-Domänen sind: Geschäftsarchitektur (Ziele, Prozesse, Rollen), Datenarchitektur (Datenspeicher, Datengruppen, Datenqualitäten), Applikationsarchitektur (Applikationen, Beziehungen zu Prozessen) und Plattformarchitektur (Architekturelemente für Plattformen und Services). (S14)"
+  },
+  {
+    "question": "Was ist der Zweck der Applikations-Architektur?",
+    "options": [
+      "Beschreibung der Hardware-Infrastruktur",
+      "Beschreibung des strukturellen Aufbaus und des Zusammenspiels von Applikationskomponenten",
+      "Beschreibung der Datenstrukturen",
+      "Beschreibung der Geschäftsprozesse"
+    ],
+    "correct_index": 1,
+    "explanation": "S16: Die Applikationsarchitektur beschreibt den strukturellen Aufbau und das Zusammenspiel von Applikationskomponenten innerhalb einer ICT-Systemumgebung. Sie definiert, wie Applikationen aufgebaut sind, wie sie miteinander kommunizieren und welche Aufgaben sie übernehmen. (S16)"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Monolith und Best-of-Breed in der Spitalarchitektur?",
+    "options": [
+      "Monolith = viele kleine Systeme, Best-of-Breed = ein großes System",
+      "Monolith = ein großes, komplexes System, Best-of-Breed = viele spezialisierte Systeme",
+      "Monolith = nur für kleine Spitäler, Best-of-Breed = nur für große Spitäler",
+      "Monolith = keine Schnittstellen, Best-of-Breed = viele Schnittstellen"
+    ],
+    "correct_index": 1,
+    "explanation": "S27: Monolith = ein großes, komplexes System, das alles kann, aber nichts perfekt. Best-of-Breed = viele spezialisierte Systeme, die jeweils das Beste in ihrem Bereich leisten, aber viele Schnittstellen und hohe Integrationskosten haben. (S27)"
+  },
+  {
+    "question": "Was sind die Vorteile und Nachteile von Monolith vs. Best-of-Breed?",
+    "options": [
+      "Monolith: einfache Datenarchitektur, aber hohe Abhängigkeit vom Anbieter. Best-of-Breed: flexibel, aber hoher Betriebsaufwand.",
+      "Monolith: hohe Flexibilität, Best-of-Breed: einfache Integration.",
+      "Monolith: viele Schnittstellen, Best-of-Breed: keine Schnittstellen.",
+      "Monolith: keine Datenarchitektur, Best-of-Breed: komplexe Datenarchitektur."
+    ],
+    "correct_index": 0,
+    "explanation": "S27: Monolith: einfache Datenarchitektur, aber hohe Abhängigkeit vom Anbieter und hoher Investitionsbedarf. Best-of-Breed: flexibel, aber hoher Betriebs- und Supportaufwand durch viele Lieferanten. (S27)"
+  },
+  {
+    "question": "Was ist eine dezentrale Architektur im Gesundheitswesen?",
+    "options": [
+      "Eine Architektur, die nur von einem Anbieter betrieben wird",
+      "Eine Architektur, die auf die Vernetzung mit externen Akteuren (Hausärzte, Spitäler, Reha, etc.) ausgelegt ist",
+      "Eine Architektur, die keine Daten austauscht",
+      "Eine Architektur, die nur für ein Spital gilt"
+    ],
+    "correct_index": 1,
+    "explanation": "S33: Eine dezentrale Architektur ist durch die zunehmende Vernetzung mit weiteren Akteuren des Gesundheitswesens (Haus- und Fachärzte, Spitäler, Reha, Therapeuten, Krankenkassen, Alters- und Pflegeheime, Apotheken etc.) gekennzeichnet. (S33)"
+  },
+  {
+    "question": "Wer bedroht die Schutzziele der Informationssicherheit?",
+    "options": [
+      "Nur innere Mitarbeiter",
+      "Hacker, Terroristen, opportunistische Kriminelle und staatliche Akteure",
+      "Nur externe Angreifer",
+      "Nur Software-Fehler"
+    ],
+    "correct_index": 1,
+    "explanation": "S43: Die Schutzziele werden bedroht von Hackern, Terroristen, opportunistischen Kriminellen und staatlichen Akteuren (z. B. autoritäre Regime). (S43)"
+  },
+  {
+    "question": "Was bedroht die Schutzziele der Informationssicherheit?",
+    "options": [
+      "Nur Software-Fehler",
+      "Schwachstellen in Applikationen, verwundbare Mitarbeitende, Datengrosszügigkeit von Nutzern und Data Breaches",
+      "Nur Hardware-Ausfälle",
+      "Nur Netzwerkprobleme"
+    ],
+    "correct_index": 1,
+    "explanation": "S45: Die Schutzziele werden bedroht durch Schwachstellen in Applikationen, verwundbare Mitarbeitende, Datengrosszügigkeit von Nutzern und Data Breaches. (S45)"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Informationssicherheit, IT-Sicherheit und Datenschutz?",
+    "options": [
+      "Alle drei sind identisch.",
+      "Informationssicherheit: Schutz von Informationen (CIA), IT-Sicherheit: Schutz von IT-Systemen, Datenschutz: Schutz der persönlichen Integrität.",
+      "Informationssicherheit: Schutz von Daten, IT-Sicherheit: Schutz von Netzwerken, Datenschutz: Schutz von Personen.",
+      "Informationssicherheit: Schutz von Systemen, IT-Sicherheit: Schutz von Daten, Datenschutz: Schutz von Personen."
+    ],
+    "correct_index": 1,
+    "explanation": "S51: Informationssicherheit: Schutz von Informationen (Vertraulichkeit, Integrität, Verfügbarkeit). IT-Sicherheit: Schutz von IT-Systemen mittels technischen und organisatorischen Massnahmen. Datenschutz: Schutz der persönlichen Integrität und alles, was eine Person „ausmacht“. (S51)"
+  },
+  {
+    "question": "Was sind die drei Haupt-Schutzziele der Informationssicherheit?",
+    "options": [
+      "Authentizität, Nichtabstreitbarkeit, Zuverlässigkeit",
+      "Vertraulichkeit, Integrität, Verfügbarkeit",
+      "Sicherheit, Geschwindigkeit, Benutzerfreundlichkeit",
+      "Kosten, Zeit, Qualität"
+    ],
+    "correct_index": 1,
+    "explanation": "S53: Die drei Haupt-Schutzziele der Informationssicherheit sind Vertraulichkeit (Confidentiality), Integrität (Integrity) und Verfügbarkeit (Availability) – kurz CIA. (S53)"
+  },
+  {
+    "question": "Was bedeutet das Schutzziel „Vertraulichkeit“?",
+    "options": [
+      "Daten müssen immer verfügbar sein",
+      "Daten dürfen nur Befugten zugänglich sein",
+      "Daten müssen unverändert sein",
+      "Daten müssen schnell übertragen werden"
+    ],
+    "correct_index": 1,
+    "explanation": "S54: Vertraulichkeit ist der Schutz vor unbefugter Preisgabe von Informationen. Vertrauliche Daten und Informationen dürfen ausschliesslich Befugten in der zulässigen Weise zugänglich sein. (S54)"
+  },
+  {
+    "question": "Was bedeutet das Schutzziel „Integrität“?",
+    "options": [
+      "Daten müssen immer verfügbar sein",
+      "Daten dürfen nur Befugten zugänglich sein",
+      "Daten müssen vollständig und unverändert sein",
+      "Daten müssen schnell übertragen werden"
+    ],
+    "correct_index": 2,
+    "explanation": "S55: Integrität bezeichnet die Sicherstellung der Korrektheit (Unversehrtheit) von Daten und der korrekten Funktionsweise von Systemen. Daten müssen vollständig und unverändert sein. (S55)"
+  },
+  {
+    "question": "Was bedeutet das Schutzziel „Verfügbarkeit“?",
+    "options": [
+      "Daten müssen vollständig und unverändert sein",
+      "Daten dürfen nur Befugten zugänglich sein",
+      "Daten müssen stets wie vorgesehen genutzt werden können",
+      "Daten müssen schnell übertragen werden"
+    ],
+    "correct_index": 2,
+    "explanation": "S56: Verfügbarkeit ist vorhanden, wenn Dienstleistungen, Funktionen eines IT-Systems, IT-Anwendungen oder IT-Netze von den Anwendern stets wie vorgesehen genutzt werden können. (S56)"
+  },
+  {
+    "question": "Was sind die erweiterten Schutzziele der Informationssicherheit?",
+    "options": [
+      "Vertraulichkeit, Integrität, Verfügbarkeit",
+      "Authentizität, Nichtabstreitbarkeit, Verbindlichkeit, Zuverlässigkeit",
+      "Sicherheit, Geschwindigkeit, Benutzerfreundlichkeit",
+      "Kosten, Zeit, Qualität"
+    ],
+    "correct_index": 1,
+    "explanation": "S57: Die erweiterten Schutzziele sind Authentizität (Identität des Kommunikationspartners), Nichtabstreitbarkeit (Nachweisbarkeit von Versand/Empfang), Verbindlichkeit (Kombination von Authentizität und Nichtabstreitbarkeit) und Zuverlässigkeit (Übergreifendes Querschnittsthema). (S57)"
+  },
+  {
+    "question": "Wie wird die Klassifizierung von Medizinprodukten vorgenommen?",
+    "options": [
+      "Nach dem Preis des Produkts",
+      "Nach der Größe des Produkts",
+      "Nach dem Risikoniveau, das mit dem Produkt verbunden ist",
+      "Nach der Herstellungsland"
+    ],
+    "correct_index": 2,
+    "explanation": "S81: Die Klassifizierung von Medizinprodukten dient dem Schutz von Patienten und Anwendern. Sie basiert auf dem Risikoniveau, das mit dem Produkt verbunden ist, und bestimmt den Umfang der erforderlichen Konformitätsbewertung. (S81)"
+  }
+]

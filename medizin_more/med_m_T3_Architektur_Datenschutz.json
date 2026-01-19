@@ -1,0 +1,266 @@
+[
+  {
+    "question": "Was ist eine IT-Architektur?",
+    "options": [
+      "Ein technisches Dokument zur Beschreibung von Hardware",
+      "Ein Modell eines Systems, beschrieben durch seine Eigenschaften und Beziehungen, mit Fokus auf Beständigkeit und Anpassungsfähigkeit",
+      "Ein Plan zur Beschreibung von Netzwerken",
+      "Eine Beschreibung der Software-Entwicklung"
+    ],
+    "correct_index": 1,
+    "explanation": "S7: Eine IT-Architektur ist ein Modell eines Systems, beschrieben durch seine Eigenschaften und Beziehungen, unter Berücksichtigung von Beständigkeit und nachhaltiger Weiterentwicklung, welches sich an veränderte Rahmenbedingungen anpassen lässt und unterschiedliche Detaillierungsgrade anbietet. (S7)"
+  },
+  {
+    "question": "Wozu dient eine IT-Architektur?",
+    "options": [
+      "Zur Erhöhung der Komplexität in Systemumgebungen",
+      "Zur Verwaltung und Limitierung der Komplexität, Standardisierung, Wiederverwendbarkeit und Wartbarkeit von Systemen",
+      "Zur Reduzierung der Mitarbeiteranzahl",
+      "Zur Erhöhung der Kosten"
+    ],
+    "correct_index": 1,
+    "explanation": "S8: Eine IT-Architektur dient der Verwaltung und Limitierung der Komplexität in grösseren Systemumgebungen, der Standardisierung und Erhöhung der Wiederverwendbarkeit von Artefakten, der Sicherstellung von Wartbarkeit und Betreibbarkeit sowie der Wahrung von Effizienz und Effektivität. (S8)"
+  },
+  {
+    "question": "Was sind die Hauptkomponenten der IT-Architektur in a nutshell?",
+    "options": [
+      "Hardware, Software, Netzwerk",
+      "Architektur-Vision, Ziel-Architektur, Unternehmensarchitekt, Domänenarchitekten, Architektur-Prinzipien, Architektur-Kommunikation, Architektur-Prozess",
+      "Patient, Arzt, Pflege, Verwaltung",
+      "KIS, PACS, LIS, PDMS"
+    ],
+    "correct_index": 1,
+    "explanation": "S10: Die IT-Architektur in a nutshell umfasst Architektur-Vision, Ziel-Architektur, Unternehmensarchitekt, Domänenarchitekten, Architektur-Prinzipien, Architektur-Kommunikation und Architektur-Prozess. (S10)"
+  },
+  {
+    "question": "Was ist die Rolle des Unternehmensarchitekten?",
+    "options": [
+      "Er entwickelt alle Software im Unternehmen",
+      "Er verantwortet die Architektur-Aktivitäten, führt den Architektur-Prozess und bindet Stakeholder ein",
+      "Er ist nur für die IT-Abteilung zuständig",
+      "Er kümmert sich nur um die Hardware"
+    ],
+    "correct_index": 1,
+    "explanation": "S10: Der Unternehmensarchitekt verantwortet die Architektur-Aktivitäten im Unternehmen, führt den Architektur-Prozess sowie das Architektur-Board und bindet die Stakeholder bedarfsgerecht ein und bedient sie mit Informationen. (S10)"
+  },
+  {
+    "question": "Was sind die wesentlichen Aspekte einer Datenarchitektur?",
+    "options": [
+      "Einfachheit, Datensicherheit, Stammdatenverwaltung",
+      "Hardware, Software, Netzwerk",
+      "Patient, Arzt, Pflege, Verwaltung",
+      "KIS, PACS, LIS, PDMS"
+    ],
+    "correct_index": 0,
+    "explanation": "S15: Die wesentlichen Aspekte einer Datenarchitektur sind Einfachheit (verständliche Datenstruktur), Datensicherheit (vor unbefugten Zugriff, Integrität, Löschung) und Stammdatenverwaltung (Single Source of Truth). (S15)"
+  },
+  {
+    "question": "Was ist das wichtigste Ziel der Datenarchitektur?",
+    "options": [
+      "Schnellste Datenübertragung",
+      "Datensicherheit (Vertraulichkeit, Integrität, Verfügbarkeit)",
+      "Geringste Kosten",
+      "Grösste Datenmenge"
+    ],
+    "correct_index": 1,
+    "explanation": "S15: Das wichtigste Ziel der Datenarchitektur ist die Datensicherheit, da sie Vertraulichkeit, Integrität und Verfügbarkeit gewährleisten muss. (S15)"
+  },
+  {
+    "question": "Was sind Architektur-Prinzipien?",
+    "options": [
+      "Technische Spezifikationen für Hardware",
+      "Übergreifende Regeln und Leitlinien, die die Entwicklung, Implementierung und Wartung von Systemen unterstützen",
+      "Marketing-Strategien für IT-Lösungen",
+      "Vorlagen für Benutzeroberflächen"
+    ],
+    "correct_index": 1,
+    "explanation": "S20: Architektur-Prinzipien sind übergreifende Regeln und Leitlinien, die die Entwicklung, Implementierung und Wartung von Systemen unterstützen. Sie dienen dazu, verschiedene Interessen auszubalancieren, technologische Standards zu etablieren und sicherzustellen, dass Lösungen die Geschäftsstrategie optimal unterstützen. (S20)"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Architektur-Prinzipien und Standard-Architekturen?",
+    "options": [
+      "Architektur-Prinzipien sind technische Spezifikationen, Standard-Architekturen sind Regeln",
+      "Architektur-Prinzipien sind Regeln, Standard-Architekturen sind konkrete Umsetzungen der Prinzipien",
+      "Architektur-Prinzipien sind nur für IT, Standard-Architekturen sind für Geschäft",
+      "Architektur-Prinzipien sind optional, Standard-Architekturen sind verbindlich"
+    ],
+    "correct_index": 1,
+    "explanation": "S22: Architektur-Prinzipien sind übergreifende Regeln und Leitlinien, während Standard-Architekturen konkrete Umsetzungen der Prinzipien sind, die als Vorlage für neue Projekte dienen. (S22)"
+  },
+  {
+    "question": "Was sind die Haupt-Herausforderungen in der IT-Architektur im Spital?",
+    "options": [
+      "Hohe Anzahl an Fach- und Umsystemen, hohe Heterogenität, hohe Komplexität der Datenarchitektur und Schnittstellen",
+      "Nur mangelnde Hardware",
+      "Nur mangelnde Software",
+      "Nur mangelnde Mitarbeiter"
+    ],
+    "correct_index": 0,
+    "explanation": "S28: Die Haupt-Herausforderungen sind die hohe Anzahl an Fach- und Umsystemen, die hohe Heterogenität der Applikationslandschaft, die hohe Komplexität der Datenarchitektur und Schnittstellen sowie hohe Herausforderungen in Bezug auf die Betreibbarkeit der Systemumgebung. (S28)"
+  },
+  {
+    "question": "Was zeigt ein Beispiel einer Daten-Architektur (Domänenarchitektur)?",
+    "options": [
+      "Die Hardware-Infrastruktur des Spitals",
+      "Die Struktur der Datenquellen, Datenintegration und Datenplattform",
+      "Die Organisationsstruktur des Spitals",
+      "Die IT-Systeme des Spitals"
+    ],
+    "correct_index": 1,
+    "explanation": "S30: Ein Beispiel einer Daten-Architektur (Domänenarchitektur) zeigt die Struktur der Datenquellen (z. B. Röntgen, CT, Nahrung, Beschaffung), die Datenintegration (z. B. Normalisierung, Middleware) und die Datenplattform (z. B. Data Warehouse). (S30)"
+  },
+  {
+    "question": "Was zeigt ein Beispiel einer Applikations-Architektur (Domänenarchitektur)?",
+    "options": [
+      "Die Hardware-Infrastruktur des Spitals",
+      "Die Struktur der Applikationen und deren Beziehungen",
+      "Die Organisationsstruktur des Spitals",
+      "Die IT-Systeme des Spitals"
+    ],
+    "correct_index": 1,
+    "explanation": "S31: Ein Beispiel einer Applikations-Architektur (Domänenarchitektur) zeigt die Struktur der Applikationen und deren Beziehungen zueinander und zu den Geschäftsprozessen. (S31)"
+  },
+  {
+    "question": "Was ist eine Referenz-Architektur?",
+    "options": [
+      "Eine Architektur, die nur für ein Spital gilt",
+      "Eine Architektur, die als Vorlage für andere Architekturen dient",
+      "Eine Architektur, die keine Daten enthält",
+      "Eine Architektur, die nur für IT-Systeme gilt"
+    ],
+    "correct_index": 1,
+    "explanation": "S32: Eine Referenz-Architektur ist eine Architektur, die als Vorlage für andere Architekturen dient und als Standard für die Entwicklung neuer Systeme verwendet wird. (S32)"
+  },
+  {
+    "question": "Wie funktioniert das Geschäftsmodell der Cyberkriminellen?",
+    "options": [
+      "Sie arbeiten alleine und ohne Unterstützung",
+      "Sie setzen auf Arbeitsteilung, Kundendienst und Marketing, und bieten offensive Cyberservices im Darknet an",
+      "Sie arbeiten nur für staatliche Auftraggeber",
+      "Sie arbeiten nur in der Schweiz"
+    ],
+    "correct_index": 1,
+    "explanation": "S44: Das Geschäftsmodell der Cyberkriminellen basiert auf Arbeitsteilung, Kundendienst und Marketing. Sie bieten offensive Cyberservices (z. B. Ransomware-as-a-Service) im Darknet an und agieren in globalen Netzwerken. (S44)"
+  },
+  {
+    "question": "Was ist ein Ethical Hacker?",
+    "options": [
+      "Ein Hacker, der Schaden anrichtet",
+      "Ein Hacker, der in IT-Systeme eindringt, um Schwachstellen aufzudecken, ohne Schaden anzurichten",
+      "Ein Hacker, der nur für staatliche Auftraggeber arbeitet",
+      "Ein Hacker, der nur in der Schweiz arbeitet"
+    ],
+    "correct_index": 1,
+    "explanation": "S48: Ein Ethical Hacker dringt in IT-Systeme ein, um Schwachstellen aufzudecken, ohne Schaden anzurichten. Er hilft dabei, Sicherheitsrisiken einzuschätzen und an der Behebung von Sicherheitsmängeln mitzuwirken. (S48)"
+  },
+  {
+    "question": "Ist Ethical Hacking rechtmässig?",
+    "options": [
+      "Ja, immer",
+      "Nein, es ist immer strafbar",
+      "Ja, wenn es mit Auftrag und Zustimmung erfolgt",
+      "Nein, es ist nur in der Schweiz rechtmässig"
+    ],
+    "correct_index": 2,
+    "explanation": "S50: Ethical Hacking ist rechtmässig, wenn es mit Auftrag und Zustimmung erfolgt. Ohne Auftrag ist es strafbar gemäß StGB Art. 143 Absatz 1. (S50)"
+  },
+  {
+    "question": "Was bedeutet das Schutzziel „Vertraulichkeit“?",
+    "options": [
+      "Daten müssen immer verfügbar sein",
+      "Daten dürfen nur Befugten zugänglich sein",
+      "Daten müssen unverändert sein",
+      "Daten müssen schnell übertragen werden"
+    ],
+    "correct_index": 1,
+    "explanation": "S54: Vertraulichkeit ist der Schutz vor unbefugter Preisgabe von Informationen. Vertrauliche Daten und Informationen dürfen ausschliesslich Befugten in der zulässigen Weise zugänglich sein. (S54)"
+  },
+  {
+    "question": "Was bedeutet das Schutzziel „Integrität“?",
+    "options": [
+      "Daten müssen immer verfügbar sein",
+      "Daten dürfen nur Befugten zugänglich sein",
+      "Daten müssen vollständig und unverändert sein",
+      "Daten müssen schnell übertragen werden"
+    ],
+    "correct_index": 2,
+    "explanation": "S55: Integrität bezeichnet die Sicherstellung der Korrektheit (Unversehrtheit) von Daten und der korrekten Funktionsweise von Systemen. Daten müssen vollständig und unverändert sein. (S55)"
+  },
+  {
+    "question": "Was bedeutet das Schutzziel „Verfügbarkeit“?",
+    "options": [
+      "Daten müssen vollständig und unverändert sein",
+      "Daten dürfen nur Befugten zugänglich sein",
+      "Daten müssen stets wie vorgesehen genutzt werden können",
+      "Daten müssen schnell übertragen werden"
+    ],
+    "correct_index": 2,
+    "explanation": "S56: Verfügbarkeit ist vorhanden, wenn Dienstleistungen, Funktionen eines IT-Systems, IT-Anwendungen oder IT-Netze von den Anwendern stets wie vorgesehen genutzt werden können. (S56)"
+  },
+  {
+    "question": "Was ist das Spannungsfeld zwischen Datensammlung und Datenschutz?",
+    "options": [
+      "Datensammlung ist immer gut, Datenschutz ist nicht notwendig",
+      "Datensammlung ist wichtig für die Führung und Steuerung, aber Datenschutz schützt die persönliche Integrität",
+      "Datensammlung ist nur für Unternehmen wichtig, nicht für Staaten",
+      "Datensammlung ist nur für die Medizin wichtig"
+    ],
+    "correct_index": 1,
+    "explanation": "S69: Datensammlung ist wichtig für die Führung und Steuerung von Institutionen, Unternehmen und Staaten, aber Datenschutz schützt die persönliche Integrität und ist ein Grundrecht. (S69)"
+  },
+  {
+    "question": "Was ist ein Medizinprodukt?",
+    "options": [
+      "Ein Arzneimittel",
+      "Ein Produkt, das für die medizinische Verwendung bestimmt ist, wenn die Hauptwirkung nicht durch ein Arzneimittel erreicht wird",
+      "Ein Produkt, das nur für den häuslichen Gebrauch bestimmt ist",
+      "Ein Produkt, das keine Zulassung benötigt"
+    ],
+    "correct_index": 1,
+    "explanation": "S76: Ein Medizinprodukt ist ein Produkt, das für die medizinische Verwendung bestimmt ist, wenn die Hauptwirkung nicht durch ein Arzneimittel erreicht wird. Dazu zählen medizintechnische Systeme wie Apparate (Hardware) und Anwendungen (Software). (S76)"
+  },
+  {
+    "question": "Was regelt die Medical Device Regulation (MDR)?",
+    "options": [
+      "Nur die Herstellung von Medizinprodukten",
+      "Den gesamten Lebenszyklus von Medizinprodukten, von der Herstellung bis zum Betrieb",
+      "Nur den Betrieb von Medizinprodukten",
+      "Nur die Zulassung von Medizinprodukten"
+    ],
+    "correct_index": 1,
+    "explanation": "S77: Die EU-Medizinprodukteverordnung 2017/745 regelt den gesamten Lebenszyklus von Medizinprodukten, von der Herstellung bis zum Betrieb, und stellt Anforderungen an Hersteller, Händler, Importeure und Gesundheitseinrichtungen. (S77)"
+  },
+  {
+    "question": "Wie behandelt die Schweiz die MDR?",
+    "options": [
+      "Sie übernimmt die MDR automatisch",
+      "Sie regelt Medizinprodukte über das eigene Schweizer Medizinprodukterecht (MepV), das mit der EU-MDR weitgehend kompatibel ist",
+      "Sie ignoriert die MDR",
+      "Sie hat eine eigene MDR, die vollständig von der EU abweicht"
+    ],
+    "correct_index": 1,
+    "explanation": "S79: Die Schweiz übernimmt die MDR nicht automatisch, regelt Medizinprodukte aber über das eigene Schweizer Medizinprodukterecht (MepV), das mit der EU-MDR weitgehend kompatibel ist. (S79)"
+  },
+  {
+    "question": "Wie werden Medizinprodukte klassifiziert?",
+    "options": [
+      "Nach dem Preis des Produkts",
+      "Nach der Größe des Produkts",
+      "Nach dem Risikoniveau, das mit dem Produkt verbunden ist",
+      "Nach der Herstellungsland"
+    ],
+    "correct_index": 2,
+    "explanation": "S81: Die Klassifizierung von Medizinprodukten dient dem Schutz von Patienten und Anwendern. Sie basiert auf dem Risikoniveau, das mit dem Produkt verbunden ist, und bestimmt den Umfang der erforderlichen Konformitätsbewertung. (S81)"
+  },
+  {
+    "question": "Was ist die Cybersicherheit von medizinischen Systemen?",
+    "options": [
+      "Die Sicherheit von medizinischen Systemen vor physischen Angriffen",
+      "Die Sicherheit von medizinischen Systemen vor Cyberangriffen, die die Integrität der Daten und die Patientensicherheit bedrohen",
+      "Die Sicherheit von medizinischen Systemen vor Software-Fehlern",
+      "Die Sicherheit von medizinischen Systemen vor Hardware-Ausfällen"
+    ],
+    "correct_index": 1,
+    "explanation": "S83: Die Cybersicherheit von medizinischen Systemen befasst sich mit der Sicherheit vor Cyberangriffen, die die Integrität der Daten und die Patientensicherheit bedrohen können. (S83)"
+  }
+]

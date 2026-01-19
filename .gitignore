@@ -3,10 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.gitignore
+
 # Virtual environment Ordner (angepasst auf deinen venv-Namen)
 mc_LernApp/
 env/
 .venv/
+.lernapp_pip_lenovo/
 
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints

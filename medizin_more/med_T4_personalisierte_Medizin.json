@@ -1,0 +1,79 @@
+[
+  {
+    "question": "Welche der folgenden Fragen stehen im direkten Zusammenhang mit der personalisierten Medizin?",
+    "options": [
+      "Genom-Sequenzierung für alle, personalisierte Therapie, digitaler Zwilling, Prävention durch Wearables, individualisierte Impfungen",
+      "Nur die Frage nach der Genom-Sequenzierung",
+      "Nur die Frage nach der personalisierten Therapie",
+      "Nur die Frage nach dem digitalen Zwilling"
+    ],
+    "correct_index": 0,
+    "explanation": "S18: Die Fragen, die im direkten Zusammenhang mit der personalisierten Medizin stehen, sind: Genom-Sequenzierung für alle, personalisierte Therapie, digitaler Zwilling, Prävention durch Wearables und individualisierte Impfungen. (S18)"
+  },
+  {
+    "question": "Was sind die Treiber der personalisierten Gesundheit?",
+    "options": [
+      "Nur die technologische Entwicklung",
+      "Individuelles Krankheits- und Risikoprofil, genetische und persönliche Gesundheitsdaten, Prävention in der gesunden Bevölkerung, steigende Erwartungen an individuell zugeschnittene Vorsorge",
+      "Nur die wirtschaftlichen Interessen",
+      "Nur die politischen Vorgaben"
+    ],
+    "correct_index": 1,
+    "explanation": "S19: Die Treiber der personalisierten Gesundheit sind das individuelle Krankheits- und Risikoprofil, genetische und persönliche Gesundheitsdaten, die Möglichkeit zur Prävention in der gesunden Bevölkerung und steigende Erwartungen an individuell zugeschnittene Vorsorge. (S19)"
+  },
+  {
+    "question": "Was sind die Möglichkeiten und Grenzen der personalisierten Medizin?",
+    "options": [
+      "Nur die Diagnostik",
+      "Möglichkeiten: Diagnostik, Prävention, Therapie; Grenzen: Komplexität und Datenunsicherheit",
+      "Nur die Therapie",
+      "Nur die Prävention"
+    ],
+    "correct_index": 1,
+    "explanation": "S20: Die Möglichkeiten der personalisierten Medizin liegen in der Diagnostik, Prävention und Therapie. Die Grenzen sind die Komplexität und Datenunsicherheit. (S20)"
+  },
+  {
+    "question": "Was sind die Präventionskonzepte in der personalisierten Medizin?",
+    "options": [
+      "Nur die Primärprävention",
+      "Primärprävention, Sekundärprävention, Tertiärprävention, Screening von Neugeborenen und Familien",
+      "Nur die Sekundärprävention",
+      "Nur die Tertiärprävention"
+    ],
+    "correct_index": 1,
+    "explanation": "S21: Die Präventionskonzepte in der personalisierten Medizin sind die Primärprävention (Krankheit verhindern), Sekundärprävention (Früherkennung), Tertiärprävention (Rückfälle/Komplikationen vermeiden) und Screening (Neugeborene, Familien). (S21)"
+  },
+  {
+    "question": "Wie wird die personalisierte Medizin aus ökonomischer Sicht betrachtet?",
+    "options": [
+      "Nur als kostensparend",
+      "Nutzen versus Kosten: gezielte Therapien, aber hohe Medikamentenpreise; Health Technology Assessment (HTA) zur Bewertung des Zusatznutzens versus Zusatzkosten",
+      "Nur als kostenerhöhend",
+      "Nur als kosteneutral"
+    ],
+    "correct_index": 1,
+    "explanation": "S22: Aus ökonomischer Sicht wird die personalisierte Medizin als Nutzen versus Kosten betrachtet: gezielte Therapien können Kosten senken, aber hohe Medikamentenpreise und neue Patientengruppen durch Screening können Kosten erhöhen. Health Technology Assessment (HTA) bewertet den Zusatznutzen versus Zusatzkosten. (S22)"
+  },
+  {
+    "question": "Was ist die Rolle der Datenwissenschaft in der personalisierten Medizin?",
+    "options": [
+      "Nur zur Datenspeicherung",
+      "Datenintensiv: Genom, Proteome, Metabolome, Lifestyle; Biomarkersignaturen, prädiktive Modelle, Validierung und Reproduzierbarkeit, Infrastrukturelle Voraussetzungen, ethische Aspekte",
+      "Nur zur Datenanalyse",
+      "Nur zur Datenvisualisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "S23: Die Rolle der Datenwissenschaft in der personalisierten Medizin ist datenintensiv: Genom, Proteome, Metabolome, Lifestyle; Biomarkersignaturen, prädiktive Modelle, Validierung und Reproduzierbarkeit, Infrastrukturelle Voraussetzungen und ethische Aspekte. (S23)"
+  },
+  {
+    "question": "Was ist die Zusammenfassung der personalisierten Medizin?",
+    "options": [
+      "Nur die Diagnostik",
+      "Grundlagen: Individuelle Krankheitsprofile durch Genom, Umwelt und Lifestyle; Möglichkeiten und Grenzen: Chancen in Diagnostik, Prävention, Therapie – Grenzen durch Komplexität und Datenunsicherheit; Prävention: Primär, Sekundär, Tertiär + Screening; Ökonomische Sicht: Nutzen versus Kosten; Datenwissenschaften: Big Data → Smart Data: Biomarker, Modelle, Infrastruktur, Validierung als Schlüssel",
+      "Nur die Therapie",
+      "Nur die Prävention"
+    ],
+    "correct_index": 1,
+    "explanation": "S25: Die Zusammenfassung der personalisierten Medizin umfasst die Grundlagen (individuelle Krankheitsprofile durch Genom, Umwelt und Lifestyle), Möglichkeiten und Grenzen (Chancen in Diagnostik, Prävention, Therapie – Grenzen durch Komplexität und Datenunsicherheit), Prävention (Primär, Sekundär, Tertiär + Screening), ökonomische Sicht (Nutzen versus Kosten) und Datenwissenschaften (Big Data → Smart Data: Biomarker, Modelle, Infrastruktur, Validierung als Schlüssel). (S25)"
+  }
+]

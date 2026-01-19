@@ -1,0 +1,79 @@
+[
+  {
+    "question": "Was ist im Gesundheitswesen besonders relevant für die IT-Architektur und den Datenschutz?",
+    "options": [
+      "Nur die Hardware-Infrastruktur",
+      "Hohe Anzahl an Fach- und Umsystemen, hohe Heterogenität, hohe Komplexität der Datenarchitektur und Schnittstellen, sowie hohe Anforderungen an Verfügbarkeit und Datensicherheit",
+      "Nur die Software-Entwicklung",
+      "Nur die Netzwerksicherheit"
+    ],
+    "correct_index": 1,
+    "explanation": "S28: Im Gesundheitswesen sind die hohe Anzahl an Fach- und Umsystemen, die hohe Heterogenität der Applikationslandschaft, die hohe Komplexität der Datenarchitektur und Schnittstellen sowie hohe Anforderungen an Verfügbarkeit und Datensicherheit besonders relevant. (S28)"
+  },
+  {
+    "question": "Was sind die wichtigsten Take-aways des Tages?",
+    "options": [
+      "Nur die IT-Systeme des Spitals",
+      "Stakeholder, Architekturen, Architektur-Prinzipien, Monolithische vs. Best-of-Breed-Architekturen",
+      "Nur die Datenarchitektur",
+      "Nur die Applikationsarchitektur"
+    ],
+    "correct_index": 1,
+    "explanation": "S38: Die wichtigsten Take-aways des Tages sind Stakeholder, Architekturen, Architektur-Prinzipien und der Vergleich zwischen monolithischen und Best-of-Breed-Architekturen. (S38)"
+  },
+  {
+    "question": "Wie entwickelt sich die Anzahl an Verwundbarkeiten in Applikationen?",
+    "options": [
+      "Sie nimmt ab",
+      "Sie bleibt konstant",
+      "Sie nimmt stetig zu",
+      "Sie ist nicht messbar"
+    ],
+    "correct_index": 2,
+    "explanation": "S46: Die Anzahl an Verwundbarkeiten in Applikationen nimmt stetig zu, da immer mehr Apps entwickelt werden, die potenziell schwach sein können. (S46)"
+  },
+  {
+    "question": "Was ist die Rolle eines Ethical Hackers?",
+    "options": [
+      "Er verursacht Schaden an IT-Systemen",
+      "Er dringt in IT-Systeme ein, um Schwachstellen aufzudecken, ohne Schaden anzurichten",
+      "Er arbeitet nur für staatliche Auftraggeber",
+      "Er ist immer strafbar"
+    ],
+    "correct_index": 1,
+    "explanation": "S48: Ein Ethical Hacker dringt in IT-Systeme ein, um Schwachstellen aufzudecken, ohne Schaden anzurichten. Er hilft dabei, Sicherheitsrisiken einzuschätzen und an der Behebung von Sicherheitsmängeln mitzuwirken. (S48)"
+  },
+  {
+    "question": "Was ist das revidierte Datenschutzgesetz (revDSG) und was ändert es?",
+    "options": [
+      "Es ist ein Gesetz, das nur für die Schweiz gilt und keine Änderungen vornimmt",
+      "Es ist ein Gesetz, das das alte DSG von 1992 ersetzt und stärker auf den Schutz der Betroffenen ausgerichtet ist, insbesondere in Bezug auf genetische und biometrische Daten",
+      "Es ist ein Gesetz, das nur für Unternehmen gilt",
+      "Es ist ein Gesetz, das keine Änderungen vornimmt"
+    ],
+    "correct_index": 1,
+    "explanation": "S71: Das revidierte Datenschutzgesetz (revDSG) ist ein Gesetz, das das alte DSG von 1992 ersetzt und stärker auf den Schutz der Betroffenen ausgerichtet ist, insbesondere in Bezug auf genetische und biometrische Daten. (S71)"
+  },
+  {
+    "question": "Was ist das revDSG und wann trat es in Kraft?",
+    "options": [
+      "Es trat am 1. März 2019 in Kraft und änderte nichts",
+      "Es trat am 1. September 2023 in Kraft und stärkte den Schutz der Betroffenen, insbesondere in Bezug auf genetische und biometrische Daten",
+      "Es trat am 1. Januar 2020 in Kraft und änderte nichts",
+      "Es trat am 1. Januar 2025 in Kraft und änderte nichts"
+    ],
+    "correct_index": 1,
+    "explanation": "S71: Das revidierte Datenschutzgesetz (revDSG) trat am 1. September 2023 in Kraft und stärkte den Schutz der Betroffenen, insbesondere in Bezug auf genetische und biometrische Daten. (S71)"
+  },
+  {
+    "question": "Was ist das Grundproblem der Privatsphäre im Zeitalter von Big Data?",
+    "options": [
+      "Es gibt keine Probleme mit der Privatsphäre",
+      "Die zunehmende Perfektionierung der Überwachung und des Wissens über Personen, der Verlust der Location Privacy und die Entwicklung in Richtung Technologiepaternalismus",
+      "Die Privatsphäre ist nur ein Problem für Unternehmen",
+      "Die Privatsphäre ist nur ein Problem für die Schweiz"
+    ],
+    "correct_index": 1,
+    "explanation": "S74: Das Grundproblem der Privatsphäre im Zeitalter von Big Data ist die zunehmende Perfektionierung der Überwachung und des Wissens über Personen, der Verlust der Location Privacy und die Entwicklung in Richtung Technologiepaternalismus. (S74)"
+  }
+]

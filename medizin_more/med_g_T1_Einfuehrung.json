@@ -1,0 +1,105 @@
+[
+  {
+    "question": "Was ist die Grundlage der Ertragssicherung der Leistungserbringer im Schweizer Gesundheitswesen?",
+    "options": [
+      "Staatliche Zuschüsse",
+      "Tarife",
+      "Privatversicherungen",
+      "Patientenzahl"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Tarife sind die Basis der Entgeltung der Leistungserbringer im Gesundheitswesen und werden vertraglich zwischen den Tarifpartnern (Erbringer und Träger) vereinbart. (F5)"
+  },
+  {
+    "question": "Welche Prognose wird für die Zukunft der Schweizer Gesundheitsversorgung gemacht?",
+    "options": [
+      "Abnahme der Spitaldichte",
+      "Stärkere Konzentration, Ambulantisierung, Care@home, Hub and Spoke Modelle",
+      "Zunahme der stationären Behandlungen",
+      "Rückgang der Digitalisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "F10: Prognosen für die Zukunft der Gesundheitsversorgungslandschaft in der Schweiz umfassen stärkere Konzentration, Ambulantisierung, Care@home und Hub and Spoke Modelle. (F10)"
+  },
+  {
+    "question": "Was ist das Ziel der BAG-Strategie Gesundheit2030?",
+    "options": [
+      "Erhöhung der Spitalzahl",
+      "Technologischer und digitaler Wandel, demografische Veränderungen, qualitativ hohe und finanziell tragbare Versorgung",
+      "Rückgang der Digitalisierung",
+      "Zunahme der stationären Behandlungen"
+    ],
+    "correct_index": 1,
+    "explanation": "F11: Die BAG-Strategie Gesundheit2030 zielt auf technologischen und digitalen Wandel, demografische und gesellschaftliche Veränderungen sowie qualitativ hohe und finanziell tragbare Versorgung ab. (F11)"
+  },
+  {
+    "question": "Was ist ein Zentrumsspital?",
+    "options": [
+      "Ein Spital mit nur ambulanter Versorgung",
+      "Ein Spital mit allen Fachdisziplinen und Hochspezialmedizin (außer Herzchirurgie, Transplantationsmedizin etc.)",
+      "Ein Spital mit nur psychiatrischer Versorgung",
+      "Ein Spital mit nur Notfallversorgung"
+    ],
+    "correct_index": 1,
+    "explanation": "F17: Ein Zentrumsspital bietet alle Fachdisziplinen und Hochspezialmedizin an, mit Ausnahme von Herzchirurgie, Transplantationsmedizin, Eingriffen an Halsschlagadern und Hirngefässen sowie Eingriffen im Zusammenhang mit Transsexualität. (F17)"
+  },
+  {
+    "question": "Was ist die Rechtsform des Kantonsspitals Graubünden?",
+    "options": [
+      "Öffentliches Unternehmen",
+      "Private Stiftung",
+      "Aktiengesellschaft",
+      "Genossenschaft"
+    ],
+    "correct_index": 1,
+    "explanation": "F18: Das Kantonsspital Graubünden ist eine private Stiftung (nicht öffentlich) und hat eine Departementsstruktur mit Stiftungsrat, Verwaltungsrat und Geschäftsleitung. (F18)"
+  },
+  {
+    "question": "Was ist das Hauptproblem beim Zugriff auf Informationen entlang dem Patientenpfad?",
+    "options": [
+      "Zu viele digitale Systeme",
+      "Uneinheitlichkeit, analoge und digitale Medien, strukturierte und unstrukturierte Daten in diversen Systemen",
+      "Zu viele Patienten",
+      "Zu wenig Ärzte"
+    ],
+    "correct_index": 1,
+    "explanation": "F24: Der Zugriff auf Informationen entlang dem Patientenpfad ist mühsam, da die Daten uneinheitlich, analog und digital, strukturiert und unstrukturiert in diversen Dokumentations- und Archivsystemen gespeichert sind. (F24)"
+  },
+  {
+    "question": "Was misst das EMRAM-Modell?",
+    "explanation": "F27: Das EMRAM (Electronic Medical Records Adoption Model) misst den Digitalisierungsgrad von Spitälern anhand der Einführung und Nutzung elektronischer Patientenakten. (F27)"
+  },
+  {
+    "question": "Welches Land hat im EMRAM-Modell den höchsten Digitalisierungsgrad?",
+    "options": [
+      "Schweiz",
+      "Deutschland",
+      "Dänemark",
+      "Türkei"
+    ],
+    "correct_index": 2,
+    "explanation": "F27: Im EMRAM-Modell belegt Dänemark mit 5.3 den höchsten Digitalisierungsgrad, gefolgt von den USA (4.7), UK (3.5), Österreich und Schweiz (3.1), Türkei (2.9), Deutschland (2.1). (F27)"
+  },
+  {
+    "question": "Was hemmt die Digitalisierung der Schweizer Spitäler?",
+    "options": [
+      "Zu viele Ressourcen",
+      "Hohe Digitalisierungsrate",
+      "Fehlende Standards, heterogene Systeme, fehlende Interoperabilität",
+      "Zu viele digitale Lösungen"
+    ],
+    "correct_index": 2,
+    "explanation": "F30: Die Digitalisierung der Schweizer Spitäler wird durch fehlende Standards, heterogene Systeme und fehlende Interoperabilität gehemmt. (F30)"
+  },
+  {
+    "question": "Was bietet die Digitalisierung für Spitäler?",
+    "options": [
+      "Keine Vorteile",
+      "Effizienzsteigerung, bessere Patientenversorgung, Kostensenkung",
+      "Nur höhere Kosten",
+      "Nur mehr Arbeit"
+    ],
+    "correct_index": 1,
+    "explanation": "F31: Die Digitalisierung bietet Spitäler viel Potential, einschließlich Effizienzsteigerung, besserer Patientenversorgung und Kostensenkung. (F31)"
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "question": "Was ist charakteristisch für das Schweizer Gesundheitswesen?",
+    "options": [
+      "Einheitliche staatliche Steuerung",
+      "Mischung aus Staat und Privatwirtschaft",
+      "Vollständig privatwirtschaftlich organisiert",
+      "Nur kantonale Verantwortung ohne Bund"
+    ],
+    "correct_index": 1,
+    "explanation": "F3: Das Schweizer Gesundheitswesen ist eine Mischung aus Staat und Privatwirtschaft. Private Krankenversicherungen agieren auf einem stark reglementierten Markt, Leistungserbringer sind teils privat, teils staatlich. (F3)"
+  },
+  {
+    "question": "Wer trägt die Hauptverantwortung für die Gesundheitsversorgung in der Schweiz?",
+    "options": [
+      "Der Bund",
+      "Die Kantone",
+      "Die EU",
+      "Die WHO"
+    ],
+    "correct_index": 1,
+    "explanation": "F3: Die Gesundheitsversorgung ist eigentlich Sache der Kantone, doch bestimmte Dinge sind gesetzlich auf nationaler Ebene geregelt — dies führt zu Zersplitterung und Unübersichtlichkeit. (F3)"
+  },
+  {
+    "question": "Welche Region in der Schweiz hat eine besonders dezentrale Gesundheitsversorgung?",
+    "options": [
+      "Zürich",
+      "Genf",
+      "Graubünden",
+      "Basel"
+    ],
+    "correct_index": 2,
+    "explanation": "F12: Der Kanton Graubünden verfolgt die Strategie der dezentralen Gesundheitsversorgung mit 12 Gesundheitsregionen und 11 Akutspitälern, was zu hoher Autonomie und 12 verschiedenen ICT-Systemen führt. (F12)"
+  },
+  {
+    "question": "Was ist ein Hauptgrund für den Mangel an Hausärzten in der Schweiz?",
+    "options": [
+      "Zu viele Medizinstudierende",
+      "Altersstruktur und fehlender Nachwuchs",
+      "Zu hohe Gehälter",
+      "Zu wenig Patienten"
+    ],
+    "correct_index": 1,
+    "explanation": "F14: Der Mangel an Hausärzten wird durch die Altersstruktur und den fehlenden Nachwuchs verursacht. Umfrage 2015 ergab, dass bis 2035 50% der Hausarztpraxen nicht mehr besetzt sein könnten. (F14)"
+  },
+  {
+    "question": "Was ist eine der Hauptursachen für steigende Gesundheitskosten?",
+    "options": [
+      "Rückgang der Bevölkerung",
+      "Steigende Beiträge und Tarife",
+      "Zunahme von Gesundheitsbewusstsein",
+      "Abnahme von Multimorbidität"
+    ],
+    "correct_index": 1,
+    "explanation": "F14: Kostendruck entsteht durch Qualität, Tarife, ständig steigende Beiträge und Kosten, Mindestfallzahlen und Erosion in der Zusatzversicherung. (F14)"
+  },
+  {
+    "question": "Was ist die häufigste nicht übertragbare Krankheit in der Schweiz?",
+    "options": [
+      "Diabetes",
+      "Krebs",
+      "Herz-Kreislauf-Erkrankungen",
+      "Chronische Atemwegserkrankungen"
+    ],
+    "correct_index": 1,
+    "explanation": "F39: Die am häufigsten nicht übertragbaren Krankheiten (NCD) in der Schweiz sind Krebs, Herz-Kreislauf-Erkrankungen, chronische Atemwegserkrankungen, Diabetes und Erkrankungen des Bewegungsapparates. Krebs ist die häufigste. (F39)"
+  },
+  {
+    "question": "Welche Faktoren beeinflussen die Entstehung von Krankheiten?",
+    "options": [
+      "Nur genetische Faktoren",
+      "Nur Umweltfaktoren",
+      "Genetische, Umwelt- und Lebensstilfaktoren",
+      "Nur medizinische Versorgung"
+    ],
+    "correct_index": 2,
+    "explanation": "F40: Multimorbidität und Einflussfaktoren für Krankheiten umfassen genetische, Umwelt- und Lebensstilfaktoren. Diese interagieren und beeinflussen die Entstehung von Krankheiten. (F40)"
+  },
+  {
+    "question": "Was ist die Hauptursache für Multimorbidität?",
+    "options": [
+      "Jugendlichkeit",
+      "Alternde Bevölkerung und Multimorbidität",
+      "Zu wenig medizinische Versorgung",
+      "Zu viele Ärzte"
+    ],
+    "correct_index": 1,
+    "explanation": "F40: Multimorbidität ist eine Folge der alternden Bevölkerung und steigenden Behandlungs- und Pflegebedarfe. (F40)"
+  },
+  {
+    "question": "Warum machen manche Sportler Höhentraining?",
+    "options": [
+      "Um mehr Sauerstoff zu erhalten",
+      "Um mehr rote Blutkörperchen zu bilden",
+      "Um schneller zu laufen",
+      "Um weniger zu schwitzen"
+    ],
+    "correct_index": 1,
+    "explanation": "F42: Im Höhentraining hat der Körper weniger Sauerstoff zur Verfügung, weshalb er mehr rote Blutkörperchen bildet, um den Sauerstofftransport zu verbessern. (F42)"
+  },
+  {
+    "question": "Was transportieren Arterien und Venen?",
+    "options": [
+      "Arterien: sauerstoffarmes Blut zum Herz, Venen: sauerstoffreiches Blut vom Herz",
+      "Arterien: sauerstoffreiches Blut vom Herz, Venen: sauerstoffarmes Blut zum Herz",
+      "Arterien: nur CO2, Venen: nur O2",
+      "Arterien und Venen: immer sauerstoffreiches Blut"
+    ],
+    "correct_index": 1,
+    "explanation": "F42: Arterien transportieren sauerstoffreiches Blut vom Herz (außer die Lungenarterie), Venen transportieren sauerstoffarmes Blut zum Herz (außer die Lungenvenen). (F42)"
+  },
+  {
+    "question": "Was sind die häufigsten Tumorerkrankungen bei Männern und Frauen?",
+    "options": [
+      "Lungenkrebs und Magenkrebs",
+      "Prostatakrebs und Brustkrebs",
+      "Leberkrebs und Darmkrebs",
+      "Hautkrebs und Hirntumore"
+    ],
+    "correct_index": 1,
+    "explanation": "F42: Die häufigsten Tumorerkrankungen sind bei Männern Prostatakrebs und bei Frauen Brustkrebs. (F42)"
+  },
+  {
+    "question": "Was ist die dritt-häufigste Erkrankungsgruppe in der Schweiz?",
+    "options": [
+      "Herz-Kreislauf-Erkrankungen",
+      "Krebs",
+      "Chronische Atemwegserkrankungen",
+      "Diabetes"
+    ],
+    "correct_index": 2,
+    "explanation": "F42: Die häufigsten nicht übertragbaren Krankheiten in der Schweiz sind Krebs (1.), Herz-Kreislauf-Erkrankungen (2.), chronische Atemwegserkrankungen (3.). (F42)"
+  },
+  {
+    "question": "Was ist Diabetes?",
+    "options": [
+      "Eine Infektionskrankheit",
+      "Eine Erkrankung durch zu wenig Insulinproduktion",
+      "Eine Erkrankung durch zu viel Sauerstoff",
+      "Eine Erkrankung durch zu viel Bewegung"
+    ],
+    "correct_index": 1,
+    "explanation": "F42: Diabetes ist eine Stoffwechselerkrankung, die durch zu wenig Insulinproduktion verursacht wird, wodurch der Stoffwechsel nicht richtig funktioniert. (F42)"
+  },
+  {
+    "question": "Was ist die Aufgabe der medizinischen Dokumentation?",
+    "options": [
+      "Nur zur Abrechnung",
+      "Darstellung des Krankheitsverlaufs, Kontinuität und Qualität der Behandlung",
+      "Nur für wissenschaftliche Zwecke",
+      "Nur für legale Zwecke"
+    ],
+    "correct_index": 1,
+    "explanation": "F46: Medizinische Dokumentation dient der Darstellung des Krankheitsverlaufs, Kontinuität und Qualität der Behandlung, Kommunikation, Patientensicherheit, legalen Zwecken, Nachweis der Leistungserbringung und wissenschaftlichen Zwecken. (F46)"
+  },
+  {
+    "question": "Was sind strukturierte Daten in der medizinischen Dokumentation?",
+    "options": [
+      "Freitexte ohne Format",
+      "Daten mit vorgegebenem Format und Zeilen-Spalten-Position",
+      "Nur Bilder und Scans",
+      "Nur mündliche Befunde"
+    ],
+    "correct_index": 1,
+    "explanation": "F47: Strukturierte Daten haben ein vorgegebenes Format und können in relationalen Datenbanken leicht gefunden und für Auswertungen genutzt werden. Unstrukturierte Daten liegen als Freitext vor. (F47)"
+  },
+  {
+    "question": "Was ist die ICD-Klassifikation?",
+    "options": [
+      "Klassifikation für Arzneimittel",
+      "Internationale Klassifikation der Krankheiten",
+      "Klassifikation für medizinische Prozeduren",
+      "Klassifikation für Tumoren"
+    ],
+    "correct_index": 1,
+    "explanation": "F50: ICD (International Classification of Diseases) wird von der WHO erstellt und zur Verschlüsselung von Diagnosen eingesetzt. Aktuell ICD-10. (F50)"
+  },
+  {
+    "question": "Was ist die ATC-Klassifikation?",
+    "options": [
+      "Klassifikation für Diagnosen",
+      "Klassifikation für Arzneimittel",
+      "Klassifikation für Operationen",
+      "Klassifikation für Laborwerte"
+    ],
+    "correct_index": 1,
+    "explanation": "F50: ATC (Anatomisch-therapeutisch-chemische Klassifikation) ist eine Klassifikation für Arzneimittel mit bis zu 4-stelligen, alphanumerischen Codes. (F50)"
+  },
+  {
+    "question": "Was ist SNOMED CT?",
+    "options": [
+      "Ein System zur Verwaltung von Laborproben",
+      "Eine umfassende, mehrsprachige medizinische Nomenklatur",
+      "Ein System zur Bildarchivierung",
+      "Ein System zur Patientenverwaltung"
+    ],
+    "correct_index": 1,
+    "explanation": "F51: SNOMED CT ist eine umfassende, mehrsprachige medizinische Nomenklatur mit mehr als 300’000 Konzepten, die eindeutige IDs und textuelle Beschreibungen zugeordnet sind. (F51)"
+  },
+  {
+    "question": "Was ist ein Praxisinformationssystem (PIS)?",
+    "options": [
+      "Ein System für Spitäler",
+      "Ein System für niedergelassene Ärzte mit verlaufsorientierter Dokumentation",
+      "Ein System für Labore",
+      "Ein System für Radiologie"
+    ],
+    "correct_index": 1,
+    "explanation": "F55: Ein Praxisinformationssystem (PIS) wird bei niedergelassenen Ärzten eingesetzt und fokussiert sich auf verlaufsorientierte Dokumentation. Es ist weniger komplex als ein KIS. (F55)"
+  },
+  {
+    "question": "Was umfasst das elektronische Patientendossier (EPD)?",
+    "options": [
+      "Nur stationäre Fallakten",
+      "Alle medizinischen Daten und Dokumente eines Patienten",
+      "Nur Laborberichte",
+      "Nur Arztbriefe"
+    ],
+    "correct_index": 1,
+    "explanation": "F56: Das EPD umfasst alle medizinischen Daten und Dokumente eines Patienten, einschließlich Arztbriefe, Anamnesen, klinische Befunde, bildgebende Diagnostik, Labordiagnostik, Therapien und Verordnungen. (F56)"
+  },
+  {
+    "question": "Was ist die Funktion des RIS?",
+    "options": [
+      "Verwaltung von Laborproben",
+      "Verarbeitung von Radiologiedaten und Befundberichten",
+      "Management von Bilddaten",
+      "Aufzeichnung von Vitaldaten"
+    ],
+    "correct_index": 1,
+    "explanation": "F57: Das RIS (Radiologie-Informationssystem) verarbeitet Daten der Radiologie, einschließlich Patientendaten, geplanter und erbrachter Untersuchungen und Befundberichte. (F57)"
+  },
+  {
+    "question": "Was ist die Funktion des LIS?",
+    "options": [
+      "Verwaltung von Patientendaten",
+      "Unterstützung der Labordiagnostik und Befunderstellung",
+      "Management von Bilddaten",
+      "Aufzeichnung von Vitaldaten"
+    ],
+    "correct_index": 1,
+    "explanation": "F60: Das LIS (Laborinformationssystem) ist von zentraler Bedeutung für die Labordiagnostik. Es unterstützt Auftragskommunikation, Laboranalyse, Qualitätskontrolle und Befunderstellung. (F60)"
+  },
+  {
+    "question": "Was ist ein PDMS?",
+    "options": [
+      "Ein System für Praxen",
+      "Ein IT-System für Intensivmedizin und Anästhesie",
+      "Ein System für Radiologie",
+      "Ein System für Labore"
+    ],
+    "correct_index": 1,
+    "explanation": "F61: PDMS (Patientendatenmanagementsystem) ist ein IT-System, das in Anästhesie und Intensivmedizin eingesetzt wird und viele Medizintechnische Geräte anbindet. (F61)"
+  },
+  {
+    "question": "Was ist charakteristisch für ein PDMS?",
+    "options": [
+      "Niedrige Datenmenge",
+      "Hohe Dichte von Patientendaten und hohe Präzision der Alerts",
+      "Keine Integration von Geräten",
+      "Keine Alarmfunktion"
+    ],
+    "correct_index": 1,
+    "explanation": "F61: PDMS sind durch eine hohe Dichte von Patientendaten gekennzeichnet, die übersichtlich dargestellt werden sollen. Eine hohe Präzision der Alerts (hohe Sensitivität, wenig Fehlalarme) ist von besonderer Bedeutung. (F61)"
+  }
+]

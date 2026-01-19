@@ -1,0 +1,156 @@
+[
+  {
+    "question": "Was ist der Zweck von Architektur-Prinzipien?",
+    "options": [
+      "Sicherstellung von kurzfristigen Kosteneinsparungen",
+      "Steuerung und Weiterentwicklung der Unternehmens-Architektur, um strategisch ausgerichtete, nachhaltige und transparente Entscheidungen zu treffen",
+      "Vermeidung von IT-Projekten",
+      "Erhöhung der Komplexität der Systemlandschaft"
+    ],
+    "correct_index": 1,
+    "explanation": "S1: Architektur-Prinzipien sind ein unverzichtbares Werkzeug zur Steuerung und Weiterentwicklung der Unternehmens-Architektur. Sie stellen sicher, dass Architektur-Entscheidungen strategisch ausgerichtet, nachhaltig und transparent getroffen werden. (S1)"
+  },
+  {
+    "question": "Welcher Nutzen ergibt sich aus der Anwendung klar definierter Architektur-Prinzipien?",
+    "options": [
+      "Erhöhung der technischen Schulden",
+      "Konsistenz, Effizienz, Transparenz, Flexibilität und erleichterte Kommunikation",
+      "Verzögerung der Entscheidungsfindung",
+      "Erhöhung der Integrationskosten"
+    ],
+    "correct_index": 1,
+    "explanation": "S1: Die Anwendung klar definierter Prinzipien bietet Vorteile wie Konsistenz und Einheitlichkeit, Effizienz, Transparenz und Nachvollziehbarkeit, Flexibilität und Zukunftssicherheit sowie Erleichterung der Kommunikation. (S1)"
+  },
+  {
+    "question": "Was sind Architektur-Prinzipien im Allgemeinen?",
+    "options": [
+      "Vorlagen für Benutzeroberflächen",
+      "Übergreifende Regeln und Leitlinien, die die Entwicklung, Implementierung und Wartung von Systemen unterstützen (TOGAF)",
+      "Technische Spezifikationen für Hardware",
+      "Marketing-Strategien für IT-Lösungen"
+    ],
+    "correct_index": 1,
+    "explanation": "S1: TOGAF beschreibt Architektur-Prinzipien als übergreifende Regeln und Leitlinien, die die Entwicklung, Implementierung und Wartung von Systemen unterstützen. Sie dienen dazu, verschiedene Interessen auszubalancieren, technologische Standards zu etablieren und sicherzustellen, dass Lösungen die Geschäftsstrategie optimal unterstützen. (S1)"
+  },
+  {
+    "question": "Welches Prinzip verlangt, dass zentrale Stammdaten als Single Source of Truth verwaltet werden?",
+    "options": [
+      "Interoperabilität",
+      "Einfachheit vor Komplexität",
+      "Stammdatenverwaltung",
+      "Sicherheit per Design"
+    ],
+    "correct_index": 2,
+    "explanation": "S2.1: Das Prinzip „Stammdatenverwaltung“ (Single Source of Truth) verlangt, dass zentrale Stammdaten zentral, konsistent und als Single Source of Truth verwaltet werden. Systeme und Prozesse greifen ausschließlich auf diese zentral gepflegten Stammdaten zu. (S2.1)"
+  },
+  {
+    "question": "Was ist der Zweck des Prinzips „Interoperabilität“?",
+    "options": [
+      "Erhöhung der Systemisolierung",
+      "Sicherstellung, dass Systeme und Dienste nahtlos und konsistent miteinander kommunizieren – intern und extern",
+      "Vermeidung von standardisierten Schnittstellen",
+      "Reduzierung der Flexibilität"
+    ],
+    "correct_index": 1,
+    "explanation": "S2.2: Das Prinzip „Interoperabilität“ sichert, dass alle Systeme und Dienste in der Organisation in einem konsistenten, standardisierten Umfeld operieren, was den Datenaustausch erleichtert, die Agilität erhöht und langfristig Integrationsaufwände reduziert. (S2.2)"
+  },
+  {
+    "question": "Welches Prinzip fordert, dass Komponenten mit einem klaren, verständlichen und minimal komplexen Design bereitgestellt werden?",
+    "options": [
+      "Langfristigkeit vor Opportunität",
+      "Einfachheit vor Komplexität",
+      "Kaufen vor Bauen",
+      "Wiederverwendbarkeit"
+    ],
+    "correct_index": 1,
+    "explanation": "S2.3: Das Prinzip „Einfachheit vor Komplexität“ verlangt, dass Komponenten so gestaltet sind, dass sie die erforderliche Funktionalität mit einem klaren, verständlichen und minimal komplexen Design bereitstellen. Unnötige Komplexität und überflüssige Funktionen sind zu vermeiden. (S2.3)"
+  },
+  {
+    "question": "Was ist der Zweck des Prinzips „Langfristigkeit vor Opportunität“?",
+    "options": [
+      "Förderung kurzfristiger Trends",
+      "Sicherstellung, dass Architektur-Entscheidungen primär auf langfristigen strategischen Zielen basieren",
+      "Erhöhung der technischen Schulden",
+      "Vermeidung von zukunftssicheren Lösungen"
+    ],
+    "correct_index": 1,
+    "explanation": "S2.4: Das Prinzip „Langfristigkeit vor Opportunität“ stellt sicher, dass Architektur-Entscheidungen nicht nur aktuelle Bedürfnisse adressieren, sondern auch zukunftsgerichtet und nachhaltig gestaltet sind, um langfristig stabile und leistungsfähige Systeme zu gewährleisten. (S2.4)"
+  },
+  {
+    "question": "Welches Prinzip besagt, dass standardisierte, am Markt verfügbare Lösungen gegenüber Eigenentwicklungen bevorzugt werden sollen?",
+    "options": [
+      "Stammdatenverwaltung",
+      "Interoperabilität",
+      "Kaufen vor Bauen",
+      "Sicherheit per Design"
+    ],
+    "correct_index": 2,
+    "explanation": "S2.5: Das Prinzip „Kaufen vor Bauen“ besagt, dass standardisierte, am Markt verfügbare Lösungen (COTS – Commercial Off-The-Shelf) gegenüber Eigenentwicklungen bevorzugt werden sollen, sofern sie die funktionalen und nicht-funktionalen Anforderungen erfüllen. (S2.5)"
+  },
+  {
+    "question": "Was ist der Zweck des Prinzips „Wiederverwendbarkeit“?",
+    "options": [
+      "Erhöhung der Entwicklungskosten",
+      "Sicherstellung, dass Lösungen langfristig effizienter, effektiver und konsistenter gestaltet werden, indem bewährte Komponenten mehrfach genutzt werden können",
+      "Vermeidung von Standardisierung",
+      "Erhöhung der Komplexität"
+    ],
+    "correct_index": 1,
+    "explanation": "S2.6: Das Prinzip „Wiederverwendbarkeit“ sichert, dass Lösungen langfristig effizienter, effektiver und konsistenter gestaltet werden, indem bewährte Komponenten mehrfach genutzt werden können. (S2.6)"
+  },
+  {
+    "question": "Welches Prinzip verlangt, dass Sicherheitsaspekte integraler Bestandteil aller Architekturen sind?",
+    "options": [
+      "Einfachheit vor Komplexität",
+      "Sicherheit per Design",
+      "Agilität",
+      "Standardisierung und Wartbarkeit"
+    ],
+    "correct_index": 1,
+    "explanation": "S2.7: Das Prinzip „Sicherheit per Design“ verlangt, dass Sicherheitsaspekte integraler Bestandteil aller Architekturen sind. Systeme, Daten und Prozesse sind von Beginn an so zu gestalten, dass sie Vertraulichkeit, Integrität und Verfügbarkeit gewährleisten und vor Bedrohungen sowie unautorisierten Zugriffen geschützt sind. (S2.7)"
+  },
+  {
+    "question": "Was ist der Zweck des Prinzips „Agilität“?",
+    "options": [
+      "Erhöhung der Systemkomplexität",
+      "Sicherstellung, dass die Architektur flexibel und anpassungsfähig ist, um schnell auf veränderte Geschäftsanforderungen und Marktbedingungen reagieren zu können",
+      "Vermeidung von iterativen Entwicklungsansätzen",
+      "Reduzierung der Anpassungsfähigkeit"
+    ],
+    "correct_index": 1,
+    "explanation": "S2.8: Das Prinzip „Agilität“ stellt sicher, dass die Architektur flexibel und anpassungsfähig ist, um schnell auf veränderte Geschäftsanforderungen und Marktbedingungen reagieren zu können. Dies erfordert modulare, lose gekoppelte Systeme und iterative Entwicklungsansätze. (S2.8)"
+  },
+  {
+    "question": "Welches Prinzip fordert den Einsatz einheitlicher, definierter Standards für Systeme, Prozesse und Komponenten?",
+    "options": [
+      "Stammdatenverwaltung",
+      "Interoperabilität",
+      "Standardisierung und Wartbarkeit",
+      "Wiederverwendbarkeit"
+    ],
+    "correct_index": 2,
+    "explanation": "S2.9: Das Prinzip „Standardisierung und Wartbarkeit“ fordert, dass Systeme, Prozesse und Komponenten auf einheitlichen, definierten Standards basieren, um Konsistenz, Kompatibilität und eine effiziente Integration zu gewährleisten. (S2.9)"
+  },
+  {
+    "question": "Was ist der Zweck des Prinzips „Skalierbarkeit“?",
+    "options": [
+      "Sicherstellung, dass Systeme bei steigendem Bedarf leistungsfähig, flexibel und wirtschaftlich bleiben",
+      "Erhöhung der Systemkosten",
+      "Vermeidung von dynamischen Ressourcenanpassungen",
+      "Reduzierung der Flexibilität"
+    ],
+    "correct_index": 0,
+    "explanation": "S2.10: Das Prinzip „Skalierbarkeit“ stellt sicher, dass Plattformen bei steigendem Bedarf leistungsfähig, flexibel und wirtschaftlich bleiben, wodurch langfristig ein reibungsloser Betrieb gewährleistet wird. (S2.10)"
+  },
+  {
+    "question": "Welches Prinzip verlangt, dass Architekturen serviceorientiert gestaltet werden, sodass Geschäftsprozesse durch lose gekoppelte, wiederverwendbare und klar definierte Services unterstützt werden?",
+    "options": [
+      "Interoperabilität",
+      "Einfachheit vor Komplexität",
+      "Serviceorientierung",
+      "Sicherheit per Design"
+    ],
+    "correct_index": 2,
+    "explanation": "S2.11: Das Prinzip „Serviceorientierung“ verlangt, dass Architekturen serviceorientiert gestaltet werden, sodass Geschäftsprozesse durch lose gekoppelte, wiederverwendbare und klar definierte Services unterstützt werden. (S2.11)"
+  }
+]

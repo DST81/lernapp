@@ -1,0 +1,134 @@
+[
+  {
+    "question": "Welche der folgenden Aussagen zur radiologischen Diagnostik ist korrekt?",
+    "options": [
+      "Radiologie erstellt Bilder nur für geplante Behandlungen.",
+      "Radiologen stellen die Diagnose anhand von Bilddaten und unterstützen die Therapiewahl.",
+      "Radiologie wird in der Notfallmedizin selten angewendet.",
+      "Radiologische Untersuchungen erfordern immer ionisierende Strahlung."
+    ],
+    "correct_index": 1,
+    "explanation": "F4: Die medizinische Radiologie erstellt bildgebende Verfahren sowohl für geplante als auch ungeplante (Notfall-)Behandlungen. Radiologen stellen anhand der Bilddaten die Diagnose (Befundung) und unterstützen die behandelnden Ärzte bei der Therapiewahl. (F4)"
+  },
+  {
+    "question": "Welche Abteilung im Spital ist keine direkte Querschnittsfunktion der Radiologie?",
+    "options": [
+      "Notfallmedizin",
+      "Intensivmedizin",
+      "ICT",
+      "Gastronomie"
+    ],
+    "correct_index": 3,
+    "explanation": "F5: Die Radiologie ist eine zentrale Querschnittsfunktion, die mit Chirurgie, Innere Medizin, Notfallmedizin, Intensivmedizin, Pflege, ICT und anderen interagiert. Gastronomie ist keine medizinische oder unterstützende Funktion im Spitalkontext. (F5)"
+  },
+  {
+    "question": "Wann wurde die Computertomographie (CT) erstmals vorgestellt?",
+    "options": [
+      "1901",
+      "1972",
+      "2000",
+      "1895"
+    ],
+    "correct_index": 1,
+    "explanation": "F7: 1972 wurde die durch G. N. Hounsfield entwickelte Computertomographie (CT) erstmals vorgestellt. (F7)"
+  },
+  {
+    "question": "Welches Verfahren gehört nicht zu den Schnittbildverfahren?",
+    "options": [
+      "MRT",
+      "CT",
+      "Ultraschall",
+      "Konventionelles Röntgen"
+    ],
+    "correct_index": 3,
+    "explanation": "F8: Schnittbildverfahren sind MRT und CT. Konventionelles Röntgen und Ultraschall sind keine Schnittbildverfahren. (F8)"
+  },
+  {
+    "question": "Was ist ein wesentlicher Vorteil des konventionellen Röntgens gegenüber der CT?",
+    "options": [
+      "Höhere räumliche Auflösung",
+      "Geringere Strahlendosis",
+      "Bessere Darstellung von Weichteilen",
+      "Schnellere Untersuchung"
+    ],
+    "correct_index": 1,
+    "explanation": "F9: Beim konventionellen Röntgen werden geringere Strahlendosen verwendet, die für den Patienten ungefährlich sind, während die diagnostische Information geringer ist als bei der CT. (F9)"
+  },
+  {
+    "question": "Welche Aussage zur Computertomographie (CT) ist korrekt?",
+    "options": [
+      "CT verwendet keine ionisierenden Strahlen.",
+      "CT ist nur für Notfälle geeignet.",
+      "CT erzeugt Querschnittsbilder mit hoher räumlicher Auflösung.",
+      "CT kann keine Gefäße darstellen."
+    ],
+    "correct_index": 2,
+    "explanation": "F10: Die CT erzeugt mit Röntgenstrahlen Querschnittsbilder des Körpers mit hoher räumlicher Auflösung und wird für zahlreiche Indikationen wie Schlaganfall, Notfälle, Lunge, Herz und Gefäße verwendet. (F10)"
+  },
+  {
+    "question": "Was ist ein entscheidender Unterschied zwischen MRI und CT?",
+    "options": [
+      "MRI verwendet ionisierende Strahlen.",
+      "MRI ist besser für Skelett-Darstellung geeignet.",
+      "MRI verwendet Magnetwellen und keine ionisierenden Strahlen.",
+      "MRI ist schneller als CT."
+    ],
+    "correct_index": 2,
+    "explanation": "F11: Die Magnetresonanztomographie (MRI) verwendet Magnetwellen und keine ionisierenden Strahlen, während CT ionisierende Strahlen verwendet. MRI ist besser für Weichteile geeignet, CT für Skelett. (F11)"
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Röntgen- und Gammastrahlung?",
+    "options": [
+      "Röntgenstrahlung hat längere Wellenlängen als Gammastrahlung.",
+      "Gammastrahlung entsteht durch Kernreaktionen, Röntgenstrahlung durch Geschwindigkeitsänderung geladener Teilchen.",
+      "Röntgenstrahlung ist immer ionisierend, Gammastrahlung nie.",
+      "Gammastrahlung wird in der Radiologie häufiger verwendet."
+    ],
+    "correct_index": 1,
+    "explanation": "F12: Röntgenstrahlung entsteht durch Geschwindigkeitsänderung geladener Teilchen (z. B. Abbremsung von Elektronen), Gammastrahlung durch Kernreaktionen oder radioaktive Zerfälle. (F12)"
+  },
+  {
+    "question": "Was ist PACS?",
+    "options": [
+      "Ein System zur Verwaltung von Patientendaten in der Klinik.",
+      "Ein Bildarchivierungs- und Kommunikationssystem für medizinische Bilder.",
+      "Ein Format zur Speicherung von Röntgenbildern.",
+      "Ein Gerät zur Erzeugung von CT-Bildern."
+    ],
+    "correct_index": 1,
+    "explanation": "F13, F15: PACS (Picture Archiving and Communication System) ist ein Bildarchivierungs- und Kommunikationssystem, das medizinische Bilder speichert und zwischen Geräten austauscht. (F13, F15)"
+  },
+  {
+    "question": "Was ist DICOM?",
+    "options": [
+      "Ein Betriebssystem für Radiologie-Geräte.",
+      "Ein internationales Format zum Speichern und Teilen medizinischer Bilder mit Metainformationen.",
+      "Ein Protokoll zur Verschlüsselung von Patientendaten.",
+      "Ein Viewer zur Anzeige von CT-Bildern."
+    ],
+    "correct_index": 1,
+    "explanation": "F13, F15: DICOM (Digital Imaging and Communications in Medicine) ist ein internationales Format zum Anzeigen, Speichern, Abrufen und Teilen medizinischer Bilder, das Metainformationen wie Patientendaten enthält. (F13, F15)"
+  },
+  {
+    "question": "Was enthält eine DICOM-Datei?",
+    "options": [
+      "Nur das Bild ohne Metadaten.",
+      "Ein Header mit Metainformationen und Bilddatensätze.",
+      "Nur Patientendaten ohne Bild.",
+      "Nur Akquisitionsparameter wie Pitch."
+    ],
+    "correct_index": 1,
+    "explanation": "F19, F20: Eine DICOM-Datei besteht aus einem Header (Metainformationen wie Patientendaten, Akquisitionsparameter) und Bilddatensätzen, die zusammen in einer Datei gespeichert sind. (F19, F20)"
+  },
+  {
+    "question": "Warum ist die Anonymisierung von DICOM-Bildern schwierig?",
+    "options": [
+      "Weil DICOM-Bilder keine Metadaten enthalten.",
+      "Weil Patientenname und ID oft direkt im Bild sichtbar sind.",
+      "Weil DICOM ein veraltetes Format ist, das nicht verschlüsselt werden kann.",
+      "Weil keine Tools zur Anonymisierung verfügbar sind."
+    ],
+    "correct_index": 1,
+    "explanation": "F13, F21: Die Anonymisierung ist schwierig, weil der Patientenname und die ID oft direkt im Bild sichtbar sind, was bei Studien problematisch ist. (F13, F21)"
+  }
+]

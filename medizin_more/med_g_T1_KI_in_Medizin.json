@@ -1,0 +1,101 @@
+[
+  {
+    "question": "Wie hoch ist die Akzeptanz von KI in der Medizin bei der Schweizer Bevölkerung?",
+    "options": [
+      "35% haben das gleiche Vertrauen in KI wie in einen Arzt",
+      "67% befürworten den Einsatz von KI in der Medizin",
+      "75% fühlen sich wohl mit KI als zusätzliche Hilfestellung bei der Diagnose",
+      "Alle oben genannten"
+    ],
+    "correct_index": 3,
+    "explanation": "F2: 67% befürworten den Einsatz von KI in der Medizin, 75% fühlen sich wohl mit KI als zusätzliche Hilfestellung bei der Diagnose, 35% haben das gleiche Vertrauen in KI wie in einen Arzt und 57% würden ihre Gesundheitsdaten anonymisiert zur Verfügung stellen. (F2)"
+  },
+  {
+    "question": "In welchen Bereichen setzt das Kantonsspital Graubünden KI bereits ein?",
+    "options": [
+      "Nur in der Radiologie",
+      "Radio-Onkologie, Radiologie, Administration, Kardiologie, Email, medizinische Wundfotodokumentation",
+      "Nur in der Administration",
+      "Nur in der Kardiologie"
+    ],
+    "correct_index": 1,
+    "explanation": "F3: Das KSGR setzt KI bereits in Radio-Onkologie (Konturierung & Bestrahlungsplanung), Radiologie (Bilddarstellung & Aufbereitung), Administration (Prozessautomatisierung), Kardiologie (Ruhe-EKG), Email (Spam-Filter) und medizinischer Wundfotodokumentation (imitoCam) ein. (F3)"
+  },
+  {
+    "question": "Was ist ein Beispiel für die Strukturierung unstrukturierter Daten mit KI?",
+    "options": [
+      "Manuelle Eingabe aller Daten in Excel",
+      "Automatische Extraktion und Codierung von Diagnosen, Medikationen, Tumorstadien und Therapien in strukturierte Felder",
+      "Speicherung aller Dokumente als PDF",
+      "Drucken aller Berichte"
+    ],
+    "correct_index": 1,
+    "explanation": "F20-22: KI strukturiert unstrukturierte Daten, indem sie Diagnosen, Medikationen, Tumorstadien, Therapien und andere Parameter automatisch extrahiert und in strukturierte Felder (z. B. ICD10, PET-Größe, Receptor-Status) codiert. (F20-22)"
+  },
+  {
+    "question": "Was kann KI in der Radiologie erkennen?",
+    "options": [
+      "Nur Knochenbrüche",
+      "Blutungen, Knochenbrüche, Tumoren und Gefäßverläufe in Bilddaten",
+      "Nur Tumoren",
+      "Nur Blutungen"
+    ],
+    "correct_index": 1,
+    "explanation": "F24-28: KI in der Radiologie kann Blutungen, Knochenbrüche, Tumoren und Gefäßverläufe erkennen, auch wenn sie nicht offensichtlich sind, und unterstützt so die Diagnosestellung. (F24-28)"
+  },
+  {
+    "question": "Was ist ein Beispiel für KI-Einsatz in der Pathologie?",
+    "options": [
+      "Automatische Verwaltung von Patientendaten",
+      "Analyse von Gewebeproben unter dem Mikroskop mit Slide Scannern",
+      "Automatische Erstellung von Laborberichten",
+      "Automatische Planung von Operationen"
+    ],
+    "correct_index": 1,
+    "explanation": "F30: In der Pathologie wird KI eingesetzt, um Gewebeproben unter dem Mikroskop zu analysieren. Dazu werden Slide Scanner benötigt, um digitale Bilder zu erstellen, die von KI ausgewertet werden. (F30)"
+  },
+  {
+    "question": "Was ist ein Beispiel für KI-Einsatz in der Radio-Onkologie?",
+    "options": [
+      "Automatische Verwaltung von Patientendaten",
+      "Automatische Konturierung der Bestrahlungsareale auf jedem Layer",
+      "Automatische Erstellung von Laborberichten",
+      "Automatische Planung von Dienstplänen"
+    ],
+    "correct_index": 1,
+    "explanation": "F32: In der Radio-Onkologie wird KI eingesetzt, um auf jedem Layer die Areale für die Bestrahlung automatisch zu zeichnen, was die manuelle Konturierung ersetzt und Zeit spart. (F32)"
+  },
+  {
+    "question": "Was ist ein Beispiel für automatische Dokumentation mit KI?",
+    "options": [
+      "Manuelle Eingabe aller Befunde",
+      "Dax Copilot zeichnet Gespräche auf und generiert automatisch Zusammenfassungen",
+      "Drucken aller Berichte",
+      "Speicherung aller Dokumente als PDF"
+    ],
+    "correct_index": 1,
+    "explanation": "F34: Dax Copilot läuft während Gesprächen mit Patienten, zeichnet diese auf und generiert automatisch Zusammenfassungen, wodurch der Dokumentationsaufwand reduziert wird. (F34)"
+  },
+  {
+    "question": "Wie kann KI dabei helfen, Informationen im Spital zu finden?",
+    "options": [
+      "Durch manuelle Suche in Papierakten",
+      "Durch interne Suchfunktionen und LLM-Web-Apps, z. B. für Richtlinien im Intranet",
+      "Durch Drucken aller Dokumente",
+      "Durch Speicherung aller Daten in Excel"
+    ],
+    "correct_index": 1,
+    "explanation": "F36-37: KI kann helfen, Informationen im Spital zu finden, z. B. durch interne Suchfunktionen oder LLM-Web-Apps, die auf das Intranet zugreifen und Richtlinien oder Empfehlungen schnell bereitstellen. (F36-37)"
+  },
+  {
+    "question": "Wie kann KI Informationen strukturieren?",
+    "options": [
+      "Durch manuelle Eingabe aller Daten",
+      "Durch Webscraping, Umwandlung in JSON und Verknüpfung mit Chatbots",
+      "Durch Drucken aller Dokumente",
+      "Durch Speicherung aller Daten in Excel"
+    ],
+    "correct_index": 1,
+    "explanation": "F38-39: KI kann Informationen strukturieren, z. B. durch Webscraping von internen Richtlinien, Umwandlung in JSON und Verknüpfung mit Chatbots, um z. B. Pflegerichtlinien schnell zugänglich zu machen. (F38-39)"
+  }
+]

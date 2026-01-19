@@ -1,0 +1,79 @@
+[
+  {
+    "question": "Welches ist ein strategisches Ziel des KI-Einsatzes am Kantonsspital Graubünden?",
+    "options": [
+      "Erhöhung der stationären Aufenthaltsdauer",
+      "Entlastung der Mitarbeitenden und Gewinnung von Kapazität",
+      "Reduktion der Patientenzahl",
+      "Erhöhung der Verwaltungskosten"
+    ],
+    "correct_index": 1,
+    "explanation": "F4: Strategische Ziele des KI-Einsatzes umfassen die Entlastung der Mitarbeitenden, Gewinnung von Kapazität, Verbesserung der Behandlungsqualität, Stärkung der Reputation und neue KI-gestützte Leistungen. (F4)"
+  },
+  {
+    "question": "Was ist ein weiteres strategisches Ziel des KI-Einsatzes?",
+    "options": [
+      "Verlangsamung der Diagnosestellung",
+      "Automatische Dokumentation und schneller Zugriff auf Informationen",
+      "Erhöhung der Doppeluntersuchungen",
+      "Reduktion der Mitarbeiterzufriedenheit"
+    ],
+    "correct_index": 1,
+    "explanation": "F4: Weitere Ziele sind automatische Dokumentation, schneller und einfacher Zugriff auf Informationen, Ressourcenplanung, Effizienzsteigerung, weniger Fehler und Doppeluntersuchungen sowie mehr Zeit für Patienten. (F4)"
+  },
+  {
+    "question": "Was ist ein rechtlich-gesetzliches Risiko beim Einsatz von KI im Gesundheitswesen?",
+    "options": [
+      "Zu hohe Patientenzufriedenheit",
+      "Datenschutz und Haftungsfragen",
+      "Zu viele KI-Spezialisten",
+      "Zu niedrige Kosten"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Rechtlich-gesetzliche Risiken umfassen Datenschutz, KI-Verordnung EU, Urheberrecht und Haftungsfragen. Aktuell haftet der Arzt, wenn KI ein Medikament empfiehlt und der Patient stirbt. (F5)"
+  },
+  {
+    "question": "Was ist eine organisatorische Herausforderung beim KI-Einsatz?",
+    "options": [
+      "Zu viele KI-Systeme",
+      "Gewinnung und Ausbildung von KI-Spezialisten",
+      "Zu wenig Daten",
+      "Zu niedrige Anforderungen"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Organisatorische Herausforderungen umfassen den Aufbau von KI-Kompetenzen, die Gewinnung/Ausbildung von KI-Spezialisten, neue Stellen (z. B. Chief AI Officer) und die Veränderung im Skillset des gesamten Staff durch KI-Schulungen. (F5)"
+  },
+  {
+    "question": "Was ist das Hauptproblem bei medizinischen Berichten im klinischen Alltag?",
+    "options": [
+      "Zu viele strukturierte Daten",
+      "Sehr viele unstrukturierte Daten",
+      "Zu wenig Patienten",
+      "Zu viele digitale Systeme"
+    ],
+    "correct_index": 1,
+    "explanation": "F9: Das Hauptproblem ist, dass medizinische Berichte sehr viele unstrukturierte Daten enthalten, die manuell extrahiert werden müssen, was einen hohen personellen und zeitlichen Aufwand erfordert. (F9)"
+  },
+  {
+    "question": "In welchem Bereich des Kantonsspitals Graubünden wird KI zur Konturierung und Bestrahlungsplanung eingesetzt?",
+    "options": [
+      "Radiologie",
+      "Radio-Onkologie",
+      "Kardiologie",
+      "Administration"
+    ],
+    "correct_index": 1,
+    "explanation": "F28: KI wird in der Radio-Onkologie zur automatischen Konturierung und Bestrahlungsplanung eingesetzt. Früher wurde jede Schicht manuell gezeichnet, heute zeichnet KI auf jedem Layer die Areale ein. (F28)"
+  },
+  {
+    "question": "Welcher Bereich nutzt KI zur automatischen Dokumentation und Entlastung des ärztlichen Personals?",
+    "options": [
+      "Labor",
+      "Radiologie",
+      "Klinischer Alltag (z. B. mit Dax Copilot)",
+      "Pflege"
+    ],
+    "correct_index": 2,
+    "explanation": "F31: Im klinischen Alltag wird KI (z. B. Dax Copilot) eingesetzt, um während Gesprächen mit Patienten aufzuzeichnen und automatisch Zusammenfassungen zu generieren, wodurch der Dokumentationsaufwand reduziert wird. (F31)"
+  }
+]

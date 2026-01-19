@@ -1,0 +1,255 @@
+[
+  {
+    "question": "Welche der folgenden Einrichtungen zählt nicht zu den Leistungserbringern im Schweizer Gesundheitswesen?",
+    "options": [
+      "Spitäler",
+      "Krankenkassen",
+      "Hausärzte",
+      "Apotheken"
+    ],
+    "correct_index": 1,
+    "explanation": "F4: Leistungserbringer sind Spitäler, Heime, Reha-Einrichtungen, Psychiatrische Kliniken, Spezialkliniken, Hausärzte, Spitex, Apotheken, Labore, Rettungsdienste, Rega, Therapeutische Einrichtungen etc. Krankenkassen sind Leistungsträger, keine Leistungserbringer. (F4)"
+  },
+  {
+    "question": "Welches Tarifsystem gilt für ambulante Leistungen ab 2026 in der Schweiz?",
+    "options": [
+      "Swiss DRG",
+      "TARMED",
+      "TARDOC",
+      "TARPSY"
+    ],
+    "correct_index": 2,
+    "explanation": "F4: Tarife sind die Basis der Entgeltung der Leistungserbringer. Swiss DRG gilt für stationäre Fälle, TARMED wird ab 2026 durch TARDOC ersetzt (ambulant). TARPSY gilt für ambulant psychiatrische Leistungen. (F4)"
+  },
+  {
+    "question": "Was ist ein Taxpunkt im Schweizer Gesundheitssystem?",
+    "options": [
+      "Ein Steuerabzug für medizinische Dienstleistungen",
+      "Ein Maß für die Anzahl der behandelten Patienten",
+      "Ein Wert, der den Preis einer ärztlichen Leistung festlegt",
+      "Ein Verrechnungscode für stationäre Aufenthalte"
+    ],
+    "correct_index": 2,
+    "explanation": "F4: Der Taxpunktwert (TPW) legt den Preis einer ärztlichen Leistung fest. Die Anzahl Taxpunkte bestimmt den Aufwand der einzelnen ärztlichen Leistungen. Aufwändigere Behandlungen erfordern mehr Taxpunkte. (F4)"
+  },
+  {
+    "question": "Welche der folgenden ist keine Rolle im Schweizer Gesundheitswesen?",
+    "options": [
+      "Leistungserbringer",
+      "Leistungsträger",
+      "Privatwirtschaft",
+      "Bundesregierung"
+    ],
+    "correct_index": 3,
+    "explanation": "F4: Die Player sind Leistungserbringer (Spitäler, Ärzte etc.), Leistungsträger (Krankenkassen, Kantone) und Privatwirtschaft (Pharma, Medizintechnik). Die Bundesregierung ist kein expliziter Player, obwohl sie gesetzliche Rahmenbedingungen schafft. (F4)"
+  },
+  {
+    "question": "Was beschreibt der Begriff 'ambulant' im Gesundheitswesen?",
+    "options": [
+      "Langzeitpflege im Heim",
+      "Behandlung ohne stationären Aufenthalt",
+      "Rehabilitation nach Operation",
+      "Psychiatrische Betreuung"
+    ],
+    "correct_index": 1,
+    "explanation": "F4: Ambulant steht im Gegensatz zu stationär. Ambulante Behandlung erfolgt ohne stationären Aufenthalt, z. B. bei Hausärzten oder in Ambulanzen. (F4)"
+  },
+  {
+    "question": "Was ist die Funktion von Nukleinsäuren in der Zelle?",
+    "options": [
+      "Energieproduktion",
+      "Träger der Erbinformation",
+      "Mechanische Stützfunktion",
+      "Immunabwehr"
+    ],
+    "correct_index": 1,
+    "explanation": "F33: Nukleinsäuren (DNA und RNA) sind Träger der Erbinformation und verschlüsseln die Informationen für den Aufbau von Proteinen (Proteinbiosynthese). (F33)"
+  },
+  {
+    "question": "Welche Zellen besitzen keinen Zellkern?",
+    "options": [
+      "Eukaryoten",
+      "Prokaryoten",
+      "Muskelzellen",
+      "Nervenzellen"
+    ],
+    "correct_index": 1,
+    "explanation": "F33: Prokaryoten sind Einzeller ohne Zellkern (z. B. Bakterien). Eukaryoten besitzen einen Zellkern und bilden meist Zellverbände (Pflanzen, Tiere). (F33)"
+  },
+  {
+    "question": "Was ist die Hauptfunktion von Epithelgewebe?",
+    "options": [
+      "Bewegung ermöglichen",
+      "Körperform geben",
+      "Körper von innen auskleiden und nach außen abgrenzen",
+      "Reize empfangen und weiterleiten"
+    ],
+    "correct_index": 2,
+    "explanation": "F34: Epithelgewebe kleidet den Körper von innen aus und grenzt ihn nach außen ab. Es ist eine der vier Arten von Geweben. (F34)"
+  },
+  {
+    "question": "Welches Organ ist Teil des Herz-Kreislauf-Systems?",
+    "options": [
+      "Leber",
+      "Lunge",
+      "Herz",
+      "Magen"
+    ],
+    "correct_index": 2,
+    "explanation": "F34: Das Herz-Kreislauf-System besteht aus Herz, Blutgefäßen, Arterien, Venen, Lymphgefäßen. Es transportiert Sauerstoff und Nährstoffe und reguliert Blutdruck und Kreislauf. (F34)"
+  },
+  {
+    "question": "Was ist die Funktion des Herzens im Blutkreislauf?",
+    "options": [
+      "Filtert Giftstoffe aus dem Blut",
+      "Produziert Insulin",
+      "Pumpt Blut durch den Körper",
+      "Reguliert den Wasserhaushalt"
+    ],
+    "correct_index": 2,
+    "explanation": "F35: Das Herz pumpt sauerstoffarmes Blut in die Lunge und sauerstoffreiches Blut über die Aorta in den Körperkreislauf. Es ist die zentrale Pumpe des Kreislaufs. (F35)"
+  },
+  {
+    "question": "Wohin fließt das sauerstoffreiche Blut aus der linken Herzkammer?",
+    "options": [
+      "In die Lungenarterie",
+      "In die Hohlvenen",
+      "In die Aorta",
+      "In die Lungenvenen"
+    ],
+    "correct_index": 2,
+    "explanation": "F35: Das sauerstoffreiche Blut aus der linken Herzkammer wird in die Aorta (Hauptschlagader) ausgeworfen und über Arterien und Kapillaren in jede Körperzelle transportiert. (F35)"
+  },
+  {
+    "question": "Was ist die Funktion der Nieren?",
+    "options": [
+      "Sauerstofftransport",
+      "Regulation von Wasser- und Elektrolythaushalt",
+      "Bewegung ermöglichen",
+      "Verdauung von Nahrung"
+    ],
+    "correct_index": 1,
+    "explanation": "F36: Die Nieren regulieren den Wasser- und Elektrolythaushalt, das Säure-Basen-Gleichgewicht und den Blutdruck. Sie sind Teil des Harnapparats. (F36)"
+  },
+  {
+    "question": "Welches System ist für die Steuerung sämtlicher Körperfunktionen verantwortlich?",
+    "options": [
+      "Verdauungssystem",
+      "Nervensystem",
+      "Immunsystem",
+      "Hormonsystem"
+    ],
+    "correct_index": 1,
+    "explanation": "F37: Das Nervensystem (Gehirn, Rückenmark, peripheres Nervensystem) steuert und reguliert sämtliche Körperfunktionen, empfängt und verarbeitet Reize und ist für Bewusstsein und Gedächtnis verantwortlich. (F37)"
+  },
+  {
+    "question": "Was ist die Hauptfunktion des Immunsystems?",
+    "options": [
+      "Hormonproduktion",
+      "Unspezifische und spezifische Abwehr",
+      "Blutdruckregulation",
+      "Nährstoffresorption"
+    ],
+    "correct_index": 1,
+    "explanation": "F37: Das Immunsystem besteht aus unspezifischer Abwehr (Leukozyten, Killerzellen) und spezifischer Abwehr (Lymphozyten, Antikörper). Es schützt vor Krankheitserregern. (F37)"
+  },
+  {
+    "question": "Welche Krankheit gehört zum Herz-Kreislauf-System?",
+    "options": [
+      "Pneumonie",
+      "Myokardinfarkt",
+      "Zöliakie",
+      "Parkinson"
+    ],
+    "correct_index": 1,
+    "explanation": "F38: Arteriosklerose, Myokardinfarkt (Herzinfarkt), arterielle Hypertonie und Herzrhythmusstörungen sind Krankheiten des Herz-Kreislauf-Systems. (F38)"
+  },
+  {
+    "question": "Was ist eine häufige chronische Atemwegserkrankung?",
+    "options": [
+      "Diabetes",
+      "COPD",
+      "Morbus Crohn",
+      "Alzheimer"
+    ],
+    "correct_index": 1,
+    "explanation": "F38: Chronisch obstruktive Lungenerkrankung (COPD) ist eine häufige chronische Atemwegserkrankung. Zu den häufigsten nicht übertragbaren Krankheiten in der Schweiz gehören auch chronische Atemwegserkrankungen. (F38)"
+  },
+  {
+    "question": "Was ist charakteristisch für ein Spital?",
+    "options": [
+      "Hohe Standardisierung aller Prozesse",
+      "Einheitliche Dokumentation für alle Abteilungen",
+      "Heterogene Systemlandschaft mit vielen Spezialsystemen",
+      "Zentrale Steuerung durch ein einziges IT-System"
+    ],
+    "correct_index": 2,
+    "explanation": "F43: Ein Spital zeichnet sich durch eine heterogene Systemlandschaft aus, mit vielen Spezialsystemen (RIS, PACS, LIS, PDMS etc.), deren Integration und Datenaustausch mittels Schnittstellen sichergestellt werden muss. (F43)"
+  },
+  {
+    "question": "Was ist eine Hauptaufgabe der ICT im Spital?",
+    "options": [
+      "Patientenbetreuung direkt am Bett",
+      "Integration und Datenaustausch zwischen Spezialsystemen",
+      "Verwaltung von Finanzen",
+      "Rekrutierung von Ärzten"
+    ],
+    "correct_index": 1,
+    "explanation": "F44: Die ICT im Spital muss die Integration und den Datenaustausch zwischen den verschiedenen Spezialsystemen (z. B. RIS, PACS, LIS, PDMS) sicherstellen, um patientenbezogene Informationen bereitzustellen. (F44)"
+  },
+  {
+    "question": "Was ist das Aufgabenfeld der Medizininformatik?",
+    "options": [
+      "Finanzierung von Spitalprojekten",
+      "Alle Bereiche der Informationsverarbeitung in der Medizin",
+      "Ausbildung von Pflegekräften",
+      "Verwaltung von Arzneimitteln"
+    ],
+    "correct_index": 1,
+    "explanation": "F45: Das Aufgabenfeld der Medizininformatik umfasst alle Bereiche der Informationsverarbeitung in der Medizin, einschließlich medizinischer Klassifikationssysteme, Krankenhausinformationssysteme und medizinischer Bildverarbeitung. (F45)"
+  },
+  {
+    "question": "Was ist das Kernsystem eines KIS?",
+    "options": [
+      "RIS und PACS",
+      "Klinisches Arbeitsplatzsystem und Patientendatenverwaltung",
+      "Laborinformationssystem",
+      "PDMS"
+    ],
+    "correct_index": 1,
+    "explanation": "F53: Das Kernsystem eines KIS besteht aus dem Klinischen Arbeitsplatzsystem (KAS) und der Patientendatenverwaltung (PDV). Es ist das zentrale System zur Erfassung und Verarbeitung patientenbezogener Informationen. (F53)"
+  },
+  {
+    "question": "Was ist die Funktion des PACS?",
+    "options": [
+      "Verwaltung von Laborproben",
+      "Management und Archivierung von Bilddaten",
+      "Aufzeichnung von Vitaldaten",
+      "Planung von Operationen"
+    ],
+    "correct_index": 1,
+    "explanation": "F58: Das PACS (Picture Archiving and Communication System) wird für das Management und die Archivierung großer Mengen von Bilddaten eingesetzt und stellt Bilder zeitnah am benötigten Ort bereit. (F58)"
+  },
+  {
+    "question": "Was misst ein Elektrokardiogramm (EKG)?",
+    "options": [
+      "Körpertemperatur",
+      "Elektrische Aktivität des Herzens",
+      "Blutdruck",
+      "Atemfrequenz"
+    ],
+    "correct_index": 1,
+    "explanation": "F62: Ein Elektrokardiogramm (EKG) misst die elektrische Aktivität des Herzens und dient zur Diagnose von Herzrhythmusstörungen und anderen Herzkrankheiten. (F62)"
+  },
+  {
+    "question": "Was ist die Funktion der medizinischen Signalverarbeitung?",
+    "options": [
+      "Herstellung von Medikamenten",
+      "Computergestützte Erfassung und Verarbeitung biologischer Signale",
+      "Planung von Operationen",
+      "Verwaltung von Patientendaten"
+    ],
+    "correct_index": 1,
+    "explanation": "F62: Die medizinische Signalverarbeitung befasst sich mit der computergestützten Erfassung und Verarbeitung biologischer Signale (z. B. EKG, EEG, Blutdruck) zur Unterstützung von Diagnostik und Therapie. (F62)"
+  }
+]

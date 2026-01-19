@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Wie ist das Architektur-Landschafts-Netzwerk des KSGR aufgebaut?",
+    "options": [
+      "Zentrale Datenbank mit direktem Zugriff aller Systeme",
+      "Heterogene Systemlandschaft mit direkten Schnittstellen und Mirth-basierten Verbindungen",
+      "Einheitliches System ohne Schnittstellen",
+      "Nur Cloud-basierte Systeme"
+    ],
+    "correct_index": 1,
+    "explanation": "F1: Das KSGR-Architektur-Landschafts-Netzwerk besteht aus einer heterogenen Systemlandschaft mit medizinischen und administrativen Systemen, die über direkte Schnittstellen oder via Mirth verbunden sind. Es gibt Workstations, Modalitäten und Archivsysteme wie MUA (Synedra). (F1)"
+  },
+  {
+    "question": "Welche Systeme sind im KSGR-Architektur-Landschafts-Netzwerk über Mirth verbunden?",
+    "options": [
+      "Nur LIS und PDMS",
+      "Verschiedene Systeme wie RIS, PACS, LIS, PDMS, DMS, ERP",
+      "Nur administrative Systeme",
+      "Nur Radiologie-Systeme"
+    ],
+    "correct_index": 1,
+    "explanation": "F1: Im KSGR-Architektur-Landschafts-Netzwerk sind verschiedene Systeme wie RIS (iSolutions), PACS, LIS (DGLAB NP), PDMS (Dräger, Philips), DMS (DocBox), ERP (SAPKIS Phoenix) und andere über Mirth verbunden, um Daten auszutauschen. (F1)"
+  },
+  {
+    "question": "Was bedeutet die Notiz 'MediConnect PatFall' im Architektur-Landschafts-Diagramm?",
+    "options": [
+      "Ein System zur Verwaltung von Medikamenten",
+      "Ein System zur Patientenfallverwaltung und -kommunikation",
+      "Ein System zur Verwaltung von Laborwerten",
+      "Ein System zur Verwaltung von Terminen"
+    ],
+    "correct_index": 1,
+    "explanation": "F1: Die Notiz 'MediConnect PatFall' bezieht sich auf ein System zur Patientenfallverwaltung und -kommunikation, das Leistungen, Termine und Befunde verarbeitet und mit anderen Systemen wie LIS, PDMS und ERP verbunden ist. (F1)"
+  },
+  {
+    "question": "Was bedeutet die Notiz 'Manuelle Datenübernahme nach Einsatz' im Architektur-Landschafts-Diagramm?",
+    "options": [
+      "Automatische Datenübertragung nach Systemeinsatz",
+      "Daten werden manuell nach dem Einsatz eines neuen Systems übernommen",
+      "Keine Datenübernahme erforderlich",
+      "Daten werden nur in Excel übertragen"
+    ],
+    "correct_index": 1,
+    "explanation": "F1: Die Notiz 'Manuelle Datenübernahme nach Einsatz' bedeutet, dass nach dem Einsatz eines neuen Systems die Daten manuell übernommen werden müssen, was auf fehlende automatische Schnittstellen oder Integration hinweist. (F1)"
+  },
+  {
+    "question": "Was bedeutet die Notiz 'CDA Dokumente' im Architektur-Landschafts-Diagramm?",
+    "options": [
+      "Dokumente im PDF-Format",
+      "Dokumente im Clinical Document Architecture-Format für den Austausch medizinischer Dokumente",
+      "Dokumente im Word-Format",
+      "Dokumente im Excel-Format"
+    ],
+    "correct_index": 1,
+    "explanation": "F1: 'CDA Dokumente' bezieht sich auf Dokumente im Clinical Document Architecture-Format, einem Standard für den Austausch strukturierter medizinischer Dokumente zwischen Systemen. (F1)"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "question": "Was ist der erste Schritt im Patientenpfad von Frau Muster nach der Zuweisung vom Hausarzt?",
+    "options": [
+      "Direkte OP-Anmeldung",
+      "Falleröffnung und Terminplanung inkl. Ultraschall",
+      "Notfall-Einlieferung",
+      "Chirurgische Sprechstunde"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Der erste Schritt im Patientenpfad ist die Falleröffnung (FID_02) und Planung der Sprechstunde inkl. Ultraschall und Aufgebot der Patientin. Dies erfolgt über das ERP und KIS. (F5)"
+  },
+  {
+    "question": "Was bedeutet ein ESI-Score von 2 im Triage-System?",
+    "options": [
+      "Nicht dringend, kann warten",
+      "Hochgradig dringend, benötigt sofortige Behandlung",
+      "Mittelgradig dringend, sollte innerhalb von 10 Minuten behandelt werden",
+      "Leicht dringend, kann bis zu 60 Minuten warten"
+    ],
+    "correct_index": 2,
+    "explanation": "F11: Der Emergency Severity Index (ESI) ist ein Triage-System mit Scores von 1 bis 5. Ein Score von 2 bedeutet mittelgradig dringend — der Patient sollte innerhalb von 10 Minuten behandelt werden. (F11)"
+  },
+  {
+    "question": "Welche Laborwerte sind im Laborbericht für Frau Muster relevant?",
+    "options": [
+      "Nur Blutdruck und Puls",
+      "Troponin, CK, Kreatinin, GFR, CRP, ALAT, ASAT",
+      "Nur Diabeteswerte",
+      "Nur Allergien"
+    ],
+    "correct_index": 1,
+    "explanation": "F12: Im Laborbericht sind Troponin (Herzinfarkt), CK (Muskelzerstörung), Kreatinin und GFR (Nierenfunktion), CRP (Entzündung), ALAT und ASAT (Leberwerte) relevant. (F12)"
+  },
+  {
+    "question": "Was ist die Hauptaufgabe der Intensivmedizin?",
+    "options": [
+      "Langzeitpflege von chronisch Kranken",
+      "Diagnose und Behandlung lebensbedrohlicher Organdysfunktionen mit potentiell guter Prognose",
+      "Ambulante Versorgung",
+      "Verwaltung von Patientendaten"
+    ],
+    "correct_index": 1,
+    "explanation": "F23: Die Intensivmedizin umfasst die Diagnose und Behandlung aller Formen der lebensbedrohlichen Organdysfunktionen und -versagen mit potentiell guter Prognose. (F23)"
+  },
+  {
+    "question": "Was ist eine zentrale Funktion eines PDMS?",
+    "options": [
+      "Verwaltung von Finanzen",
+      "Dokumentation der Aufnahme, Verlegung und Entlassung von Patienten",
+      "Planung von OP-Sälen",
+      "Verwaltung von Laborproben"
+    ],
+    "correct_index": 1,
+    "explanation": "F26: Eine zentrale Funktion eines PDMS ist die Dokumentation der Aufnahme, Verlegung und Entlassung von Patienten sowie die fortlaufende Dokumentation ärztlicher und pflegerischer Massnahmen. (F26)"
+  },
+  {
+    "question": "Was ist ein Vorteil des PDMS?",
+    "options": [
+      "Keine Integration mit anderen Systemen",
+      "Automatische Berechnung von Scores und Übernahme von Vitaldaten aus Geräten",
+      "Nur manuelle Dokumentation",
+      "Keine Alarmierungsfunktion"
+    ],
+    "correct_index": 1,
+    "explanation": "F26: Ein Vorteil des PDMS ist die Entscheidungsunterstützung durch automatische Berechnung von Scores und die Übernahme von Messwerten aus angebundenen Geräten (z. B. Vitaldatenmonitor, Beatmungsgeräte). (F26)"
+  },
+  {
+    "question": "Was ist die Hauptaufgabe der Onkologie?",
+    "options": [
+      "Behandlung von Herzkrankheiten",
+      "Prävention, Diagnostik, Therapie und Nachsorge von bösartigen Tumoren",
+      "Behandlung von Infektionskrankheiten",
+      "Verwaltung von Patientendaten"
+    ],
+    "correct_index": 1,
+    "explanation": "F28: Die Onkologie befasst sich mit der Erkrankung Krebs und widmet sich der Prävention, Diagnostik, Therapie und Nachsorge von bösartigen Tumoren. (F28)"
+  },
+  {
+    "question": "Welche drei Säulen umfasst die onkologische Therapie?",
+    "options": [
+      "OP, Chemotherapie, Radio-Onkologie",
+      "OP, Physiotherapie, Ernährung",
+      "Chemotherapie, Radio-Onkologie, Psychologie",
+      "OP, Labor, Radiologie"
+    ],
+    "correct_index": 0,
+    "explanation": "F28: Die onkologische Therapie umfasst drei Säulen: OP (Tumorentfernung), Chemotherapie (Zytostatika in die Blutbahn) und Radio-Onkologie (Strahlentherapie auf Tumorgewebe). (F28)"
+  },
+  {
+    "question": "Wie beginnt der typische Patientenpfad nach Zuweisung vom Hausarzt?",
+    "options": [
+      "Direkte Notfall-OP",
+      "Falleröffnung und Terminplanung inkl. diagnostischer Untersuchung",
+      "Chirurgische Sprechstunde ohne vorherige Untersuchung",
+      "Automatische Abrechnung"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Der Patientenpfad beginnt mit der Falleröffnung (z.B. FID_02) und der Planung der Sprechstunde inkl. diagnostischer Untersuchung (z. B. Ultraschall) sowie dem Aufgebot der Patientin. Dies erfolgt über ERP und KIS. (F5)"
+  },
+  {
+    "question": "Welche fünf Phasen umfasst der postoperative Patientenpfad von Frau Muster?",
+    "options": [
+      "OP, Aufwachraum, IPS, Bettenstation, Austritt",
+      "OP, Notfall, Chirurgie, Onkologie, Austritt",
+      "OP, Labor, Radiologie, Pathologie, Austritt",
+      "OP, Verlegung, Austritt, Nachsorge, Studie"
+    ],
+    "correct_index": 0,
+    "explanation": "F23: Der postoperative Patientenpfad umfasst fünf Phasen: 1) OP, 2) Aufwachraum (Überwachung), 3) IPS (Intensivmedizin, Stabilisierung), 4) Bettenstation (Verlegung, Visite, Medikationsanpassung), 5) Austritt (Austrittsplanung, Bericht, Terminplanung). (F23)"
+  },
+  {
+    "question": "Welche sechs Schritte umfasst der ambulante Patientenpfad von Frau Muster bis zum Entscheid zur Operation?",
+    "options": [
+      "Zuweisung, Falleröffnung, Ultraschall, chirurgische Sprechstunde, OP-Anmeldung, Notfall",
+      "Zuweisung, Falleröffnung, Ultraschall, chirurgische Sprechstunde, OP-Anmeldung, Entscheid zur Operation",
+      "Zuweisung, Labor, Radiologie, OP, Austritt, Nachsorge",
+      "Zuweisung, Notfall, OP, IPS, Bettenstation, Austritt"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Der ambulante Patientenpfad umfasst sechs Schritte: 1) Zuweisungsschreiben vom Hausarzt, 2) Falleröffnung und Terminplanung, 3) Ambulanter Ultraschall, 4) Chirurgische Sprechstunde, 5) OP-Anmeldung, 6) Entscheid zur Operation (in 4 Wochen). (F5)"
+  }
+]

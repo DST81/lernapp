@@ -1,0 +1,288 @@
+[
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind im ersten Schritt (Zuweisungsschreiben) des Patientenpfads relevant?",
+    "options": [
+      "ERP und manuelle Buchung",
+      "KIS mit automatischer Erfassung und strukturierter Datenextraktion",
+      "MUA und manuelle Eingabe",
+      "SAP und keine KI"
+    ],
+    "correct_index": 1,
+    "explanation": "P1: Das Zuweisungsschreiben vom Hausarzt wird per Mail oder HIN Gateway an das KSGR übermittelt und im KIS manuell oder automatisch erfasst. Relevante Daten: Name, Geb.datum, SV-Nr., Adresse, Verdachtsdiagnose. KI kann strukturierte Daten extrahieren, automatisch im KIS erfassen und bereits beim Hausarzt ein automatisch generiertes Zuweisungsschreiben ermöglichen. (P1)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei Falleröffnung und Terminplanung (Punkt 2) relevant?",
+    "options": [
+      "PDMS und manuelle Ressourcenbuchung",
+      "ERP, KIS und KI-gestützte Terminplanung mit Ressourcenabgleich",
+      "MUA und keine Automatisierung",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P2: Bei Falleröffnung (FID_02) und Terminplanung werden ERP und KIS genutzt. Relevante Daten: PID, Name, Geb.datum, SV-Nr., KKasse, Adresse, Fall (FID_02), Termin/Datum, Ressourcen (behandelnder Arzt, Sprechstundenzimmer, Ultraschallgerät), Aufgebotsschreiben. KI ermöglicht automatische Falleröffnung, KI-gestützte Terminplanung, automatischen Abgleich von Ressourcen (Arzt, Behandlungszimmer, Geräte) und automatisches Aufgebot mit Terminwahl-Optionen für Patienten. (P2)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind beim ambulanten Ultraschall (Punkt 3) relevant?",
+    "options": [
+      "KIS und manuelle Befundung",
+      "Fachspezialistensystem Gastroenterologie mit KI-gestützter Bildanalyse",
+      "PDMS und keine Dokumentation",
+      "MUA und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P3: Die Dokumentation des Ultraschallbefundes erfolgt im Fachspezialistensystem Gastroenterologie, das mit MUA und KIS über Schnittstellen verbunden ist. Relevante Daten: PID, FID, Ultraschallbilder, Befund/Diagnose, Befundschreiben. KI kann das Patientengespräch aufzeichnen und automatisch strukturiert dokumentieren (z. B. Nuance DAX), die Ultraschallbilder gleichzeitig vom Arzt und KI-gestützt analysieren und automatisch Befunde erstellen. (P3)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der chirurgischen Sprechstunde (Punkt 4) relevant?",
+    "options": [
+      "PDMS und manuelle Leistungserfassung",
+      "MUA, KIS und KI-gestützte automatische Leistungserfassung und Abrechnung",
+      "ERP und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P4: Die Dokumentation der chirurgischen Sprechstunde erfolgt im KIS, das mit MUA und Schnittstellensystem verbunden ist. Relevante Daten: PID, FID, Patientenhistorie (Bilder, Befunde, Diagnosen, OP-Berichte, Verordnungen), Befund/Diagnose (Diagnosecodes), Anamnese, Leistungen (Leistungen und Menge bzw. Zeitdauer), Rechnungsdaten (Rechnungsempfänger, Leistungsdetails, Betrag, Datum etc.). KI ermöglicht automatisch generierte Patienten-Summary mit allen relevanten Informationen, automatische Leistungserfassung und Abrechnung basierend auf strukturierten Daten. (P4)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind beim Entscheid zur elektiven Cholezystektomie (Punkt 5) relevant?",
+    "options": [
+      "PDMS und manuelle OP-Anmeldung",
+      "Planungssystem/KIS mit KI-gestützter OP-Planung und Ressourcenabgleich",
+      "MUA und keine Automatisierung",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P5: Die Operationsanmeldung und Vorverordnung erfolgen im Planungssystem (oder KIS), das mit KIS und Schnittstellensystem verbunden ist. Relevante Daten: PID, FID (alte FID_02), Termin/Datum, Ressourcen (OP Saal, OP Team, Bett/Station, Geräte, Sterilisation), Vorverordnung (Dokumentation). KI ermöglicht KI-gestützte OP-Planung inkl. Anästhesie-Anmeldung, automatischen Abgleich und Buchung der Ressourcen (OP Saal, OP Team etc.) und automatisches Aufgebot des Patienten. (P5)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei akuten Schmerzen und Rettungsdienstalarm (Punkt 6) relevant?",
+    "options": [
+      "ERP und keine KI",
+      "Rettungsdienst-System mit KI-gestütztem Clinical Decision Support",
+      "MUA und manuelle Erfassung",
+      "SAP und keine Automatisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "P6: Bei akuten Schmerzen alarmiert die Patientin den Rettungsdienst. Der Rettungsdienst meldet sich auf dem Notfall des KSGR und übermittelt EKG, BD, Puls, Medikamente, Verdachtsdiagnose, Patientenverfügung, Allergien, Score und Triage. Systeme: Rettungsdienst – elektronisches Einsatzprotokoll (per Tablet), Mail/PDF/4 oder 5G Netz, Schnittstellensystem, KIS/MUA. KI-gestützte medizinische Diagnose-Systeme („Clinical Decision Support“) berechnen Wahrscheinlichkeiten für Diagnosen anhand Laborwerten und Symptomen. (P6)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Voraufnahme im KIS (Punkt 7) relevant?",
+    "options": [
+      "PDMS und manuelle Erfassung",
+      "KIS (Stationsmanager) mit provisorischer Fall-ID und KI-gestützter Zusammenführung",
+      "MUA und keine Automatisierung",
+      "SAP und manuelle Buchung"
+    ],
+    "correct_index": 1,
+    "explanation": "P7: Nach Anmeldung durch die Ambulanz wird eine Voraufnahme im KIS gemacht (ohne Admin. Fall). Der Stationsmanager kann die Patientin ohne Namen aufnehmen. Relevante Daten: Kurzaufnahme – Fall (provisorisch), prov. Fall ID, Verdachtsdiagnose. KI ermöglicht provisorische Falleröffnung, die entfällt, wenn vollständige strukturierte Daten im Voraus übermittelt werden. (P7)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Fallöffnung und Zusammenführung mit MRSA-Hinweis (Punkt 8) relevant?",
+    "options": [
+      "ERP und manuelle Erfassung",
+      "ERP, KIS, MUA mit automatischer Zusammenführung und MRSA-Hinweis",
+      "MUA und keine KI",
+      "SAP und manuelle Buchung"
+    ],
+    "correct_index": 1,
+    "explanation": "P8: Nach Eintreffen der Patientin wird der Notfall-Fall FID_04 eröffnet und mit den Patientendaten zusammengeführt. Relevante Daten: Patientendaten, FID_04 (Zusammenführung aus provisorischem Fall), Fallübergreifende Informationen (Allergien, Medikationen, Befunde, MRSA positiv). Systeme: ERP, KIS, MUA, Schnittstellen. KI ermöglicht automatische Zusammenführung der Fälle. (P8)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Konsultation der Vorgeschichte (Punkt 9) relevant?",
+    "options": [
+      "PDMS und manuelle Einsicht",
+      "KIS, MUA, Stationsmanager mit automatischer Patienten-Summary und KI-gestützter Ressourcenplanung",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P9: Der verantwortliche Arzt konsultiert die Vorgeschichte (Pneumonie 2016, geplante Cholezystektomie). Relevante Daten: FID_01, FID_02, FID_04, Befund und Verordnungen FID_01 (Pneumonie), Infektion MRSA 04/2016, Diagnosen (Diabetes Mellitus Typ 2, Status nach Nierenkarzinom, MRSA positiv, Arterielle Hypertonie, Adipositas, PAVK, Ulcus Cruris, Chronische Niereninsuffizienz, Allergien), Medikamentenliste, Anamnesedaten, Kojen belegt / frei, Patient (Name, Geb.datum) / Koje, Ärzte / Pflegende / Koje, Geräte / Koje. Systeme: KIS, MUA, Stationsmanager, Schnittstellen. KI ermöglicht automatisch generierte Patienten-Summary, automatische Übernahme der Medikation und relevanter Informationen vom Rettungsdienst und KI-gestützte Ressourcenplanung auf der Notfallstation. (P9)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Triage und Anamneseerfassung (Punkt 10) relevant?",
+    "options": [
+      "ERP und manuelle Triage",
+      "Triage Tool oder KIS auf Tablet mit automatischer Kalkulation von Triage Scores",
+      "MUA und keine Automatisierung",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P10: Triage Nurse nimmt Triage mittels iOS Tablet gemäss Emergency Severity Index ESI vor. Relevante Daten: PID, FID, Triage Score (hier Score 2), Anamnese. Systeme: Triage Tool oder KIS auf Tablet, KIS, MUA, Schnittstellen. KI ermöglicht automatische Kalkulation von Triage Scores (ESI, GCS) und KI-gestützte Triage anhand der klinischen Daten sowie automatische Übernahme der Scores in die bestehenden Systeme. (P10)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Erstuntersuchung und Überwachung (Punkt 11) relevant?",
+    "options": [
+      "PDMS und manuelle Dokumentation",
+      "EKG / PDMS, KIS, Stationsmanager mit KI-gestützter Überwachung und Medikamentenverordnung",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P11: Frau Muster wird monitorisiert, EKG und Vitalwerte werden zeitsynchron ins KIS übertragen. Relevante Daten: PID, FID, EKG Verlauf, Vitalwerte (Puls, BD, O2), Untersuchungsdokumentation, Status, Patientenverfügung ja/nein, Laboranmeldung / -auftrag, Medikamentenverordnung, Infusion, Parenterale Medikation, Insulin, Enterale Medikation, Reservemedikation, Radiologieanmeldung /-auftrag (CT Thorax und Abdomen), Order Status. Systeme: EKG / PDMS, KIS, Stationsmanager (KIS), Schnittstellen, Triage- und Anamnesetool (oder KIS), MUA. KI überwacht EKG und Vitalparameter kontinuierlich, zeigt mögliche Diagnosen / Pathologien mit Wahrscheinlichkeiten an, unterstützt Medikamentenverordnung und schlägt relevante weitere Untersuchungen (Labor, CT) vor, um Doppeluntersuchungen zu verhindern. (P11)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Besprechung der Befunde (Punkt 12) relevant?",
+    "options": [
+      "ERP und manuelle Analyse",
+      "Stationsmanager / KIS, PACS mit KI-gestützter CT-Analyse und automatischer Berichterstellung",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P12: Das ärztliche Behandlungsteam bespricht Vitalwerte, EKG, Laborwerte, Radiologie Bilder und Befund. Relevante Daten: PID, FID, Laborbericht mit sämtlichen Laborwerten, Radiologiebefund / Bericht, Diagnosen (Codes), Diagnosedokumentation, Diagnoseliste. Systeme: Stationsmanager / KIS, Evtl. EPD, LIS, Schnittstelle, MUA, PACS. KI ermöglicht KI-gestützte Analyse der Radiologie-Bilder (CT), automatische CT-Berichterstellung durch KI, automatische Erstellung von ICD10-Codes und automatische Erweiterung der Diagnoseliste. (P12)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind beim Wechsel des Behandlungsteams (Punkt 13) relevant?",
+    "options": [
+      "PDMS und manuelle Übergabe",
+      "Stationsmanager / KIS mit KI-gestützter Übergabe und automatischer Dokumentation",
+      "MUA und keine Automatisierung",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P13: Die Patientin wird vom chirurgischen Team betreut. Auf dem Stationsmanager wechselt die Zuständigkeit von Medizin (blau) zu Chirurgie (rot). Relevante Daten: PID, FID_04 --> FID_03, Fallführende Organisationseinheit (Wechsel), Ärztliche Dokumentation, Eintrittsbericht Chirurgie. Systeme: Stationsmanager / KIS, ERP, Schnittstellensystem. KI ermöglicht KI Patient Summary als Grundlage für die Übergabe, KI-gestützte Fallnummer und Wechsel der Organisationseinheit sowie automatische Dokumentation und Berichterstellung. (P13)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Notfall-Operation (Punkt 14) relevant?",
+    "options": [
+      "ERP und manuelle Planung",
+      "Planungssystem / KIS mit KI-gestützter Ressourcenplanung und KI-Chatbot",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P14: Entscheid zur Notfall-Operation. Relevante Daten: PID, FID_03, Datum, Ressourcen (Operateur, Pflege, OP-Saal, Geräte), Patientenaufklärung, Bett / Anzahl / Station / Verfügbarkeit, OP-Anmeldung. Systeme: Planungssystem (oder KIS), PDMS, KIS, Bettendispositionssystem. KI ermöglicht KI-gestützte Ressourcenplanung (OP-Saal, Anästhesie, OP-Team, Bettenplatz etc.), Bereitstellung aller notwendigen Dokumente inkl. Patientenaufklärung und KI-Chatbot für Patientenfragen nach dem Aufklärungsgespräch. (P14)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Notfall-laparoskopischen Cholezystektomie (Punkt 15) relevant?",
+    "options": [
+      "ERP und manuelle Dokumentation",
+      "Endoskopie System, MUA mit KI-gestützter OP und automatischer Befunderstellung",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P15: Intraoperative Video- und Fotodokumentation des Gallenblasenbefundes und Entnahme einer Biopsie am Colon. Relevante Daten: PID, FID_03, Videosequenzen aus Laperoskopiekamera mit Sequenzidentifikation, Pathologieauftrag (mit Histologischer Befundanfrage). Systeme: Endoskopie System, Videoaufzeichnungssystem, MUA (Medizinisches Universalarchiv), KIS (Order), Pathologiesystem (Order und Befundung), Schnittstellensystem. KI ermöglicht KI-gestützte OP mit Hinweisen auf mögliche Anomalien auf den Kamerabildern (Live oder postoperativ) und automatische Befunderstellung der Biopsie nach digitaler Scannung (Slide-Scanner). (P15)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei intraoperativer Komplikation (Punkt 16) relevant?",
+    "options": [
+      "ERP und manuelle Dokumentation",
+      "KIS, PDMS, Planungssystem mit KI-gestützter Dokumentation und Re-Scheduling",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P16: Intraoperative Komplikation (Blutung) verlängert den Eingriff um 30 Minuten. Relevante Daten: PID, FID_03, OP Dokumentation, AQC Register, Datum / Zeiten, Ressourcen, Anästhesieprotokoll mit Vitaldaten, verabreichten Narkotika / Anästhetika, Stundenerfassung und Verbrauch in Mengeneinheiten. Systeme: KIS (Dokumentation und AQC Register), Planungssystem, PDMS, Schnittstellensystem. KI überwacht die OP automatisch und dokumentiert fortlaufend (Anästhesiologisch, OP-Pflege, Leistungserfassung, Verbrauchte Materialien), ermöglicht KI-gestütztes Re-Scheduling der OP-Planung bei Verzögerung inkl. automatischer Kommunikation an alle beteiligten Abteilungen. (P16)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Verlegung in den Aufwachraum (Punkt 17) relevant?",
+    "options": [
+      "ERP und manuelle Dokumentation",
+      "KIS, PDMS, Spracherkennungssystem mit KI-gestützter Dokumentation und Verordnungen",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P17: Um 12:45 wird Frau Muster in den Aufwachraum verlegt. Relevante Daten: PID, FID_03, OP-Dokumentation, Diagnoseliste – erweitert um OP Diagnose (ICD 10 und OPS 2022), OP Bericht (per Sprachdatei), Post OP Verordnungen (Medikamente, Beatmungsparameter, Fadenentfernung, Labor, Physiotherapie ab dem 3. Post-OP-Tag). Systeme: KIS, PDMS, Spracherkennungssystem oder digitales Diktiersystem, Schnittstellensystem. KI ermöglicht KI-gestützte OP Dokumentation und Berichterstellung, automatische Anpassung der Diagnoseliste und Leistungserfassung inkl. ICD10 Codes und KI-gestützte Verordnungen (Medikamente, Beatmungsparameter, Fadenentfernung, Labor, Physiotherapie). (P17)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Überwachung im Aufwachraum (Punkt 18) relevant?",
+    "options": [
+      "PDMS und manuelle Dokumentation",
+      "PDMS, Monitoringsysteme mit KI-gestützter Überwachung und automatischer Dokumentation",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P18: Frau Muster wird im Aufwachraum überwacht, Post-OP-Verordnungen werden ausgeführt. Relevante Daten: Vitalwerte, Post-OP-Verordnung, Patientendokumentation. Systeme: PDMS, Monitoringsysteme, Schnittstellensystem, MUA, KIS. KI überwacht Vitalparameter kontinuierlich und dokumentiert automatisch die durchgeführten Post-Op Verordnungen. (P18)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Überwachung auf der IPS (Punkt 19) relevant?",
+    "options": [
+      "ERP und manuelle Dokumentation",
+      "KIS, PDMS, LIS, Pathologisches Fachsystem mit KI-gestützter Überwachung und prädiktiven Analysen",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P19: Überwachung auf der IPS. Relevante Daten: Stammdaten (PID, FID, etc.), Medikamentenverordnungen, Dokumentation parenterale Ernährung, Zugänge, Laboraufträge, Pathologiebefund, Leistungen (LEP, SAPS). Systeme: KIS (via HL7), PDMS, LIS, Pathologisches Fachsystem. KI ermöglicht KI-gestützte Überwachung mit prädiktiven Analysen zur Vorhersage von Sepsis oder anderen Komplikationen, intelligente Alarme zur Reduzierung der Alarmmüdigkeit und automatisierte Dokumentationsvorschläge basierend auf Vitalparametern und Verordnungen. (P19)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Verlegung auf die Bettenstation (Punkt 20) relevant?",
+    "options": [
+      "ERP und manuelle Übergabe",
+      "PDMS, KIS mit automatisierter Verlegungsberichterstellung und KI-gestützter Medikationsüberprüfung",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P20: Frau Muster wird stabilisiert und auf die Bettenstation verlegt. Relevante Daten: Verlegungsbericht, Übernommene Patientendaten, Übernommene und verifizierte Verordnungen. Systeme: PDMS, KIS. KI ermöglicht automatisierte Erstellung des Verlegungsberichts durch Zusammenführung relevanter Daten aus PDMS und KIS, KI-gestützte Überprüfung der Medikation bei Verlegung (z. B. Umstellung von i.v. auf p.o.) mit Dosisvorschlägen und Risikostratifizierung für Post-IPS-Komplikationen. (P20)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Behandlung auf der Pflegestation (Punkt 21) relevant?",
+    "options": [
+      "ERP und manuelle Visite",
+      "KIS, Tumordokumentationssystem mit Clinical Decision Support und NLP zur To-Do-Liste",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P21: Frau Muster wird sechs Tage auf der Pflegestation behandelt. Relevante Daten: Laborwerte, Medikationsplan, Verlaufseinträge, Diagnoseliste, Konsilanforderungen, Transportaufträge, Tumorboardbericht. Systeme: KIS, Tumordokumentationssystem (Onkologiefachsystem), Dispositionssystem. KI ermöglicht Clinical Decision Support (Warnungen bei sich verschlechternden Laborwerten, z. B. eGFR, und Medikationsanpassungen), NLP zur Analyse von Verlaufsnotizen zur automatischen Erstellung von To-Do-Listen und KI-gestützte Optimierung der Austrittsplanung. (P21)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Austrittsvorbereitung (Punkt 22) relevant?",
+    "options": [
+      "ERP und manuelle Dokumentation",
+      "KIS, eArchiv, ERP mit automatisierter Austrittsberichterstellung und KI-gestützter Terminplanung",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P22: Frau Muster kann das Spital verlassen. Relevante Daten: Pflege- und Arztbericht, Medikamentenrezept, Medikamentenpass, BfS-Datensatz, Terminbestätigung. Systeme: KIS, eArchiv (Synedra AIM), ERP, Tumordokumentationssystem. KI ermöglicht automatisierte Erstellung des Austrittsberichts durch Zusammenfassung aller relevanten Informationen aus dem KIS-Aufenthalt, NLP zur Sicherstellung der Konsistenz und Vollständigkeit der Berichte und KI-gestützte Terminplanung, die Verfügbarkeiten und Ressourcen optimal nutzt. (P22)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Port-a-Cath-Implantation und Studienteilnahme (Punkt 23) relevant?",
+    "options": [
+      "ERP und manuelle Planung",
+      "Tumordokumentationssystem, KIS mit KI-gestützter Patientenselektion und Datenexport für Studien",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P23: Geplanter Termin in der Onkologie für Port-a-Cath-Implantation und Teilnahme an klinischer Studie. Relevante Daten: Aufklärungstext, Einverständniserklärung, Strukturierter Datensatz für Studie, Laborwerte, Chargennummern. Systeme: Tumordokumentationssystem, KIS, Externe Studien-Systeme (z. B. secuTrial, Redcap), Krebsregister. KI ermöglicht KI-gestützte Patientenselektion für klinische Studien basierend auf Diagnosen und Patientenhistorie, automatisierte Datenextraktion und -transformation für den Export in Studien-Systeme (ECRF) und intelligente Chatbots zur Beantwortung von Patientenfragen zur Studie. (P23)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Chemotherapieplanung (Punkt 24) relevant?",
+    "options": [
+      "ERP und manuelle Dosisberechnung",
+      "Tumordokumentationssystem, KIS mit KI-gestützter Dosisberechnung und prädiktiven Modellen",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P24: Die Chemotherapie wird geplant und die Herstellung in Auftrag gegeben. Relevante Daten: Planungsdaten (Ressourcen), Chemotherapie-Schema, Verordnungszyklus, Berechnete Dosis, Herstellungs- und Lieferstatus. Systeme: Tumordokumentationssystem, KIS, Fachsystem der Spitalpharmazie (Cato). KI ermöglicht KI-gestützte Dosisberechnung, die individuelle Patientendaten (Genomik, Nierenfunktion etc.) berücksichtigt, um Wirksamkeit zu maximieren und Toxizität zu minimieren, prädiktive Modelle zur Vorhersage des Ansprechens und automatisierte Planung und Ressourcen-Allokation. (P24)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Chemotherapieverabreichung (Punkt 25) relevant?",
+    "options": [
+      "ERP und manuelle Dokumentation",
+      "Tumordokumentationssystem / KIS mit Echtzeit-Überwachung und automatisierter Dokumentation",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P25: Frau Muster wird die Chemotherapie verabreicht. Relevante Daten: Verabreichungsprotokoll. Systeme: Tumordokumentationssystem / KIS. KI ermöglicht Echtzeit-Überwachung von Vitaldaten während der Infusion mit frühzeitiger Erkennung von Nebenwirkungen und automatisierte Dokumentation der Verabreichung durch Anbindung an intelligente Infusionspumpen. (P25)"
+  },
+  {
+    "question": "Welche Systeme, Daten und KI-Funktionen sind bei der Nachsorge und Längsschnittdatenanalyse (Punkt 26) relevant?",
+    "options": [
+      "ERP und manuelle Erfassung",
+      "Tumordokumentationssystem / KIS mit KI-Analyse von Längsschnittdaten und automatisiertem Datenexport",
+      "MUA und keine KI",
+      "SAP und manuelle Erfassung"
+    ],
+    "correct_index": 1,
+    "explanation": "P26: Folgetermin zwei Wochen später: Port-a-Cath entfernen und Blutentnahme. Relevante Daten: Labordaten, Daten zur Dosisdichte im Zeitverlauf. Systeme: Tumordokumentationssystem / KIS, ECRF-System. KI ermöglicht KI-Analyse von Längsschnittdaten (Labor, Patient-Reported Outcomes) zur Überwachung des Therapieerfolgs und frühzeitigen Erkennung von Rezidiven sowie automatisierte Übertragung und Strukturierung von Daten für Forschungszwecke. (P26)"
+  }
+]

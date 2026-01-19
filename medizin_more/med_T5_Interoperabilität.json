@@ -1,0 +1,200 @@
+[
+  {
+    "question": "Was ist der Hauptzweck der medizinischen Dokumentation?",
+    "options": [
+      "Abrechnung von Leistungen",
+      "Kommunikation und Kontinuität der Behandlung",
+      "Erstellung von Statistiken",
+      "Marketing der Klinik"
+    ],
+    "correct_index": 1,
+    "explanation": "F4: Die medizinische Dokumentation dient der Darstellung des Krankheitsverlaufs, der Kontinuität und Qualität der Behandlung, der Kommunikation, der Patientensicherheit, legalen Zwecken, Nachweis der Leistungserbringung und wissenschaftlichen Zwecken. (F4)"
+  },
+  {
+    "question": "Welche Herausforderung macht die Interoperabilität im Gesundheitswesen besonders schwierig?",
+    "options": [
+      "Zu wenige Systeme",
+      "Hohe Heterogenität der Systemlandschaft",
+      "Einheitliche Datenstrukturen",
+      "Fehlende rechtliche Vorgaben"
+    ],
+    "correct_index": 1,
+    "explanation": "F5: Im Spital fallen Daten in zahlreichen unterschiedlichen Systemen an, was zu hoher Heterogenität der Systemlandschaft, Datenbanken, Datenstrukturen und Syntaxen führt. (F5)"
+  },
+  {
+    "question": "Was beschreibt Interoperabilität im medizinischen Kontext?",
+    "options": [
+      "Die Fähigkeit von Systemen, unabhängig voneinander zu arbeiten",
+      "Die Fähigkeit heterogener Systeme, nahtlos zusammenzuwirken und Daten effizient auszutauschen",
+      "Die Verwendung einheitlicher Hardware",
+      "Die Reduktion der Anzahl an Applikationen"
+    ],
+    "correct_index": 1,
+    "explanation": "F6: Interoperabilität ist die Fähigkeit unabhängiger, heterogener Systeme, nahtlos zusammenzuwirken, um Daten auf effiziente und verwertbare Art und Weise auszutauschen, ohne besondere Adaptierungen. (F6)"
+  },
+  {
+    "question": "Was ist eine Schnittstelle im medizinischen IT-Kontext?",
+    "options": [
+      "Ein physischer Anschluss an ein Gerät",
+      "Die Verbindungsstelle zwischen zwei Systemen zum Austausch von Daten oder Steuerinformationen",
+      "Ein Benutzerinterface",
+      "Ein Datenbankserver"
+    ],
+    "correct_index": 1,
+    "explanation": "F8: Eine Schnittstelle ist die Verbindungsstelle zwischen zwei miteinander in Beziehung stehenden Systemen, über die der Austausch von Daten oder Steuerinformationen erfolgt. (F8)"
+  },
+  {
+    "question": "Welche Schnittstellenart ist typisch für die Kommunikation zwischen KIS und Laborinformationssystem?",
+    "options": [
+      "Synchron und unidirektional",
+      "Asynchron und bidirektional",
+      "Synchron und bidirektional",
+      "Asynchron und unidirektional"
+    ],
+    "correct_index": 1,
+    "explanation": "F9: Asynchrone Schnittstellen werden verwendet, wenn eine direkte Antwort nicht sofort erforderlich ist, z. B. bei der Übermittlung von Laboraufträgen und -befunden. Bidirektional, da Daten in beide Richtungen fließen. (F9)"
+  },
+  {
+    "question": "Welcher Standard wird für den Austausch von Bilddaten verwendet?",
+    "options": [
+      "HL7 v2",
+      "FHIR",
+      "DICOM",
+      "CDA"
+    ],
+    "correct_index": 2,
+    "explanation": "F14: DICOM (Digital Imaging and Communications in Medicine) ist das internationale Standardformat zum Anzeigen, Speichern und Teilen medizinischer Bilder. (F14)"
+  },
+  {
+    "question": "Welcher Standard verwendet XML und ist auf mobile Anwendungen ausgelegt?",
+    "options": [
+      "HL7 v2",
+      "HL7 v3",
+      "FHIR",
+      "IHE XDS"
+    ],
+    "correct_index": 2,
+    "explanation": "F13: FHIR (Fast Healthcare Interoperability Resources) ist für mobile Anwendungen und Cloud-Lösungen entwickelt, nutzt eine RESTful-API und gibt Daten in XML oder JSON zurück. (F13)"
+  },
+  {
+    "question": "Welche Standards gehören zu den medizinischen Klassifikationssystemen?",
+    "options": [
+      "SNOMED CT, LOINC",
+      "ICD, TNM, OPS",
+      "DICOM, CDA",
+      "HL7 v2, FHIR"
+    ],
+    "correct_index": 1,
+    "explanation": "F12: Medizinische Klassifikationssysteme sind ICD (International Classification of Diseases), TNM, ICPM/OPS, SWISS DRG und ATC. SNOMED CT und LOINC sind Nomenklaturen. (F12)"
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen HL7 v2 und HL7 v3?",
+    "options": [
+      "HL7 v2 verwendet XML, HL7 v3 Flatfiles",
+      "HL7 v2 basiert auf Flatfiles, HL7 v3 auf XML und CDA",
+      "HL7 v2 ist für mobile Geräte, HL7 v3 für Server",
+      "HL7 v2 ist veraltet, HL7 v3 ist neu"
+    ],
+    "correct_index": 1,
+    "explanation": "F13: HL7 v2 basiert auf Flatfiles (ASCII-Text mit Komma-Trennung), während HL7 v3 auf XML und der Clinical Document Architecture (CDA) basiert. (F13)"
+  },
+  {
+    "question": "Was ist das RIM in HL7 v3?",
+    "options": [
+      "Ein Dateiformat",
+      "Ein Referenz-Informationsmodell mit Basisklassen",
+      "Ein Kommunikationsprotokoll",
+      "Ein Datenbankmodell"
+    ],
+    "correct_index": 1,
+    "explanation": "F21: Das RIM (Reference Information Model) ist ein objekt-orientiertes Modell, das aus vier Basisklassen und abgeleiteten Klassen besteht und weltweit als Standard für Gesundheitsinformationen anerkannt ist. (F21)"
+  },
+  {
+    "question": "Was ist CDA?",
+    "options": [
+      "Ein Bildformat",
+      "Eine Art von Schnittstelle",
+      "Eine Dokumentenarchitektur für strukturierte medizinische Dokumente",
+      "Ein Klassifikationssystem"
+    ],
+    "correct_index": 2,
+    "explanation": "F14, F23: CDA (Clinical Document Architecture) ist eine Dokumentenarchitektur, die von HL7 v3 verwendet wird, um medizinische Dokumente mit strukturiertem Header und Body zu erstellen. (F14, F23)"
+  },
+  {
+    "question": "Was beschreibt der Paradigmenwechsel im Gesundheitswesen?",
+    "options": [
+      "Mehr Papierdokumente",
+      "Cloud statt Server, App statt Software, Offene API statt Datengrab",
+      "Mehr manuelle Eingaben",
+      "Weniger digitale Geräte"
+    ],
+    "correct_index": 1,
+    "explanation": "F27: Der Paradigmenwechsel umfasst den Wechsel von Offline zu Online, Desktop zu Tablet, Software zu App, Krankenakte zu Gesundheitsakte, Server zu Cloud und geschlossenen Systemen zu offenen APIs. (F27)"
+  },
+  {
+    "question": "Was ist das Grundelement von FHIR?",
+    "options": [
+      "Nachrichten",
+      "Segmente",
+      "Ressourcen",
+      "Profile"
+    ],
+    "correct_index": 2,
+    "explanation": "F30: Bei FHIR sind Ressourcen (z. B. Patient, Diagnose, Befund) die Grundelemente, die über URLs identifiziert und wiederverwendet werden können. (F30)"
+  },
+  {
+    "question": "Wie wird auf FHIR-Ressourcen zugegriffen?",
+    "options": [
+      "Über Dateipfade",
+      "Über SQL-Abfragen",
+      "Über RESTful-APIs und URLs",
+      "Über E-Mails"
+    ],
+    "correct_index": 2,
+    "explanation": "F33: FHIR-Ressourcen werden über eine RESTful-Schnittstelle gelesen, z. B. über URLs wie https://fhirserverksgr.ch/fhir/Patient/1234. (F33)"
+  },
+  {
+    "question": "Welche Methode wird in FHIR nicht verwendet?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "PRINT"
+    ],
+    "correct_index": 3,
+    "explanation": "F29: FHIR verwendet standardisierte HTTP-Methoden wie GET, POST, PUT und DELETE für den Zugriff auf Ressourcen. PRINT ist keine HTTP-Methode. (F29)"
+  },
+  {
+    "question": "Was ist ein Vorteil von Mirth Connect?",
+    "options": [
+      "Es ist nur für Windows verfügbar",
+      "Es ist eine proprietäre Software",
+      "Es ist eine plattformunabhängige Open-Source-Lösung",
+      "Es kann keine Daten transformieren"
+    ],
+    "correct_index": 2,
+    "explanation": "F45: Mirth Connect ist eine zuverlässige Open-Source-Lösung, plattformunabhängig (Windows, Linux), kann unterschiedliche Datenformate überbrücken und bietet flexible Transformationsmöglichkeiten. (F45)"
+  },
+  {
+    "question": "Was ist der Zweck der Integration im Spital?",
+    "options": [
+      "Reduktion der Mitarbeiteranzahl",
+      "Vernetzung heterogener Systeme, Umwandlung von Datenformaten und sichere Übertragung",
+      "Erhöhung der Hardwarekosten",
+      "Vermeidung von Datenaustausch"
+    ],
+    "correct_index": 1,
+    "explanation": "F38: Integration im Spital dient der Vernetzung unterschiedlicher Systeme, der Umwandlung von Daten in benötigte Formate und der sicheren Übertragung zum Zielsystem, um Flexibilität bei der Einbindung neuer Applikationen zu gewährleisten. (F38)"
+  },
+  {
+    "question": "Was ist ein typischer Integrationsfall im KSGR?",
+    "options": [
+      "ADT-Schnittstellen (Aufnahme, Entlassung, Verlegung)",
+      "Verwaltung von Cafeteria-Bestellungen",
+      "Buchhaltung für Personal",
+      "Marketing-Kampagnen"
+    ],
+    "correct_index": 0,
+    "explanation": "F40: Typische Integrationsfälle im KSGR sind ADT-Schnittstellen, Laboraufträge/Befunde, Materialbewirtschaftung, Leistungen/Fakturen und HR-Schnittstellen. (F40)"
+  }
+]
