@@ -1,0 +1,245 @@
+[
+  {
+    "question": "Welche der folgenden Einrichtungen zählt nicht zu den Leistungserbringern im Schweizer Gesundheitswesen?",
+    "options": [
+      "Spitex",
+      "Krankenkassen",
+      "Psychiatrische Kliniken",
+      "Apotheken"
+    ],
+    "correct_index": 1,
+    "explanation": "Leistungserbringer sind jene, die medizinische Leistungen direkt erbringen (Spitex, Kliniken, Apotheken). Krankenkassen sind Leistungsträger, die die Finanzierung sicherstellen. Auf Folie 3 wird explizit zwischen Leistungserbringern und Leistungsträgern unterschieden."
+  },
+  {
+    "question": "Was ist die Hauptfunktion der Tarife im Schweizer Gesundheitswesen?",
+    "options": [
+      "Finanzierung von Forschungsprojekten",
+      "Grundlage der Entgeltung der Leistungserbringer",
+      "Regulierung der Arzneimittelpreise",
+      "Berechnung der Steuerbelastung"
+    ],
+    "correct_index": 1,
+    "explanation": "Auf Folie 5 wird klar definiert: Tarife sind die Basis der Entgeltung der Leistungserbringer und werden vertraglich zwischen Erbringern und Trägern vereinbart. Swiss DRG und TARMED sind Beispiele dafür."
+  },
+  {
+    "question": "Welche der folgenden Herausforderungen wird im Schweizer Gesundheitswesen nicht explizit genannt?",
+    "options": [
+      "Demografie / Fachkräftemangel",
+      "Kostendruck",
+      "Überangebot an Hausärzten",
+      "Digitalisierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 14 listet Herausforderungen auf: Demografie/Fachkräftemangel, Kostendruck und Digitalisierung. Der Mangel an Hausärzten wird sogar als kritisch dargestellt (Folie 14: bis 2035 können 50% der Praxen nicht mehr besetzt werden)."
+  },
+  {
+    "question": "Was ist charakteristisch für ein Zentrumsspital wie das Kantonsspital Graubünden?",
+    "options": [
+      "Fehlende Fachdisziplinen",
+      "Alle Fachdisziplinen und Hochspezialmedizin (HSM) ausser bestimmte Bereiche",
+      "Nur ambulante Behandlung",
+      "Keine stationäre Aufnahme"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 17 definiert Zentrumsspital als Einrichtung mit allen Fachdisziplinen und Hochspezialmedizin, ausgenommen Herzchirurgie, Transplantation, Eingriffe an Halsschlagadern/Hirngefässen und Transsexualität."
+  },
+  {
+    "question": "Welches System ist das wichtigste Primärsystem in einem Spital?",
+    "options": [
+      "PACS",
+      "LIS",
+      "KIS",
+      "PDMS"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 53 stellt klar: Das KIS (Krankenhausinformationssystem) ist das wichtigste Primärsystem, das patientenbezogene Informationen erfasst, verarbeitet und bereitstellt. Es umfasst Kernsystem, Integrationsebene und Spezialsysteme."
+  },
+  {
+    "question": "Was ist der Zweck des elektronischen Patientendossiers (EPD)?",
+    "options": [
+      "Nur für stationäre Fälle",
+      "Umfasst alle medizinischen Daten und Dokumente eines Patienten",
+      "Enthält nur Labordaten",
+      "Wird nur in der Praxis verwendet"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 56 definiert EPD als System, das alle medizinischen Daten und Dokumente eines Patienten umfasst (Arztbriefe, Anamnesen, Befunde, Therapien). Es entspricht dem EHR (Electronic Health Record) von Geburt bis Tod."
+  },
+  {
+    "question": "Welches System wird für die Verwaltung und Archivierung von Bilddaten in der Radiologie eingesetzt?",
+    "options": [
+      "LIS",
+      "PDMS",
+      "PACS",
+      "KIS"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 57 beschreibt PACS (Picture Archiving and Communication System) als System zur Verwaltung und Archivierung grosser Mengen von Bilddaten, mit Viewer-Funktionen (Zoom, Kontrast, Messungen)."
+  },
+  {
+    "question": "Welche der folgenden ist keine medizinische Klassifikation?",
+    "options": [
+      "ICD",
+      "TNM",
+      "SNOMED CT",
+      "ATC"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 49/50 listet ICD, TNM, OPS, SWISS DRG, ATC als Klassifikationssysteme. SNOMED CT ist auf Folie 51 als Nomenklatur definiert – eine standardisierte Begriffssammlung, keine Klassifikation im Sinne von Gruppierung nach Codes."
+  },
+  {
+    "question": "Was ist der Hauptzweck der medizinischen Dokumentation?",
+    "options": [
+      "Nur für Abrechnungszwecke",
+      "Darstellung des Krankheitsverlaufs, Kontinuität, Kommunikation, Patientensicherheit",
+      "Nur für wissenschaftliche Zwecke",
+      "Nur für rechtliche Zwecke"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 45 nennt mehrere Zwecke: Darstellung des Krankheitsverlaufs, Kontinuität und Qualität der Behandlung, Kommunikation, Patientensicherheit, legale Zwecke, Nachweis der Leistungserbringung, wissenschaftliche Zwecke."
+  },
+  {
+    "question": "Welche der folgenden ist keine medizinische Signalverarbeitung?",
+    "options": [
+      "EKG",
+      "EEG",
+      "CO2 Partialdruck",
+      "ATC-Klassifikation"
+    ],
+    "correct_index": 3,
+    "explanation": "Folie 62 listet Biosignale wie EKG, EEG, CO2 Partialdruck, Temperatur, Blutdruck auf. ATC ist eine Klassifikation für Arzneimittel (Folie 50), keine biologische Signalverarbeitung."
+  },
+  {
+    "question": "Was ist der Hauptgrund für Höhentraining bei Sportlern?",
+    "options": [
+      "Mehr Muskelmasse aufbauen",
+      "Mehr rote Blutkörperchen bilden",
+      "Höhere Lungenkapazität erreichen",
+      "Schnellere Regeneration"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 42 (Hirschhausen Quiz) erklärt: Der Körper hat weniger Sauerstoff zur Verfügung, daher bildet er mehr rote Blutkörperchen, um den Sauerstofftransport zu verbessern. Dies ist der zentrale Zweck des Höhentrainings."
+  },
+  {
+    "question": "Welche Aussage über Arterien und Venen ist korrekt?",
+    "options": [
+      "Arterien transportieren immer sauerstoffarmes Blut",
+      "Venen transportieren immer sauerstoffreiches Blut",
+      "Arterien führen Blut vom Herz weg, Venen zum Herz",
+      "Die Lungenarterie führt sauerstoffreiches Blut"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 42 (Hirschhausen Quiz) klärt auf: Arterien führen Blut vom Herz weg, Venen zum Herz. Ausnahme: Lungenarterie (sauerstoffarm) und Lungenvenen (sauerstoffreich). Die Aussage 'Arterien führen Blut vom Herz weg' ist allgemein korrekt."
+  },
+  {
+    "question": "Welche sind die häufigsten Tumorerkrankungen bei Männern und Frauen in der Schweiz?",
+    "options": [
+      "Lungenkrebs und Magenkrebs",
+      "Brustkrebs und Prostatakrebs",
+      "Darmkrebs und Leberkrebs",
+      "Hirntumore und Nierentumore"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 42 (Hirschhausen Quiz) nennt explizit: Brust- und Prostatakrebs als häufigste Tumorerkrankungen (Frauen/Männer). Dies ist eine direkte Abfrage aus dem Quiz."
+  },
+  {
+    "question": "Was ist die Hauptfunktion der Lymphgefäße?",
+    "options": [
+      "Transport von sauerstoffreichem Blut",
+      "Speicherung von Nährstoffen",
+      "Immunabwehr und Blutretour über Lymphknoten",
+      "Regulierung des Blutdrucks"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 42 (Hirschhausen Quiz) beschreibt: Lymphgefäße enthalten Immunabwehrzellen, Blut wird über sie zurückgeführt (durch poröse Venen → Lymphknoten → Retour)."
+  },
+  {
+    "question": "Welche Erkrankungsgruppe ist in der Schweiz die dritthäufigste?",
+    "options": [
+      "Herz-Kreislauf-Erkrankungen",
+      "Krebs",
+      "Chronische Atemwegserkrankungen",
+      "Diabetes"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 42 (Hirschhausen Quiz) listet die häufigsten nicht übertragbaren Krankheiten auf: 1. Krebs, 2. Herz-Kreislauf, 3. chronische Atemwegserkrankungen. Also ist diese die dritthäufigste."
+  },
+  {
+    "question": "Was ist Diabetes im medizinischen Sinne?",
+    "options": [
+      "Eine Infektionskrankheit",
+      "Ein Vitaminmangel",
+      "Zu wenig Insulinproduktion → Stoffwechselstörung",
+      "Eine Erkrankung des Bewegungsapparates"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 42 (Hirschhausen Quiz) erklärt: Diabetes = zu wenig Insulinproduktion → Stoffwechsel funktioniert nicht richtig. Dies ist eine direkte Definition aus dem Quiz."
+  },
+  {
+    "question": "Was ist charakteristisch für die Dokumentation im Spital?",
+    "options": [
+      "Wird nur von Pflegekräften durchgeführt",
+      "Nimmt mindestens 25% der ärztlichen Arbeitszeit ein",
+      "Ist nur für Abrechnungszwecke relevant",
+      "Wird ausschließlich papierbasiert erfasst"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 43 (Was ist charakteristisch für ein Spital?) betont: Dokumentation ist ärztliche Aufgabe, Anteil an Arbeitszeit mindestens 25% (bis zu 75% bei Assistenzärzten)."
+  },
+  {
+    "question": "Was ist ein zentrales Merkmal der ICT im Spital?",
+    "options": [
+      "Nur für administrative Zwecke",
+      "Erfassung, Verarbeitung und Bereitstellung patientenbezogener Daten",
+      "Nur für Forschungszwecke",
+      "Keine Rolle bei der Patientensicherheit"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 44 (charakteristisch für ICT im Spital) definiert: ICT muss patientenbezogene Informationen korrekt, aktuell und für berechtigte Personen am benötigten Ort bereitstellen. Dies ist Kern der ICT-Funktion."
+  },
+  {
+    "question": "Welches bildgebende Verfahren arbeitet mit einem Magnetfeld und erzeugt 3D-Bilder?",
+    "options": [
+      "Röntgen",
+      "Computertomographie (CT)",
+      "Magnetresonanztomographie (MRT)",
+      "Sonographie"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 58 (Exkurs Bildgebende Verfahren) beschreibt MRT: arbeitet mit Magnetfeld, Kernspins, Hochfrequenzsignal → erzeugt sehr genaue und 3D-Bilder. CT ist schneller, aber nicht magnetbasiert."
+  },
+  {
+    "question": "Welches Verfahren wird eingesetzt, um Gefässverschlüsse zu lokalisieren?",
+    "options": [
+      "MRT",
+      "Sonographie",
+      "Angiographie",
+      "PET"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 58 (Exkurs Bildgebende Verfahren) erklärt: Angiographie zeigt Gefäße durch Röntgenkontrastmittel – dient zur Lokalisierung von Verschlüssen. Sonographie ist für Gelenke/Schwangerschaft, PET für Stoffwechsel."
+  },
+  {
+    "question": "Welches Signal wird mit einem EKG gemessen?",
+    "options": [
+      "Temperatur",
+      "Blutdruck",
+      "Elektrische Aktivität des Herzens",
+      "Atemfrequenz"
+    ],
+    "correct_index": 2,
+    "explanation": "Folie 62 (Exkurs medizinische Signalverarbeitung) listet EKG als Messung der elektrischen Aktivität des Herzens auf. EEG misst Hirnströme, EMG Muskeln, ENG Nerven."
+  },
+  {
+    "question": "Was misst ein EEG?",
+    "options": [
+      "Herzschlagfrequenz",
+      "Hirnströme",
+      "Körpertemperatur",
+      "Blutdruck"
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 62 (Exkurs medizinische Signalverarbeitung) definiert EEG als Messung der Hirnströme. EKG misst Herz, EMG Muskeln, ENG Nervenleitgeschwindigkeit."
+  }
+]
+]
