@@ -67,6 +67,13 @@
   },
   {
     "question": "Was misst das EMRAM-Modell?",
+    "options": [
+        "Den wirtschaftlichen Erfolg eines Spitals im internationalen Vergleich",
+        "Die technische Leistungsfähigkeit medizinischer Geräte in einem Krankenhaus",
+        "Den Reifegrad der Digitalisierung klinischer Prozesse und elektronischer Patientenakten in Spitälern",
+        "Die Qualität der medizinischen Ausbildung des Krankenhauspersonals"
+    ],
+    "correct_index": 2,
     "explanation": "F27: Das EMRAM (Electronic Medical Records Adoption Model) misst den Digitalisierungsgrad von Spitälern anhand der Einführung und Nutzung elektronischer Patientenakten. (F27)"
   },
   {
