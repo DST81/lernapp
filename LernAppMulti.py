@@ -26,7 +26,7 @@ verfügbare_fächer = {
     "Med m T1 Einfuehrung":              "medizin_more/med_m_T1_Einfuehrung.json",
     "Med m T1 KI in Medizin":            "medizin_more/med_m_T1_KI_in_Medizin.json",
     "Med m T3 Architektur, Datenschutz": "medizin_more/med_m_T3_Architektur_Datenschutz.json", 
-    "Med g T1 Einfuehrung":              "medizin_more/Med_g_T1_Einfuehrung.json",
+    "Med g T1 Einfuehrung":              "medizin_more/med_g_T1_Einfuehrung.json",
     "Med g T1 KI in Medizin":            "medizin_more/med_g_T1_KI_in_Medizin.json",
     "Med g T3 Architektur, Datenschutz": "medizin_more/med_g_T3_Architektur_Datenschutz.json",
     "Medizin Tag 1": "Medizin_Tag1.json",
