@@ -19,7 +19,7 @@ verfügbare_fächer = {
     "Medizin Tag 4": "Medizin_Tag4.json",
     "Medizin Tag 5": "Medizin_Tag5.json",
     "Medizin Schwierige Fragen":         "Medizin_AlleTage_schwierigereFragen.json",
-    "Med w T1 Einfuehrung":              "medizin_more/Med_w_T1_Einfuehrung.json",
+    "Med w T1 Einfuehrung":              "medizin_more/med_w_T1_Einfuehrung.json",
     "Med w T1 KI in Medizin":            "medizin_more/med_w_T1_KI_in_Medizin.json",
     "Med w T2 Patientenpfad Einsatz KI": "medizin_more/med_w_T2_Einsatz_KI_Ppfad.json",
     "Med w T2 Patientenpfad":            "medizin_more/med_w_T2_Patientenpfad.json",
