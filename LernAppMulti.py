@@ -12,8 +12,8 @@ st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_
 st.sidebar.title("📚 Fachauswahl")
    
 verfügbare_fächer = {
-    "RL Menace & MAB":"rl/menace_mab.json",
-    "RL MDP":"rl/mdp.json"      
+    "RL Menace & MAB": "rl/menace_mab.json",
+    "RL MDP": "rl/mdp.json",      
     "Medizin Schwierige Fragen":         "Medizin_AlleTage_schwierigereFragen.json",
     "Med w T1 Einfuehrung":              "medizin_more/med_w_T1_Einfuehrung.json",
     "Med w T1 KI in Medizin":            "medizin_more/med_w_T1_KI_in_Medizin.json",
