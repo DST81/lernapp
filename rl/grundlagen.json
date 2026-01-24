@@ -1,0 +1,519 @@
+[
+  {
+    "question": "Was ist das primäre Ziel von Reinforcement Learning?",
+    "options": [
+      "Minimierung eines Supervised-Loss",
+      "Maximierung des erwarteten kumulierten Rewards",
+      "Exakte Modellierung der Umwelt",
+      "Schnellste Konvergenz eines Optimierers"
+    ],
+    "correct_index": 1,
+    "explanation": "Reinforcement Learning zielt darauf ab, eine Policy zu lernen, die den langfristigen kumulierten Reward maximiert."
+  },
+  {
+    "question": "Welche Komponenten definieren ein Markov Decision Process (MDP)?",
+    "options": [
+      "State, Action, Reward, Policy",
+      "State, Action, Transition, Reward, Discount",
+      "Agent, Environment, Neural Network",
+      "Observation, Action, Loss"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein MDP besteht aus Zuständen, Aktionen, Übergängen, Rewards und einem Diskontfaktor."
+  },
+  {
+    "question": "Warum ist Racing-Line-Optimierung schwierig für RL?",
+    "options": [
+      "Weil keine kontinuierlichen Aktionen erlaubt sind",
+      "Wegen hoher Dimensionalität und sparse Rewards",
+      "Weil PPO nicht geeignet ist",
+      "Weil keine Physik vorhanden ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Hohe Dimensionalität und sparse Rewards erschweren Exploration und Credit Assignment."
+  },
+  {
+    "question": "Was beschreibt der Begriff 'Credit Assignment Problem'?",
+    "options": [
+      "Die Zuordnung von Rewards zu einzelnen Aktionen",
+      "Die Normalisierung von Belohnungen",
+      "Die Wahl des Diskontfaktors",
+      "Die Initialisierung der Policy"
+    ],
+    "correct_index": 0,
+    "explanation": "Das Credit Assignment Problem beschreibt die Schwierigkeit, herauszufinden, welche Aktion für welchen Reward verantwortlich ist."
+  },
+  {
+    "question": "Warum wurden Fourier-Basisfunktionen verwendet?",
+    "options": [
+      "Zur Beschleunigung von PPO",
+      "Zur Glättung des Rewards",
+      "Zur Reduktion der Aktionsdimension und Glattheit",
+      "Zur besseren Visualisierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Fourier-Basisfunktionen reduzieren die Dimension und erzwingen glatte Rennlinien."
+  },
+  {
+    "question": "Welche Eigenschaft hat PPO im Vergleich zu REINFORCE?",
+    "options": [
+      "Höhere Varianz",
+      "Instabilere Updates",
+      "Stabilere Policy-Updates",
+      "Diskrete Aktionen"
+    ],
+    "correct_index": 2,
+    "explanation": "PPO nutzt Clipping, um zu große Policy-Updates zu verhindern."
+  },
+  {
+    "question": "Was bedeutet 'deterministische Transition'?",
+    "options": [
+      "Zufällige Zustandsübergänge",
+      "Gleiche Aktion führt immer zum gleichen nächsten Zustand",
+      "Stochastischer Reward",
+      "Keine Policy"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei deterministischen Transitionen ist der nächste Zustand eindeutig bestimmt."
+  },
+  {
+    "question": "Warum ist Reward Normalization problematisch gewesen?",
+    "options": [
+      "Weil sie PPO destabilisiert",
+      "Weil sie die absolute Bedeutung von Verbesserungen zerstört",
+      "Weil sie zu Overfitting führt",
+      "Weil sie Observation Normalization verhindert"
+    ],
+    "correct_index": 1,
+    "explanation": "Absolute Lap-Time-Verbesserungen sind relevant und dürfen nicht skaliert werden."
+  },
+  {
+    "question": "Was ist der Hauptvorteil von IPOPT gegenüber RL?",
+    "options": [
+      "Bessere Exploration",
+      "Nutzung exakter Gradienten",
+      "Höhere Generalisierung",
+      "Stochastische Robustheit"
+    ],
+    "correct_index": 1,
+    "explanation": "IPOPT nutzt exakte Gradienten und konvergiert deterministisch."
+  },
+  {
+    "question": "Wann ist Reinforcement Learning dem IPOPT-Ansatz überlegen?",
+    "options": [
+      "Bei gut modellierter Physik",
+      "Bei unbekannter oder nicht-differenzierbarer Physik",
+      "Bei Einzeltrack-Optimierung",
+      "Bei deterministischen Problemen"
+    ],
+    "correct_index": 1,
+    "explanation": "RL eignet sich besonders bei unbekannten oder nicht differenzierbaren Systemen."
+  },
+  {
+    "question": "Was ist das Hauptziel von Reinforcement Learning?",
+    "options": [
+      "Minimierung eines Trainingsfehlers",
+      "Maximierung des erwarteten kumulierten Rewards",
+      "Exakte Modellierung der Umwelt",
+      "Schnellste Konvergenz eines Algorithmus"
+    ],
+    "correct_index": 1,
+    "explanation": "Reinforcement Learning optimiert eine Policy hinsichtlich des langfristigen kumulierten Rewards."
+  },
+  {
+    "question": "Welche Elemente gehören zu einem Markov Decision Process (MDP)?",
+    "options": [
+      "Agent, Environment, Neural Network",
+      "State, Action, Transition, Reward, Discount Factor",
+      "Observation, Loss, Optimizer",
+      "Policy, Value Function, Gradient"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein MDP ist formal definiert durch Zustände, Aktionen, Übergänge, Rewards und Diskontfaktor."
+  },
+  {
+    "question": "Was bedeutet die Markov-Eigenschaft?",
+    "options": [
+      "Der nächste Zustand hängt von der gesamten Vergangenheit ab",
+      "Der Reward ist zufällig",
+      "Der nächste Zustand hängt nur vom aktuellen Zustand und der Aktion ab",
+      "Die Policy ist deterministisch"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Markov-Eigenschaft bedeutet, dass die Zukunft nur vom aktuellen Zustand und der Aktion abhängt."
+  },
+  {
+    "question": "Was beschreibt der Discount Factor γ?",
+    "options": [
+      "Die Lernrate des neuronalen Netzes",
+      "Die Gewichtung zukünftiger Rewards",
+      "Die Länge einer Episode",
+      "Die Größe des Action Spaces"
+    ],
+    "correct_index": 1,
+    "explanation": "γ bestimmt, wie stark zukünftige Rewards im Vergleich zu unmittelbaren Rewards zählen."
+  },
+  {
+    "question": "Warum wurde in diesem Projekt ein hoher Discount Factor (γ = 0.999) verwendet?",
+    "options": [
+      "Um schneller zu konvergieren",
+      "Weil nur kurzfristige Rewards relevant sind",
+      "Weil langfristige Verbesserungen der Rundenzeit entscheidend sind",
+      "Weil PPO dies erfordert"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Qualität einer Rennlinie zeigt sich über die gesamte Runde hinweg, nicht kurzfristig."
+  },
+  {
+    "question": "Was ist eine Policy im Reinforcement Learning?",
+    "options": [
+      "Eine Verlustfunktion",
+      "Eine Abbildung von Zuständen auf Aktionen",
+      "Ein Belohnungssignal",
+      "Ein Zustandsübergang"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Policy definiert, welche Aktion der Agent in einem gegebenen Zustand auswählt."
+  },
+  {
+    "question": "Was ist der zentrale Unterschied zwischen Supervised Learning und Reinforcement Learning?",
+    "options": [
+      "RL nutzt keine Daten",
+      "RL arbeitet ohne explizite Zielwerte",
+      "RL nutzt keine neuronalen Netze",
+      "RL ist immer deterministisch"
+    ],
+    "correct_index": 1,
+    "explanation": "Im RL gibt es keine expliziten Zielwerte, sondern nur Rewards als Feedback."
+  },
+  {
+    "question": "Was beschreibt das Credit Assignment Problem?",
+    "options": [
+      "Die Normalisierung von Rewards",
+      "Die Zuordnung von Erfolg oder Misserfolg zu einzelnen Aktionen",
+      "Die Wahl des Diskontfaktors",
+      "Die Initialisierung der Policy"
+    ],
+    "correct_index": 1,
+    "explanation": "Es ist oft unklar, welche Aktion für einen späteren Reward verantwortlich war."
+  },
+  {
+    "question": "Warum ist Racing-Line-Optimierung besonders schwierig für RL?",
+    "options": [
+      "Weil der Action Space diskret ist",
+      "Wegen hoher Dimensionalität und sparse Rewards",
+      "Weil PPO ungeeignet ist",
+      "Weil keine Physik modelliert wird"
+    ],
+    "correct_index": 1,
+    "explanation": "Viele Entscheidungen wirken sich erst am Ende der Runde auf die Rundenzeit aus."
+  },
+  {
+    "question": "Was bedeutet 'sparse Reward'?",
+    "options": [
+      "Der Reward ist verrauscht",
+      "Der Reward wird nur selten oder verzögert vergeben",
+      "Der Reward ist negativ",
+      "Der Reward ist normalisiert"
+    ],
+    "correct_index": 1,
+    "explanation": "Sparse Rewards liefern wenig direktes Feedback während der Episode."
+  },
+  {
+    "question": "Warum scheiterte eine naive RL-Formulierung mit 250 Aktionen?",
+    "options": [
+      "Zu geringe Modellkapazität",
+      "Zu hohe Varianz der Gradienten",
+      "Zu kleine Lernrate",
+      "Zu viele Episoden"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein hochdimensionaler Action Space führt zu ineffizienter Exploration."
+  },
+  {
+    "question": "Was ist der Hauptvorteil von Fourier-Basisfunktionen in diesem Projekt?",
+    "options": [
+      "Schnellere Physiksimulation",
+      "Reduktion der Aktionsdimension bei gleichzeitiger Glattheit",
+      "Bessere Visualisierung",
+      "Explizite Gradientenberechnung"
+    ],
+    "correct_index": 1,
+    "explanation": "Fourier-Basen komprimieren die Rennlinie auf wenige glatte Parameter."
+  },
+  {
+    "question": "Warum ist Glattheit der Rennlinie wichtig?",
+    "options": [
+      "Zur Reduktion der Episodenlänge",
+      "Für physikalisch plausible und fahrbare Lösungen",
+      "Damit PPO stabil bleibt",
+      "Zur Vereinfachung der Visualisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Unrealistische Zickzack-Linien sind physikalisch nicht fahrbar."
+  },
+  {
+    "question": "Was ist Proximal Policy Optimization (PPO)?",
+    "options": [
+      "Ein Value-Based-Verfahren",
+      "Ein Evolutionärer Algorithmus",
+      "Ein Policy-Gradient-Verfahren",
+      "Ein deterministischer Optimierer"
+    ],
+    "correct_index": 2,
+    "explanation": "PPO optimiert direkt die Policy mittels Gradienten."
+  },
+  {
+    "question": "Was ist die Kernidee des PPO-Clippings?",
+    "options": [
+      "Begrenzung des Rewards",
+      "Begrenzung der Actiongröße",
+      "Begrenzung der Policy-Änderung",
+      "Begrenzung der Episodenlänge"
+    ],
+    "correct_index": 2,
+    "explanation": "Zu große Policy-Updates werden verhindert, um Instabilität zu vermeiden."
+  },
+  {
+    "question": "Warum ist PPO stabiler als REINFORCE?",
+    "options": [
+      "Wegen geringerer Varianz durch Clipping",
+      "Wegen deterministischer Aktionen",
+      "Wegen kleinerer Netze",
+      "Wegen höherer Lernrate"
+    ],
+    "correct_index": 0,
+    "explanation": "Clipping reduziert extreme Updates und damit die Varianz."
+  },
+  {
+    "question": "Was bedeutet 'deterministische Transition'?",
+    "options": [
+      "Der Reward ist zufällig",
+      "Die Aktion ist zufällig",
+      "Der nächste Zustand ist eindeutig bestimmt",
+      "Die Policy ist stochastisch"
+    ],
+    "correct_index": 2,
+    "explanation": "Gleiche Zustände und Aktionen führen immer zum gleichen nächsten Zustand."
+  },
+  {
+    "question": "Warum wurde Reward Normalization deaktiviert?",
+    "options": [
+      "Sie macht PPO instabil",
+      "Sie zerstört die absolute Bedeutung von Rundenzeitverbesserungen",
+      "Sie erhöht den Speicherverbrauch",
+      "Sie verhindert Exploration"
+    ],
+    "correct_index": 1,
+    "explanation": "Absolute Zeitgewinne sind entscheidend und dürfen nicht skaliert werden."
+  },
+  {
+    "question": "Warum ist Observation Normalization sinnvoll?",
+    "options": [
+      "Zur Veränderung der Reward-Skala",
+      "Zur Stabilisierung des neuronalen Netztrainings",
+      "Zur Verkürzung der Episoden",
+      "Zur Reduktion des Action Spaces"
+    ],
+    "correct_index": 1,
+    "explanation": "Normierte Eingaben verbessern numerische Stabilität und Lernverhalten."
+  },
+  {
+    "question": "Was ist ein Terminal Reward?",
+    "options": [
+      "Ein Reward zu Beginn der Episode",
+      "Ein Reward für jede Aktion",
+      "Ein Reward am Ende einer Episode",
+      "Ein normalisierter Reward"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Terminal Reward bewertet die Gesamtleistung einer Episode."
+  },
+  {
+    "question": "Warum sind Terminal Rewards hier besonders wichtig?",
+    "options": [
+      "Weil PPO sie bevorzugt",
+      "Weil die Qualität der Rennlinie erst am Ende sichtbar wird",
+      "Weil Step Rewards instabil sind",
+      "Weil Episoden kurz sind"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Rundenzeit kann erst nach vollständiger Simulation bewertet werden."
+  },
+  {
+    "question": "Was ist Domain Randomization?",
+    "options": [
+      "Zufällige Initialisierung der Policy",
+      "Variation von Umweltparametern während des Trainings",
+      "Normalisierung des Rewards",
+      "Reduktion des Action Spaces"
+    ],
+    "correct_index": 1,
+    "explanation": "Domain Randomization soll Robustheit gegenüber Umweltvariationen fördern."
+  },
+  {
+    "question": "Warum wurde Domain Randomization hier nicht genutzt?",
+    "options": [
+      "Zu hoher Rechenaufwand",
+      "Inkonsistentes Reward-Signal bei Step Rewards",
+      "Ungeeignet für PPO",
+      "Fehlende Physikmodelle"
+    ],
+    "correct_index": 1,
+    "explanation": "Variierende Physik verfälschte die Bewertung kleiner Verbesserungen."
+  },
+  {
+    "question": "Was ist der größte Vorteil von IPOPT gegenüber RL?",
+    "options": [
+      "Generalisation",
+      "Exploration",
+      "Nutzung exakter Gradienten",
+      "Stochastische Robustheit"
+    ],
+    "correct_index": 2,
+    "explanation": "IPOPT nutzt vollständige Gradienteninformation des Problems."
+  },
+  {
+    "question": "Warum ist IPOPT in diesem Projekt schneller?",
+    "options": [
+      "Wegen geringerer Modellkomplexität",
+      "Wegen deterministischer Optimierung",
+      "Wegen größerer Lernrate",
+      "Wegen Parallelisierung"
+    ],
+    "correct_index": 1,
+    "explanation": "IPOPT löst das Problem direkt ohne Exploration."
+  },
+  {
+    "question": "Warum ist RL trotz schlechterer Performance relevant?",
+    "options": [
+      "Wegen kürzerer Laufzeit",
+      "Wegen besserer Interpretierbarkeit",
+      "Wegen Generalisierung und unbekannter Physik",
+      "Wegen einfacherer Implementierung"
+    ],
+    "correct_index": 2,
+    "explanation": "RL kann bei unbekannten oder nicht differenzierbaren Systemen eingesetzt werden."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen Planung und Kontrolle?",
+    "options": [
+      "Planung ist reaktiv, Kontrolle ist statisch",
+      "Planung berechnet eine Trajektorie, Kontrolle steuert Aktionen",
+      "Planung nutzt RL, Kontrolle nicht",
+      "Kontrolle ist einfacher als Planung"
+    ],
+    "correct_index": 1,
+    "explanation": "Rennlinie ist ein Planungsproblem, Fahren ein Kontrollproblem."
+  },
+  {
+    "question": "Warum war das Lernen von Pfad UND Geschwindigkeit problematisch?",
+    "options": [
+      "Zu wenig Daten",
+      "Redundante Entscheidungsvariablen",
+      "Zu niedriger Reward",
+      "Zu kurze Episoden"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Physik bestimmt die Geschwindigkeit bereits durch den Pfad."
+  },
+  {
+    "question": "Was bedeutet Exploration im RL?",
+    "options": [
+      "Ausnutzen bekannter Strategien",
+      "Zufälliges Verhalten ohne Ziel",
+      "Ausprobieren neuer Aktionen",
+      "Optimierung der Reward-Skala"
+    ],
+    "correct_index": 2,
+    "explanation": "Exploration ist notwendig, um bessere Strategien zu entdecken."
+  },
+  {
+    "question": "Was ist Exploitation?",
+    "options": [
+      "Ausprobieren neuer Strategien",
+      "Nutzung bereits guter Strategien",
+      "Normalisierung der Rewards",
+      "Gradientenberechnung"
+    ],
+    "correct_index": 1,
+    "explanation": "Exploitation nutzt bereits gelerntes Wissen."
+  },
+  {
+    "question": "Warum ist der Trade-off zwischen Exploration und Exploitation wichtig?",
+    "options": [
+      "Zur Reduktion der Episodenlänge",
+      "Zur Vermeidung von Overfitting",
+      "Um neue bessere Lösungen zu finden ohne bestehende zu verlieren",
+      "Zur Stabilisierung der Physik"
+    ],
+    "correct_index": 2,
+    "explanation": "Zu viel Exploration oder Exploitation allein ist suboptimal."
+  },
+  {
+    "question": "Was ist ein Policy-Gradient?",
+    "options": [
+      "Gradient des Rewards",
+      "Gradient der Policy-Parameter",
+      "Gradient des Zustands",
+      "Gradient der Transition"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy-Gradienten optimieren direkt die Policy-Parameter."
+  },
+  {
+    "question": "Warum sind Policy-Gradienten oft verrauscht?",
+    "options": [
+      "Wegen deterministischer Policies",
+      "Wegen stochastischer Rewards und Exploration",
+      "Wegen kleiner Netze",
+      "Wegen kurzer Episoden"
+    ],
+    "correct_index": 1,
+    "explanation": "Stochastische Interaktionen führen zu hoher Varianz."
+  },
+  {
+    "question": "Was ist ein episodisches RL-Problem?",
+    "options": [
+      "Unendliche Laufzeit ohne Reset",
+      "Probleme mit klar definiertem Anfang und Ende",
+      "Probleme ohne Rewards",
+      "Probleme ohne Zustände"
+    ],
+    "correct_index": 1,
+    "explanation": "Episoden haben einen Start- und Endzustand."
+  },
+  {
+    "question": "Warum ist Rennlinienoptimierung episodisch?",
+    "options": [
+      "Weil PPO das verlangt",
+      "Weil jede Runde abgeschlossen bewertet wird",
+      "Weil der Reward kontinuierlich ist",
+      "Weil die Physik zufällig ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Episode entspricht einer vollständigen Optimierungsrunde."
+  },
+  {
+    "question": "Was ist der größte Nachteil von RL gegenüber klassischer Optimierung hier?",
+    "options": [
+      "Fehlende Flexibilität",
+      "Hoher Rechenaufwand und keine Konvergenzgarantie",
+      "Unfähigkeit zur Generalisierung",
+      "Deterministische Lösungen"
+    ],
+    "correct_index": 1,
+    "explanation": "RL benötigt viel Training und bietet keine Optimalitätsgarantie."
+  },
+  {
+    "question": "Warum ist diese RL-Lösung trotzdem 'echtes RL'?",
+    "options": [
+      "Weil PPO genutzt wird",
+      "Weil ein neuronales Netz verwendet wird",
+      "Weil eine Policy durch Interaktion und Rewards gelernt wird",
+      "Weil keine Optimierung stattfindet"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Agent lernt eine Policy aus Erfahrung, nicht durch direkte Optimierung."
+  }
+]
