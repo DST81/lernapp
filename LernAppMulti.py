@@ -12,6 +12,7 @@ st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_
 st.sidebar.title("📚 Fachauswahl")
    
 verfügbare_fächer = {
+    "RL Grundlagen":"rl/grundlagen.json",
     "RL Menace & MAB": "rl/menace_mba.json",
     "RL MDP": "rl/mdp.json",      
     "Medizin Schwierige Fragen":         "Medizin_AlleTage_schwierigereFragen.json",
