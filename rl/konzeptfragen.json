@@ -1,0 +1,431 @@
+[
+  {
+    "question": "Was ist das primäre Ziel von Reinforcement Learning?",
+    "options": [
+      "Minimierung eines Supervised-Loss",
+      "Maximierung des erwarteten kumulierten Rewards",
+      "Exakte Modellierung der Umwelt",
+      "Schnellste Konvergenz eines Optimierers"
+    ],
+    "correct_index": 1,
+    "explanation": "Reinforcement Learning zielt darauf ab, eine Policy zu lernen, die den langfristigen kumulierten Reward maximiert."
+  },
+  {
+    "question": "Welche Komponenten definieren ein Markov Decision Process (MDP)?",
+    "options": [
+      "State, Action, Reward, Policy",
+      "State, Action, Transition, Reward, Discount",
+      "Agent, Environment, Neural Network",
+      "Observation, Action, Loss"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein MDP wird durch Zustände, Aktionen, Übergangswahrscheinlichkeiten, Rewards und den Discount-Faktor definiert."
+  },
+  {
+    "question": "Was beschreibt eine Policy im Reinforcement Learning?",
+    "options": [
+      "Die Belohnungsfunktion der Umwelt",
+      "Eine Abbildung von Zuständen auf Aktionen",
+      "Die Übergangsdynamik der Umwelt",
+      "Den erwarteten Reward eines Zustands"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Policy legt fest, welche Aktion ein Agent in einem bestimmten Zustand auswählt."
+  },
+  {
+    "question": "Was bedeutet die Markov-Eigenschaft?",
+    "options": [
+      "Die Zukunft hängt von der gesamten Vergangenheit ab",
+      "Der Reward ist deterministisch",
+      "Der nächste Zustand hängt nur vom aktuellen Zustand und der Aktion ab",
+      "Alle Zustände sind beobachtbar"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Markov-Eigenschaft besagt, dass der nächste Zustand nur vom aktuellen Zustand und der gewählten Aktion abhängt."
+  },
+  {
+    "question": "Was ist eine Episode?",
+    "options": [
+      "Ein einzelner Zeitschritt",
+      "Ein vollständiger Durchlauf vom Start- bis zum Endzustand",
+      "Die Policy eines Agenten",
+      "Eine Update-Regel"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Episode beschreibt eine vollständige Abfolge von Zuständen, Aktionen und Rewards bis zum Terminalzustand."
+  },
+  {
+    "question": "Welche Rolle spielt der Reward?",
+    "options": [
+      "Er beschreibt die Übergangsdynamik",
+      "Er dient als Feedbacksignal für den Agenten",
+      "Er ersetzt die Policy",
+      "Er ist unabhängig von Aktionen"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Reward gibt dem Agenten Rückmeldung darüber, wie gut eine Aktion war."
+  },
+  {
+    "question": "Was ist der Return?",
+    "options": [
+      "Der Reward eines einzelnen Zeitschritts",
+      "Die Summe der diskontierten zukünftigen Rewards",
+      "Der maximale mögliche Reward",
+      "Die Belohnung des Endzustands"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Return ist die Summe der zukünftigen Rewards, meist diskontiert."
+  },
+  {
+    "question": "Warum wird ein Discount-Faktor verwendet?",
+    "options": [
+      "Um die Berechnung zu beschleunigen",
+      "Um zukünftige Rewards geringer zu gewichten",
+      "Um negative Rewards zu vermeiden",
+      "Um deterministische Policies zu erzwingen"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Discount-Faktor reduziert den Einfluss weit entfernter zukünftiger Rewards."
+  },
+  {
+    "question": "Was bedeutet ein Discount-Faktor nahe 0?",
+    "options": [
+      "Zukunft wird stark berücksichtigt",
+      "Nur unmittelbare Rewards sind relevant",
+      "Das Problem ist episodisch",
+      "Der Agent exploriert stärker"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein kleiner Discount-Faktor fokussiert sich auf kurzfristige Belohnungen."
+  },
+  {
+    "question": "Was ist eine Value Function?",
+    "options": [
+      "Eine Funktion, die Aktionen bewertet",
+      "Eine Funktion, die Zustände oder Zustand-Aktions-Paare bewertet",
+      "Die Übergangswahrscheinlichkeit",
+      "Die Belohnungsfunktion"
+    ],
+    "correct_index": 1,
+    "explanation": "Value Functions schätzen den erwarteten Return eines Zustands oder einer Aktion."
+  },
+  {
+    "question": "Was beschreibt die State-Value-Funktion V(s)?",
+    "options": [
+      "Den besten Reward einer Aktion",
+      "Den erwarteten Return eines Zustands",
+      "Die optimale Policy",
+      "Den unmittelbaren Reward"
+    ],
+    "correct_index": 1,
+    "explanation": "V(s) beschreibt, wie gut es ist, sich in einem bestimmten Zustand zu befinden."
+  },
+  {
+    "question": "Was beschreibt die Action-Value-Funktion Q(s,a)?",
+    "options": [
+      "Die Wahrscheinlichkeit einer Aktion",
+      "Den erwarteten Return für eine Aktion in einem Zustand",
+      "Die Übergangsdynamik",
+      "Den Reward des nächsten Zustands"
+    ],
+    "correct_index": 1,
+    "explanation": "Q(s,a) bewertet die Qualität einer Aktion in einem bestimmten Zustand."
+  },
+  {
+    "question": "Warum ist Q(s,a) oft praktischer als V(s)?",
+    "options": [
+      "Q(s,a) ist immer exakt",
+      "Man kann direkt Aktionen vergleichen",
+      "Q(s,a) benötigt kein Training",
+      "Q(s,a) ist unabhängig vom Reward"
+    ],
+    "correct_index": 1,
+    "explanation": "Mit Q-Werten können Aktionen direkt verglichen und ausgewählt werden."
+  },
+  {
+    "question": "Was bedeutet Exploration?",
+    "options": [
+      "Auswahl der besten bekannten Aktion",
+      "Zufällige Aktionen vermeiden",
+      "Neue Aktionen ausprobieren",
+      "Den Reward maximieren ohne Risiko"
+    ],
+    "correct_index": 2,
+    "explanation": "Exploration bedeutet, neue Aktionen auszuprobieren, um mehr über die Umwelt zu lernen."
+  },
+  {
+    "question": "Was bedeutet Exploitation?",
+    "options": [
+      "Neue Aktionen testen",
+      "Zufällige Policies verwenden",
+      "Die aktuell beste bekannte Aktion wählen",
+      "Den Reward ignorieren"
+    ],
+    "correct_index": 2,
+    "explanation": "Exploitation nutzt das bisher Gelernte, um den Reward zu maximieren."
+  },
+  {
+    "question": "Was ist das Exploration-Exploitation-Dilemma?",
+    "options": [
+      "Konflikt zwischen Reward und State",
+      "Abwägung zwischen Lernen und Ausnutzen",
+      "Unterschied zwischen Policy und Value",
+      "Problem der Konvergenz"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Agent muss entscheiden, ob er neue Aktionen erkundet oder bekannte gute Aktionen nutzt."
+  },
+  {
+    "question": "Was ist eine ε-greedy Policy?",
+    "options": [
+      "Immer die beste Aktion",
+      "Immer zufällige Aktionen",
+      "Mit Wahrscheinlichkeit ε zufällig, sonst greedy",
+      "Deterministische Policy"
+    ],
+    "correct_index": 2,
+    "explanation": "ε-greedy kombiniert Exploration und Exploitation."
+  },
+  {
+    "question": "Was ist Monte-Carlo-Learning?",
+    "options": [
+      "Lernen aus einzelnen Schritten",
+      "Lernen ohne Rewards",
+      "Lernen aus vollständigen Episoden",
+      "Modellbasiertes Lernen"
+    ],
+    "correct_index": 2,
+    "explanation": "Monte-Carlo-Methoden nutzen vollständige Episoden zur Schätzung von Value Functions."
+  },
+  {
+    "question": "Was ist ein Nachteil von Monte-Carlo-Methoden?",
+    "options": [
+      "Hoher Speicherbedarf",
+      "Hohe Varianz",
+      "Kein Exploration möglich",
+      "Benötigt ein Modell"
+    ],
+    "correct_index": 1,
+    "explanation": "Monte-Carlo-Methoden haben oft eine hohe Varianz."
+  },
+  {
+    "question": "Was ist Temporal-Difference-Learning (TD)?",
+    "options": [
+      "Lernen nur am Episodenende",
+      "Lernen durch Bootstrapping",
+      "Reines Supervised Learning",
+      "Modellbasiertes Lernen"
+    ],
+    "correct_index": 1,
+    "explanation": "TD-Learning kombiniert Ideen von Monte-Carlo und Dynamic Programming."
+  },
+  {
+    "question": "Was bedeutet Bootstrapping?",
+    "options": [
+      "Verwendung echter Returns",
+      "Schätzung mit Hilfe anderer Schätzungen",
+      "Zufällige Initialisierung",
+      "Policy-Optimierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Bootstrapping nutzt bestehende Schätzungen zur Aktualisierung."
+  },
+  {
+    "question": "Was ist Q-Learning?",
+    "options": [
+      "On-policy Lernverfahren",
+      "Off-policy TD-Verfahren",
+      "Modellbasiertes Verfahren",
+      "Monte-Carlo-Verfahren"
+    ],
+    "correct_index": 1,
+    "explanation": "Q-Learning ist ein off-policy TD-Lernverfahren."
+  },
+  {
+    "question": "Was bedeutet off-policy?",
+    "options": [
+      "Lernen und Verhalten sind identisch",
+      "Policy wird nicht gelernt",
+      "Lernen einer anderen Policy als der ausgeführten",
+      "Kein Reward notwendig"
+    ],
+    "correct_index": 2,
+    "explanation": "Off-policy lernt eine Policy, die sich von der aktuell ausgeführten unterscheidet."
+  },
+  {
+    "question": "Was ist SARSA?",
+    "options": [
+      "Off-policy Lernverfahren",
+      "On-policy TD-Verfahren",
+      "Monte-Carlo-Verfahren",
+      "Modellbasierte Methode"
+    ],
+    "correct_index": 1,
+    "explanation": "SARSA ist ein on-policy TD-Lernverfahren."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen Q-Learning und SARSA?",
+    "options": [
+      "Q-Learning nutzt keine Rewards",
+      "SARSA ist off-policy",
+      "Q-Learning ist off-policy, SARSA on-policy",
+      "SARSA konvergiert nicht"
+    ],
+    "correct_index": 2,
+    "explanation": "Q-Learning lernt unabhängig vom aktuellen Verhalten, SARSA nicht."
+  },
+  {
+    "question": "Was bedeutet On-Policy?",
+    "options": [
+      "Policy ist zufällig",
+      "Lernen und Verhalten sind gleich",
+      "Keine Exploration",
+      "Kein Discount-Faktor"
+    ],
+    "correct_index": 1,
+    "explanation": "On-policy Methoden lernen die Policy, die sie auch ausführen."
+  },
+  {
+    "question": "Was ist ein Terminalzustand?",
+    "options": [
+      "Ein Startzustand",
+      "Ein Zustand ohne Reward",
+      "Ein Zustand, der eine Episode beendet",
+      "Ein zufälliger Zustand"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein Terminalzustand beendet eine Episode."
+  },
+  {
+    "question": "Was ist ein deterministisches Environment?",
+    "options": [
+      "Zufällige Übergänge",
+      "Übergänge sind eindeutig bestimmt",
+      "Kein Reward",
+      "Keine Aktionen möglich"
+    ],
+    "correct_index": 1,
+    "explanation": "Im deterministischen Environment sind Übergänge eindeutig."
+  },
+  {
+    "question": "Was ist ein stochastisches Environment?",
+    "options": [
+      "Übergänge sind zufällig",
+      "Keine Exploration",
+      "Deterministische Policy",
+      "Kein Discount-Faktor"
+    ],
+    "correct_index": 0,
+    "explanation": "Stochastische Environments haben zufällige Übergänge."
+  },
+  {
+    "question": "Was bedeutet Policy Evaluation?",
+    "options": [
+      "Verbesserung der Policy",
+      "Schätzung der Value Function einer Policy",
+      "Auswahl der besten Aktion",
+      "Training eines Modells"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Evaluation schätzt, wie gut eine gegebene Policy ist."
+  },
+  {
+    "question": "Was bedeutet Policy Improvement?",
+    "options": [
+      "Bewertung einer Policy",
+      "Verbesserung der Policy anhand der Value Function",
+      "Zufällige Exploration",
+      "Reward-Anpassung"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Improvement verbessert die Policy basierend auf Value-Schätzungen."
+  },
+  {
+    "question": "Was ist Policy Iteration?",
+    "options": [
+      "Ein einzelner Update-Schritt",
+      "Abwechselnde Policy Evaluation und Improvement",
+      "Monte-Carlo-Verfahren",
+      "Deep Learning"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Iteration kombiniert Evaluation und Improvement iterativ."
+  },
+  {
+    "question": "Was ist Value Iteration?",
+    "options": [
+      "Direkte Optimierung der Policy",
+      "Iterative Aktualisierung der Value Function",
+      "Monte-Carlo-Lernen",
+      "On-policy Lernen"
+    ],
+    "correct_index": 1,
+    "explanation": "Value Iteration aktualisiert direkt die Value Function."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen modellfreiem und modellbasiertem RL?",
+    "options": [
+      "Modellfrei nutzt kein Reward",
+      "Modellbasiert kennt oder lernt die Übergänge",
+      "Modellfrei ist immer besser",
+      "Kein Unterschied"
+    ],
+    "correct_index": 1,
+    "explanation": "Modellbasierte Methoden nutzen ein Modell der Umwelt."
+  },
+  {
+    "question": "Was ist ein Vorteil von modellfreiem RL?",
+    "options": [
+      "Benötigt kein Environment",
+      "Einfacher in komplexen Umgebungen",
+      "Exakte Planung",
+      "Keine Exploration nötig"
+    ],
+    "correct_index": 1,
+    "explanation": "Modellfreies RL ist oft einfacher bei unbekannten Umgebungen."
+  },
+  {
+    "question": "Was ist ein Nachteil von modellfreiem RL?",
+    "options": [
+      "Benötigt viele Samples",
+      "Kein Reward",
+      "Keine Policy",
+      "Nicht lernfähig"
+    ],
+    "correct_index": 0,
+    "explanation": "Modellfreies RL ist oft sample-ineffizient."
+  },
+  {
+    "question": "Was ist Sample Efficiency?",
+    "options": [
+      "Speicherverbrauch",
+      "Anzahl der benötigten Interaktionen",
+      "Rechenzeit",
+      "Policy-Komplexität"
+    ],
+    "correct_index": 1,
+    "explanation": "Sample Efficiency beschreibt, wie viele Samples zum Lernen benötigt werden."
+  },
+  {
+    "question": "Was bedeutet Konvergenz im RL?",
+    "options": [
+      "Der Reward ist konstant",
+      "Die Policy oder Value Function stabilisiert sich",
+      "Keine Exploration mehr",
+      "Das Training stoppt"
+    ],
+    "correct_index": 1,
+    "explanation": "Konvergenz bedeutet, dass sich die Lernwerte nicht mehr wesentlich ändern."
+  },
+  {
+    "question": "Was ist ein Greedy-Policy-Schritt?",
+    "options": [
+      "Zufällige Aktion",
+      "Aktion mit maximalem Q-Wert",
+      "Exploration",
+      "Policy Evaluation"
+    ],
+    "correct_index": 1,
+    "explanation": "Greedy bedeutet Auswahl der Aktion mit dem höchsten geschätzten Wert."
+  }
+]
