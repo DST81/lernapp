@@ -8,7 +8,29 @@
       "Die Spielregeln von Tic-Tac-Toe"
     ],
     "correct_index": 1,
-    "explanation": "Die Beads-Verteilung in einer Matchbox definiert die Wahrscheinlichkeit, eine bestimmte Aktion $$a$$ im gegebenen Zustand $$s$$ zu wählen, was einer stochastischen Policy $$\\pi(a \\mid s)$$ entspricht."
+    "explanation": "Die Beads-Verteilung definiert die Wahrscheinlichkeit, eine Aktion $$a$$ im Zustand $$s$$ zu wählen, und entspricht damit einer stochastischen Policy $$\\pi(a \\mid s)$$."
+  },
+  {
+    "question": "Warum kann MENACE als tabellarisches Reinforcement-Learning-Verfahren betrachtet werden?",
+    "options": [
+      "Weil es neuronale Netze zur Generalisierung nutzt",
+      "Weil jeder Zustand explizit gespeichert und separat gelernt wird",
+      "Weil es kontinuierliche Zustände approximiert",
+      "Weil es eine Bellman-Gleichung verwendet"
+    ],
+    "correct_index": 1,
+    "explanation": "Jede Brettkonfiguration besitzt eine eigene Matchbox – Zustände werden explizit ohne Generalisierung gespeichert."
+  },
+  {
+    "question": "Welche Eigenschaft von MENACE macht es zu einem episodischen Lernproblem?",
+    "options": [
+      "Die Belohnung ist stochastisch",
+      "Die Policy ist deterministisch",
+      "Jede Partie endet nach endlich vielen Zügen",
+      "Die Umwelt ist vollständig beobachtbar"
+    ],
+    "correct_index": 2,
+    "explanation": "Tic-Tac-Toe endet immer in einem terminalen Zustand, wodurch das Lernproblem episodisch ist."
   },
   {
     "question": "Welche Art von Feedback verwendet MENACE zur Aktualisierung seiner Policy?",
@@ -19,7 +41,40 @@
       "TD-Fehler $$\\delta_t$$"
     ],
     "correct_index": 2,
-    "explanation": "MENACE erhält erst am Ende eines Spiels Feedback (Gewinn/Verlust/Unentschieden), welches evaluativ und verzögert ist."
+    "explanation": "MENACE erhält erst am Episodenende Feedback in Form von Gewinn, Verlust oder Unentschieden."
+  },
+  {
+    "question": "Warum ist MENACE nicht direkt auf Probleme mit verzögerten Konsequenzen übertragbar?",
+    "options": [
+      "Weil es keine Exploration erlaubt",
+      "Weil Aktionen keinen Einfluss auf zukünftige Zustände haben",
+      "Weil es keine Zustände speichert",
+      "Weil es zukünftige Konsequenzen einzelner Aktionen nicht explizit bewertet"
+    ],
+    "correct_index": 3,
+    "explanation": "Alle Aktionen einer Episode werden gleich behandelt, ohne ihren individuellen Beitrag zu späteren Zuständen zu berücksichtigen."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Lernmechanismus von MENACE am treffendsten?",
+    "options": [
+      "Gradientenbasierte Optimierung der Policy",
+      "Explizite Maximierung des erwarteten Returns",
+      "Heuristische Verstärkung oder Abschwächung beobachteter Aktionen",
+      "Dynamische Programmierung mit bekanntem Modell"
+    ],
+    "correct_index": 2,
+    "explanation": "MENACE verstärkt oder schwächt Aktionen heuristisch durch Hinzufügen oder Entfernen von Beads."
+  },
+  {
+    "question": "Welche Einschränkung von MENACE folgt direkt aus der vollständigen Zustandsenumeration?",
+    "options": [
+      "Hohe Varianz der Updates",
+      "Schlechte Skalierbarkeit auf große Zustandsräume",
+      "Notwendigkeit eines bekannten Modells",
+      "Unfähigkeit zu explorieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Speicherbedarf wächst exponentiell mit der Größe des Zustandsraums."
   },
   {
     "question": "Welche RL-Komponente fehlt MENACE im Vergleich zu modernen RL-Algorithmen vollständig?",
@@ -30,7 +85,40 @@
       "Exploration"
     ],
     "correct_index": 2,
-    "explanation": "MENACE speichert keine expliziten Wertfunktionen $$V(s)$$ oder $$Q(s,a)$$, sondern passt direkt Aktionswahrscheinlichkeiten an."
+    "explanation": "MENACE speichert keine expliziten Wertfunktionen, sondern passt direkt Aktionswahrscheinlichkeiten an."
+  },
+  {
+    "question": "Warum kann MENACE als Vorläufer von Policy-basierten Methoden interpretiert werden?",
+    "options": [
+      "Weil es Bellman-Gleichungen nutzt",
+      "Weil es Q-Werte approximiert",
+      "Weil es direkt eine stochastische Policy lernt",
+      "Weil es bootstrapped Targets verwendet"
+    ],
+    "correct_index": 2,
+    "explanation": "MENACE lernt direkt Aktionswahrscheinlichkeiten ohne explizite Value-Funktion."
+  },
+  {
+    "question": "Welche Annahme über die Umwelt ist für MENACE essenziell?",
+    "options": [
+      "Partielle Beobachtbarkeit",
+      "Kontinuierliche Zustandsräume",
+      "Deterministische Übergänge",
+      "Vollständige Beobachtbarkeit des Zustands"
+    ],
+    "correct_index": 3,
+    "explanation": "Der aktuelle Spielzustand muss vollständig bekannt sein, um die passende Matchbox zu wählen."
+  },
+  {
+    "question": "In welcher Hinsicht unterscheidet sich MENACE grundlegend von Multi-Armed-Bandit-Problemen?",
+    "options": [
+      "MENACE hat stochastische Rewards",
+      "MENACE besitzt einen Zustandsraum",
+      "MENACE maximiert keinen kumulativen Reward",
+      "MENACE nutzt keine Exploration"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei MENACE hängt die Aktionswahl vom Zustand ab, bei Bandits nicht."
   },
   {
     "question": "Welche Zielsetzung verfolgt MENACE implizit?",
@@ -41,7 +129,41 @@
       "Konvergenz zu einer optimalen Value-Funktion"
     ],
     "correct_index": 2,
-    "explanation": "MENACE zielt darauf ab, über wiederholte Spiele häufiger zu gewinnen, ohne explizit diskontierte Returns $$G_t$$ oder Wertfunktionen zu definieren."
+    "explanation": "MENACE versucht, über viele Spiele häufiger zu gewinnen."
+  },
+
+  {
+    "question": "Welche Annahme unterscheidet das Multi-Armed-Bandit-Problem fundamental von einem MDP?",
+    "options": [
+      "Die Reward-Verteilungen sind unbekannt",
+      "Aktionen beeinflussen zukünftige Zustände",
+      "Es gibt keinen Zustandsraum",
+      "Die Rewards sind verrauscht"
+    ],
+    "correct_index": 2,
+    "explanation": "Bandits besitzen keinen Zustandsraum – jede Aktion ist unabhängig vom Kontext."
+  },
+  {
+    "question": "Was ist das Optimierungsziel im klassischen K-armed-Bandit-Problem?",
+    "options": [
+      "Maximierung des diskontierten Returns $$G_t$$",
+      "Minimierung der Varianz der Rewards",
+      "Maximierung der kumulativen Belohnung $$\\sum_{t=1}^T r_t$$",
+      "Konvergenz zu einer optimalen Policy"
+    ],
+    "correct_index": 2,
+    "explanation": "Bandits maximieren die kumulative Belohnung über einen endlichen Horizont."
+  },
+  {
+    "question": "Welche Aussage beschreibt das Exploration–Exploitation-Dilemma korrekt?",
+    "options": [
+      "Exploration erhöht kurzfristig den Reward",
+      "Exploitation reduziert langfristig den Regret",
+      "Exploration sammelt Information, Exploitation nutzt aktuelles Wissen",
+      "Exploitation ist nur bei stationären Rewards sinnvoll"
+    ],
+    "correct_index": 2,
+    "explanation": "Exploration dient dem Lernen über unbekannte Aktionen, Exploitation nutzt das Gelernte."
   },
   {
     "question": "Wie ist die Entscheidungsregel einer $$\\varepsilon$$-greedy-Strategie definiert?",
@@ -52,7 +174,7 @@
       "Ziehe jede Aktion gleich häufig"
     ],
     "correct_index": 1,
-    "explanation": "Mit Wahrscheinlichkeit $$1-\\varepsilon$$ wird die aktuell beste Aktion $$\\arg\\max_a Q_t(a)$$ gewählt, sonst zufällig exploriert."
+    "explanation": "Mit Wahrscheinlichkeit $$1-\\varepsilon$$ wird die beste bekannte Aktion gewählt, sonst exploriert."
   },
   {
     "question": "Wie lautet das Sample-Average-Update für den Aktionswert?",
@@ -63,7 +185,18 @@
       "$$Q_{n+1}(a) = R_n$$"
     ],
     "correct_index": 2,
-    "explanation": "Das Sample-Average-Update nutzt eine adaptive Schrittweite $$\\frac{1}{N_n(a)}$$."
+    "explanation": "Das Sample-Average-Update nutzt eine adaptive Schrittweite $$1/N_n(a)$$."
+  },
+  {
+    "question": "Warum ist bei nicht-stationären Bandits eine konstante Schrittweite $$\\alpha$$ vorteilhaft?",
+    "options": [
+      "Sie eliminiert Exploration",
+      "Sie vergisst alte Beobachtungen schneller",
+      "Sie reduziert den Rechenaufwand",
+      "Sie macht das Verfahren unbiased"
+    ],
+    "correct_index": 1,
+    "explanation": "Neue Beobachtungen werden stärker gewichtet, was Anpassung an Drift erlaubt."
   },
   {
     "question": "Welche Entscheidungsregel definiert UCB?",
@@ -74,10 +207,21 @@
       "$$a_t = \\arg\\min_a N_t(a)$$"
     ],
     "correct_index": 1,
-    "explanation": "UCB kombiniert Mittelwertschätzung $$Q_t(a)$$ mit einem Unsicherheitsbonus."
+    "explanation": "UCB kombiniert Erwartungswert und Unsicherheitsbonus."
   },
   {
-    "question": "Wie ist der kumulative Regret formal definiert?",
+    "question": "Welche Rolle spielt der Parameter $$c$$ in UCB?",
+    "options": [
+      "Diskontierungsfaktor",
+      "Schrittweite",
+      "Stärke der Exploration",
+      "Anzahl der Arme"
+    ],
+    "correct_index": 2,
+    "explanation": "Ein größeres $$c$$ fördert stärkere Exploration."
+  },
+  {
+    "question": "Wie ist der kumulative Regret $$R_T$$ definiert?",
     "options": [
       "$$R_T = \\sum_{t=1}^T r_t$$",
       "$$R_T = \\sum_{t=1}^T (\\mu^* - r_t)$$",
@@ -85,6 +229,6 @@
       "$$R_T = \\sum_a N_T(a)$$"
     ],
     "correct_index": 1,
-    "explanation": "Der kumulative Regret $$R_T$$ misst den entgangenen Reward relativ zum optimalen Erwartungswert $$\\mu^*$$."
+    "explanation": "Regret misst den entgangenen Reward im Vergleich zum optimalen Arm."
   }
 ]
