@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Welches Problem löst Dynamic Programming (DP) im Reinforcement Learning?",
+    "options": [
+      "Lernen einer Policy aus gesammelten Samples",
+      "Approximation unbekannter Übergangsdynamiken",
+      "Optimale Planung bei bekanntem MDP",
+      "Exploration unbekannter Aktionsräume"
+    ],
+    "correct_index": 2,
+    "explanation": "DP löst das Planungsproblem: Bei bekanntem Modell \\((S,A,P,R,\\gamma)\\) werden optimale Werte und Policies berechnet."
+  },
+  {
+    "question": "Welche Annahme ist zwingend notwendig, um Dynamic Programming anwenden zu können?",
+    "options": [
+      "Episodische Umgebung",
+      "Bekanntes Übergangsmodell",
+      "Deterministische Rewards",
+      "Kleine Aktionsräume"
+    ],
+    "correct_index": 1,
+    "explanation": "DP benötigt vollständigen Zugriff auf \\(P(s',r|s,a)\\), um Erwartungswerte exakt zu berechnen."
+  },
+  {
+    "question": "Warum reduziert die Markov-Eigenschaft das globale Optimierungsproblem auf lokale Konsistenzbedingungen?",
+    "options": [
+      "Weil Rewards unabhängig vom Zustand sind",
+      "Weil nur der aktuelle Zustand und die Aktion relevant für die Zukunft sind",
+      "Weil Policies deterministisch sind",
+      "Weil der Return endlich ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Durch die Markov-Eigenschaft hängt die Zukunft nur von \\(s\\) und \\(a\\) ab, wodurch Bellman-Gleichungen möglich werden."
+  },
+  {
+    "question": "Was bedeutet der Bellman-Gedanke der Selbstkonsistenz?",
+    "options": [
+      "Alle Zustände haben denselben Wert",
+      "Ein Value ist korrekt, wenn er mit seinen Nachfolgern übereinstimmt",
+      "Policies ändern sich nicht mehr",
+      "Rewards müssen stationär sein"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Value-Funktion ist korrekt, wenn sie die Bellman-Gleichung erfüllt."
+  },
+  {
+    "question": "Welche Gleichung beschreibt die Bellman-Erwartungsgleichung für Policy Evaluation?",
+    "options": [
+      "$$V(s)=\\max_a \\sum_{s',r} P(s',r|s,a)[r+\\gamma V(s')]$$",
+      "$$V(s)=\\sum_a \\pi(a|s) \\sum_{s',r} P(s',r|s,a)[r+\\gamma V(s')]$$",
+      "$$V(s)=R(s)$$",
+      "$$V(s)=\\sum_{s'} V(s')$$"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Evaluation mittelt über die Policy \\(\\pi\\) und die Übergangsdynamik."
+  },
+  {
+    "question": "Welche Gleichung definiert den Optimality Backup?",
+    "options": [
+      "$$V^*(s)=\\sum_a \\pi(a|s) Q(s,a)$$",
+      "$$V^*(s)=\\max_a \\sum_{s',r} P(s',r|s,a)[r+\\gamma V^*(s')]$$",
+      "$$V^*(s)=R(s)$$",
+      "$$V^*(s)=\\mathbb{E}[G_t]$$"
+    ],
+    "correct_index": 1,
+    "explanation": "Beim Optimality Backup wird über alle Aktionen maximiert."
+  },
+  {
+    "question": "Welche Aussage unterscheidet Erwartungs- von Max-Backups korrekt?",
+    "options": [
+      "Erwartungs-Backups schärfen Werte stärker",
+      "Max-Backups mitteln über Aktionen",
+      "Erwartungs-Backups glätten Werte, Max-Backups schärfen sie",
+      "Beide sind identisch bei deterministischen Policies"
+    ],
+    "correct_index": 2,
+    "explanation": "Erwartungs-Backups mitteln, Max-Backups wählen die beste Aktion."
+  },
+  {
+    "question": "Was ist die Kernidee von Generalized Policy Iteration (GPI)?",
+    "options": [
+      "Abwechselndes Lernen mit Samples",
+      "Trennung von Planung und Lernen",
+      "Wechselwirkung zwischen Policy Evaluation und Improvement",
+      "Approximation von Value-Funktionen"
+    ],
+    "correct_index": 2,
+    "explanation": "GPI beschreibt den iterativen Prozess aus Bewertung (Evaluation) und Verbesserung (Improvement)."
+  },
+  {
+    "question": "Welche zwei Schritte bilden den Kern jedes DP-Algorithmus?",
+    "options": [
+      "Sampling und Optimierung",
+      "Exploration und Exploitation",
+      "Policy Evaluation und Policy Improvement",
+      "Regression und Klassifikation"
+    ],
+    "correct_index": 2,
+    "explanation": "DP basiert auf der wiederholten Anwendung von Evaluation und Improvement."
+  },
+  {
+    "question": "Was passiert im Policy Improvement Schritt?",
+    "options": [
+      "Die Value-Funktion wird geglättet",
+      "Die Policy wird greedy bezüglich der aktuellen Value-Funktion",
+      "Die Rewards werden neu geschätzt",
+      "Die Transitionen werden gelernt"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Improvement wählt für jeden Zustand die Aktion mit maximalem erwarteten Return."
+  },
+  {
+    "question": "Wann terminiert Policy Iteration (PI)?",
+    "options": [
+      "Wenn \\(||V_{k+1}-V_k||_\\infty < \\theta\\)",
+      "Wenn die Policy stabil ist",
+      "Nach einer festen Anzahl Iterationen",
+      "Wenn der Reward nicht mehr steigt"
+    ],
+    "correct_index": 1,
+    "explanation": "PI stoppt, sobald sich die Policy nicht mehr ändert."
+  },
+  {
+    "question": "Warum hat Policy Iteration typischerweise wenige Iterationen?",
+    "options": [
+      "Weil keine Evaluation stattfindet",
+      "Weil Policies diskret sind",
+      "Weil jede Verbesserung strikt besser oder gleich gut ist",
+      "Weil γ klein ist"
+    ],
+    "correct_index": 2,
+    "explanation": "Policy Improvement garantiert monotone Verbesserung."
+  },
+  {
+    "question": "Was ist die Grundidee von Value Iteration (VI)?",
+    "options": [
+      "Evaluation und Improvement strikt zu trennen",
+      "Nur Policies zu aktualisieren",
+      "Evaluation und Improvement in einem Backup zu vereinen",
+      "Monte-Carlo-Returns zu verwenden"
+    ],
+    "correct_index": 2,
+    "explanation": "VI verwendet direkt den Optimality Backup."
+  },
+  {
+    "question": "Wann terminiert Value Iteration?",
+    "options": [
+      "Wenn die Policy stabil ist",
+      "Wenn alle Zustände besucht wurden",
+      "Wenn \\(||V_{k+1}-V_k||_\\infty < \\theta\\)",
+      "Nach genau |S| Iterationen"
+    ],
+    "correct_index": 2,
+    "explanation": "VI nutzt eine Norm-Schranke auf die Value-Änderung."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Hauptunterschied zwischen PI und VI korrekt?",
+    "options": [
+      "PI nutzt Max-Backups, VI Erwartungs-Backups",
+      "PI hat hohe Kosten pro Iteration, aber wenige Iterationen",
+      "VI benötigt ein bekanntes Modell, PI nicht",
+      "VI liefert keine Policy"
+    ],
+    "correct_index": 1,
+    "explanation": "PI ist rechenintensiver pro Iteration, konvergiert aber schneller."
+  },
+  {
+    "question": "Wann sollte Value Iteration bevorzugt werden?",
+    "options": [
+      "Wenn Policy Evaluation sehr günstig ist",
+      "Wenn ein schneller, grober Policy-Entwurf benötigt wird",
+      "Wenn der Zustandsraum sehr klein ist",
+      "Wenn γ nahe 0 ist"
+    ],
+    "correct_index": 1,
+    "explanation": "VI besitzt Anytime-Charakter und liefert schnell brauchbare Lösungen."
+  },
+  {
+    "question": "Was ist Modified Policy Iteration (MPI)?",
+    "options": [
+      "VI mit kleinerem γ",
+      "PI ohne Policy Improvement",
+      "Ein Mittelweg zwischen PI und VI",
+      "Asynchrones Value Iteration"
+    ],
+    "correct_index": 2,
+    "explanation": "MPI führt nur wenige Evaluation-Sweeps zwischen Improvements aus."
+  },
+  {
+    "question": "Wie beeinflusst ein Diskontfaktor γ nahe 1 die Konvergenz?",
+    "options": [
+      "Schnellere Konvergenz",
+      "Langsamere Konvergenz",
+      "Keine Auswirkung",
+      "Instabile Policies"
+    ],
+    "correct_index": 1,
+    "explanation": "Hohe γ-Werte vergrößern den effektiven Horizont und verlangsamen Konvergenz."
+  },
+  {
+    "question": "Warum können Gauss-Seidel-Updates die Konvergenz beschleunigen?",
+    "options": [
+      "Weil sie Exploration hinzufügen",
+      "Weil sie neue Werte sofort weiterverwenden",
+      "Weil sie γ reduzieren",
+      "Weil sie deterministische Policies erzwingen"
+    ],
+    "correct_index": 1,
+    "explanation": "Aktualisierte Werte fließen sofort in nachfolgende Updates ein."
+  },
+  {
+    "question": "Warum ist es oft sinnvoll, die Policy zu evaluieren, die man tatsächlich benötigt, statt extrem exakt zu evaluieren?",
+    "options": [
+      "Weil DP immer approximativ ist",
+      "Weil exakte Evaluation Exploration verhindert",
+      "Weil zu strenge Abbruchkriterien unnötig teuer sind",
+      "Weil Policies instabil sind"
+    ],
+    "correct_index": 2,
+    "explanation": "Übergenaue Evaluation kostet Rechenzeit ohne praktischen Nutzen."
+  }
+]
