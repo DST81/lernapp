@@ -1,0 +1,90 @@
+[
+  {
+    "question": "Was ist das Ziel von Policy Gradient Methods?",
+    "options": [
+      "Wertfunktionen Q(s,a) approximieren",
+      "Eine parametrische Policy πθ(a|s) direkt optimieren",
+      "Transitionen im Modell planen",
+      "Replay-Puffer benutzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Gradient Methods optimieren direkt die Parameter einer Policy, um erwartete Returns zu maximieren, ohne zuerst Wertefunktionen zu lernen."
+  },
+  {
+    "question": "Welche Eigenschaft von Policy Gradient Methods macht sie besonders für kontinuierliche Aktionen geeignet?",
+    "options": [
+      "Einfache diskrete Argmax-Wahl",
+      "Unterstützen stochastische und differenzierbare Policies",
+      "Verwendung von Eligibility Traces",
+      "Replay-Puffer"
+    ],
+    "correct_index": 1,
+    "explanation": "Policy Gradient Methods können kontinuierliche Aktionsräume modellieren, z.B. mit Gaußschen Policies, und erlauben stochastische Differenzierbarkeit, was diskrete Methoden nicht leisten."
+  },
+  {
+    "question": "Was ist der Zweck eines Baselines in Policy Gradient?",
+    "options": [
+      "Den Erwartungswert des Gradienten ändern",
+      "Die Varianz des Gradienten reduzieren",
+      "Den Return verzerren",
+      "Die Policy deterministisch machen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Baseline, typischerweise der State-Value vπ(s), wird vom Return subtrahiert, um Varianz zu reduzieren, ohne den Erwartungswert des Policy-Gradienten zu verändern."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Actor-Critic Ansatz korrekt?",
+    "options": [
+      "Actor approximiert Q(s,a) und Critic optimiert πθ",
+      "Critic approximiert Wertefunktion Vw(s), Actor aktualisiert Policy πθ",
+      "Nur Monte Carlo Updates werden verwendet",
+      "Nur für diskrete Aktionen geeignet"
+    ],
+    "correct_index": 1,
+    "explanation": "Actor-Critic kombiniert Policy Gradient (Actor) mit TD-Learning (Critic), wobei der Critic die Wertefunktion V(s) schätzt und der Actor die Policy mit einem Advantage- oder TD-Fehler aktualisiert."
+  },
+  {
+    "question": "Was ist ein Markov-Spiel in MARL?",
+    "options": [
+      "Ein Single-Agent MDP",
+      "Eine Multi-Agent Erweiterung des MDP mit gemeinsamen Zuständen, Aktionen und individuellen Rewards",
+      "Ein statisches Koordinationsspiel ohne Zustände",
+      "Ein deterministisches Simulationsspiel"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Markov-Spiel (Stochastic Game) generalisiert MDPs auf mehrere Agenten mit gemeinsamer Umwelt, individuellen Aktionsräumen und Rewards, wobei Übergänge von allen Agentenaktionen abhängen."
+  },
+  {
+    "question": "Was ist das zentrale Problem bei Independent Learners in MARL?",
+    "options": [
+      "Zu einfache Policies",
+      "Starke Nicht-Stationarität durch lernende andere Agenten",
+      "Keine Belohnung verfügbar",
+      "Keine Möglichkeit zur Exploration"
+    ],
+    "correct_index": 1,
+    "explanation": "Wenn jeder Agent unabhängig lernt und andere Agenten sich gleichzeitig ändern, werden die Übergangsdynamiken nicht-stationär, was zu Oszillationen, schlechten Gleichgewichten oder instabilem Lernen führen kann."
+  },
+  {
+    "question": "Was bedeutet CTDE (Centralized Training, Decentralized Execution)?",
+    "options": [
+      "Agents trainieren und führen Policies zentralisiert aus",
+      "Agents trainieren zentralisiert, führen Policies dezentral aus",
+      "Agents trainieren unabhängig, führen Policies zentral aus",
+      "Agents lernen ohne Critic"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei CTDE haben Agenten während des Trainings Zugriff auf alle Zustände und Aktionen (z.B. zentralen Critic), während sie zur Ausführung nur lokale Beobachtungen nutzen, was Stabilität und Skalierbarkeit erhöht."
+  },
+  {
+    "question": "Welche Art von MARL-Interaktion beschreibt ein kooperatives Spiel?",
+    "options": [
+      "Jeder Agent verfolgt eigene Ziele, nullsummenartig",
+      "Alle Agenten teilen denselben Reward",
+      "Agenten haben teilweise widersprüchliche Interessen",
+      "Keine Interaktion zwischen Agenten"
+    ],
+    "correct_index": 1,
+    "explanation": "In kooperativen Multi-Agent-Szenarien teilen alle Agenten denselben globalen Reward und müssen gemeinsam lernen, z.B. bei Team-Robotern oder Multi-Agent-Spielen."
+  }
+]
