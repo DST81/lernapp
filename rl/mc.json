@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Wo sind Monte-Carlo-Methoden (MC) im RL-Spektrum im Vergleich zu DP und TD einzuordnen?",
+    "options": [
+      "Modellbasiert, bootstrappend, online",
+      "Modellfrei, ohne Bootstrapping, episodisch",
+      "Modellfrei, bootstrappend, kontinuierlich",
+      "Modellbasiert, episodisch, low variance"
+    ],
+    "correct_index": 1,
+    "explanation": "MC ist modellfrei, verwendet vollständige Returns und benötigt abgeschlossene Episoden."
+  },
+  {
+    "question": "Was ist die zentrale Idee von Monte-Carlo-Methoden?",
+    "options": [
+      "Lösen der Bellman-Gleichung iterativ",
+      "Bootstrapping von Schätzwerten",
+      "Schätzung von Werten durch Mittelung realisierter Returns",
+      "Approximation des Übergangsmodells"
+    ],
+    "correct_index": 2,
+    "explanation": "MC schätzt Werte durch das Mittel über beobachtete Returns aus vollständigen Episoden."
+  },
+  {
+    "question": "Welche Definition hat der Return $$G_t$$ in Monte-Carlo-Methoden?",
+    "options": [
+      "$$G_t = R_{t+1}$$",
+      "$$G_t = \\sum_{k=0}^{\\infty} R_{t+k+1}$$",
+      "$$G_t = \\sum_{k=0}^{T-t-1} \\gamma^k R_{t+k+1}$$",
+      "$$G_t = V(S_{t+1})$$"
+    ],
+    "correct_index": 2,
+    "explanation": "MC nutzt vollständige, diskontierte Returns bis zum Episodenende."
+  },
+  {
+    "question": "Welche Annahme ist für klassische Monte-Carlo-Methoden zwingend erforderlich?",
+    "options": [
+      "Bekanntes Übergangsmodell",
+      "Bootstrapping",
+      "Episoden mit endlichem Horizont",
+      "Stationäre Policies"
+    ],
+    "correct_index": 2,
+    "explanation": "MC setzt terminierende Episoden voraus, um vollständige Returns zu berechnen."
+  },
+  {
+    "question": "Warum haben Monte-Carlo-Schätzer typischerweise hohe Varianz?",
+    "options": [
+      "Weil sie biased sind",
+      "Weil sie nur einmal pro Episode updaten",
+      "Weil sie vollständige Returns ohne Glättung verwenden",
+      "Weil sie deterministische Policies nutzen"
+    ],
+    "correct_index": 2,
+    "explanation": "Volle Returns akkumulieren Zufall über viele Zeitschritte."
+  },
+  {
+    "question": "Wann sind Monte-Carlo-Methoden besonders gut geeignet?",
+    "options": [
+      "Wenn das Modell bekannt ist",
+      "Wenn Episoden billig oder parallel generierbar sind",
+      "Wenn Online-Lernen erforderlich ist",
+      "Bei kontinuierlichen Aufgaben ohne Terminalzustände"
+    ],
+    "correct_index": 1,
+    "explanation": "MC eignet sich gut, wenn viele Episoden verfügbar sind (z. B. Simulation, Logs)."
+  },
+  {
+    "question": "Was unterscheidet First-Visit von Every-Visit Monte Carlo?",
+    "options": [
+      "First-Visit nutzt nur terminale Zustände",
+      "Every-Visit bootstrapped",
+      "First-Visit aktualisiert pro Episode jeden Zustand nur einmal",
+      "Every-Visit ist biased"
+    ],
+    "correct_index": 2,
+    "explanation": "First-Visit berücksichtigt nur den ersten Besuch eines Zustands pro Episode."
+  },
+  {
+    "question": "Welche Aussage beschreibt den Varianzunterschied zwischen First-Visit und Every-Visit korrekt?",
+    "options": [
+      "First-Visit hat immer höhere Varianz",
+      "Every-Visit nutzt mehr Daten pro Episode",
+      "Beide haben identische Varianz",
+      "Every-Visit ist immer unbiased"
+    ],
+    "correct_index": 1,
+    "explanation": "Every-Visit nutzt mehr Samples pro Episode und kann dadurch Varianz senken."
+  },
+  {
+    "question": "Wie wird der Zustandswert $$V_\\pi(s)$$ im Monte-Carlo-Setting definiert?",
+    "options": [
+      "$$V_\\pi(s)=\\max_a Q(s,a)$$",
+      "$$V_\\pi(s)=\\mathbb{E}_\\pi[G_t \\mid S_t=s]$$",
+      "$$V_\\pi(s)=R(s)$$",
+      "$$V_\\pi(s)=\\sum_{s'}P(s'|s)V(s')$$"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Wert ist der Erwartungswert des Returns unter Policy \\(\\pi\\)."
+  },
+  {
+    "question": "Warum müssen bei modellfreiem Lernen häufig Q-Werte statt V-Werte gelernt werden?",
+    "options": [
+      "Weil V-Werte nicht konvergieren",
+      "Weil Policy Improvement $$\\arg\\max_a Q(s,a)$$ benötigt",
+      "Weil Q-Werte weniger Varianz haben",
+      "Weil V-Werte das Modell benötigen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ohne Modell ist $$Q(s,a)$$ nötig, um Aktionen zu vergleichen."
+  },
+  {
+    "question": "Wie lautet das inkrementelle Update für Monte-Carlo-Prediction?",
+    "options": [
+      "$$V(s) \\leftarrow R_t$$",
+      "$$V(s) \\leftarrow V(s)+\\alpha(G_t - V(s))$$",
+      "$$V(s) \\leftarrow \\gamma V(s')$$",
+      "$$V(s) \\leftarrow \\max G_t$$"
+    ],
+    "correct_index": 1,
+    "explanation": "MC nutzt inkrementelle Mittelwert-Schätzung."
+  },
+  {
+    "question": "Was bedeutet eine $$\\varepsilon$$-soft Policy im MC-Control?",
+    "options": [
+      "Die Policy ist deterministisch",
+      "Alle Aktionen haben Wahrscheinlichkeit > 0",
+      "Nur optimale Aktionen werden gewählt",
+      "Exploration findet nur am Anfang statt"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine $$\\varepsilon$$-soft Policy garantiert Exploration aller Aktionen."
+  },
+  {
+    "question": "Warum ist Exploration für MC-Control zwingend notwendig?",
+    "options": [
+      "Sonst divergiert der Return",
+      "Sonst werden nicht alle (s,a)-Paare besucht",
+      "Sonst ist Bootstrapping nicht möglich",
+      "Sonst wird die Policy instabil"
+    ],
+    "correct_index": 1,
+    "explanation": "Konvergenz erfordert unendliche Besuche aller relevanten Zustands-Aktions-Paare."
+  },
+  {
+    "question": "Was bedeutet GLIE (Greedy in the Limit with Infinite Exploration)?",
+    "options": [
+      "Die Policy bleibt stochastisch",
+      "Exploration verschwindet sofort",
+      "Exploration nimmt ab, aber hört nie vollständig auf",
+      "Die Policy wird zufällig"
+    ],
+    "correct_index": 2,
+    "explanation": "GLIE garantiert Exploration und asymptotisch greedy Verhalten."
+  },
+  {
+    "question": "Warum ist Off-policy Monte Carlo nützlich?",
+    "options": [
+      "Weil es kein Modell benötigt",
+      "Weil es online funktioniert",
+      "Weil man eine Zielpolicy lernen kann, ohne sie auszuführen",
+      "Weil es Varianz eliminiert"
+    ],
+    "correct_index": 2,
+    "explanation": "Off-policy erlaubt Lernen über eine Policy, während eine andere ausgeführt wird."
+  },
+  {
+    "question": "Was ist der Zweck von Importance Sampling im Off-policy MC?",
+    "options": [
+      "Reduktion des Bias",
+      "Anpassung der Returns von Verhalten- zu Zielpolicy",
+      "Stabilisierung der Bellman-Gleichung",
+      "Reduktion der Episodenlänge"
+    ],
+    "correct_index": 1,
+    "explanation": "IS korrigiert die Verteilung der gesammelten Daten."
+  },
+  {
+    "question": "Wie ist das Importance-Sampling-Verhältnis $$\\rho_{t:T-1}$$ definiert?",
+    "options": [
+      "$$\\prod_{k=t}^{T-1} \\frac{b(A_k|S_k)}{\\pi(A_k|S_k)}$$",
+      "$$\\sum_{k=t}^{T-1} \\frac{\\pi(A_k|S_k)}{b(A_k|S_k)}$$",
+      "$$\\prod_{k=t}^{T-1} \\frac{\\pi(A_k|S_k)}{b(A_k|S_k)}$$",
+      "$$\\max_k \\frac{\\pi}{b}$$"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Produkt reweightet die gesamte Trajektorie."
+  },
+  {
+    "question": "Welche Eigenschaft hat Ordinary Importance Sampling?",
+    "options": [
+      "Biased, niedrige Varianz",
+      "Unbiased, hohe Varianz",
+      "Biased, niedrige Varianz asymptotisch",
+      "Deterministisch"
+    ],
+    "correct_index": 1,
+    "explanation": "Ordinary IS ist erwartungstreu, leidet aber unter hoher Varianz."
+  },
+  {
+    "question": "Warum wird Weighted Importance Sampling oft bevorzugt?",
+    "options": [
+      "Es ist unbiased",
+      "Es eliminiert Exploration",
+      "Es reduziert Varianz bei endlichen Samples",
+      "Es konvergiert schneller als TD"
+    ],
+    "correct_index": 2,
+    "explanation": "Weighted IS opfert Unbiasedness für geringere Varianz."
+  },
+  {
+    "question": "Was ist eine typische Varianz-Falle bei Off-policy MC?",
+    "options": [
+      "Zu kleine Schrittweite",
+      "Explodierende IS-Gewichte",
+      "Zu kurze Episoden",
+      "Deterministische Rewards"
+    ],
+    "correct_index": 1,
+    "explanation": "Wenn $$\\pi$$ dort Masse hat, wo $$b$$ selten ist, explodieren die Gewichte."
+  }
+]
