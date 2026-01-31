@@ -1,0 +1,332 @@
+[
+  {
+    "question": "Was ist die zentrale Idee von Monte-Carlo-Methoden im Reinforcement Learning?",
+    "options": [
+      "Lernen aus bootstrapped Ein-Schritt-Zielen",
+      "Lernen aus vollständigen episodischen Returns",
+      "Planen mit bekanntem Modell",
+      "Optimierung eines differentiellen Loss"
+    ],
+    "correct_index": 1,
+    "explanation": "Monte-Carlo-Methoden schätzen Werte, indem sie vollständige Returns aus abgeschlossenen Episoden mitteln."
+  },
+  {
+    "question": "Welche Annahme ist für Monte-Carlo-Methoden essenziell?",
+    "options": [
+      "Bekanntes Übergangsmodell",
+      "Kontinuierliche Zustände",
+      "Episoden mit Terminalzustand",
+      "Bootstrapping"
+    ],
+    "correct_index": 2,
+    "explanation": "MC benötigt abgeschlossene Episoden, um vollständige Returns berechnen zu können."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen First-Visit und Every-Visit Monte Carlo?",
+    "options": [
+      "First-Visit nutzt nur das erste Auftreten eines Zustands pro Episode",
+      "Every-Visit nutzt nur das letzte Auftreten",
+      "First-Visit ist off-policy",
+      "Every-Visit benötigt ein Modell"
+    ],
+    "correct_index": 0,
+    "explanation": "First-Visit aktualisiert pro Episode nur beim ersten Auftreten eines Zustands, Every-Visit bei jedem Auftreten."
+  },
+  {
+    "question": "Warum haben Monte-Carlo-Methoden typischerweise hohe Varianz?",
+    "options": [
+      "Weil sie bootstrappen",
+      "Weil sie nur Ein-Schritt-Rewards nutzen",
+      "Weil der gesamte zufällige Return verwendet wird",
+      "Weil sie biased sind"
+    ],
+    "correct_index": 2,
+    "explanation": "Der vollständige Return enthält viele zufällige Einflüsse, was zu hoher Varianz führt."
+  },
+  {
+    "question": "Was bedeutet On-policy Monte-Carlo Control?",
+    "options": [
+      "Policy und Verhalten sind unterschiedlich",
+      "Policy wird nicht verbessert",
+      "Die gleiche Policy wird zum Sammeln von Daten und zur Verbesserung genutzt",
+      "Es wird ein Modell gelernt"
+    ],
+    "correct_index": 2,
+    "explanation": "On-policy bedeutet, dass die Policy, die gelernt wird, auch die Daten erzeugt."
+  },
+  {
+    "question": "Warum werden ε-soft Policies bei MC Control verwendet?",
+    "options": [
+      "Um Bootstrapping zu vermeiden",
+      "Um Exploration sicherzustellen",
+      "Um Varianz zu minimieren",
+      "Um das Modell zu lernen"
+    ],
+    "correct_index": 1,
+    "explanation": "ε-soft Policies garantieren, dass alle Aktionen mit positiver Wahrscheinlichkeit ausprobiert werden."
+  },
+  {
+    "question": "Was beschreibt GLIE (Greedy in the Limit with Infinite Exploration)?",
+    "options": [
+      "Konstante Exploration",
+      "Exploration verschwindet sofort",
+      "Unendlich oft Exploration, aber letztlich greedy",
+      "Nur für Off-policy Methoden"
+    ],
+    "correct_index": 2,
+    "explanation": "GLIE bedeutet, dass alle (s,a) unendlich oft besucht werden, während die Policy langfristig greedy wird."
+  },
+  {
+    "question": "Warum wird Importance Sampling im Off-policy Monte Carlo benötigt?",
+    "options": [
+      "Um ein Modell zu approximieren",
+      "Um Returns von der Behavior- auf die Target-Policy zu korrigieren",
+      "Um Bootstrapping zu ermöglichen",
+      "Um Exploration zu reduzieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Importance Sampling korrigiert die Verteilung der gesammelten Daten."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen Ordinary und Weighted Importance Sampling?",
+    "options": [
+      "Ordinary IS ist biased",
+      "Weighted IS reduziert Varianz auf Kosten von Bias",
+      "Weighted IS benötigt ein Modell",
+      "Ordinary IS funktioniert nur episodisch"
+    ],
+    "correct_index": 1,
+    "explanation": "Weighted IS ist leicht biased, aber hat deutlich geringere Varianz."
+  },
+  {
+    "question": "Was ist die zentrale Idee von Temporal-Difference Learning?",
+    "options": [
+      "Lernen aus vollständigen Episoden",
+      "Planen mit einem Modell",
+      "Lernen aus bootstrapped Ein-Schritt-Zielen",
+      "Optimierung einer Policy direkt"
+    ],
+    "correct_index": 2,
+    "explanation": "TD lernt aus Ein-Schritt-Targets, die zukünftige Schätzungen bootstrappen."
+  },
+  {
+    "question": "Wie lautet das TD(0)-Update für die Zustandswertfunktion?",
+    "options": [
+      "V(s) ← V(s) + α(Gt − V(s))",
+      "V(s) ← Rt+1 + γV(s')",
+      "V(s) ← V(s) + α(Rt+1 + γV(s') − V(s))",
+      "V(s) ← maxa Q(s,a)"
+    ],
+    "correct_index": 2,
+    "explanation": "TD(0) nutzt den Reward plus diskontierten nächsten Wert als Target."
+  },
+  {
+    "question": "Warum ist TD Learning oft daten-effizienter als Monte Carlo?",
+    "options": [
+      "Weil es ein Modell nutzt",
+      "Weil es online und ohne Episodenende lernt",
+      "Weil es unbiased ist",
+      "Weil es nur terminale Rewards nutzt"
+    ],
+    "correct_index": 1,
+    "explanation": "TD kann sofort nach jedem Schritt lernen."
+  },
+  {
+    "question": "Was ist Bootstrapping?",
+    "options": [
+      "Verwendung realer Returns",
+      "Verwendung geschätzter Werte im Target",
+      "Exploration durch Zufall",
+      "Planung mit Simulation"
+    ],
+    "correct_index": 1,
+    "explanation": "Bootstrapping bedeutet, eigene Schätzungen zur Zielberechnung zu nutzen."
+  },
+  {
+    "question": "Was unterscheidet SARSA von Q-Learning?",
+    "options": [
+      "SARSA ist off-policy",
+      "Q-Learning ist on-policy",
+      "SARSA nutzt die tatsächlich gewählte Folgeaktion",
+      "Q-Learning benötigt Episoden"
+    ],
+    "correct_index": 2,
+    "explanation": "SARSA lernt den Wert der ausgeführten (explorativen) Policy."
+  },
+  {
+    "question": "Warum kann Q-Learning riskanteres Verhalten zeigen?",
+    "options": [
+      "Weil es keine Exploration nutzt",
+      "Weil der greedy Target-Operator Risiken ignoriert",
+      "Weil es hohe Varianz hat",
+      "Weil es biased ist"
+    ],
+    "correct_index": 1,
+    "explanation": "Q-Learning bewertet immer die greedy Zukunft, auch wenn aktuell exploriert wird."
+  },
+  {
+    "question": "Was ist Expected SARSA?",
+    "options": [
+      "Ein Monte-Carlo-Verfahren",
+      "Eine TD-Methode mit Erwartungswert über Aktionen",
+      "Ein rein greedy Algorithmus",
+      "Ein Planning-Algorithmus"
+    ],
+    "correct_index": 1,
+    "explanation": "Expected SARSA ersetzt die Stichprobe Q(s',a') durch den Erwartungswert unter der Policy."
+  },
+  {
+    "question": "Was ist das Ziel von Double Q-Learning?",
+    "options": [
+      "Schnelleres Lernen",
+      "Reduktion der Overestimation durch max-Operator",
+      "Vermeidung von Exploration",
+      "Episodisches Lernen"
+    ],
+    "correct_index": 1,
+    "explanation": "Double Q-Learning trennt Action-Auswahl und -Bewertung."
+  },
+  {
+    "question": "Was beschreibt n-step TD?",
+    "options": [
+      "Reines Monte Carlo",
+      "Ein Kontinuum zwischen TD(0) und MC",
+      "Nur für Off-policy",
+      "Nur für Planning"
+    ],
+    "correct_index": 1,
+    "explanation": "n-step TD kombiniert mehrere Rewards mit anschließendem Bootstrapping."
+  },
+  {
+    "question": "Welche Rolle spielt λ in TD(λ)?",
+    "options": [
+      "Explorationsrate",
+      "Discountfaktor",
+      "Bias-Varianz-Regler",
+      "Schrittweite"
+    ],
+    "correct_index": 2,
+    "explanation": "λ steuert den Trade-off zwischen TD(0) und Monte Carlo."
+  },
+  {
+    "question": "Was sind Eligibility Traces?",
+    "options": [
+      "Replay Buffer",
+      "Kurzzeitgedächtnis für kürzlich besuchte Zustände",
+      "Modelle der Umwelt",
+      "Explorationsstrategien"
+    ],
+    "correct_index": 1,
+    "explanation": "Eligibility Traces verteilen Kredit über mehrere vergangene Schritte."
+  },
+  {
+    "question": "Was ist die Grundidee von Dyna?",
+    "options": [
+      "Reines Planning",
+      "Reines Model-Free Learning",
+      "Kombination aus Lernen und Planen mit gelerntem Modell",
+      "Nur Monte Carlo"
+    ],
+    "correct_index": 2,
+    "explanation": "Dyna nutzt reale und simulierte Erfahrung."
+  },
+  {
+    "question": "Warum sind Modelle in RL nützlich?",
+    "options": [
+      "Sie eliminieren Exploration",
+      "Sie erlauben simulierte Erfahrung",
+      "Sie reduzieren Bias vollständig",
+      "Sie ersetzen Value Functions"
+    ],
+    "correct_index": 1,
+    "explanation": "Modelle erhöhen Sample-Effizienz durch Simulation."
+  },
+  {
+    "question": "Was ist Prioritized Sweeping?",
+    "options": [
+      "Uniformes Planning",
+      "Planung nach Zufall",
+      "Planung fokussiert auf große TD-Fehler",
+      "Reines Monte Carlo Planning"
+    ],
+    "correct_index": 2,
+    "explanation": "Updates werden dort priorisiert, wo sie den größten Effekt haben."
+  },
+  {
+    "question": "Was ist ein zentrales Risiko bei model-basiertem Planning?",
+    "options": [
+      "Hohe Varianz",
+      "Model Bias",
+      "Fehlende Exploration",
+      "Hoher Speicherbedarf"
+    ],
+    "correct_index": 1,
+    "explanation": "Fehler im Modell können sich über geplante Rollouts verstärken."
+  },
+  {
+    "question": "Warum skaliert tabulares RL schlecht?",
+    "options": [
+      "Zu hohe Varianz",
+      "Keine Exploration",
+      "Kein Generalisieren über Zustände",
+      "Benötigt ein Modell"
+    ],
+    "correct_index": 2,
+    "explanation": "Tabulare Methoden lernen nichts über ähnliche Zustände."
+  },
+  {
+    "question": "Was ist Function Approximation im RL?",
+    "options": [
+      "Speichern aller Zustände",
+      "Approximation von Werten mit Parametern",
+      "Planung mit Modell",
+      "Policy Iteration"
+    ],
+    "correct_index": 1,
+    "explanation": "Wertfunktionen werden durch parametrische Funktionen approximiert."
+  },
+  {
+    "question": "Warum spricht man von Semi-Gradient TD?",
+    "options": [
+      "Weil kein Gradient genutzt wird",
+      "Weil nur durch den aktuellen Zustand abgeleitet wird",
+      "Weil der Target-Term nicht abgeleitet wird",
+      "Weil es off-policy ist"
+    ],
+    "correct_index": 2,
+    "explanation": "Der Bootstrap-Target wird als Konstante behandelt."
+  },
+  {
+    "question": "Was ist die 'Deadly Triad'?",
+    "options": [
+      "Exploration, Planning, Monte Carlo",
+      "Bootstrapping, Off-policy, Function Approximation",
+      "Model-Free, Model-Based, Policy Gradient",
+      "Bias, Varianz, Overfitting"
+    ],
+    "correct_index": 1,
+    "explanation": "Diese Kombination kann zu Instabilität und Divergenz führen."
+  },
+  {
+    "question": "Warum verwendet DQN ein Target Network?",
+    "options": [
+      "Um Exploration zu verbessern",
+      "Um nicht-stationäre Targets zu stabilisieren",
+      "Um Modelle zu lernen",
+      "Um Episoden zu verkürzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein verzögertes Target reduziert Oszillationen."
+  },
+  {
+    "question": "Was ist Experience Replay?",
+    "options": [
+      "Monte Carlo Simulation",
+      "Zwischenspeichern und Wiederverwenden von Übergängen",
+      "Planning mit Modell",
+      "Eligibility Traces"
+    ],
+    "correct_index": 1,
+    "explanation": "Replay decorreliert Daten und verbessert Sample-Effizienz."
+  }
+]
