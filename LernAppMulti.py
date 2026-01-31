@@ -12,6 +12,7 @@ st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_
 st.sidebar.title("📚 Fachauswahl")
    
 verfügbare_fächer = {
+    "RL TD P&L Func":"rl/td_pl_funcAppr.json",
     "RL Monte Carlo": "rl/mc.json",
     "RL Dynamic Programming":"rl/dp.json",
     "RL Konzepte": "rl/konzeptfragen.json",
