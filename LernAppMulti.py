@@ -12,6 +12,7 @@ st.sidebar.image("helfer.png", caption="Hallo, ich bin dein Lernassistent", use_
 st.sidebar.title("📚 Fachauswahl")
    
 verfügbare_fächer = {
+    "RecSys SW1 Intro": "recsys/sw1_intro.json
     "RL Policy Gradient und MARL": "rl/pg_marl.json",
     "RL TD P&L Func":"rl/td_pl_funcAppr.json",
     "RL Monte Carlo": "rl/mc.json",
