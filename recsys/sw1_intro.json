@@ -317,5 +317,170 @@
     ],
     "correct_index": 1,
     "explanation": "Recommender Systems lösen primär ein Ranking-Problem, bei dem Items relativ zueinander sortiert werden."
+  },
+  {
+    "question": "Warum sind Empfehlungssysteme besonders anfällig für Bias?",
+    "options": [
+      "Weil Trainingsdaten durch frühere Systementscheidungen beeinflusst werden",
+      "Weil sie ausschließlich Textdaten verwenden",
+      "Weil sie keine Modelle einsetzen",
+      "Weil sie nur Zufall verwenden"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Daten hängen von der bisherigen Policy ab. Was angezeigt wird, beeinflusst, was Nutzer anklicken können, wodurch Verzerrungen entstehen."
+  },
+  {
+    "question": "Welche Rolle hat ein Score in einem Ranking-Modell?",
+    "options": [
+      "Er definiert die Trainingsmenge",
+      "Er bestimmt die Reihenfolge der Items",
+      "Er ist immer eine Wahrscheinlichkeit",
+      "Er ersetzt die Evaluation"
+    ],
+    "correct_index": 1,
+    "explanation": "Scores dienen dazu, Items zu sortieren. Entscheidend ist die relative Reihenfolge, nicht der absolute Wert."
+  },
+  {
+    "question": "Was misst Coverage@K?",
+    "options": [
+      "Die Anzahl unterschiedlicher Items in allen Top-K Listen",
+      "Die Modellkomplexität",
+      "Die Trainingsgenauigkeit",
+      "Die Anzahl der Nutzer im Datensatz"
+    ],
+    "correct_index": 0,
+    "explanation": "Coverage beschreibt, wie viele verschiedene Items insgesamt empfohlen werden und gibt Hinweise auf Diversität."
+  },
+  {
+    "question": "Warum ist ein zeitlicher Split sinnvoll?",
+    "options": [
+      "Er erhöht automatisch die Modellleistung",
+      "Er verhindert Nutzung zukünftiger Informationen",
+      "Er reduziert die Anzahl der Features",
+      "Er ersetzt die Baseline"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein temporaler Split simuliert reale Zukunftsvorhersage und verhindert Daten-Leakage."
+  },
+  {
+    "question": "Was ist der Zweck einer Baseline?",
+    "options": [
+      "Sie dient als Referenz für neue Modelle",
+      "Sie garantiert die beste Performance",
+      "Sie ersetzt das Hauptmodell",
+      "Sie beschleunigt das Training"
+    ],
+    "correct_index": 0,
+    "explanation": "Baselines ermöglichen eine faire Einordnung neuer Ansätze und helfen beim Debugging."
+  },
+  {
+    "question": "Warum werden bereits gesehene Items gefiltert?",
+    "options": [
+      "Um die Kandidatenmenge zu vergrößern",
+      "Um realistische und faire Empfehlungen zu erzeugen",
+      "Um Trainingsdaten zu duplizieren",
+      "Um Scores zu normalisieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Ohne Filter könnten triviale Treffer entstehen, was die Evaluation verzerrt."
+  },
+  {
+    "question": "Was unterscheidet Offline- von Online-Evaluation?",
+    "options": [
+      "Offline nutzt historische Logs, Online misst echte Nutzerreaktionen",
+      "Offline ist immer genauer",
+      "Online benötigt keine Daten",
+      "Es gibt keinen Unterschied"
+    ],
+    "correct_index": 0,
+    "explanation": "Offline-Tests basieren auf vergangenen Daten. Online-Tests (z. B. A/B-Tests) evaluieren direkt im Live-System."
+  },
+  {
+    "question": "Warum sind implizite Signale herausfordernd?",
+    "options": [
+      "Sie enthalten nur positive Beobachtungen",
+      "Sie bestehen ausschließlich aus Bildern",
+      "Sie sind immer vollständig gelabelt",
+      "Sie sind unabhängig vom System"
+    ],
+    "correct_index": 0,
+    "explanation": "Klicks oder Käufe zeigen Interesse, aber fehlende Interaktionen sind kein klares negatives Signal."
+  },
+  {
+    "question": "Was bedeutet Personalisierung im Ranking?",
+    "options": [
+      "Alle Nutzer erhalten identische Empfehlungen",
+      "Die Reihenfolge hängt vom individuellen Nutzerprofil ab",
+      "Es wird nur Popularität verwendet",
+      "Es gibt keine Rangliste"
+    ],
+    "correct_index": 1,
+    "explanation": "Personalisierung bedeutet, dass Empfehlungen auf Basis individueller Daten erzeugt werden."
+  },
+  {
+    "question": "Warum ist Logging für Recommender-Systeme zentral?",
+    "options": [
+      "Es erhöht automatisch die Modellqualität",
+      "Es definiert, welche Analysen möglich sind",
+      "Es ersetzt das Training",
+      "Es reduziert die Datenmenge"
+    ],
+    "correct_index": 1,
+    "explanation": "Nur korrekt geloggte Daten (Impressions, Positionen, Zeitstempel) erlauben fundierte Evaluationen."
+  },
+  {
+    "question": "Was ist ein typisches Problem sehr populärer Items?",
+    "options": [
+      "Sie sind zu selten vertreten",
+      "Sie dominieren oft die Empfehlungen",
+      "Sie lassen sich nicht speichern",
+      "Sie erzeugen keine Interaktionen"
+    ],
+    "correct_index": 1,
+    "explanation": "Stark frequentierte Items können Diversität reduzieren und den Long Tail verdrängen."
+  },
+  {
+    "question": "Was beschreibt eine Zwei-Stufen-Architektur?",
+    "options": [
+      "Zwei Datensätze werden kombiniert",
+      "Schnelle Vorauswahl gefolgt von genauer Bewertung",
+      "Modelltraining wird zweimal durchgeführt",
+      "Evaluation und Training laufen parallel"
+    ],
+    "correct_index": 1,
+    "explanation": "Zuerst wird eine kleine Kandidatenmenge erzeugt, danach erfolgt ein präzises Ranking."
+  },
+  {
+    "question": "Wozu dient Leave-Last-Out?",
+    "options": [
+      "Zur zufälligen Validierung",
+      "Zur realistischen Vorhersage der nächsten Interaktion",
+      "Zur Erweiterung des Trainings",
+      "Zur Feature-Generierung"
+    ],
+    "correct_index": 1,
+    "explanation": "Die letzte Interaktion eines Nutzers wird als Test genutzt, um Next-Item-Prediction zu simulieren."
+  },
+  {
+    "question": "Warum ist Random als Baseline nützlich?",
+    "options": [
+      "Es ist meist das stärkste Modell",
+      "Es prüft die Korrektheit der Pipeline",
+      "Es ersetzt komplexe Modelle",
+      "Es erzeugt Trainingslabels"
+    ],
+    "correct_index": 1,
+    "explanation": "Random hilft zu erkennen, ob die Evaluations- und Filterlogik korrekt implementiert wurde."
+  },
+  {
+    "question": "Was bezeichnet der Begriff Slate?",
+    "options": [
+      "Die gesamte Datenbank",
+      "Die final angezeigte Top-K Liste",
+      "Ein Optimierungsverfahren",
+      "Ein Trainingssplit"
+    ],
+    "correct_index": 1,
+    "explanation": "Der Slate ist die sortierte Empfehlungsliste, die dem Nutzer tatsächlich angezeigt wird."
   }
 ]
