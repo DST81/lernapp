@@ -3,594 +3,220 @@
     "question": "Was ist das primäre Ziel eines Empfehlungssystems?",
     "options": [
       "Minimierung des Trainingsfehlers",
-      "Vorhersage des nächsten Tokens",
       "Erzeugung einer gerankten Liste relevanter Items",
-      "Maximierung der Modellkomplexität"
+      "Maximierung der Modellkomplexität",
+      "Vorhersage eines einzelnen Labels"
     ],
-    "correct_index": 2,
-    "explanation": "Ein Empfehlungssystem erzeugt eine geordnete Liste (Top-K), die für einen Nutzer möglichst relevante Items enthält. Es geht nicht nur um Vorhersage, sondern um Ranking-Entscheidungen."
+    "correct_index": 1,
+    "explanation": "Ein Empfehlungssystem erzeugt eine Top-K-Rangliste, nicht nur eine einzelne Vorhersage."
   },
   {
     "question": "Warum sind Klicks in Empfehlungssystemen keine klassischen Labels?",
     "options": [
-      "Weil sie binär sind",
-      "Weil sie nur positive Interaktionen darstellen und stark vom System beeinflusst sind",
+      "Weil sie nur positive Signale darstellen und vom System beeinflusst sind",
       "Weil sie immer fehlerhaft sind",
+      "Weil sie zufällig erzeugt werden",
       "Weil sie nicht gespeichert werden"
     ],
-    "correct_index": 1,
-    "explanation": "Klicks sind implizite, positive Signale. Fehlende Klicks bedeuten nicht automatisch negatives Interesse, und die Daten hängen davon ab, was das System zuvor angezeigt hat."
+    "correct_index": 0,
+    "explanation": "Klicks sind implizite Signale. Fehlende Klicks bedeuten nicht automatisch negatives Interesse."
   },
   {
     "question": "Was bedeutet Feedback-Loop in Recommender Systems?",
     "options": [
       "Das Modell wird nur einmal trainiert",
-      "Das Modell beeinflusst die Daten, auf denen es später trainiert wird",
-      "Der Nutzer bewertet das Modell direkt",
-      "Die Daten sind unabhängig vom Modell"
+      "Das Modell beeinflusst zukünftige Trainingsdaten durch seine Empfehlungen",
+      "Nutzer trainieren das Modell direkt",
+      "Daten sind unabhängig vom System"
     ],
     "correct_index": 1,
-    "explanation": "Empfehlungen beeinflussen, was Nutzer sehen und anklicken. Diese neuen Daten fließen wieder ins Training ein, wodurch eine Rückkopplung entsteht."
+    "explanation": "Empfehlungen beeinflussen Nutzerverhalten, das wiederum neue Trainingsdaten erzeugt."
   },
   {
-    "question": "Warum wird oft eine Zwei-Stufen-Architektur verwendet?",
+    "question": "Warum wird in großen Systemen häufig eine Zwei-Stufen-Architektur verwendet?",
     "options": [
-      "Zur Erhöhung der Modellgröße",
-      "Zur Reduktion von Speicherverbrauch",
-      "Aus Skalierungs- und Latenzgründen",
-      "Zur Vereinfachung der Daten"
+      "Um die Modellarchitektur zu vereinfachen",
+      "Aus Skalierungs- und Latenzgründen bei großen Katalogen",
+      "Um Trainingsdaten zu reduzieren",
+      "Um Evaluation zu beschleunigen"
     ],
-    "correct_index": 2,
-    "explanation": "Bei Millionen Items wäre ein komplexes Modell zu langsam. Daher werden zuerst Kandidaten schnell ausgewählt, danach präzise gerankt."
+    "correct_index": 1,
+    "explanation": "Millionen Items können nicht direkt effizient gerankt werden. Daher erst Kandidaten, dann Ranking."
   },
   {
     "question": "Was ist Candidate Generation?",
     "options": [
-      "Finale Sortierung aller Items",
-      "Schnelle Vorauswahl einer kleineren Item-Menge",
-      "Berechnung der Metriken",
-      "Speicherung der Logs"
+      "Die finale Sortierung aller Items",
+      "Eine schnelle Vorauswahl einer kleineren Item-Menge",
+      "Die Berechnung der Metriken",
+      "Das Speichern der Logs"
     ],
     "correct_index": 1,
-    "explanation": "Candidate Generation reduziert die große Item-Menge auf eine kleinere, die anschließend vom Ranking-Modell bewertet wird."
-  },
-  {
-    "question": "Was misst HitRate@K?",
-    "options": [
-      "Die Genauigkeit aller Vorhersagen",
-      "Ob das relevante Item in den Top-K enthalten ist",
-      "Die Modellgröße",
-      "Die Trainingszeit"
-    ],
-    "correct_index": 1,
-    "explanation": "HitRate@K prüft, ob das tatsächlich relevante Item unter den K empfohlenen Items erscheint."
+    "explanation": "Candidate Generation reduziert die große Item-Menge auf eine kleinere für das Ranking."
   },
   {
     "question": "Warum ist eine zeitliche Aufteilung der Daten wichtig?",
     "options": [
-      "Sie macht das Training schneller",
-      "Sie verhindert Daten-Leakage und simuliert reale Zukunftsvorhersage",
-      "Sie erhöht die Genauigkeit automatisch",
-      "Sie reduziert die Datenmenge zufällig"
+      "Sie erhöht automatisch die Genauigkeit",
+      "Sie verhindert Daten-Leakage und simuliert Zukunftsvorhersage",
+      "Sie reduziert die Datenmenge",
+      "Sie ersetzt Baselines"
     ],
     "correct_index": 1,
-    "explanation": "In der Praxis muss man zukünftige Interaktionen vorhersagen. Ein temporaler Split verhindert, dass zukünftige Informationen ins Training gelangen."
+    "explanation": "Ein temporaler Split verhindert, dass zukünftige Informationen ins Training gelangen."
   },
   {
     "question": "Was ist Leave-Last-Out?",
     "options": [
-      "Zufällige Aufteilung der Daten",
+      "Zufällige Datenaufteilung",
       "Das letzte Ereignis pro Nutzer wird als Test verwendet",
       "Das erste Ereignis wird entfernt",
-      "Alle Ereignisse werden getestet"
+      "Alle Daten werden getestet"
     ],
     "correct_index": 1,
-    "explanation": "Bei Leave-Last-Out wird für jeden Nutzer die letzte Interaktion als Testset genutzt."
+    "explanation": "Bei Leave-Last-Out wird pro Nutzer die letzte Interaktion als Test genutzt."
   },
   {
     "question": "Warum sind Popularity-Baselines wichtig?",
     "options": [
-      "Sie sind immer besser als Modelle",
-      "Sie dienen als realistischer Vergleich und Debugging-Tool",
-      "Sie verhindern Overfitting vollständig",
-      "Sie benötigen keine Daten"
+      "Sie sind immer überlegen",
+      "Sie dienen als realistischer Vergleich und Debugging-Referenz",
+      "Sie ersetzen komplexe Modelle",
+      "Sie verhindern Overfitting"
     ],
     "correct_index": 1,
-    "explanation": "Populäre Items sind oft schwer zu schlagen. Wenn ein komplexes Modell schlechter als Popularität ist, gibt es ein Problem."
+    "explanation": "Wenn ein Modell schlechter als Popularität ist, stimmt vermutlich etwas im System nicht."
   },
   {
-    "question": "Was beschreibt Coverage@K?",
+    "question": "Was misst Coverage@K?",
     "options": [
-      "Anteil korrekter Vorhersagen",
-      "Anzahl unterschiedlicher Items in Empfehlungen",
-      "Modellgeschwindigkeit",
-      "Trainingsverlust"
+      "Anteil relevanter Treffer",
+      "Anzahl unterschiedlicher Items in den Empfehlungen",
+      "Trainingsverlust",
+      "Modellgröße"
     ],
     "correct_index": 1,
-    "explanation": "Coverage misst, wie viele verschiedene Items insgesamt empfohlen werden und zeigt, wie breit das System empfiehlt."
+    "explanation": "Coverage misst, wie breit der Katalog durch Empfehlungen abgedeckt wird."
   },
   {
-    "question": "Warum kann ein Modell mit hoher Genauigkeit problematisch sein?",
+    "question": "Warum kann ein Modell mit hoher Accuracy problematisch sein?",
     "options": [
-      "Weil Genauigkeit unwichtig ist",
+      "Weil Accuracy unwichtig ist",
       "Weil es nur populäre Items empfiehlt und Diversität fehlt",
-      "Weil es zu klein ist",
+      "Weil es zu groß ist",
       "Weil es nicht trainiert wurde"
     ],
     "correct_index": 1,
-    "explanation": "Ein System kann hohe HitRate haben, aber nur Mainstream-Items empfehlen und den Long Tail ignorieren."
+    "explanation": "Reine Accuracy kann zu Popularitätskollaps führen und den Long Tail verdrängen."
   },
   {
     "question": "Was ist Cold Start?",
     "options": [
       "Ein Trainingsverfahren",
       "Das Problem neuer Nutzer oder neuer Items ohne Historie",
-      "Eine Evaluationsmetrik",
-      "Ein Optimierer"
+      "Eine Metrik",
+      "Ein Optimierungsalgorithmus"
     ],
     "correct_index": 1,
-    "explanation": "Ohne Interaktionshistorie ist Personalisierung schwierig. Daher braucht man Fallback-Strategien."
+    "explanation": "Ohne Historie ist Personalisierung schwierig; daher braucht man Fallback-Strategien."
   },
   {
     "question": "Warum ist Logging entscheidend?",
     "options": [
-      "Es verbessert automatisch das Modell",
+      "Es verbessert automatisch Modelle",
       "Es bestimmt, welche Analysen und Modelle möglich sind",
-      "Es ersetzt das Training",
-      "Es reduziert die Datenmenge"
+      "Es ersetzt das Ranking",
+      "Es reduziert Latenz"
     ],
     "correct_index": 1,
-    "explanation": "Nur was geloggt wird (Impressions, Position, Zeit) kann später analysiert und gelernt werden."
+    "explanation": "Nur geloggte Daten können später für Training und Evaluation genutzt werden."
   },
   {
     "question": "Was ist eine Impression?",
     "options": [
       "Ein Klick",
-      "Ein Kauf",
       "Ein angezeigtes Item",
-      "Ein Trainingsfehler"
-    ],
-    "correct_index": 2,
-    "explanation": "Eine Impression bedeutet, dass ein Item dem Nutzer angezeigt wurde – unabhängig davon, ob er interagiert hat."
-  },
-  {
-    "question": "Warum müssen bereits gesehene Items gefiltert werden?",
-    "options": [
-      "Um Speicher zu sparen",
-      "Um triviale Empfehlungen zu vermeiden",
-      "Um das Training zu beschleunigen",
-      "Um Labels zu erzeugen"
+      "Ein Kauf",
+      "Ein Trainingssignal"
     ],
     "correct_index": 1,
-    "explanation": "Das erneute Empfehlen bereits gesehener Items würde die Evaluation verfälschen und ist meist nicht sinnvoll."
+    "explanation": "Eine Impression bedeutet, dass ein Item sichtbar war – unabhängig von Interaktion."
   },
   {
     "question": "Was ist der Unterschied zwischen Scoring und Ranking?",
     "options": [
       "Es gibt keinen Unterschied",
       "Scoring erzeugt Werte, Ranking sortiert diese Werte",
-      "Ranking trainiert das Modell",
+      "Ranking trainiert Modelle",
       "Scoring löscht Daten"
     ],
     "correct_index": 1,
-    "explanation": "Ein Modell erzeugt Scores. Durch Sortierung dieser Scores entsteht die finale Rangliste."
+    "explanation": "Modelle erzeugen Scores; durch Sortierung entsteht die Empfehlungsliste."
   },
   {
     "question": "Warum sind Offline- und Online-Evaluation unterschiedlich?",
     "options": [
-      "Sie verwenden unterschiedliche Modelle",
-      "Offline nutzt historische Daten, Online misst echte Nutzerreaktionen",
-      "Online ist immer ungenau",
-      "Offline ist immer besser"
+      "Sie nutzen unterschiedliche Modelle",
+      "Offline basiert auf historischen Logs, Online misst echte Nutzerreaktionen",
+      "Online ist immer besser",
+      "Offline benötigt keine Daten"
     ],
     "correct_index": 1,
-    "explanation": "Offline-Tests basieren auf Logs einer alten Policy. Online-A/B-Tests messen direkt das Verhalten echter Nutzer."
+    "explanation": "Offline-Evaluation nutzt alte Daten; Online-Tests messen direkt im Live-System."
   },
   {
-    "question": "Was bedeutet Long Tail?",
+    "question": "Warum sind implizite Signale herausfordernd?",
     "options": [
-      "Sehr beliebte Items",
-      "Seltene Items mit wenigen Interaktionen",
-      "Neue Nutzer",
-      "Trainingsfehler"
+      "Sie enthalten nur positive Informationen",
+      "Sie sind immer vollständig gelabelt",
+      "Sie ersetzen das Training",
+      "Sie sind unabhängig vom System"
+    ],
+    "correct_index": 0,
+    "explanation": "Fehlende Interaktionen sind kein klares negatives Signal."
+  },
+  {
+    "question": "Warum ist Diversität in Empfehlungen wichtig?",
+    "options": [
+      "Um die Trainingszeit zu erhöhen",
+      "Um monotone Empfehlungen zu vermeiden",
+      "Um Kandidaten zu erweitern",
+      "Um Modelle zu ersetzen"
     ],
     "correct_index": 1,
-    "explanation": "Der Long Tail beschreibt viele seltene Items, die wenig Daten haben, aber wichtig für Diversität sind."
+    "explanation": "Diversität verbessert Nutzererlebnis und verhindert einseitige Listen."
   },
   {
-    "question": "Warum kann Random als Baseline nützlich sein?",
+    "question": "Was bedeutet es, ein Empfehlungssystem als Entscheidungssystem zu betrachten?",
     "options": [
-      "Es ist ein starkes Modell",
-      "Es überprüft die Korrektheit der Evaluationspipeline",
-      "Es optimiert die Daten",
-      "Es ersetzt Training"
+      "Es erstellt nur Vorhersagen",
+      "Es wählt aktiv Inhalte unter Nebenbedingungen aus",
+      "Es ignoriert Nutzer",
+      "Es ersetzt Evaluation"
     ],
     "correct_index": 1,
-    "explanation": "Wenn Random bessere Ergebnisse liefert als ein komplexes Modell, ist wahrscheinlich etwas in der Pipeline falsch."
+    "explanation": "Ein Recommender trifft Auswahlentscheidungen (Policy), nicht nur Vorhersagen."
   },
   {
-    "question": "Was ist ein Policy in Recommender Systems?",
+    "question": "Warum sind Scores in Ranking-Modellen nicht zwingend Wahrscheinlichkeiten?",
     "options": [
-      "Ein Datensatz",
-      "Eine Regel oder ein Modell, das entscheidet, was gezeigt wird",
-      "Ein Optimierer",
-      "Ein Feature"
-    ],
-    "correct_index": 1,
-    "explanation": "Die Policy bestimmt, welche Items angezeigt werden, und beeinflusst damit zukünftige Daten."
-  },
-  {
-    "question": "Warum sind Top-Positionen besonders wichtig?",
-    "options": [
-      "Weil sie leichter zu berechnen sind",
-      "Weil Nutzer hauptsächlich die ersten Ergebnisse beachten",
-      "Weil sie nicht bewertet werden",
+      "Weil sie nur zur Sortierung dienen",
+      "Weil sie immer negativ sind",
+      "Weil sie Trainingsdaten darstellen",
       "Weil sie zufällig sind"
     ],
-    "correct_index": 1,
-    "explanation": "Nutzerinteraktion konzentriert sich stark auf die ersten Plätze der Liste."
-  },
-  {
-    "question": "Was bedeutet Temporal Leakage?",
-    "options": [
-      "Datenverlust",
-      "Verwendung zukünftiger Informationen im Training",
-      "Fehlende Daten",
-      "Zu wenig Training"
-    ],
-    "correct_index": 1,
-    "explanation": "Wenn zukünftige Informationen im Training enthalten sind, wird die Evaluation unrealistisch gut."
+    "correct_index": 0,
+    "explanation": "Für Ranking zählt die relative Reihenfolge, nicht die absolute Interpretation."
   },
   {
     "question": "Warum reicht ein gutes Modell allein nicht aus?",
     "options": [
       "Weil Modelle unwichtig sind",
-      "Weil Pipeline, Logging und Evaluation genauso wichtig sind",
+      "Weil Pipeline, Logging und Evaluation ebenfalls entscheidend sind",
       "Weil Daten egal sind",
-      "Weil Ranking nicht zählt"
+      "Weil Ranking irrelevant ist"
     ],
     "correct_index": 1,
-    "explanation": "Ein Recommender-System ist eine komplette Pipeline. Schwache Komponenten begrenzen die Gesamtleistung."
-  },
-  {
-    "question": "Was ist ein Slate?",
-    "options": [
-      "Ein Trainingsfehler",
-      "Die finale geordnete Empfehlungsliste",
-      "Ein Datensatz",
-      "Ein Feature"
-    ],
-    "correct_index": 1,
-    "explanation": "Der Slate ist die endgültige Top-K-Liste, die dem Nutzer angezeigt wird."
-  },
-  {
-    "question": "Warum ist Diversity in Empfehlungen wichtig?",
-    "options": [
-      "Es erhöht die Modellgröße",
-      "Es reduziert Wiederholungen und verbessert Nutzererlebnis",
-      "Es ersetzt Ranking",
-      "Es verhindert Training"
-    ],
-    "correct_index": 1,
-    "explanation": "Diversität sorgt dafür, dass nicht nur sehr ähnliche oder populäre Items gezeigt werden."
-  },
-  {
-    "question": "Was ist ein typisches Ziel bei Video-Empfehlungen?",
-    "options": [
-      "Minimierung der Datenmenge",
-      "Maximierung von Watchtime",
-      "Minimierung der Nutzerzahl",
-      "Exakte Klassifikation"
-    ],
-    "correct_index": 1,
-    "explanation": "Viele Video-Plattformen optimieren auf Watchtime oder Engagement."
-  },
-  {
-    "question": "Was ist der Unterschied zwischen Query-aware und personalisiertem Ranking?",
-    "options": [
-      "Keiner",
-      "Query-aware nutzt Suchanfragen als zusätzlichen Kontext",
-      "Personalisierung ist immer global",
-      "Query-aware benötigt keine Nutzer"
-    ],
-    "correct_index": 1,
-    "explanation": "Bei Suchsystemen beeinflusst die Anfrage direkt die Relevanzbewertung."
-  },
-  {
-    "question": "Warum sollte man Experimente tracken?",
-    "options": [
-      "Zur Dokumentation von Zufall",
-      "Um reproduzierbare und vergleichbare Ergebnisse zu sichern",
-      "Um Modelle größer zu machen",
-      "Um Daten zu löschen"
-    ],
-    "correct_index": 1,
-    "explanation": "Ohne Tracking von Konfigurationen und Metriken sind Ergebnisse nicht reproduzierbar."
-  },
-  {
-    "question": "Was beschreibt ein Ranking-Problem im Recsys-Kontext am besten?",
-    "options": [
-      "Klassifikation eines einzelnen Labels",
-      "Sortierung von Kandidaten nach Relevanz für einen Nutzer",
-      "Clustering von Nutzern",
-      "Dimensionalitätsreduktion"
-    ],
-    "correct_index": 1,
-    "explanation": "Recommender Systems lösen primär ein Ranking-Problem, bei dem Items relativ zueinander sortiert werden."
-  },
-  {
-    "question": "Warum sind Empfehlungssysteme besonders anfällig für Bias?",
-    "options": [
-      "Weil Trainingsdaten durch frühere Systementscheidungen beeinflusst werden",
-      "Weil sie ausschließlich Textdaten verwenden",
-      "Weil sie keine Modelle einsetzen",
-      "Weil sie nur Zufall verwenden"
-    ],
-    "correct_index": 0,
-    "explanation": "Die Daten hängen von der bisherigen Policy ab. Was angezeigt wird, beeinflusst, was Nutzer anklicken können, wodurch Verzerrungen entstehen."
-  },
-  {
-    "question": "Welche Rolle hat ein Score in einem Ranking-Modell?",
-    "options": [
-      "Er definiert die Trainingsmenge",
-      "Er bestimmt die Reihenfolge der Items",
-      "Er ist immer eine Wahrscheinlichkeit",
-      "Er ersetzt die Evaluation"
-    ],
-    "correct_index": 1,
-    "explanation": "Scores dienen dazu, Items zu sortieren. Entscheidend ist die relative Reihenfolge, nicht der absolute Wert."
-  },
-  {
-    "question": "Was misst Coverage@K?",
-    "options": [
-      "Die Anzahl unterschiedlicher Items in allen Top-K Listen",
-      "Die Modellkomplexität",
-      "Die Trainingsgenauigkeit",
-      "Die Anzahl der Nutzer im Datensatz"
-    ],
-    "correct_index": 0,
-    "explanation": "Coverage beschreibt, wie viele verschiedene Items insgesamt empfohlen werden und gibt Hinweise auf Diversität."
-  },
-  {
-    "question": "Warum ist ein zeitlicher Split sinnvoll?",
-    "options": [
-      "Er erhöht automatisch die Modellleistung",
-      "Er verhindert Nutzung zukünftiger Informationen",
-      "Er reduziert die Anzahl der Features",
-      "Er ersetzt die Baseline"
-    ],
-    "correct_index": 1,
-    "explanation": "Ein temporaler Split simuliert reale Zukunftsvorhersage und verhindert Daten-Leakage."
-  },
-  {
-    "question": "Was ist der Zweck einer Baseline?",
-    "options": [
-      "Sie dient als Referenz für neue Modelle",
-      "Sie garantiert die beste Performance",
-      "Sie ersetzt das Hauptmodell",
-      "Sie beschleunigt das Training"
-    ],
-    "correct_index": 0,
-    "explanation": "Baselines ermöglichen eine faire Einordnung neuer Ansätze und helfen beim Debugging."
-  },
-  {
-    "question": "Warum werden bereits gesehene Items gefiltert?",
-    "options": [
-      "Um die Kandidatenmenge zu vergrößern",
-      "Um realistische und faire Empfehlungen zu erzeugen",
-      "Um Trainingsdaten zu duplizieren",
-      "Um Scores zu normalisieren"
-    ],
-    "correct_index": 1,
-    "explanation": "Ohne Filter könnten triviale Treffer entstehen, was die Evaluation verzerrt."
-  },
-  {
-    "question": "Was unterscheidet Offline- von Online-Evaluation?",
-    "options": [
-      "Offline nutzt historische Logs, Online misst echte Nutzerreaktionen",
-      "Offline ist immer genauer",
-      "Online benötigt keine Daten",
-      "Es gibt keinen Unterschied"
-    ],
-    "correct_index": 0,
-    "explanation": "Offline-Tests basieren auf vergangenen Daten. Online-Tests (z. B. A/B-Tests) evaluieren direkt im Live-System."
-  },
-  {
-    "question": "Warum sind implizite Signale herausfordernd?",
-    "options": [
-      "Sie enthalten nur positive Beobachtungen",
-      "Sie bestehen ausschließlich aus Bildern",
-      "Sie sind immer vollständig gelabelt",
-      "Sie sind unabhängig vom System"
-    ],
-    "correct_index": 0,
-    "explanation": "Klicks oder Käufe zeigen Interesse, aber fehlende Interaktionen sind kein klares negatives Signal."
-  },
-  {
-    "question": "Was bedeutet Personalisierung im Ranking?",
-    "options": [
-      "Alle Nutzer erhalten identische Empfehlungen",
-      "Die Reihenfolge hängt vom individuellen Nutzerprofil ab",
-      "Es wird nur Popularität verwendet",
-      "Es gibt keine Rangliste"
-    ],
-    "correct_index": 1,
-    "explanation": "Personalisierung bedeutet, dass Empfehlungen auf Basis individueller Daten erzeugt werden."
-  },
-  {
-    "question": "Warum ist Logging für Recommender-Systeme zentral?",
-    "options": [
-      "Es erhöht automatisch die Modellqualität",
-      "Es definiert, welche Analysen möglich sind",
-      "Es ersetzt das Training",
-      "Es reduziert die Datenmenge"
-    ],
-    "correct_index": 1,
-    "explanation": "Nur korrekt geloggte Daten (Impressions, Positionen, Zeitstempel) erlauben fundierte Evaluationen."
-  },
-  {
-    "question": "Was ist ein typisches Problem sehr populärer Items?",
-    "options": [
-      "Sie sind zu selten vertreten",
-      "Sie dominieren oft die Empfehlungen",
-      "Sie lassen sich nicht speichern",
-      "Sie erzeugen keine Interaktionen"
-    ],
-    "correct_index": 1,
-    "explanation": "Stark frequentierte Items können Diversität reduzieren und den Long Tail verdrängen."
-  },
-  {
-    "question": "Was beschreibt eine Zwei-Stufen-Architektur?",
-    "options": [
-      "Zwei Datensätze werden kombiniert",
-      "Schnelle Vorauswahl gefolgt von genauer Bewertung",
-      "Modelltraining wird zweimal durchgeführt",
-      "Evaluation und Training laufen parallel"
-    ],
-    "correct_index": 1,
-    "explanation": "Zuerst wird eine kleine Kandidatenmenge erzeugt, danach erfolgt ein präzises Ranking."
-  },
-  {
-    "question": "Wozu dient Leave-Last-Out?",
-    "options": [
-      "Zur zufälligen Validierung",
-      "Zur realistischen Vorhersage der nächsten Interaktion",
-      "Zur Erweiterung des Trainings",
-      "Zur Feature-Generierung"
-    ],
-    "correct_index": 1,
-    "explanation": "Die letzte Interaktion eines Nutzers wird als Test genutzt, um Next-Item-Prediction zu simulieren."
-  },
-  {
-    "question": "Warum ist Random als Baseline nützlich?",
-    "options": [
-      "Es ist meist das stärkste Modell",
-      "Es prüft die Korrektheit der Pipeline",
-      "Es ersetzt komplexe Modelle",
-      "Es erzeugt Trainingslabels"
-    ],
-    "correct_index": 1,
-    "explanation": "Random hilft zu erkennen, ob die Evaluations- und Filterlogik korrekt implementiert wurde."
-  },
-  {
-    "question": "Was bezeichnet der Begriff Slate?",
-    "options": [
-      "Die gesamte Datenbank",
-      "Die final angezeigte Top-K Liste",
-      "Ein Optimierungsverfahren",
-      "Ein Trainingssplit"
-    ],
-    "correct_index": 1,
-    "explanation": "Der Slate ist die sortierte Empfehlungsliste, die dem Nutzer tatsächlich angezeigt wird."
-  },
-  {
-    "question": "Warum wird in großen Empfehlungssystemen oft eine Zwei-Stufen-Architektur verwendet?",
-    "options": [
-      "Um das Modell einfacher zu trainieren",
-      "Um Millionen von Items trotz Latenzgrenzen effizient zu verarbeiten",
-      "Um die Datenmenge zu reduzieren",
-      "Um die Evaluation zu vereinfachen"
-    ],
-    "correct_index": 1,
-    "explanation": "Bei sehr großen Katalogen ist direktes Ranking zu teuer. Daher werden zuerst Kandidaten schnell ausgewählt und danach präzise gerankt."
-  },
-  {
-    "question": "Was ist der Hauptgrund für Latenzbudgets in produktiven Empfehlungssystemen?",
-    "options": [
-      "Speicherbegrenzungen",
-      "Nutzer erwarten schnelle Antworten in Echtzeit",
-      "Um Trainingsdaten zu verkleinern",
-      "Zur Verbesserung der Offline-Metriken"
-    ],
-    "correct_index": 1,
-    "explanation": "Empfehlungen müssen meist in Echtzeit berechnet werden, daher sind maximale Antwortzeiten entscheidend."
-  },
-  {
-    "question": "Welches Problemtyp beschreibt eine Suchmaschine am besten?",
-    "options": [
-      "Rein unpersonalisierte Klassifikation",
-      "Query-aware Ranking",
-      "Clustering von Nutzern",
-      "Matrix-Faktorisierung ohne Kontext"
-    ],
-    "correct_index": 1,
-    "explanation": "Bei Suchsystemen hängt die Relevanz stark von der Nutzeranfrage ab, daher spricht man von Query-aware Ranking."
-  },
-  {
-    "question": "Was unterscheidet Next-Item-Prediction von allgemeiner Personalisierung?",
-    "options": [
-      "Next-Item nutzt explizit die Reihenfolge von Interaktionen",
-      "Personalisierung ist immer zeitlich modelliert",
-      "Next-Item benötigt keine Nutzerdaten",
-      "Es gibt keinen Unterschied"
-    ],
-    "correct_index": 0,
-    "explanation": "Next-Item-Modelle berücksichtigen Sequenzen oder Sessions und nutzen zeitliche Struktur."
-  },
-  {
-    "question": "Warum ist die Definition von Usern und Items eine wichtige Designentscheidung?",
-    "options": [
-      "Sie beeinflusst die Modellarchitektur direkt",
-      "Sie bestimmt, wie das Problem formalisiert wird",
-      "Sie hat keinen Einfluss auf die Ergebnisse",
-      "Sie ersetzt die Evaluation"
-    ],
-    "correct_index": 1,
-    "explanation": "Ob z. B. ein Konto, Gerät oder Haushalt als User zählt, verändert das gesamte Empfehlungsszenario."
-  },
-  {
-    "question": "Warum sind Scores in Ranking-Modellen nicht zwingend Wahrscheinlichkeiten?",
-    "options": [
-      "Weil sie nur zur Sortierung verwendet werden",
-      "Weil sie immer negativ sind",
-      "Weil sie ausschließlich aus Zufall entstehen",
-      "Weil sie die Trainingsdaten darstellen"
-    ],
-    "correct_index": 0,
-    "explanation": "Für Ranking zählt nur die relative Reihenfolge der Scores, nicht deren absolute Bedeutung."
-  },
-  {
-    "question": "Warum können Geschäftsziele je nach Domäne unterschiedlich sein?",
-    "options": [
-      "Weil alle Systeme identisch sind",
-      "Weil Plattformen unterschiedliche Optimierungsziele haben",
-      "Weil Evaluation nicht möglich ist",
-      "Weil Modelle das Ziel bestimmen"
-    ],
-    "correct_index": 1,
-    "explanation": "E-Commerce, Video oder News optimieren unterschiedliche Metriken wie Umsatz, Watchtime oder Aktualität."
-  },
-  {
-    "question": "Was bedeutet es, ein Empfehlungssystem als Entscheidungssystem zu betrachten?",
-    "options": [
-      "Es produziert nur Vorhersagen",
-      "Es wählt aktiv Inhalte unter Nebenbedingungen aus",
-      "Es ignoriert Nutzer",
-      "Es ersetzt die Datenanalyse"
-    ],
-    "correct_index": 1,
-    "explanation": "Ein Recommender trifft eine Auswahlentscheidung (Policy), nicht nur eine reine Vorhersage."
-  },
-  {
-    "question": "Warum ist Diversität in vielen Anwendungen wichtig?",
-    "options": [
-      "Um die Trainingszeit zu erhöhen",
-      "Um monotone oder einseitige Empfehlungen zu vermeiden",
-      "Um die Kandidatenmenge zu vergrößern",
-      "Um Baselines zu eliminieren"
-    ],
-    "correct_index": 1,
-    "explanation": "Diversität verbessert Nutzererlebnis und verhindert, dass nur sehr ähnliche Items empfohlen werden."
-  },
-  {
-    "question": "Welche Rolle spielt das Logging in produktiven Systemen?",
-    "options": [
-      "Es definiert, welche zukünftigen Modelle möglich sind",
-      "Es ersetzt das Ranking-Modell",
-      "Es erhöht automatisch die Coverage",
-      "Es ist nur für Debugging irrelevant"
-    ],
-    "correct_index": 0,
-    "explanation": "Was geloggt wird, bestimmt, welche Signale später für Training und Evaluation verfügbar sind."
+    "explanation": "Ein funktionierendes System besteht aus mehreren abgestimmten Komponenten."
   }
 ]
