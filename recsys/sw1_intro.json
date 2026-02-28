@@ -482,5 +482,115 @@
     ],
     "correct_index": 1,
     "explanation": "Der Slate ist die sortierte Empfehlungsliste, die dem Nutzer tatsächlich angezeigt wird."
+  },
+  {
+    "question": "Warum wird in großen Empfehlungssystemen oft eine Zwei-Stufen-Architektur verwendet?",
+    "options": [
+      "Um das Modell einfacher zu trainieren",
+      "Um Millionen von Items trotz Latenzgrenzen effizient zu verarbeiten",
+      "Um die Datenmenge zu reduzieren",
+      "Um die Evaluation zu vereinfachen"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei sehr großen Katalogen ist direktes Ranking zu teuer. Daher werden zuerst Kandidaten schnell ausgewählt und danach präzise gerankt."
+  },
+  {
+    "question": "Was ist der Hauptgrund für Latenzbudgets in produktiven Empfehlungssystemen?",
+    "options": [
+      "Speicherbegrenzungen",
+      "Nutzer erwarten schnelle Antworten in Echtzeit",
+      "Um Trainingsdaten zu verkleinern",
+      "Zur Verbesserung der Offline-Metriken"
+    ],
+    "correct_index": 1,
+    "explanation": "Empfehlungen müssen meist in Echtzeit berechnet werden, daher sind maximale Antwortzeiten entscheidend."
+  },
+  {
+    "question": "Welches Problemtyp beschreibt eine Suchmaschine am besten?",
+    "options": [
+      "Rein unpersonalisierte Klassifikation",
+      "Query-aware Ranking",
+      "Clustering von Nutzern",
+      "Matrix-Faktorisierung ohne Kontext"
+    ],
+    "correct_index": 1,
+    "explanation": "Bei Suchsystemen hängt die Relevanz stark von der Nutzeranfrage ab, daher spricht man von Query-aware Ranking."
+  },
+  {
+    "question": "Was unterscheidet Next-Item-Prediction von allgemeiner Personalisierung?",
+    "options": [
+      "Next-Item nutzt explizit die Reihenfolge von Interaktionen",
+      "Personalisierung ist immer zeitlich modelliert",
+      "Next-Item benötigt keine Nutzerdaten",
+      "Es gibt keinen Unterschied"
+    ],
+    "correct_index": 0,
+    "explanation": "Next-Item-Modelle berücksichtigen Sequenzen oder Sessions und nutzen zeitliche Struktur."
+  },
+  {
+    "question": "Warum ist die Definition von Usern und Items eine wichtige Designentscheidung?",
+    "options": [
+      "Sie beeinflusst die Modellarchitektur direkt",
+      "Sie bestimmt, wie das Problem formalisiert wird",
+      "Sie hat keinen Einfluss auf die Ergebnisse",
+      "Sie ersetzt die Evaluation"
+    ],
+    "correct_index": 1,
+    "explanation": "Ob z. B. ein Konto, Gerät oder Haushalt als User zählt, verändert das gesamte Empfehlungsszenario."
+  },
+  {
+    "question": "Warum sind Scores in Ranking-Modellen nicht zwingend Wahrscheinlichkeiten?",
+    "options": [
+      "Weil sie nur zur Sortierung verwendet werden",
+      "Weil sie immer negativ sind",
+      "Weil sie ausschließlich aus Zufall entstehen",
+      "Weil sie die Trainingsdaten darstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Für Ranking zählt nur die relative Reihenfolge der Scores, nicht deren absolute Bedeutung."
+  },
+  {
+    "question": "Warum können Geschäftsziele je nach Domäne unterschiedlich sein?",
+    "options": [
+      "Weil alle Systeme identisch sind",
+      "Weil Plattformen unterschiedliche Optimierungsziele haben",
+      "Weil Evaluation nicht möglich ist",
+      "Weil Modelle das Ziel bestimmen"
+    ],
+    "correct_index": 1,
+    "explanation": "E-Commerce, Video oder News optimieren unterschiedliche Metriken wie Umsatz, Watchtime oder Aktualität."
+  },
+  {
+    "question": "Was bedeutet es, ein Empfehlungssystem als Entscheidungssystem zu betrachten?",
+    "options": [
+      "Es produziert nur Vorhersagen",
+      "Es wählt aktiv Inhalte unter Nebenbedingungen aus",
+      "Es ignoriert Nutzer",
+      "Es ersetzt die Datenanalyse"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Recommender trifft eine Auswahlentscheidung (Policy), nicht nur eine reine Vorhersage."
+  },
+  {
+    "question": "Warum ist Diversität in vielen Anwendungen wichtig?",
+    "options": [
+      "Um die Trainingszeit zu erhöhen",
+      "Um monotone oder einseitige Empfehlungen zu vermeiden",
+      "Um die Kandidatenmenge zu vergrößern",
+      "Um Baselines zu eliminieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Diversität verbessert Nutzererlebnis und verhindert, dass nur sehr ähnliche Items empfohlen werden."
+  },
+  {
+    "question": "Welche Rolle spielt das Logging in produktiven Systemen?",
+    "options": [
+      "Es definiert, welche zukünftigen Modelle möglich sind",
+      "Es ersetzt das Ranking-Modell",
+      "Es erhöht automatisch die Coverage",
+      "Es ist nur für Debugging irrelevant"
+    ],
+    "correct_index": 0,
+    "explanation": "Was geloggt wird, bestimmt, welche Signale später für Training und Evaluation verfügbar sind."
   }
 ]
