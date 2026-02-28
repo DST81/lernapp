@@ -13,6 +13,7 @@ st.sidebar.title("📚 Fachauswahl")
    
 verfügbare_fächer = {
     "RecSys SW1 Intro": "recsys/sw1_intro.json",
+    "RecSys SW2 Eval": "recsys/sw2_eval.json",
     "RL Policy Gradient und MARL": "rl/pg_marl.json",
     "RL TD P&L Func":"rl/td_pl_funcAppr.json",
     "RL Monte Carlo": "rl/mc.json",
