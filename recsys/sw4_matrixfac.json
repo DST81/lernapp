@@ -1,0 +1,266 @@
+[
+  {
+    "question": "Warum kann Matrix Factorization kNN in manchen Szenarien überlegen sein?",
+    "options": [
+      "Weil sie lokale Nachbarschaften memoriert",
+      "Weil sie globale Muster und latente Faktoren nutzt",
+      "Weil sie keine Trainingsdaten benötigt",
+      "Weil sie nur Popularität empfiehlt"
+    ],
+    "correct_index": 1,
+    "explanation": "MF kann indirekte Zusammenhänge zwischen Nutzern und Items lernen, selbst wenn keine direkten Co-Interaktionen vorliegen."
+  },
+  {
+    "question": "Was ist der Kern von Latent-Factor-Modellen?",
+    "options": [
+      "Explizite Ratings memorieren",
+      "Dichte Vektoren für Nutzer und Items lernen",
+      "Nur Top-K-Items speichern",
+      "Nur Popularitäts-basierte Scores berechnen"
+    ],
+    "correct_index": 1,
+    "explanation": "Latent-Factor-Modelle repräsentieren Nutzer und Items in einem kompakten, dichten Raum, der Interaktionen erklärt."
+  },
+  {
+    "question": "Warum sind Bias-Terme in Biased MF wichtig?",
+    "options": [
+      "Um Overfitting zu vermeiden",
+      "Um offensichtliche Effekte wie Popularität zu modellieren",
+      "Um Sparse-Matrizen zu dichten",
+      "Um die Lernrate zu regulieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Biases erklären globale Tendenzen, sodass die latenten Faktoren die personalisierte Abweichung modellieren können."
+  },
+  {
+    "question": "Welche Form hat die Grundgleichung einer Biased MF?",
+    "options": [
+      "ˆrui = p⊤ uqi",
+      "ˆrui = µ + bu + bi + p⊤ uqi",
+      "ˆrui = log(1 + rui)",
+      "ˆrui = cui(sui − p⊤ uqi)"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Bias-Terme µ, bu, bi erfassen globale und individuelle Tendenzen, während p⊤ uqi die personalisierte Interaktion beschreibt."
+  },
+  {
+    "question": "Warum ist Regularisierung bei MF notwendig?",
+    "options": [
+      "Um alle Scores auf Null zu setzen",
+      "Um übermäßiges Memorieren von Trainingsdaten zu vermeiden",
+      "Um Top-K effizient zu berechnen",
+      "Um Cosine Similarity zu ersetzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Regulierung verhindert, dass das Modell kleinste Trainings-Noise-Muster lernt und dadurch auf Validierung kollabiert."
+  },
+  {
+    "question": "Wie werden Parameter bei Biased MF typischerweise gelernt?",
+    "options": [
+      "Batch Gradient Descent auf ganze Matrix",
+      "Stochastischer Gradient Descent auf beobachteten Paaren",
+      "Durch Top-K Filterung",
+      "Durch Zufallsauswahl"
+    ],
+    "correct_index": 1,
+    "explanation": "SGD iteriert über beobachtete Nutzer-Item-Paare und aktualisiert nur die relevanten Parameter lokal."
+  },
+  {
+    "question": "Was unterscheidet implizite Daten von expliziten Ratings?",
+    "options": [
+      "Implizite Daten enthalten nur Nullen",
+      "Null bedeutet meistens unbekannt, nicht negativ",
+      "Implizite Daten benötigen keine Modelle",
+      "Explizite Ratings sind immer binär"
+    ],
+    "correct_index": 1,
+    "explanation": "In implizitem Feedback bedeutet fehlende Interaktion meist fehlende Exposition, nicht Abneigung."
+  },
+  {
+    "question": "Wie unterscheidet sich WRMF von klassischer Biased MF?",
+    "options": [
+      "WRMF nutzt Punkt-weise squared loss",
+      "WRMF gewichtet Beobachtungen nach Confidence",
+      "WRMF benötigt keine Regularisierung",
+      "WRMF ist nur für explizite Ratings"
+    ],
+    "correct_index": 1,
+    "explanation": "WRMF gewichtet bekannte Interaktionen stärker als fehlende, um die Unsicherheit in impliziten Daten zu modellieren."
+  },
+  {
+    "question": "Welche Rolle spielt die Confidence-Gewichtung cui in WRMF?",
+    "options": [
+      "Sie entscheidet über Lernrate",
+      "Sie gewichtet beobachtete vs. fehlende Interaktionen",
+      "Sie ersetzt Bias-Terme",
+      "Sie filtert Top-K Items"
+    ],
+    "correct_index": 1,
+    "explanation": "Höhere Confidence signalisiert dem Modell, dass ein beobachtetes Event besonders wichtig ist."
+  },
+  {
+    "question": "Warum ist Alternating Least Squares (ALS) nützlich für WRMF?",
+    "options": [
+      "Weil es globale Optimierung der latenten Faktoren erlaubt",
+      "Weil es nur Biases trainiert",
+      "Weil es negative Samples entfernt",
+      "Weil es die Matrix sparsam speichert"
+    ],
+    "correct_index": 0,
+    "explanation": "ALS optimiert Nutzer- und Item-Faktoren abwechselnd, da ein gleichzeitiges Lösen aller Variablen schwierig ist."
+  },
+  {
+    "question": "Was ist das Ziel von BPR?",
+    "options": [
+      "Punktweise Fehler minimieren",
+      "Pairwise Ranking zwischen beobachteten und unobservierten Items lernen",
+      "Nur Biases anpassen",
+      "Top-K Coverage maximieren"
+    ],
+    "correct_index": 1,
+    "explanation": "BPR lernt, dass positive Items höher als negative (unobservierte) Items gerankt werden."
+  },
+  {
+    "question": "Was bedeutet 'Training Triples' bei BPR?",
+    "options": [
+      "(u,i,j) = User u, positive Item i, sampled negative Item j",
+      "Alle Interaktionen eines Users",
+      "Top-K Items pro Nutzer",
+      "Negative Sampling ausgeschlossen"
+    ],
+    "correct_index": 0,
+    "explanation": "Jedes Triple wird verwendet, um ein Paar-Ranking-Update zu erzeugen."
+  },
+  {
+    "question": "Warum ist Negative Sampling bei BPR problematisch?",
+    "options": [
+      "Weil unobservierte Items nicht unbedingt negativ sind",
+      "Weil es Speicherprobleme erzeugt",
+      "Weil Bias-Terme falsch berechnet werden",
+      "Weil es nur explizite Ratings erlaubt"
+    ],
+    "correct_index": 0,
+    "explanation": "Unobservierte Items könnten schlicht nicht gezeigt worden sein und daher keine echte Negativinformation liefern."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen WRMF und BPR?",
+    "options": [
+      "WRMF ist punktweise, BPR pairwise",
+      "BPR nutzt keine Latent-Factors",
+      "WRMF ignoriert Biases",
+      "BPR benötigt explizite Ratings"
+    ],
+    "correct_index": 0,
+    "explanation": "WRMF passt Scores punktweise an, während BPR auf Rangordnung zwischen positiven und negativen Items optimiert."
+  },
+  {
+    "question": "Wie wählt man Hyperparameter wie k, λ, oder η bei MF?",
+    "options": [
+      "Einfach per Zufall",
+      "Mit einer kleinen Grid-Suche und Log-Skala",
+      "Immer maximal wählen",
+      "Nur auf Trainingsdaten optimieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Eine sensible Grid-Suche auf kleineren Werten verhindert Overfitting und ermöglicht effizientes Tuning."
+  },
+  {
+    "question": "Warum sollte man Seen-Item-Filtering bei der Empfehlung anwenden?",
+    "options": [
+      "Weil sonst Items doppelt angezeigt werden",
+      "Weil es Bias-Terme berechnet",
+      "Weil WRMF sonst nicht konvergiert",
+      "Weil ALS es erzwingt"
+    ],
+    "correct_index": 0,
+    "explanation": "Bereits konsumierte Items sollen nicht erneut empfohlen werden, um realistische Top-K Listen zu erzeugen."
+  },
+  {
+    "question": "Wie kann man MF-Embeddings interpretieren?",
+    "options": [
+      "Sie ersetzen Bias-Terme",
+      "Sie repräsentieren die latente Struktur der Interaktionen",
+      "Sie zeigen nur Popularität an",
+      "Sie sind zufällig initialisiert"
+    ],
+    "correct_index": 1,
+    "explanation": "Embeddings zeigen Muster jenseits globaler Biases, z.B. Präferenzen für bestimmte Item-Gruppen."
+  },
+  {
+    "question": "Warum ist Evaluation auf dem gleichen Split essenziell?",
+    "options": [
+      "Um schneller zu rechnen",
+      "Um Leakage und unrealistische Ergebnisse zu vermeiden",
+      "Um Top-K zu erhöhen",
+      "Um Bias-Terme zu fixieren"
+    ],
+    "correct_index": 1,
+    "explanation": "Ähnlich wie bei CF darf das Modell keine zukünftigen Informationen aus Testdaten sehen."
+  },
+  {
+    "question": "Welche Metriken eignen sich für MF bei impliziten Daten?",
+    "options": [
+      "Recall@K, NDCG@K, Coverage, Novelty",
+      "Nur Mean Squared Error",
+      "Accuracy",
+      "Cosine Similarity"
+    ],
+    "correct_index": 0,
+    "explanation": "Ranking-orientierte Metriken wie Recall und NDCG sind in impliziten Settings aussagekräftiger als punktweise Fehler."
+  },
+  {
+    "question": "Warum lohnt es sich, Biases zu inspizieren?",
+    "options": [
+      "Um die Lernrate zu wählen",
+      "Um Popularität und Extremwerte zu erkennen",
+      "Um Top-K zu optimieren",
+      "Um Sparsity zu erhöhen"
+    ],
+    "correct_index": 1,
+    "explanation": "Hohe Bias-Werte zeigen oft populäre Items, Embeddings zeigen die personalisierte Struktur."
+  },
+  {
+    "question": "Wie kann man MF-Modelle debuggen?",
+    "options": [
+      "Durch Top-K Analyse, Slicing, Neighbor-Inspection",
+      "Nur durch Testdaten Accuracy",
+      "Indem man Hyperparameter ignoriert",
+      "Durch Zufallsinitialisierung"
+    ],
+    "correct_index": 0,
+    "explanation": "Slicing nach Nutzeraktivität, Analyse der Top-N Empfehlungen und Nachbarprüfung helfen, Fehler oder unerwünschtes Verhalten zu erkennen."
+  },
+  {
+    "question": "Wann ist reines MF schwach?",
+    "options": [
+      "Bei Cold-Start oder fehlender Interaktion",
+      "Bei großen Datenmengen",
+      "Bei Popularitätsdominanz",
+      "Bei BPR Training"
+    ],
+    "correct_index": 0,
+    "explanation": "MF kann keine sinnvollen Empfehlungen für neue Nutzer oder neue Items ohne Interaktionen ableiten."
+  },
+  {
+    "question": "Warum sollte man vor komplexen Modellen erst Pop, kNN und Biased MF evaluieren?",
+    "options": [
+      "Weil sie schneller trainieren",
+      "Weil sie ein starker, ehrlicher Baseline-Check sind",
+      "Weil sie alle Hyperparameter abdecken",
+      "Weil sie BPR ersetzen"
+    ],
+    "correct_index": 1,
+    "explanation": "Bevor aufwändige Modelle evaluiert werden, sollte sichergestellt werden, dass Baselines solide schlagen und keine Pipeline-Fehler vorliegen."
+  },
+  {
+    "question": "Wie hängt WRMF mit ALS zusammen?",
+    "options": [
+      "ALS optimiert die Confidence-Gewichtungen",
+      "ALS löst die WRMF-Optimierung durch abwechselndes Fixieren von Nutzer- und Item-Faktoren",
+      "ALS ersetzt BPR",
+      "ALS ist nur für explizite Ratings"
+    ],
+    "correct_index": 1,
+    "explanation": "ALS erlaubt es, das gekoppelte Optimierungsproblem in WRMF effizient zu lösen."
+  }
+]
