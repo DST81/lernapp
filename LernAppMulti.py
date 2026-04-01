@@ -17,7 +17,8 @@ verfügbare_fächer = {
     "RecSys SW3 Collab-Filtering": "recsys/sw3_collab.json",
     "RecSys SW4 Matrix Factorization": "recsys/sw4_matrixfac.json",
     "RecSys SW5 Content Based": "recsys/sw5_contentbased.json",
-    "RecSys SW6 Two Stage": "recsys/sw6_twostage.json"
+    "RecSys SW6 Two Stage": "recsys/sw6_twostage.json",
+    "RecSys SW6 Learning to Rank": "recsys/sw7_ltr.json"
     #"RL Policy Gradient und MARL": "rl/pg_marl.json",
     #"RL TD P&L Func":"rl/td_pl_funcAppr.json",
     #"RL Monte Carlo": "rl/mc.json",
