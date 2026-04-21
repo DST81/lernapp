@@ -129,7 +129,7 @@
       "Der Automat führt A genau zweimal aus."
     ],
     "correct_index": 1,
-    "explanation": "Für `A*` (Folie 30) wird ein neuer Startzustand eingeführt, der per $\\epsilon$ entweder direkt zum neuen Endzustand springen kann (für 0 Wiederholungen) oder zum Start von A. Vom Endzustand von A führt ein $\epsilon$-Move zurück zum Start von A (für Wiederholungen) und auch zum neuen Endzustand (zum Beenden)."
+    "explanation": "Für `A*` (Folie 30) wird ein neuer Startzustand eingeführt, der per $\\epsilon$ entweder direkt zum neuen Endzustand springen kann (für 0 Wiederholungen) oder zum Start von A. Vom Endzustand von A führt ein $\\epsilon$-Move zurück zum Start von A (für Wiederholungen) und auch zum neuen Endzustand (zum Beenden)."
   },
   {
     "question": "Warum kann ein DFA exponentiell größer sein als der entsprechende NFA?",
