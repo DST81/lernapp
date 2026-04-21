@@ -1,0 +1,277 @@
+[
+  {
+    "question": "Was ist das primäre Ziel der Lexikalischen Analyse (Lexing) im Compilerbau?",
+    "options": [
+      "Den syntaktischen Baum (AST) des Programms zu erstellen.",
+      "Den rohen Zeichenstrom (Character Stream) in eine Folge von klassifizierten Substrings, den sogenannten Tokens, zu zerlegen.",
+      "Die semantische Korrektheit der Variablennamen zu prüfen.",
+      "Den optimierten Maschinencode zu generieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Lexikalische Analyse ist der erste Schritt im Compiler. Sie liest den Eingabestring Zeichen für Zeichen und gruppiert diese zu sinnvollen Einheiten (Lexemen), die dann einer Token-Klasse (z. B. Identifier, Keyword, Integer) zugeordnet werden. Das Ergebnis ist ein Stream von Tokens, der als Eingabe für den Parser dient (Folien 2-5)."
+  },
+  {
+    "question": "Warum war die Regel in FORTRAN, dass Leerzeichen insignificant sind, ein 'terrible design' für den Lexer?",
+    "options": [
+      "Weil Leerzeichen die Dateigröße unnötig erhöhten.",
+      "Weil es den Lexer zwingt, beliebig weit vorauszuschauen (Lookahead), um zu entscheiden, ob eine Zeichenfolge ein Keyword oder ein Identifier ist.",
+      "Weil Compiler keine Leerzeichen verarbeiten können.",
+      "Weil es die Ausführungsgeschwindigkeit des Programms verlangsamte."
+    ],
+    "correct_index": 1,
+    "explanation": "Da Leerzeichen ignoriert werden, ist für den Lexer nicht sofort erkennbar, wo ein Token endet. Das berühmte Beispiel 'DO 5 I = 1,25' (Schleife) vs. 'DO 5 I = 1.25' (Zuweisung an Variable DO5I) zeigt, dass man erst bis zum Komma oder Punkt lesen muss, um die Bedeutung zu verstehen. Dies erfordert komplexes Lookahead und macht das Lexing fehleranfällig (Folien 13-15)."
+  },
+  {
+    "question": "Was versteht man unter dem Begriff 'Lookahead' im Kontext der Lexikalischen Analyse?",
+    "options": [
+      "Das Speichern von Tokens für die nächste Kompilierung.",
+      "Das Lesen weiterer Zeichen im Eingabestrom, um zu entscheiden, wo das aktuelle Token endet und das nächste beginnt.",
+      "Das Vorausberechnen von Optimierungen vor dem Parsing.",
+      "Das Überspringen von Kommentaren und Leerzeichen."
+    ],
+    "correct_index": 1,
+    "explanation": "Lookahead ist notwendig, wenn die Entscheidung über die Token-Klasse von zukünftigen Zeichen abhängt. Ein Beispiel ist die Unterscheidung zwischen dem Operator '==' und zwei einzelnen '=' Zeichen, oder zwischen dem Keyword 'if' und dem Identifier 'i' gefolgt von 'f'. Der Lexer muss ggf. Zeichen 'vorauslesen', ohne sie bereits als neues Token zu konsumieren (Folie 16-17)."
+  },
+  {
+    "question": "Welches spezifische Problem verursacht die C++ Syntax bei der Kombination von Templats und Stream-Operatoren?",
+    "options": [
+      "Der Lexer kann keine spitzen Klammern verarbeiten.",
+      "Die Sequenz '>>' kann als zwei schließende Templats ('> >') oder als ein Stream-Extraktions-Operator ('>>') interpretiert werden.",
+      "C++ erlaubt keine verschachtelten Templats.",
+      "Der Lexer muss arbitrarily lookahead bis zum Ende der Datei."
+    ],
+    "correct_index": 1,
+    "explanation": "In älteren C++ Standards führte `Foo<Bar<Baz>>` zu einem Fehler, da der Lexer die Sequenz `>>` als Stream-Operator (`cin >> var`) interpretierte und nicht als zwei schließende Klammern des Templates. Dies ist ein klassisches Beispiel für einen Konflikt, der spezielles Wissen oder Regeln im Lexer erfordert, um korrekt aufgelöst zu werden (Folie 19-20)."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einem 'Token' und einem 'Lexem'?",
+    "options": [
+      "Es gibt keinen Unterschied; die Begriffe sind synonym.",
+      "Ein Token ist die abstrakte Kategorie (z. B. Identifier), während das Lexem der konkrete Substring im Quellcode ist (z. B. 'var1').",
+      "Ein Lexem ist die Kategorie, und ein Token ist der konkrete Wert.",
+      "Ein Token enthält nur Keywords, ein Lexem nur Zahlen."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Token ist die syntaktische Kategorie (der Typ), wie z. B. 'Integer' oder 'Keyword'. Das Lexem ist die tatsächliche Zeichenfolge im Quelltext, die zu diesem Token gehört (z. B. '123' oder 'if'). Der Lexer gibt typischerweise Paare aus (Token-Typ, Lexem) zurück (Folie 10)."
+  },
+  {
+    "question": "Welche Token werden vom Lexer typischerweise verworfen und nicht an den Parser weitergegeben?",
+    "options": [
+      "Keywords und Operatoren.",
+      "Identifier und Integer-Literale.",
+      "Leerzeichen (Whitespace) und Kommentare.",
+      "Klammern und Semikolons."
+    ],
+    "correct_index": 2,
+    "explanation": "Da Leerzeichen und Kommentare für die syntaktische Struktur (Grammatik) der meisten Sprachen keine Rolle spielen (außer in Sprachen wie Python, wo Einrückung zählt, oder FORTRAN, wo sie ignoriert werden), filtert der Lexer diese oft heraus, um den Parser zu entlasten. Sie tragen nicht zur Grammatik bei (Folie 12)."
+  },
+  {
+    "question": "Warum ist das PL/I-Design, bei dem Keywords nicht reserviert sind, problematisch für die Lexikalische Analyse?",
+    "options": [
+      "Es macht den Lexer langsamer.",
+      "Es erfordert beliebiges Lookahead (arbitrary lookahead), da erst nach dem Lesen weiterer Tokens klar ist, ob ein Wort ein Keyword oder ein Identifier ist.",
+      "Es verbietet die Verwendung von Variablennamen wie 'IF'.",
+      "Es führt zu mehr Speicherbedarf."
+    ],
+    "correct_index": 1,
+    "explanation": "In PL/I konnte ein Wort wie 'DECLARE' je nach Kontext ein Keyword oder ein Array-Name sein. Um dies zu entscheiden, musste der Lexer unter Umständen bis zum schließenden Klammern ')' lesen, was 'arbitrary lookahead' erfordert. Dies macht die Implementierung eines Lexers extrem komplex, da die Tokenisierung nicht mehr lokal entschieden werden kann (Folie 17-18)."
+  },
+  {
+    "question": "Welches formale Werkzeug wird in der Vorlesung als Standard zur Spezifikation von Tokens eingeführt?",
+    "options": [
+      "Kontextfreie Grammatiken (Context-Free Grammars)",
+      "Reguläre Ausdrücke (Regular Expressions)",
+      "Endliche Automaten (Finite Automata) als Eingabesprache",
+      "Lambda-Kalkül"
+    ],
+    "correct_index": 1,
+    "explanation": "Reguläre Ausdrücke (Regex) sind die gängigste Notation, um die Menge der Strings zu beschreiben, die zu einem bestimmten Token gehören (z. B. 'eine Ziffer gefolgt von beliebig vielen Ziffern' für Integer). Sie sind einfach zu verstehen, haben eine klare Theorie und lassen sich effizient implementieren (Folien 22-23)."
+  },
+  {
+    "question": "Was beschreibt der reguläre Ausdruck `letter (letter + digit)*`?",
+    "options": [
+      "Eine einzelne Ziffer.",
+      "Einen Identifier, der mit einem Buchstaben beginnt und von beliebig vielen Buchstaben oder Ziffern gefolgt wird.",
+      "Ein Keyword wie 'if' oder 'else'.",
+      "Eine Folge von Leerzeichen."
+    ],
+    "correct_index": 1,
+    "explanation": "Dieser Ausdruck definiert typische Identifier in vielen Sprachen: Das erste Zeichen muss ein `letter` sein. Der Teil `(letter + digit)*` bedeutet, dass danach null oder mehr Wiederholungen von entweder Buchstaben oder Ziffern folgen können. Das Sternchen `*` steht für die Kleene-Stern-Operation (Iteration) (Folie 35)."
+  },
+  {
+    "question": "Was ist die semantische Bedeutung des regulären Ausdrucks `A*` (Kleene Star)?",
+    "options": [
+      "Genau ein Vorkommen von A.",
+      "Mindestens ein Vorkommen von A.",
+      "Null oder mehr Vorkommen von A (inklusive des leeren Strings).",
+      "Genau zwei Vorkommen von A."
+    ],
+    "correct_index": 2,
+    "explanation": "Der Operator `*` (Iteration) bedeutet die Vereinigung aller Potenzen von A beginnend bei 0: $A^0 \cup A^1 \cup A^2 \dots$. Da $A^0$ der leere String ($\epsilon$) ist, umfasst `A*` immer auch den leeren String sowie jede beliebige Wiederholung von A (Folie 27, 31)."
+  },
+  {
+    "question": "Welcher reguläre Ausdruck beschreibt eine vorzeichenlose Ganzzahl (Integer), die aus mindestens einer Ziffer besteht?",
+    "options": [
+      "`digit*`",
+      "`digit+` oder `digit digit*`",
+      "`digit?`",
+      "`(digit + epsilon)*`"
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Integer darf nicht leer sein. `digit*` würde auch den leeren String akzeptieren. `digit+` (eine Abkürzung für `digit digit*`) bedeutet 'ein digit gefolgt von null oder mehr digits', also mindestens eins. Dies entspricht der Definition einer non-empty string of digits (Folie 34)."
+  },
+  {
+    "question": "Sind die regulären Ausdrücke `(letter* + digit*)` und `(letter + digit)*` äquivalent?",
+    "options": [
+      "Ja, sie beschreiben exakt dieselbe Sprache.",
+      "Nein, der erste erlaubt nur Strings aus ausschließlich Buchstaben ODER ausschließlich Ziffern, der zweite erlaubt Mischungen.",
+      "Nein, der zweite erlaubt keine leeren Strings.",
+      "Ja, weil die Reihenfolge der Operatoren egal ist."
+    ],
+    "correct_index": 1,
+    "explanation": "Dies ist eine wichtige Unterscheidung (Folie 35). `(letter* + digit*)` bedeutet: (beliebig viele Buchstaben) ODER (beliebig viele Ziffern). Ein String wie 'a1' wäre hier nicht erlaubt. `(letter + digit)*` bedeutet: beliebig viele Wiederholungen von (Buchstabe ODER Ziffer). Hier sind Mischungen wie 'var1' erlaubt. Sie sind also nicht äquivalent."
+  },
+  {
+    "question": "Was ist die Aufgabe des Parsers im Verhältnis zum Lexer?",
+    "options": [
+      "Der Parser liest die Rohdaten der Festplatte.",
+      "Der Parser konsumiert den Stream von Tokens, den der Lexer produziert, und überprüft die syntaktische Struktur.",
+      "Der Parser generiert die Tokens für den Lexer.",
+      "Der Parser optimiert den Code vor dem Lexer."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Pipeline ist klar definiert: Der Lexer wandelt Zeichen in Tokens um. Der Parser nimmt diese Tokens als Eingabe ('input to the parser') und baut daraus die syntaktische Struktur (Parse Tree) auf. Der Parser verlässt sich darauf, dass der Lexer die Unterscheidung zwischen z. B. einem Keyword und einem Identifier bereits getroffen hat (Folie 5-6)."
+  },
+  {
+    "question": "Welches Beispiel wird in der Vorlesung genutzt, um die Notwendigkeit von Lookahead bei einfachen Operatoren zu zeigen?",
+    "options": [
+      "Der Unterschied zwischen '+' und '++'.",
+      "Der Unterschied zwischen '=' und '=='.",
+      "Der Unterschied zwischen '/' und '//'.",
+      "Der Unterschied zwischen '<' und '<='."
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 16 nennt explizit `=` vs. `==`. Wenn der Lexer ein '=' liest, muss er das nächste Zeichen betrachten (Lookahead). Ist es wieder ein '=', handelt es sich um den Vergleichsoperator '=='. Ist es etwas anderes (z. B. ein Leerzeichen oder eine Variable), ist es der Zuweisungsoperator '='."
+  },
+  {
+    "question": "Was beschreibt der reguläre Ausdruck für 'Whitespace' in der Vorlesung?",
+    "options": [
+      "Nur das Leerzeichen (' ').",
+      "Eine nicht-leere Sequenz von Leerzeichen, Newlines und Tabs.",
+      "Jedes beliebige Zeichen.",
+      "Nur Newlines und Tabs, keine Leerzeichen."
+    ],
+    "correct_index": 1,
+    "explanation": "In Folie 9 und 36 wird Whitespace als eine nicht-leere Sequenz (`+` oder `*` je nach Definition, hier oft als trennend betrachtet) von Blanks (' '), Newlines ('\n') und Tabs ('\t') definiert. Der Regex wäre etwa `(' ' + '\n' + '\t')+`."
+  },
+  {
+    "question": "Warum werden reguläre Sprachen (Regular Languages) für die Spezifikation von Tokens bevorzugt?",
+    "options": [
+      "Weil sie die mächtigste Klasse von Sprachen sind und alles beschreiben können.",
+      "Weil sie eine einfache und nützliche Theorie haben und effiziente Implementierungen (Lexer-Generatoren) ermöglichen.",
+      "Weil sie die einzige Möglichkeit sind, verschachtelte Strukturen zu beschreiben.",
+      "Weil sie vom Parser direkt ausgeführt werden."
+    ],
+    "correct_index": 1,
+    "explanation": "Reguläre Sprachen sind weniger mächtig als kontextfreie Sprachen (sie können z. B. keine verschachtelten Klammern zählen), aber für die Beschreibung von Tokens (Wörtern) völlig ausreichend. Ihr großer Vorteil ist die Effizienz: Man kann aus einem regulären Ausdruck automatisch einen sehr schnellen endlichen Automaten (Lexer) generieren (Folie 22)."
+  },
+  {
+    "question": "Was ist die Bedeutung von `epsilon` ($\epsilon$) in regulären Ausdrücken?",
+    "options": [
+      "Es bedeutet 'Fehler'.",
+      "Es repräsentiert die leere Menge (keine Strings).",
+      "Es repräsentiert den String, der keine Zeichen enthält (der leere String).",
+      "Es steht für ein beliebiges Zeichen."
+    ],
+    "correct_index": 2,
+    "explanation": "Epsilon ($\epsilon$) ist der reguläre Ausdruck, dessen Sprache nur aus einem einzigen Element besteht: dem leeren String ("" mit Länge 0). Es ist nicht dasselbe wie die leere Menge ($\emptyset$), die keine Strings enthält. Epsilon ist wichtig für Operationen wie den Kleene Star, da $A^0 = \epsilon$ ist (Folie 26)."
+  },
+  {
+    "question": "Wie wird ein 'Unsigned Pascal Number' mit Optionalem Bruch und Exponent in regulären Ausdrücken zusammengesetzt?",
+    "options": [
+      "Nur durch eine Folge von Ziffern.",
+      "Durch die Verkettung von `digits`, `opt_fraction` und `opt_exponent`, wobei die letzten beiden auch leer sein können.",
+      "Durch die Addition von Ziffern und Punkten.",
+      "Gar nicht, da Pascal keine regulären Zahlen hat."
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 40 zeigt die Konstruktion: `num = digits opt_fraction opt_exponent`. Dabei sind `opt_fraction` und `opt_exponent` so definiert, dass sie entweder eine spezifische Struktur (z. B. '.' gefolgt von Ziffern) oder $\epsilon$ (nichts) sein können. Dies erlaubt Zahlen wie '10', '10.5' oder '10E-2' (Folie 40)."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen der Syntax und der Semantik eines regulären Ausdrucks?",
+    "options": [
+      "Es gibt keinen Unterschied.",
+      "Syntax ist die Schreibweise (der Ausdruck selbst), Semantik ist die Menge der Strings, die er beschreibt (die Sprache).",
+      "Syntax beschreibt die Bedeutung, Semantik die Schreibweise.",
+      "Syntax gilt nur für Keywords, Semantik für Identifier."
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 29-31 erläutert dies: Die Syntax ist der formale Ausdruck (z. B. `'a' + 'b'`). Die Semantik ist die mathematische Bedeutung, also die tatsächliche Menge von Strings, die durch diesen Ausdruck definiert wird (hier die Menge {'a', 'b'}). Man muss zwischen dem Label (Syntax) und dem Inhalt der Box (Semantik/Sprache) unterscheiden."
+  },
+  {
+    "question": "Welches Tool aus der Unix-Welt basiert auf regulären Ausdrücken und wird als Beispiel genannt?",
+    "options": [
+      "make",
+      "grep",
+      "gcc",
+      "ls"
+    ],
+    "correct_index": 1,
+    "explanation": "Die `grep`-Familie (global regular expression print) ist das klassische Werkzeug zum Durchsuchen von Textdateien mittels regulärer Ausdrücke. Es wird in Folie 41 als allgegenwärtiges Anwendungsbeispiel für Regex genannt."
+  },
+  {
+    "question": "Was passiert, wenn der Lexer einen Substring findet, der zu keiner definierten Token-Klasse passt?",
+    "options": [
+      "Er ignoriert es und macht weiter.",
+      "Er meldet einen lexikalischen Fehler (lexical error).",
+      "Er gibt es als Kommentar weiter.",
+      "Der Parser muss den Fehler beheben."
+    ],
+    "explanation": "Obwohl nicht explizit auf einer Folie als 'Fehlermeldung' groß geschrieben, ist es die logische Konsequenz der Definition: Der Lexer soll den Input in Tokens partitionieren. Bleibt ein Rest übrig, der keinem Token entspricht (z. B. ein illegales Zeichen wie '@' in einer Sprache, die das nicht kennt), ist dies ein lexikalischer Fehler. Der Lexer kann diesen Substring nicht klassifizieren. (Implizit aus dem Ziel der Partitionierung, Folie 3, 7).",
+    "correct_index": 1
+  },
+  {
+    "question": "Warum ist die Unterscheidung zwischen 'Keyword' und 'Identifier' für den Parser wichtig?",
+    "options": [
+      "Weil Keywords eine andere Farbe im Editor haben.",
+      "Weil der Parser auf dieser Unterscheidung basiert, um die Grammatikregeln anzuwenden (z. B. 'if' leitet eine Bedingung ein, ein Identifier nicht).",
+      "Weil Keywords schneller verarbeitet werden.",
+      "Weil Identifier keine Werte haben."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Parser arbeitet mit Tokens, nicht mit rohen Strings. Die Grammatikregeln definieren Strukturen basierend auf Token-Typen. Eine Regel könnte lauten: `Statement -> IF '(' Expression ')' Statement`. Hier wird das spezifische Token `IF` (Keyword) erwartet. Würde der Lexer 'if' nur als allgemeinen Identifier liefern, könnte der Parser diese Regel nicht direkt anwenden oder müsste viel komplexer werden (Folie 5-6)."
+  },
+  {
+    "question": "Was bedeutet die Abkürzung `A+` in regulären Ausdrücken?",
+    "options": [
+      "Null oder mehr Wiederholungen von A.",
+      "Genau eine Wiederholung von A.",
+      "Mindestens eine Wiederholung von A (A gefolgt von A*).",
+      "Höchstens eine Wiederholung von A."
+    ],
+    "correct_index": 2,
+    "explanation": "Wie in Folie 34 erwähnt, ist `A+` eine gebräuchliche Abkürzung für `AA*`. Das bedeutet: Ein Vorkommen von A, gefolgt von null oder mehr weiteren A's. Also insgesamt 'mindestens eins'. Im Gegensatz dazu steht `A*` für 'null oder mehr'."
+  },
+  {
+    "question": "Welches historische Motiv hatte die FORTRAN-Regel, Leerzeichen zu ignorieren?",
+    "options": [
+      "Speicherplatz zu sparen.",
+      "Die Ungenauigkeit von Lochkarten-Stanzern (punch card operators) auszugleichen.",
+      "Die Lesbarkeit für Menschen zu verbessern.",
+      "Die Kompilierungsgeschwindigkeit zu erhöhen."
+    ],
+    "correct_index": 1,
+    "explanation": "Folie 13 erwähnt dies als 'Historical footnote'. Bei Lochkarten konnten durch Stanzfehler oder Verschmutzungen Leerzeichen an falschen Stellen entstehen oder fehlen. Durch das Ignorieren aller Leerzeichen wurde der Compiler robuster gegen diese physischen Ungenauigkeiten der Eingabemedien, was jedoch die lexikalische Analyse massiv erschwerte."
+  },
+  {
+    "question": "Was ist die Ausgabe eines Lexers?",
+    "options": [
+      "Ein Baum (AST).",
+      "Ein Stream von Token-Lexem-Paaren.",
+      "Eine Tabelle aller Variablen.",
+      "Maschinencode."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Lexer gibt keine komplexe Struktur aus, sondern einen linearen Strom (Stream) von Paaren. Jedes Paar besteht aus der Token-Kategorie (z. B. INTEGER) und dem Lexem (z. B. "123"). Oft werden auch Metadaten wie Zeilennummern hinzugefügt, um bei späteren Fehlern gute Meldungen generieren zu können (Folie 10)."
+  }
+]
