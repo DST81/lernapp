@@ -112,24 +112,24 @@
   {
     "question": "Welcher reguläre Ausdruck beschreibt den NFA, der aus zwei Teilen A und B durch Konkatenation (AB) entsteht?",
     "options": [
-      "Ein neuer Startzustand, der per $\epsilon$ zu den Starts von A und B geht.",
-      "Der Endzustand von A wird per $\epsilon$-Move mit dem Startzustand von B verbunden.",
+      "Ein neuer Startzustand, der per $\\epsilon$ zu den Starts von A und B geht.",
+      "Der Endzustand von A wird per $\\epsilon$-Move mit dem Startzustand von B verbunden.",
       "A und B werden parallel geschaltet.",
       "Der Endzustand von B wird mit dem Start von A verbunden."
     ],
     "correct_index": 1,
-    "explanation": "Bei der Konstruktion eines NFA für die Konkatenation `AB` (Folie 29) wird der akzeptierende Zustand des Teilautomaten für `A` mit dem Startzustand des Teilautomaten für `B` durch einen $\epsilon$-Übergang verbunden. Der Start des neuen Automaten ist der Start von A, der akzeptierende Zustand ist der von B."
+    "explanation": "Bei der Konstruktion eines NFA für die Konkatenation `AB` (Folie 29) wird der akzeptierende Zustand des Teilautomaten für `A` mit dem Startzustand des Teilautomaten für `B` durch einen $\\epsilon$-Übergang verbunden. Der Start des neuen Automaten ist der Start von A, der akzeptierende Zustand ist der von B."
   },
   {
     "question": "Was passiert bei der Konstruktion eines NFA für den Kleene-Stern `A*`?",
     "options": [
       "Der Automat wird gelöscht.",
-      "Es wird ein neuer Start- und Endzustand geschaffen, wobei $\epsilon$-Moves den Durchlauf von A ermöglichen, überspringen oder wiederholen.",
+      "Es wird ein neuer Start- und Endzustand geschaffen, wobei $\\epsilon$-Moves den Durchlauf von A ermöglichen, überspringen oder wiederholen.",
       "Der Automat führt A genau einmal aus.",
       "Der Automat führt A genau zweimal aus."
     ],
     "correct_index": 1,
-    "explanation": "Für `A*` (Folie 30) wird ein neuer Startzustand eingeführt, der per $\epsilon$ entweder direkt zum neuen Endzustand springen kann (für 0 Wiederholungen) oder zum Start von A. Vom Endzustand von A führt ein $\epsilon$-Move zurück zum Start von A (für Wiederholungen) und auch zum neuen Endzustand (zum Beenden)."
+    "explanation": "Für `A*` (Folie 30) wird ein neuer Startzustand eingeführt, der per $\\epsilon$ entweder direkt zum neuen Endzustand springen kann (für 0 Wiederholungen) oder zum Start von A. Vom Endzustand von A führt ein $\epsilon$-Move zurück zum Start von A (für Wiederholungen) und auch zum neuen Endzustand (zum Beenden)."
   },
   {
     "question": "Warum kann ein DFA exponentiell größer sein als der entsprechende NFA?",
@@ -148,10 +148,10 @@
       "Alle möglichen Pfade müssen in einem akzeptierenden Zustand enden.",
       "Mindestens ein möglicher Pfad durch den Automaten muss in einem akzeptierenden Zustand enden.",
       "Der kürzeste Pfad muss in einem akzeptierenden Zustand enden.",
-      "Der Automat darf keine $\epsilon$-Moves verwenden."
+      "Der Automat darf keine $\\epsilon$-Moves verwenden."
     ],
     "correct_index": 1,
-    "explanation": "Ein NFA akzeptiert einen String, wenn es *mindestens eine* Folge von Übergängen (inklusive $\epsilon$-Moves) gibt, die vom Startzustand zu einem akzeptierenden Zustand führt und dabei den Input konsumiert. Es reicht also ein einziger erfolgreicher Pfad; alle anderen Pfade können in Sackgassen enden (Folie 25)."
+    "explanation": "Ein NFA akzeptiert einen String, wenn es *mindestens eine* Folge von Übergängen (inklusive $\\epsilon$-Moves) gibt, die vom Startzustand zu einem akzeptierenden Zustand führt und dabei den Input konsumiert. Es reicht also ein einziger erfolgreicher Pfad; alle anderen Pfade können in Sackgassen enden (Folie 25)."
   },
   {
     "question": "Welches Tool wird in der Vorlesung als Beispiel für einen Lexer-Generator genannt, der NFA-zu-DFA Konversion nutzt?",
@@ -168,12 +168,12 @@
     "question": "Was ist der Startzustand bei der Umwandlung eines NFA in einen DFA?",
     "options": [
       "Der Startzustand des NFA.",
-      "Die Menge aller Zustände, die vom NFA-Startzustand aus nur durch $\epsilon$-Moves erreichbar sind.",
+      "Die Menge aller Zustände, die vom NFA-Startzustand aus nur durch $\\epsilon$-Moves erreichbar sind.",
       "Ein zufälliger Zustand des NFA.",
       "Der akzeptierende Zustand des NFA."
     ],
     "correct_index": 1,
-    "explanation": "Da der NFA zu Beginn sofort $\epsilon$-Moves machen kann, bevor er das erste Zeichen liest, entspricht der Startzustand des DFA nicht nur dem einzelnen Startzustand des NFA, sondern der 'Epsilon-Closure': der Menge aller Zustände, die vom NFA-Start aus ohne Input erreichbar sind (Folie 32)."
+    "explanation": "Da der NFA zu Beginn sofort $\\epsilon$-Moves machen kann, bevor er das erste Zeichen liest, entspricht der Startzustand des DFA nicht nur dem einzelnen Startzustand des NFA, sondern der 'Epsilon-Closure': der Menge aller Zustände, die vom NFA-Start aus ohne Input erreichbar sind (Folie 32)."
   },
   {
     "question": "Welchen Trade-off machen Tools wie 'flex' in der Praxis oft bezüglich NFA und DFA?",
@@ -190,12 +190,12 @@
     "question": "Wie wird die Vereinigung (Union) `A + B` in einem NFA konstruiert?",
     "options": [
       "A und B werden hintereinander geschaltet.",
-      "Ein neuer Startzustand wird per $\epsilon$ mit den Starts von A und B verbunden; die Enden von A und B gehen per $\epsilon$ zu einem neuen gemeinsamen Endzustand.",
-      "A und B teilen sich denselben Startzustand ohne $\epsilon$-Moves.",
+      "Ein neuer Startzustand wird per $\\epsilon$ mit den Starts von A und B verbunden; die Enden von A und B gehen per $\\epsilon$ zu einem neuen gemeinsamen Endzustand.",
+      "A und B teilen sich denselben Startzustand ohne $\\epsilon$-Moves.",
       "Nur der Automat für A wird verwendet."
     ],
     "correct_index": 1,
-    "explanation": "Für die Union `A + B` (Folie 29) wird ein neuer Startknoten erstellt, der $\epsilon$-Kanten zu den Startzuständen von sowohl A als auch B hat. Ebenso werden die akzeptierenden Zustände von A und B mit $\epsilon$-Kanten zu einem neuen gemeinsamen akzeptierenden Zustand verbunden. Dies erlaubt dem Automaten, 'zu wählen', welchen Pfad er nimmt."
+    "explanation": "Für die Union `A + B` (Folie 29) wird ein neuer Startknoten erstellt, der $\\epsilon$-Kanten zu den Startzuständen von sowohl A als auch B hat. Ebenso werden die akzeptierenden Zustände von A und B mit $\epsilon$-Kanten zu einem neuen gemeinsamen akzeptierenden Zustand verbunden. Dies erlaubt dem Automaten, 'zu wählen', welchen Pfad er nimmt."
   },
   {
     "question": "Was ist die Eingabe für den Algorithmus zur Umwandlung von Regex zu NFA?",
