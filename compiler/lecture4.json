@@ -92,7 +92,7 @@
     "options": [
       "Jeder Zustand im DFA entspricht genau einem Zustand im NFA.",
       "Jeder Zustand im DFA entspricht einer Menge (Teilmenge) von Zuständen des NFA.",
-      "Man löscht alle $\epsilon$-Moves und behält die gleichen Zustände.",
+      "Man löscht alle $\\epsilon$-Moves und behält die gleichen Zustände.",
       "Man verdoppelt die Anzahl der Zustände des NFA."
     ],
     "correct_index": 1,
