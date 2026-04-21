@@ -227,8 +227,8 @@
       "Er gibt es als Kommentar weiter.",
       "Der Parser muss den Fehler beheben."
     ],
-    "explanation": "Obwohl nicht explizit auf einer Folie als 'Fehlermeldung' groß geschrieben, ist es die logische Konsequenz der Definition: Der Lexer soll den Input in Tokens partitionieren. Bleibt ein Rest übrig, der keinem Token entspricht (z. B. ein illegales Zeichen wie '@' in einer Sprache, die das nicht kennt), ist dies ein lexikalischer Fehler. Der Lexer kann diesen Substring nicht klassifizieren. (Implizit aus dem Ziel der Partitionierung, Folie 3, 7).",
-    "correct_index": 1
+    "correct_index": 1,
+    "explanation": "Obwohl nicht explizit auf einer Folie als 'Fehlermeldung' groß geschrieben, ist es die logische Konsequenz der Definition: Der Lexer soll den Input in Tokens partitionieren. Bleibt ein Rest übrig, der keinem Token entspricht (z. B. ein illegales Zeichen wie '@' in einer Sprache, die das nicht kennt), ist dies ein lexikalischer Fehler. Der Lexer kann diesen Substring nicht klassifizieren. (Implizit aus dem Ziel der Partitionierung, Folie 3, 7)."
   },
   {
     "question": "Warum ist die Unterscheidung zwischen 'Keyword' und 'Identifier' für den Parser wichtig?",
@@ -272,6 +272,6 @@
       "Maschinencode."
     ],
     "correct_index": 1,
-    "explanation": "Der Lexer gibt keine komplexe Struktur aus, sondern einen linearen Strom (Stream) von Paaren. Jedes Paar besteht aus der Token-Kategorie (z. B. INTEGER) und dem Lexem (z. B. "123"). Oft werden auch Metadaten wie Zeilennummern hinzugefügt, um bei späteren Fehlern gute Meldungen generieren zu können (Folie 10)."
+    "explanation": "Der Lexer gibt keine komplexe Struktur aus, sondern einen linearen Strom (Stream) von Paaren. Jedes Paar besteht aus der Token-Kategorie (z. B. INTEGER) und dem Lexem (z. B. \"123\"). Oft werden auch Metadaten wie Zeilennummern hinzugefügt, um bei späteren Fehlern gute Meldungen generieren zu können (Folie 10)."
   }
 ]
