@@ -136,7 +136,7 @@
     "options": [
       "Weil der DFA für jedes Zeichen einen neuen Zustand braucht.",
       "Weil der DFA jede mögliche Teilmenge der NFA-Zustände als eigenen Zustand repräsentieren muss (bis zu $2^N$).",
-      "Weil der DFA $\epsilon$-Moves speichern muss.",
+      "Weil der DFA $\\epsilon$-Moves speichern muss.",
       "Weil der DFA doppelt so viele Übergänge pro Zustand hat."
     ],
     "correct_index": 1,
@@ -195,7 +195,7 @@
       "Nur der Automat für A wird verwendet."
     ],
     "correct_index": 1,
-    "explanation": "Für die Union `A + B` (Folie 29) wird ein neuer Startknoten erstellt, der $\\epsilon$-Kanten zu den Startzuständen von sowohl A als auch B hat. Ebenso werden die akzeptierenden Zustände von A und B mit $\epsilon$-Kanten zu einem neuen gemeinsamen akzeptierenden Zustand verbunden. Dies erlaubt dem Automaten, 'zu wählen', welchen Pfad er nimmt."
+    "explanation": "Für die Union `A + B` (Folie 29) wird ein neuer Startknoten erstellt, der $\\epsilon$-Kanten zu den Startzuständen von sowohl A als auch B hat. Ebenso werden die akzeptierenden Zustände von A und B mit $\\epsilon$-Kanten zu einem neuen gemeinsamen akzeptierenden Zustand verbunden. Dies erlaubt dem Automaten, 'zu wählen', welchen Pfad er nimmt."
   },
   {
     "question": "Was ist die Eingabe für den Algorithmus zur Umwandlung von Regex zu NFA?",
@@ -206,7 +206,7 @@
       "Der Quellcode des Programms."
     ],
     "correct_index": 1,
-    "explanation": "Der Algorithmus (Thompson's Construction, implizit in Folien 28-30) arbeitet strukturell auf dem regulären Ausdruck. Er baut für die atomaren Teile (Zeichen, $\epsilon$) kleine NFAs und setzt diese gemäß den Operatoren (Union, Konkatenation, Iteration) zu größeren NFAs zusammen."
+    "explanation": "Der Algorithmus (Thompson's Construction, implizit in Folien 28-30) arbeitet strukturell auf dem regulären Ausdruck. Er baut für die atomaren Teile (Zeichen, $\\epsilon$) kleine NFAs und setzt diese gemäß den Operatoren (Union, Konkatenation, Iteration) zu größeren NFAs zusammen."
   },
   {
     "question": "Warum ist die Implementierung eines DFA als Tabelle effizienter als eine Implementierung mit vielen 'if'-Bedingungen?",
