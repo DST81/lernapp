@@ -18,7 +18,12 @@ verfügbare_fächer = {
     "RecSys SW4 Matrix Factorization": "recsys/sw4_matrixfac.json",
     "RecSys SW5 Content Based": "recsys/sw5_contentbased.json",
     "RecSys SW6 Two Stage": "recsys/sw6_twostage.json",
-    "RecSys SW6 Learning to Rank": "recsys/sw7_ltr.json"
+    "RecSys SW6 Learning to Rank": "recsys/sw7_ltr.json",
+    "Frontend Block 1 und 2":"frontend/block1_2.json",
+    "Frontend Block 3":"frontend/block3.json",
+    "Frontend Block 4":"frontend/block4.json",
+    "Frontend Block 5 und 6":"frontent/block5_6.json",
+    "Frontend Block 7 und 8":"frontend/block7_8.json"
     #"RL Policy Gradient und MARL": "rl/pg_marl.json",
     #"RL TD P&L Func":"rl/td_pl_funcAppr.json",
     #"RL Monte Carlo": "rl/mc.json",
