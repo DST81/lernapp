@@ -1,0 +1,288 @@
+[
+  {
+    "question": "Was ist der primäre Vorteil der Verwendung eines CSS-Frameworks wie Bootstrap oder Tailwind gegenüber reinem, selbstgeschriebenem CSS?",
+    "options": [
+      "Es eliminiert die Notwendigkeit, HTML zu verstehen.",
+      "Es bietet vorgefertigte, getestete Komponenten und ein Grid-System, was die Entwicklungsgeschwindigkeit und Konsistenz erhöht.",
+      "Es macht die Webseite automatisch schneller, da weniger Code geladen wird.",
+      "Es ersetzt die Notwendigkeit von Media Queries für Responsive Design vollständig."
+    ],
+    "correct_index": 1,
+    "explanation": "CSS-Frameworks liefern ein solides Fundament aus vordefinierten Klassen für Layouts (Grids), Typografie und UI-Komponenten (Buttons, Formulare). Dies beschleunigt die Entwicklung und sorgt für ein konsistentes Design. Sie ersetzen jedoch nicht das HTML-Verständnis, können die Dateigröße erhöhen (wenn nicht optimiert) und Media Queries werden oft weiterhin benötigt oder sind Teil des Framework-Systems."
+  },
+  {
+    "question": "Welches Prinzip beschreibt den Ansatz 'Mobile First' im Kontext von Responsive Design?",
+    "options": [
+      "Man entwickelt zuerst die Desktop-Version und skaliert sie dann für Handys herunter.",
+      "Man schreibt die CSS-Styles zuerst für kleine Bildschirme und erweitert sie mit Media Queries für größere Screens.",
+      "Man erstellt eine separate mobile Webseite unter einer Subdomain (z. B. m.example.com).",
+      "Man priorisiert mobile Nutzer im Marketing, ignoriert aber technische Anpassungen."
+    ],
+    "correct_index": 1,
+    "explanation": "Mobile First bedeutet, dass das Basis-CSS für die eingeschränkteste Umgebung (kleine Screens) geschrieben wird. Mit Media Queries (min-width) werden dann zusätzliche Styles für Tablets und Desktops hinzugefügt. Dies führt oft zu performanterem Code, da mobile Geräte nur den Basis-Code laden müssen, ohne unnötige Desktop-Styles zu überschreiben."
+  },
+  {
+    "question": "Was ist der wesentliche Unterschied zwischen 'Breakpoint-basiertem Design' und 'Fluid Design'?",
+    "options": [
+      "Breakpoints nutzen feste Werte (px) für Layoutänderungen, während Fluid Design proportionale Einheiten (%, vw) für fließende Übergänge verwendet.",
+      "Fluid Design funktioniert nur auf mobilen Geräten, Breakpoints nur auf Desktops.",
+      "Breakpoints sind veraltet und werden von modernen Browsern nicht mehr unterstützt.",
+      "Fluid Design erfordert JavaScript, während Breakpoints rein in CSS funktionieren."
+    ],
+    "correct_index": 0,
+    "explanation": "Beim Breakpoint-Ansatz ändert sich das Layout sprunghaft an bestimmten Pixelwerten (z. B. 768px). Fluid Design nutzt relative Einheiten wie Prozent (%) oder Viewport-Units (vw, vh), um Elemente kontinuierlich und fließend an die verfügbare Breite anzupassen, ohne harte Sprünge. Oft werden beide Ansätze kombiniert."
+  },
+  {
+    "question": "Für wen ist 'Web Accessibility' (Barrierefreiheit) gemäß den WCAG-Richtlinien primär gedacht?",
+    "options": [
+      "Ausschließlich für blinde Nutzer, die Screenreader verwenden.",
+      "Nur für ältere Menschen mit schlechtem Sehvermögen.",
+      "Für alle Menschen mit verschiedenen Einschränkungen (visuell, auditiv, motorisch, kognitiv) und situationellen Limitierungen.",
+      "Nur für Nutzer von speziellen Regierungswebseiten."
+    ],
+    "correct_index": 2,
+    "explanation": "Accessibility (a11y) zielt darauf ab, das Web für *alle* Menschen nutzbar zu machen. Dazu gehören permanente Behinderungen (Blindheit, Taubheit, Motorik), temporäre Einschränkungen (gebrochener Arm) und situationale Limitierungen (helle Sonne auf dem Display, laute Umgebung). Die WCAG-Richtlinien des W3C definieren Standards für diese breite Zielgruppe."
+  },
+  {
+    "question": "Warum können 'Web Components' oder komplexe, custom UI-Elemente manchmal ein Problem für Screenreader darstellen?",
+    "options": [
+      "Weil Screenreader keine JavaScript-Dateien laden können.",
+      "Weil sie oft keine nativen semantischen Rollen (Roles) und Zustände (States) besitzen, die assistiven Technologien den Kontext vermitteln.",
+      "Weil Web Components zu viel Speicherplatz verbrauchen.",
+      "Weil Screenreader nur HTML5-Tags aus dem Jahr 2010 unterstützen."
+    ],
+    "correct_index": 1,
+    "explanation": "Native HTML-Elemente (wie <button>, <input>) haben eingebaute Semantik, die Screenreader automatisch vorlesen ('Button', 'Checked'). Custom Components (divs mit JS) haben diese Bedeutung nicht von Haus aus. Entwickler müssen manuell ARIA-Attribute (Roles, States, Properties) hinzufügen, damit der Screenreader versteht, was das Element tut und in welchem Zustand es sich befindet."
+  },
+  {
+    "question": "Wann ist es gemäß Accessibility-Richtlinien erlaubt, ein Bild *ohne* Alt-Text (alt='') zu versehen?",
+    "options": [
+      "Wenn das Bild sehr klein ist.",
+      "Wenn das Bild rein dekorativ ist und keine inhaltliche Information vermittelt.",
+      "Wenn der Bildtitel (title-Attribut) bereits ausgefüllt ist.",
+      "Es ist niemals erlaubt, das Alt-Attribut wegzulassen."
+    ],
+    "correct_index": 1,
+    "explanation": "Rein dekorative Bilder (z. B. Hintergrundgrafiken, visuelle Trennlinien), die zum Verständnis des Inhalts nichts beitragen, sollten ein leeres Alt-Attribut (alt="") haben. Dies signalisiert dem Screenreader, das Bild zu überspringen. Ein fehlendes Alt-Attribut würde dazu führen, dass der Dateiname vorgelesen wird, was verwirrend ist. Ein title-Attribut ersetzt keinen Alt-Text."
+  },
+  {
+    "question": "Was ist der Zweck von 'ARIA' (Accessible Rich Internet Applications) im Kontext von Accessibility?",
+    "options": [
+      "Es ist ein neues CSS-Framework für barrierefreie Designs.",
+      "Es ist eine Sammlung von Attributen, um Semantik und Zustände dynamischer Inhalte für assistive Technologien nachzurüsten.",
+      "Es ist ein Tool zum automatischen Testen von Farbkontrasten.",
+      "Es ersetzt die Notwendigkeit von semantischem HTML vollständig."
+    ],
+    "correct_index": 1,
+    "explanation": "ARIA-Attribute (z. B. role='alert', aria-expanded='true') werden verwendet, um Informationen an Screenreader zu übermitteln, die durch reines HTML nicht ausgedrückt werden können, insbesondere bei dynamischen, JavaScript-gesteuerten Widgets. Es ist jedoch eine Ergänzung, kein Ersatz für natives, semantisches HTML, das immer Vorrang hat."
+  },
+  {
+    "question": "Welches Tool wurde in der Vorlesung als Ressource empfohlen, um Webseiten auf Barrierefreiheit zu testen?",
+    "options": [
+      "FileZilla",
+      "W3C WAI Evaluation Tools List",
+      "Google Fonts Analyzer",
+      "Miro Board Checker"
+    ],
+    "correct_index": 1,
+    "explanation": "Das W3C WAI (Web Accessibility Initiative) bietet eine umfassende Liste von Tools (unter w3.org/WAI/test-evaluate/tools/), mit denen开发者 Webseiten automatisch und manuell auf WCAG-Konformität prüfen können. FileZilla ist ein FTP-Client, und Miro dient der Kollaboration."
+  },
+  {
+    "question": "Was versteht man unter 'Semantik' im Kontext von CSS Frameworks und HTML?",
+    "options": [
+      "Die Geschwindigkeit, mit der CSS geladen wird.",
+      "Die Bedeutung und Struktur der Inhalte, unabhängig vom visuellen Erscheinungsbild.",
+      "Die Anzahl der Zeilen Code in einem Framework.",
+      "Die Fähigkeit eines Frameworks, Farben automatisch zu generieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Semantik bezieht sich auf die korrekte Auszeichnung von Inhalten nach ihrer Bedeutung (z. B. <nav> für Navigation, <article> für einen Beitrag). Auch bei der Nutzung von Frameworks sollte die semantische Struktur des HTMLs erhalten bleiben, da Frameworks primär das Styling (Aussehen) übernehmen, nicht die inhaltliche Bedeutung."
+  },
+  {
+    "question": "Welche Aufgabe hat ein 'Breakpoint' in einem Media Query?",
+    "options": [
+      "Er stoppt das Laden der Webseite bei Fehlern.",
+      "Er definiert den Punkt, an dem sich das Layout ändert, um an eine bestimmte Bildschirmgröße angepasst zu werden.",
+      "Er unterbricht die JavaScript-Ausführung zum Debuggen.",
+      "Er markiert das Ende einer CSS-Datei."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Breakpoint ist ein spezifischer Wert (meist in Pixeln, z. B. 768px), der in einer Media Query verwendet wird, um CSS-Regeln nur dann anzuwenden, wenn der Viewport diese Breite erreicht oder überschreitet (oder unterschreitet). Dies ermöglicht das Umbrechen des Layouts für verschiedene Geräteklassen."
+  },
+  {
+    "question": "Warum wird in der Übung verlangt, ein Login-Formular erst ohne und dann mit Framework zu erstellen?",
+    "options": [
+      "Um zu beweisen, dass Frameworks unnötig sind.",
+      "Um das Verständnis für die zugrundeliegende HTML/CSS-Struktur zu sichern, bevor man sich auf Abstraktionen verlässt.",
+      "Weil Dozenten gerne Doppelarbeit vergeben.",
+      "Um die Dateigröße des Projekts künstlich zu erhöhen."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Erstellen ohne Framework zwingt Lernende, die Grundlagen von Formular-Elementen, Layout und Styling zu verstehen. Erst dieses Verständnis ermöglicht es, Frameworks effektiv und korrekt einzusetzen, ohne blind Klassen zu kopieren, deren Wirkung man nicht versteht. Es fördert das tiefe technische Verständnis."
+  },
+  {
+    "question": "Welches der folgenden Elemente ist ein natives HTML-Formular-Element, das oft in Login-Masken verwendet wird?",
+    "options": [
+      "<div class='input'>",
+      "<input type='password'>",
+      "<span class='password'>",
+      "<text-field>"
+    ],
+    "correct_index": 1,
+    "explanation": "<input type='password'> ist das native HTML-Element für Passworteingaben. Es bietet von Haus aus Sicherheit (Zeichen werden maskiert) und Browser-Funktionen (Passwort-Manager). Die anderen Optionen sind generische Container oder keine gültigen HTML-Tags, die erst durch CSS/JS zu einem Formularfeld gemacht werden müssten."
+  },
+  {
+    "question": "Was ist eine häufige Kritik an der Nutzung von schweren CSS-Frameworks für kleine Projekte?",
+    "options": [
+      "Sie sind zu teuer in der Lizenz.",
+      "Sie laden oft ungenutzten Code ('Bloat'), was die Performance beeinträchtigen kann.",
+      "Sie funktionieren nicht mit Mobile First.",
+      "Sie unterstützen keine modernen Browser."
+    ],
+    "correct_index": 1,
+    "explanation": "Viele Frameworks liefern eine riesige Bibliothek an Komponenten mit. Wenn ein Projekt nur wenige davon nutzt, wird dennoch oft die gesamte CSS-Datei geladen (Bloat), was die Ladezeit erhöht. Moderne Ansätze wie Tailwind (mit Purging) oder das Schreiben von eigenem CSS vermeiden dies."
+  },
+  {
+    "question": "Wie trägt 'korrekte Semantik' direkt zur Accessibility bei?",
+    "options": [
+      "Sie macht die Seite bunter.",
+      "Sie ermöglicht es Screenreadern, die Struktur der Seite (Überschriften, Listen, Landmarks) korrekt vorzulesen und Navigation zu erleichtern.",
+      "Sie verhindert, dass Nutzer die Seite zoomen können.",
+      "Sie sorgt dafür, dass die Seite schneller lädt."
+    ],
+    "correct_index": 1,
+    "explanation": "Screenreader-Nutzer navigieren oft über Strukturelemente (z. B. 'Springe zu nächster Überschrift' oder 'Liste der Links'). Wenn semantische Tags (<h1>-<h6>, <nav>, <ul>, <button>) korrekt verwendet werden, kann der Screenreader diese Struktur abbilden. Fehlen diese (z. B. durch Nutzung von <div> für alles), ist die Seite für blinde Nutzer kaum navigierbar."
+  },
+  {
+    "question": "Was bedeutet der Begriff 'Fluid Typography' im Kontext von Responsive Design?",
+    "options": [
+      "Schriftgrößen, die sich kontinuierlich an die Viewport-Breite anpassen, statt nur an Breakpoints zu springen.",
+      "Schriftarten, die flüssig aussehen.",
+      "Text, der sich automatisch in eine andere Sprache übersetzt.",
+      "Die Verwendung von animierten Schriftgrößen bei Mausbewegung."
+    ],
+    "correct_index": 0,
+    "explanation": "Fluid Typography nutzt CSS-Einheiten wie 'vw' (Viewport Width) oder die 'clamp()' Funktion, um Schriftgrößen stetig und proportional zur Bildschirmbreite zu skalieren. Dies vermeidet harte Sprünge in der Lesbarkeit zwischen verschiedenen Gerätegrößen und ist ein Teilaspekt des Fluid Designs."
+  },
+  {
+    "question": "Welche Rolle spielt das 'Miro Board' in der described Übung zu CSS Frameworks?",
+    "options": [
+      "Es dient als Code-Editor zum Schreiben von CSS.",
+      "Es ist eine kollaborative Plattform zum Sammeln, Gruppieren und Präsentieren von recherchierten Frameworks.",
+      "Es ist ein Tool zum automatischen Testen von Responsive Design.",
+      "Es ersetzt die Notwendigkeit von Git."
+    ],
+    "correct_index": 1,
+    "explanation": "Miro ist ein digitales Whiteboard, das in der Vorlesung zur kollaborativen Arbeit genutzt wird. Die Studierenden tragen recherchierte Frameworks ein, bilden Gruppen und strukturieren ihre Ergebnisse visuell, bevor sie diese der Klasse präsentieren. Es dient der Organisation und Zusammenarbeit, nicht dem Coding selbst."
+  },
+  {
+    "question": "Warum ist 'Inkongruenz zum Inhalt' ein Problem für die Accessibility?",
+    "options": [
+      "Weil es das Design weniger modern aussehen lässt.",
+      "Weil verwirrende oder widersprüchliche visuelle Signale kognitiv belastend sein können und die Nutzerführung erschweren.",
+      "Weil es die Ladezeit erhöht.",
+      "Weil Suchmaschinen die Seite dann abstrafen."
+    ],
+    "explanation": "Wenn das visuelle Design (z. B. ein Element sieht aus wie ein Button, ist aber keiner) nicht mit der Funktion oder dem Inhalt übereinstimmt, verwirrt dies alle Nutzer, insbesondere aber Menschen mit kognitiven Einschränkungen. Konsistenz und klare visuelle Hierarchien sind essenziell für eine barrierefreie Nutzererfahrung.",
+    "correct_index": 1
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen 'Responsive Design' und 'Adaptive Design' (oft mit Breakpoints assoziiert)?",
+    "options": [
+      "Responsive Design ist fließend und kontinuierlich, Adaptive Design nutzt oft feste Layouts für spezifische Geräteklassen.",
+      "Adaptive Design ist neuer als Responsive Design.",
+      "Responsive Design benötigt JavaScript, Adaptive Design nicht.",
+      "Es gibt keinen Unterschied, die Begriffe sind synonym."
+    ],
+    "correct_index": 0,
+    "explanation": "Responsive Design passt sich kontinuierlich an jeden Pixel an (fluid). Adaptive Design erkennt oft das Gerät und liefert eines von mehreren festen Layouts aus (wie Stufen). In der Praxis verschwimmen die Grenzen, da Responsive Design oft Breakpoints nutzt, aber das Grundprinzip des fließenden Inhalts bleibt zentral für Responsive."
+  },
+  {
+    "question": "Welches Attribut ist entscheidend, um einem Bild einen aussagekräftigen Text für Screenreader zu geben?",
+    "options": [
+      "title",
+      "src",
+      "alt",
+      "caption"
+    ],
+    "correct_index": 2,
+    "explanation": "Das 'alt'-Attribut (Alternative Text) ist der Standardweg, um Bildinhalte für Screenreader und für den Fall, dass das Bild nicht lädt, zu beschreiben. Das 'title'-Attribut wird oft als Tooltip angezeigt, aber von Screenreadern oft ignoriert oder nachrangig behandelt. 'src' ist der Pfad zum Bild, 'caption' ist kein direktes Attribut des img-Tags."
+  },
+  {
+    "question": "Was ist das Ziel der WCAG-Richtlinien (Web Content Accessibility Guidelines)?",
+    "options": [
+      "Einheitliche Designs für alle Webseiten zu erzwingen.",
+      "Einen internationalen Standard für barrierefreie Webinhalte zu definieren, der wahrnehmbar, bedienbar, verständlich und robust ist.",
+      "Die Entwicklungsgeschwindigkeit von Webseiten zu maximieren.",
+      "Nur Regierungswebseiten zur Barrierefreiheit zu verpflichten."
+    ],
+    "correct_index": 1,
+    "explanation": "Die WCAG des W3C basieren auf vier Prinzipien (POUR): Perceivable (Wahrnehmbar), Operable (Bedienbar), Understandable (Verständlich) und Robust (Robust). Sie dienen als globaler Maßstab, um Webinhalte für Menschen mit Behinderungen zugänglich zu machen, und sind oft Grundlage für gesetzliche Regelungen."
+  },
+  {
+    "question": "Welche CSS-Einheit ist am besten geeignet, um eine Schriftgröße relativ zur Schriftgröße des Elternelements zu definieren?",
+    "options": [
+      "px",
+      "em",
+      "vw",
+      "pt"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Einheit 'em' ist relativ zur Schriftgröße des Elternelements (oder des Elements selbst bei Eigenschaften wie width). Dies macht sie ideal für skalierbare, zugängliche Layouts, da sie sich anpasst, wenn der Nutzer die Basisschriftgröße im Browser ändert. 'px' ist absolut, 'vw' relativ zum Viewport, 'pt' für Druck gedacht."
+  },
+  {
+    "question": "Warum ist es wichtig, auch 'situationelle Einschränkungen' beim Design zu bedenken?",
+    "options": [
+      "Weil diese Gruppe die zahlungskräftigste ist.",
+      "Weil Designs, die für Menschen mit Behinderungen gut sind, oft auch in schwierigen Situationen (helles Licht, laute Umgebung, Einhandbedienung) für alle besser funktionieren.",
+      "Weil es gesetzlich vorgeschrieben ist, nur für Situationen zu designen.",
+      "Weil situationelle Einschränkungen häufiger sind als permanente Behinderungen."
+    ],
+    "correct_index": 1,
+    "explanation": "Das 'Curb-Cut-Effect': Lösungen für Behinderungen (z. B. Untertitel für Gehörlose) nützen oft allen (Untertitel im lauten Zug). Ein kontrastreiches Design hilft Blinden genauso wie Nutzern in der prallen Sonne. Gutes Accessibility-Design verbessert die User Experience (UX) universell."
+  },
+  {
+    "question": "Was passiert, wenn man in einem CSS-Framework eine Klasse wie 'btn-primary' verwendet?",
+    "options": [
+      "Das Framework löscht alle anderen Styles.",
+      "Das Framework wendet ein vordefiniertes Set an Styles (Farbe, Padding, Border) auf das Element an.",
+      "Das Element wird unsichtbar.",
+      "Das Framework erstellt automatisch eine Datenbankverbindung."
+    ],
+    "correct_index": 1,
+    "explanation": "Klassen wie 'btn-primary' sind Teil des Component-Systems eines Frameworks. Sie bündeln diverse CSS-Eigenschaften (Hintergrundfarbe, Textfarbe, Abstände, Hover-Effekte), um einheitlich gestaltete Komponenten zu erzeugen, ohne dass der Entwickler jedes Detail selbst schreiben muss."
+  },
+  {
+    "question": "Welcher Aspekt von 'Web Components' kann die Accessibility erschweren, wenn nicht korrekt implementiert?",
+    "options": [
+      "Ihre Fähigkeit, CSS zu kapseln (Shadow DOM), kann Screenreader vom Inhalt ausschließen, wenn keine ARIA-Labels gesetzt werden.",
+      "Sie sind zu groß im Speicher.",
+      "Sie funktionieren nur in Chrome.",
+      "Sie verhindern die Nutzung von JavaScript."
+    ],
+    "correct_index": 0,
+    "explanation": "Der Shadow DOM kapselt Styles und Markup. Wenn Entwickler nicht explizit sicherstellen, dass der Inhalt für assistive Technologien zugänglich ist (z. B. durch korrektes Fokussieren und ARIA), kann der Screenreader den Inhalt im Shadow DOM möglicherweise nicht oder nur unvollständig erfassen. Dies erfordert bewusste Implementierung."
+  },
+  {
+    "question": "Was ist der Vorteil von 'Fluid Design' gegenüber reinem Breakpoint-Design bei ungewöhnlichen Bildschirmgrößen?",
+    "options": [
+      "Es lädt schneller.",
+      "Es vermeidet unnötige horizontale Scrollbalken oder große Leerräume zwischen den definierten Breakpoints.",
+      "Es benötigt weniger CSS-Code.",
+      "Es funktioniert ohne CSS."
+    ],
+    "correct_index": 1,
+    "explanation": "Bei reinem Breakpoint-Design kann es zwischen zwei definierten Punkten (z. B. 800px und 1024px) zu suboptimalen Darstellungen kommen (zu viel Platz oder Quetschungen). Fluid Design passt sich kontinuierlich an, sodass das Layout auf jeder beliebigen Breite (auch bei Tablets in Hochformat oder geteilten Fenstern) optimal aussieht."
+  },
+  {
+    "question": "Welche der folgenden Maßnahmen verbessert die Accessibility eines Formulars am meisten?",
+    "options": [
+      "Bunte Hintergrundfarben für alle Felder.",
+      "Korrekte Verknüpfung von <label>-Elementen mit den jeweiligen <input>-Feldern via 'for'-Attribut.",
+      "Verwendung von Platzhaltertext (placeholder) als einzige Beschriftung.",
+      "Deaktivierung der Tabulator-Navigation."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Verknüpfen von Labels und Inputs ist essenziell. Screenreader lesen dann das Label vor, wenn das Feld fokussiert wird. Zudem vergrößert ein Klick auf das Label das Klickziel, was motorisch eingeschränkten Nutzern hilft. Placeholder allein sind unzureichend, da sie verschwinden, sobald der Nutzer tippt, und oft schlechten Kontrast haben."
+  }
+]
