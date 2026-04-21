@@ -23,7 +23,13 @@ verfügbare_fächer = {
     "Frontend Block 3":"frontend/block3.json",
     "Frontend Block 4":"frontend/block4.json",
     "Frontend Block 5 und 6":"frontent/block5_6.json",
-    "Frontend Block 7 und 8":"frontend/block7_8.json"
+    "Frontend Block 7 und 8":"frontend/block7_8.json",
+    "Compiler Grundlage":"compiler/lecture1.json",
+    "Compiler Scanner Teil 1":"compiler/lecture3.json",
+    "Compiler Scanner Teil 2":"compiler/lecture4.json",
+    "Compiler Parser":"compiler/lecture5_6.json",
+    "Compiler Top-Down und Bottom-up":"compiler/lecture7_8.json",
+    "Compiler Syntaxtree und Semantische Analyse":"compiler/syntaxtree_semantischeAnalyse.json"   
     #"RL Policy Gradient und MARL": "rl/pg_marl.json",
     #"RL TD P&L Func":"rl/td_pl_funcAppr.json",
     #"RL Monte Carlo": "rl/mc.json",
