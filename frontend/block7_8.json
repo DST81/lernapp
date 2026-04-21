@@ -1,0 +1,277 @@
+[
+  {
+    "question": "Was bedeutet das Akronym REST im Kontext von Web-APIs?",
+    "options": [
+      "Remote Event Service Transfer",
+      "Representational State Transfer",
+      "Rapid Entity System Transaction",
+      "Resource Oriented Standard Technology"
+    ],
+    "correct_index": 1,
+    "explanation": "REST steht für 'Representational State Transfer'. Es ist ein architektonischer Stil für verteilte Systeme, bei dem Ressourcen über standardisierte HTTP-Schnittstellen zustandslos angesprochen werden. Der Zustand einer Ressource wird dabei in einer Repräsentation (meist JSON oder XML) übertragen."
+  },
+  {
+    "question": "Welche der folgenden HTTP-Methoden ist NICHT idempotent, das heißt, mehrfaches Ausführen kann den Zustand des Servers verändern (z. B. durch Erstellen duplizierter Ressourcen)?",
+    "options": [
+      "GET",
+      "PUT",
+      "DELETE",
+      "POST"
+    ],
+    "correct_index": 3,
+    "explanation": "Idempotenz bedeutet, dass eine Anfrage denselben Effekt hat, egal ob sie einmal oder mehrfach ausgeführt wird. GET, PUT und DELETE sind idempotent. POST ist es nicht: Sendet man eine POST-Anfrage zweimal, um z. B. eine Bestellung aufzugeben, werden zwei Bestellungen erstellt. PUT hingegen überschreibt eine Ressource immer mit demselben Inhalt."
+  },
+  {
+    "question": "Welches Datenformat wird in REST-APIs am häufigsten zur Übertragung von Ressourcen-Repräsentationen verwendet?",
+    "options": [
+      "XML ausschließlich",
+      "JSON (JavaScript Object Notation)",
+      "Binary Blob",
+      "HTML nur"
+    ],
+    "correct_index": 1,
+    "explanation": "Obwohl REST theoretisch jedes Format unterstützt (auch XML, HTML, Plain Text), hat sich JSON aufgrund seiner Lesbarkeit, leichten Verarbeitbarkeit in JavaScript und geringen Größe als De-facto-Standard für moderne Web-APIs durchgesetzt."
+  },
+  {
+    "question": "Was ist das Hauptmerkmal von 'HATEOAS' (Hypermedia as the Engine of Application State) in einer REST-API?",
+    "options": [
+      "Die API muss immer verschlüsselt sein.",
+      "Die Antwort enthält Links zu möglichen Folgeaktionen, sodass der Client die API dynamisch entdecken kann.",
+      "Die API verwendet nur GET-Anfragen.",
+      "Der Client muss alle möglichen URLs im Voraus kennen."
+    ],
+    "correct_index": 1,
+    "explanation": "HATEOAS sorgt für eine lose Kopplung zwischen Client und Server. Die Server-Antwort enthält nicht nur die Daten, sondern auch Links (Hypermedia) zu relevanten Aktionen (z. B. 'withdraw', 'transfer'). Der Client muss also nicht hartkodierte URLs kennen, sondern navigiert durch die API wie ein Nutzer durch Webseiten über Links."
+  },
+  {
+    "question": "Welche Art der API-Versionierung erfolgt über den 'Accept'-Header?",
+    "options": [
+      "DNS Versionierung",
+      "URL Versionierung (Path)",
+      "HTTP Header Versionierung",
+      "Query-Parameter Versionierung"
+    ],
+    "correct_index": 2,
+    "explanation": "Bei der HTTP Header Versionierung wird die gewünschte Version im Request-Header (meist `Accept` oder ein Custom-Header) angegeben, z. B. `Accept: application/json;version=1`. Die URL bleibt dabei sauber (`/api/customer/123`), im Gegensatz zur URL-Versionierung (`/api/v1/customer/123`) oder DNS-Versionierung (`v1.api.example.com`)."
+  },
+  {
+    "question": "Wofür steht SWAGGER (heute oft OpenAPI Specification) im Kontext von REST-APIs?",
+    "options": [
+      "Ein Tool zum Testen von SQL-Injections.",
+      "Ein Format und eine Suite von Tools zur Dokumentation und Visualisierung von REST-APIs.",
+      "Ein Sicherheitszertifikat für SSL-Verschlüsselung.",
+      "Ein Framework zum Erstellen von WebSocket-Verbindungen."
+    ],
+    "correct_index": 1,
+    "explanation": "Swagger (OpenAPI) ist ein weit verbreiteter Standard, um REST-APIs maschinenlesbar zu dokumentieren. Es erlaubt Entwicklern, alle Endpunkte, Parameter und Antwortformate in einer Datei zu definieren. Tools wie der 'Swagger Editor' oder 'Swagger UI' generieren daraus eine interaktive Dokumentation, in der man API-Calls direkt testen kann."
+  },
+  {
+    "question": "Welches Cookie-Flag verhindert, dass Cookies über JavaScript (z. B. `document.cookie`) ausgelesen werden können, was Schutz vor XSS bietet?",
+    "options": [
+      "Secure",
+      "SameSite",
+      "HttpOnly",
+      "Expires"
+    ],
+    "correct_index": 2,
+    "explanation": "Das `HttpOnly`-Flag weist den Browser an, das Cookie ausschließlich für HTTP-Anfragen (Server-Kommunikation) zu verwenden und den Zugriff über clientseitige Skripte wie JavaScript zu blockieren. Dies ist eine wichtige Verteidigungsmaßnahme gegen Cross-Site Scripting (XSS), da gestohlene Session-Cookies so nicht einfach per Script ausgelesen werden können."
+  },
+  {
+    "question": "Was bewirkt das 'Secure'-Flag bei einem Cookie?",
+    "options": [
+      "Es verhindert den Zugriff durch JavaScript.",
+      "Es stellt sicher, dass das Cookie nur über verschlüsselte HTTPS-Verbindungen übertragen wird.",
+      "Es löscht das Cookie automatisch nach 30 Minuten.",
+      "Es erlaubt das Cookie nur auf der gleichen Domain."
+    ],
+    "correct_index": 1,
+    "explanation": "Das `Secure`-Flag garantiert, dass der Browser das Cookie nur sendet, wenn die Verbindung über HTTPS (verschlüsselt) läuft. Wird die Seite über unverschlüsseltes HTTP aufgerufen, wird das Cookie nicht mitgesendet, was das Abhören der Session-ID in unsicheren Netzwerken verhindert."
+  },
+  {
+    "question": "Welches OWASP-Risiko (A03) wird in der Vorlesung explizit mit der unsicheren Verwendung von `innerHTML` in Verbindung gebracht?",
+    "options": [
+      "Security Misconfiguration",
+      "Injection (insbesondere Cross-Site Scripting - XSS)",
+      "Identification and Authentication Failures",
+      "Broken Access Control"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Verwendung von `innerHTML` mit nicht validierten Benutzerdaten ist eine klassische Ursache für XSS (Cross-Site Scripting). Angreifer können bösartige Skripte einschleusen, die im Browser anderer Nutzer ausgeführt werden. Die sichere Alternative ist die Verwendung von `textContent` oder das Escapen von Eingaben."
+  },
+  {
+    "question": "Was ist der Zweck des 'SameSite'-Attributes bei Cookies?",
+    "options": [
+      "Es definiert, ob das Cookie nur bei Requests von derselben Site (oder vertrauenswürdigen Sites) gesendet wird, um CSRF-Angriffe zu verhindern.",
+      "Es legt fest, dass das Cookie nur auf mobilen Geräten funktioniert.",
+      "Es verschlüsselt den Inhalt des Cookies.",
+      "Es sorgt dafür, dass das Cookie auf allen Subdomains geteilt wird."
+    ],
+    "correct_index": 0,
+    "explanation": "Das `SameSite`-Attribut (Werte: Strict, Lax, None) steuert, wann Cookies bei cross-site Requests mitgesendet werden. `Strict` oder `Lax` verhindern, dass Cookies bei Anfragen von fremden Seiten gesendet werden, was effektiv Cross-Site Request Forgery (CSRF) Angriffe erschwert, bei denen ein Angreifer Aktionen im Namen des Nutzers ausführt."
+  },
+  {
+    "question": "Welches Tool wurde in der Vorlesung empfohlen, um einen automatisierten Sicherheitsaudit für HTTP-Header und Konfiguration durchzuführen?",
+    "options": [
+      "Swagger Editor",
+      "Mozilla Observatory",
+      "Live Share",
+      "Etherpad"
+    ],
+    "correct_index": 1,
+    "explanation": "Das 'Mozilla Observatory' (observatory.mozilla.org) ist ein kostenloses Tool, das eine Webseite scannt und einen detaillierten Bericht über die Sicherheitskonfiguration (Header, Cookies, CSP, etc.) erstellt. Es bewertet die Seite mit einer Note (A+ bis F) und gibt konkrete Handlungsempfehlungen."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen einem Session-Cookie und einem Persistent-Cookie?",
+    "options": [
+      "Session-Cookies haben ein 'Expires'-Datum, Persistent-Cookies nicht.",
+      "Session-Cookies werden gelöscht, wenn der Browser geschlossen wird; Persistent-Cookies bleiben bis zum Ablaufdatum gespeichert.",
+      "Persistent-Cookies können nicht gelesen werden.",
+      "Session-Cookies sind immer verschlüsselt, Persistent-Cookies nie."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Session-Cookie hat kein explizites Ablaufdatum (`Expires` oder `Max-Age`) und wird vom Browser automatisch gelöscht, sobald die Browsersitzung endet (Browser schließen). Ein Persistent-Cookie hat ein gesetztes Ablaufdatum und bleibt auch nach dem Schließen des Browsers auf der Festplatte gespeichert, bis dieses Datum erreicht ist."
+  },
+  {
+    "question": "Welche HTTP-Methode wird typischerweise verwendet, um eine Ressource teilweise zu aktualisieren (Partial Update)?",
+    "options": [
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "correct_index": 2,
+    "explanation": "PATCH ist speziell dafür gedacht, nur bestimmte Felder einer Ressource zu ändern, ohne das gesamte Objekt zu überschreiben. PUT erwartet hingegen in der Regel die vollständige Repräsentation der Ressource. POST wird meist zur Erstellung neuer Ressourcen genutzt."
+  },
+  {
+    "question": "Was ist das Ziel von 'GraphQL' als Alternative zu REST, die in der Gruppenarbeit erwähnt wurde?",
+    "options": [
+      "Es ist ein Protokoll für Echtzeit-Kommunikation wie WebSockets.",
+      "Es erlaubt dem Client, genau die Datenfelder abzufragen, die er benötigt, um Overfetching zu vermeiden.",
+      "Es ist ein veraltetes Format für SOAP-Nachrichten.",
+      "Es dient ausschließlich der Authentifizierung von Nutzern."
+    ],
+    "correct_index": 1,
+    "explanation": "GraphQL ist eine Abfragesprache für APIs, die es dem Client ermöglicht, die Struktur der Antwortdaten exakt zu definieren. Im Gegensatz zu REST, wo Endpunkte oft feste Datenstrukturen zurückgeben (was zu Overfetching oder Underfetching führen kann), holt sich der Client bei GraphQL nur das, was er wirklich braucht."
+  },
+  {
+    "question": "Welches Tool ist direkt in die Chrome DevTools integriert und kann unter anderem Sicherheitsaspekte (Accessibility, Performance, Best Practices) prüfen?",
+    "options": [
+      "Swagger UI",
+      "Lighthouse",
+      "Postman",
+      "Wireshark"
+    ],
+    "correct_index": 1,
+    "explanation": "Lighthouse ist ein automatisiertes Open-Source-Tool von Google, das direkt im 'Lighthouse'-Tab der Chrome DevTools (F12) verfügbar ist. Es analysiert Webseiten hinsichtlich Performance, Accessibility, SEO, Best Practices und PWA-Kriterien und gibt einen Score sowie Verbesserungsvorschläge aus."
+  },
+  {
+    "question": "Was bedeutet 'Security Misconfiguration' (OWASP A05) im Kontext von CSP und CORS?",
+    "options": [
+      "Das Fehlen oder die falsche Einstellung von Sicherheitsheadern wie Content-Security-Policy (CSP) oder Cross-Origin Resource Sharing (CORS).",
+      "Die Verwendung von zu langen Passwörtern.",
+      "Das Speichern von Daten in der Cloud.",
+      "Die Nutzung von HTTPS statt HTTP."
+    ],
+    "correct_index": 0,
+    "explanation": "Security Misconfiguration bezieht sich auf unsichere Standardeinstellungen oder fehlende Konfigurationen auf Server- oder Anwendungsebene. Beispiele sind fehlende CSP-Header (die XSS verhindern sollen) oder zu weit gefasste CORS-Einstellungen (die Zugriff von fremden Domains erlauben, wo es nicht nötig ist)."
+  },
+  {
+    "question": "Welche Parameter werden in REST-APIs häufig verwendet, um große Datensätze handhabbar zu machen?",
+    "options": [
+      "Filtern, Sortieren und Pagination",
+      "Verschlüsselung und Kompression",
+      "Caching und Load Balancing",
+      "Authentifizierung und Autorisierung"
+    ],
+    "correct_index": 0,
+    "explanation": "Um nicht tausende von Datensätzen auf einmal zu laden, nutzen REST-APIs Query-Parameter für: 1. Filtern (z. B. `?status=active`), 2. Sortieren (z. B. `?sort=date_desc`) und 3. Pagination (z. B. `?page=2&limit=20`), um die Daten in kleinen Häppchen abzurufen."
+  },
+  {
+    "question": "Was ist der Hauptzweck von 'WebSockets' im Vergleich zu REST?",
+    "options": [
+      "Sie dienen der statischen Dokumentation von APIs.",
+      "Sie ermöglichen eine persistente, bidirektionale Echtzeit-Kommunikation zwischen Client und Server.",
+      "Sie sind ein Ersatz für SQL-Datenbanken.",
+      "Sie werden nur für das Senden von E-Mails verwendet."
+    ],
+    "correct_index": 1,
+    "explanation": "Im Gegensatz zu REST, das auf einem Request-Response-Modell basiert (Client fragt an, Server antwortet, Verbindung zu), halten WebSockets eine permanente Verbindung offen. Dies erlaubt es dem Server, Daten jederzeit an den Client zu pushen (Echtzeit), was ideal für Chats, Live-Ticker oder Multiplayer-Spiele ist."
+  },
+  {
+    "question": "Wo sollten sensible Daten wie API-Keys im Frontend-Projekt gemäß den Sicherheitshinweisen NICHT gespeichert werden?",
+    "options": [
+      "In einer verschlüsselten Datenbank auf dem Server.",
+      "In Umgebungsvariablen auf dem Server.",
+      "Hartkodiert im clientseitigen JavaScript-Code oder im öffentlichen Repository.",
+      "In einem sicheren Secret-Manager."
+    ],
+    "correct_index": 2,
+    "explanation": "Alles, was im clientseitigen JavaScript-Code steht, ist für jeden Nutzer einsehbar (über 'Quelltext anzeigen'). API-Keys, die dort hartkodiert sind, können gestohlen und missbraucht werden. Sensible Schlüssel gehören auf den Server (Backend) oder in gesicherte Umgebungsvariablen, die nicht ins Bundle kompiliert werden."
+  },
+  {
+    "question": "Was prüft das Tool 'Security Headers' (securityheaders.com)?",
+    "options": [
+      "Die Geschwindigkeit der Datenbankabfragen.",
+      "Das Vorhandensein und die Korrektheit von sicherheitsrelevanten HTTP-Response-Headern.",
+      "Die Qualität des HTML-Codes.",
+      "Die Anzahl der Cookies auf der Seite."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Tool scannt die HTTP-Antworten einer Webseite und prüft, ob wichtige Sicherheitsheader wie `Strict-Transport-Security` (HSTS), `Content-Security-Policy` (CSP), `X-Frame-Options` oder `X-Content-Type-Options` gesetzt sind und korrekt konfiguriert wurden, um bekannte Angriffsvektoren zu mitigieren."
+  },
+  {
+    "question": "Welche Gruppe erhielt in der Vorlesung die Aufgabe, das Thema 'Identification and Authentication Failures' (OWASP A07) zu recherchieren?",
+    "options": [
+      "Gruppe 1",
+      "Gruppe 2",
+      "Gruppe 3",
+      "Gruppe 4"
+    ],
+    "correct_index": 2,
+    "explanation": "Laut Folie 15 war Gruppe 3 für das Thema '(A07) Identification and Authentication Failures (Token-Handling)' zuständig. Gruppe 1 behandelte Injection/XSS, Gruppe 2 Security Misconfiguration/CSP/CORS."
+  },
+  {
+    "question": "Was ist der Vorteil einer 'losen Bindung' (Loose Coupling) durch HATEOAS?",
+    "options": [
+      "Der Server kann die API-Struktur ändern (z. B. URLs anpassen), solange die Links in den Antworten korrekt sind, ohne den Client-Code zu brechen.",
+      "Der Client muss weniger Speicherplatz verwenden.",
+      "Die Verbindung ist schneller.",
+      "Es werden keine Cookies mehr benötigt."
+    ],
+    "correct_index": 0,
+    "explanation": "Da der Client die URLs für Aktionen nicht hartkodiert, sondern aus den Links in der Server-Antwort (HATEOAS) liest, kann der Server die Pfadstruktur im Hintergrund ändern. Solange die Logik der Links in der JSON-Antwort konsistent bleibt, funktioniert der Client weiter, ohne aktualisiert werden zu müssen."
+  },
+  {
+    "question": "Welche HTTP-Methode sollte verwendet werden, um eine neue Ressource zu erstellen?",
+    "options": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "correct_index": 1,
+    "explanation": "POST ist die standardmäßige Methode, um eine neue Ressource auf dem Server zu erstellen (z. B. ein neues Todo, einen neuen Benutzer). Der Server weist der neuen Ressource dann meist eine ID zu und gibt diese im Response zurück."
+  },
+  {
+    "question": "Was passiert bei einem 'Identification and Authentication Failure' häufig?",
+    "options": [
+      "Die Webseite lädt zu langsam.",
+      "Session-Tokens werden unsicher behandelt, erlaubt sind Brute-Force-Angriffe oder Session-Fixation.",
+      "Die Datenbank ist nicht verschlüsselt.",
+      "Das Design ist nicht responsive."
+    ],
+    "correct_index": 1,
+    "explanation": "Dieses OWASP-Risiko umfasst Schwachstellen im Login- und Session-Management. Beispiele sind: Session-IDs, die nicht nach dem Logout ungültig gemacht werden, schwache Passwort-Richtlinien, fehlender Schutz gegen Brute-Force oder das Offenlegen von Session-Tokens in der URL."
+  },
+  {
+    "question": "Welches Format wird für die Dokumentation der finalen App-API in der Vorlesung gefordert?",
+    "options": [
+      "Ein Word-Dokument",
+      "Ein SWAGGER-File (OpenAPI Specification)",
+      "Ein PDF-Export der Datenbank",
+      "Ein Screenshot der Postman-Collection"
+    ],
+    "correct_index": 1,
+    "explanation": "In Folie 10 wird explizit gefordert, dass die API der finalen App mit einem SWAGGER-File dokumentiert sein muss. Dies stellt sicher, dass die Schnittstelle standardisiert, maschinenlesbar und für andere Entwickler (oder das Frontend) einfach nutzbar und testbar ist."
+  }
+]
