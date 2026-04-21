@@ -85,7 +85,7 @@
       "Namensäquivalenz wird nur in C verwendet, strukturelle nur in Java."
     ],
     "correct_index": 1,
-    "explanation": "Namensäquivalenz bedeutet, zwei Typen sind nur gleich, wenn sie denselben Namen haben (oder Alias desselben Namens sind). Strukturelle Äquivalenz bedeutet, zwei Typen sind gleich, wenn sie aus denselben Komponenten aufgebaut sind (z. B. zwei verschiedene Record-Typen mit identischen Feldern), selbst wenn sie unterschiedlich benannt wurden. SPL nutzt oft Namensäquivalenz für benannte Typen (Abschnitt 6.2.4, Beispiel 6.6).",
+    "explanation": "Namensäquivalenz bedeutet, zwei Typen sind nur gleich, wenn sie denselben Namen haben (oder Alias desselben Namens sind). Strukturelle Äquivalenz bedeutet, zwei Typen sind gleich, wenn sie aus denselben Komponenten aufgebaut sind (z. B. zwei verschiedene Record-Typen mit identischen Feldern), selbst wenn sie unterschiedlich benannt wurden. SPL nutzt oft Namensäquivalenz für benannte Typen (Abschnitt 6.2.4, Beispiel 6.6)."
   },
   {
     "question": "Welche Prüfung wird bei einem Prozeduraufruf während der Typanalyse durchgeführt?",
