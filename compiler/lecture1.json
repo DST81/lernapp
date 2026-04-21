@@ -110,15 +110,7 @@
     "explanation": "Folie 35 erklärt, dass sich die Gewichtung verschoben hat. In den frühen Tagen waren Lexing und Parsing die größten Herausforderungen. Heute sind diese Phasen gut verstanden und effizient lösbar. Der Löwenanteil der Forschung und Rechenzeit in modernen Compilern fließt in die Optimierungsphase, um maximale Performance aus der Hardware zu holen."
   },
   {
-    "question": "Was bedeutet das Konzept 'HATEOAS' im Kontext von REST-APIs?"
-    "options": [
-      "Hypermedia As The Engine Of Application State",
-      "High Availability Transfer Of Encrypted Application Strings",
-      "HTTP Architecture For External Open API Systems",
-      "Hybrid Analysis Tool For End-Of-Assembly Sequences"
-    ],
-    "correct_index": 0,
-    "explanation": "Hinweis: Diese Frage ist ein 'Einschub' aus dem Frontend-Kontext, um die Aufmerksamkeit zu prüfen – aber da wir hier beim Compilerbau sind, ist die korrekte Antwort im Kontext dieser Vorlesung eigentlich: 'Dieses Konzept kommt in CS143 Block 1 nicht vor'. Da es aber in den Optionen steht und oft verwechselt wird: HATEOAS ist ein REST-Prinzip. Im Compiler-Kontext wäre die passende Frage zu 'IR': Was ist der Vorteil von IR? (Siehe andere Fragen). *Korrektur für den Kontext Compilerbau*: Lassen Sie uns diese Frage durch eine passende zur Vorlesung ersetzen. \n\nNeue Frage: Was ist ein Beispiel für eine legale Optimierung, die in Folie 30 genannt wird?",
+    "question": "Was ist ein Beispiel für eine legale Optimierung, die in Folie 30 genannt wird?",
     "options": [
       "Das Ersetzen von `x = y * 0` durch `x = 0`.",
       "Das Löschen aller Variablendeklarationen.",
