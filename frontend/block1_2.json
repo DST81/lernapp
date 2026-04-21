@@ -1,0 +1,332 @@
+[
+  {
+    "question": "Welche der folgenden Aussagen beschreibt die primäre Aufgabe des Frontends im Client-Server-Modell korrekt?",
+    "options": [
+      "Es verarbeitet Datenbankabfragen und speichert persistente Benutzerdaten.",
+      "Es ist für die Darstellung, Interaktion und die visuelle Aufbereitung der Daten im Browser verantwortlich.",
+      "Es verwaltet die Server-Infrastruktur und konfiguriert die Firewall-Einstellungen.",
+      "Es kompiliert den Backend-Code in maschinenlesbare Bytecodes vor der Auslieferung."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Frontend (Client) kümmert sich ausschließlich um die Präsentationsschicht: Es rendert HTML, wendet CSS-Stile an und ermöglicht Interaktivität durch JavaScript. Die Datenverarbeitung, Speicherung und Geschäftslogik liegen im Verantwortungsbereich des Backends (Servers)."
+  },
+  {
+    "question": "Beim Inspizieren des Netzwerk-Tabs in den Browser-Developer-Tools sehen Sie eine Anfrage mit dem Status-Code 418. Was bedeutet dieser Code gemäß HTTP-Spezifikation?",
+    "options": [
+      "Der Server hat die Anfrage aufgrund eines Zeitüberschreitungsfehlers abgebrochen.",
+      "Das angeforderte Objekt ist eine Teekanne und kann keinen Kaffee brachen (April-Scherz).",
+      "Der Zugriff ist verweigert, da keine gültigen Authentifizierungsdaten vorliegen.",
+      "Die angeforderte Ressource wurde dauerhaft an eine neue URL verschoben."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Status-Code 418 ('I'm a teapot') ist ein etablierter April-Scherz aus dem Jahr 1998 (RFC 2324). Obwohl er technisch nicht für den produktiven Einsatz gedacht ist, wird er von einigen Servern als Easter Egg implementiert. Im Gegensatz dazu bedeuten 401 'Unauthorized', 301 'Moved Permanently' und Zeitüberschreitungen fallen meist unter 408 oder 504."
+  },
+  {
+    "question": "Analysieren Sie die folgende URL: 'https://login.fhgr.ch/docs/index.html?user=123#top'. Welcher Teil identifiziert die spezifische Subdomain?",
+    "options": [
+      "fhgr",
+      "login",
+      "docs",
+      "ch"
+    ],
+    "correct_index": 1,
+    "explanation": "In der Hierarchie einer Domain steht die Subdomain links von der eigentlichen Domain. Hier ist 'fhgr' die Second-Level-Domain, 'ch' die Top-Level-Domain (TLD) und 'login' die Subdomain, die oft für spezifische Dienste wie Anmeldeportale verwendet wird. 'docs' ist Teil des Pfades zur Ressource."
+  },
+  {
+    "question": "Warum ist die Verwendung von semantischem HTML5 (z. B. <article>, <nav>, <footer>) gegenüber generischen <div>-Containern für die Frontend-Entwicklung entscheidend?",
+    "options": [
+      "Semantische Tags werden von Browsern schneller gerendert als <div>-Elemente.",
+      "Sie verbessern die Barrierefreiheit (Accessibility) für Screenreader und optimieren das SEO-Ranking.",
+      "Nur semantische Tags können mit CSS gestylt werden, <div>-Elemente nicht.",
+      "Semantische Tags reduzieren die Dateigröße der HTML-Datei um mindestens 50%."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Hauptvorteil semantischer Tags liegt in der Bedeutungsebene: Sie geben assistiven Technologien (wie Screenreadern) und Suchmaschinen-Crawlern Kontext über die Struktur und den Inhalt der Seite. Die Render-Geschwindigkeit ist nahezu identisch, und beide Tag-Typen lassen sich gleich gut stylen. Die Dateigrößenersparnis ist marginal und nicht der Hauptgrund."
+  },
+  {
+    "question": "Welche HTTP-Methode sollte primär verwendet werden, um eine bestehende Ressource teilweise zu aktualisieren, ohne das gesamte Objekt zu überschreiben?",
+    "options": [
+      "PUT",
+      "POST",
+      "PATCH",
+      "DELETE"
+    ],
+    "correct_index": 2,
+    "explanation": "PATCH ist speziell für partielle Updates gedacht. Im Gegensatz dazu erwartet PUT in der Regel das vollständige Ersetzen der Ressource. POST wird meist zur Erstellung neuer Ressourcen verwendet, und DELETE löscht diese. Die korrekte Wahl der Methode ist essenziell für eine REST-konforme Architektur."
+  },
+  {
+    "question": "Im Kontext von CSS3 haben Sie zwei Regeln für dasselbe Element: Eine mit dem Selektor '#header .nav li a' und eine mit '.nav a'. Welche Regel gewinnt aufgrund der Spezifität?",
+    "options": [
+      "Die Regel '.nav a', da Klassen wichtiger sind als IDs.",
+      "Die Regel '#header .nav li a', da IDs ein höheres Gewicht in der Spezifitätsberechnung haben.",
+      "Beide Regeln heben sich auf, und es wird der Standard-Browser-Style verwendet.",
+      "Es gewinnt die Regel, die im CSS-File weiter unten steht, unabhängig von der Spezifität."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Spezifität berechnet sich aus der Anzahl der IDs, Klassen und Element-Tags. Eine ID (#header) hat ein deutlich höheres Gewicht als beliebig viele Klassen oder Element-Selektoren. Daher ist '#header .nav li a' (1 ID, 1 Klasse, 2 Elemente) spezifischer als '.nav a' (0 IDs, 1 Klasse, 1 Element). Die Reihenfolge im File ist nur bei gleicher Spezifität entscheidend."
+  },
+  {
+    "question": "Was ist der Hauptzweck von 'Git Branching' in der Versionsverwaltung, wie es in der Vorlesung angesprochen wurde?",
+    "options": [
+      "Es erstellt eine sofortige Sicherungskopie des Servers auf einer externen Festplatte.",
+      "Es ermöglicht das parallele Entwickeln von Features oder Fixes, ohne den stabilen Hauptzweig (Main/Master) zu stören.",
+      "Es komprimiert den Code, um die Upload-Geschwindigkeit zu erhöhen.",
+      "Es wandelt den JavaScript-Code automatisch in eine andere Programmiersprache um."
+    ],
+    "correct_index": 1,
+    "explanation": "Branching erlaubt es Entwicklern, isoliert an neuen Funktionen oder Bugfixes zu arbeiten. Änderungen werden erst durch einen 'Merge' in den Hauptzweig übernommen, wenn sie getestet und freigegeben sind. Dies schützt die Produktionsversion vor instabilem Code während der Entwicklung."
+  },
+  {
+    "question": "Welcher Bestandteil einer URL wird vom Browser typischerweise NICHT an den Server übermittelt, sondern nur clientseitig verarbeitet?",
+    "options": [
+      "Der Query-String (nach dem ?)",
+      "Der Pfad zur Ressource",
+      "Das Fragment (nach dem #)",
+      "Die Domain-Adresse"
+    ],
+    "correct_index": 2,
+    "explanation": "Das Fragment (auch Hash oder Anker genannt, z. B. #top) dient ausschließlich dazu, den Browser an eine bestimmte Stelle innerhalb der geladenen Seite zu scrollen. Es wird im HTTP-Request-Header nicht an den Server gesendet. Der Query-String, der Pfad und die Domain sind hingegen essenziell für den Server, um die richtige Antwort zu generieren."
+  },
+  {
+    "question": "Was beschreibt das Konzept des 'Responsive Web Design' im Zusammenhang mit CSS3 Media Queries?",
+    "options": [
+      "Die Fähigkeit einer Webseite, basierend auf der Internetgeschwindigkeit des Nutzers die Bildqualität anzupassen.",
+      "Die Anpassung des Layouts und Styles an verschiedene viewport-Breiten und Geräteeigenschaften.",
+      "Die automatische Übersetzung des Seiteninhalts in die Landessprache des Benutzers.",
+      "Die Verschlüsselung der Datenübertragung bei mobilen Endgeräten."
+    ],
+    "correct_index": 1,
+    "explanation": "Media Queries ermöglichen es, CSS-Regeln konditional anzuwenden, abhängig von Eigenschaften des Ausgabegeräts (meist der Breite des Viewports). Dies ist die technische Grundlage für Responsive Design, das sicherstellt, dass Webseiten auf Smartphones, Tablets und Desktops optimal aussehen und bedienbar sind."
+  },
+  {
+    "question": "Welcher Status-Code-Bereich deutet auf einen Fehler hin, der vom Client verursacht wurde (z. B. falsche URL oder fehlende Berechtigung)?",
+    "options": [
+      "1xx (Informational)",
+      "2xx (Success)",
+      "3xx (Redirection)",
+      "4xx (Client Error)"
+    ],
+    "correct_index": 3,
+    "explanation": "4xx-Codes signalisieren, dass der Client einen Fehler gemacht hat (z. B. 404 Not Found, 403 Forbidden). 5xx-Codes stehen für Server-Fehler. 2xx bedeutet Erfolg, 3xx Weiterleitung und 1xx informative Zwischenstatus."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen der HTTP-Methode POST und PUT im Kontext der Idempotenz?",
+    "options": [
+      "PUT ist idempotent (mehrmaliges Ausführen hat denselben Effekt wie einmaliges), POST ist es nicht.",
+      "POST ist idempotent, PUT ist es nicht.",
+      "Beide Methoden sind immer idempotent.",
+      "Keine der beiden Methoden ist idempotent."
+    ],
+    "correct_index": 0,
+    "explanation": "Idempotenz bedeutet, dass mehrere identische Anfragen den Zustand des Servers nicht weiter verändern als eine einzelne Anfrage. PUT ersetzt eine Ressource; sendet man dieselben Daten fünfmal, ist das Ergebnis nach dem ersten Mal immer gleich. POST erstellt oft neue Ressourcen; fünfmaliges Senden könnte fünf neue Einträge erzeugen, weshalb POST nicht idempotent ist."
+  },
+  {
+    "question": "Welches Tool wurde in der Vorlesung als interaktive Übung empfohlen, um Git-Befehle und Branching visuell zu lernen?",
+    "options": [
+      "FileZilla",
+      "LearnGitBranching.js.org",
+      "W3Schools Git Simulator",
+      "GitHub Desktop Visualizer"
+    ],
+    "correct_index": 1,
+    "explanation": "In den Folien zur Versionsverwaltung wurde explizit auf 'learngitbranching.js.org' verwiesen, um Git-Konzepte wie Commits, Branches und Merging durch interaktive Level zu erlernen. FileZilla ist ein FTP-Client und hat nichts mit Git zu tun."
+  },
+  {
+    "question": "Warum ist die Trennung von Inhalt (HTML), Gestaltung (CSS) und Verhalten (JavaScript) ein fundamentales Prinzip im Frontend?",
+    "options": [
+      "Damit jeder Teil von einer anderen Programmiersprache geschrieben werden kann.",
+      "Um die Wartbarkeit, Zugänglichkeit und Wiederverwendbarkeit des Codes zu erhöhen.",
+      "Weil Browser sonst die Seite überhaupt nicht laden können.",
+      "Damit das Backend weniger Daten verarbeiten muss."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Trennung der Belange (Separation of Concerns) sorgt dafür, dass Änderungen am Design (CSS) nicht die Struktur (HTML) oder Logik (JS) beeinflussen und umgekehrt. Dies macht den Code leichter wartbar, barrierefreier (da Struktur klar bleibt) und ermöglicht die Wiederverwendung von Stylesheets über mehrere Seiten hinweg."
+  },
+  {
+    "question": "Welche Rolle spielt der 'User-Agent' im HTTP-Request-Header?",
+    "options": [
+      "Er authentifiziert den Benutzer mit Passwort und Token.",
+      "Er identifiziert den verwendeten Browser, das Betriebssystem und dessen Version gegenüber dem Server.",
+      "Er verschlüsselt die Übertragung der Daten.",
+      "Er definiert die maximale Größe der zu ladenden Ressourcen."
+    ],
+    "correct_index": 1,
+    "explanation": "Der User-Agent-String informiert den Server darüber, welcher Client (Browser, Crawler, Bot) die Anfrage stellt. Dies ermöglicht dem Server, spezifische Inhalte auszuliefern (z. B. mobile Versionen) oder Statistiken über die verwendeten Browser zu führen. Er dient nicht der Authentifizierung oder Verschlüsselung."
+  },
+  {
+    "question": "Was bedeutet das Akronym 'W3C' im Kontext der Web-Standards, die in Vorlesung 2 erwähnt wurden?",
+    "options": [
+      "World Wide Web Consortium",
+      "Web 3.0 Community",
+      "World Wide Web Corporation",
+      "Wireless Web Connection"
+    ],
+    "correct_index": 0,
+    "explanation": "Das W3C (World Wide Web Consortium) ist das internationale Gremium, das Standards für das Web entwickelt, darunter die Spezifikationen für HTML und CSS. Es stellt sicher, dass das Web interoperabel, zugänglich und langfristig stabil bleibt."
+  },
+  {
+    "question": "Bei der Arbeit mit Git: Was bewirkt der Befehl 'git commit'?",
+    "options": [
+      "Er lädt die Änderungen auf den Remote-Server (z. B. GitHub/Gitea) hoch.",
+      "Er speichert die aktuell gestagten Änderungen lokal im Repository-Verlauf mit einer Nachricht.",
+      "Er erstellt einen neuen Branch im Repository.",
+      "Er verwirft alle lokalen Änderungen seit dem letzten Commit."
+    ],
+    "correct_index": 1,
+    "explanation": "'git commit' sichert die Änderungen, die zuvor mit 'git add' in die Staging-Area gelegt wurden, dauerhaft im lokalen Versionsverlauf. Das Hochladen auf einen Remote-Server erfolgt erst mit 'git push'. Ein neuer Branch wird mit 'git branch' oder 'git checkout -b' erstellt."
+  },
+  {
+    "question": "Welcher CSS-Selektor hat die höchste Priorität (Spezifität), wenn keine '!important'-Regeln verwendet werden?",
+    "options": [
+      "Ein Element-Selektor (z. B. 'p')",
+      "Ein Klassen-Selektor (z. B. '.text')",
+      "Ein ID-Selektor (z. B. '#main')",
+      "Ein universeller Selektor (z. B. '*')"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Hierarchie der Spezifität ist: Inline-Styles (höchste) > IDs > Klassen/Attribute/Pseudoklassen > Elemente/Typen. Ein ID-Selektor wiegt also schwerer als beliebig viele Klassen oder Element-Selektoren. Der universelle Selektor hat das geringste Gewicht."
+  },
+  {
+    "question": "Was ist der Zweck des 'Query-Strings' in einer URL (der Teil nach dem '?')?",
+    "options": [
+      "Er definiert den Anker innerhalb der Seite.",
+      "Er übergibt Parameter an den Server, z. B. Suchbegriffe oder Filtereinstellungen.",
+      "Er verschlüsselt die Domain für eine sichere Verbindung.",
+      "Er gibt dem Browser an, welche Sprache verwendet werden soll, ohne den Server zu kontaktieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Der Query-String besteht aus Schlüssel-Wert-Paaren (z. B. ?suche=auto&farbe=rot), die als Parameter an das Backend gesendet werden. Das Server-Skript kann diese Daten auslesen, um dynamisch Inhalte zu filtern oder Suchergebnisse zu generieren."
+  },
+  {
+    "question": "Welches der folgenden Elemente ist KEIN semantisches HTML5-Tag, sondern ein reiner Container ohne inhärente Bedeutung?",
+    "options": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<aside>"
+    ],
+    "correct_index": 2,
+    "explanation": "<div> ist ein generischer Block-Container ohne semantische Bedeutung; er sagt nichts über den Inhalt aus. Tags wie <section>, <article> und <aside> sind semantisch, da sie beschreiben, welche Rolle der Inhalt im Dokument spielt (z. B. eigenständiger Artikel, Seitenbereich, Nebeninhalt)."
+  },
+  {
+    "question": "Was passiert technisch, wenn Sie eine URL mit dem Protokoll 'mailto:' im Browser aufrufen?",
+    "options": [
+      "Der Browser öffnet eine neue Webseite mit E-Mail-Archiven.",
+      "Der Browser versucht, das Standard-E-Mail-Programm des Nutzers zu starten und ein neues Fenster vorzubereiten.",
+      "Es wird eine direkte Verbindung zum Mailserver aufgebaut und die E-Mail sofort gesendet.",
+      "Der Browser zeigt eine Fehlermeldung an, da 'mailto:' kein gültiges Protokoll ist."
+    ],
+    "correct_index": 1,
+    "explanation": "'mailto:' ist ein URI-Schema, das dem Browser signalisiert, den lokalen Mail-Client (wie Outlook, Apple Mail oder Thunderbird) zu öffnen und ein neues Nachrichtenfenster mit der angegebenen Adresse zu erstellen. Es sendet die E-Mail nicht automatisch im Hintergrund."
+  },
+  {
+    "question": "Warum wird in der Vorlesung erwähnt, dass das Web 'open book' für die Modulprüfung ist, aber dennoch tiefes Verständnis erfordert?",
+    "options": [
+      "Weil man alle Antworten im Internet finden kann, ohne nachdenken zu müssen.",
+      "Weil die Prüfung darin besteht, Quellen zu zitieren, statt Lösungen zu finden.",
+      "Weil das Nachschlagen von Syntax hilft, aber das Verständnis von Architektur und Zusammenhängen (z. B. HTTP-Fluss, Semantik) nicht ersetzt werden kann.",
+      "Weil die Prüfungsfragen ausschließlich aus dem Skript wortwörtlich kopiert werden."
+    ],
+    "correct_index": 2,
+    "explanation": "Eine 'Open Book'-Prüfung testet weniger das Auswendiglernen von Syntax (die man nachschlagen kann), sondern vielmehr die Fähigkeit, Konzepte zu verstehen, Probleme zu analysieren und die richtigen Werkzeuge oder Methoden (z. B. die korrekte HTTP-Methode oder die sinnvolle HTML-Struktur) situationsgerecht anzuwenden."
+  },
+  {
+    "question": "Welcher Bereich von HTTP-Status-Codes zeigt eine erfolgreiche Verarbeitung der Anfrage an?",
+    "options": [
+      "1xx",
+      "2xx",
+      "3xx",
+      "5xx"
+    ],
+    "correct_index": 1,
+    "explanation": "Status-Codes im Bereich 2xx (z. B. 200 OK, 201 Created) signalisieren, dass die Anfrage vom Server erfolgreich empfangen, verstanden und akzeptiert wurde. 1xx sind informativ, 3xx leiten weiter, 4xx sind Client-Fehler und 5xx Server-Fehler."
+  },
+  {
+    "question": "Was ist die Funktion von 'Cookies' im HTTP-Header, wie in der Anatomie einer Anfrage erwähnt?",
+    "options": [
+      "Sie beschleunigen das Laden von Bildern durch Kompression.",
+      "Sie speichern kleine Datenmengen clientseitig, um Zustandsinformationen (z. B. Login-Status) zwischen Anfragen zu erhalten.",
+      "Sie blockieren unerwünschte Werbung im Browser.",
+      "Sie verschlüsseln die gesamte HTTP-Kommunikation."
+    ],
+    "correct_index": 1,
+    "explanation": "Da HTTP von sich aus zustandslos (stateless) ist, werden Cookies verwendet, um Informationen vom Server beim Client zu speichern und bei jeder weiteren Anfrage an denselben Server wieder mitzusenden. Dies ermöglicht Funktionen wie 'Eingeloggt bleiben' oder Warenkörbe."
+  },
+  {
+    "question": "Welches Ziel verfolgt die Nutzung von 'Gitea' oder ähnlichen Plattformen im Kontext der Vorlesung?",
+    "options": [
+      "Es dient als Online-Editor zum Schreiben von HTML-Code.",
+      "Es fungiert als Hosting-Plattform für Git-Repositories zur Versionskontrolle und Zusammenarbeit.",
+      "Es ist ein Tool zum Testen von CSS-Media-Queries auf verschiedenen Geräten.",
+      "Es übersetzt JavaScript-Code in serverseitigen Code."
+    ],
+    "correct_index": 1,
+    "explanation": "Gitea (ähnlich wie GitHub oder GitLab) ist eine Plattform zum Hosten von Git-Repositories. Sie ermöglicht es, Code versioniert zu speichern, mit anderen zusammenzuarbeiten, Branches zu verwalten und den Entwicklungsverlauf nachzuvollziehen. Es ist kein Editor oder Tester."
+  },
+  {
+    "question": "Was ist der Hauptunterschied zwischen 'https' und 'http' im URL-Schema?",
+    "options": [
+      "https lädt Webseiten schneller als http.",
+      "https verwendet eine verschlüsselte Verbindung (TLS/SSL), http überträgt Daten im Klartext.",
+      "http ist nur für lokale Dateien gedacht, https für das Internet.",
+      "Es gibt keinen technischen Unterschied, es ist nur eine Marketing-Bezeichnung."
+    ],
+    "correct_index": 1,
+    "explanation": "Das 's' in https steht für 'secure'. Es bedeutet, dass die Kommunikation zwischen Client und Server durch TLS/SSL verschlüsselt ist, um Abhören und Manipulation zu verhindern. Bei http werden alle Daten (Passwörter, Inhalte) unverschlüsselt übertragen."
+  },
+  {
+    "question": "Welches der folgenden Beispiele zeigt die korrekte Syntax für einen CSS-Selektor, der alle Paragraphen innerhalb eines Elements mit der Klasse 'content' auswählt?",
+    "options": [
+      ".content + p",
+      "#content p",
+      ".content p",
+      "p.content"
+    ],
+    "correct_index": 2,
+    "explanation": "'.content p' (mit Leerzeichen) ist ein Nachkommen-Selektor (Descendant Selector). Er wählt alle <p>-Elemente aus, die irgendwo innerhalb eines Elements mit der Klasse 'content' verschachtelt sind. '.content + p' wählt nur den direkt folgenden Paragraphen, 'p.content' wählt Paragraphen, die selbst die Klasse haben, und '#content' referenziert eine ID."
+  },
+  {
+    "question": "Warum ist die 'Präsenzpflicht' in Kombination mit Gruppenarbeit im Modul Frontend wichtig?",
+    "options": [
+      "Weil der Dozent die Anwesenheit kontrollieren muss, um das Gehalt zu rechtfertigen.",
+      "Weil Frontend-Entwicklung stark von Austausch, gemeinsamen Übungen (z. B. Netzwerk-Analyse) und Team-Dynamik profitiert.",
+      "Weil die Computer im Labor schneller sind als private Laptops.",
+      "Weil ohne Präsenz die Prüfung nicht abgelegt werden darf."
+    ],
+    "correct_index": 1,
+    "explanation": "Frontend-Entwicklung ist oft kollaborativ und praxisorientiert. Übungen wie das gemeinsame Inspizieren von Netzwerk-Traffic oder das Diskutieren von Architektur-Entscheidungen profitieren stark vom direkten Austausch und der Gruppenarbeit, die in der Präsenzlehre gefördert wird."
+  },
+  {
+    "question": "Was bedeutet der Begriff 'Full-Stack Developer' im Kontext der Vorlesung?",
+    "options": [
+      "Ein Entwickler, der nur Datenbanken verwaltet.",
+      "Ein Entwickler, der sowohl Frontend- (Client) als auch Backend- (Server) Technologien beherrscht.",
+      "Ein Entwickler, der sich ausschließlich auf CSS-Spezifikationen spezialisiert hat.",
+      "Ein Entwickler, der nur an der Server-Hardware arbeitet."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Full-Stack Developer verfügt über Kenntnisse in der gesamten Technologiekette einer Webanwendung: von der Benutzeroberfläche (HTML, CSS, JS) über die Server-Logik bis hin zur Datenbank. Er kann somit sowohl am Frontend als auch am Backend arbeiten."
+  },
+  {
+    "question": "Welche Information findet man typischerweise NICHT im 'Header' einer HTTP-Antwort?",
+    "options": [
+      "Den Status-Code (z. B. 200 OK)",
+      "Den Content-Type (z. B. text/html)",
+      "Den eigentlichen HTML-Inhalt der Webseite",
+      "Cookies, die gesetzt werden sollen"
+    ],
+    "correct_index": 2,
+    "explanation": "Der HTTP-Header enthält Metadaten wie Status-Code, Content-Type und Cookies. Der eigentliche Inhalt (der HTML-Code, Bilder oder JSON-Daten) befindet sich im 'Body' der Antwort, getrennt vom Header durch eine Leerzeile."
+  },
+  {
+    "question": "Was ist das Ziel von 'Learning-to-Rank' (als Analogie aus dem Vorlagenbeispiel, übertragen auf Web-Suche)?",
+    "options": [
+      "Neue Webseiten automatisch zu generieren.",
+      "Die Reihenfolge von Suchergebnissen so zu optimieren, dass die relevantesten Treffer oben stehen.",
+      "Alle Webseiten gleichwertig ohne Reihenfolge anzuzeigen.",
+      "Die Ladezeit der Suchergebnisse zu minimieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Learning-to-Rank (LTR) ist ein Machine-Learning-Ansatz, der darauf abzielt, die Sortierung (Ranking) von vorhandenen Elementen (z. B. Suchergebnissen) zu optimieren. Es fügt keine neuen Items hinzu, sondern sortiert die vorhandene Kandidatenmenge basierend auf Relevanz-Kriterien bestmöglich."
+  }
+]
