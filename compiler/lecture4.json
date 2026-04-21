@@ -52,14 +52,14 @@
       "Der Parser muss den Fehler im Nachhinein korrigieren."
     ],
     "correct_index": 1,
-    "explanation": "Da der Lexer nicht 'stecken bleiben' darf, fügt man eine Regel hinzu, die auf alle bisher nicht gematchten Zeichen passt (z. B. `.*` oder `[^\n]`). Da diese Regel ganz am Ende steht, hat sie die niedrigste Priorität und wird nur angewendet, wenn keine andere Regel greift. Sie erlaubt es, den Fehler zu melden und mit der Analyse fortzufahren (Folie 14)."
+    "explanation": "Da der Lexer nicht 'stecken bleiben' darf, fügt man eine Regel hinzu, die auf alle bisher nicht gematchten Zeichen passt (z. B. `.*` oder `[^\\n]`). Da diese Regel ganz am Ende steht, hat sie die niedrigste Priorität und wird nur angewendet, wenn keine andere Regel greift. Sie erlaubt es, den Fehler zu melden und mit der Analyse fortzufahren (Folie 14)."
   },
   {
     "question": "Was ist der fundamentale Unterschied zwischen einem DFA (Deterministic Finite Automaton) und einem NFA (Nondeterministic Finite Automaton)?",
     "options": [
-      "Ein DFA kann $\epsilon$-Moves machen, ein NFA nicht.",
+      "Ein DFA kann $\\epsilon$-Moves machen, ein NFA nicht.",
       "Ein NFA hat für jeden Zustand und jedes Eingabezeichen genau einen Übergang, ein DFA kann mehrere haben.",
-      "Ein DFA hat genau einen Übergang pro Zustand und Eingabezeichen und keine $\epsilon$-Moves; ein NFA kann mehrere Übergänge oder $\epsilon$-Moves haben.",
+      "Ein DFA hat genau einen Übergang pro Zustand und Eingabezeichen und keine $\\epsilon$-Moves; ein NFA kann mehrere Übergänge oder $\\epsilon$-Moves haben.",
       "Ein NFA ist schneller in der Ausführung als ein DFA."
     ],
     "correct_index": 2,
