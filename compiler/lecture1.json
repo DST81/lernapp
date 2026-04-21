@@ -247,7 +247,7 @@
       "Code Generation"
     ],
     "correct_index": 2,
-    "explanation": "Der Ausdruck `5 + "Hallo" ist lexikalisch (Tokens sind korrekt) und syntaktisch (Operator zwischen zwei Operanden) oft korrekt. Der Fehler liegt in der Bedeutung (Semantik): Die Typen passen nicht zusammen. Daher ist dies die Aufgabe der Semantischen Analyse (Type Checking), wie in Folie 27-28 angedeutet."
+    "explanation": "Der Ausdruck '5 + Hallo' ist lexikalisch (Tokens sind korrekt) und syntaktisch (Operator zwischen zwei Operanden) oft korrekt. Der Fehler liegt in der Bedeutung (Semantik): Die Typen passen nicht zusammen. Daher ist dies die Aufgabe der Semantischen Analyse (Type Checking), wie in Folie 27-28 angedeutet."
   },
   {
     "question": "Was ist die Hauptbotschaft der Folie zu 'Academic Honesty'?",
