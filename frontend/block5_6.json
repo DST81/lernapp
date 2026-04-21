@@ -1,0 +1,288 @@
+[
+  {
+    "question": "Welcher Git-Workflow wird für die Abgabe von Projekten im Modul explizit empfohlen, um sicherzustellen, dass bewertete Inhalte sichtbar sind?",
+    "options": [
+      "Alle Entwicklungen direkt auf dem 'main'-Branch durchführen und dort committen.",
+      "Auf einem Feature-Branch entwickeln, diesen auf einen 'release'-Branch mergen und dort einen Tag für die Abgabe setzen.",
+      "Nur auf dem 'develop'-Branch arbeiten und diesen per Pull-Request an den Dozenten senden.",
+      "Keine Branches verwenden, sondern den Code per E-Mail verschicken."
+    ],
+    "correct_index": 1,
+    "explanation": "Der empfohlene Workflow sieht vor, auf einem Feature-Branch (z. B. `feature/wasauchimmer`) zu entwickeln. Zur Abgabe wird dieser Branch auf einen `release`-Branch gemergt (zusammen mit dem aktuellen `main`). Abschließend wird ein Tag (z. B. `v1.0.0`) auf dem Release-Branch gesetzt, da nur Inhalte auf dem Main- oder Release-Branch bewertet werden."
+  },
+  {
+    "question": "Was ist der Zweck des Git-Befehls `git tag -a v1.0.0 -m 'Abgabe 1'` im Kontext der Projektarbeit?",
+    "options": [
+      "Er löscht alle vorherigen Commits, um den Branch zu bereinigen.",
+      "Er markiert einen spezifischen Punkt im Versionsverlauf als offizielle Abgabeversion.",
+      "Er erstellt einen neuen Branch namens 'v1.0.0' für weitere Entwicklungen.",
+      "Er sendet den Code automatisch an den Dozenten per E-Mail."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Tag (insbesondere ein annotierter Tag mit `-a`) dient dazu, einen bestimmten Commit als wichtige Version zu markieren (z. B. 'Abgabe 1'). Dies ermöglicht es, den exakten Stand der Abgabe auch später noch eindeutig zu identifizieren und wiederherzustellen, unabhängig von weiteren Commits auf dem Branch."
+  },
+  {
+    "question": "Welches Tool wird im Block 5 für 'Mob-Programming' empfohlen, um gemeinsam in Visual Studio Code zu coden?",
+    "options": [
+      "GitHub Desktop",
+      "Live Share Erweiterung",
+      "FileZilla",
+      "Miro Board"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Erweiterung 'Live Share' für Visual Studio Code ermöglicht es mehreren Entwicklern, gemeinsam in Echtzeit an demselben Code zu arbeiten, ohne dass Code lokal geteilt oder gepusht werden muss. Ein Join-Code wird dabei über ein Etherpad ausgetauscht."
+  },
+  {
+    "question": "Was beschreibt das Konzept einer 'Promise' in der asynchronen JavaScript-Programmierung?",
+    "options": [
+      "Ein Objekt, das garantiert, dass eine Operation sofort synchron abgeschlossen wird.",
+      "Ein Platzhalter für ein zukünftiges Ergebnis einer asynchronen Operation, das entweder erfolgreich (resolve) oder fehlerhaft (reject) endet.",
+      "Eine Funktion, die automatisch Fehler im Code korrigiert.",
+      "Ein spezieller Datentyp für die Speicherung von Arrays."
+    ],
+    "correct_index": 1,
+    "explanation": "Eine Promise ist ein Objekt, das den Abschluss (oder Misserfolg) einer asynchronen Operation repräsentiert. Sie hat drei Zustände: 'pending' (ausstehend), 'fulfilled' (erfolgreich mit einem Wert) oder 'rejected' (fehlgeschlagen mit einem Grund). Sie erlaubt es, asynchronen Code lesbarer zu strukturieren als reine Callbacks."
+  },
+  {
+    "question": "Welche Methode wird an eine Promise angehängt, um den erfolgreichen Rückgabewert weiterzuverarbeiten?",
+    "options": [
+      ".catch()",
+      ".finally()",
+      ".then()",
+      ".done()"
+    ],
+    "correct_index": 2,
+    "explanation": "Die `.then()`-Methode wird verwendet, um eine Callback-Funktion zu registrieren, die ausgeführt wird, sobald die Promise erfolgreich erfüllt (resolved) wurde. Sie erhält den Wert der Promise als Argument. `.catch()` dient der Fehlerbehandlung."
+  },
+  {
+    "question": "Wie wird ein Fehler in einer Promise-Kette typischerweise abgefangen und behandelt?",
+    "options": [
+      "Durch Anhängen einer `.catch()`-Methode am Ende der Kette.",
+      "Durch Verwendung von `try-catch` Blöcken um die gesamte Promise-Definition.",
+      "Fehler in Promises können nicht abgefangen werden.",
+      "Durch das Keyword `onError` am Anfang der Kette."
+    ],
+    "correct_index": 0,
+    "explanation": "In einer Promise-Kette (`.then().then()...`) fängt `.catch()` alle Fehler ab, die in den vorangegangenen Schritten aufgetreten sind (sei es ein geworfener Fehler oder eine 'rejected' Promise). Es ist das Äquivalent zum `catch`-Block bei synchronem Code."
+  },
+  {
+    "question": "Welches Syntax-Konstrukt ermöglicht es, asynchronen Code so zu schreiben, als wäre er synchron, indem es auf die Auflösung einer Promise 'wartet'?",
+    "options": [
+      "callback / error",
+      "async / await",
+      "promise / then",
+      "sync / wait"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Schlüsselwörter `async` (vor einer Funktion) und `await` (vor einem Promise-Aufruf) erlauben eine lineare, synchrone Lesart von asynchronem Code. Der Code an der Stelle von `await` pausiert, bis die Promise aufgelöst ist, ohne den Hauptthread zu blockieren."
+  },
+  {
+    "question": "Welches Block-Konstrukt muss verwendet werden, um Fehler bei der Nutzung von `await` in einer `async`-Funktion abzufangen?",
+    "options": [
+      "if / else",
+      "try / catch",
+      "switch / case",
+      "do / while"
+    ],
+    "correct_index": 1,
+    "explanation": "Da `await` im Fehlerfall eine Exception wirft (wenn die Promise 'rejected' wird), muss es in einem `try`-Block stehen. Der zugehörige `catch`-Block fängt den Fehler ab und verhindert, dass das Programm abstürzt. Dies entspricht der Fehlerbehandlung bei synchronem Code."
+  },
+  {
+    "question": "Was passiert in dem gezeigten Code-Beispiel `wait(1000).then(() => console.log('1 Sekunde'))`?",
+    "options": [
+      "Der Text wird sofort ausgegeben, und das Programm wartet danach eine Sekunde.",
+      "Das Programm wartet eine Sekunde (1000ms) und gibt dann den Text aus.",
+      "Der Code führt zu einem Fehler, da `setTimeout` nicht in Promises verwendet werden kann.",
+      "Die Funktion `wait` wird 1000 Mal aufgerufen."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Funktion `wait`返回 eine Promise, die sich erst nach 1000 Millisekunden (1 Sekunde) auflöst (`resolve`). Der Code in der `.then()`-Funktion wird erst ausgeführt, *nachdem* diese Zeit vergangen ist und die Promise erfolgreich war."
+  },
+  {
+    "question": "Welche API wird in Block 6 primär verwendet, um Daten von einem Server (z. B. JSONPlaceholder) asynchron abzurufen?",
+    "options": [
+      "XMLHttpRequest (XHR)",
+      "Fetch API",
+      "Node.js FS Module",
+      "WebSocket API"
+    ],
+    "correct_index": 1,
+    "explanation": "Die Fetch API ist der moderne Standard in Browsern, um HTTP-Anfragen (wie GET oder POST) zu stellen. Sie basiert auf Promises und ersetzt weitgehend das ältere `XMLHttpRequest`. Im Beispiel wird `fetch('url')` verwendet, um Todo-Daten zu laden."
+  },
+  {
+    "question": "Was muss nach einem erfolgreichen `fetch()`-Aufruf typischerweise gemacht werden, um die eigentlichen JSON-Daten zu erhalten?",
+    "options": [
+      "Nichts, `fetch()` gibt direkt das JSON-Objekt zurück.",
+      "Die Methode `.json()` auf dem Response-Objekt aufrufen, die ebenfalls eine Promise zurückgibt.",
+      "Den Response manuell mit `JSON.parse()` stringifizieren.",
+      "Die Daten sind im Header der Antwort enthalten."
+    ],
+    "correct_index": 1,
+    "explanation": "`fetch()` gibt zunächst nur ein `Response`-Objekt zurück (Metadaten der Antwort). Um den Body als JSON zu lesen, muss die Methode `response.json()` aufgerufen werden. Diese liest den Stream und gibt eine neue Promise zurück, die mit dem geparsten JavaScript-Objekt aufgelöst wird."
+  },
+  {
+    "question": "Wie reagiert die Fetch API standardmäßig auf HTTP-Statuscodes im Fehlerbereich (z. B. 404 oder 500)?",
+    "options": [
+      "Sie wirft automatisch einen Fehler und springt in den `.catch()`-Block.",
+      "Sie betrachtet die Anfrage als erfolgreich ('ok'), solange der Server antwortet; der Status muss manuell geprüft werden.",
+      "Sie wiederholt die Anfrage automatisch drei Mal.",
+      "Sie gibt `null` zurück."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein wichtiger Hinweis in der Vorlesung: `fetch()` lehnt eine Promise nur bei Netzwerkfehlern (z. B. kein Internet, Server nicht erreichbar) ab. Bei HTTP-Fehlercodes wie 404 (Not Found) oder 500 (Server Error) wird die Promise trotzdem als 'erfolgreich' gelöst. Der Entwickler muss `response.ok` oder `response.status` prüfen und ggf. manuell einen Fehler werfen."
+  },
+  {
+    "question": "Welches Szenario wird in der Übung zu Block 6 als 'Bonus'-Aufgabe für die Todo-Liste genannt?",
+    "options": [
+      "Die Todos in einer Datenbank zu speichern.",
+      "Die Todos in zwei separate Listen aufzuteilen: offene und abgeschlossene.",
+      "Die Todos als PDF zu exportieren.",
+      "Eine Benutzerauthentifizierung zu implementieren."
+    ],
+    "correct_index": 1,
+    "explanation": "Die Basis-Übung verlangt das Anzeigen aller Todos. Die Bonus-Aufgabe besteht darin, die Daten zu filtern und in zwei unterschiedlichen Listen darzustellen: eine für noch offene Aufgaben und eine für bereits erledigte (abgeschlossene) Aufgaben."
+  },
+  {
+    "question": "Welche der folgenden APIs wurde in der Gruppenübung als Beispiel für einen 'Character Explorer' genannt?",
+    "options": [
+      "Marvel API",
+      "Rick and Morty API",
+      "Star Wars API",
+      "DC Comics API"
+    ],
+    "correct_index": 1,
+    "explanation": "In der Liste der Gruppenübungen wurde 'Gruppe 1' die Aufgabe zugewiesen, einen 'Rick and Morty Character Explorer' zu erstellen. Andere genannte Optionen waren Pokemon, Studio Ghibli und REST Countries."
+  },
+  {
+    "question": "Was ist der Vorteil von `async/await` gegenüber der reinen Verwendung von `.then()`-Ketten?",
+    "options": [
+      "Es ist schneller in der Ausführung.",
+      "Es verbessert die Lesbarkeit und erlaubt die Nutzung von try/catch für die Fehlerbehandlung.",
+      "Es benötigt keine Promises im Hintergrund.",
+      "Es funktioniert nur mit der Fetch API."
+    ],
+    "correct_index": 1,
+    "explanation": "Während `.then()`-Ketten bei komplexer Logik schnell unübersichtlich werden ('Callback Hell' ähnlich), erlaubt `async/await` einen linearen Codefluss, der leichter zu lesen und zu debuggen ist. Zudem kann die bewährte `try/catch`-Syntax aus dem synchronen Code zur Fehlerbehandlung genutzt werden."
+  },
+  {
+    "question": "Was bedeutet der Begriff 'Mob-Programming' im Kontext von Block 5?",
+    "options": [
+      "Programmieren auf einem Smartphone.",
+      "Eine Gruppe von Entwicklern arbeitet gemeinsam an einem Computer an derselben Aufgabe.",
+      "Programmieren ohne Internetverbindung.",
+      "Das automatische Generieren von Code durch KI."
+    ],
+    "correct_index": 1,
+    "explanation": "Mob-Programming ist eine Kollaborationsmethode, bei der ein ganzes Team (oder eine Gruppe) an einem einzigen Computer arbeitet. Einer tippt ('Driver'), während die anderen navigieren und Ideen einbringen ('Navigators'). Tools wie 'Live Share' facilitieren dies auch remote."
+  },
+  {
+    "question": "Welcher Branch dient im vorgestellten Workflow als Basis für das Setzen des Abgabe-Tags?",
+    "options": [
+      "Der Feature-Branch.",
+      "Der Main-Branch.",
+      "Der Release-Branch.",
+      "Der Dev-Branch."
+    ],
+    "correct_index": 2,
+    "explanation": "Der Workflow sieht vor, Änderungen vom Feature-Branch und vom Main-Branch auf einen `release`-Branch zu mergen. Auf diesem `release`-Branch, der den stabilen Abgabestand repräsentiert, wird dann der Tag gesetzt (`git tag`)."
+  },
+  {
+    "question": "Was ist das Ziel der Übung mit der 'JSONPlaceholder'-API?",
+    "options": [
+      "Eine echte Datenbank mit Benutzerdaten zu manipulieren.",
+      "Das Abrufen und Anzeigen von Dummy-Daten (Todos) zu üben, ohne einen eigenen Backend-Server betreiben zu müssen.",
+      "Die Sicherheit von APIs zu testen.",
+      "Echte E-Mails über die API zu versenden."
+    ],
+    "correct_index": 1,
+    "explanation": "JSONPlaceholder ist ein kostenloser Online-REST-API-Service, der zum Testen und Prototyping dient. Er liefert simulierte Daten (wie Todos, Posts, Users), sodass Frontend-Entwickler das Fetchen und Darstellen von Daten üben können, ohne ein eigenes Backend implementieren zu müssen."
+  },
+  {
+    "question": "Wie wird im Code-Beispiel `const randomSuccess = ...` der Fehlerfall simuliert?",
+    "options": [
+      "Durch das Werfen eines `throw new Error()`.",
+      "Durch das Aufrufen der `reject`-Funktion der Promise, wenn eine Zufallsbedingung eintritt.",
+      "Durch das Zurückgeben von `null`.",
+      "Durch das Beenden des Programms."
+    ],
+    "correct_index": 1,
+    "explanation": "Im Beispiel wird `Math.random()` genutzt. Ist der Wert kleiner oder gleich 0.5, wird die `reject`-Funktion der Promise aufgerufen. Dies versetzt die Promise in den Zustand 'rejected' und löst die Ausführung des nachgeschalteten `.catch()`-Blocks aus."
+  },
+  {
+    "question": "Welche Anforderung gilt für die Präsentation der Gruppenübungen in Block 6?",
+    "options": [
+      "Es muss mindestens der Name und ein Bild des Elements (z. B. Character, Pokemon) angezeigt werden.",
+      "Es muss eine vollständige Benutzerdatenbank implementiert sein.",
+      "Die App muss in einer nativen Mobile-App verpackt sein.",
+      "Es dürfen keine externen APIs verwendet werden."
+    ],
+    "correct_index": 0,
+    "explanation": "Für alle Gruppen (Rick & Morty, Pokemon, etc.) gilt die Mindestanforderung, mindestens den Namen des gesuchten Elements und ein zugehöriges Bild auf der Seite anzuzeigen. Bonuspunkte gibt es für zusätzliche Filter- oder Suchfunktionen."
+  },
+  {
+    "question": "Was passiert, wenn man `await` außerhalb einer `async`-Funktion verwendet?",
+    "options": [
+      "Es funktioniert einwandfrei.",
+      "Es führt zu einem Syntax-Fehler.",
+      "Der Code wird synchron ausgeführt.",
+      "Die Promise wird automatisch ignoriert."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Keyword `await` darf syntaktisch nur innerhalb einer Funktion verwendet werden, die mit `async` markiert ist. Die Verwendung im globalen Scope oder in einer normalen Funktion führt zu einem Syntax-Fehler ('Unexpected reserved word'). (Hinweis: In modernen Modulen auf Top-Level ist 'Top-Level Await' möglich, aber im klassischen Kontext der Vorlesung gilt die Regel innerhalb von Funktionen)."
+  },
+  {
+    "question": "Welcher HTTP-Statuscode-Bereich würde bei einer manuellen Prüfung nach `fetch()` als 'nicht ok' gelten, obwohl die Promise gelöst wurde?",
+    "options": [
+      "200-299",
+      "300-399",
+      "400-599",
+      "100-199"
+    ],
+    "correct_index": 2,
+    "explanation": "Statuscodes im Bereich 4xx (Client Error, z. B. 404) und 5xx (Server Error, z. B. 500) bedeuten, dass die Anfrage fehlgeschlagen ist. Da `fetch()` diese jedoch nicht automatisch als Fehler wirft, muss der Entwickler prüfen, ob `response.ok` (was nur bei 200-299 true ist) wahr ist, und ggf. selbst einen Fehler behandeln."
+  },
+  {
+    "question": "Was ist der Zweck des 'Etherpads', das in Block 5 erwähnt wird?",
+    "options": [
+      "Es dient als Ersatz für Visual Studio Code.",
+      "Es wird genutzt, um den 'Join-Code' für Live Share schnell mit der Gruppe auszutauschen.",
+      "Es ist ein Tool zum Zeichnen von Wireframes.",
+      "Es speichert den Git-Verlauf."
+    ],
+    "correct_index": 1,
+    "explanation": "Das Etherpad (ein kollaborativer Texteditor im Browser) wird als schneller, unkomplizierter Kanal genutzt, um den Join-Code für die VS Code Live Share Session mit den anderen Teilnehmern zu teilen, ohne dass dafür ein Commit oder eine andere Plattform nötig ist."
+  },
+  {
+    "question": "Welche der folgenden Aussagen zur Fehlerbehandlung mit `try/catch` bei `async/await` ist korrekt?",
+    "options": [
+      "Der `catch`-Block fängt nur Fehler im `try`-Block, nicht aber in der `async`-Funktion davor.",
+      "Ein Fehler im `await`-Aufruf unterbricht die Ausführung im `try`-Block und springt sofort in den `catch`-Block.",
+      "`try/catch` funktioniert nicht mit der Fetch API.",
+      "Man benötigt immer zwei `catch`-Blöcke."
+    ],
+    "correct_index": 1,
+    "explanation": "Sobald ein `await`-Ausdruck eine Promise ergibt, die 'rejected' wird (oder ein Fehler geworfen wird), wird die Ausführung im `try`-Block sofort unterbrochen und die Kontrolle an den `catch`-Block übergeben. Dies ermöglicht eine zentrale Fehlerbehandlung für mehrere asynchrone Schritte."
+  },
+  {
+    "question": "Was ist das Hauptziel der DOM-Manipulation in Block 5 (implizit durch die Todo-Übung)?",
+    "options": [
+      "Den HTML-Quellcode auf dem Server zu ändern.",
+      "Dynamisch Inhalte basierend auf geladenen Daten (z. B. API-Antworten) im Browser zu erzeugen und anzuzeigen.",
+      "Die CSS-Dateien automatisch zu optimieren.",
+      "Die Datenbankstruktur anzupassen."
+    ],
+    "explanation": "Die Übung verlangt, geladene Todo-Daten als Liste auf der Seite anzuzeigen. Dies erfordert DOM-Manipulation: Das Erstellen von HTML-Elementen (z. B. `document.createElement`, `innerHTML` oder `appendChild`) und das Einfügen in das Dokument, basierend auf den asynchron geladenen JavaScript-Daten.",
+    "correct_index": 1
+  },
+  {
+    "question": "Welches Konzept wird durch den Code `new Promise(resolve => setTimeout(resolve, ms))` veranschaulicht?",
+    "options": [
+      "Sofortige Ausführung von Code.",
+      "Das Verzögern einer Operation um eine bestimmte Zeit (ms) innerhalb einer Promise.",
+      "Das Abbrechen eines Timers.",
+      "Die Synchronisation von Threads."
+    ],
+    "correct_index": 1,
+    "explanation": "Dieses Muster verpackt die native `setTimeout`-Funktion (die callback-basiert ist) in eine Promise. Dadurch kann man Wartezeiten bequem mit `.then()` oder `await` nutzen, anstatt in 'Callback Hell' zu geraten. Es ist eine gängige Technik, um Delay-Funktionen asynchron nutzbar zu machen."
+  }
+]
