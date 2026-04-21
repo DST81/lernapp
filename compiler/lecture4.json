@@ -63,10 +63,10 @@
       "Ein NFA ist schneller in der Ausführung als ein DFA."
     ],
     "correct_index": 2,
-    "explanation": "Ein DFA ist deterministisch: Aus einem Zustand führt bei einem gegebenen Eingabezeichen genau eine Kante heraus, und es gibt keine $\epsilon$-Übergänge (Übergänge ohne Input). Ein NFA darf bei gleichem Input mehrere mögliche Folgezustände haben oder sich ohne Input ($\epsilon$-Move) bewegen. Beide erkennen dieselbe Klasse von Sprachen (reguläre Sprachen), aber DFAs sind effizienter auszuführen (Folie 23)."
+    "explanation": "Ein DFA ist deterministisch: Aus einem Zustand führt bei einem gegebenen Eingabezeichen genau eine Kante heraus, und es gibt keine $\\epsilon$-Übergänge (Übergänge ohne Input). Ein NFA darf bei gleichem Input mehrere mögliche Folgezustände haben oder sich ohne Input ($\\epsilon$-Move) bewegen. Beide erkennen dieselbe Klasse von Sprachen (reguläre Sprachen), aber DFAs sind effizienter auszuführen (Folie 23)."
   },
   {
-    "question": "Was bedeutet ein '$\epsilon$-Move' (Epsilon-Transition) in einem NFA?",
+    "question": "Was bedeutet ein '$\\epsilon$-Move' (Epsilon-Transition) in einem NFA?",
     "options": [
       "Der Automat liest ein spezielles Zeichen namens 'Epsilon'.",
       "Der Automat wechselt den Zustand, ohne ein Eingabezeichen zu konsumieren.",
@@ -74,7 +74,7 @@
       "Der Automat kehrt in den Startzustand zurück."
     ],
     "correct_index": 1,
-    "explanation": "Ein $\epsilon$-Move erlaubt es dem NFA, spontan von einem Zustand in einen anderen zu wechseln, ohne dabei ein Zeichen aus dem Eingabestring zu lesen. Dies ist ein mächtiges Konzept zur Konstruktion von Automaten aus regulären Ausdrücken, existiert aber nicht in DFAs (Folie 22)."
+    "explanation": "Ein $\\epsilon$-Move erlaubt es dem NFA, spontan von einem Zustand in einen anderen zu wechseln, ohne dabei ein Zeichen aus dem Eingabestring zu lesen. Dies ist ein mächtiges Konzept zur Konstruktion von Automaten aus regulären Ausdrücken, existiert aber nicht in DFAs (Folie 22)."
   },
   {
     "question": "Warum werden in der Praxis oft NFAs in DFAs umgewandelt, obwohl NFAs kompakter sein können?",
