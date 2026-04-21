@@ -1,0 +1,277 @@
+[
+  {
+    "question": "Welche der folgenden Benennungskonventionen ist in der modernen JavaScript-Entwicklung für Variablen und Funktionen der Standard?",
+    "options": [
+      "Pascal Case (z. B. MeineVariable)",
+      "Snake Case (z. B. meine_variable)",
+      "Camel Case (z. B. meineVariable)",
+      "Kebab Case (z. B. meine-variable)"
+    ],
+    "correct_index": 2,
+    "explanation": "Camel Case (der erste Buchstabe klein, nachfolgende Wörter großgeschrieben) ist der etablierte Standard für Variablen, Funktionen und Methoden in JavaScript. Pascal Case wird typischerweise für Klassen-Konstruktorfunktionen verwendet. Kebab Case ist in JavaScript ungültig, da der Bindestrich als Minus-Operator interpretiert wird. Snake Case wird eher in Sprachen wie Python oder PHP verwendet."
+  },
+  {
+    "question": "Was bewirkt die Direktive 'use strict'; am Anfang einer JavaScript-Datei oder Funktion?",
+    "options": [
+      "Sie aktiviert den automatischen Modus für Arrow Functions.",
+      "Sie erzwingt einen strengeren Modus, der häufige Fehler (wie undeclarierte Variablen) zu Exceptions macht und unsichere Features deaktiviert.",
+      "Sie optimiert den Code automatisch für eine schnellere Ausführung im Browser.",
+      "Sie erlaubt die Verwendung von privaten Klassenmitgliedern ohne das '#' Symbol."
+    ],
+    "correct_index": 1,
+    "explanation": "Der 'Strict Mode' ist ein Sicherheitsmechanismus in JavaScript. Er verhindert das versehentliche Erstellen globaler Variablen (wenn man vergisst, `var`, `let` oder `const` zu verwenden), wirft Fehler bei Zuweisungen an nicht beschreibbare Eigenschaften und deaktiviert veraltete Syntax-Konstrukte. Dies hilft, bugs frühzeitig zu erkennen und den Code robuster zu machen."
+  },
+  {
+    "question": "Was versteht man unter dem Begriff 'Hoisting' im Kontext von JavaScript-Variablen?",
+    "options": [
+      "Das Verschieben von Variablendeklarationen an den Anfang ihres Gültigkeitsbereichs (Scope) vor der Ausführung des Codes.",
+      "Das automatische Erhöhen des Wertes einer numerischen Variable um 1.",
+      "Das Laden von externen JavaScript-Dateien erst am Ende des Body-Tags.",
+      "Die Umwandlung von 'var' in 'const' durch den Browser."
+    ],
+    "correct_index": 0,
+    "explanation": "Hoisting beschreibt das Verhalten des JavaScript-Interpreters, Deklarationen (von `var`, `function`) im Speicher nach oben zu ziehen, bevor der Code ausgeführt wird. Wichtig ist der Unterschied: Bei `var` ist die Variable zwar definiert, aber vor der Zeile der Deklaration `undefined`. Bei `let` und `const` existiert eine 'Temporal Dead Zone', in der ein Zugriff zu einem Fehler führt, obwohl das Hoisting technisch stattfindet."
+  },
+  {
+    "question": "Welcher Unterschied besteht zwischen einer regulären Funktion und einer 'Arrow Function' bezüglich des Schlüsselworts 'this'?",
+    "options": [
+      "Arrow Functions haben immer ihr eigenes 'this', unabhängig vom Kontext.",
+      "Arrow Functions erben das 'this' lexikalisch aus dem umgebenden Kontext, während reguläre Funktionen ihr eigenes 'this' basierend auf dem Aufruf haben.",
+      "Es gibt keinen Unterschied; beide verhalten sich identisch.",
+      "Arrow Functions können das Keyword 'this' überhaupt nicht verwenden."
+    ],
+    "correct_index": 1,
+    "explanation": "Dies ist ein entscheidender Unterschied in der modernen JavaScript-Entwicklung. Reguläre Funktionen binden `this` dynamisch je nach Aufrufkontext (wer ruft die Funktion auf?). Arrow Functions haben kein eigenes `this`; sie verwenden das `this` des Bereichs, in dem sie definiert wurden (lexikalisches Scoping). Das macht sie ideal für Callbacks, wo man den Kontext der äußeren Funktion behalten möchte."
+  },
+  {
+    "question": "Gegeben ist ein Array von Produktobjekten. Welche Array-Methode eignet sich am besten, um nur die Produkte der Kategorie 'Elektronik' herauszufiltern und ein neues Array zu erhalten?",
+    "options": [
+      "map()",
+      "reduce()",
+      "filter()",
+      "forEach()"
+    ],
+    "correct_index": 2,
+    "explanation": "Die Methode `filter()` erstellt ein neues Array mit allen Elementen, die eine bestimmte Bedingung (die in einer Callback-Funktion definiert ist) erfüllen. Hier würde man prüfen, ob `produkt.kategorie === 'Elektronik'` ist. `map()` transformiert Elemente, `reduce()` berechnet einen einzelnen Wert (wie eine Summe), und `forEach()` führt nur eine Aktion aus, gibt aber kein neues Array zurück."
+  },
+  {
+    "question": "Wie berechnet man mit der Array-Methode 'reduce()' den Gesamtpreis aller Produkte in einem Array?",
+    "options": [
+      "Man übergibt eine Funktion, die für jedes Element den Preis zum Akkumulator addiert, und initialisiert den Akkumulator mit 0.",
+      "Man nutzt 'reduce()', um das Array zu verdoppeln und summiert dann manuell.",
+      "'reduce()' kann nur für Strings verwendet werden, nicht für Zahlen.",
+      "Man ruft 'reduce()' ohne Argumente auf, und JavaScript summiert automatisch alle numerischen Werte."
+    ],
+    "correct_index": 0,
+    "explanation": "`reduce()` führt eine Funktion für jedes Element des Arrays aus und übergibt dabei das Ergebnis des vorherigen Durchlaufs (den Akkumulator). Um eine Summe zu bilden, definiert man eine Funktion `(akkumulator, current) => akkumulator + current.preis` und setzt den Startwert des Akkumulators als zweiten Parameter auf 0. Ohne diesen Startwert würde das erste Element als initialer Akkumulator genommen."
+  },
+  {
+    "question": "Was ist der Zweck eines 'Getters' (get) in einer JavaScript-Klasse?",
+    "options": [
+      "Er erlaubt den direkten Zugriff auf eine private Variable ohne jegliche Kontrolle.",
+      "Er ist eine Methode, die wie eine Eigenschaft aufgerufen wird, um einen berechneten oder geschützten Wert zurückzugeben.",
+      "Er initialisiert die Werte der Klasse beim Erstellen des Objekts.",
+      "Er löscht eine Eigenschaft aus dem Objekt."
+    ],
+    "correct_index": 1,
+    "explanation": "Ein Getter ermöglicht es, eine Methode so aufzurufen, als wäre es eine normale Eigenschaft (ohne Klammern `()`). Dies ist nützlich, um Werte dynamisch zu berechnen (z. B. `preisMitMwst`) oder den Zugriff auf interne Daten zu kapseln, ohne die Syntax eines Methodenaufrufs erzwingen zu müssen. Er bietet eine saubere Schnittstelle für den Lesozugriff."
+  },
+  {
+    "question": "Welches Keyword wird verwendet, um eine Eigenschaft oder Methode in einer modernen JavaScript-Klasse als 'privat' zu kennzeichnen, sodass sie nur von innerhalb der Klasse zugreifbar ist?",
+    "options": [
+      "private",
+      "protected",
+      "Das Raute-Zeichen (#) vor dem Namen (z. B. #geheimnis)",
+      "underscore (_) vor dem Namen"
+    ],
+    "correct_index": 2,
+    "explanation": "In modernen JavaScript-Klassen (ES2022+) werden private Felder und Methoden durch ein vorangestelltes `#` (Hash) definiert (z. B. `#password`). Der Zugriff von außerhalb der Klasse führt zu einem Syntax-Fehler. Ein einfaches Underscore `_` ist nur eine Konvention, die signalisiert 'bitte nicht anfassen', erzwingt aber keinen technischen Schutz. Das Keyword `private` existiert in dieser Form nicht in der JS-Syntax für Felder."
+  },
+  {
+    "question": "Was ist der Unterschied zwischen 'Internal' und 'External' JavaScript beim Einbinden in HTML?",
+    "options": [
+      "Internal wird im `<head>` geschrieben, External im `<body>`.",
+      "Internal steht direkt in einem `<script>`-Tag im HTML-Dokument, External wird über die 'src'-Attribut in eine separate .js-Datei ausgelagert.",
+      "Internal ist schneller als External.",
+      "External kann nur CSS enthalten, kein JavaScript."
+    ],
+    "correct_index": 1,
+    "explanation": "Internal JavaScript bedeutet, dass der Code direkt innerhalb eines `<script>`-Blocks in der HTML-Datei steht. External JavaScript bedeutet, dass der Code in einer separaten Datei (z. B. `app.js`) gespeichert ist und über `<script src='app.js'>` eingebunden wird. Externe Dateien fördern die Trennung von Inhalt und Logik, ermöglichen Caching durch den Browser und sind besser wartbar."
+  },
+  {
+    "question": "Welcher Datentyp gehört NICHT zu den primitiven Datentypen in JavaScript?",
+    "options": [
+      "String",
+      "Boolean",
+      "Object",
+      "Number"
+    ],
+    "correct_index": 2,
+    "explanation": "In JavaScript sind `String`, `Number`, `Boolean`, `Undefined`, `Symbol`, `BigInt` und `null` primitive Datentypen (sie speichern einen einzelnen Wert). `Object` (inklusive Arrays und Funktionen) ist ein komplexer Datentyp, der eine Sammlung von Eigenschaften und Methoden speichert und referenziert wird."
+  },
+  {
+    "question": "Was passiert, wenn man versucht, auf eine mit 'const' deklarierte Variable einen neuen Wert zuzuweisen?",
+    "options": [
+      "Der Wert wird erfolgreich überschrieben.",
+      "Der Browser ignoriert die Zuweisung stillschweigend.",
+      "Es wird ein TypeError (Assignment to constant variable) geworfen.",
+      "Die Variable wird automatisch zu 'let' konvertiert."
+    ],
+    "correct_index": 2,
+    "explanation": "Variablen, die mit `const` (Konstante) deklariert werden, müssen bei der Deklaration initialisiert werden und dürfen danach nicht neu zugewiesen werden. Ein Versuch, den Wert zu ändern, führt zu einem Laufzeitfehler (TypeError). Wichtig: Wenn der Wert ein Objekt ist, kann der *Inhalt* des Objekts geändert werden, aber die Variable darf nicht auf ein *neues* Objekt zeigen."
+  },
+  {
+    "question": "Wofür steht das Schlüsselwort 'this' in einer Methode eines JavaScript-Objekts (im nicht-strict Modus bei normalem Aufruf)?",
+    "options": [
+      "Es verweist immer auf das globale Fenster-Objekt (window).",
+      "Es verweist auf das Objekt, von dem die Methode aufgerufen wurde.",
+      "Es ist immer undefined.",
+      "Es verweist auf die Klasse, aus der das Objekt erstellt wurde."
+    ],
+    "correct_index": 1,
+    "explanation": "In einer regulären Objektmethode (z. B. `obj.meineMethode()`) referenziert `this` das Objekt `obj`, also den Kontext, vor dem Punkt, von dem aus die Methode aufgerufen wurde. Dies ermöglicht den Zugriff auf andere Eigenschaften desselben Objekts (z. B. `this.preis`). Im Strict Mode oder bei Arrow Functions kann sich dieses Verhalten ändern."
+  },
+  {
+    "question": "Welche Methode würde man verwenden, um aus einem Array von Produkten nur die Namen der Produkte zu extrahieren und als neues Array zurückzugeben?",
+    "options": [
+      "filter()",
+      "reduce()",
+      "map()",
+      "find()"
+    ],
+    "correct_index": 2,
+    "explanation": "Die `map()`-Methode ist dafür gedacht, jedes Element eines Arrays durch das Ergebnis einer Funktion zu ersetzen und ein neues Array zurückzugeben. Hier würde man `produkt => produkt.name` verwenden. `filter()` würde das Array verkleinern, `reduce()` würde es zu einem Einzelwert falten, und `find()` würde nur das erste passende Element zurückgeben."
+  },
+  {
+    "question": "Was ist die korrekte Syntax, um eine externe JavaScript-Datei namens 'script.js' in eine HTML-Datei einzubinden?",
+    "options": [
+      "<script href='script.js'></script>",
+      "<script src='script.js'></script>",
+      "<link rel='javascript' src='script.js'>",
+      "<include file='script.js'>"
+    ],
+    "correct_index": 1,
+    "explanation": "Das `<script>`-Tag verwendet das Attribut `src` (source), um auf eine externe Datei zu verweisen. `href` wird bei `<link>`-Tags (für CSS) verwendet. Die Syntax `<include>` existiert in HTML nicht für JavaScript."
+  },
+  {
+    "question": "Was ist der Zweck eines 'Constructors' in einer JavaScript-Klasse?",
+    "options": [
+      "Er löscht das Objekt, wenn es nicht mehr gebraucht wird.",
+      "Er ist eine spezielle Methode, die automatisch aufgerufen wird, wenn ein neues Objekt mit 'new' erstellt wird, um es zu initialisieren.",
+      "Er konvertiert das Objekt in einen String.",
+      "Er definiert statische Methoden für die Klasse."
+    ],
+    "correct_index": 1,
+    "explanation": "Der `constructor` ist eine spezielle Methode in einer Klasse, die beim Erstellen einer neuen Instanz (mit dem `new`-Keyword) automatisch ausgeführt wird. Er dient dazu, die initialen Eigenschaften des Objekts zu setzen (z. B. `this.name = name`) und das Objekt in einen definierten Anfangszustand zu versetzen."
+  },
+  {
+    "question": "Was bedeutet es, wenn eine Methode oder Eigenschaft in einer Klasse als 'static' markiert ist?",
+    "options": [
+      "Sie kann nur aufgerufen werden, wenn das Objekt instanziiert wurde.",
+      "Sie gehört zur Klasse selbst und kann ohne Instanziierung eines Objekts aufgerufen werden.",
+      "Sie kann nicht geändert werden (ist readonly).",
+      "Sie ist nur im Strict Mode verfügbar."
+    ],
+    "correct_index": 1,
+    "explanation": "Statische Mitglieder gehören zur Klasse als Ganzes, nicht zu einer einzelnen Instanz. Man ruft sie direkt über den Klassennamen auf (z. B. `Math.pow()` oder `MeineKlasse.hilfsMethode()`), ohne vorher `new MeineKlasse()` ausführen zu müssen. Sie werden oft für utility-Funktionen verwendet, die keine spezifischen Instanzdaten benötigen."
+  },
+  {
+    "question": "Welcher Operator wird verwendet, um in JavaScript eine strikte Gleichheit (Wert UND Typ) zu prüfen?",
+    "options": [
+      "=",
+      "==",
+      "===",
+      "!=="
+    ],
+    "correct_index": 2,
+    "explanation": "Der Operator `===` (strikt gleich) prüft, ob sowohl der Wert als auch der Datentyp identisch sind (z. B. `5 === '5'` ist false). Der Operator `==` führt hingegen einen Typkonvertierung (Coercion) durch, bevor er vergleicht, was oft zu unerwarteten Ergebnissen führt. `=` ist der Zuweisungsoperator, `!==` prüft auf Ungleichheit."
+  },
+  {
+    "question": "In der Übung wird verlangt, Preise inkl. MwSt zu berechnen. Welcher JavaScript-Ansatz wäre hierfür in einem Array-Kontext am elegantesten?",
+    "options": [
+      "Eine for-Schleife, die das Original-Array überschreibt.",
+      "Die map()-Methode, die ein neues Array mit den berechneten Preisen zurückgibt.",
+      "Das manuelle Addieren jedes Preises in einer Variable.",
+      "Die Nutzung von eval() auf einem String."
+    ],
+    "correct_index": 1,
+    "explanation": "Funktionale Array-Methoden wie `map()` sind der moderne Standard. Sie vermeiden Seiteneffekte (das Original-Array bleibt unverändert), sind gut lesbar und geben direkt ein neues Array mit den transformierten Werten (z. B. `preis * 1.081`) zurück. Das Überschreiben in Schleifen gilt oft als weniger sauberer Stil (mutierend)."
+  },
+  {
+    "question": "Was ist der Geltungsbereich (Scope) einer Variable, die mit 'let' innerhalb eines Blocks (z. B. einer if-Abfrage oder Schleife) deklariert wird?",
+    "options": [
+      "Global für die gesamte Datei.",
+      "Funktionsweit (Function Scope).",
+      "Beschränkt auf den Block, in dem sie definiert wurde (Block Scope).",
+      "Sie ist gar nicht zugänglich."
+    ],
+    "correct_index": 2,
+    "explanation": "Variablen, die mit `let` (oder `const`) deklariert werden, haben einen Block-Scope. Das heißt, sie existieren nur innerhalb der geschweiften Klammern `{ ... }`, in denen sie definiert wurden. Im Gegensatz dazu haben `var`-Variablen einen Function-Scope und sind außerhalb des Blocks, aber innerhalb der Funktion, noch sichtbar."
+  },
+  {
+    "question": "Was ist ein 'Destructor' in der JavaScript-OOP?",
+    "options": [
+      "Eine Methode, die beim Löschen eines Objekts automatisch aufgerufen wird, um Speicher freizugeben.",
+      "Eine Methode, die private Variablen zerstört.",
+      "Ein Konzept, das es in JavaScript in dieser Form (wie in C++ oder PHP) so nicht nativ gibt, da die Garbage Collection automatisch arbeitet.",
+      "Ein Keyword, um eine Klasse zu beenden."
+    ],
+    "correct_index": 2,
+    "explanation": "Im Gegensatz zu Sprachen wie C++ oder PHP hat JavaScript keinen expliziten Destruktor, den der Entwickler definiert, um Speicher manuell freizugeben. Die Speicherverwaltung übernimmt die automatische 'Garbage Collection' des Browsers, die Objekte löscht, sobald keine Referenzen mehr darauf zeigen. Der Begriff taucht in der Vorlesung evtl. im Vergleich zu anderen Sprachen oder als theoretisches Konzept auf, ist aber kein JS-Keyword."
+  },
+  {
+    "question": "Wie wird ein Array in JavaScript typischerweise definiert?",
+    "options": [
+      "Mit geschweiften Klammern: {1, 2, 3}",
+      "Mit runden Klammern: (1, 2, 3)",
+      "Mit eckigen Klammern: [1, 2, 3]",
+      "Mit dem Keyword array: array(1, 2, 3)"
+    ],
+    "correct_index": 2,
+    "explanation": "Array-Literale in JavaScript werden mit eckigen Klammern `[]` geschrieben. Geschweifte Klammern `{}` definieren Objekte, runde Klammern `()` werden für Funktionsaufrufe oder Gruppierungen genutzt. Zwar gibt es auch `new Array()`, aber die Literal-Schreibweise `[]` ist der übliche Standard."
+  },
+  {
+    "question": "Was bewirkt die Methode 'find()' auf einem Array?",
+    "options": [
+      "Sie gibt alle Elemente zurück, die der Bedingung entsprechen.",
+      "Sie gibt den Index des ersten Elements zurück, das der Bedingung entspricht.",
+      "Sie gibt das erste Element zurück, das der Bedingung entspricht, oder undefined.",
+      "Sie prüft, ob mindestens ein Element die Bedingung erfüllt (true/false)."
+    ],
+    "correct_index": 2,
+    "explanation": "`find()` durchsucht das Array und gibt das *erste* gefundene Element selbst zurück, das die Test-Funktion besteht. Wenn kein Element gefunden wird, gibt es `undefined` zurück. Im Gegensatz dazu gibt `filter()` ein Array aller Treffer zurück, `findIndex()` den Index, und `some()` einen Boolean."
+  },
+  {
+    "question": "Warum ist die Verwendung von 'External JavaScript' für größere Projekte empfehlenswert?",
+    "options": [
+      "Weil es die einzige Möglichkeit ist, JavaScript zu nutzen.",
+      "Weil Browser externe Dateien cachen können, was die Ladezeit bei wiederholten Besuchen reduziert und Code-Wiederverwendung ermöglicht.",
+      "Weil External JavaScript schneller ausgeführt wird als Internal.",
+      "Weil man dann kein HTML mehr schreiben muss."
+    ],
+    "correct_index": 1,
+    "explanation": "Durch das Auslagern in separate `.js`-Dateien kann der Browser diese Dateien nach dem ersten Laden im Cache speichern. Beim Besuch weiterer Unterseiten muss das Skript nicht neu heruntergeladen werden. Zudem fördert es die Modularität, da dieselbe Datei von mehreren HTML-Seiten eingebunden werden kann (Trennung von Concerns)."
+  },
+  {
+    "question": "Welches Konzept erlaubt es, Eigenschaften eines Objekts nachträglich zu schützen oder bei der Zuweisung zu validieren?",
+    "options": [
+      "Nur die Verwendung von 'const' für das Objekt.",
+      "Die Kombination aus privaten Feldern (#) und Gettern/Settern.",
+      "Das Einfrieren des gesamten Arrays.",
+      "Die Nutzung von 'var' statt 'let'."
+    ],
+    "correct_index": 1,
+    "explanation": "Durch private Felder (`#wert`) wird der direkte Zugriff von außen verhindert. Ein öffentlicher Setter (`set wert(v) { ... }`) kann dann genutzt werden, um Validierungslogik (z. B. 'Preis darf nicht negativ sein') auszuführen, bevor der interne private Wert gesetzt wird. Dies ist ein Kernprinzip der Kapselung in der OOP."
+  },
+  {
+    "question": "Was gibt der Ausdruck 'typeof null' in JavaScript zurück?",
+    "options": [
+      "'null'",
+      "'undefined'",
+      "'object'",
+      "'number'"
+    ],
+    "correct_index": 2,
+    "explanation": "Dies ist eine bekannte historische Eigenart (Bug) in JavaScript, die aus Kompatibilitätsgründen nie korrigiert wurde. `typeof null` gibt `'object'` zurück, obwohl `null` technisch ein primitiver Wert ist, der die absichtliche Abwesenheit eines Objektwertes darstellt. `typeof undefined` hingegen gibt `'undefined'` zurück."
+  }
+]
