@@ -63,7 +63,7 @@
       "Es ist niemals erlaubt, das Alt-Attribut wegzulassen."
     ],
     "correct_index": 1,
-    "explanation": "Rein dekorative Bilder (z. B. Hintergrundgrafiken, visuelle Trennlinien), die zum Verständnis des Inhalts nichts beitragen, sollten ein leeres Alt-Attribut (alt="") haben. Dies signalisiert dem Screenreader, das Bild zu überspringen. Ein fehlendes Alt-Attribut würde dazu führen, dass der Dateiname vorgelesen wird, was verwirrend ist. Ein title-Attribut ersetzt keinen Alt-Text."
+    "explanation": "Rein dekorative Bilder (z. B. Hintergrundgrafiken, visuelle Trennlinien), die zum Verständnis des Inhalts nichts beitragen, sollten ein leeres Alt-Attribut (alt='') haben. Dies signalisiert dem Screenreader, das Bild zu überspringen. Ein fehlendes Alt-Attribut würde dazu führen, dass der Dateiname vorgelesen wird, was verwirrend ist. Ein title-Attribut ersetzt keinen Alt-Text."
   },
   {
     "question": "Was ist der Zweck von 'ARIA' (Accessible Rich Internet Applications) im Kontext von Accessibility?",
