@@ -20,6 +20,7 @@ verfügbare_fächer = {
     "RecSys SW6 Two Stage": "recsys/sw6_twostage.json",
     "RecSys SW7 Learning to Rank": "recsys/sw7_ltr.json",
     "RecSys SW8 Deep Recommender":"recsys/sw8_dr.json",
+    "RecSys SW9 Sequential":"recsys/sw9_sequential.json",
     "Frontend Block 1 und 2":"frontend/block1_2.json",
     "Frontend Block 3":"frontend/block3.json",
     "Frontend Block 4":"frontend/block4.json",
