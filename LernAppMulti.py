@@ -23,7 +23,7 @@ verfügbare_fächer = {
     "RecSys SW9 Sequential":"recsys/sw9_sequential.json",
     "RecSys SW10 Graph based":"recsys/sw10_graph.json",
     "RecSys SW11 Debiasing": "recsys/sw11_debiasing.json",
-    "RecSys SW12 Responsible": "recys/sw12_responsible.json",
+    "RecSys SW12 Responsible": "recsys/sw12_responsible.json",
     "Frontend Block 1 und 2":"frontend/block1_2.json",
     "Frontend Block 3":"frontend/block3.json",
     "Frontend Block 4":"frontend/block4.json",
