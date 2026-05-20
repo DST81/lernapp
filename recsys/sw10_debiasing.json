@@ -1,0 +1,277 @@
+[
+  {
+    "question": "Warum sind Klicks in Recommender Systems nicht gleichbedeutend mit Relevanz?",
+    "options": [
+      "Weil Klicks zusätzlich von Sichtbarkeit und Position beeinflusst werden",
+      "Weil Nutzer zufällig klicken",
+      "Weil Klicks nie gespeichert werden",
+      "Weil Relevanz immer bekannt ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Klicks hängen nicht nur von der wahren Relevanz ab, sondern auch davon, ob ein Item überhaupt gezeigt wurde und an welcher Position es erschien."
+  },
+  {
+    "question": "Was beschreibt Exposure Bias?",
+    "options": [
+      "Nicht gezeigte Items können keine Interaktionen erzeugen",
+      "Items werden zu oft bewertet",
+      "Alle Nutzer sehen dieselben Items",
+      "Der Katalog ist zu klein"
+    ],
+    "correct_index": 0,
+    "explanation": "Wenn ein Item nie gezeigt wird, kann das System auch keine Informationen darüber sammeln."
+  },
+  {
+    "question": "Was ist Position Bias?",
+    "options": [
+      "Items auf höheren Positionen erhalten mehr Aufmerksamkeit und Klicks",
+      "Positionen werden zufällig vergeben",
+      "Items unten sind immer relevanter",
+      "Positionen beeinflussen nur Trainingsdaten"
+    ],
+    "correct_index": 0,
+    "explanation": "Nutzer betrachten obere Positionen häufiger, wodurch diese mehr Klicks erhalten – unabhängig von der tatsächlichen Qualität."
+  },
+  {
+    "question": "Was bedeutet MNAR (Missing Not At Random)?",
+    "options": [
+      "Die Wahrscheinlichkeit beobachtet zu werden hängt von der Relevanz selbst ab",
+      "Fehlende Daten sind zufällig",
+      "Alle Daten sind vollständig",
+      "Nur Trainingsdaten fehlen"
+    ],
+    "correct_index": 0,
+    "explanation": "In Recommender Systems werden relevante Items häufiger beobachtet, weshalb fehlende Daten systematisch verzerrt sind."
+  },
+  {
+    "question": "Warum verletzt MNAR die klassische i.i.d.-Annahme?",
+    "options": [
+      "Weil beobachtete Daten keine zufällige Stichprobe der Realität sind",
+      "Weil Nutzer unabhängig handeln",
+      "Weil alle Labels korrekt sind",
+      "Weil keine Interaktionen existieren"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Trainingsdaten sind durch das bestehende System verzerrt und repräsentieren nicht die wahre Verteilung."
+  },
+  {
+    "question": "Was beschreibt Selection Bias?",
+    "options": [
+      "Nutzer interagieren bevorzugt mit erwarteten Lieblingsitems",
+      "Items werden zufällig ausgewählt",
+      "Alle Nutzer bewerten alles",
+      "Negative Bewertungen fehlen komplett"
+    ],
+    "correct_index": 0,
+    "explanation": "Nutzer bewerten oder klicken eher Inhalte, die sie bereits interessant finden."
+  },
+  {
+    "question": "Was ist ein typischer Popularity Feedback Loop?",
+    "options": [
+      "Populäre Items werden häufiger gezeigt und dadurch noch populärer",
+      "Neue Items werden immer bevorzugt",
+      "Alle Items erhalten gleich viele Klicks",
+      "Das Modell ignoriert Popularität"
+    ],
+    "correct_index": 0,
+    "explanation": "Häufig angezeigte Items sammeln mehr Interaktionen und werden dadurch erneut bevorzugt."
+  },
+  {
+    "question": "Warum können Offline-Metriken irreführend sein?",
+    "options": [
+      "Weil sie auf verzerrten historischen Logs basieren",
+      "Weil sie immer zu schlecht sind",
+      "Weil sie keine Klicks nutzen",
+      "Weil sie nur zufällige Daten betrachten"
+    ],
+    "correct_index": 0,
+    "explanation": "Offline-Evaluation nutzt bereits verzerrte Daten aus dem alten System."
+  },
+  {
+    "question": "Was ist die Propensity p_ui?",
+    "options": [
+      "Die Wahrscheinlichkeit, dass ein Item einem Nutzer gezeigt wird",
+      "Die Klickwahrscheinlichkeit",
+      "Die Relevanz eines Items",
+      "Die Trainingsgenauigkeit"
+    ],
+    "correct_index": 0,
+    "explanation": "Propensity beschreibt die Wahrscheinlichkeit der Exposition eines User-Item-Paares."
+  },
+  {
+    "question": "Welches Problem versucht Counterfactual Evaluation zu lösen?",
+    "options": [
+      "Die Bewertung neuer Policies ohne neues Online-Experiment",
+      "Die Reduktion der Modellgröße",
+      "Die Speicherung aller Klicks",
+      "Die Entfernung aller Biases"
+    ],
+    "correct_index": 0,
+    "explanation": "Counterfactual Evaluation schätzt, wie ein neues System performen würde, basierend auf bestehenden Logs."
+  },
+  {
+    "question": "Was macht Inverse Propensity Scoring (IPS)?",
+    "options": [
+      "Korrigiert Verzerrungen durch unterschiedliche Expositionswahrscheinlichkeiten",
+      "Entfernt alle Klicks",
+      "Trainiert ein neues Rankingmodell",
+      "Berechnet nur Popularität"
+    ],
+    "correct_index": 0,
+    "explanation": "IPS gewichtet Beobachtungen invers zur Wahrscheinlichkeit ihrer Anzeige."
+  },
+  {
+    "question": "Warum erhalten selten gezeigte Items bei IPS höhere Gewichte?",
+    "options": [
+      "Weil ihre Beobachtungen informativer sind",
+      "Weil sie immer relevanter sind",
+      "Weil sie häufiger geklickt werden",
+      "Weil IPS nur Tail-Items nutzt"
+    ],
+    "correct_index": 0,
+    "explanation": "Selten exponierte Items würden sonst unterschätzt werden."
+  },
+  {
+    "question": "Was ist ein Problem von IPS?",
+    "options": [
+      "Sehr kleine Propensities erzeugen hohe Varianz",
+      "IPS funktioniert nur offline",
+      "IPS ignoriert Positionen",
+      "IPS benötigt keine Logs"
+    ],
+    "correct_index": 0,
+    "explanation": "Kleine Propensity-Werte führen zu extrem großen Gewichten."
+  },
+  {
+    "question": "Warum wird Propensity Clipping verwendet?",
+    "options": [
+      "Um die Varianz der IPS-Schätzung zu reduzieren",
+      "Um alle Propensities zu erhöhen",
+      "Um Klicks zu entfernen",
+      "Um Modelle schneller zu trainieren"
+    ],
+    "correct_index": 0,
+    "explanation": "Clipping begrenzt extreme Gewichte und stabilisiert die Schätzung."
+  },
+  {
+    "question": "Was ist der Vorteil von SNIPS (Self-Normalized IPS)?",
+    "options": [
+      "Geringere Varianz als normales IPS",
+      "Komplett unverzerrte Schätzungen",
+      "Keine Propensities nötig",
+      "Schnelleres Retrieval"
+    ],
+    "correct_index": 0,
+    "explanation": "SNIPS reduziert die Varianz durch Normalisierung der Gewichte."
+  },
+  {
+    "question": "Was bedeutet 'Support' als Voraussetzung für IPS?",
+    "options": [
+      "Alle Aktionen der neuen Policy müssen im Logging-System beobachtbar sein",
+      "Alle Nutzer müssen klicken",
+      "Jedes Item braucht Bewertungen",
+      "Die Daten müssen zufällig sein"
+    ],
+    "correct_index": 0,
+    "explanation": "IPS kann nur Aktionen bewerten, die unter der alten Policy zumindest manchmal gezeigt wurden."
+  },
+  {
+    "question": "Wie kann Popularity Bias ohne echte Propensity-Logs approximiert werden?",
+    "options": [
+      "Über die Item-Popularität als Propensity-Proxy",
+      "Mit zufälligen Labels",
+      "Durch Entfernen aller Tail-Items",
+      "Durch Mean Pooling"
+    ],
+    "correct_index": 0,
+    "explanation": "Häufigkeit eines Items kann als grobe Approximation der Expositionswahrscheinlichkeit genutzt werden."
+  },
+  {
+    "question": "Was beschreibt das Explore-Exploit-Dilemma?",
+    "options": [
+      "Der Konflikt zwischen bekannten guten Optionen und dem Testen neuer Optionen",
+      "Die Wahl zwischen Training und Evaluation",
+      "Den Unterschied zwischen Klicks und Käufen",
+      "Die Entscheidung zwischen MF und Content-Based"
+    ],
+    "correct_index": 0,
+    "explanation": "Systeme müssen gleichzeitig gute Empfehlungen liefern und neue Informationen sammeln."
+  },
+  {
+    "question": "Was macht ε-greedy im Multi-Armed Bandit?",
+    "options": [
+      "Mit Wahrscheinlichkeit ε wird exploriert, sonst exploitiert",
+      "Es wählt immer das beste Item",
+      "Es ignoriert alle Belohnungen",
+      "Es nutzt nur zufällige Aktionen"
+    ],
+    "correct_index": 0,
+    "explanation": "ε-greedy kombiniert Exploration und Exploitation durch zufällige Aktionen."
+  },
+  {
+    "question": "Was ist das Ziel von Upper Confidence Bound (UCB)?",
+    "options": [
+      "Unsichere, wenig getestete Optionen gezielt zu explorieren",
+      "Nur populäre Items zu empfehlen",
+      "Alle Propensities zu ignorieren",
+      "Nur Klicks zu maximieren"
+    ],
+    "correct_index": 0,
+    "explanation": "UCB berücksichtigt sowohl den erwarteten Reward als auch Unsicherheit."
+  },
+  {
+    "question": "Was unterscheidet Contextual Bandits von klassischen Multi-Armed Bandits?",
+    "options": [
+      "Contextual Bandits berücksichtigen Nutzer- und Kontextinformationen",
+      "Sie benötigen keine Rewards",
+      "Sie arbeiten ohne Exploration",
+      "Sie verwenden keine Policies"
+    ],
+    "correct_index": 0,
+    "explanation": "Die Entscheidung hängt zusätzlich vom aktuellen Kontext ab."
+  },
+  {
+    "question": "Warum helfen Bandits beim Debiasing?",
+    "options": [
+      "Weil sie bewusst Exploration durchführen und dadurch bessere Logs erzeugen",
+      "Weil sie Popularität entfernen",
+      "Weil sie keine Klicks benötigen",
+      "Weil sie alle Biases perfekt korrigieren"
+    ],
+    "correct_index": 0,
+    "explanation": "Exploration sorgt dafür, dass auch seltene Optionen beobachtet werden."
+  },
+  {
+    "question": "Warum reicht es nicht, nur Klicks zu loggen?",
+    "options": [
+      "Weil Informationen über Exposition und Position fehlen",
+      "Weil Klicks unwichtig sind",
+      "Weil Rankings nicht gespeichert werden",
+      "Weil Nutzer anonym sind"
+    ],
+    "correct_index": 0,
+    "explanation": "Für Debiasing werden Impressionen, Positionen und die Logging-Policy benötigt."
+  },
+  {
+    "question": "Was ist eine typische Ursache für den Offline-Online-Gap?",
+    "options": [
+      "Offline-Metriken basieren auf verzerrten historischen Daten",
+      "Online-Nutzer klicken zufällig",
+      "Offline-Daten sind immer größer",
+      "Modelle funktionieren online nie"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein Modell kann offline gut aussehen, aber online andere Nutzerreaktionen erzeugen."
+  },
+  {
+    "question": "Was ist die wichtigste praktische Regel aus der Vorlesung?",
+    "options": [
+      "Lerne aus dem, was gezeigt wurde – nicht nur aus dem, was geklickt wurde",
+      "Klicks sind perfekte Labels",
+      "Popularität sollte maximiert werden",
+      "Bias verschwindet mit mehr Daten"
+    ],
+    "correct_index": 0,
+    "explanation": "Für faire Evaluation und Training müssen Expositionen berücksichtigt werden."
+  }
+]
