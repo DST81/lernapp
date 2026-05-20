@@ -1,0 +1,288 @@
+[
+  {
+    "question": "Wann gilt ein Recommender System als 'responsible'?",
+    "options": [
+      "Wenn es technisch robust und gesellschaftlich verantwortungsvoll ist",
+      "Wenn es nur hohe Accuracy erreicht",
+      "Wenn es ausschließlich populäre Items empfiehlt",
+      "Wenn es keine Personalisierung nutzt"
+    ],
+    "correct_index": 0,
+    "explanation": "Responsible Recommenders müssen sowohl technisch zuverlässig als auch fair, transparent und datenschutzfreundlich sein."
+  },
+  {
+    "question": "Was beschreibt Consumer Fairness?",
+    "options": [
+      "Ähnliche Empfehlungsqualität für verschiedene Nutzergruppen",
+      "Faire Preise für Produkte",
+      "Gleiche Anzahl Klicks pro Nutzer",
+      "Nur neue Nutzer zu bevorzugen"
+    ],
+    "correct_index": 0,
+    "explanation": "Consumer Fairness betrachtet, ob unterschiedliche Nutzergruppen ähnlich gute Empfehlungen erhalten."
+  },
+  {
+    "question": "Was bedeutet Provider Fairness?",
+    "options": [
+      "Content-Ersteller sollen faire Chancen auf Sichtbarkeit erhalten",
+      "Alle Nutzer erhalten dieselben Empfehlungen",
+      "Nur große Anbieter werden empfohlen",
+      "Provider dürfen keine Daten speichern"
+    ],
+    "correct_index": 0,
+    "explanation": "Provider Fairness untersucht, ob auch kleinere Anbieter oder Creator sichtbar bleiben."
+  },
+  {
+    "question": "Was beschreibt der Rich-Get-Richer-Feedback-Loop?",
+    "options": [
+      "Populäre Items werden häufiger empfohlen und dadurch noch populärer",
+      "Neue Items verdrängen alte",
+      "Alle Items erhalten gleich viele Klicks",
+      "Das Modell reduziert Popularität automatisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Beliebte Inhalte sammeln mehr Interaktionen und werden dadurch erneut bevorzugt."
+  },
+  {
+    "question": "Was misst Catalog Coverage@K?",
+    "options": [
+      "Welcher Anteil des Katalogs mindestens einmal empfohlen wird",
+      "Wie oft Nutzer klicken",
+      "Wie schnell das Modell ist",
+      "Die Genauigkeit eines Modells"
+    ],
+    "correct_index": 0,
+    "explanation": "Coverage misst die Vielfalt der tatsächlich empfohlenen Items."
+  },
+  {
+    "question": "Was bedeutet Long-Tail Coverage?",
+    "options": [
+      "Coverage nur für wenig populäre Items",
+      "Coverage für neue Nutzer",
+      "Coverage für Warm-User",
+      "Coverage für Werbeanzeigen"
+    ],
+    "correct_index": 0,
+    "explanation": "Long-Tail Coverage untersucht, ob auch seltene Items empfohlen werden."
+  },
+  {
+    "question": "Was beschreibt der Gini-Koeffizient im Recommender System?",
+    "options": [
+      "Die Ungleichverteilung von Empfehlungen",
+      "Die Trainingsgeschwindigkeit",
+      "Die Klickwahrscheinlichkeit",
+      "Die Modelllatenz"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein hoher Gini-Wert bedeutet, dass wenige Items den Großteil der Aufmerksamkeit erhalten."
+  },
+  {
+    "question": "Was bedeutet Individual Fairness?",
+    "options": [
+      "Ähnliche Nutzer sollten ähnliche Empfehlungen erhalten",
+      "Alle Nutzer erhalten identische Listen",
+      "Nur aktive Nutzer zählen",
+      "Jeder Nutzer erhält zufällige Empfehlungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Individuelle Fairness fordert Konsistenz zwischen ähnlichen Nutzern."
+  },
+  {
+    "question": "Was ist eine Filter Bubble?",
+    "options": [
+      "Algorithmisch eingeschränkte Sicht auf Inhalte",
+      "Ein Netzwerkfehler",
+      "Eine Trainingsmethode",
+      "Ein Datenschutzproblem"
+    ],
+    "correct_index": 0,
+    "explanation": "Personalisierung kann dazu führen, dass Nutzer nur noch ähnliche Inhalte sehen."
+  },
+  {
+    "question": "Was unterscheidet eine Echo Chamber von einer Filter Bubble?",
+    "options": [
+      "Echo Chambers entstehen sozial, Filter Bubbles algorithmisch",
+      "Echo Chambers sind technische Fehler",
+      "Filter Bubbles entstehen nur offline",
+      "Es gibt keinen Unterschied"
+    ],
+    "correct_index": 0,
+    "explanation": "Echo Chambers entstehen durch soziale Interaktionen, Filter Bubbles durch Algorithmen."
+  },
+  {
+    "question": "Was misst Intra-List Diversity (ILD)?",
+    "options": [
+      "Wie unterschiedlich die empfohlenen Items innerhalb einer Liste sind",
+      "Die Anzahl der Klicks",
+      "Die Trainingsdatenmenge",
+      "Die Nutzeraktivität"
+    ],
+    "correct_index": 0,
+    "explanation": "ILD bewertet die Diversität innerhalb einer einzelnen Empfehlungsliste."
+  },
+  {
+    "question": "Was ist Serendipity in Recommender Systems?",
+    "options": [
+      "Relevante und gleichzeitig unerwartete Empfehlungen",
+      "Nur zufällige Empfehlungen",
+      "Nur populäre Inhalte",
+      "Nicht personalisierte Empfehlungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Serendipity kombiniert Relevanz mit Überraschung."
+  },
+  {
+    "question": "Was ist das Ziel von Maximal Marginal Relevance (MMR)?",
+    "options": [
+      "Balance zwischen Relevanz und Diversität",
+      "Nur die höchsten Scores zu wählen",
+      "Nur Tail-Items zu zeigen",
+      "Klicks zu entfernen"
+    ],
+    "correct_index": 0,
+    "explanation": "MMR rerankt Kandidaten, um sowohl gute als auch diverse Empfehlungen zu liefern."
+  },
+  {
+    "question": "Was passiert bei λ = 1 in MMR?",
+    "options": [
+      "Es wird nur der Ranking-Score berücksichtigt",
+      "Nur Diversität zählt",
+      "Es werden zufällige Items gewählt",
+      "Das Modell stoppt"
+    ],
+    "correct_index": 0,
+    "explanation": "Bei λ = 1 wird keine Diversität berücksichtigt."
+  },
+  {
+    "question": "Warum reicht Anonymisierung oft nicht aus?",
+    "options": [
+      "Interaktionsmuster können Nutzer trotzdem re-identifizieren",
+      "Weil Namen immer sichtbar bleiben",
+      "Weil IDs nicht gespeichert werden",
+      "Weil Klicks anonym sind"
+    ],
+    "correct_index": 0,
+    "explanation": "Seltene und charakteristische Interaktionen können mit externen Daten verknüpft werden."
+  },
+  {
+    "question": "Was garantiert Differential Privacy?",
+    "options": [
+      "Dass einzelne Nutzer nur begrenzten Einfluss auf das Modell haben",
+      "Perfekte Accuracy",
+      "Keine Trainingskosten",
+      "Vollständige Transparenz"
+    ],
+    "correct_index": 0,
+    "explanation": "Differential Privacy schützt einzelne Nutzer durch Rauschen und begrenzte Gradienten."
+  },
+  {
+    "question": "Was beschreibt ε in Differential Privacy?",
+    "options": [
+      "Die Stärke des Privacy-Schutzes",
+      "Die Anzahl der Nutzer",
+      "Die Modelllatenz",
+      "Die Anzahl der Features"
+    ],
+    "correct_index": 0,
+    "explanation": "Kleine ε-Werte bedeuten stärkeren Datenschutz."
+  },
+  {
+    "question": "Warum sind Erklärungen in Recommender Systems wichtig?",
+    "options": [
+      "Sie erhöhen Vertrauen und Transparenz",
+      "Sie ersetzen das Modell",
+      "Sie verhindern Training",
+      "Sie eliminieren Bias automatisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Erklärungen helfen Nutzern, Empfehlungen zu verstehen und ihnen zu vertrauen."
+  },
+  {
+    "question": "Welche Erklärung ist typisch für Collaborative Filtering?",
+    "options": [
+      "\"Nutzer wie du mochten auch...\"",
+      "\"Dieses Item ist günstig\"",
+      "\"Das Modell ist schnell\"",
+      "\"Dieses Item hat wenig Klicks\""
+    ],
+    "correct_index": 0,
+    "explanation": "Collaborative Filtering erklärt Empfehlungen oft über ähnliche Nutzer."
+  },
+  {
+    "question": "Was macht SHAP in Rankingmodellen?",
+    "options": [
+      "Es berechnet Feature-Beiträge zur Vorhersage",
+      "Es trainiert das Modell neu",
+      "Es entfernt Bias",
+      "Es generiert neue Nutzer"
+    ],
+    "correct_index": 0,
+    "explanation": "SHAP weist jedem Feature einen Beitrag zum finalen Score zu."
+  },
+  {
+    "question": "Was bedeutet Faithfulness bei Erklärungen?",
+    "options": [
+      "Die Erklärung entspricht tatsächlich dem Modellverhalten",
+      "Die Erklärung ist kurz",
+      "Die Erklärung enthält viele Details",
+      "Die Erklärung nutzt nur Popularität"
+    ],
+    "correct_index": 0,
+    "explanation": "Faithfulness bedeutet, dass die Erklärung die reale Entscheidungslogik widerspiegelt."
+  },
+  {
+    "question": "Was ist Data Drift?",
+    "options": [
+      "Die Verteilung der Eingabedaten verändert sich",
+      "Die Modellarchitektur verändert sich",
+      "Die Labels verschwinden",
+      "Das Modell wird kleiner"
+    ],
+    "correct_index": 0,
+    "explanation": "Data Drift beschreibt Veränderungen in der Nutzer- oder Featureverteilung."
+  },
+  {
+    "question": "Was ist Concept Drift?",
+    "options": [
+      "Die Beziehung zwischen Features und Verhalten verändert sich",
+      "Die Trainingsdaten werden größer",
+      "Das Modell verliert Features",
+      "Die Nutzer verschwinden"
+    ],
+    "correct_index": 0,
+    "explanation": "Concept Drift tritt auf, wenn sich Nutzerpräferenzen ändern."
+  },
+  {
+    "question": "Welche Metrik kann einen Feedback-Loop früh erkennen?",
+    "options": [
+      "Steigender Gini-Koeffizient der Empfehlungen",
+      "Sinkende Trainingszeit",
+      "Höhere Batchgröße",
+      "Mehr Nutzerkonten"
+    ],
+    "correct_index": 0,
+    "explanation": "Ein steigender Gini-Wert deutet auf immer konzentriertere Empfehlungen hin."
+  },
+  {
+    "question": "Warum sollten Recommendation-Systeme regelmäßig überwacht werden?",
+    "options": [
+      "Weil Daten, Nutzerverhalten und Kataloge sich verändern",
+      "Weil Accuracy immer konstant bleibt",
+      "Weil Modelle nie driften",
+      "Weil Monitoring nur für Sicherheit wichtig ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Produktionssysteme verändern sich kontinuierlich und benötigen Monitoring."
+  },
+  {
+    "question": "Was ist ein typischer Trade-off in Responsible Recommender Systems?",
+    "options": [
+      "Accuracy gegen Fairness oder Diversität",
+      "Training gegen Daten",
+      "Nutzer gegen Items",
+      "Klicks gegen Speicherplatz"
+    ],
+    "correct_index": 0,
+    "explanation": "Mehr Diversität oder Fairness kann kurzfristig Accuracy reduzieren."
+  }
+]
